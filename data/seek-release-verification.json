@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-11-06T18:53:04.097Z",
+  "base": "http://127.0.0.1:4191",
+  "cases": [
+    {
+      "touch": false,
+      "during": {
+        "slider": "604",
+        "calls": []
+      },
+      "after": {
+        "time": 26.621498,
+        "duration": 44.066667,
+        "paused": false,
+        "seekCalls": [
+          26.616266
+        ],
+        "source": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+      },
+      "rewind": {
+        "time": 0,
+        "paused": false
+      },
+      "passed": true
+    },
+    {
+      "touch": true,
+      "during": {
+        "slider": "607",
+        "calls": []
+      },
+      "after": {
+        "time": 26.753952,
+        "duration": 44.066667,
+        "paused": false,
+        "seekCalls": [
+          26.748466
+        ],
+        "source": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+      },
+      "rewind": {
+        "time": 0,
+        "paused": false
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,1177 @@
+{
+  "checkedAt": "2026-11-06T18:47:41.643Z",
+  "source": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+  "scope": "Decoded audio capture across103s; captureStream requires crossorigin and can change browser capture optimizations. This is not system output capture.",
+  "runs": [
+    {
+      "mode": "app",
+      "status": "unavailable",
+      "error": "page.waitForFunction: Timeout 45000ms exceeded.",
+      "native": [
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "CA61167EA4909B85C12648461085DB86",
+            "events": [
+              {
+                "timestamp": 3127407.375649,
+                "value": "{\"created\":\"2026-11-06 18:47:42.194757 UTC\",\"event\":\"kMediaLogCreated\"}"
+              },
+              {
+                "timestamp": 3127407.38031,
+                "value": "{\"event\":\"kWebMediaPlayerCreated\",\"origin_url\":\"http://127.0.0.1:4191/\"}"
+              },
+              {
+                "timestamp": 3127407.381327,
+                "value": "{\"event\":\"kLoad\",\"url\":\"https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "CA61167EA4909B85C12648461085DB86",
+            "properties": [
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": "Planet X — Music Nerd"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "CA61167EA4909B85C12648461085DB86",
+            "properties": [
+              {
+                "name": "kTotalBytes",
+                "value": "0x127ad24a"
+              },
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": "Planet X — Music Nerd"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "CA61167EA4909B85C12648461085DB86",
+            "events": [
+              {
+                "timestamp": 3127409.722686,
+                "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kStarting\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "CA61167EA4909B85C12648461085DB86",
+            "properties": [
+              {
+                "name": "kIsRangeHeaderSupported",
+                "value": "true"
+              },
+              {
+                "name": "kIsStreaming",
+                "value": "false"
+              },
+              {
+                "name": "kRendererName",
+                "value": "RendererImpl"
+              },
+              {
+                "name": "kTotalBytes",
+                "value": "0x127ad24a"
+              },
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+              },
+              {
+                "name": "kIsSingleOrigin",
+                "value": "true"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": "Planet X — Music Nerd"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "CA61167EA4909B85C12648461085DB86",
+            "events": [
+              {
+                "timestamp": 3127413.822188,
+                "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kPlaying\"}"
+              },
+              {
+                "timestamp": 3127413.560532,
+                "value": "{\"duration\":240.083333,\"event\":\"kDurationChanged\"}"
+              },
+              {
+                "timestamp": 3127413.840082,
+                "value": "{\"audio_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"},\"event\":\"kBufferingStateChanged\"}"
+              },
+              {
+                "timestamp": 3127413.562603,
+                "value": "{\"event\":\"kPlay\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "CA61167EA4909B85C12648461085DB86",
+            "properties": [
+              {
+                "name": "kVideoDecoderName",
+                "value": "FFmpegVideoDecoder"
+              },
+              {
+                "name": "kIsStreaming",
+                "value": "false"
+              },
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+              },
+              {
+                "name": "kAudioTracks",
+                "value": "[{\"bytes per channel\":4,\"bytes per frame\":8,\"channel layout\":\"STEREO\",\"channels\":2,\"codec\":\"aac\",\"codec delay\":0,\"discard decoder delay\":true,\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"profile\":\"unknown\",\"sample format\":\"Float 32-bit planar\",\"samples per second\":48000,\"seek preroll\":\"0us\"}]"
+              },
+              {
+                "name": "kRendererName",
+                "value": "RendererImpl"
+              },
+              {
+                "name": "kTotalBytes",
+                "value": "0x127ad24a"
+              },
+              {
+                "name": "kMaxDuration",
+                "value": "240.083333"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": "Planet X — Music Nerd"
+              },
+              {
+                "name": "kIsPlatformAudioDecoder",
+                "value": "false"
+              },
+              {
+                "name": "kAudioDecoderName",
+                "value": "FFmpegAudioDecoder"
+              },
+              {
+                "name": "kVideoTracks",
+                "value": "[{\"alpha mode\":\"is_opaque\",\"codec\":\"h264\",\"coded size\":\"3000x3000\",\"color space\":{\"matrix\":\"BT709\",\"primaries\":\"BT709\",\"range\":\"LIMITED\",\"transfer\":\"BT709\"},\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"hdr metadata\":{},\"natural size\":\"3000x3000\",\"orientation\":\"0°\",\"profile\":\"h264 main\",\"visible rect\":\"0,0 3000x3000\"}]"
+              },
+              {
+                "name": "kIsRangeHeaderSupported",
+                "value": "true"
+              },
+              {
+                "name": "kIsVideoDecryptingDemuxerStream",
+                "value": "false"
+              },
+              {
+                "name": "kStartTime",
+                "value": "0.0"
+              },
+              {
+                "name": "kBitrate",
+                "value": "10331049"
+              },
+              {
+                "name": "kIsPlatformVideoDecoder",
+                "value": "false"
+              },
+              {
+                "name": "kIsSingleOrigin",
+                "value": "true"
+              },
+              {
+                "name": "kIsAudioDecryptingDemuxerStream",
+                "value": "false"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "CA61167EA4909B85C12648461085DB86",
+            "events": [
+              {
+                "timestamp": 3127416.276094,
+                "value": "{\"dimensions\":\"3000x3000\",\"event\":\"kVideoSizeChanged\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "CA61167EA4909B85C12648461085DB86",
+            "properties": [
+              {
+                "name": "kVideoDecoderName",
+                "value": "FFmpegVideoDecoder"
+              },
+              {
+                "name": "kIsStreaming",
+                "value": "false"
+              },
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+              },
+              {
+                "name": "kAudioTracks",
+                "value": "[{\"bytes per channel\":4,\"bytes per frame\":8,\"channel layout\":\"STEREO\",\"channels\":2,\"codec\":\"aac\",\"codec delay\":0,\"discard decoder delay\":true,\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"profile\":\"unknown\",\"sample format\":\"Float 32-bit planar\",\"samples per second\":48000,\"seek preroll\":\"0us\"}]"
+              },
+              {
+                "name": "kResolution",
+                "value": "3000x3000"
+              },
+              {
+                "name": "kRendererName",
+                "value": "RendererImpl"
+              },
+              {
+                "name": "kTotalBytes",
+                "value": "0x127ad24a"
+              },
+              {
+                "name": "kMaxDuration",
+                "value": "240.083333"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": "Planet X — Music Nerd"
+              },
+              {
+                "name": "kIsPlatformAudioDecoder",
+                "value": "false"
+              },
+              {
+                "name": "kAudioDecoderName",
+                "value": "FFmpegAudioDecoder"
+              },
+              {
+                "name": "kVideoTracks",
+                "value": "[{\"alpha mode\":\"is_opaque\",\"codec\":\"h264\",\"coded size\":\"3000x3000\",\"color space\":{\"matrix\":\"BT709\",\"primaries\":\"BT709\",\"range\":\"LIMITED\",\"transfer\":\"BT709\"},\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"hdr metadata\":{},\"natural size\":\"3000x3000\",\"orientation\":\"0°\",\"profile\":\"h264 main\",\"visible rect\":\"0,0 3000x3000\"}]"
+              },
+              {
+                "name": "kIsRangeHeaderSupported",
+                "value": "true"
+              },
+              {
+                "name": "kIsVideoDecryptingDemuxerStream",
+                "value": "false"
+              },
+              {
+                "name": "kStartTime",
+                "value": "0.0"
+              },
+              {
+                "name": "kBitrate",
+                "value": "10331049"
+              },
+              {
+                "name": "kIsPlatformVideoDecoder",
+                "value": "false"
+              },
+              {
+                "name": "kIsSingleOrigin",
+                "value": "true"
+              },
+              {
+                "name": "kIsAudioDecryptingDemuxerStream",
+                "value": "false"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "CA61167EA4909B85C12648461085DB86",
+            "events": [
+              {
+                "timestamp": 3127419.337824,
+                "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kStopping\"}"
+              },
+              {
+                "timestamp": 3127419.337871,
+                "value": "{\"event\":\"kWebMediaPlayerDestroyed\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "EFC1570C08F3E0A02727E4477EE7CC9C",
+            "events": [
+              {
+                "timestamp": 3127419.339879,
+                "value": "{\"created\":\"2026-11-06 18:47:54.158682 UTC\",\"event\":\"kMediaLogCreated\"}"
+              },
+              {
+                "timestamp": 3127419.339982,
+                "value": "{\"event\":\"kWebMediaPlayerCreated\",\"origin_url\":\"http://127.0.0.1:4191/\"}"
+              },
+              {
+                "timestamp": 3127419.340048,
+                "value": "{\"event\":\"kLoad\",\"url\":\"https://ipfs.filebase.io/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "EFC1570C08F3E0A02727E4477EE7CC9C",
+            "properties": [
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": "Planet X — Music Nerd"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "EFC1570C08F3E0A02727E4477EE7CC9C",
+            "properties": [
+              {
+                "name": "kTotalBytes",
+                "value": "0x127ad24a"
+              },
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": "Planet X — Music Nerd"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "EFC1570C08F3E0A02727E4477EE7CC9C",
+            "events": [
+              {
+                "timestamp": 3127422.994224,
+                "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kStarting\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "EFC1570C08F3E0A02727E4477EE7CC9C",
+            "properties": [
+              {
+                "name": "kIsRangeHeaderSupported",
+                "value": "true"
+              },
+              {
+                "name": "kIsStreaming",
+                "value": "false"
+              },
+              {
+                "name": "kRendererName",
+                "value": "RendererImpl"
+              },
+              {
+                "name": "kTotalBytes",
+                "value": "0x127ad24a"
+              },
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+              },
+              {
+                "name": "kIsSingleOrigin",
+                "value": "true"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": "Planet X — Music Nerd"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "EFC1570C08F3E0A02727E4477EE7CC9C",
+            "events": [
+              {
+                "timestamp": 3127428.687848,
+                "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kPlaying\"}"
+              },
+              {
+                "timestamp": 3127428.683836,
+                "value": "{\"duration\":240.083333,\"event\":\"kDurationChanged\"}"
+              },
+              {
+                "timestamp": 3127428.745872,
+                "value": "{\"audio_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"},\"event\":\"kBufferingStateChanged\"}"
+              },
+              {
+                "timestamp": 3127428.684077,
+                "value": "{\"event\":\"kPlay\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "EFC1570C08F3E0A02727E4477EE7CC9C",
+            "properties": [
+              {
+                "name": "kVideoDecoderName",
+                "value": "FFmpegVideoDecoder"
+              },
+              {
+                "name": "kIsStreaming",
+                "value": "false"
+              },
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+              },
+              {
+                "name": "kAudioTracks",
+                "value": "[{\"bytes per channel\":4,\"bytes per frame\":8,\"channel layout\":\"STEREO\",\"channels\":2,\"codec\":\"aac\",\"codec delay\":0,\"discard decoder delay\":true,\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"profile\":\"unknown\",\"sample format\":\"Float 32-bit planar\",\"samples per second\":48000,\"seek preroll\":\"0us\"}]"
+              },
+              {
+                "name": "kRendererName",
+                "value": "RendererImpl"
+              },
+              {
+                "name": "kTotalBytes",
+                "value": "0x127ad24a"
+              },
+              {
+                "name": "kMaxDuration",
+                "value": "240.083333"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": "Planet X — Music Nerd"
+              },
+              {
+                "name": "kIsPlatformAudioDecoder",
+                "value": "false"
+              },
+              {
+                "name": "kAudioDecoderName",
+                "value": "FFmpegAudioDecoder"
+              },
+              {
+                "name": "kVideoTracks",
+                "value": "[{\"alpha mode\":\"is_opaque\",\"codec\":\"h264\",\"coded size\":\"3000x3000\",\"color space\":{\"matrix\":\"BT709\",\"primaries\":\"BT709\",\"range\":\"LIMITED\",\"transfer\":\"BT709\"},\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"hdr metadata\":{},\"natural size\":\"3000x3000\",\"orientation\":\"0°\",\"profile\":\"h264 main\",\"visible rect\":\"0,0 3000x3000\"}]"
+              },
+              {
+                "name": "kIsRangeHeaderSupported",
+                "value": "true"
+              },
+              {
+                "name": "kIsVideoDecryptingDemuxerStream",
+                "value": "false"
+              },
+              {
+                "name": "kStartTime",
+                "value": "0.0"
+              },
+              {
+                "name": "kBitrate",
+                "value": "10331049"
+              },
+              {
+                "name": "kIsPlatformVideoDecoder",
+                "value": "false"
+              },
+              {
+                "name": "kIsSingleOrigin",
+                "value": "true"
+              },
+              {
+                "name": "kIsAudioDecryptingDemuxerStream",
+                "value": "false"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "EFC1570C08F3E0A02727E4477EE7CC9C",
+            "events": [
+              {
+                "timestamp": 3127431.6065,
+                "value": "{\"dimensions\":\"3000x3000\",\"event\":\"kVideoSizeChanged\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "EFC1570C08F3E0A02727E4477EE7CC9C",
+            "properties": [
+              {
+                "name": "kVideoDecoderName",
+                "value": "FFmpegVideoDecoder"
+              },
+              {
+                "name": "kIsStreaming",
+                "value": "false"
+              },
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+              },
+              {
+                "name": "kAudioTracks",
+                "value": "[{\"bytes per channel\":4,\"bytes per frame\":8,\"channel layout\":\"STEREO\",\"channels\":2,\"codec\":\"aac\",\"codec delay\":0,\"discard decoder delay\":true,\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"profile\":\"unknown\",\"sample format\":\"Float 32-bit planar\",\"samples per second\":48000,\"seek preroll\":\"0us\"}]"
+              },
+              {
+                "name": "kResolution",
+                "value": "3000x3000"
+              },
+              {
+                "name": "kRendererName",
+                "value": "RendererImpl"
+              },
+              {
+                "name": "kTotalBytes",
+                "value": "0x127ad24a"
+              },
+              {
+                "name": "kMaxDuration",
+                "value": "240.083333"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": "Planet X — Music Nerd"
+              },
+              {
+                "name": "kIsPlatformAudioDecoder",
+                "value": "false"
+              },
+              {
+                "name": "kAudioDecoderName",
+                "value": "FFmpegAudioDecoder"
+              },
+              {
+                "name": "kVideoTracks",
+                "value": "[{\"alpha mode\":\"is_opaque\",\"codec\":\"h264\",\"coded size\":\"3000x3000\",\"color space\":{\"matrix\":\"BT709\",\"primaries\":\"BT709\",\"range\":\"LIMITED\",\"transfer\":\"BT709\"},\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"hdr metadata\":{},\"natural size\":\"3000x3000\",\"orientation\":\"0°\",\"profile\":\"h264 main\",\"visible rect\":\"0,0 3000x3000\"}]"
+              },
+              {
+                "name": "kIsRangeHeaderSupported",
+                "value": "true"
+              },
+              {
+                "name": "kIsVideoDecryptingDemuxerStream",
+                "value": "false"
+              },
+              {
+                "name": "kStartTime",
+                "value": "0.0"
+              },
+              {
+                "name": "kBitrate",
+                "value": "10331049"
+              },
+              {
+                "name": "kIsPlatformVideoDecoder",
+                "value": "false"
+              },
+              {
+                "name": "kIsSingleOrigin",
+                "value": "true"
+              },
+              {
+                "name": "kIsAudioDecryptingDemuxerStream",
+                "value": "false"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "EFC1570C08F3E0A02727E4477EE7CC9C",
+            "events": [
+              {
+                "timestamp": 3127437.340448,
+                "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kStopping\"}"
+              },
+              {
+                "timestamp": 3127437.340481,
+                "value": "{\"event\":\"kWebMediaPlayerDestroyed\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "F452654D6850663668716835D898C8C5",
+            "events": [
+              {
+                "timestamp": 3127437.340833,
+                "value": "{\"created\":\"2026-11-06 18:48:12.159185 UTC\",\"event\":\"kMediaLogCreated\"}"
+              },
+              {
+                "timestamp": 3127437.340917,
+                "value": "{\"event\":\"kWebMediaPlayerCreated\",\"origin_url\":\"http://127.0.0.1:4191/\"}"
+              },
+              {
+                "timestamp": 3127437.340961,
+                "value": "{\"event\":\"kLoad\",\"url\":\"https://gateway.pinata.cloud/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "F452654D6850663668716835D898C8C5",
+            "properties": [
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": "Planet X — Music Nerd"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "F452654D6850663668716835D898C8C5",
+            "properties": [
+              {
+                "name": "kTotalBytes",
+                "value": "0x127ad24a"
+              },
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": "Planet X — Music Nerd"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "mode": "direct",
+      "status": "unavailable",
+      "error": "locator.evaluate: Error: Didnotreach100\n    at check (eval at evaluate (:311:30), <anonymous>:1:632)",
+      "native": [
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127452.668428,
+                "value": "{\"created\":\"2026-11-06 18:48:27.486395 UTC\",\"event\":\"kMediaLogCreated\"}"
+              },
+              {
+                "timestamp": 3127452.668768,
+                "value": "{\"event\":\"kWebMediaPlayerCreated\",\"origin_url\":\"http://127.0.0.1:4191/\"}"
+              },
+              {
+                "timestamp": 3127452.66888,
+                "value": "{\"event\":\"kLoad\",\"url\":\"https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "properties": [
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": ""
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "properties": [
+              {
+                "name": "kTotalBytes",
+                "value": "0x127ad24a"
+              },
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": ""
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127460.598269,
+                "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kStarting\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "properties": [
+              {
+                "name": "kIsRangeHeaderSupported",
+                "value": "true"
+              },
+              {
+                "name": "kIsStreaming",
+                "value": "false"
+              },
+              {
+                "name": "kRendererName",
+                "value": "RendererImpl"
+              },
+              {
+                "name": "kTotalBytes",
+                "value": "0x127ad24a"
+              },
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/"
+              },
+              {
+                "name": "kIsSingleOrigin",
+                "value": "true"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": ""
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127468.464159,
+                "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kPlaying\"}"
+              },
+              {
+                "timestamp": 3127468.461258,
+                "value": "{\"duration\":240.083333,\"event\":\"kDurationChanged\"}"
+              },
+              {
+                "timestamp": 3127468.470525,
+                "value": "{\"audio_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"},\"event\":\"kBufferingStateChanged\"}"
+              },
+              {
+                "timestamp": 3127468.461972,
+                "value": "{\"event\":\"kPlay\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "properties": [
+              {
+                "name": "kVideoDecoderName",
+                "value": "FFmpegVideoDecoder"
+              },
+              {
+                "name": "kIsStreaming",
+                "value": "false"
+              },
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/"
+              },
+              {
+                "name": "kAudioTracks",
+                "value": "[{\"bytes per channel\":4,\"bytes per frame\":8,\"channel layout\":\"STEREO\",\"channels\":2,\"codec\":\"aac\",\"codec delay\":0,\"discard decoder delay\":true,\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"profile\":\"unknown\",\"sample format\":\"Float 32-bit planar\",\"samples per second\":48000,\"seek preroll\":\"0us\"}]"
+              },
+              {
+                "name": "kRendererName",
+                "value": "RendererImpl"
+              },
+              {
+                "name": "kTotalBytes",
+                "value": "0x127ad24a"
+              },
+              {
+                "name": "kMaxDuration",
+                "value": "240.083333"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": ""
+              },
+              {
+                "name": "kIsPlatformAudioDecoder",
+                "value": "false"
+              },
+              {
+                "name": "kAudioDecoderName",
+                "value": "FFmpegAudioDecoder"
+              },
+              {
+                "name": "kVideoTracks",
+                "value": "[{\"alpha mode\":\"is_opaque\",\"codec\":\"h264\",\"coded size\":\"3000x3000\",\"color space\":{\"matrix\":\"BT709\",\"primaries\":\"BT709\",\"range\":\"LIMITED\",\"transfer\":\"BT709\"},\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"hdr metadata\":{},\"natural size\":\"3000x3000\",\"orientation\":\"0°\",\"profile\":\"h264 main\",\"visible rect\":\"0,0 3000x3000\"}]"
+              },
+              {
+                "name": "kIsRangeHeaderSupported",
+                "value": "true"
+              },
+              {
+                "name": "kIsVideoDecryptingDemuxerStream",
+                "value": "false"
+              },
+              {
+                "name": "kStartTime",
+                "value": "0.0"
+              },
+              {
+                "name": "kBitrate",
+                "value": "10331049"
+              },
+              {
+                "name": "kIsPlatformVideoDecoder",
+                "value": "false"
+              },
+              {
+                "name": "kIsSingleOrigin",
+                "value": "true"
+              },
+              {
+                "name": "kIsAudioDecryptingDemuxerStream",
+                "value": "false"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127471.684952,
+                "value": "{\"dimensions\":\"3000x3000\",\"event\":\"kVideoSizeChanged\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerPropertiesChanged",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "properties": [
+              {
+                "name": "kVideoDecoderName",
+                "value": "FFmpegVideoDecoder"
+              },
+              {
+                "name": "kIsStreaming",
+                "value": "false"
+              },
+              {
+                "name": "kFrameUrl",
+                "value": "http://127.0.0.1:4191/"
+              },
+              {
+                "name": "kAudioTracks",
+                "value": "[{\"bytes per channel\":4,\"bytes per frame\":8,\"channel layout\":\"STEREO\",\"channels\":2,\"codec\":\"aac\",\"codec delay\":0,\"discard decoder delay\":true,\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"profile\":\"unknown\",\"sample format\":\"Float 32-bit planar\",\"samples per second\":48000,\"seek preroll\":\"0us\"}]"
+              },
+              {
+                "name": "kResolution",
+                "value": "3000x3000"
+              },
+              {
+                "name": "kRendererName",
+                "value": "RendererImpl"
+              },
+              {
+                "name": "kTotalBytes",
+                "value": "0x127ad24a"
+              },
+              {
+                "name": "kMaxDuration",
+                "value": "240.083333"
+              },
+              {
+                "name": "kFrameTitle",
+                "value": ""
+              },
+              {
+                "name": "kIsPlatformAudioDecoder",
+                "value": "false"
+              },
+              {
+                "name": "kAudioDecoderName",
+                "value": "FFmpegAudioDecoder"
+              },
+              {
+                "name": "kVideoTracks",
+                "value": "[{\"alpha mode\":\"is_opaque\",\"codec\":\"h264\",\"coded size\":\"3000x3000\",\"color space\":{\"matrix\":\"BT709\",\"primaries\":\"BT709\",\"range\":\"LIMITED\",\"transfer\":\"BT709\"},\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"hdr metadata\":{},\"natural size\":\"3000x3000\",\"orientation\":\"0°\",\"profile\":\"h264 main\",\"visible rect\":\"0,0 3000x3000\"}]"
+              },
+              {
+                "name": "kIsRangeHeaderSupported",
+                "value": "true"
+              },
+              {
+                "name": "kIsVideoDecryptingDemuxerStream",
+                "value": "false"
+              },
+              {
+                "name": "kStartTime",
+                "value": "0.0"
+              },
+              {
+                "name": "kBitrate",
+                "value": "10331049"
+              },
+              {
+                "name": "kIsPlatformVideoDecoder",
+                "value": "false"
+              },
+              {
+                "name": "kIsSingleOrigin",
+                "value": "true"
+              },
+              {
+                "name": "kIsAudioDecryptingDemuxerStream",
+                "value": "false"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127476.823511,
+                "value": "{\"event\":\"kBufferingStateChanged\",\"video_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"}}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127477.216761,
+                "value": "{\"event\":\"kSeek\",\"seek_target\":98.0}"
+              },
+              {
+                "timestamp": 3127477.216789,
+                "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kSeeking\"}"
+              },
+              {
+                "timestamp": 3127477.219905,
+                "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kPlaying\"}"
+              },
+              {
+                "timestamp": 3127477.219847,
+                "value": "{\"event\":\"kBufferingStateChanged\",\"video_buffering_state\":{\"state\":\"BUFFERING_HAVE_NOTHING\"}}"
+              },
+              {
+                "timestamp": 3127477.217077,
+                "value": "{\"audio_buffering_state\":{\"state\":\"BUFFERING_HAVE_NOTHING\"},\"event\":\"kBufferingStateChanged\"}"
+              },
+              {
+                "timestamp": 3127476.823626,
+                "value": "{\"event\":\"kBufferingStateChanged\",\"pipeline_buffering_state\":{\"for_suspended_start\":false,\"state\":\"BUFFERING_HAVE_ENOUGH\"}}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127481.450634,
+                "value": "{\"audio_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"},\"event\":\"kBufferingStateChanged\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127488.221134,
+                "value": "{\"event\":\"kBufferingStateChanged\",\"video_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"}}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127488.710769,
+                "value": "{\"event\":\"kBufferingStateChanged\",\"video_buffering_state\":{\"reason\":\"DEMUXER_UNDERFLOW\",\"state\":\"BUFFERING_HAVE_NOTHING\"}}"
+              },
+              {
+                "timestamp": 3127488.221219,
+                "value": "{\"event\":\"kBufferingStateChanged\",\"pipeline_buffering_state\":{\"for_suspended_start\":false,\"state\":\"BUFFERING_HAVE_ENOUGH\"}}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127489.439686,
+                "value": "{\"audio_buffering_state\":{\"reason\":\"DEMUXER_UNDERFLOW\",\"state\":\"BUFFERING_HAVE_NOTHING\"},\"event\":\"kBufferingStateChanged\"}"
+              },
+              {
+                "timestamp": 3127489.44051,
+                "value": "{\"event\":\"kBufferingStateChanged\",\"pipeline_buffering_state\":{\"for_suspended_start\":false,\"reason\":\"DEMUXER_UNDERFLOW\",\"state\":\"BUFFERING_HAVE_NOTHING\"}}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127493.736525,
+                "value": "{\"audio_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"},\"event\":\"kBufferingStateChanged\"}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127514.008791,
+                "value": "{\"event\":\"kBufferingStateChanged\",\"video_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"}}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127514.365715,
+                "value": "{\"event\":\"kBufferingStateChanged\",\"video_buffering_state\":{\"reason\":\"DEMUXER_UNDERFLOW\",\"state\":\"BUFFERING_HAVE_NOTHING\"}}"
+              },
+              {
+                "timestamp": 3127514.008875,
+                "value": "{\"event\":\"kBufferingStateChanged\",\"pipeline_buffering_state\":{\"for_suspended_start\":false,\"state\":\"BUFFERING_HAVE_ENOUGH\"}}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playerEventsAdded",
+          "data": {
+            "playerId": "23A7EE8B278A1D50C52DD8B96A024814",
+            "events": [
+              {
+                "timestamp": 3127515.312397,
+                "value": "{\"audio_buffering_state\":{\"reason\":\"DEMUXER_UNDERFLOW\",\"state\":\"BUFFERING_HAVE_NOTHING\"},\"event\":\"kBufferingStateChanged\"}"
+              },
+              {
+                "timestamp": 3127515.312442,
+                "value": "{\"event\":\"kBufferingStateChanged\",\"pipeline_buffering_state\":{\"for_suspended_start\":false,\"reason\":\"DEMUXER_UNDERFLOW\",\"state\":\"BUFFERING_HAVE_NOTHING\"}}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

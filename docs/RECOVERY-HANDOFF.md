@@ -2,6 +2,12 @@
 
 Updated November 6, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
+## Latest artist correction and player work
+
+Pete rechecked Planet X's original IPFS media and confirmed the doubling around 1:43 is present in the source itself. This supersedes his earlier app-only report and the unresolved-app framing retained below as historical investigation. No app-specific doubling defect is established. He has a clean master; attachment is pending. Preserve the immutable original CID and provenance, and treat any corrected playback media as a separately labeled artist-supplied master after checking timing and artist authorization. No source audio has been replaced.
+
+The separate requested player changes are in progress: Play stays in browsing context, titles navigate to songs/artists, expansion is explicit, mobile layout fits the viewport, and seeking previews during drag and commits once on release. Publication evidence will identify the completed release.
+
 ## Current publication
 
 - Repository: https://github.com/xdjs/web3-music-repo — PR #4 merged to `main` at `b29ccddfc2d5583c1597e5a43f349b58d6e41abc`. Deployment uses that exact clean commit; its tree matches the tested branch (verified by git diff).

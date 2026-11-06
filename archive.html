@@ -131,19 +131,23 @@
       <div class="now-playing">
         <button
           id="open-now-playing"
-          aria-label="Open Now Playing"
+          aria-label="Expand Now Playing"
           aria-haspopup="dialog"
           aria-controls="now-playing-dialog"
         >
-          <img id="player-art" alt="" />
+          <img id="player-art" alt="" /><video
+            id="audio"
+            playsinline
+            preload="metadata"
+          ></video
+          ><span
+            class="art-expand-icon"
+            aria-hidden="true"
+            data-nav-icon="expand"
+          ></span>
         </button>
         <div>
-          <button
-            id="player-title"
-            aria-haspopup="dialog"
-            aria-controls="now-playing-dialog"
-          ></button
-          ><span id="player-artist"></span
+          <a id="player-title" href="#"></a><a id="player-artist" href="#"></a
           ><small id="player-source" role="status" aria-live="polite"></small>
         </div>
         <button
@@ -191,6 +195,15 @@
         >
       </div>
       <div class="player-tools">
+        <button
+          id="expand-now-playing"
+          class="icon"
+          aria-label="Expand Now Playing"
+          aria-haspopup="dialog"
+          aria-controls="now-playing-dialog"
+        >
+          <span data-nav-icon="expand" aria-hidden="true"></span>
+        </button>
         <button id="proof-now" class="text-button">View provenance ↗</button
         ><button id="queue-now" class="icon" aria-label="Show queue">
           <span data-nav-icon="queue" aria-hidden="true"></span></button
@@ -207,7 +220,11 @@
         />
       </div>
     </section>
-    <dialog id="now-playing-dialog" aria-labelledby="now-playing-title">
+    <dialog
+      id="now-playing-dialog"
+      aria-labelledby="now-playing-title"
+      aria-modal="true"
+    >
       <div class="now-playing-bar">
         <button
           class="icon"
@@ -226,17 +243,21 @@
         ></button>
       </div>
       <div class="now-playing-content">
-        <div class="now-playing-media">
-          <img
-            class="now-playing-art"
-            data-now="art"
-            alt="Recording artwork"
-          /><video id="audio" playsinline preload="metadata"></video>
+        <div class="now-playing-visual">
+          <div class="now-playing-media">
+            <img
+              class="now-playing-art"
+              data-now="art"
+              alt="Recording artwork"
+            />
+          </div>
         </div>
         <div class="now-playing-heading">
           <div>
-            <h1 id="now-playing-title" data-now="title"></h1>
-            <p data-now="artist"></p>
+            <h1 id="now-playing-title">
+              <a data-now="title" data-now-link href="#"></a>
+            </h1>
+            <p><a data-now="artist" data-now-link href="#"></a></p>
           </div>
           <button
             class="icon heart"
