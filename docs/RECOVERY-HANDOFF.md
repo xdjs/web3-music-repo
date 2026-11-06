@@ -25,7 +25,7 @@ The working directory has no Git repository. The original documentary checkout a
 - 44 of the verified messages match 15 existing catalog tokens. The others remain saved without being attributed to a different song.
 - `scripts/recover-zora-onchain-comments.mjs`, `src/zora-comments.mjs`, `data/zora-onchain-comments.json`, and `evidence/zora-comments/` contain the pipeline and evidence.
 - Song comments now separate onchain mint comments from Sound web-archive comments. The event wallet is labeled as mint recipient, not assumed author.
-- New adversarial provenance tests pass; total unit tests now 50. Browser verification is recorded separately in `data/zora-comments-ui-verification.json` when successful.
+- New adversarial provenance tests pass; total unit tests now 50. Browser checks passed at 1440px/390px in light/dark: nine exact-token comments on Imagine, no overflow, no tab-scroll jump, and Sound comments remain separately labeled. Evidence: `data/zora-comments-ui-verification.json`.
 - `data/park-missing-token-reads.json` has successful current metadata reads for The Park token 1 (trailer) and token 12 (Onchain Summer), not yet integrated. Unmatched comment tokens also include 18 and 19.
 
 The sections below preserve the previous checkpoint; the resumed-work section supersedes its candidate-verification and repository-location statements.
