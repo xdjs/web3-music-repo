@@ -2,6 +2,7 @@ import {
   collectionSelect,
   filterCollectionRecords,
 } from "./collection-filters.mjs";
+import { updateCollectionResults } from "./collection-render.mjs";
 import {
   createWalletLibraryState,
   walletChains,
@@ -271,12 +272,11 @@ export function mountWalletLibrary({
     if (!target || target.dataset.walletAddress !== snapshot.address) return;
     const resultsNode = target.querySelector("[data-wallet-results]");
     if (!resultsNode) return;
-    const y = scrollY;
     const active = document.activeElement,
       field = active?.dataset.walletFilter;
     const selection =
       field === "query" ? [active.selectionStart, active.selectionEnd] : null;
-    resultsNode.innerHTML = results();
+    updateCollectionResults(resultsNode, results());
     if (field) {
       const replacement = resultsNode.querySelector(
         `[data-wallet-filter="${field}"]`,
@@ -284,7 +284,6 @@ export function mountWalletLibrary({
       replacement?.focus({ preventScroll: true });
       if (selection) replacement?.setSelectionRange(...selection);
     }
-    window.scrollTo({ top: y, behavior: "instant" });
   }
   function accountChanged(event) {
     const before = state.snapshot();
@@ -346,7 +345,7 @@ export function mountWalletLibrary({
   });
   document.addEventListener("change", (event) => {
     const key = event.target.dataset.walletFilter;
-    if (key && Object.hasOwn(filters, key)) {
+    if (key && key !== "query" && Object.hasOwn(filters, key)) {
       filters[key] = event.target.value;
       visibleLimit = 40;
       patchResults();

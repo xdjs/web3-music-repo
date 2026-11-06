@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { gzipSync } from "node:zlib";
 import { buildSharePage, sharePageOrigin } from "../src/share-pages.mjs";
 import { encodePlaylistShare } from "../src/playlist-share.mjs";
-const origin = "https://web3-music-repo.vercel.app";
+const origin = "https://web3-music-archive.vercel.app";
 const bundle = {
   records: [
     {
@@ -56,7 +56,7 @@ test("record social tags contain entity title and artwork and retain the exact a
   );
   assert.match(
     result.body,
-    /name="twitter:image" content="https:\/\/web3-music-repo.vercel.app\/recovered\/song-1.webp"/,
+    /name="twitter:image" content="https:\/\/web3-music-archive.vercel.app\/recovered\/song-1.webp"/,
   );
   assert.equal(result.entity.destination, "/#record/song-1");
   assert.match(result.body, /location.replace\("\/#record\/song-1"\)/);
@@ -121,7 +121,7 @@ test("metadata text is escaped and unsafe artwork URLs fall back without becomin
   assert.equal(result.status, 200);
   assert.match(result.body, /&lt;\/script&gt;/);
   assert.doesNotMatch(result.body, /<img src=x|javascript:|onload="bad/);
-  assert.match(result.body, /social\/music-nft-recovery-v1.png/);
+  assert.match(result.body, /social\/web3-music-archive-v1.png/);
   assert.equal((result.body.match(/<script>/g) || []).length, 1);
 });
 test("share origin rejects forwarded or arbitrary host influence and permits exact local development host", () => {

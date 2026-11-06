@@ -1,0 +1,644 @@
+{
+  "checkedAt": "2026-11-06T21:59:56.611Z",
+  "base": "http://127.0.0.1:4191",
+  "scope": "Actual app with deterministic injected selection random values only to exercise curated hero variants; reload and revisit use actual selection/storage behavior.",
+  "cases": [
+    {
+      "width": 1440,
+      "id": "record-69c77ef0",
+      "title": "MIAMI FREESTYLE (ft. Aly, Tarot, Elle Symone, Early, & TK | prod. AbJo)",
+      "errors": [],
+      "actualHero": "record-69c77ef0",
+      "light": {
+        "overflow": false,
+        "hero": {
+          "x": 270,
+          "y": 196.1875,
+          "width": 1130,
+          "height": 384.90625,
+          "top": 196.1875,
+          "right": 1400,
+          "bottom": 581.09375,
+          "left": 270
+        },
+        "title": {
+          "x": 310,
+          "y": 271.1875,
+          "width": 288.234375,
+          "height": 114.90625,
+          "top": 271.1875,
+          "right": 598.234375,
+          "bottom": 386.09375,
+          "left": 310
+        },
+        "actions": {
+          "x": 310,
+          "y": 435.09375,
+          "width": 288.234375,
+          "height": 46,
+          "top": 435.09375,
+          "right": 598.234375,
+          "bottom": 481.09375,
+          "left": 310
+        },
+        "bottom": {
+          "x": 310,
+          "y": 531.09375,
+          "width": 1050,
+          "height": 35,
+          "top": 531.09375,
+          "right": 1360,
+          "bottom": 566.09375,
+          "left": 310
+        }
+      },
+      "dark": {
+        "overflow": false,
+        "hero": {
+          "x": 270,
+          "y": 196.1875,
+          "width": 1130,
+          "height": 384.90625,
+          "top": 196.1875,
+          "right": 1400,
+          "bottom": 581.09375,
+          "left": 270
+        },
+        "title": {
+          "x": 310,
+          "y": 271.1875,
+          "width": 288.234375,
+          "height": 114.90625,
+          "top": 271.1875,
+          "right": 598.234375,
+          "bottom": 386.09375,
+          "left": 310
+        },
+        "actions": {
+          "x": 310,
+          "y": 435.09375,
+          "width": 288.234375,
+          "height": 46,
+          "top": 435.09375,
+          "right": 598.234375,
+          "bottom": 481.09375,
+          "left": 310
+        },
+        "bottom": {
+          "x": 310,
+          "y": 531.09375,
+          "width": 1050,
+          "height": 35,
+          "top": 531.09375,
+          "right": 1360,
+          "bottom": 566.09375,
+          "left": 310
+        }
+      },
+      "artistLinkWorks": true,
+      "revisitStable": true,
+      "afterReload": "record-not4me",
+      "afterArtists": [
+        "#artist/artist-dave-b",
+        "#artist/dot",
+        "#artist/artist-tomi",
+        "#artist/dutchyyy",
+        "#artist/artist-grentperez",
+        "#artist/emma-miller",
+        "#artist/artist-notd"
+      ],
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "id": "record-not4me",
+      "title": "NOT4ME",
+      "errors": [],
+      "actualHero": "record-not4me",
+      "light": {
+        "overflow": false,
+        "hero": {
+          "x": 270,
+          "y": 196.1875,
+          "width": 1130,
+          "height": 370,
+          "top": 196.1875,
+          "right": 1400,
+          "bottom": 566.1875,
+          "left": 270
+        },
+        "title": {
+          "x": 310,
+          "y": 292.453125,
+          "width": 258,
+          "height": 57.453125,
+          "top": 292.453125,
+          "right": 568,
+          "bottom": 349.90625,
+          "left": 310
+        },
+        "actions": {
+          "x": 310,
+          "y": 398.90625,
+          "width": 258,
+          "height": 46,
+          "top": 398.90625,
+          "right": 568,
+          "bottom": 444.90625,
+          "left": 310
+        },
+        "bottom": {
+          "x": 310,
+          "y": 516.1875,
+          "width": 1050,
+          "height": 35,
+          "top": 516.1875,
+          "right": 1360,
+          "bottom": 551.1875,
+          "left": 310
+        }
+      },
+      "dark": {
+        "overflow": false,
+        "hero": {
+          "x": 270,
+          "y": 196.1875,
+          "width": 1130,
+          "height": 370,
+          "top": 196.1875,
+          "right": 1400,
+          "bottom": 566.1875,
+          "left": 270
+        },
+        "title": {
+          "x": 310,
+          "y": 292.453125,
+          "width": 258,
+          "height": 57.453125,
+          "top": 292.453125,
+          "right": 568,
+          "bottom": 349.90625,
+          "left": 310
+        },
+        "actions": {
+          "x": 310,
+          "y": 398.90625,
+          "width": 258,
+          "height": 46,
+          "top": 398.90625,
+          "right": 568,
+          "bottom": 444.90625,
+          "left": 310
+        },
+        "bottom": {
+          "x": 310,
+          "y": 516.1875,
+          "width": 1050,
+          "height": 35,
+          "top": 516.1875,
+          "right": 1360,
+          "bottom": 551.1875,
+          "left": 310
+        }
+      },
+      "artistLinkWorks": true,
+      "revisitStable": true,
+      "afterReload": "record-69c77ef0",
+      "afterArtists": [
+        "#artist/artist-dave-b",
+        "#artist/artist-johnny-woog",
+        "#artist/artist-tomi",
+        "#artist/dutchyyy",
+        "#artist/artist-grentperez",
+        "#artist/emma-miller",
+        "#artist/artist-notd"
+      ],
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "id": "record-00396a23",
+      "title": "Sara Phillips - i don't feel like dancing anymore",
+      "errors": [],
+      "actualHero": "record-00396a23",
+      "light": {
+        "overflow": false,
+        "hero": {
+          "x": 270,
+          "y": 196.1875,
+          "width": 1130,
+          "height": 384.90625,
+          "top": 196.1875,
+          "right": 1400,
+          "bottom": 581.09375,
+          "left": 270
+        },
+        "title": {
+          "x": 310,
+          "y": 271.1875,
+          "width": 610,
+          "height": 114.90625,
+          "top": 271.1875,
+          "right": 920,
+          "bottom": 386.09375,
+          "left": 310
+        },
+        "actions": {
+          "x": 310,
+          "y": 435.09375,
+          "width": 610,
+          "height": 46,
+          "top": 435.09375,
+          "right": 920,
+          "bottom": 481.09375,
+          "left": 310
+        },
+        "bottom": {
+          "x": 310,
+          "y": 531.09375,
+          "width": 1050,
+          "height": 35,
+          "top": 531.09375,
+          "right": 1360,
+          "bottom": 566.09375,
+          "left": 310
+        }
+      },
+      "dark": {
+        "overflow": false,
+        "hero": {
+          "x": 270,
+          "y": 196.1875,
+          "width": 1130,
+          "height": 384.90625,
+          "top": 196.1875,
+          "right": 1400,
+          "bottom": 581.09375,
+          "left": 270
+        },
+        "title": {
+          "x": 310,
+          "y": 271.1875,
+          "width": 610,
+          "height": 114.90625,
+          "top": 271.1875,
+          "right": 920,
+          "bottom": 386.09375,
+          "left": 310
+        },
+        "actions": {
+          "x": 310,
+          "y": 435.09375,
+          "width": 610,
+          "height": 46,
+          "top": 435.09375,
+          "right": 920,
+          "bottom": 481.09375,
+          "left": 310
+        },
+        "bottom": {
+          "x": 310,
+          "y": 531.09375,
+          "width": 1050,
+          "height": 35,
+          "top": 531.09375,
+          "right": 1360,
+          "bottom": 566.09375,
+          "left": 310
+        }
+      },
+      "artistLinkWorks": true,
+      "revisitStable": true,
+      "afterReload": "park-sound-rainwater",
+      "afterArtists": [
+        "#artist/artist-dave-b",
+        "#artist/dot",
+        "#artist/artist-tomi",
+        "#artist/dutchyyy",
+        "#artist/artist-grentperez",
+        "#artist/emma-miller",
+        "#artist/artist-notd"
+      ],
+      "passed": true
+    },
+    {
+      "width": 390,
+      "id": "record-69c77ef0",
+      "title": "MIAMI FREESTYLE (ft. Aly, Tarot, Elle Symone, Early, & TK | prod. AbJo)",
+      "errors": [],
+      "actualHero": "record-69c77ef0",
+      "light": {
+        "overflow": false,
+        "hero": {
+          "x": 20,
+          "y": 183.1875,
+          "width": 350,
+          "height": 365,
+          "top": 183.1875,
+          "right": 370,
+          "bottom": 548.1875,
+          "left": 20
+        },
+        "title": {
+          "x": 45,
+          "y": 256.25,
+          "width": 243.890625,
+          "height": 81.875,
+          "top": 256.25,
+          "right": 288.890625,
+          "bottom": 338.125,
+          "left": 45
+        },
+        "actions": {
+          "x": 45,
+          "y": 385.125,
+          "width": 243.890625,
+          "height": 44,
+          "top": 385.125,
+          "right": 288.890625,
+          "bottom": 429.125,
+          "left": 45
+        },
+        "bottom": {
+          "x": 45,
+          "y": 497.8125,
+          "width": 300,
+          "height": 35.375,
+          "top": 497.8125,
+          "right": 345,
+          "bottom": 533.1875,
+          "left": 45
+        }
+      },
+      "dark": {
+        "overflow": false,
+        "hero": {
+          "x": 20,
+          "y": 183.1875,
+          "width": 350,
+          "height": 365,
+          "top": 183.1875,
+          "right": 370,
+          "bottom": 548.1875,
+          "left": 20
+        },
+        "title": {
+          "x": 45,
+          "y": 256.25,
+          "width": 243.890625,
+          "height": 81.875,
+          "top": 256.25,
+          "right": 288.890625,
+          "bottom": 338.125,
+          "left": 45
+        },
+        "actions": {
+          "x": 45,
+          "y": 385.125,
+          "width": 243.890625,
+          "height": 44,
+          "top": 385.125,
+          "right": 288.890625,
+          "bottom": 429.125,
+          "left": 45
+        },
+        "bottom": {
+          "x": 45,
+          "y": 497.8125,
+          "width": 300,
+          "height": 35.375,
+          "top": 497.8125,
+          "right": 345,
+          "bottom": 533.1875,
+          "left": 45
+        }
+      },
+      "artistLinkWorks": true,
+      "revisitStable": true,
+      "afterReload": "record-not4me",
+      "afterArtists": [
+        "#artist/artist-dave-b",
+        "#artist/dot",
+        "#artist/artist-tomi",
+        "#artist/dutchyyy",
+        "#artist/artist-grentperez",
+        "#artist/emma-miller",
+        "#artist/artist-notd"
+      ],
+      "passed": true
+    },
+    {
+      "width": 390,
+      "id": "record-not4me",
+      "title": "NOT4ME",
+      "errors": [],
+      "actualHero": "record-not4me",
+      "light": {
+        "overflow": false,
+        "hero": {
+          "x": 20,
+          "y": 183.1875,
+          "width": 350,
+          "height": 365,
+          "top": 183.1875,
+          "right": 370,
+          "bottom": 548.1875,
+          "left": 20
+        },
+        "title": {
+          "x": 45,
+          "y": 276.71875,
+          "width": 232.640625,
+          "height": 40.9375,
+          "top": 276.71875,
+          "right": 277.640625,
+          "bottom": 317.65625,
+          "left": 45
+        },
+        "actions": {
+          "x": 45,
+          "y": 364.65625,
+          "width": 232.640625,
+          "height": 44,
+          "top": 364.65625,
+          "right": 277.640625,
+          "bottom": 408.65625,
+          "left": 45
+        },
+        "bottom": {
+          "x": 45,
+          "y": 497.8125,
+          "width": 300,
+          "height": 35.375,
+          "top": 497.8125,
+          "right": 345,
+          "bottom": 533.1875,
+          "left": 45
+        }
+      },
+      "dark": {
+        "overflow": false,
+        "hero": {
+          "x": 20,
+          "y": 183.1875,
+          "width": 350,
+          "height": 365,
+          "top": 183.1875,
+          "right": 370,
+          "bottom": 548.1875,
+          "left": 20
+        },
+        "title": {
+          "x": 45,
+          "y": 276.71875,
+          "width": 232.640625,
+          "height": 40.9375,
+          "top": 276.71875,
+          "right": 277.640625,
+          "bottom": 317.65625,
+          "left": 45
+        },
+        "actions": {
+          "x": 45,
+          "y": 364.65625,
+          "width": 232.640625,
+          "height": 44,
+          "top": 364.65625,
+          "right": 277.640625,
+          "bottom": 408.65625,
+          "left": 45
+        },
+        "bottom": {
+          "x": 45,
+          "y": 497.8125,
+          "width": 300,
+          "height": 35.375,
+          "top": 497.8125,
+          "right": 345,
+          "bottom": 533.1875,
+          "left": 45
+        }
+      },
+      "artistLinkWorks": true,
+      "revisitStable": true,
+      "afterReload": "record-69c77ef0",
+      "afterArtists": [
+        "#artist/artist-dave-b",
+        "#artist/artist-johnny-woog",
+        "#artist/artist-tomi",
+        "#artist/dutchyyy",
+        "#artist/artist-grentperez",
+        "#artist/emma-miller",
+        "#artist/artist-notd"
+      ],
+      "passed": true
+    },
+    {
+      "width": 390,
+      "id": "record-00396a23",
+      "title": "Sara Phillips - i don't feel like dancing anymore",
+      "errors": [],
+      "actualHero": "record-00396a23",
+      "light": {
+        "overflow": false,
+        "hero": {
+          "x": 20,
+          "y": 183.1875,
+          "width": 350,
+          "height": 377.8125,
+          "top": 183.1875,
+          "right": 370,
+          "bottom": 561,
+          "left": 20
+        },
+        "title": {
+          "x": 45,
+          "y": 242.1875,
+          "width": 300,
+          "height": 122.8125,
+          "top": 242.1875,
+          "right": 345,
+          "bottom": 365,
+          "left": 45
+        },
+        "actions": {
+          "x": 45,
+          "y": 412,
+          "width": 300,
+          "height": 44,
+          "top": 412,
+          "right": 345,
+          "bottom": 456,
+          "left": 45
+        },
+        "bottom": {
+          "x": 45,
+          "y": 510.625,
+          "width": 300,
+          "height": 35.375,
+          "top": 510.625,
+          "right": 345,
+          "bottom": 546,
+          "left": 45
+        }
+      },
+      "dark": {
+        "overflow": false,
+        "hero": {
+          "x": 20,
+          "y": 183.1875,
+          "width": 350,
+          "height": 377.8125,
+          "top": 183.1875,
+          "right": 370,
+          "bottom": 561,
+          "left": 20
+        },
+        "title": {
+          "x": 45,
+          "y": 242.1875,
+          "width": 300,
+          "height": 122.8125,
+          "top": 242.1875,
+          "right": 345,
+          "bottom": 365,
+          "left": 45
+        },
+        "actions": {
+          "x": 45,
+          "y": 412,
+          "width": 300,
+          "height": 44,
+          "top": 412,
+          "right": 345,
+          "bottom": 456,
+          "left": 45
+        },
+        "bottom": {
+          "x": 45,
+          "y": 510.625,
+          "width": 300,
+          "height": 35.375,
+          "top": 510.625,
+          "right": 345,
+          "bottom": 546,
+          "left": 45
+        }
+      },
+      "artistLinkWorks": true,
+      "revisitStable": true,
+      "afterReload": "park-sound-rainwater",
+      "afterArtists": [
+        "#artist/artist-dave-b",
+        "#artist/dot",
+        "#artist/artist-tomi",
+        "#artist/dutchyyy",
+        "#artist/artist-grentperez",
+        "#artist/emma-miller",
+        "#artist/artist-notd"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

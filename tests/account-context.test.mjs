@@ -24,9 +24,9 @@ test("only a top-level browsing context may initialize the account SDK", () => {
 test("standalone sign-in stays on this app's origin and drops arbitrary query/hash input", () => {
   assert.equal(
     standaloneAccountURL(
-      "https://web3-music-repo.vercel.app/?return=https://evil.invalid/#record/abc",
+      "https://web3-music-archive.vercel.app/?return=https://evil.invalid/#record/abc",
     ),
-    "https://web3-music-repo.vercel.app/#me",
+    "https://web3-music-archive.vercel.app/#me",
   );
   assert.equal(
     standaloneAccountURL("http://127.0.0.1:4191/#artist/pete-rango"),
@@ -40,6 +40,6 @@ test("standalone sign-in stays on this app's origin and drops arbitrary query/ha
   ])
     assert.equal(
       standaloneAccountURL(value),
-      "https://web3-music-repo.vercel.app/#me",
+      "https://web3-music-archive.vercel.app/#me",
     );
 });

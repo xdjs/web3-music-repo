@@ -2,7 +2,19 @@
 
 Updated November 6, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
-## Latest production release — collector discovery and embedded sign-in
+## Homepage rotation, automatic playlists and temporary site name
+
+The public site is now named **web3-music-archive**. The new address is https://web3-music-archive.vercel.app/ on the same Vercel project; the GitHub repository remains `xdjs/web3-music-repo`. Both old and new production origins are explicitly allowed in the existing Privy recovery client. Do not redirect the old origin: browser-only playlists live there until their owner signs in and waits for automatic account sync, then opens the new origin. Canonical share URLs and the new Music Nerd social image use the new address. Lab name/link/cover publication is verified separately in its release receipt.
+
+Each fresh visit chooses a different random featured song from the seven editorial picks and seven random profiles from 314 eligible artists/collaborators with local portraits. Selection stays stable while navigating and playing. Specific MIAMI credits/waveform do not appear on other songs. See `docs/home-rotation.md`.
+
+Manual playlist save/load controls are replaced by automatic signed-in sync: account-scoped local caches, guest import, offline retention, revision-aware merges, visible conflict copies, retries, and logout/account-switch guards. Browser fixtures exercise cross-device changes but are not a real-user OTP or private-account persistence test. See `docs/playlist-automatic-sync.md`.
+
+Collection updates reconcile mounted cards rather than rebuilding their images and preserve the viewport anchor as results arrive. Native browser tests show one artwork request, zero extra loads, and zero card displacement in the delayed-network case. Slow remote gateways still affect image/media loading; no listening transcodes were introduced. See `docs/collection-render-performance.md`.
+
+Validation: 307 unit tests pass; syntax, formatting and production build pass. Desktop/mobile light/dark homepage, artist row, playlist UI and name/thumbnail checks passed. Deployment receipt follows publication.
+
+## Previous production release — collector discovery and embedded sign-in
 
 PR #8 merged as `2e614775e1526b7376bb26fb164409d36a531ab3` and deployed from that clean commit. Production is READY at https://web3-music-repo.vercel.app/ (`dpl_8tQvc6RN2exVwzfTSD4yYdVRNzpN`). Served collector/search/account module hashes match source. Actual production wallet/name/ENS navigation, pagination and filters pass; the real Lab embed opens a standalone Privy email/wallet modal without nested auth requests or observed page errors. No OTP or signature was submitted. See `data/collector-production-source-verification.json`, `data/collector-discovery-production-verification.json`, and `data/production-embedded-account-verification.json`.
 

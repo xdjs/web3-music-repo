@@ -49,7 +49,12 @@ await page.route("**/account/account-login.js", (route) =>
 );
 await page.route("**/api/auth/config", (route) =>
   route.fulfill({
-    json: { enabled: true, appId: "fixture", clientId: "fixture" },
+    json: {
+      enabled: true,
+      appId: "fixture",
+      clientId: "fixture",
+      playlistStorage: "private-blob",
+    },
   }),
 );
 await page.route("**/api/account", (route) =>
@@ -64,12 +69,33 @@ await page.route("**/api/account", (route) =>
   }),
 );
 await page.route("**/api/account/playlists", (route) => {
+  if (needsSetup)
+    return route.fulfill({
+      status: 409,
+      json: {
+        needsMusicNerdAccount: true,
+        error: "Finish Music Nerd account setup",
+      },
+    });
   if (route.request().method() === "PUT") {
     const input = route.request().postDataJSON();
     assert.equal(input.revision, library.revision);
     library = { revision: library.revision + 1, playlists: input.playlists };
   }
   return route.fulfill({ json: library });
+});
+await page.addInitScript(() => {
+  if (!localStorage.getItem("mn-archive-playlists-v1"))
+    localStorage.setItem(
+      "mn-archive-playlists-v1",
+      JSON.stringify([
+        {
+          id: "fixture-list",
+          name: "Test playlist",
+          recordIds: ["record-not4me"],
+        },
+      ]),
+    );
 });
 try {
   await page.goto("http://127.0.0.1:4191/#me");
@@ -107,23 +133,19 @@ try {
       });
       checks.push({ width, theme, linkedWallets: 2, overflow: false });
     }
-  await page.evaluate(() =>
-    localStorage.setItem(
-      "mn-archive-playlists-v1",
-      JSON.stringify([
-        {
-          id: "fixture-list",
-          name: "Test playlist",
-          recordIds: ["record-not4me"],
-        },
-      ]),
-    ),
-  );
-  await page.getByRole("button", { name: "Save playlists to account" }).click();
   await page
-    .getByText("Playlists saved to your account on this archive server.")
+    .locator("[data-account-playlist-status]")
+    .filter({ hasText: "Saved" })
     .waitFor();
   assert.equal(library.playlists[0].name, "Test playlist");
+  assert.equal(
+    await page
+      .getByRole("button", {
+        name: /Save playlists to account|Load account playlists/,
+      })
+      .count(),
+    0,
+  );
   await page.getByRole("button", { name: "Sign out", exact: true }).click();
   await page
     .locator(".profile-account-card")
@@ -144,29 +166,15 @@ try {
   needsSetup = false;
   await page.getByRole("button", { name: "Retry account connection" }).click();
   await page.getByRole("heading", { name: "Test listener" }).waitFor();
-  await page.evaluate(() =>
-    localStorage.setItem("mn-archive-playlists-v1", "[]"),
-  );
-  page.once("dialog", (dialog) => dialog.accept());
-  await Promise.all([
-    page.waitForEvent("load"),
-    page.getByRole("button", { name: "Load account playlists" }).click(),
-  ]);
-  await page.waitForURL("**/#me?tab=playlists");
-  await page.waitForLoadState("domcontentloaded");
-  assert.equal(
-    await page.evaluate(
-      () => JSON.parse(localStorage.getItem("mn-archive-playlists-v1"))[0].name,
-    ),
-    "Test playlist",
-  );
+  await page.goto("http://127.0.0.1:4191/#me?tab=playlists");
+  await page.getByText("Test playlist", { exact: true }).waitFor();
   assert.deepEqual(errors, []);
   const result = {
     checkedAt: new Date().toISOString(),
     scope:
       "Real app components with mocked Privy SDK and account HTTP responses; verifies UI state and browser playlist flow, not real authentication.",
     checks,
-    saveLoad: true,
+    automaticSync: true,
     linkWallet: true,
     onboardingRetry: true,
     logoutClearsWallets: true,

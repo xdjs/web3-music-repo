@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-06T22:10:50.591260+00:00",
+  "command": "npm test",
+  "tests": 307,
+  "passed": 307,
+  "failed": 0,
+  "durationMs": 3906.399875,
+  "syntax": "passed",
+  "format": "passed",
+  "build": "passed"
+}

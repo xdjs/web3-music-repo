@@ -1,10 +1,10 @@
-# web3-music-repo
+# web3-music-archive
 
 Music Nerd’s music NFT recovery app: listen to recordings, browse artists, inspect collectors and provenance, and make playlists. This is a separate project from [music-nft-era](https://github.com/xdjs/music-nft-era), whose initial catalog and research helped seed it.
 
 Created and originated by **Pete Rango**, with implementation and recovery assistance from Codex.
 
-Live app: **https://web3-music-repo.vercel.app**. [Music Nerd Lab listing](https://lab.musicnerd.net/peterango/music-nft-recovery). Publication is separate from a claim of complete platform recovery.
+Live app: **https://web3-music-archive.vercel.app**. [Music Nerd Lab listing](https://lab.musicnerd.net/peterango/music-nft-recovery). Publication is separate from a claim of complete platform recovery.
 
 ## Run locally
 

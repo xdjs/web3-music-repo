@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-06T22:03:57.734Z",
+  "scope": "Real account/profile/playlist components with fixture Privy identity and optimistic-revision HTTP service. No real login, account or production data writes.",
+  "checks": [
+    "Initial guest/cloud merge and automatic create saved without manual controls",
+    "Offline edit survives reload and saves after online event",
+    "409 concurrent edit keeps both named versions",
+    "Second-device deletion refreshes without resurrection",
+    "Account switch closes old draft and imports only original guest selection",
+    "Logout restores device-only guest library"
+  ],
+  "errors": [],
+  "status": "passed"
+}

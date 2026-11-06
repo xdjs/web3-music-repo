@@ -3,36 +3,43 @@ import {
   decodePlaylistShare,
   shareOrCopyPlaylist,
 } from "./playlist-share.mjs";
-const KEY = "mn-archive-playlists-v1";
-export function createPlaylistStore(storage) {
-  let lists = [];
-  try {
-    const v = JSON.parse(storage.getItem(KEY) || "[]");
-    if (Array.isArray(v))
-      lists = v
-        .filter(
-          (p) =>
-            p &&
-            typeof p.id === "string" &&
-            typeof p.name === "string" &&
-            Array.isArray(p.recordIds),
-        )
-        .map((p) => ({
-          ...p,
-          recordIds: p.recordIds.filter((id) => typeof id === "string"),
-        }));
-  } catch {}
+import {
+  GUEST_PLAYLIST_KEY,
+  playlistStorageKey,
+  readPlaylistCache,
+  writePlaylistLists,
+} from "./playlist-library.mjs";
+export function createPlaylistStore(storage, onChange = () => {}) {
+  let key = GUEST_PLAYLIST_KEY,
+    readError = "";
+  const all = () => {
+    try {
+      const lists = structuredClone(readPlaylistCache(storage, key).playlists);
+      readError = "";
+      return lists;
+    } catch {
+      readError =
+        "Saved playlist data could not be read. It remains in browser storage and has not been overwritten.";
+      return [];
+    }
+  };
   const save = (next) => {
-    storage.setItem(KEY, JSON.stringify(next));
-    lists = next;
+    readPlaylistCache(storage, key);
+    writePlaylistLists(storage, key, next);
+    onChange(key);
   };
   return {
-    all: () => structuredClone(lists),
+    all,
+    error: () => readError,
+    setScope(accountId) {
+      key = playlistStorageKey(accountId);
+    },
     create(name, recordId) {
       return this.createFrom(name, recordId ? [recordId] : []);
     },
     createFrom(name, recordIds) {
-      const snapshot = playlistSnapshot({ name, recordIds });
+      const lists = all(),
+        snapshot = playlistSnapshot({ name, recordIds });
       if (lists.length >= 100) throw Error("You can save up to 100 playlists.");
       const p = {
         id: crypto.randomUUID(),
@@ -45,7 +52,7 @@ export function createPlaylistStore(storage) {
     },
     update(id, fn) {
       save(
-        lists.map((p) =>
+        all().map((p) =>
           p.id === id
             ? { ...fn(structuredClone(p)), updatedAt: new Date().toISOString() }
             : p,
@@ -53,7 +60,7 @@ export function createPlaylistStore(storage) {
       );
     },
     remove(id) {
-      save(lists.filter((p) => p.id !== id));
+      save(all().filter((p) => p.id !== id));
     },
   };
 }
@@ -77,12 +84,50 @@ export function mountPlaylists({
       },
     };
   }
-  const store = createPlaylistStore(storage);
-  const dialog = document.createElement("dialog");
+  const store = createPlaylistStore(storage, (key) =>
+    document.dispatchEvent(
+      new CustomEvent("mn:playlists-changed", { detail: { key } }),
+    ),
+  );
+  let activeAccount = null,
+    dialog;
+  let syncStatus = {
+    message: "Saved on this device. Sign in to sync playlists.",
+  };
+  const refreshVisible = () => {
+    if (/^#(?:playlist(?:s|\/)|me\?tab=playlists)/.test(location.hash)) {
+      const y = scrollY;
+      rerender();
+      window.scrollTo({ top: y, behavior: "instant" });
+    }
+  };
+  document.addEventListener("mn:playlist-library", (event) => {
+    const nextAccount = event.detail?.accountId || null;
+    if (nextAccount !== activeAccount) dialog?.close();
+    activeAccount = nextAccount;
+    store.setScope(activeAccount);
+    refreshVisible();
+  });
+  document.addEventListener("mn:playlist-sync-status", (event) => {
+    syncStatus = event.detail;
+    document
+      .querySelectorAll("[data-playlist-sync-status]")
+      .forEach((el) => (el.textContent = syncStatus.message));
+  });
+
+  dialog = document.createElement("dialog");
   dialog.id = "playlist-editor";
   document.body.append(dialog);
+  queueMicrotask(() =>
+    document.dispatchEvent(new Event("mn:request-playlist-sync")),
+  );
   const close = () => dialog.close();
-  const commit = (fn) => {
+  const commit = (fn, expectedScope = activeAccount) => {
+    if (expectedScope !== activeAccount) {
+      close();
+      notify("Your account changed. Open this playlist again before editing.");
+      return false;
+    }
     try {
       fn();
       close();
@@ -96,6 +141,7 @@ export function mountPlaylists({
     }
   };
   const openEditor = (recordId = null, id = null) => {
+    const editorScope = activeAccount;
     const p = store.all().find((p) => p.id === id);
     dialog.innerHTML = `<form><div class="dialog-title"><h2>${recordId ? "Add to a playlist" : p ? "Rename playlist" : "New playlist"}</h2><button type="button" class="icon" data-cancel aria-label="Close playlist editor">×</button></div>${
       recordId && store.all().length
@@ -104,7 +150,7 @@ export function mountPlaylists({
             .map((p) => `<option value="${esc(p.id)}">${esc(p.name)}</option>`)
             .join("")}</select></label>`
         : ""
-    }<label class="form-label" id="playlist-name-field">Playlist name<input name="name" placeholder="Late nights, early records…" maxlength="100" value="${esc(p?.name || "")}" required></label><p class="link-note">Saved on this device. Sign in and use My profile to save or load your account library.</p><div class="actions"><button type="submit" class="primary">${recordId ? "Add recording" : "Save playlist"}</button><button type="button" class="outline-button" data-cancel>Cancel</button></div></form>`;
+    }<label class="form-label" id="playlist-name-field">Playlist name<input name="name" placeholder="Late nights, early records…" maxlength="100" value="${esc(p?.name || "")}" required></label><p class="link-note" data-playlist-sync-status role="status">${esc(syncStatus.message)}</p><div class="actions"><button type="submit" class="primary">${recordId ? "Add recording" : "Save playlist"}</button><button type="button" class="outline-button" data-cancel>Cancel</button></div></form>`;
     dialog
       .querySelectorAll("[data-cancel]")
       .forEach((b) => (b.onclick = close));
@@ -133,7 +179,7 @@ export function mountPlaylists({
               name: form.elements.name.value.trim().slice(0, 100),
             }));
           } else target = store.create(form.elements.name.value, recordId);
-        })
+        }, editorScope)
       ) {
         notify(recordId ? "Recording saved to playlist" : "Playlist saved");
         if (!recordId) location.hash = "playlist/" + target;
@@ -174,14 +220,16 @@ export function mountPlaylists({
       })
     ) {
       location.hash = "playlist/" + id;
-      notify("Saved a copy to your playlists on this device.");
+      notify("Saved a copy to your playlists.");
     }
   };
   const shareSnapshot = async (snapshot) => {
+    const sharedScope = activeAccount;
     try {
       const result = await shareOrCopyPlaylist(snapshot, {
         baseURL: location.href,
       });
+      if (sharedScope !== activeAccount) return;
       if (result.status === "copied")
         notify(
           "Playlist link copied. Anyone with the link can listen and save a copy.",
@@ -237,13 +285,16 @@ export function mountPlaylists({
     return `<div class="track-row personal-track"><span class="index">${i + 1}</span>${r ? `<img src="${esc(image(r))}" alt=""><div><a href="#record/${esc(r.id)}"><strong>${esc(r.title.replace(/\s*#\d+$/, ""))}</strong></a><small>${esc(r.artist)}</small></div>` : `<div><strong>Recording unavailable in this catalog</strong><small>${esc(id)}</small></div>`}<div class="playlist-track-actions">${r ? `${likeButton(r)}<button class="icon" data-play-record="${esc(r.id)}" data-personal-track="${p.id}" data-index="${i}" aria-label="Play ${esc(r.title)}">▶</button>` : ""}<button class="icon" data-move-track="${p.id}" data-index="${i}" data-direction="-1" aria-label="Move track ${i + 1} up" ${i === 0 ? "disabled" : ""}>↑</button><button class="icon" data-move-track="${p.id}" data-index="${i}" data-direction="1" aria-label="Move track ${i + 1} down" ${i === p.recordIds.length - 1 ? "disabled" : ""}>↓</button><button class="icon" data-remove-track="${p.id}" data-index="${i}" aria-label="Remove track ${i + 1}">×</button></div></div>`;
   };
   const view = (id, embedded = false) => {
+    store.all();
+    if (store.error())
+      return `<div class="intro"><h1>Your playlists</h1></div><p class="notice" role="alert">${esc(store.error())}</p>`;
     if (id) {
       const p = store.all().find((p) => p.id === id);
       if (!p)
         return '<h1>Playlist not found</h1><a href="#playlists">Your playlists</a>';
-      return `<a class="back" href="#playlists">← Your playlists</a><div class="intro"><div><span class="eyebrow">YOUR PLAYLIST · SAVED ON THIS DEVICE</span><h1>${esc(p.name)}</h1><p>${p.recordIds.length} recordings · your own piece of the era</p></div></div><div class="actions playlist-actions"><button class="primary" data-play-record="${esc(idsFor(p)[0] || "")}" data-play-personal="${p.id}" ${p.recordIds.length ? "" : "disabled"}>▶ Play playlist</button><button class="outline-button" data-rename-playlist="${p.id}">Rename</button><button class="outline-button" data-share-playlist="${esc(p.id)}">Share</button><button class="outline-button" data-export-playlist="${p.id}">↓ Export</button><button class="text-button" data-delete-playlist="${p.id}">Delete playlist</button></div>${p.recordIds.length ? p.recordIds.map((id, i) => row(p, id, i)).join("") : '<div class="empty">Your first track is waiting. <a class="error-link" href="#explore">Explore music ↗</a><p>Open a recording and choose “Add to playlist”.</p></div>'}`;
+      return `<a class="back" href="#playlists">← Your playlists</a><div class="intro"><div><span class="eyebrow">YOUR PLAYLIST</span><h1>${esc(p.name)}</h1><p>${p.recordIds.length} recordings · your own piece of the era</p></div></div><p class="link-note" data-playlist-sync-status role="status">${esc(syncStatus.message)}</p><div class="actions playlist-actions"><button class="primary" data-play-record="${esc(idsFor(p)[0] || "")}" data-play-personal="${p.id}" ${p.recordIds.length ? "" : "disabled"}>▶ Play playlist</button><button class="outline-button" data-rename-playlist="${p.id}">Rename</button><button class="outline-button" data-share-playlist="${esc(p.id)}">Share</button><button class="outline-button" data-export-playlist="${p.id}">↓ Export</button><button class="text-button" data-delete-playlist="${p.id}">Delete playlist</button></div>${p.recordIds.length ? p.recordIds.map((id, i) => row(p, id, i)).join("") : '<div class="empty">Your first track is waiting. <a class="error-link" href="#explore">Explore music ↗</a><p>Open a recording and choose “Add to playlist”.</p></div>'}`;
     }
-    return `<div class="intro"><div>${embedded ? "<h2>My playlists</h2>" : "<h1>Your playlists</h1>"}<p>Bring the records back together. Make a soundtrack of your own.</p></div><button class="primary" data-new-playlist>＋ New playlist</button></div><p class="link-note">Saved in this browser. Export a copy or use My profile to save and load your account library.</p><div class="personal-playlist-grid">${
+    return `<div class="intro"><div>${embedded ? "<h2>My playlists</h2>" : "<h1>Your playlists</h1>"}<p>Bring the records back together. Make a soundtrack of your own.</p></div><button class="primary" data-new-playlist>＋ New playlist</button></div><p class="link-note" data-playlist-sync-status role="status">${esc(syncStatus.message)}</p><div class="personal-playlist-grid">${
       store
         .all()
         .map(
@@ -304,11 +355,12 @@ export function mountPlaylists({
         })),
       );
     if (d.deletePlaylist) {
+      const deleteScope = activeAccount;
       dialog.innerHTML =
-        '<h2>Delete this playlist?</h2><p class="link-note">This removes the saved list from this device. The recordings remain in the archive.</p><div class="actions"><button class="primary" id="confirm-delete">Delete playlist</button><button class="outline-button" id="cancel-delete">Keep playlist</button></div>';
+        '<h2>Delete this playlist?</h2><p class="link-note">This removes the playlist from this library and syncs the change when signed in. The recordings remain in the archive.</p><div class="actions"><button class="primary" id="confirm-delete">Delete playlist</button><button class="outline-button" id="cancel-delete">Keep playlist</button></div>';
       dialog.querySelector("#cancel-delete").onclick = close;
       dialog.querySelector("#confirm-delete").onclick = () => {
-        if (commit(() => store.remove(d.deletePlaylist)))
+        if (commit(() => store.remove(d.deletePlaylist), deleteScope))
           location.hash = "playlists";
       };
       dialog.showModal();
