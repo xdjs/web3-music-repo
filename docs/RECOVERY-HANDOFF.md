@@ -2,6 +2,14 @@
 
 Updated November 6, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
+## Buffering feedback and remembered filters
+
+The player now distinguishes initial loading, buffering after playback starts, and seeking. The existing Pause control stays actionable, with a loading ring shared by song cards, the compact player and expanded Now Playing. Native readiness controls the indicator: a stalled download with playable data does not falsely show buffering. Pausing, playback recovery, ending and errors clear the busy indicator. Existing gateway retries and the next-track buffer remain unchanged; no new listening copies were created.
+
+Explore and wallet/collector collection views remember their own validated platform, network, media, collection and sort selections in this browser. Reset filters clears the saved preferences. Search text, wallet addresses and signed-in ownership scope are excluded. Removed catalog options, malformed storage and denied storage fall back safely. These preferences are local to each site origin, not synced through the account.
+
+This section is implementation status until the release receipt records production verification.
+
 ## Homepage rotation, automatic playlists and temporary site name
 
 The public site is now named **web3-music-archive**. The new address is https://web3-music-archive.vercel.app/ on the same Vercel project; the GitHub repository remains `xdjs/web3-music-repo`. Both old and new production origins are explicitly allowed in the existing Privy recovery client. Do not redirect the old origin: browser-only playlists live there until their owner signs in and waits for automatic account sync, then opens the new origin. Canonical share URLs and the new Music Nerd social image use the new address. Lab name/link/cover publication is verified separately in its release receipt.

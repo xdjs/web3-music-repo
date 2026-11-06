@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-11-06T22:34:37.475Z",
+  "base": "http://127.0.0.1:4191",
+  "scope": "Actual app UI and catalog; deterministic public wallet/profile API fixtures isolate filter behavior. No sign-in, account write, real ownership assertion, or audio playback.",
+  "cases": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "errors": [],
+      "exploreRestored": {
+        "platform": "Sound",
+        "network": "1",
+        "media": "audio",
+        "collection": "MIAMI FREESTYLE (ft. Aly, Tarot, Elle Symone, Early, & TK | prod. AbJo)",
+        "sort": "oldest"
+      },
+      "queryAndOwnedScopeNotRestored": true,
+      "collectionRestored": {
+        "platform": "Sound",
+        "network": "1",
+        "media": "audio",
+        "collection": "Consent",
+        "sort": "newest"
+      },
+      "scopesIndependent": true,
+      "resetReloadDefaults": true,
+      "onlyApprovedFacetFieldsStored": true,
+      "queryAndWalletExcluded": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "errors": [],
+      "exploreRestored": {
+        "platform": "Sound",
+        "network": "1",
+        "media": "audio",
+        "collection": "MIAMI FREESTYLE (ft. Aly, Tarot, Elle Symone, Early, & TK | prod. AbJo)",
+        "sort": "oldest"
+      },
+      "queryAndOwnedScopeNotRestored": true,
+      "collectionRestored": {
+        "platform": "Sound",
+        "network": "1",
+        "media": "audio",
+        "collection": "Consent",
+        "sort": "newest"
+      },
+      "scopesIndependent": true,
+      "resetReloadDefaults": true,
+      "onlyApprovedFacetFieldsStored": true,
+      "queryAndWalletExcluded": true
+    }
+  ]
+}

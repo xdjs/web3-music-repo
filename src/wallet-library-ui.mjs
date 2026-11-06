@@ -1,3 +1,4 @@
+import { createFilterPreferences } from "./filter-preferences.mjs";
 import {
   collectionSelect,
   filterCollectionRecords,
@@ -19,6 +20,20 @@ export function mountWalletLibrary({
   let context = { requested: "", embedded: false, profile: false };
   let ownedRequested = false,
     visibleLimit = 40;
+  const preferences = createFilterPreferences("collection", {
+    choices: () => ({
+      platform: [...new Set(catalog().map(platform).filter(Boolean))],
+      network: Object.keys(walletChains),
+      collection: [
+        ...new Set(
+          catalog()
+            .map((r) => r.collection)
+            .filter(Boolean),
+        ),
+      ],
+    }),
+  });
+  let preferencesLoaded = false;
   const filters = {
     query: "",
     platform: "",
@@ -165,6 +180,10 @@ export function mountWalletLibrary({
     return `<p class="link-note">${esc(resolved.name)} → ${esc(address.slice(0, 8))}…${esc(address.slice(-6))}${source ? ` · <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">ENS source ↗</a>` : ""}</p>`;
   }
   function results() {
+    if (!preferencesLoaded && catalog().length) {
+      Object.assign(filters, preferences.load());
+      preferencesLoaded = true;
+    }
     const snapshot = state.snapshot();
     if (!snapshot.address) return "";
     const byId = new Map(catalog().map((record) => [record.id, record]));
@@ -199,7 +218,7 @@ export function mountWalletLibrary({
         filters[name],
         "data-wallet-filter",
       );
-    const controls = `<label class="artist-search-label">Search collected music<input type="search" data-wallet-filter="query" value="${esc(filters.query)}" placeholder="Artist, song, or collection…"></label><div class="filter-toolbar">${select("platform", "Platform", [["", "All platforms"], ...[...new Set(available.map(platform).filter(Boolean))].sort().map((name) => [name, name])])}${select("network", "Network", [["", "All networks"], ...Object.entries(walletChains)])}${select("collection", "Collection", [["", "All collections"], ...[...new Set(available.map((r) => r.collection).filter(Boolean))].sort().map((name) => [name, name])])}${select(
+    const controls = `<label class="artist-search-label">Search collected music<input type="search" data-wallet-filter="query" value="${esc(filters.query)}" placeholder="Artist, song, or collection…"></label><div class="filter-toolbar">${select("platform", "Platform", [["", "All platforms"], ...[...new Set([...available.map(platform), filters.platform].filter(Boolean))].sort().map((name) => [name, name])])}${select("network", "Network", [["", "All networks"], ...Object.entries(walletChains)])}${select("collection", "Collection", [["", "All collections"], ...[...new Set([...available.map((r) => r.collection), filters.collection].filter(Boolean))].sort().map((name) => [name, name])])}${select(
       "media",
       "Media",
       [
@@ -347,6 +366,7 @@ export function mountWalletLibrary({
     const key = event.target.dataset.walletFilter;
     if (key && key !== "query" && Object.hasOwn(filters, key)) {
       filters[key] = event.target.value;
+      Object.assign(filters, preferences.save(filters));
       visibleLimit = 40;
       patchResults();
     }
@@ -433,14 +453,7 @@ export function mountWalletLibrary({
   });
   document.addEventListener("click", (event) => {
     if (event.target.closest("[data-wallet-reset-filters]")) {
-      Object.assign(filters, {
-        query: "",
-        platform: "",
-        network: "",
-        media: "",
-        collection: "",
-        sort: "archive",
-      });
+      Object.assign(filters, preferences.reset(), { query: "" });
       visibleLimit = 40;
       patchResults();
     }

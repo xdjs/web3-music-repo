@@ -2845,3 +2845,44 @@ body.now-playing-open {
 #open-now-playing .art-expand-icon {
   z-index: 2;
 }
+
+/* Retain the actionable Pause icon while a native media load is pending. */
+.playback-glyph {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  vertical-align: middle;
+  flex: none;
+}
+[data-playback-busy="true"] .playback-glyph::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: playback-loading 0.9s linear infinite;
+}
+[data-playback-busy="true"] .playback-glyph > .nav-icon {
+  opacity: 0.65;
+  transform: scale(0.72);
+}
+.now-playing-status {
+  flex: 0 0 16px;
+  height: 16px;
+  line-height: 16px;
+  margin: 8px 0 -16px;
+  color: var(--muted);
+  font-size: 11px;
+}
+@keyframes playback-loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-playback-busy="true"] .playback-glyph::after {
+    animation: none;
+  }
+}
