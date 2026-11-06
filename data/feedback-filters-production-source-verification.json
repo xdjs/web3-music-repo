@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-06T22:38:26.193085+00:00",
+  "url": "https://web3-music-archive.vercel.app",
+  "sourceCommit": "27adf19c7651c49995120bf9851e19b68015ba4b",
+  "deploymentId": "dpl_5oMSr2DPnq7D5fM1oyPKLeUZAm5D",
+  "assets": [
+    {
+      "path": "src/archive.js",
+      "sha256": "53ee5e033afb177c8610e2baace5ce6ee15620ae5e4d495af6da04def1751f7e",
+      "matchesSource": true
+    },
+    {
+      "path": "src/archive.css",
+      "sha256": "9995edaf7ca1c08e981aead2d6ca3802a2fcf9b00ca5b91773e26c50fbb57ed1",
+      "matchesSource": true
+    },
+    {
+      "path": "src/playback-controls.mjs",
+      "sha256": "63e347359bd72aedaa2b84a19d144e20feb0a92b17f63a0ec2af1a666e7bff15",
+      "matchesSource": true
+    },
+    {
+      "path": "src/now-playing.mjs",
+      "sha256": "d6dae2aedca887447375ef2638b32e357572ed84314c9ed8a994caa6cf8a4aef",
+      "matchesSource": true
+    },
+    {
+      "path": "src/filter-preferences.mjs",
+      "sha256": "63bb1753f08f1fa9cd633bcd0579b327c950d81c24fcaa243cc8637c71ce8587",
+      "matchesSource": true
+    },
+    {
+      "path": "src/wallet-library-ui.mjs",
+      "sha256": "bca1501eb957ff6287dee928b659cf86d49969bdfdbf81ca05366913c416fddb",
+      "matchesSource": true
+    }
+  ],
+  "status": "passed"
+}

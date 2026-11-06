@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-11-06T22:39:26.492694+00:00",
+  "status": "READY",
+  "sourceCommit": "27adf19c7651c49995120bf9851e19b68015ba4b",
+  "pullRequest": "https://github.com/xdjs/web3-music-repo/pull/10",
+  "deploymentId": "dpl_5oMSr2DPnq7D5fM1oyPKLeUZAm5D",
+  "url": "https://web3-music-archive.vercel.app/",
+  "immutableURL": "https://web3-music-repo-n9o6ahrh6-musicnerd.vercel.app",
+  "tests": {
+    "passed": 313,
+    "failed": 0,
+    "syntax": "passed",
+    "format": "passed",
+    "build": "passed"
+  },
+  "receipts": [
+    "data/buffering-feedback-verification.json",
+    "data/buffering-short-screen-verification.json",
+    "data/filter-preferences-verification.json",
+    "data/feedback-filters-production-source-verification.json",
+    "data/production-feedback-filter-verification.json"
+  ],
+  "limitations": [
+    "Remote source latency remains; this change improves feedback, not media delivery speed",
+    "Buffering/error transitions and collection ownership use documented local fixtures; native playback is also checked",
+    "Filter preferences are browser/origin-local, not account-synced",
+    "Existing next-track buffer, source recovery and media files are unchanged"
+  ],
+  "runtimeLogs": {
+    "deploymentScoped": true,
+    "levels": [
+      "error",
+      "fatal"
+    ],
+    "from": "2026-11-06T22:28:47.327Z",
+    "to": "2026-11-06T22:38:47.327Z",
+    "matchingLogs": 0
+  },
+  "productionBrowser": {
+    "viewports": [
+      "1440 dark",
+      "390 light"
+    ],
+    "nativePlayback": "passed",
+    "pauseWhileLoading": "passed locally; production loading then native playback and pause passed",
+    "sortReloadAndReset": "passed",
+    "pageErrors": 0,
+    "overflow": false
+  }
+}

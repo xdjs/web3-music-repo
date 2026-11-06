@@ -8,7 +8,7 @@ The player now distinguishes initial loading, buffering after playback starts, a
 
 Explore and wallet/collector collection views remember their own validated platform, network, media, collection and sort selections in this browser. Reset filters clears the saved preferences. Search text, wallet addresses and signed-in ownership scope are excluded. Removed catalog options, malformed storage and denied storage fall back safely. These preferences are local to each site origin, not synced through the account.
 
-This section is implementation status until the release receipt records production verification.
+PR #10 merged at `27adf19c7651c49995120bf9851e19b68015ba4b` and deployed from that clean commit as `dpl_5oMSr2DPnq7D5fM1oyPKLeUZAm5D`. Six changed production assets match the tested source. All 313 tests, syntax/format checks and the production build passed. Local browser evidence covers desktop/mobile themes, native playback after a held response, and filter reload/reset with explicit wallet fixtures. Production browser checks also passed at 1440 dark and 390 light: actual native playback after a deliberately held response, clear loading state, Pause, and Explore sort reload/reset. No page errors or overflow. No deployment-scoped error/fatal logs were returned in the post-release query. See `data/release-feedback-filters-2026-11-06.json` and `data/production-feedback-filter-verification.json`.
 
 ## Homepage rotation, automatic playlists and temporary site name
 

@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-06T22:36:52.050Z",
+  "base": "https://web3-music-archive.vercel.app",
+  "sourceCommit": "27adf19c7651c49995120bf9851e19b68015ba4b",
+  "scope": "Actual production modules/API/media; only the local approved MP4 response is briefly held to observe Loading before releasing native playback. No API or media-content fixtures; not a complete audition or remote gateway reliability check.",
+  "cases": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "errors": [],
+      "sortReloadAndReset": true,
+      "loadingShown": true,
+      "nativePlayback": {
+        "time": 0.309477,
+        "duration": 240.083333,
+        "readyState": 4,
+        "videoWidth": 720
+      },
+      "pauseWorks": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "errors": [],
+      "sortReloadAndReset": true,
+      "loadingShown": true,
+      "nativePlayback": {
+        "time": 0.31072,
+        "duration": 240.083333,
+        "readyState": 4,
+        "videoWidth": 720
+      },
+      "pauseWorks": true,
+      "passed": true
+    }
+  ],
+  "passed": true
+}
