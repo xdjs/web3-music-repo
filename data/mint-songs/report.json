@@ -1,0 +1,83 @@
+{
+  "recoveredAt": "2026-11-06T08:30:12.630Z",
+  "sourceRows": 155,
+  "duplicateRows": 12,
+  "uniqueTokens": 143,
+  "artists": 117,
+  "originalBPM": 0,
+  "originalKeys": 0,
+  "explicitCredits": 143,
+  "duration": 128,
+  "complete": false,
+  "polygon": {
+    "checkedTokens": 38,
+    "importedSongs": 20,
+    "testTokens": [
+      "100",
+      "39000"
+    ],
+    "unresolved": [
+      {
+        "tokenId": "1000",
+        "reason": "Bad control character in string literal in JSON at position 144 (line 1 column 145)"
+      },
+      {
+        "tokenId": "5000",
+        "reason": "Expected ',' or '}' after property value in JSON at position 45 (line 1 column 46)"
+      },
+      {
+        "tokenId": "6000",
+        "reason": "Bad control character in string literal in JSON at position 107 (line 1 column 108)"
+      },
+      {
+        "tokenId": "10000",
+        "reason": "Expected ',' or '}' after property value in JSON at position 53 (line 1 column 54)"
+      },
+      {
+        "tokenId": "12000",
+        "reason": "Bad control character in string literal in JSON at position 124 (line 1 column 125)"
+      },
+      {
+        "tokenId": "24000",
+        "reason": "Expected ',' or '}' after property value in JSON at position 74 (line 1 column 75)"
+      },
+      {
+        "tokenId": "30000",
+        "reason": "Expected ',' or '}' after property value in JSON at position 84 (line 1 column 85)"
+      },
+      {
+        "tokenId": "33000",
+        "reason": "Bad control character in string literal in JSON at position 85 (line 1 column 86)"
+      },
+      {
+        "tokenId": "36000",
+        "reason": "Expected ',' or '}' after property value in JSON at position 129 (line 1 column 130)"
+      },
+      {
+        "tokenId": "48000",
+        "reason": "Bad control character in string literal in JSON at position 130 (line 1 column 131)"
+      },
+      {
+        "tokenId": "51000",
+        "reason": "Bad control character in string literal in JSON at position 70 (line 1 column 71)"
+      },
+      {
+        "tokenId": "54000",
+        "reason": "Expected ',' or '}' after property value in JSON at position 62 (line 1 column 63)"
+      },
+      {
+        "tokenId": "63000",
+        "reason": "Expected ',' or '}' after property value in JSON at position 10 (line 1 column 11)"
+      },
+      {
+        "tokenId": "81000",
+        "reason": "Bad control character in string literal in JSON at position 69 (line 1 column 70)"
+      }
+    ],
+    "mediaUnverified": [],
+    "duplicateEditions": 2,
+    "complete": false
+  },
+  "totalImportedRecords": 163,
+  "snapshotCommit": "6251e3611e3c64277ed7cb4076a242130ea729de"
+}

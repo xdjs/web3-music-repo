@@ -3,6 +3,7 @@ import { parseEnv } from "node:util";
 import postgres from "postgres";
 import { verifyAccountToken } from "./verify-account-token.mjs";
 import { createAccountPlaylistStore } from "./account-playlist-store.mjs";
+import { createDurableAccountPlaylistStore } from "./account-durable-store.mjs";
 let env = {};
 try {
   env = parseEnv(readFileSync(".env.local", "utf8"));
@@ -21,17 +22,62 @@ const sql = dbURL
       },
     })
   : null;
-const store = createAccountPlaylistStore("private/account-playlists");
+const blobStoreId = process.env.BLOB_STORE_ID || env.BLOB_STORE_ID;
+const blobToken =
+  process.env.BLOB_READ_WRITE_TOKEN || env.BLOB_READ_WRITE_TOKEN;
+const durableConfigured = !!(blobStoreId || blobToken);
+const storageKind = durableConfigured
+  ? "private-blob"
+  : process.env.VERCEL
+    ? "unavailable"
+    : "archive-server";
+const store = durableConfigured
+  ? createDurableAccountPlaylistStore({
+      storeId: blobStoreId,
+      // Let Vercel's SDK obtain rotating OIDC credentials in deployed functions.
+      token: process.env.VERCEL && blobStoreId ? undefined : blobToken,
+      namespace:
+        process.env.ACCOUNT_PLAYLIST_NAMESPACE ||
+        env.ACCOUNT_PLAYLIST_NAMESPACE ||
+        (process.env.VERCEL_ENV === "production"
+          ? "production"
+          : process.env.VERCEL_ENV === "preview"
+            ? "preview"
+            : "development"),
+    })
+  : process.env.VERCEL
+    ? {
+        read: async () => {
+          throw Error("Durable account storage unavailable");
+        },
+        write: async () => {
+          throw Error("Durable account storage unavailable");
+        },
+      }
+    : createAccountPlaylistStore(
+        process.env.ACCOUNT_PLAYLIST_DIR ||
+          env.ACCOUNT_PLAYLIST_DIR ||
+          "private/account-playlists",
+      );
+
 export async function accountAPI(req, res, url, json) {
   if (url.pathname === "/api/auth/config") {
     json(res, {
       enabled: !!sql,
       appId: publicConfig.appId,
-      mode: "Music Nerd production identity; archive-server playlist storage",
+      clientId:
+        process.env.PRIVY_CLIENT_ID ||
+        env.PRIVY_CLIENT_ID ||
+        publicConfig.clientId ||
+        null,
+      mode: "Music Nerd production identity; private account playlist storage",
+      playlistStorage: storageKind,
     });
     return true;
   }
   if (!url.pathname.startsWith("/api/account")) return false;
+  res.setHeader("Cache-Control", "private, no-store");
+  res.setHeader("Vary", "Authorization");
   try {
     if (!["GET", "PUT"].includes(req.method))
       return (json(res, { error: "Method not allowed" }, 405), true);
@@ -75,7 +121,7 @@ export async function accountAPI(req, res, url, json) {
         json(res, {
           id: account.id,
           name: account.username || "Music Nerd listener",
-          storage: "archive-server",
+          storage: storageKind,
         }),
         true
       );
@@ -88,20 +134,23 @@ export async function accountAPI(req, res, url, json) {
       ![
         "http://127.0.0.1:4190",
         "http://localhost:4190",
-        process.env.ARCHIVE_ORIGIN,
+        process.env.ARCHIVE_ORIGIN || env.ARCHIVE_ORIGIN,
+        process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null,
       ]
         .filter(Boolean)
         .includes(req.headers.origin)
     )
       return (json(res, { error: "Invalid request origin" }, 403), true);
+    const chunks = [];
     let body = "",
       bytes = 0;
     for await (const chunk of req) {
       bytes += chunk.length;
       if (bytes > 500000)
         return (json(res, { error: "Playlist library too large" }, 413), true);
-      body += chunk.toString("utf8");
+      chunks.push(Buffer.from(chunk));
     }
+    body = Buffer.concat(chunks).toString("utf8");
     let data;
     try {
       data = JSON.parse(body);
@@ -119,6 +168,8 @@ export async function accountAPI(req, res, url, json) {
     const ids = new Set();
     const playlists = data.playlists.map((p) => {
       if (
+        !p ||
+        typeof p !== "object" ||
         typeof p.id !== "string" ||
         p.id.length > 100 ||
         ids.has(p.id) ||

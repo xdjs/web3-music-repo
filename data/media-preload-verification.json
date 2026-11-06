@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-11-06T09:25:40.964Z",
+  "scope": "Actual archived Mija audio, isolated native player warm then adoption; no mocked media response.",
+  "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+  "requests": [
+    {
+      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "range": "bytes=0-",
+      "time": 1793957141685
+    },
+    {
+      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "range": "bytes=6946816-",
+      "time": 1793957141832
+    },
+    {
+      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "range": "bytes=32768-",
+      "time": 1793957142429
+    }
+  ],
+  "warm": {
+    "state": {
+      "id": "mija",
+      "started": true,
+      "ready": true
+    },
+    "loads": 1,
+    "events": [
+      {
+        "type": "emptied",
+        "time": 709.5999999046326
+      },
+      {
+        "type": "loadstart",
+        "time": 715.5
+      },
+      {
+        "type": "loadedmetadata",
+        "time": 1176.9000000953674
+      }
+    ],
+    "readyState": 4,
+    "ms": 1129.6999998092651
+  },
+  "play": {
+    "reused": true,
+    "loads": 1,
+    "events": [
+      {
+        "type": "emptied",
+        "time": 709.5999999046326
+      },
+      {
+        "type": "loadstart",
+        "time": 715.5
+      },
+      {
+        "type": "loadedmetadata",
+        "time": 1176.9000000953674
+      },
+      {
+        "type": "playing",
+        "time": 1226.6999998092651
+      }
+    ],
+    "time": 0.305353,
+    "readyState": 4
+  },
+  "requestsBeforePlay": 2,
+  "passed": true
+}

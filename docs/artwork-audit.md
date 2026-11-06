@@ -1,0 +1,7 @@
+# Artwork-only listening-catalog audit
+
+On 2026-11-06, all 60 records classified as artwork were checked against their original metadata documents in the recovery cache. All 60 documents were available. Fifty-five contained only name, description, image and animation_url; five also contained edition. Every animation_url equalled image. No separate audio/video attachment was found. The per-record decision, original URI and metadata hash are preserved in `data/artwork-audit.json`.
+
+Exclude all 60 from the listening catalog while retaining raw discovery evidence. No verified correction was found. This is not proof that music never existed: Digibilly’s album membership, Starlight Vinyl, three location performances, a video bundle and stem/beat products explicitly describe music or gated content, but do not expose that media in their token metadata. Those descriptions remain recovery leads. CERULEAN EP SET is a reward for collecting six songs, not an attached recording.
+
+Two generic entries (New Sound and Test OP) share artwork with another All-Access Pass contract. A shared cover alone does not establish that either token attaches its recording, so no audio was copied between contracts. The audit did not bypass gated access, crawl all offchain sites, or independently MIME-check every identical image/animation resource. Any exclusion can be reversed when a verified song attachment is recovered.

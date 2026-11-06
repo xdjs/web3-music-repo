@@ -72,6 +72,8 @@ export function extractMusicMetadata(metadata) {
     )
       hasLyrics = true;
     for (const [key, value] of Object.entries(root)) add(key, value);
+    if (typeof root.project?.title === "string")
+      add("project", root.project.title);
     for (const trait of Array.isArray(root.attributes) ? root.attributes : [])
       add(trait.trait_type || trait.name || "", trait.value);
     for (const key of ["collaborators", "credits"]) {
@@ -81,9 +83,9 @@ export function extractMusicMetadata(metadata) {
           else if (
             item &&
             typeof item.name === "string" &&
-            typeof item.role === "string"
+            typeof (item.role || item.collaboratorType) === "string"
           )
-            add(key, `${item.name} — ${item.role}`);
+            add(key, `${item.name} — ${item.role || item.collaboratorType}`);
         }
     }
   }

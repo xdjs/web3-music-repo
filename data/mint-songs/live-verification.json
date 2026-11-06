@@ -1,0 +1,55 @@
+{
+  "records": {
+    "mint-songs-1-2b5426a5b98a3e366230eba9f95a24f09ae4a584-1": {
+      "checkedAt": "2026-11-06T08:21:10.487Z",
+      "referenceBlock": 26354578,
+      "playbackVerified": false,
+      "tokenURIRaw": "ipfs://QmXnzz8CTtr3k4Y15kbvFKrwwi4VtMsYC6wLhPt9L8aATA",
+      "metadataURI": "ipfs://QmXnzz8CTtr3k4Y15kbvFKrwwi4VtMsYC6wLhPt9L8aATA",
+      "matchesSnapshot": true,
+      "status": "metadata-verified"
+    },
+    "mint-songs-1-2b5426a5b98a3e366230eba9f95a24f09ae4a584-2": {
+      "checkedAt": "2026-11-06T08:21:22.529Z",
+      "referenceBlock": 26354578,
+      "playbackVerified": false,
+      "tokenURIRaw": "ipfs://QmemvZHVCgDfLtyzDqeVACP1k5HpiScF1p6EtCu7rLZQFb",
+      "metadataURI": "ipfs://QmemvZHVCgDfLtyzDqeVACP1k5HpiScF1p6EtCu7rLZQFb",
+      "matchesSnapshot": true,
+      "status": "metadata-verified"
+    },
+    "mint-songs-1-2b5426a5b98a3e366230eba9f95a24f09ae4a584-3": {
+      "checkedAt": "2026-11-06T08:21:29.104Z",
+      "referenceBlock": 26354578,
+      "playbackVerified": false,
+      "tokenURIRaw": "ipfs://QmUNEbfn3ZhsZsf2cB8oFfEJvRwNPConrtoqDux8dCmfTG",
+      "metadataURI": "ipfs://QmUNEbfn3ZhsZsf2cB8oFfEJvRwNPConrtoqDux8dCmfTG",
+      "matchesSnapshot": true,
+      "status": "metadata-verified"
+    },
+    "mint-songs-1-2b5426a5b98a3e366230eba9f95a24f09ae4a584-7": {
+      "checkedAt": "2026-11-06T08:21:21Z",
+      "status": "metadata-verified",
+      "method": "curl tokenURI at latest then Pinata JSON equality",
+      "tokenURIRPC": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000035697066733a2f2f516d50746f75556a4356665a336737714e455a73463543485774423932535245715a6a6a4e6d6567354d4e4c56790000000000000000000000"
+      },
+      "metadataURI": "ipfs://QmPtouUjCVfZ3g7qNEZsF5CHWtB92SREqZjjNmeg5MNLVy",
+      "matchesSnapshot": true,
+      "audioHeaderStatus": 200,
+      "audioContentType": "audio/wav",
+      "audioContentLength": 56648124,
+      "playbackVerified": false
+    }
+  },
+  "contract": {
+    "chainId": 1,
+    "address": "0x2b5426a5b98a3e366230eba9f95a24f09ae4a584",
+    "name": "MintSongsV2",
+    "checkedAt": "2026-11-06T08:21:10.486Z",
+    "referenceBlock": 26354578
+  },
+  "updatedAt": "2026-11-06T08:21:36.416Z"
+}

@@ -1,3 +1,4 @@
+import { releaseDateForRecord } from "./release-date.mjs";
 import { readFileSync, statSync } from "node:fs";
 import { nftCatalog as baseCatalog } from "./nft-catalog.js";
 import { people as basePeople, sources } from "./data.js";
@@ -66,7 +67,13 @@ export function mergeCatalog(base, baseEvidence, bundles, people) {
       const entry = {
         ...r,
         artistId,
-        personIds: [artistId],
+        personIds: [
+          ...new Set([
+            artistId,
+            ...(r.personIds || []),
+            ...(r.credits || []).map((c) => c.personId),
+          ]),
+        ].filter((id) => id === artistId || people.some((p) => p.id === id)),
         origin: "recovered",
       };
       records.push(entry);
@@ -107,6 +114,12 @@ export function createCatalogLoader() {
       "data/audio-analysis.json",
       "data/catalog/song-revenue.json",
       "data/verified-credits.json",
+      "data/mint-songs/archived-media.json",
+      "data/pete-recovery/recovered-media.json",
+      "data/sound-resolution/archived-recovery.json",
+      "data/catalog/ethereum-revenue-audit.json",
+      "data/release-dates.json",
+      "data/pete-recovery/zora-recovered-media.json",
     ];
     const next = paths
       .map((p) => {
@@ -125,6 +138,7 @@ export function createCatalogLoader() {
         return fallback;
       }
     };
+    const peteZora = read(paths[18], {});
     const merged = mergeCatalog(
       baseCatalog,
       read(paths[0], {}),
@@ -135,8 +149,17 @@ export function createCatalogLoader() {
         read(paths[6], {}),
         read(paths[7], {}),
         read(paths[8], {}),
+        read(paths[13], {}),
+        read(paths[14], {}),
+        read(paths[15], {}),
+        peteZora,
       ],
-      basePeople,
+      [
+        ...basePeople,
+        ...(peteZora.proposedPeople || []).filter(
+          (p) => !basePeople.some((existing) => existing.id === p.id),
+        ),
+      ],
     );
     const audit = {
       results: {
@@ -169,14 +192,26 @@ export function createCatalogLoader() {
     const musicMetadata = read(paths[9], { records: {} }).records;
     const audioAnalysis = read(paths[10], { records: {} }).records;
     const revenue = read(paths[11], { records: {} }).records;
+    const royalties = new Map();
+    for (const event of read(paths[16], { verified: [] }).verified) {
+      const key = `${event.chainId}-${event.contract.toLowerCase()}-${event.tokenId}`;
+      if (!royalties.has(key)) royalties.set(key, []);
+      royalties.get(key).push(event);
+    }
     merged.records = merged.records.map((r) => ({
+      ...r,
       audioAnalysis: audioAnalysis[r.id] || null,
+      royaltyPayments:
+        royalties.get(
+          `${r.chainId}-${r.contract.toLowerCase()}-${r.tokenId}`,
+        ) || [],
       revenue:
         revenue[`${r.chainId}-${r.contract.toLowerCase()}-${r.tokenId}`] ||
         null,
       musicMetadata:
-        musicMetadata[r.id]?.status === "read" ? musicMetadata[r.id] : null,
-      ...r,
+        musicMetadata[r.id]?.status === "read"
+          ? musicMetadata[r.id]
+          : r.musicMetadata || null,
       kind: mediaKind(r, merged.evidence[r.id]),
       playback: audit.results[r.id]
         ? {
@@ -186,8 +221,13 @@ export function createCatalogLoader() {
               (a) => a.status === "played",
             )?.url,
           }
-        : null,
+        : r.playback || null,
     }));
+    const releaseDates = read(paths[17], {});
+    for (const record of merged.records)
+      record.releaseDate = releaseDateForRecord(record, releaseDates);
+    // Keep discovery evidence on disk; only music belongs in the listening catalog.
+    merged.records = merged.records.filter((r) => r.kind !== "artwork");
     cached = merged;
     signature = next;
     return cached;

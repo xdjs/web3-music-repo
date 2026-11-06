@@ -39,3 +39,27 @@ test("Sound enum keys normalize without guessing and lyrics remain a source refe
   assert.equal(r.hasLyrics, true);
   assert.equal(r.details.Lyrics, undefined);
 });
+
+test("a parent project contributes its title without copying project-wide credits or musical attributes", () => {
+  const result = extractMusicMetadata({
+    project: {
+      title: "Shared album",
+      bpm: 120,
+      credits: "Every album musician",
+      description: "Album narrative",
+    },
+  });
+  assert.deepEqual(result.details, { Project: ["Shared album"] });
+  assert.deepEqual(result.credits, []);
+  assert.deepEqual(result.bpms, []);
+});
+
+test("Mint Songs collaboratorType credits are explicit names and roles, not payout addresses", () => {
+  const result = extractMusicMetadata({
+    credits: [
+      { name: "WYMN", collaboratorType: "creator" },
+      { address: "0x123", collaboratorType: "recipient" },
+    ],
+  });
+  assert.deepEqual(result.credits, ["WYMN — creator"]);
+});

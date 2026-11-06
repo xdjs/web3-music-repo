@@ -21,3 +21,9 @@ test("mentions, conflicting values and unrelated prose do not become music facts
   assert.equal(musicFacts({ note: "BPM: 70\nBPM: 140" }).bpm, null);
   assert.equal(musicFacts({ note: "Key: Amin\nKey: Gmin" }).key, null);
 });
+
+test("explicit bracketed title tempos preserve decimals and reject mismatched delimiters", () => {
+  assert.equal(musicFacts({ title: "REAL CRIA [121.35 BPM]" }).bpm, 121.35);
+  assert.equal(musicFacts({ title: "Mix (120 BPM) [140 BPM]" }).bpm, null);
+  assert.equal(musicFacts({ title: "Song [120 BPM)" }).bpm, null);
+});

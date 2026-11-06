@@ -1,0 +1,115 @@
+{
+  "checkedAt": "2026-11-06T08:35:50.723Z",
+  "sourceURL": "https://web.archive.org/web/20240520194441/https://www.sound.xyz/mija/groove-jacob-grosse-remix",
+  "capturedAt": "2024-05-20T19:44:41Z",
+  "captureSha256": "974cc2a86607e3fbf9bcdc1973a2a5155dd8f3361948227b698ff4d3e32d90ed",
+  "chainId": 10,
+  "contract": "0x1bfc0624b52e870cc00d4e39995c75c7da8763d3",
+  "release": {
+    "id": "c0744c7f-87a3-4499-aab3-19600a592787",
+    "title": "Groove (Jacob Grosse Remix)",
+    "contractAddress": "0x1bfc0624b52e870cc00d4e39995c75c7da8763d3",
+    "chainId": 10,
+    "track": {
+      "id": "fac4de0e-0b0c-4692-be2b-d22b76c3e276",
+      "duration": 266
+    },
+    "creditSplit": {
+      "id": "6a8b9fc5-007d-49e8-85b5-2f9b13464af3",
+      "splitAddress": "0x9cca811820317ba1e90a192209bb437951d35314",
+      "creditAllocations": [
+        {
+          "id": "2128fd0a-7617-407e-aa04-d8f5161fcb24",
+          "roles": [
+            "REMIXER"
+          ],
+          "percent": 50,
+          "owner": {
+            "id": "c64402d0-6f4e-450b-b38c-79bf9f48ac40",
+            "artist": {
+              "id": "1814c838-9d58-492f-bea8-5d63e3d8fb76"
+            },
+            "avatar": {
+              "id": "f1e3b2f5-1306-4c19-979d-8bd6d9f7bf9e",
+              "url": "https://d2i9ybouka0ieh.cloudfront.net/user-uploads/c64402d0-6f4e-450b-b38c-79bf9f48ac40/AVATAR_IMAGE/5453924-newImage.png"
+            },
+            "username": "Jacob Grosse",
+            "publicAddress": "0x21e9e80c87ea29f0ff84007e31fee8ef2e5c070e",
+            "webappUri": "https://www.sound.xyz/jacobgrosse"
+          }
+        },
+        {
+          "id": "3e70c617-bd56-4639-b770-2120d28f60cf",
+          "roles": [
+            "ARTIST"
+          ],
+          "percent": 50,
+          "owner": {
+            "id": "ce3959cd-ef42-46ac-bdeb-b10b006e8b12",
+            "artist": {
+              "id": "00dc6a9e-6439-4115-b74e-27a13b07e446"
+            },
+            "avatar": {
+              "id": "dcd499e9-cf3c-4870-b1ac-7761503c1a72",
+              "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/00dc6a9e-6439-4115-b74e-27a13b07e446/AVATAR_IMAGE/700239-1b1b.png"
+            },
+            "username": "Mija",
+            "publicAddress": "0xe4c80780cc7fc7047bccb30e2cbcb67400752a88",
+            "webappUri": "https://www.sound.xyz/mija"
+          }
+        }
+      ]
+    },
+    "artist": {
+      "id": "00dc6a9e-6439-4115-b74e-27a13b07e446",
+      "name": "Mija",
+      "soundHandle": "mija",
+      "user": {
+        "id": "ce3959cd-ef42-46ac-bdeb-b10b006e8b12",
+        "twitterHandle": "hi_mija",
+        "publicAddress": "0xe4c80780cc7fc7047bccb30e2cbcb67400752a88",
+        "webappUri": "https://www.sound.xyz/mija",
+        "username": "Mija",
+        "avatar": {
+          "id": "dcd499e9-cf3c-4870-b1ac-7761503c1a72",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/00dc6a9e-6439-4115-b74e-27a13b07e446/AVATAR_IMAGE/700239-1b1b.png"
+        },
+        "artist": {
+          "id": "00dc6a9e-6439-4115-b74e-27a13b07e446"
+        },
+        "followerCount": 3420
+      },
+      "userId": "ce3959cd-ef42-46ac-bdeb-b10b006e8b12",
+      "webappUri": "https://www.sound.xyz/mija"
+    },
+    "originalRelease": "https://www.sound.xyz/mija/groove-jacob-grosse-remix"
+  },
+  "mediaURL": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+  "mediaSha256": "0fdc02d464a89aedf1be1422584438040595139c39a62209c4d29d4a7d851629",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ],
+    "format": {
+      "duration": "266.552993",
+      "size": "7007837"
+    }
+  },
+  "scope": "Archived attribution and credit percentages are historical; no current royalty payouts or wallet balances inferred.",
+  "browserPlayback": {
+    "checkedAt": "2026-11-06T08:39:05.459Z",
+    "scope": "Direct archived URL in browser audio element; integrated app player not yet tested",
+    "currentTime": 1.249422,
+    "duration": 266.552993,
+    "readyState": 4,
+    "source": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+    "error": null
+  }
+}

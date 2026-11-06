@@ -1,3 +1,4 @@
+import { acquireRecoveryLock } from "../src/recovery-job-lock.mjs";
 import {
   readFileSync,
   writeFileSync,
@@ -26,8 +27,9 @@ const read = (p, f) => {
     return f;
   }
 };
-const file = "data/audio-analysis.json",
-  state = read(file, { records: {} }),
+const file = "data/audio-analysis.json";
+const releaseLock = acquireRecoveryLock(file);
+const state = read(file, { records: {} }),
   work = "work/bpm-audio";
 mkdirSync(work, { recursive: true });
 const localBinary = resolve("../.music-recovery-tools/cargo/bin/open-bpm");
@@ -60,7 +62,24 @@ const jobs = initial.records
         state.records[r.id].status === "pending"),
   )
   .slice(0, max);
+const concurrency = Number(
+  process.argv.find((a) => a.startsWith("--concurrency="))?.slice(14) || 2,
+);
+if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 4)
+  throw Error("Concurrency must be an integer from 1 to 4");
+let stopping = false;
+process.once("SIGTERM", () => {
+  stopping = true;
+  state.stopRequestedAt = new Date().toISOString();
+});
+process.once("SIGINT", () => {
+  stopping = true;
+  state.stopRequestedAt = new Date().toISOString();
+});
 state.startedAt = new Date().toISOString();
+state.concurrency = concurrency;
+state.interruptedAt = null;
+state.stopRequestedAt = null;
 state.finishedAt = null;
 function save() {
   state.updatedAt = new Date().toISOString();
@@ -206,8 +225,8 @@ async function analyze(r, source) {
   }
 }
 await Promise.all(
-  Array.from({ length: 2 }, async () => {
-    while (next < jobs.length) {
+  Array.from({ length: concurrency }, async () => {
+    while (!stopping && next < jobs.length) {
       const original = jobs[next++],
         r = load().records.find((x) => x.id === original.id) || original;
       const explicit = musicFacts({ ...r, audioAnalysis: null }).bpm;
@@ -249,6 +268,8 @@ await Promise.all(
     }
   }),
 );
-state.finishedAt = new Date().toISOString();
+state.finishedAt = stopping ? null : new Date().toISOString();
+state.interruptedAt = stopping ? new Date().toISOString() : null;
 save();
-console.log("BPM COMPLETE", state.counts);
+releaseLock();
+console.log(stopping ? "BPM CHECKPOINTED" : "BPM COMPLETE", state.counts);

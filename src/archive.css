@@ -131,6 +131,15 @@ nav button {
   font-size: 22px;
   text-align: left;
 }
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  display: block;
+}
+[data-nav-icon] {
+  display: flex;
+}
 nav span {
   font-size: 13px;
   font-weight: 550;
@@ -1198,8 +1207,17 @@ dialog::backdrop {
   color: var(--muted);
   margin-top: 4px;
 }
+.queue-item > div {
+  min-width: 0;
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+.queue-item button,
+.queue-item img {
+  flex-shrink: 0;
+}
 .queue-item button {
-  margin-left: auto;
+  margin-left: 0;
 }
 .queue-item.current {
   color: var(--accent);
@@ -2140,22 +2158,24 @@ dialog::backdrop {
 }
 
 .filter-toolbar {
-  display: flex;
-  gap: 16px;
-  align-items: flex-end;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(160px, 1.5fr) repeat(3, minmax(120px, 1fr));
+  gap: 12px;
+  align-items: end;
   margin: -8px 0 28px;
 }
 .filter-control {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  min-width: 130px;
-  max-width: 100%;
+  min-width: 0;
   color: var(--muted);
   font-size: 11px;
 }
 .filter-control select {
+  width: 100%;
+  min-width: 0;
+  min-height: 42px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--bg);
@@ -2163,37 +2183,21 @@ dialog::backdrop {
   padding: 10px 8px 10px 12px;
   font: inherit;
   font-size: 12px;
-  max-width: 100%;
 }
-.filter-control select:focus-visible,
-.more-filters summary:focus-visible {
+.filter-control select:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
-.more-filters {
-  max-width: 320px;
+.filter-reset {
+  margin: -16px 0 20px;
+  text-align: right;
 }
-.more-filters summary {
-  cursor: pointer;
-  font-size: 12px;
-  padding: 11px 0;
-}
-.more-filters .filter-control {
-  margin-top: 8px;
-}
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .filter-toolbar {
-    gap: 12px;
-  }
-  .filter-control {
-    min-width: 0;
-    flex: 1 1 100px;
-  }
-  .more-filters {
-    width: 100%;
-    max-width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
 .account-menu {
   max-height: calc(100dvh - 100px);
   overflow: auto;
@@ -2417,4 +2421,38 @@ dialog::backdrop {
 }
 .song-revenue {
   margin-block: 2rem;
+}
+
+.sort-date-note {
+  color: var(--muted);
+  font-size: 12px;
+  margin: -12px 0 24px;
+}
+.release-date {
+  margin: 24px 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.icon > .nav-icon,
+.play-toggle > .nav-icon {
+  margin: auto;
+}
+.icon [data-nav-icon],
+.play-toggle [data-nav-icon] {
+  justify-content: center;
+}
+
+.queue-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.queue-toolbar .link-note {
+  margin: 0;
+}
+.queue-toolbar button {
+  flex-shrink: 0;
 }

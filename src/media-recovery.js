@@ -1,45 +1,65 @@
-// Same IPFS content address, a different public HTTP gateway. No replacement upload.
-export function alternateMediaURL(url) {
+// Same IPFS content address and path through fixed public gateways.
+// These hosts are deliberately finite; user-supplied gateway hosts never join them.
+const gateways = [
+  "ipfs.filebase.io",
+  "gateway.pinata.cloud",
+  "magic.decentralized-content.com",
+];
+export function alternateMediaURLs(url) {
   try {
     const parsed = new URL(url);
     if (
       parsed.protocol !== "https:" ||
-      parsed.hostname !== "ipfs.filebase.io" ||
-      !/^\/ipfs\/[A-Za-z0-9]+(?:\/|$)/.test(parsed.pathname)
+      parsed.username ||
+      parsed.password ||
+      parsed.port ||
+      !gateways.includes(parsed.hostname) ||
+      !/^\/ipfs\/[A-Za-z0-9]+(?:\/|$)/.test(parsed.pathname) ||
+      /(?:^|\/)\.\.(?:\/|$)/.test(decodeURIComponent(url.split("?")[0])) ||
+      /%2f|%5c|\\/i.test(parsed.pathname)
     )
-      return null;
-    parsed.hostname = "gateway.pinata.cloud";
-    return parsed.href;
+      return [];
+    return gateways
+      .filter((host) => host !== parsed.hostname)
+      .map((host) => {
+        const alternate = new URL(parsed);
+        alternate.hostname = host;
+        return alternate.href;
+      });
   } catch {
-    return null;
+    return [];
   }
+}
+export function alternateMediaURL(url) {
+  return alternateMediaURLs(url)[0] || null;
 }
 
 export function createMediaRecovery(
   media,
-  { originalURL, shouldPlay, onSwitch, onExhausted },
+  { originalURL, shouldPlay, onSwitch, onExhausted, onSlow = () => {} },
 ) {
   let activeURL = originalURL,
-    switched = false,
     ended = false;
-  const fallback = alternateMediaURL(originalURL);
-  function recover(failedURL = activeURL) {
+  const fallbacks = alternateMediaURLs(originalURL);
+  const seekListeners = new Set();
+  function recover(failedURL = activeURL, { softTimeout = false } = {}) {
     if (ended || failedURL !== activeURL) return;
-    if (!switched && fallback) {
-      switched = true;
+    if (softTimeout && !shouldPlay()) return;
+    const fallback = fallbacks.shift();
+    if (fallback) {
       activeURL = fallback;
       const resumeAt = Number.isFinite(media.currentTime)
         ? media.currentTime
         : 0;
       media.src = fallback;
-      if (resumeAt > 0)
-        media.addEventListener(
-          "loadedmetadata",
-          () => {
-            if (!ended) media.currentTime = resumeAt;
-          },
-          { once: true },
-        );
+      if (resumeAt > 0) {
+        const seek = () => {
+          seekListeners.delete(seek);
+          if (!ended && activeURL === fallback) media.currentTime = resumeAt;
+        };
+        seekListeners.add(seek);
+        media.addEventListener("loadedmetadata", seek, { once: true });
+      }
       onSwitch();
       media.load();
       if (shouldPlay())
@@ -48,6 +68,12 @@ export function createMediaRecovery(
             recover(fallback);
         });
     } else {
+      // A loading deadline is not a network/decoder error. With no alternate
+      // source, keep the current request alive so delayed audio can still start.
+      if (softTimeout && !media.error) {
+        onSlow();
+        return "waiting";
+      }
       ended = true;
       onExhausted();
     }
@@ -56,9 +82,14 @@ export function createMediaRecovery(
   media.addEventListener("error", onError);
   return {
     recover,
+    recoverSlow: (failedURL = activeURL) =>
+      recover(failedURL, { softTimeout: true }),
     dispose: () => {
       ended = true;
       media.removeEventListener("error", onError);
+      for (const seek of seekListeners)
+        media.removeEventListener("loadedmetadata", seek);
+      seekListeners.clear();
     },
   };
 }

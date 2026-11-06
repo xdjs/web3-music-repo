@@ -60,9 +60,17 @@ export async function readWalletPage(
       )
         return [];
       const candidates = records.filter(
-        (r) => r.chainId === chainId && r.contract.toLowerCase() === contract,
+        (r) =>
+          r.standard !== "ERC20" &&
+          r.chainId === chainId &&
+          r.contract.toLowerCase() === contract,
       );
-      let record = candidates.find((r) => r.tokenId === tokenId);
+      let record = candidates.find(
+        (r) =>
+          r.tokenId === tokenId ||
+          (Array.isArray(r.observedTokenIds) &&
+            r.observedTokenIds.includes(tokenId)),
+      );
       if (
         !record &&
         registry.has(`${chainId}:${contract}`) &&

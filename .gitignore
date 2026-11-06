@@ -25,3 +25,10 @@ private/
 # Atomic recovery checkpoints
 data/**/*.tmp
 data/*.tmp
+
+# Local single-writer recovery locks
+data/**/*.lock
+data/*.lock
+
+# Generated Vercel static output
+dist/

@@ -1,4 +1,5 @@
 import React from "react";
+import { linkedWallets } from "./account-client.mjs";
 export function AccountWallets({
   linkedAccounts = [],
   connected = [],
@@ -6,9 +7,7 @@ export function AccountWallets({
   onConnect,
   status = "",
 }) {
-  const wallets = linkedAccounts.filter(
-    (a) => a.type === "wallet" && typeof a.address === "string",
-  );
+  const wallets = linkedWallets(linkedAccounts);
   return (
     <section className="account-wallets" aria-label="Your linked wallets">
       <h3>Your wallets</h3>
@@ -20,21 +19,24 @@ export function AccountWallets({
         <ul>
           {wallets.map((w) => {
             const isConnected = connected.some(
-              (c) => c.address.toLowerCase() === w.address.toLowerCase(),
+              (c) =>
+                (w.chainType || "ethereum") === "ethereum" &&
+                c.address?.toLowerCase() === w.address.toLowerCase(),
             );
             return (
               <li key={`${w.chainType}:${w.address}`}>
                 <code title={w.address}>
                   {w.address.slice(0, 8)}…{w.address.slice(-6)}
                 </code>
-                {w.chainType !== "solana" && (
-                  <a
-                    className="text-button"
-                    href={"#me?tab=collection&wallet=" + w.address}
-                  >
-                    Listen to this wallet ↗
-                  </a>
-                )}
+                {(w.chainType || "ethereum") === "ethereum" &&
+                  /^0x[0-9a-f]{40}$/i.test(w.address) && (
+                    <a
+                      className="text-button"
+                      href={"#me?tab=collection&wallet=" + w.address}
+                    >
+                      Listen to this wallet ↗
+                    </a>
+                  )}
                 <small>
                   {w.walletClientType === "privy"
                     ? "Music Nerd wallet"
@@ -51,14 +53,16 @@ export function AccountWallets({
           No wallets linked yet. Add the wallet you collected music with.
         </p>
       )}
-      <button className="outline-button" onClick={onLink}>
-        Add a wallet to my account
-      </button>
-      {wallets.some((w) => w.walletClientType !== "privy") && (
-        <button className="text-button" onClick={onConnect}>
-          Connect a linked wallet
+      <div className="actions">
+        <button className="outline-button" onClick={onLink}>
+          Add a wallet to my account
         </button>
-      )}
+        {wallets.some((w) => w.walletClientType !== "privy") && (
+          <button className="text-button" onClick={onConnect}>
+            Connect a linked wallet
+          </button>
+        )}
+      </div>
       <p className="link-note">
         Adding a wallet requires a signature to confirm ownership. It becomes a
         sign-in method for this account.

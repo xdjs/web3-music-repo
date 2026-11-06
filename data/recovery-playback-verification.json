@@ -1,0 +1,210 @@
+{
+  "checkedAt": "2026-11-06T08:25:50.135Z",
+  "base": "http://127.0.0.1:4190",
+  "scope": "Four selected releases; not an all-track playback audit.",
+  "playback": [
+    {
+      "name": "rush",
+      "id": "pete-zora-coin-base-c01f464c55f5b1bec05db5205d2fae9e6a835a5e",
+      "passed": true,
+      "time": 1.018914,
+      "duration": 20.633333,
+      "readyState": 4,
+      "source": "https://magic.decentralized-content.com/ipfs/bafybeiciis2v57i7o3rtfwnonh7mqldmsarc2jfbvtrcaji7beoreu7vqq",
+      "error": null,
+      "video": true,
+      "status": "Base → IPFS · Original media",
+      "failure": null
+    },
+    {
+      "name": "mint-songs",
+      "id": "mint-songs-1-2b5426a5b98a3e366230eba9f95a24f09ae4a584-7",
+      "passed": true,
+      "time": 1.01188,
+      "duration": 214.085624,
+      "readyState": 4,
+      "source": "https://ipfs.filebase.io/ipfs/QmdaDNqZqA3KZNxsMtAah8SkE3xJxULU5RiFZqKUU7xYG7",
+      "error": null,
+      "video": false,
+      "status": "Retrying the same IPFS content through another gateway…",
+      "failure": null
+    },
+    {
+      "name": "sound",
+      "id": "recovered-sound-1-b2cb781aa0b35aec7acef3f9751b61505fd5715a",
+      "passed": true,
+      "time": 1.004104,
+      "duration": 180.675875,
+      "readyState": 4,
+      "source": "https://arweave.net/ShNsHOnksot-5oxBYrFpAz0Ec-pxa7E0YDkweXLPbf0",
+      "error": null,
+      "video": false,
+      "status": "Ethereum → Arweave · Original media",
+      "failure": null
+    },
+    {
+      "name": "catalog",
+      "id": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-52",
+      "passed": true,
+      "time": 1.006564,
+      "duration": 248.657732,
+      "readyState": 4,
+      "source": "https://arweave.net/jEhD4TsXW7g0dR66_EEPmX9ak6NEtDXkKZ9QgFduAug",
+      "error": null,
+      "video": false,
+      "status": "Ethereum → Arweave · Original media",
+      "failure": null
+    }
+  ],
+  "rendering": [
+    {
+      "name": "rush",
+      "id": "pete-zora-coin-base-c01f464c55f5b1bec05db5205d2fae9e6a835a5e",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "title": "rush",
+      "brokenImages": [],
+      "headings": [
+        "rush",
+        "Behind the music",
+        "Preservation notes",
+        "Coin holders"
+      ],
+      "screenshot": "captures/recovery-rush-1440-light.png"
+    },
+    {
+      "name": "mint-songs",
+      "id": "mint-songs-1-2b5426a5b98a3e366230eba9f95a24f09ae4a584-7",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "title": "Driving",
+      "brokenImages": [],
+      "headings": [
+        "Driving",
+        "Behind the music",
+        "Original credits",
+        "Preservation notes",
+        "Featured edition holder"
+      ],
+      "screenshot": "captures/recovery-mint-songs-1440-light.png"
+    },
+    {
+      "name": "rush",
+      "id": "pete-zora-coin-base-c01f464c55f5b1bec05db5205d2fae9e6a835a5e",
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "title": "rush",
+      "brokenImages": [],
+      "headings": [
+        "rush",
+        "Behind the music",
+        "Preservation notes",
+        "Coin holders"
+      ],
+      "screenshot": "captures/recovery-rush-1440-dark.png"
+    },
+    {
+      "name": "mint-songs",
+      "id": "mint-songs-1-2b5426a5b98a3e366230eba9f95a24f09ae4a584-7",
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "title": "Driving",
+      "brokenImages": [],
+      "headings": [
+        "Driving",
+        "Behind the music",
+        "Original credits",
+        "Preservation notes",
+        "Featured edition holder"
+      ],
+      "screenshot": "captures/recovery-mint-songs-1440-dark.png"
+    },
+    {
+      "name": "rush",
+      "id": "pete-zora-coin-base-c01f464c55f5b1bec05db5205d2fae9e6a835a5e",
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "title": "rush",
+      "brokenImages": [],
+      "headings": [
+        "rush",
+        "Behind the music",
+        "Preservation notes",
+        "Coin holders"
+      ],
+      "screenshot": "captures/recovery-rush-390-light.png"
+    },
+    {
+      "name": "mint-songs",
+      "id": "mint-songs-1-2b5426a5b98a3e366230eba9f95a24f09ae4a584-7",
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "title": "Driving",
+      "brokenImages": [],
+      "headings": [
+        "Driving",
+        "Behind the music",
+        "Original credits",
+        "Preservation notes",
+        "Featured edition holder"
+      ],
+      "screenshot": "captures/recovery-mint-songs-390-light.png"
+    },
+    {
+      "name": "rush",
+      "id": "pete-zora-coin-base-c01f464c55f5b1bec05db5205d2fae9e6a835a5e",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "title": "rush",
+      "brokenImages": [],
+      "headings": [
+        "rush",
+        "Behind the music",
+        "Preservation notes",
+        "Coin holders"
+      ],
+      "screenshot": "captures/recovery-rush-390-dark.png"
+    },
+    {
+      "name": "mint-songs",
+      "id": "mint-songs-1-2b5426a5b98a3e366230eba9f95a24f09ae4a584-7",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "title": "Driving",
+      "brokenImages": [],
+      "headings": [
+        "Driving",
+        "Behind the music",
+        "Original credits",
+        "Preservation notes",
+        "Featured edition holder"
+      ],
+      "screenshot": "captures/recovery-mint-songs-390-dark.png"
+    },
+    {
+      "name": "rush",
+      "tab": "collectors",
+      "text": "← Explore the archive\nZORA · BASE · VIDEO CLIP\nrush\n\np3t3rango\n\n▶   Listen now\n＋ Add to queue\n＋ Add to playlist\n♡\nDetails\nCollectors\nProvenance\nComments\nCoin holders\n\nThis release is a Zora content coin. NFT edition collectors do not apply; coin-holder recovery has not been added yet."
+    },
+    {
+      "name": "mint-songs",
+      "tab": "collectors",
+      "text": "← Explore the archive\nMINT SONGS · ETHEREUM · RECORDING\nDriving\n\nWYMN\n\n▶   Listen now\n＋ Add to queue\n＋ Add to playlist\n♡\nDetails\nCollectors\nProvenance\nComments\nFeatured edition holder\n\nToken 7 · release-wide recovery still needed\n\n14\nlunarwilt.eth\nWallet\n1\nedition\n\nThis contract is not yet mapped to a single release. Only the selected token owner is shown; other contract holders are not attributed to this song. Checked Nov 6, 2026.\n\nAdditional ownership tools"
+    }
+  ],
+  "errors": [],
+  "retryLabelRecheck": {
+    "checkedAt": "2026-11-06T08:28:19.031Z",
+    "status": "Ethereum → IPFS · Original media",
+    "source": "https://ipfs.filebase.io/ipfs/QmdaDNqZqA3KZNxsMtAah8SkE3xJxULU5RiFZqKUU7xYG7",
+    "passed": true
+  }
+}

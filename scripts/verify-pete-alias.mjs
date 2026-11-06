@@ -19,7 +19,7 @@ try {
         theme,
       );
       await p.waitForTimeout(250);
-      assert.equal(await p.locator(".record-card").count(), 10);
+      assert.equal(await p.locator(".record-card").count(), 11);
       assert.ok(
         await p.evaluate(
           () => document.documentElement.scrollWidth <= innerWidth,
@@ -28,12 +28,12 @@ try {
       await p.screenshot({
         path: `captures/pete-complete-attribution-${width}-${theme}.png`,
       });
-      checks.push({ width, theme, creditedRecords: 10, overflow: false });
+      checks.push({ width, theme, creditedRecords: 11, overflow: false });
     }
   await p.goto("http://127.0.0.1:4190/#explore");
   await p.locator("#search").fill("p3t3rango");
   await p.waitForTimeout(400);
-  assert.equal(await p.locator(".record-card").count(), 10);
+  assert.equal(await p.locator(".record-card").count(), 11);
   await p.goto("http://127.0.0.1:4190/#artists");
   await p.locator("#artist-search").fill("p3t3rango");
   await p.waitForTimeout(300);
@@ -52,7 +52,7 @@ try {
       {
         checkedAt: new Date().toISOString(),
         checks,
-        aliasSearchMatches: 10,
+        aliasSearchMatches: 11,
         directoryProfiles: 1,
         creditSources: true,
         completeDiscography: false,

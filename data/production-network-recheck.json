@@ -1,0 +1,118 @@
+{
+  "checkedAt": "2026-11-06T09:16:27.602Z",
+  "scope": "Fresh browser after network interruption. Preliminary functional check; final redeployment pending.",
+  "network": [
+    {
+      "url": "https://web3-music-repo.vercel.app/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://auth.privy.io/apps/cmlzjxfrh00ak0cjvlap9d3gm/embedded-wallets",
+      "error": "net::ERR_BLOCKED_BY_RESPONSE"
+    },
+    {
+      "url": "https://web3-music-repo.vercel.app/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://csp-report.browser-intake-datadoghq.com/api/v2/logs",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/mo115.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/mo115.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/rusik555.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://metadata.ens.domains/mainnet/avatar/mo115.eth",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    }
+  ],
+  "playback": {
+    "time": 1.008726,
+    "duration": 266.552993,
+    "readyState": 4,
+    "source": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+    "status": "Optimism → External storage · Archived Sound CDN audio"
+  },
+  "passed": true
+}

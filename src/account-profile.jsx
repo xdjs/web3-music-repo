@@ -17,6 +17,9 @@ export function AccountProfile({
   busy,
   status,
   walletStatus,
+  onRetry,
+  showRetry,
+  needsMusicNerdAccount,
 }) {
   return (
     <section className="profile-account-card" aria-label="Music Nerd account">
@@ -70,9 +73,24 @@ export function AccountProfile({
           </div>
           <p className="link-note">
             Playlists below are saved in this browser. Save or load to copy them
-            to or from your account on this server.
+            to or from your Music Nerd account.
           </p>
         </>
+      )}
+      {needsMusicNerdAccount && (
+        <a
+          className="text-button"
+          href="https://musicnerd.net"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open Music Nerd to finish account setup ↗
+        </a>
+      )}
+      {showRetry && (
+        <button className="outline-button" onClick={onRetry}>
+          Retry account connection
+        </button>
       )}
       <p role="status" className="link-note">
         {status}

@@ -6,9 +6,9 @@ export function musicFacts(record) {
     ),
   ].map((m) => Number(m[1] || m[2]));
   for (const match of String(record.title || "").matchAll(
-    /\((\d{2,3}(?:\.\d+)?)\s*BPM\)/gi,
+    /(?:\((\d{2,3}(?:\.\d+)?)\s*BPM\)|\[(\d{2,3}(?:\.\d+)?)\s*BPM\])/gi,
   ))
-    tempoValues.push(Number(match[1]));
+    tempoValues.push(Number(match[1] || match[2]));
   const tempos = [...new Set(tempoValues.filter((n) => n >= 20 && n <= 400))];
   const keys = [
     ...new Set(

@@ -34,6 +34,14 @@ export async function readCollectors(
   registry,
   adapters = { readHolders, readOwner, readLegacyCollectors },
 ) {
+  if (record.standard === "ERC20")
+    return {
+      status: "unsupported",
+      scope: "coin",
+      items: [],
+      message:
+        "Coin-holder recovery is not implemented; NFT edition counts do not apply.",
+    };
   if (
     record.factoryVersion === 0 &&
     record.legacyEditionId &&

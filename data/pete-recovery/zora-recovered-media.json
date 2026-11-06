@@ -1,0 +1,376 @@
+{
+  "scope": "Six verified additional Pete Rango music releases discovered through Zora creator profiles and public OpenSea holdings; not complete discography or all editions.",
+  "records": [
+    {
+      "id": "pete-zora-1-4ac251da6af98d7018cb8a722b3b5ab602f75fcf-1",
+      "title": "Dreamvibe",
+      "artist": "Pete Rango",
+      "chainId": 1,
+      "contract": "0x4ac251da6af98d7018cb8a722b3b5ab602f75fcf",
+      "tokenId": "1",
+      "standard": "ERC721",
+      "platform": "Zora",
+      "kind": "audio",
+      "collection": "Dreamvibe",
+      "imageURI": "ipfs://bafybeihqsrhoc6k7zsismuheynd4brym6p5seiqj5jmkdjck37jbjqjyl4",
+      "durationSeconds": 116.5,
+      "creator": "0x625307dE45Bd25AD6bf6cC7391a308fc84067cf7",
+      "personIds": [
+        "pete-rango"
+      ],
+      "credits": [],
+      "note": "This is a track we created a few years ago during my close friend Gabe's birthday at Defiant Studios. Gabe invited a few local Richmond artists, producers, and writers to Defiant to celebrate. During those sessions I met Elle Symone. Cas and I were coming up with idea when Elle walked in the room and she immediately started freestyling to it. We thought she would be perfect for the song so we finished arranging the song and got her in the booth. She did this whole song in one take 0.0 !!! That night we made a few more songs that will be included in our EP dropping at the top of 2023. Mint this song to receive an airdrop from our upcoming EP, WILD LIFE, in early 2023. Open until 12AM EST 12/06/22. \n\n50% of proceeds supporting https://juicebox.money/@campfir3\n🏕️🔥\n\nCover Art by Midjourney ",
+      "originalRelease": "https://zora.co/collect/eth:0x4ac251da6af98d7018cb8a722b3b5ab602f75fcf/1",
+      "playback": {
+        "status": "played",
+        "checkedAt": "2026-11-06T09:30:52.531Z",
+        "workingURL": "https://magic.decentralized-content.com/ipfs/bafybeih3varhgsitblrzi36i67tykzlp4tegv5yizwhvdlizv62jjh257q"
+      },
+      "discovery": "Zora p3t3rango created-collection feed, fixed-block ERC721 reads, original token metadata and actual decoded audio/video playback"
+    },
+    {
+      "id": "pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1",
+      "title": "Planet X",
+      "artist": "Xmane & Pete Rango",
+      "chainId": 1,
+      "contract": "0x10d32bf55f5cbe66b068f2109ecf7475f0631d53",
+      "tokenId": "1",
+      "standard": "ERC721",
+      "platform": "Zora",
+      "kind": "video",
+      "collection": "Savage Planet",
+      "imageURI": "ipfs://bafybeihrmtwi33xymbg4vqunt7butbtq6zk3faznbgkfll7ia7xqxmm6wa?id=1",
+      "durationSeconds": 240.083333,
+      "creator": "0x625307dE45Bd25AD6bf6cC7391a308fc84067cf7",
+      "personIds": [
+        "pete-rango",
+        "xmane",
+        "nawt-creative"
+      ],
+      "credits": [
+        {
+          "personId": "pete-rango",
+          "role": "Creative direction and production",
+          "source": "https://etherscan.io/token/0x10d32bf55f5cbe66b068f2109ecf7475f0631d53?a=1"
+        },
+        {
+          "personId": "xmane",
+          "role": "Creative direction and production",
+          "source": "https://etherscan.io/token/0x10d32bf55f5cbe66b068f2109ecf7475f0631d53?a=1"
+        },
+        {
+          "personId": "nawt-creative",
+          "role": "3D animation",
+          "source": "https://etherscan.io/token/0x10d32bf55f5cbe66b068f2109ecf7475f0631d53?a=1"
+        }
+      ],
+      "note": "Savage Planet is a sonic journey into the wild. An introduction to a world with no rules - a world where instincts subjugate convention and imagination is your only compass. \n\nThis concept was spurred from a moment in both producers' lives where they simultaneously felt inspired to let go of the traditional pop structure they were so used to adhering to. Instead, they chose to create music that mirrored a free flow of consciousness that came about as a direct result of the inspiration they felt when creating this music. As a result, most of the project was created in one night.\n\nCreative Direction and Production by Xmane and Pete Rango\n3D Animation: Nawt Creative",
+      "originalRelease": "https://zora.co/collect/eth:0x10d32bf55f5cbe66b068f2109ecf7475f0631d53/1",
+      "playback": {
+        "status": "played",
+        "checkedAt": "2026-11-06T09:30:59.775Z",
+        "workingURL": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1"
+      },
+      "discovery": "Zora p3t3rango created-collection feed, fixed-block ERC721 reads, original token metadata and actual decoded audio/video playback"
+    },
+    {
+      "id": "pete-zora-1-1baf95bab135ea5817606dc8ec27e64dabe17101-1",
+      "title": "Tragg Park",
+      "artist": "Xmane & Pete Rango",
+      "chainId": 1,
+      "contract": "0x1baf95bab135ea5817606dc8ec27e64dabe17101",
+      "tokenId": "1",
+      "standard": "ERC721",
+      "platform": "Zora",
+      "kind": "video",
+      "collection": "Savage Planet",
+      "imageURI": "ipfs://bafybeibkhcvtrwbrn4hxnls3uffy7nhaj4m2mggvkycavnmnxrhqdyyaiy?id=1",
+      "durationSeconds": 136.2,
+      "creator": "0x625307dE45Bd25AD6bf6cC7391a308fc84067cf7",
+      "personIds": [
+        "pete-rango",
+        "xmane",
+        "nawt-creative"
+      ],
+      "credits": [
+        {
+          "personId": "pete-rango",
+          "role": "Creative direction and production",
+          "source": "https://etherscan.io/token/0x1baf95bab135ea5817606dc8ec27e64dabe17101?a=1"
+        },
+        {
+          "personId": "xmane",
+          "role": "Creative direction and production",
+          "source": "https://etherscan.io/token/0x1baf95bab135ea5817606dc8ec27e64dabe17101?a=1"
+        },
+        {
+          "personId": "nawt-creative",
+          "role": "3D animation",
+          "source": "https://etherscan.io/token/0x1baf95bab135ea5817606dc8ec27e64dabe17101?a=1"
+        }
+      ],
+      "note": "The artwork of the film “La Planete Sauvage”, featured wild, imaginative imagery that felt refreshing and freeing to watch - it seemed almost as if the artists and animators working on this piece had free reign to express their imagining of this world however they saw fit - Our music was approached with the same freedom and abandon\n\nCreative Direction and Production by Xmane and Pete Rango\n3D animation: Nawt Creative",
+      "originalRelease": "https://zora.co/collect/eth:0x1baf95bab135ea5817606dc8ec27e64dabe17101/1",
+      "playback": {
+        "status": "played",
+        "checkedAt": "2026-11-06T09:31:06.803Z",
+        "workingURL": "https://magic.decentralized-content.com/ipfs/bafybeifdmnnbetd42ympa33t5ncwl3ynalvvirmd3lgypcp3iomenwnhvi?id=1"
+      },
+      "discovery": "Zora p3t3rango created-collection feed, fixed-block ERC721 reads, original token metadata and actual decoded audio/video playback"
+    },
+    {
+      "id": "pete-zora-1-2db9c2070d4cc57345d34e526e998d3fb6c71548-1",
+      "title": "Oms at Play",
+      "artist": "Xmane & Pete Rango",
+      "chainId": 1,
+      "contract": "0x2db9c2070d4cc57345d34e526e998d3fb6c71548",
+      "tokenId": "1",
+      "standard": "ERC721",
+      "platform": "Zora",
+      "kind": "video",
+      "collection": "Savage Planet",
+      "imageURI": "ipfs://bafybeicpfd5c5gvfp7vwwfxduvl4zl23zagn5fxxjlpnjsmtks4zwrm7gu?id=1",
+      "durationSeconds": 186.266667,
+      "creator": "0x625307dE45Bd25AD6bf6cC7391a308fc84067cf7",
+      "personIds": [
+        "pete-rango",
+        "xmane",
+        "nawt-creative"
+      ],
+      "credits": [
+        {
+          "personId": "pete-rango",
+          "role": "Creative direction and production",
+          "source": "https://etherscan.io/token/0x2db9c2070d4cc57345d34e526e998d3fb6c71548?a=1"
+        },
+        {
+          "personId": "xmane",
+          "role": "Creative direction and production",
+          "source": "https://etherscan.io/token/0x2db9c2070d4cc57345d34e526e998d3fb6c71548?a=1"
+        },
+        {
+          "personId": "nawt-creative",
+          "role": "3D animation",
+          "source": "https://etherscan.io/token/0x2db9c2070d4cc57345d34e526e998d3fb6c71548?a=1"
+        }
+      ],
+      "note": "Savage Planet is a sonic journey into the wild. An introduction to a world with no rules - a world where instincts subjugate convention and imagination is your only compass. \n\nInspired by “Le Planete Sauvage”, a movie that featured aliens and humans alike in a wild planet inhabited by a variety of beasts and creatures beyond anything seen by the human eye before the film’s release - The medium displayed several moments that garnered our attention; from moments of light playfulness, moments of violence and aggression as well as moments so bizarre one could only watch and see how the situation evolved. \n\nCreative Direction and Production by Xmane and Pete Rango\n3D Animation: Nawt Creative",
+      "originalRelease": "https://zora.co/collect/eth:0x2db9c2070d4cc57345d34e526e998d3fb6c71548/1",
+      "playback": {
+        "status": "played",
+        "checkedAt": "2026-11-06T09:31:14.041Z",
+        "workingURL": "https://magic.decentralized-content.com/ipfs/bafybeiab45b67pci3pthibi6je4nxzyskand6xyc734nt5b2r3zlk26pca?id=1"
+      },
+      "discovery": "Zora p3t3rango created-collection feed, fixed-block ERC721 reads, original token metadata and actual decoded audio/video playback"
+    },
+    {
+      "id": "pete-zora-1-de1553b02fd9f80cc9154b49a3d4fe659b426aa6-2",
+      "title": "Evermore DEMO Tape REIN X Pete Rango",
+      "artist": "REIN & Pete Rango",
+      "chainId": 1,
+      "contract": "0xde1553b02fd9f80cc9154b49a3d4fe659b426aa6",
+      "tokenId": "2",
+      "standard": "ERC721",
+      "platform": "Other",
+      "kind": "audio",
+      "collection": "Evermore DEMO Tape REIN X Pete Rango",
+      "imageURI": "ipfs://bafybeifc2bzj2twlthfkfgvcpgmlvdw7nmc3r22267mkxdc4mggdkkg2gy?",
+      "durationSeconds": 185.6,
+      "creator": "0x6fe5948A5a162580e4F35c915C08346393977a19",
+      "credits": [
+        {
+          "personId": "pete-rango",
+          "role": "Collaboration (named in original release title)",
+          "source": "https://etherscan.io/token/0xde1553b02fd9f80cc9154b49a3d4fe659b426aa6?a=2"
+        }
+      ],
+      "personIds": [
+        "pete-rango"
+      ],
+      "note": "Evermore is one of my songs that I wrote in one sitting, and is for sure one of the most vulnerable songs I've written to this day. The music video shot followed the same spirit; at an abandoned dance studio where I expressed myself without a plan. The gif is some moments from that day. \nThis collaboration event is a perfect opportunity for me to share this with you. There isn't lots of rock music in Web3 and Pete and I would love to use your support to be able to finish this song and share some more of what we got <3",
+      "originalRelease": "https://opensea.io/assets/ethereum/0xde1553b02fd9f80cc9154b49a3d4fe659b426aa6/2",
+      "discovery": "Public OpenSea holdings identified token; fixed-block tokenURI original metadata explicitly names REIN X Pete Rango. Minting platform not yet independently established.",
+      "playback": {
+        "status": "played",
+        "checkedAt": "2026-11-06T09:40:20.612Z",
+        "workingURL": "https://magic.decentralized-content.com/ipfs/bafybeihslgreley6vpasuaifh2snc6rkmogsitlgkh7cb6txvyyg3xrrya?"
+      }
+    },
+    {
+      "id": "pete-zora-1-0e616dff8c4d9341ce7cebe3bfa829d76ddb410e-3",
+      "title": "Say it celly",
+      "artist": "Mavi Taylor",
+      "chainId": 1,
+      "contract": "0x0e616dff8c4d9341ce7cebe3bfa829d76ddb410e",
+      "tokenId": "3",
+      "standard": "ERC721",
+      "platform": "Zora",
+      "kind": "audio",
+      "collection": "Say it celly",
+      "imageURI": "ipfs://bafybeiebhpnwn35qtpmv6lw4kkefqdgvlgdzynkd7xm6dufl4oo4ssyide",
+      "durationSeconds": 141.090907,
+      "creator": "0xEdDd437F511f63e465302D7aaD4DC0Bc41260001",
+      "credits": [
+        {
+          "personId": "pete-rango",
+          "role": "Producer",
+          "source": "https://etherscan.io/token/0x0e616dff8c4d9341ce7cebe3bfa829d76ddb410e?a=3"
+        },
+        {
+          "personId": "nawt-creative",
+          "role": "Artwork",
+          "source": "https://etherscan.io/token/0x0e616dff8c4d9341ce7cebe3bfa829d76ddb410e?a=3"
+        }
+      ],
+      "personIds": [
+        "pete-rango"
+      ],
+      "note": "When I started this song and thrifted this jacket I had no plan for how they would turn out and it has led me to fall in love with creating in more than one medium. I hope the jacket and this song can be a reminder to express yourself in whatever medium feels best. \n\nSong produced by Pete Rango \nArt work by @ nawtcreative \n\nAny holders of this token\n- Entered for a chance to win a hand painted jacket that will be chosen in a live twitter space 3/27\n- Allow listed for my next drop ",
+      "originalRelease": "https://zora.co/collect/eth:0x0e616dff8c4d9341ce7cebe3bfa829d76ddb410e/3",
+      "discovery": "Public OpenSea holdings identified token; fixed-block tokenURI original metadata proves media and credits. Exact contract appears in Mavi Taylor Zora created feed.",
+      "playback": {
+        "status": "played",
+        "checkedAt": "2026-11-06T09:40:32.305Z",
+        "workingURL": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y"
+      }
+    }
+  ],
+  "evidence": {
+    "pete-zora-1-4ac251da6af98d7018cb8a722b3b5ab602f75fcf-1": {
+      "status": "live",
+      "chainId": 1,
+      "contract": "0x4ac251da6af98d7018cb8a722b3b5ab602f75fcf",
+      "tokenId": "1",
+      "standard": "ERC721",
+      "blockNumber": 26354919,
+      "checkedAt": "2026-11-06T09:30:52.531Z",
+      "title": "Dreamvibe",
+      "artist": "Pete Rango",
+      "kind": "audio",
+      "imageURI": "ipfs://bafybeihqsrhoc6k7zsismuheynd4brym6p5seiqj5jmkdjck37jbjqjyl4",
+      "imageURL": "https://magic.decentralized-content.com/ipfs/bafybeihqsrhoc6k7zsismuheynd4brym6p5seiqj5jmkdjck37jbjqjyl4",
+      "mediaURI": "ipfs://bafybeih3varhgsitblrzi36i67tykzlp4tegv5yizwhvdlizv62jjh257q",
+      "mediaURL": "https://magic.decentralized-content.com/ipfs/bafybeih3varhgsitblrzi36i67tykzlp4tegv5yizwhvdlizv62jjh257q",
+      "metadataURI": "data:application/json;base64,eyJuYW1lIjogIkRyZWFtdmliZSAgMSIsICJkZXNjcmlwdGlvbiI6ICJUaGlzIGlzIGEgdHJhY2sgd2UgY3JlYXRlZCBhIGZldyB5ZWFycyBhZ28gZHVyaW5nIG15IGNsb3NlIGZyaWVuZCBHYWJlJ3MgYmlydGhkYXkgYXQgRGVmaWFudCBTdHVkaW9zLiBHYWJlIGludml0ZWQgYSBmZXcgbG9jYWwgUmljaG1vbmQgYXJ0aXN0cywgcHJvZHVjZXJzLCBhbmQgd3JpdGVycyB0byBEZWZpYW50IHRvIGNlbGVicmF0ZS4gRHVyaW5nIHRob3NlIHNlc3Npb25zIEkgbWV0IEVsbGUgU3ltb25lLiBDYXMgYW5kIEkgd2VyZSBjb21pbmcgdXAgd2l0aCBpZGVhIHdoZW4gRWxsZSB3YWxrZWQgaW4gdGhlIHJvb20gYW5kIHNoZSBpbW1lZGlhdGVseSBzdGFydGVkIGZyZWVzdHlsaW5nIHRvIGl0LiBXZSB0aG91Z2h0IHNoZSB3b3VsZCBiZSBwZXJmZWN0IGZvciB0aGUgc29uZyBzbyB3ZSBmaW5pc2hlZCBhcnJhbmdpbmcgdGhlIHNvbmcgYW5kIGdvdCBoZXIgaW4gdGhlIGJvb3RoLiBTaGUgZGlkIHRoaXMgd2hvbGUgc29uZyBpbiBvbmUgdGFrZSAwLjAgISEhIFRoYXQgbmlnaHQgd2UgbWFkZSBhIGZldyBtb3JlIHNvbmdzIHRoYXQgd2lsbCBiZSBpbmNsdWRlZCBpbiBvdXIgRVAgZHJvcHBpbmcgYXQgdGhlIHRvcCBvZiAyMDIzLiBNaW50IHRoaXMgc29uZyB0byByZWNlaXZlIGFuIGFpcmRyb3AgZnJvbSBvdXIgdXBjb21pbmcgRVAsIFdJTEQgTElGRSwgaW4gZWFybHkgMjAyMy4gT3BlbiB1bnRpbCAxMkFNIEVTVCAxMi8wNi8yMi4gXG5cbjUwJSBvZiBwcm9jZWVkcyBzdXBwb3J0aW5nIGh0dHBzOi8vanVpY2Vib3gubW9uZXkvQGNhbXBmaXIzXG7wn4+V77iP8J+UpVxuXG5Db3ZlciBBcnQgYnkgTWlkam91cm5leSAiLCAiaW1hZ2UiOiAiaXBmczovL2JhZnliZWlocXNyaG9jNms3enNpc211aGV5bmQ0YnJ5bTZwNXNlaXFqNWpta2RqY2szN2pianFqeWw0IiwgImFuaW1hdGlvbl91cmwiOiAiaXBmczovL2JhZnliZWloM3Zhcmhnc2l0YmxyemkzNmk2N3R5a3pscDR0ZWd2NXlpendodmRsaXp2NjJqamgyNTdxIiwgInByb3BlcnRpZXMiOiB7Im51bWJlciI6IDEsICJuYW1lIjogIkRyZWFtdmliZSAifX0=",
+      "metadataURL": null,
+      "metadataLocation": "ERC721 tokenURI(1) → JSON returned directly by contract → original IPFS audio/video",
+      "durationSeconds": 116.5
+    },
+    "pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1": {
+      "status": "live",
+      "chainId": 1,
+      "contract": "0x10d32bf55f5cbe66b068f2109ecf7475f0631d53",
+      "tokenId": "1",
+      "standard": "ERC721",
+      "blockNumber": 26354919,
+      "checkedAt": "2026-11-06T09:30:59.775Z",
+      "title": "Planet X",
+      "artist": "Xmane & Pete Rango",
+      "kind": "video",
+      "imageURI": "ipfs://bafybeihrmtwi33xymbg4vqunt7butbtq6zk3faznbgkfll7ia7xqxmm6wa?id=1",
+      "imageURL": "https://magic.decentralized-content.com/ipfs/bafybeihrmtwi33xymbg4vqunt7butbtq6zk3faznbgkfll7ia7xqxmm6wa?id=1",
+      "mediaURI": "ipfs://bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+      "mediaURL": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+      "metadataURI": "data:application/json;base64,eyJuYW1lIjogIlBsYW5ldCBYIDEvMjUiLCAiZGVzY3JpcHRpb24iOiAiU2F2YWdlIFBsYW5ldCBpcyBhIHNvbmljIGpvdXJuZXkgaW50byB0aGUgd2lsZC4gQW4gaW50cm9kdWN0aW9uIHRvIGEgd29ybGQgd2l0aCBubyBydWxlcyAtIGEgd29ybGQgd2hlcmUgaW5zdGluY3RzIHN1Ymp1Z2F0ZSBjb252ZW50aW9uIGFuZCBpbWFnaW5hdGlvbiBpcyB5b3VyIG9ubHkgY29tcGFzcy4gXG5cblRoaXMgY29uY2VwdCB3YXMgc3B1cnJlZCBmcm9tIGEgbW9tZW50IGluIGJvdGggcHJvZHVjZXJzJyBsaXZlcyB3aGVyZSB0aGV5IHNpbXVsdGFuZW91c2x5IGZlbHQgaW5zcGlyZWQgdG8gbGV0IGdvIG9mIHRoZSB0cmFkaXRpb25hbCBwb3Agc3RydWN0dXJlIHRoZXkgd2VyZSBzbyB1c2VkIHRvIGFkaGVyaW5nIHRvLiBJbnN0ZWFkLCB0aGV5IGNob3NlIHRvIGNyZWF0ZSBtdXNpYyB0aGF0IG1pcnJvcmVkIGEgZnJlZSBmbG93IG9mIGNvbnNjaW91c25lc3MgdGhhdCBjYW1lIGFib3V0IGFzIGEgZGlyZWN0IHJlc3VsdCBvZiB0aGUgaW5zcGlyYXRpb24gdGhleSBmZWx0IHdoZW4gY3JlYXRpbmcgdGhpcyBtdXNpYy4gQXMgYSByZXN1bHQsIG1vc3Qgb2YgdGhlIHByb2plY3Qgd2FzIGNyZWF0ZWQgaW4gb25lIG5pZ2h0LlxuXG5DcmVhdGl2ZSBEaXJlY3Rpb24gYW5kIFByb2R1Y3Rpb24gYnkgWG1hbmUgYW5kIFBldGUgUmFuZ29cbjNEIEFuaW1hdGlvbjogTmF3dCBDcmVhdGl2ZSIsICJpbWFnZSI6ICJpcGZzOi8vYmFmeWJlaWhybXR3aTMzeHltYmc0dnF1bnQ3YnV0YnRxNnprM2Zhem5iZ2tmbGw3aWE3eHF4bW02d2E/aWQ9MSIsICJhbmltYXRpb25fdXJsIjogImlwZnM6Ly9iYWZ5YmVpZGl3bTJzZ2RlNnQ0cGJjY2djcmFhaDZnNXF0Nm0yam83M282cmhkd3N6aHk3c3p4b3huZT9pZD0xIiwgInByb3BlcnRpZXMiOiB7Im51bWJlciI6IDEsICJuYW1lIjogIlBsYW5ldCBYIn19",
+      "metadataURL": null,
+      "metadataLocation": "ERC721 tokenURI(1) → JSON returned directly by contract → original IPFS audio/video",
+      "durationSeconds": 240.083333
+    },
+    "pete-zora-1-1baf95bab135ea5817606dc8ec27e64dabe17101-1": {
+      "status": "live",
+      "chainId": 1,
+      "contract": "0x1baf95bab135ea5817606dc8ec27e64dabe17101",
+      "tokenId": "1",
+      "standard": "ERC721",
+      "blockNumber": 26354919,
+      "checkedAt": "2026-11-06T09:31:06.803Z",
+      "title": "Tragg Park",
+      "artist": "Xmane & Pete Rango",
+      "kind": "video",
+      "imageURI": "ipfs://bafybeibkhcvtrwbrn4hxnls3uffy7nhaj4m2mggvkycavnmnxrhqdyyaiy?id=1",
+      "imageURL": "https://magic.decentralized-content.com/ipfs/bafybeibkhcvtrwbrn4hxnls3uffy7nhaj4m2mggvkycavnmnxrhqdyyaiy?id=1",
+      "mediaURI": "ipfs://bafybeifdmnnbetd42ympa33t5ncwl3ynalvvirmd3lgypcp3iomenwnhvi?id=1",
+      "mediaURL": "https://magic.decentralized-content.com/ipfs/bafybeifdmnnbetd42ympa33t5ncwl3ynalvvirmd3lgypcp3iomenwnhvi?id=1",
+      "metadataURI": "data:application/json;base64,eyJuYW1lIjogIlRyYWdnIFBhcmsgMS8yNSIsICJkZXNjcmlwdGlvbiI6ICJUaGUgYXJ0d29yayBvZiB0aGUgZmlsbSDigJxMYSBQbGFuZXRlIFNhdXZhZ2XigJ0sIGZlYXR1cmVkIHdpbGQsIGltYWdpbmF0aXZlIGltYWdlcnkgdGhhdCBmZWx0IHJlZnJlc2hpbmcgYW5kIGZyZWVpbmcgdG8gd2F0Y2ggLSBpdCBzZWVtZWQgYWxtb3N0IGFzIGlmIHRoZSBhcnRpc3RzIGFuZCBhbmltYXRvcnMgd29ya2luZyBvbiB0aGlzIHBpZWNlIGhhZCBmcmVlIHJlaWduIHRvIGV4cHJlc3MgdGhlaXIgaW1hZ2luaW5nIG9mIHRoaXMgd29ybGQgaG93ZXZlciB0aGV5IHNhdyBmaXQgLSBPdXIgbXVzaWMgd2FzIGFwcHJvYWNoZWQgd2l0aCB0aGUgc2FtZSBmcmVlZG9tIGFuZCBhYmFuZG9uXG5cbkNyZWF0aXZlIERpcmVjdGlvbiBhbmQgUHJvZHVjdGlvbiBieSBYbWFuZSBhbmQgUGV0ZSBSYW5nb1xuM0QgYW5pbWF0aW9uOiBOYXd0IENyZWF0aXZlIiwgImltYWdlIjogImlwZnM6Ly9iYWZ5YmVpYmtoY3Z0cndicm40aHhubHMzdWZmeTduaGFqNG0ybWdndmt5Y2F2bm1ueHJocWR5eWFpeT9pZD0xIiwgImFuaW1hdGlvbl91cmwiOiAiaXBmczovL2JhZnliZWlmZG1ubmJldGQ0MnltcGEzM3Q1bmN3bDN5bmFsdnZpcm1kM2xneXBjcDNpb21lbnduaHZpP2lkPTEiLCAicHJvcGVydGllcyI6IHsibnVtYmVyIjogMSwgIm5hbWUiOiAiVHJhZ2cgUGFyayJ9fQ==",
+      "metadataURL": null,
+      "metadataLocation": "ERC721 tokenURI(1) → JSON returned directly by contract → original IPFS audio/video",
+      "durationSeconds": 136.2
+    },
+    "pete-zora-1-2db9c2070d4cc57345d34e526e998d3fb6c71548-1": {
+      "status": "live",
+      "chainId": 1,
+      "contract": "0x2db9c2070d4cc57345d34e526e998d3fb6c71548",
+      "tokenId": "1",
+      "standard": "ERC721",
+      "blockNumber": 26354919,
+      "checkedAt": "2026-11-06T09:31:14.041Z",
+      "title": "Oms at Play",
+      "artist": "Xmane & Pete Rango",
+      "kind": "video",
+      "imageURI": "ipfs://bafybeicpfd5c5gvfp7vwwfxduvl4zl23zagn5fxxjlpnjsmtks4zwrm7gu?id=1",
+      "imageURL": "https://magic.decentralized-content.com/ipfs/bafybeicpfd5c5gvfp7vwwfxduvl4zl23zagn5fxxjlpnjsmtks4zwrm7gu?id=1",
+      "mediaURI": "ipfs://bafybeiab45b67pci3pthibi6je4nxzyskand6xyc734nt5b2r3zlk26pca?id=1",
+      "mediaURL": "https://magic.decentralized-content.com/ipfs/bafybeiab45b67pci3pthibi6je4nxzyskand6xyc734nt5b2r3zlk26pca?id=1",
+      "metadataURI": "data:application/json;base64,eyJuYW1lIjogIk9tcyBhdCBQbGF5IDEvMjUiLCAiZGVzY3JpcHRpb24iOiAiU2F2YWdlIFBsYW5ldCBpcyBhIHNvbmljIGpvdXJuZXkgaW50byB0aGUgd2lsZC4gQW4gaW50cm9kdWN0aW9uIHRvIGEgd29ybGQgd2l0aCBubyBydWxlcyAtIGEgd29ybGQgd2hlcmUgaW5zdGluY3RzIHN1Ymp1Z2F0ZSBjb252ZW50aW9uIGFuZCBpbWFnaW5hdGlvbiBpcyB5b3VyIG9ubHkgY29tcGFzcy4gXG5cbkluc3BpcmVkIGJ5IOKAnExlIFBsYW5ldGUgU2F1dmFnZeKAnSwgYSBtb3ZpZSB0aGF0IGZlYXR1cmVkIGFsaWVucyBhbmQgaHVtYW5zIGFsaWtlIGluIGEgd2lsZCBwbGFuZXQgaW5oYWJpdGVkIGJ5IGEgdmFyaWV0eSBvZiBiZWFzdHMgYW5kIGNyZWF0dXJlcyBiZXlvbmQgYW55dGhpbmcgc2VlbiBieSB0aGUgaHVtYW4gZXllIGJlZm9yZSB0aGUgZmlsbeKAmXMgcmVsZWFzZSAtIFRoZSBtZWRpdW0gZGlzcGxheWVkIHNldmVyYWwgbW9tZW50cyB0aGF0IGdhcm5lcmVkIG91ciBhdHRlbnRpb247IGZyb20gbW9tZW50cyBvZiBsaWdodCBwbGF5ZnVsbmVzcywgbW9tZW50cyBvZiB2aW9sZW5jZSBhbmQgYWdncmVzc2lvbiBhcyB3ZWxsIGFzIG1vbWVudHMgc28gYml6YXJyZSBvbmUgY291bGQgb25seSB3YXRjaCBhbmQgc2VlIGhvdyB0aGUgc2l0dWF0aW9uIGV2b2x2ZWQuIFxuXG5DcmVhdGl2ZSBEaXJlY3Rpb24gYW5kIFByb2R1Y3Rpb24gYnkgWG1hbmUgYW5kIFBldGUgUmFuZ29cbjNEIEFuaW1hdGlvbjogTmF3dCBDcmVhdGl2ZSIsICJpbWFnZSI6ICJpcGZzOi8vYmFmeWJlaWNwZmQ1YzVndmZwN3Z3d2Z4ZHV2bDR6bDIzemFnbjVmeHhqbHBuanNtdGtzNHp3cm03Z3U/aWQ9MSIsICJhbmltYXRpb25fdXJsIjogImlwZnM6Ly9iYWZ5YmVpYWI0NWI2N3BjaTNwdGhpYmk2amU0bnh6eXNrYW5kNnh5YzczNG50NWIycjN6bGsyNnBjYT9pZD0xIiwgInByb3BlcnRpZXMiOiB7Im51bWJlciI6IDEsICJuYW1lIjogIk9tcyBhdCBQbGF5In19",
+      "metadataURL": null,
+      "metadataLocation": "ERC721 tokenURI(1) → JSON returned directly by contract → original IPFS audio/video",
+      "durationSeconds": 186.266667
+    },
+    "pete-zora-1-de1553b02fd9f80cc9154b49a3d4fe659b426aa6-2": {
+      "status": "live",
+      "chainId": 1,
+      "contract": "0xde1553b02fd9f80cc9154b49a3d4fe659b426aa6",
+      "tokenId": "2",
+      "standard": "ERC721",
+      "blockNumber": 26354964,
+      "checkedAt": "2026-11-06T09:40:20.612Z",
+      "title": "Evermore DEMO Tape REIN X Pete Rango",
+      "artist": "REIN & Pete Rango",
+      "kind": "audio",
+      "imageURI": "ipfs://bafybeifc2bzj2twlthfkfgvcpgmlvdw7nmc3r22267mkxdc4mggdkkg2gy?",
+      "imageURL": "https://magic.decentralized-content.com/ipfs/bafybeifc2bzj2twlthfkfgvcpgmlvdw7nmc3r22267mkxdc4mggdkkg2gy?",
+      "mediaURI": "ipfs://bafybeihslgreley6vpasuaifh2snc6rkmogsitlgkh7cb6txvyyg3xrrya?",
+      "mediaURL": "https://magic.decentralized-content.com/ipfs/bafybeihslgreley6vpasuaifh2snc6rkmogsitlgkh7cb6txvyyg3xrrya?",
+      "metadataURI": "ipfs://bafkreifqtfq72gila5jhniqrnd32fj6ekil55hpf277ngbtm73nry25wca?2",
+      "metadataURL": "https://ipfs.filebase.io/ipfs/bafkreifqtfq72gila5jhniqrnd32fj6ekil55hpf277ngbtm73nry25wca?2",
+      "metadataLocation": "ERC721 tokenURI → original IPFS JSON → original IPFS audio",
+      "durationSeconds": 185.6,
+      "localImage": "/recovered/evermore-cover.webp",
+      "localImageProvenance": "First frame extracted from original token imageURI, which is a 512×512 H264 MOV; original imageURI preserved."
+    },
+    "pete-zora-1-0e616dff8c4d9341ce7cebe3bfa829d76ddb410e-3": {
+      "status": "live",
+      "chainId": 1,
+      "contract": "0x0e616dff8c4d9341ce7cebe3bfa829d76ddb410e",
+      "tokenId": "3",
+      "standard": "ERC721",
+      "blockNumber": 26354965,
+      "checkedAt": "2026-11-06T09:40:32.305Z",
+      "title": "Say it celly",
+      "artist": "Mavi Taylor",
+      "kind": "audio",
+      "imageURI": "ipfs://bafybeiebhpnwn35qtpmv6lw4kkefqdgvlgdzynkd7xm6dufl4oo4ssyide",
+      "imageURL": "https://magic.decentralized-content.com/ipfs/bafybeiebhpnwn35qtpmv6lw4kkefqdgvlgdzynkd7xm6dufl4oo4ssyide",
+      "mediaURI": "ipfs://bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+      "mediaURL": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+      "metadataURI": "data:application/json;base64,eyJuYW1lIjogIlNheSBpdCBjZWxseSAgMy81MCIsICJkZXNjcmlwdGlvbiI6ICJXaGVuIEkgc3RhcnRlZCB0aGlzIHNvbmcgYW5kIHRocmlmdGVkIHRoaXMgamFja2V0IEkgaGFkIG5vIHBsYW4gZm9yIGhvdyB0aGV5IHdvdWxkIHR1cm4gb3V0IGFuZCBpdCBoYXMgbGVkIG1lIHRvIGZhbGwgaW4gbG92ZSB3aXRoIGNyZWF0aW5nIGluIG1vcmUgdGhhbiBvbmUgbWVkaXVtLiBJIGhvcGUgdGhlIGphY2tldCBhbmQgdGhpcyBzb25nIGNhbiBiZSBhIHJlbWluZGVyIHRvIGV4cHJlc3MgeW91cnNlbGYgaW4gd2hhdGV2ZXIgbWVkaXVtIGZlZWxzIGJlc3QuIFxuXG5Tb25nIHByb2R1Y2VkIGJ5IFBldGUgUmFuZ28gXG5BcnQgd29yayBieSBAIG5hd3RjcmVhdGl2ZSBcblxuQW55IGhvbGRlcnMgb2YgdGhpcyB0b2tlblxuLSBFbnRlcmVkIGZvciBhIGNoYW5jZSB0byB3aW4gYSBoYW5kIHBhaW50ZWQgamFja2V0IHRoYXQgd2lsbCBiZSBjaG9zZW4gaW4gYSBsaXZlIHR3aXR0ZXIgc3BhY2UgMy8yN1xuLSBBbGxvdyBsaXN0ZWQgZm9yIG15IG5leHQgZHJvcCAiLCAiaW1hZ2UiOiAiaXBmczovL2JhZnliZWllYmhwbnduMzVxdHBtdjZsdzRra2VmcWRndmxnZHp5bmtkN3htNmR1Zmw0b280c3N5aWRlIiwgImFuaW1hdGlvbl91cmwiOiAiaXBmczovL2JhZnliZWlnY3N6enQybXJiZnFhdnZlaWkyamM2am9hNnNnbmJjd29rb3VweWFmbDJtbXI1cHN3NjZ5IiwgInByb3BlcnRpZXMiOiB7Im51bWJlciI6IDMsICJuYW1lIjogIlNheSBpdCBjZWxseSAifX0=",
+      "metadataURL": null,
+      "metadataLocation": "ERC721 tokenURI → original JSON onchain → original IPFS audio",
+      "durationSeconds": 141.090907
+    }
+  },
+  "proposedPeople": [
+    {
+      "id": "xmane",
+      "name": "Xmane",
+      "role": "Producer and creative director",
+      "bio": "Credited with Pete Rango for creative direction and production in the original Savage Planet token metadata."
+    },
+    {
+      "id": "nawt-creative",
+      "name": "Nawt Creative",
+      "role": "3D animation",
+      "bio": "Credited for 3D animation in the original Savage Planet token metadata."
+    }
+  ]
+}

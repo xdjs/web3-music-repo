@@ -5,6 +5,13 @@ const hosts = {
   7777777: "explorer.zora.energy",
 };
 export async function readHolders(record, cursor, fetcher = fetch) {
+  if (record.standard === "ERC20")
+    return {
+      status: "unsupported",
+      scope: "coin",
+      message:
+        "Coin-holder balances are not NFT editions. A coin-holder view is not available yet.",
+    };
   try {
     const host = hosts[record.chainId];
     if (!host || !/^0x[0-9a-f]{40}$/i.test(record.contract)) throw Error();

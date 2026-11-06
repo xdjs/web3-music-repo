@@ -30,10 +30,17 @@ const load = async (file, fallback) => {
     return fallback;
   }
 };
+const staticAssets = new Set(await load("data/static-assets.json", []));
 const playlist = normalizePlaylist(
   await load("evidence/sound-wayback/playlist-data.json", {}),
-  await load("data/playlist-track-recovery.json", []),
+  [
+    ...(await load("data/playlist-activity-recovery.json", [])),
+    ...(await load("data/playlist-track-recovery.json", [])),
+  ],
 );
+const historicalPlaylists = await load("data/historical-playlists.json", [
+  playlist,
+]);
 const comments = await load(
   "evidence/sound-wayback/recovered-comments.json",
   [],
@@ -130,8 +137,9 @@ function artistPortrait(id) {
     `/people/${id}-160.webp`,
     `/people/${id}-640.webp`,
   ].filter(Boolean);
-  const src = candidates.find((src) =>
-    existsSync(path.join(root, "public", src)),
+  const src = candidates.find(
+    (src) =>
+      staticAssets.has(src) || existsSync(path.join(root, "public", src)),
   );
   return src
     ? {
@@ -292,6 +300,7 @@ export async function handler(req, res) {
     if (url.pathname === "/api/archive")
       return json(res, {
         playlist,
+        playlists: historicalPlaylists,
         comments: comments.map((comment) => ({
           ...comment,
           profile: commentProfile(comment.ownerAddressAtCapture),

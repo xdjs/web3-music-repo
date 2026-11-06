@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-06T08:55:47.829Z",
+  "syntheticAccountsOnly": true,
+  "namespace": "verification-1793955347829",
+  "checks": [
+    "missing-is-empty",
+    "concurrent-create-one-winner",
+    "cross-instance-persistence",
+    "concurrent-update-etag-cas",
+    "stale-revision-conflict",
+    "account-isolation",
+    "anonymous-read-denied"
+  ],
+  "cleanedUp": true,
+  "anonymousStatus": 403
+}

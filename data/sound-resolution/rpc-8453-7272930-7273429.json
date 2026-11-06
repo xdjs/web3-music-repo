@@ -1,0 +1,40 @@
+{
+  "chainId": 8453,
+  "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+  "fromBlock": 7272930,
+  "toBlock": 7273429,
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+        "topics": [
+          "0xe94db3a31c09b7894f023c1f9114859672be916ffa8282215d7d43595bdcb3e7"
+        ],
+        "fromBlock": "0x6ef9e2",
+        "toBlock": "0x6efbd5"
+      }
+    ]
+  },
+  "scope": "Bounded provider capability probe, not a factory census. An empty result only covers this exact range.",
+  "providers": {
+    "drpc": {
+      "url": "https://base.drpc.org",
+      "httpStatus": 400,
+      "checkedAt": "2026-11-06T08:37:50.817Z",
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "error": {
+          "message": "ranges over 10000 blocks are not supported on free plan",
+          "code": 35
+        }
+      },
+      "status": "unavailable",
+      "reason": "provider-range-restriction",
+      "message": "ranges over 10000 blocks are not supported on free plan"
+    }
+  }
+}

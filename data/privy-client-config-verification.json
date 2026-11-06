@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-06T08:32:07.597933+00:00",
+  "appId": "cmlzjxfrh00ak0cjvlap9d3gm",
+  "clientId": "client-WY6W53j4q1dvp15KJx1zc88MivQTj6NJ66TZHLhFYf3X5",
+  "clientName": "Music NFT Recovery \u2014 local",
+  "recoveryClientAllowedOrigins": [
+    "http://127.0.0.1:4190",
+    "http://localhost:4190"
+  ],
+  "emailAuth": true,
+  "walletAuth": true,
+  "defaultClientAllowedOrigins": [
+    "https://musicnerd.xyz",
+    "https://musicnerd.net",
+    "https://www.musicnerd.net"
+  ],
+  "dashboardReloadVerified": true,
+  "scope": "Public Privy configuration plus authenticated dashboard read-back. No OTP or wallet signature submitted; personal login completion remains unverified."
+}

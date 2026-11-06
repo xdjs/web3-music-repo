@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-11-06T09:36:54.591Z",
+  "base": "http://127.0.0.1:4191",
+  "passed": true,
+  "scope": "Real browser queue interactions and original-media playback for Breakdown and Driving. Media availability is external.",
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "autoQueue": true,
+      "nextPreservesAuto": true,
+      "manualSelectionPreserved": true,
+      "removeOtherContinues": true,
+      "removeCurrentContinues": true,
+      "nextAfterRemovedCurrent": true,
+      "clearContinues": true,
+      "noAutoNextAfterClear": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "autoQueue": true,
+      "nextPreservesAuto": true,
+      "manualSelectionPreserved": true,
+      "removeOtherContinues": true,
+      "removeCurrentContinues": true,
+      "nextAfterRemovedCurrent": true,
+      "clearContinues": true,
+      "noAutoNextAfterClear": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "autoQueue": true,
+      "nextPreservesAuto": true,
+      "manualSelectionPreserved": true,
+      "removeOtherContinues": true,
+      "removeCurrentContinues": true,
+      "nextAfterRemovedCurrent": true,
+      "clearContinues": true,
+      "noAutoNextAfterClear": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "autoQueue": true,
+      "nextPreservesAuto": true,
+      "manualSelectionPreserved": true,
+      "removeOtherContinues": true,
+      "removeCurrentContinues": true,
+      "nextAfterRemovedCurrent": true,
+      "clearContinues": true,
+      "noAutoNextAfterClear": true,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

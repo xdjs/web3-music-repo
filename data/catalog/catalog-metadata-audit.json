@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-11-06T08:23:17.956Z",
+  "snapshotDate": "2026-03-09",
+  "source": "https://github.com/catalogworks/catalog-squidward-data",
+  "scope": "Offline original JSON audit of currently imported Catalog records; not a platform completeness or current URI verification claim",
+  "originalDocuments": 4110,
+  "appRecords": 4036,
+  "snapshotMatched": 4036,
+  "snapshotMissing": [],
+  "structuredBpm": 0,
+  "structuredKey": 0,
+  "structuredCredits": 0,
+  "strictBpmIncludingNotes": 25,
+  "strictKeyIncludingNotes": 5,
+  "fields": {
+    "Description": 3533,
+    "Duration": 4035,
+    "Track number": 2445,
+    "Project": 901,
+    "Record label": 463
+  },
+  "nestedProjectTitles": 480,
+  "creditLanguageCandidates": 1375,
+  "byChain": {
+    "1": {
+      "appRecords": 2489,
+      "snapshotMatched": 2489
+    },
+    "8453": {
+      "appRecords": 1547,
+      "snapshotMatched": 1547
+    }
+  }
+}

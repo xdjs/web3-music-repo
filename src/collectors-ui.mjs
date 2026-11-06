@@ -40,6 +40,8 @@ export function mountCollectors({
     return `<a class="collector-card" href="${walletLink(h.address)}" title="${esc(h.address)}">${avatar(h)}<span class="collector-name">${esc(i.name)}<small>${esc(i.source)}</small></span><span class="collector-editions">${esc(h.balance)}<small>${purchased ? "purchased" : h.balance === "1" ? "edition" : "editions"}</small></span></a>`;
   }
   function content(r, full = false) {
+    if (r.standard === "ERC20")
+      return '<div class="reading"><h2>Coin holders</h2><p>This release is a Zora content coin. NFT edition collectors do not apply; coin-holder recovery has not been added yet.</p></div>';
     const s = states.get(r.id);
     if (!s || (s.loading && !s.items.length))
       return '<div class="collector-loading"><span class="status-dot"></span> Recovering the people behind this record…</div>';
@@ -117,6 +119,7 @@ export function mountCollectors({
     );
   }
   async function load(id, more = false, emptyPages = 0) {
+    if (catalog().find((r) => r.id === id)?.standard === "ERC20") return;
     activeRecord = id;
     const prior = states.get(id);
     if (prior?.loading) return;

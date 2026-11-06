@@ -1,3 +1,8 @@
+import {
+  playlistSnapshot,
+  decodePlaylistShare,
+  shareOrCopyPlaylist,
+} from "./playlist-share.mjs";
 const KEY = "mn-archive-playlists-v1";
 export function createPlaylistStore(storage) {
   let lists = [];
@@ -7,6 +12,7 @@ export function createPlaylistStore(storage) {
       lists = v
         .filter(
           (p) =>
+            p &&
             typeof p.id === "string" &&
             typeof p.name === "string" &&
             Array.isArray(p.recordIds),
@@ -23,12 +29,15 @@ export function createPlaylistStore(storage) {
   return {
     all: () => structuredClone(lists),
     create(name, recordId) {
-      name = name.trim().slice(0, 100);
-      if (!name) throw Error("Give your playlist a name.");
+      return this.createFrom(name, recordId ? [recordId] : []);
+    },
+    createFrom(name, recordIds) {
+      const snapshot = playlistSnapshot({ name, recordIds });
+      if (lists.length >= 100) throw Error("You can save up to 100 playlists.");
       const p = {
         id: crypto.randomUUID(),
-        name,
-        recordIds: recordId ? [recordId] : [],
+        name: snapshot.name,
+        recordIds: snapshot.recordIds,
         createdAt: new Date().toISOString(),
       };
       save([...lists, p]);
@@ -55,6 +64,7 @@ export function mountPlaylists({
   play,
   notify,
   rerender,
+  isLiked = () => false,
 }) {
   let storage;
   try {
@@ -131,16 +141,107 @@ export function mountPlaylists({
     };
     dialog.showModal();
   };
+  const likeButton = (r) =>
+    `<button class="icon heart ${isLiked(r.id) ? "active" : ""}" data-like="${esc(r.id)}" aria-label="${isLiked(r.id) ? "Unlike" : "Like"} ${esc(r.title)}">${isLiked(r.id) ? "♥" : "♡"}</button>`;
+  const snapshots = new Map();
+  let shared = { token: null, status: "idle" };
+  const idsFor = (snapshot) => {
+    const known = new Set(
+      catalog()
+        .filter((r) => r.kind !== "artwork")
+        .map((r) => r.id),
+    );
+    return snapshot.recordIds.filter((id) => known.has(id));
+  };
+  const playSnapshot = (snapshot, originalIndex = 0) => {
+    const ids = idsFor(snapshot);
+    const index =
+      originalIndex === 0
+        ? 0
+        : idsFor({
+            ...snapshot,
+            recordIds: snapshot.recordIds.slice(0, originalIndex),
+          }).length;
+    if (Number.isInteger(originalIndex) && originalIndex >= 0 && ids[index])
+      play(ids[index], ids, index);
+    else notify("These recordings are not available in this catalog.");
+  };
+  const saveSnapshot = (snapshot) => {
+    let id;
+    if (
+      commit(() => {
+        id = store.createFrom(snapshot.name, snapshot.recordIds);
+      })
+    ) {
+      location.hash = "playlist/" + id;
+      notify("Saved a copy to your playlists on this device.");
+    }
+  };
+  const shareSnapshot = async (snapshot) => {
+    try {
+      const result = await shareOrCopyPlaylist(snapshot, {
+        baseURL: location.href,
+      });
+      if (result.status === "copied")
+        notify(
+          "Playlist link copied. Anyone with the link can listen and save a copy.",
+        );
+      if (result.status === "manual") {
+        dialog.innerHTML = `<form><div class="dialog-title"><h2>Share playlist</h2><button type="button" class="icon" data-cancel aria-label="Close sharing">×</button></div><label class="form-label">Copy this link<input name="shareLink" readonly value="${esc(result.url)}"></label><p class="link-note">Anyone with the link can open this playlist. The link contains its title and track list, not your account details. Later edits do not change this shared copy.</p><button class="outline-button" type="button" data-cancel>Done</button></form>`;
+        dialog
+          .querySelectorAll("[data-cancel]")
+          .forEach((button) => (button.onclick = close));
+        dialog.showModal();
+        dialog.querySelector("input").select();
+      }
+    } catch (error) {
+      notify(error.message || "Could not create a playlist link.");
+    }
+  };
+  const actionsForSnapshot = (key, value) => {
+    const snapshot = playlistSnapshot(value);
+    snapshots.set(key, snapshot);
+    const available = idsFor(snapshot).length;
+    return `<div class="actions playlist-actions"><button class="primary" data-play-snapshot="${esc(key)}" ${available ? "" : "disabled"}>▶ Play recovered tracks</button><button class="outline-button" data-save-snapshot="${esc(key)}" ${snapshot.recordIds.length ? "" : "disabled"}>＋ Save a copy</button><button class="outline-button" data-share-snapshot="${esc(key)}">Share</button></div>`;
+  };
+  const sharedView = (token) => {
+    if (shared.token !== token) {
+      shared = { token, status: "loading" };
+      decodePlaylistShare(token)
+        .then((snapshot) => {
+          if (shared.token !== token) return;
+          shared = { token, status: "ready", snapshot };
+          if (location.hash.startsWith("#shared-playlist/")) rerender();
+        })
+        .catch((error) => {
+          if (shared.token !== token) return;
+          shared = { token, status: "error", error: error.message };
+          if (location.hash.startsWith("#shared-playlist/")) rerender();
+        });
+    }
+    if (shared.status === "loading")
+      return '<div class="intro"><h1>Shared playlist</h1></div><p role="status">Opening playlist…</p>';
+    if (shared.status === "error")
+      return `<div class="intro"><h1>Playlist link unavailable</h1></div><p class="notice">${esc(shared.error)}</p><a class="outline-button" href="#playlists">Your playlists</a>`;
+    const p = shared.snapshot,
+      available = idsFor(p).length;
+    return `<a class="back" href="#playlists">← Your playlists</a><div class="intro"><div><span class="eyebrow">SHARED PLAYLIST</span><h1>${esc(p.name)}</h1><p>${p.recordIds.length} tracks · ${available} matched in this catalog</p></div></div><p class="link-note">A shared copy of someone’s selection. Save your own copy to edit it; changes here do not alter the original.</p>${actionsForSnapshot("shared", p)}${p.recordIds
+      .map((id, index) => {
+        const r = catalog().find((r) => r.id === id && r.kind !== "artwork");
+        return `<div class="track-row personal-track"><span class="index">${index + 1}</span>${r ? `<img src="${esc(image(r))}" alt=""><div><a href="#record/${esc(r.id)}"><strong>${esc(r.title.replace(/\s*#\d+$/, ""))}</strong></a><small>${esc(r.artist)}</small></div>` : "<div><strong>Recording unavailable in this catalog</strong></div>"}<div class="playlist-track-actions">${r ? `<button class="icon" data-play-snapshot="shared" data-snapshot-index="${index}" aria-label="Play ${esc(r.title)}">▶</button>${likeButton(r)}<button class="icon" data-add-playlist="${esc(r.id)}" aria-label="Add ${esc(r.title)} to playlist">＋</button>` : ""}</div></div>`;
+      })
+      .join("")}`;
+  };
   const row = (p, id, i) => {
     const r = catalog().find((r) => r.id === id);
-    return `<div class="track-row personal-track"><span class="index">${i + 1}</span>${r ? `<img src="${esc(image(r))}" alt=""><div><a href="#record/${esc(r.id)}"><strong>${esc(r.title.replace(/\s*#\d+$/, ""))}</strong></a><small>${esc(r.artist)}</small></div>` : `<div><strong>Recording unavailable in this catalog</strong><small>${esc(id)}</small></div>`}<div class="playlist-track-actions">${r ? `<button class="icon" data-personal-track="${p.id}" data-index="${i}" aria-label="Play ${esc(r.title)}">▶</button>` : ""}<button class="icon" data-move-track="${p.id}" data-index="${i}" data-direction="-1" aria-label="Move track ${i + 1} up" ${i === 0 ? "disabled" : ""}>↑</button><button class="icon" data-move-track="${p.id}" data-index="${i}" data-direction="1" aria-label="Move track ${i + 1} down" ${i === p.recordIds.length - 1 ? "disabled" : ""}>↓</button><button class="icon" data-remove-track="${p.id}" data-index="${i}" aria-label="Remove track ${i + 1}">×</button></div></div>`;
+    return `<div class="track-row personal-track"><span class="index">${i + 1}</span>${r ? `<img src="${esc(image(r))}" alt=""><div><a href="#record/${esc(r.id)}"><strong>${esc(r.title.replace(/\s*#\d+$/, ""))}</strong></a><small>${esc(r.artist)}</small></div>` : `<div><strong>Recording unavailable in this catalog</strong><small>${esc(id)}</small></div>`}<div class="playlist-track-actions">${r ? `${likeButton(r)}<button class="icon" data-personal-track="${p.id}" data-index="${i}" aria-label="Play ${esc(r.title)}">▶</button>` : ""}<button class="icon" data-move-track="${p.id}" data-index="${i}" data-direction="-1" aria-label="Move track ${i + 1} up" ${i === 0 ? "disabled" : ""}>↑</button><button class="icon" data-move-track="${p.id}" data-index="${i}" data-direction="1" aria-label="Move track ${i + 1} down" ${i === p.recordIds.length - 1 ? "disabled" : ""}>↓</button><button class="icon" data-remove-track="${p.id}" data-index="${i}" aria-label="Remove track ${i + 1}">×</button></div></div>`;
   };
   const view = (id, embedded = false) => {
     if (id) {
       const p = store.all().find((p) => p.id === id);
       if (!p)
         return '<h1>Playlist not found</h1><a href="#playlists">Your playlists</a>';
-      return `<a class="back" href="#playlists">← Your playlists</a><div class="intro"><div><span class="eyebrow">YOUR PLAYLIST · SAVED ON THIS DEVICE</span><h1>${esc(p.name)}</h1><p>${p.recordIds.length} recordings · your own piece of the era</p></div></div><div class="actions playlist-actions"><button class="primary" data-play-personal="${p.id}" ${p.recordIds.length ? "" : "disabled"}>▶ Play playlist</button><button class="outline-button" data-rename-playlist="${p.id}">Rename</button><button class="outline-button" data-export-playlist="${p.id}">↓ Export</button><button class="text-button" data-delete-playlist="${p.id}">Delete playlist</button></div>${p.recordIds.length ? p.recordIds.map((id, i) => row(p, id, i)).join("") : '<div class="empty">Your first track is waiting. <a class="error-link" href="#explore">Explore music ↗</a><p>Open a recording and choose “Add to playlist”.</p></div>'}`;
+      return `<a class="back" href="#playlists">← Your playlists</a><div class="intro"><div><span class="eyebrow">YOUR PLAYLIST · SAVED ON THIS DEVICE</span><h1>${esc(p.name)}</h1><p>${p.recordIds.length} recordings · your own piece of the era</p></div></div><div class="actions playlist-actions"><button class="primary" data-play-personal="${p.id}" ${p.recordIds.length ? "" : "disabled"}>▶ Play playlist</button><button class="outline-button" data-rename-playlist="${p.id}">Rename</button><button class="outline-button" data-share-playlist="${esc(p.id)}">Share</button><button class="outline-button" data-export-playlist="${p.id}">↓ Export</button><button class="text-button" data-delete-playlist="${p.id}">Delete playlist</button></div>${p.recordIds.length ? p.recordIds.map((id, i) => row(p, id, i)).join("") : '<div class="empty">Your first track is waiting. <a class="error-link" href="#explore">Explore music ↗</a><p>Open a recording and choose “Add to playlist”.</p></div>'}`;
     }
     return `<div class="intro"><div>${embedded ? "<h2>My playlists</h2>" : "<h1>Your playlists</h1>"}<p>Bring the records back together. Make a soundtrack of your own.</p></div><button class="primary" data-new-playlist>＋ New playlist</button></div><p class="link-note">Saved in this browser. Export a copy or use My profile to save and load your account library.</p><div class="personal-playlist-grid">${
       store
@@ -160,12 +261,22 @@ export function mountPlaylists({
         )
         .join("") ||
       '<div class="empty">Create a playlist, then add recordings from their release pages.</div>'
-    }</div><a class="archive-callout" href="#historic-playlists"><div class="archive-symbol">☷</div><div><h3>Playlists from the era</h3><p>Explore Chill n Work, preserved from Sound’s January 2023 pages.</p></div><span>Explore ↗</span></a><a class="text-button" href="#liked">♡ Your liked sounds</a>`;
+    }</div><a class="archive-callout" href="#historic-playlists"><div class="archive-symbol">☷</div><div><h3>Playlists from the era</h3><p>Listen to selections and discover curators preserved from Sound’s historical pages.</p></div><span>Explore ↗</span></a><a class="text-button" href="#liked">♡ Your liked sounds</a>`;
   };
   document.addEventListener("click", (e) => {
     const b = e.target.closest("button");
     if (!b) return;
     const d = b.dataset;
+    if (d.sharePlaylist) {
+      const p = store.all().find((entry) => entry.id === d.sharePlaylist);
+      if (p) void shareSnapshot(p);
+    }
+    if (d.playSnapshot && snapshots.has(d.playSnapshot))
+      playSnapshot(snapshots.get(d.playSnapshot), Number(d.snapshotIndex || 0));
+    if (d.saveSnapshot && snapshots.has(d.saveSnapshot))
+      saveSnapshot(snapshots.get(d.saveSnapshot));
+    if (d.shareSnapshot && snapshots.has(d.shareSnapshot))
+      void shareSnapshot(snapshots.get(d.shareSnapshot));
     if ("newPlaylist" in d) openEditor();
     if (d.addPlaylist) openEditor(d.addPlaylist);
     if (d.renamePlaylist) openEditor(null, d.renamePlaylist);
@@ -173,14 +284,7 @@ export function mountPlaylists({
       const p = store
         .all()
         .find((p) => p.id === (d.playPersonal || d.personalTrack));
-      const ids = p.recordIds.filter((id) =>
-        catalog().some((r) => r.id === id),
-      );
-      const start = d.personalTrack
-        ? ids.indexOf(p.recordIds[Number(d.index)])
-        : 0;
-      if (ids.length && start >= 0) play(ids[start], ids, start);
-      else notify("These recordings are not available in this catalog.");
+      if (p) playSnapshot(p, d.personalTrack ? Number(d.index) : 0);
     }
     if (d.moveTrack)
       commit(() =>
@@ -238,5 +342,5 @@ export function mountPlaylists({
       setTimeout(() => URL.revokeObjectURL(url), 1000);
     }
   });
-  return { view };
+  return { view, sharedView, actionsForSnapshot, likeButton };
 }

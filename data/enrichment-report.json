@@ -1,30 +1,32 @@
 {
-  "checkedAt": "2026-11-06T07:51:05.196Z",
-  "totalRecords": 9099,
-  "originalBpm": 339,
-  "originalKey": 193,
-  "credits": 43,
+  "checkedAt": "2026-11-06T09:48:58.382Z",
+  "totalRecords": 9209,
+  "originalBpm": 1571,
+  "originalKey": 1339,
+  "credits": 185,
   "details": {
-    "Description": 1822,
-    "Duration": 2060,
-    "Genre": 557,
-    "License": 261,
-    "Track number": 2058,
-    "Recorded in": 246,
-    "Project": 2,
+    "Description": 8698,
+    "Duration": 9003,
+    "Genre": 4890,
+    "License": 2397,
+    "Track number": 7429,
+    "Recorded in": 2317,
+    "Project": 1052,
     "Album": 43,
     "Release date": 43,
+    "Original release": 1,
+    "Mood": 1,
     "Record label": 463
   },
-  "metadataRead": 2596,
-  "metadataUnresolved": 6503,
+  "metadataRead": 9209,
+  "metadataUnresolved": 0,
   "bpmAnalysis": {
-    "metadata-bpm": 71,
-    "needs-review": 1,
-    "estimated": 75,
-    "unavailable": 35,
-    "not-queued": 60,
-    "pending": 8857
+    "metadata-bpm": 302,
+    "needs-review": 7,
+    "estimated": 327,
+    "unavailable": 267,
+    "pending": 8300,
+    "not-queued": 6
   },
   "payments": {
     "verifiedPurchases": 186,
@@ -33,46 +35,118 @@
   },
   "byPlatform": {
     "Sound": {
-      "records": 4974,
-      "originalBpm": 272,
-      "originalKey": 146,
-      "credits": 0
+      "records": 4915,
+      "originalBpm": 1503,
+      "originalKey": 1292,
+      "credits": 0,
+      "metadataRead": 4915,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 4915
+      },
+      "attributedCredits": 7
     },
     "Unconfirmed": {
       "records": 10,
       "originalBpm": 0,
       "originalKey": 0,
-      "credits": 0
+      "credits": 0,
+      "metadataRead": 10,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 10
+      },
+      "attributedCredits": 0
     },
     "Arpeggi": {
       "records": 2,
       "originalBpm": 0,
       "originalKey": 0,
-      "credits": 0
+      "credits": 0,
+      "metadataRead": 2,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 2
+      },
+      "attributedCredits": 0
     },
     "Songcamp": {
       "records": 43,
       "originalBpm": 43,
       "originalKey": 42,
-      "credits": 43
+      "credits": 43,
+      "metadataRead": 43,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 43
+      },
+      "attributedCredits": 0
     },
     "Catalog": {
       "records": 4036,
-      "originalBpm": 24,
+      "originalBpm": 25,
       "originalKey": 5,
-      "credits": 0
+      "credits": 0,
+      "metadataRead": 4036,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 4036
+      },
+      "attributedCredits": 0
     },
     "Zora": {
-      "records": 28,
+      "records": 34,
       "originalBpm": 0,
       "originalKey": 0,
-      "credits": 0
+      "credits": 0,
+      "metadataRead": 34,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 34
+      },
+      "attributedCredits": 4
     },
     "Other": {
-      "records": 6,
+      "records": 7,
       "originalBpm": 0,
       "originalKey": 0,
-      "credits": 0
+      "credits": 0,
+      "metadataRead": 7,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 7
+      },
+      "attributedCredits": 1
+    },
+    "Mint Songs": {
+      "records": 162,
+      "originalBpm": 0,
+      "originalKey": 0,
+      "credits": 142,
+      "metadataRead": 162,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 162
+      },
+      "attributedCredits": 0
+    }
+  },
+  "jobs": {
+    "metadata": {
+      "startedAt": "2026-11-06T09:48:57.954Z",
+      "updatedAt": "2026-11-06T09:48:58.018Z",
+      "finishedAt": "2026-11-06T09:48:58.018Z",
+      "interruptedAt": null,
+      "completion": "pass-finished",
+      "note": "A checkpoint is not proof that a process is alive; failed items remain unresolved even after a pass finishes."
+    },
+    "bpm": {
+      "startedAt": "2026-11-06T09:28:46.835Z",
+      "updatedAt": "2026-11-06T09:39:05.228Z",
+      "finishedAt": null,
+      "interruptedAt": null,
+      "completion": "not-confirmed-finished",
+      "note": "A checkpoint is not proof that a process is alive; failed items remain unresolved even after a pass finishes."
     }
   }
 }

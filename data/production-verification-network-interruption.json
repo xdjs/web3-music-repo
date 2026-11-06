@@ -1,0 +1,363 @@
+{
+  "checkedAt": "2026-11-06T09:03:09.405Z",
+  "base": "https://web3-music-repo.vercel.app",
+  "scope": "Selected public listening/search/collector/local-playlist flows. Real account and wallet linking not tested.",
+  "steps": [
+    {
+      "name": "initial public render",
+      "passed": true,
+      "renderMs": 6873,
+      "title": "The music remains.",
+      "resources": [
+        {
+          "duration": 4501.900000095367,
+          "transferSize": 5347449,
+          "encodedBodySize": 5347149,
+          "decodedBodySize": 28302863
+        }
+      ]
+    },
+    {
+      "name": "Pete alias search and artist profile",
+      "passed": true,
+      "results": 11,
+      "profileRecords": 11
+    },
+    {
+      "name": "Mint Songs platform and Polygon filter",
+      "passed": true,
+      "platformCount": "162 records",
+      "polygonCount": "20 records",
+      "artistSearch": "TAY → SHUT IT OFF"
+    },
+    {
+      "name": "play sound",
+      "passed": false,
+      "error": "{\"time\":0,\"duration\":null,\"readyState\":0,\"source\":\"https://arweave.net/ShNsHOnksot-5oxBYrFpAz0Ec-pxa7E0YDkweXLPbf0\",\"error\":null,\"status\":\"Original media unavailable — press play to retry\"}\n+ actual - expected\n\n+ 'page.waitForFunction: Timeout 50000ms exceeded.'\n- null\n"
+    },
+    {
+      "name": "play catalog",
+      "passed": false,
+      "error": "{\"time\":0,\"duration\":null,\"readyState\":0,\"source\":\"https://arweave.net/jEhD4TsXW7g0dR66_EEPmX9ak6NEtDXkKZ9QgFduAug\",\"error\":\"MEDIA_ELEMENT_ERROR: Format error\",\"status\":\"Original media unavailable — press play to retry\"}\n+ actual - expected\n\n+ 'page.waitForFunction: Timeout 50000ms exceeded.'\n- null\n"
+    },
+    {
+      "name": "play mint-songs",
+      "passed": false,
+      "error": "{\"time\":0,\"duration\":null,\"readyState\":0,\"source\":\"https://magic.decentralized-content.com/ipfs/QmdaDNqZqA3KZNxsMtAah8SkE3xJxULU5RiFZqKUU7xYG7\",\"error\":null,\"status\":\"Original media is taking longer to load…\"}\n+ actual - expected\n\n+ 'page.waitForFunction: Timeout 50000ms exceeded.'\n- null\n"
+    },
+    {
+      "name": "play polygon",
+      "passed": false,
+      "error": "{\"time\":0,\"duration\":null,\"readyState\":0,\"source\":\"https://magic.decentralized-content.com/ipfs/QmQVPTbUxaMFtzqvYwpdRVCmVcb66PzyxGDxFBicNnsBE3\",\"error\":null,\"status\":\"Original media is taking longer to load…\"}\n+ actual - expected\n\n+ 'page.waitForFunction: Timeout 50000ms exceeded.'\n- null\n"
+    },
+    {
+      "name": "play rush",
+      "passed": false,
+      "error": "{\"time\":0,\"duration\":null,\"readyState\":0,\"source\":\"https://gateway.pinata.cloud/ipfs/bafybeiciis2v57i7o3rtfwnonh7mqldmsarc2jfbvtrcaji7beoreu7vqq\",\"error\":null,\"status\":\"Original media is taking longer to load…\"}\n+ actual - expected\n\n+ 'page.waitForFunction: Timeout 50000ms exceeded.'\n- null\n"
+    },
+    {
+      "name": "play mija",
+      "passed": false,
+      "error": "{\"time\":0,\"duration\":null,\"readyState\":0,\"source\":\"https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a\",\"error\":null,\"status\":\"Original media is taking longer to load…\"}\n+ actual - expected\n\n+ 'page.waitForFunction: Timeout 50000ms exceeded.'\n- null\n"
+    },
+    {
+      "name": "local playlist create/add/reorder/reload/play",
+      "passed": false,
+      "error": "page.reload: net::ERR_NAME_NOT_RESOLVED\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n"
+    },
+    {
+      "name": "collectors and profile images",
+      "passed": false,
+      "error": "page.goto: Navigation to \"https://web3-music-repo.vercel.app/#record/record-69c77ef0?tab=collectors\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"https://web3-music-repo.vercel.app/#record/record-69c77ef0?tab=collectors\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "name": "render explore 1440 light",
+      "passed": false,
+      "error": "page.goto: Navigation to \"https://web3-music-repo.vercel.app/#explore\" is interrupted by another navigation to \"https://web3-music-repo.vercel.app/#record/record-69c77ef0?tab=collectors\"\nCall log:\n\u001b[2m  - navigating to \"https://web3-music-repo.vercel.app/#explore\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "name": "render rush 1440 light",
+      "passed": false,
+      "error": "locator.waitFor: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('main h1').first() to be visible\u001b[22m\n"
+    },
+    {
+      "name": "render mint-songs 1440 light",
+      "passed": false,
+      "error": "locator.waitFor: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('main h1').first() to be visible\u001b[22m\n"
+    },
+    {
+      "name": "render explore 1440 dark",
+      "passed": true,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "name": "render rush 1440 dark",
+      "passed": false,
+      "error": "locator.waitFor: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('main h1').first() to be visible\u001b[22m\n"
+    },
+    {
+      "name": "render mint-songs 1440 dark",
+      "passed": false,
+      "error": "locator.waitFor: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('main h1').first() to be visible\u001b[22m\n"
+    },
+    {
+      "name": "render explore 390 light",
+      "passed": true,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "name": "render rush 390 light",
+      "passed": false,
+      "error": "locator.waitFor: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('main h1').first() to be visible\u001b[22m\n"
+    },
+    {
+      "name": "render mint-songs 390 light",
+      "passed": false,
+      "error": "locator.waitFor: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('main h1').first() to be visible\u001b[22m\n"
+    },
+    {
+      "name": "render explore 390 dark",
+      "passed": true,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "name": "render rush 390 dark",
+      "passed": false,
+      "error": "locator.waitFor: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('main h1').first() to be visible\u001b[22m\n"
+    },
+    {
+      "name": "render mint-songs 390 dark",
+      "passed": false,
+      "error": "locator.waitFor: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('main h1').first() to be visible\u001b[22m\n"
+    }
+  ],
+  "rendering": [
+    {
+      "name": "explore",
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "brokenImages": [],
+      "screenshot": "captures/production-explore-1440-dark.png"
+    },
+    {
+      "name": "explore",
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "brokenImages": [],
+      "screenshot": "captures/production-explore-390-light.png"
+    },
+    {
+      "name": "explore",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "brokenImages": [],
+      "screenshot": "captures/production-explore-390-dark.png"
+    }
+  ],
+  "playback": [
+    {
+      "name": "sound",
+      "id": "recovered-sound-1-b2cb781aa0b35aec7acef3f9751b61505fd5715a",
+      "passed": false,
+      "time": 0,
+      "duration": null,
+      "readyState": 0,
+      "source": "https://arweave.net/ShNsHOnksot-5oxBYrFpAz0Ec-pxa7E0YDkweXLPbf0",
+      "error": null,
+      "status": "Original media unavailable — press play to retry",
+      "failure": "page.waitForFunction: Timeout 50000ms exceeded."
+    },
+    {
+      "name": "catalog",
+      "id": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-52",
+      "passed": false,
+      "time": 0,
+      "duration": null,
+      "readyState": 0,
+      "source": "https://arweave.net/jEhD4TsXW7g0dR66_EEPmX9ak6NEtDXkKZ9QgFduAug",
+      "error": "MEDIA_ELEMENT_ERROR: Format error",
+      "status": "Original media unavailable — press play to retry",
+      "failure": "page.waitForFunction: Timeout 50000ms exceeded."
+    },
+    {
+      "name": "mint-songs",
+      "id": "mint-songs-1-2b5426a5b98a3e366230eba9f95a24f09ae4a584-7",
+      "passed": false,
+      "time": 0,
+      "duration": null,
+      "readyState": 0,
+      "source": "https://magic.decentralized-content.com/ipfs/QmdaDNqZqA3KZNxsMtAah8SkE3xJxULU5RiFZqKUU7xYG7",
+      "error": null,
+      "status": "Original media is taking longer to load…",
+      "failure": "page.waitForFunction: Timeout 50000ms exceeded."
+    },
+    {
+      "name": "polygon",
+      "id": "mint-songs-137-c29cbe04ae322469dc077741afa2fbccda748ae4-60000",
+      "passed": false,
+      "time": 0,
+      "duration": null,
+      "readyState": 0,
+      "source": "https://magic.decentralized-content.com/ipfs/QmQVPTbUxaMFtzqvYwpdRVCmVcb66PzyxGDxFBicNnsBE3",
+      "error": null,
+      "status": "Original media is taking longer to load…",
+      "failure": "page.waitForFunction: Timeout 50000ms exceeded."
+    },
+    {
+      "name": "rush",
+      "id": "pete-zora-coin-base-c01f464c55f5b1bec05db5205d2fae9e6a835a5e",
+      "passed": false,
+      "time": 0,
+      "duration": null,
+      "readyState": 0,
+      "source": "https://gateway.pinata.cloud/ipfs/bafybeiciis2v57i7o3rtfwnonh7mqldmsarc2jfbvtrcaji7beoreu7vqq",
+      "error": null,
+      "status": "Original media is taking longer to load…",
+      "failure": "page.waitForFunction: Timeout 50000ms exceeded."
+    },
+    {
+      "name": "mija",
+      "id": "recovered-sound-10-1bfc0624b52e870cc00d4e39995c75c7da8763d3",
+      "passed": false,
+      "time": 0,
+      "duration": null,
+      "readyState": 0,
+      "source": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "error": null,
+      "status": "Original media is taking longer to load…",
+      "failure": "page.waitForFunction: Timeout 50000ms exceeded."
+    }
+  ],
+  "pageErrors": [],
+  "failedRequests": [
+    {
+      "url": "https://auth.privy.io/apps/cmlzjxfrh00ak0cjvlap9d3gm/embedded-wallets?caid=104c9e4e-dade-4844-b191-a26b8ea5f7a4&client_id=client-WY6W53j4q1dvp15KJx1zc88MivQTj6NJ66TZHLhFYf3X5",
+      "error": "net::ERR_BLOCKED_BY_RESPONSE"
+    },
+    {
+      "url": "https://web3-music-repo.vercel.app/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://web3-music-repo.vercel.app/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://csp-report.browser-intake-datadoghq.com/api/v2/logs?dd-api-key=pub3ed0be16dcee00054d67fd118ef8a00d&dd-evp-origin=content-security-policy&ddsource=csp-report&ddtags=env%3Aprod%2Cversion%3A0.0.3",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://arweave.net/Zg57YypqC3pEoNhR36vzEy3c-YsKAUM5e0EGq4YM4Jc",
+      "error": "net::ERR_NETWORK_CHANGED"
+    },
+    {
+      "url": "https://arweave.net/jEhD4TsXW7g0dR66_EEPmX9ak6NEtDXkKZ9QgFduAug",
+      "error": "net::ERR_NETWORK_CHANGED"
+    },
+    {
+      "url": "https://web3-music-repo.vercel.app/api/collectors/catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-52",
+      "error": "net::ERR_NETWORK_CHANGED"
+    },
+    {
+      "url": "https://gateway.pinata.cloud/ipfs/QmdaDNqZqA3KZNxsMtAah8SkE3xJxULU5RiFZqKUU7xYG7",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ipfs.filebase.io/ipfs/QmdaDNqZqA3KZNxsMtAah8SkE3xJxULU5RiFZqKUU7xYG7",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://magic.decentralized-content.com/ipfs/QmdaDNqZqA3KZNxsMtAah8SkE3xJxULU5RiFZqKUU7xYG7",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://web3-music-repo.vercel.app/api/collectors/mint-songs-1-2b5426a5b98a3e366230eba9f95a24f09ae4a584-7",
+      "error": "net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "url": "https://gateway.pinata.cloud/ipfs/QmPdcb6jx6idjT39jsRXroMzYMtgujUC1UxSVtFsWbpsfy",
+      "error": "net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "url": "https://gateway.pinata.cloud/ipfs/QmTwApPoQx3AiXA8LM6grikDs8CovxNY5id5fzaVDTZs3Q",
+      "error": "net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "url": "https://gateway.pinata.cloud/ipfs/QmQVPTbUxaMFtzqvYwpdRVCmVcb66PzyxGDxFBicNnsBE3",
+      "error": "net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "url": "https://web3-music-repo.vercel.app/api/collectors/mint-songs-137-c29cbe04ae322469dc077741afa2fbccda748ae4-60000",
+      "error": "net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "url": "https://ipfs.filebase.io/ipfs/QmQVPTbUxaMFtzqvYwpdRVCmVcb66PzyxGDxFBicNnsBE3",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://magic.decentralized-content.com/ipfs/QmQVPTbUxaMFtzqvYwpdRVCmVcb66PzyxGDxFBicNnsBE3",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://magic.decentralized-content.com/ipfs/bafybeiciis2v57i7o3rtfwnonh7mqldmsarc2jfbvtrcaji7beoreu7vqq",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ipfs.filebase.io/ipfs/QmTwApPoQx3AiXA8LM6grikDs8CovxNY5id5fzaVDTZs3Q",
+      "error": "net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "url": "https://ipfs.filebase.io/ipfs/bafybeiciis2v57i7o3rtfwnonh7mqldmsarc2jfbvtrcaji7beoreu7vqq",
+      "error": "net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "url": "https://magic.decentralized-content.com/ipfs/bafybeibxppt33ac7setoseyfmos2d5p3kiytyc7p3bbfggtmoghoe7lil4",
+      "error": "net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "url": "https://gateway.pinata.cloud/ipfs/bafybeiciis2v57i7o3rtfwnonh7mqldmsarc2jfbvtrcaji7beoreu7vqq",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ipfs.filebase.io/ipfs/bafybeibxppt33ac7setoseyfmos2d5p3kiytyc7p3bbfggtmoghoe7lil4",
+      "error": "net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "url": "https://web3-music-repo.vercel.app/",
+      "error": "net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "url": "https://auth.privy.io/apps/cmlzjxfrh00ak0cjvlap9d3gm/embedded-wallets?caid=104c9e4e-dade-4844-b191-a26b8ea5f7a4&client_id=client-WY6W53j4q1dvp15KJx1zc88MivQTj6NJ66TZHLhFYf3X5",
+      "error": "net::ERR_BLOCKED_BY_RESPONSE"
+    },
+    {
+      "url": "https://web3-music-repo.vercel.app/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://web3-music-repo.vercel.app/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://web3-music-repo.vercel.app/api/catalog",
+      "error": "net::ERR_NETWORK_CHANGED"
+    },
+    {
+      "url": "https://csp-report.browser-intake-datadoghq.com/api/v2/logs?dd-api-key=pub3ed0be16dcee00054d67fd118ef8a00d&dd-evp-origin=content-security-policy&ddsource=csp-report&ddtags=env%3Aprod%2Cversion%3A0.0.3",
+      "error": "net::ERR_NAME_NOT_RESOLVED"
+    }
+  ],
+  "auth": "Production Privy configuration pending; no real sign-in attempted.",
+  "catalog": {
+    "status": 200,
+    "error": "response.json: Protocol error (Network.getResponseBody): Request content was evicted from inspector cache\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation."
+  },
+  "finishedAt": "2026-11-06T09:14:52.555Z",
+  "passed": false
+}

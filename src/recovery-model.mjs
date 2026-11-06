@@ -2,12 +2,14 @@ export const chainNames = {
   1: "Ethereum",
   10: "Optimism",
   8453: "Base",
+  137: "Polygon",
   7777777: "Zora",
 };
 export const explorers = {
   1: "https://etherscan.io",
   10: "https://optimistic.etherscan.io",
   8453: "https://basescan.org",
+  137: "https://polygonscan.com",
   7777777: "https://explorer.zora.energy",
 };
 export function recoverySummary(records, snapshot) {

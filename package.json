@@ -17,10 +17,15 @@
     "build:account": "node scripts/build-account.mjs",
     "recover:metadata": "node scripts/recover-music-metadata.mjs",
     "analyze:bpm": "node scripts/analyze-missing-bpm.mjs",
-    "recover:catalog-payments": "node scripts/recover-catalog-revenue.mjs"
+    "recover:catalog-payments": "node scripts/recover-catalog-revenue.mjs",
+    "recover:status": "node scripts/report-enrichment.mjs",
+    "recover:mint-songs": "node scripts/import-mint-songs.mjs",
+    "audit:catalog-metadata": "node scripts/catalog-metadata-audit.mjs",
+    "test:recovery-playback": "node scripts/verify-recovery-playback.mjs",
+    "build:vercel": "node scripts/build-vercel.mjs"
   },
   "engines": {
-    "node": ">=22"
+    "node": "24.x"
   },
   "devDependencies": {
     "@playwright/test": "^1.62.1",
@@ -32,6 +37,7 @@
     "@solana-program/system": "0.10.0",
     "@solana-program/token": "0.9.0",
     "@solana/kit": "5.5.1",
+    "@vercel/blob": "^2.8.2",
     "esbuild": "0.25.12",
     "jose": "6.1.3",
     "postgres": "3.4.7",

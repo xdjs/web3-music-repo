@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-11-06T08:43:21.980Z",
+  "scope": "Selected real artwork loads plus one forced gateway429. Not an all-image availability audit.",
+  "checks": [
+    {
+      "name": "TAY original artwork",
+      "source": "https://gateway.pinata.cloud/ipfs/QmTwApPoQx3AiXA8LM6grikDs8CovxNY5id5fzaVDTZs3Q",
+      "width": 216,
+      "height": 216,
+      "alt": "SHUT IT OFF artwork"
+    },
+    {
+      "name": "Forced Pinata 429 with real same-CID fallback",
+      "forcedRequests": 1,
+      "source": "https://ipfs.filebase.io/ipfs/QmTwApPoQx3AiXA8LM6grikDs8CovxNY5id5fzaVDTZs3Q",
+      "width": 216,
+      "height": 216,
+      "alt": "SHUT IT OFF artwork"
+    },
+    {
+      "name": "Rendered TAY artwork",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "name": "Rendered TAY artwork",
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "name": "Rendered TAY artwork",
+      "width": 390,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "name": "Rendered TAY artwork",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "name": "Existing MIAMI FREESTYLE artwork",
+      "source": "http://127.0.0.1:4190/media/record-69c77ef0-1500.webp",
+      "width": 1500,
+      "height": 1500,
+      "alt": "MIAMI FREESTYLE (ft. Aly, Tarot, Elle Symone, Early, & TK | prod. AbJo) artwork"
+    }
+  ],
+  "attempts": [
+    {
+      "url": "https://gateway.pinata.cloud/ipfs/QmTwApPoQx3AiXA8LM6grikDs8CovxNY5id5fzaVDTZs3Q",
+      "status": 200
+    },
+    {
+      "url": "https://gateway.pinata.cloud/ipfs/QmTwApPoQx3AiXA8LM6grikDs8CovxNY5id5fzaVDTZs3Q",
+      "status": 429
+    },
+    {
+      "url": "https://ipfs.filebase.io/ipfs/QmTwApPoQx3AiXA8LM6grikDs8CovxNY5id5fzaVDTZs3Q",
+      "status": 200
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,1059 @@
+{
+  "checkedAt": "2026-11-06T09:22:20.681Z",
+  "scope": "All 60 kind=artwork records preserved before listening-catalog exclusion.",
+  "method": "Read original metadata cache for every record; recursively inspected all fields for media attachments; compared exact contract and image URI against non-artwork catalog records.",
+  "counts": {
+    "examined": 60,
+    "originalMetadataRead": 60,
+    "verifiedMusicCorrections": 0,
+    "excluded": 60,
+    "sharedArtworkButUnprovenRelationship": 2
+  },
+  "limits": "No new broad web crawl or gated holder-content recovery. Image/animation equality alone is not a media MIME verification; no independent audio attachment was present in these documents. Exclusion is reversible if actual music is subsequently recovered.",
+  "records": [
+    {
+      "id": "sound-v1-10-02a9949f5c67fbc3bd0b81df3db14328a7bde0a8",
+      "title": "CERULEAN EP SET",
+      "metadataURI": "https://d2udccye4y4dfaefq3bduqbmmghoyixwue363jgydz7qezin775a.arweave.net/HqgxCwTmODKAhYbCOkAsYY7sIvahN-2k2B5_AmUN__o?129",
+      "metadataSHA256": "571c72ef028b1347a113ca98fe0f41b763382f9fa2995ef31e312c757ae96953",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ar://VbBFGzh5UcSQjg9fCidwKA1svHRgrSt6g-jemHoeJhc",
+      "animationURI": "ar://VbBFGzh5UcSQjg9fCidwKA1svHRgrSt6g-jemHoeJhc",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Reward for collecting six songs; metadata attaches only the reward artwork.",
+      "followUp": "Music-related description retained as a recovery lead; not a verified playable attachment."
+    },
+    {
+      "id": "sound-v1-10-01461edc6c66c957875076151cd7cfd51284097d",
+      "title": "CERULEAN EP SET",
+      "metadataURI": "https://d2udccye4y4dfaefq3bduqbmmghoyixwue363jgydz7qezin775a.arweave.net/HqgxCwTmODKAhYbCOkAsYY7sIvahN-2k2B5_AmUN__o?1",
+      "metadataSHA256": "571c72ef028b1347a113ca98fe0f41b763382f9fa2995ef31e312c757ae96953",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ar://VbBFGzh5UcSQjg9fCidwKA1svHRgrSt6g-jemHoeJhc",
+      "animationURI": "ar://VbBFGzh5UcSQjg9fCidwKA1svHRgrSt6g-jemHoeJhc",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Reward for collecting six songs; metadata attaches only the reward artwork.",
+      "followUp": "Music-related description retained as a recovery lead; not a verified playable attachment."
+    },
+    {
+      "id": "recovered-sound-1-ac596e723af2fe85a17a50ba9a5138a9807704f1",
+      "title": "Real 0x-king",
+      "metadataURI": "ipfs://QmRnAJxQf5rVBS9m7DDbXfpFTwX49g7a8121PPpzJ752Sd?1",
+      "metadataSHA256": "7d39ed0ab8ec9886a675cc31f99209c1217b30e99fdf9b47d626214dd04d4823",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmPFfdAoZxAZJpaAmLNW18gSVr72D1XXaRHZi74RtgRhKX/",
+      "animationURI": "ipfs://QmPFfdAoZxAZJpaAmLNW18gSVr72D1XXaRHZi74RtgRhKX/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-3a65985806a882725b15e1bbfb5bb8ab23a5c494",
+      "title": "DREAMPUSHERS",
+      "metadataURI": "ipfs://QmZHjQiY3dFLjZC1UBugGUxj4FBgPGp7M5d2vKWARkpZhi?1",
+      "metadataSHA256": "f5aa465d0e48831770c7d151cca9e2e1de55372fdd3e0313d4e3f72e4f2ad4ca",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://Qmb626BLomTkCqBNWQym1Av2NhyJgK8pvQ34zTuk9ZfDqS/",
+      "animationURI": "ipfs://Qmb626BLomTkCqBNWQym1Av2NhyJgK8pvQ34zTuk9ZfDqS/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-4fe4a42126c778f490ce9faf308225a0ee68538a",
+      "title": "KEY - MODO AVION",
+      "metadataURI": "ipfs://QmcdHW3Wj8wNgVpWmM2YbSTEKYNZiTVKFzdsTLd1ohevpv?1",
+      "metadataSHA256": "13d40d353177a3b3fbc2a198b486dec78ae08fc7d27f47a543f6238347fc22c2",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmReUYfhbBMzu7RhuM52F5uYmhvve9KVPMUhAMcohiL3gj/",
+      "animationURI": "ipfs://QmReUYfhbBMzu7RhuM52F5uYmhvve9KVPMUhAMcohiL3gj/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Escape-room access referencing a song; no song attachment in token metadata.",
+      "followUp": "Music-related description retained as a recovery lead; not a verified playable attachment."
+    },
+    {
+      "id": "recovered-sound-1-2178f9379344a67411bdcb2d8c0344ecbfcad6aa",
+      "title": "VINE + FIG TREE",
+      "metadataURI": "ipfs://QmYmbXZj9Lu2KDG697QHJHNroho6NTto77o9M7JHqrtw9b?1",
+      "metadataSHA256": "c8ef478bd5633c1fd684dde16178160e56c9201497cfcbf0095e4ce54bd79c24",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmVBQsi3UVfednVWY5xy2VxtgELGGF2JxXcdCbto7pCtWj/",
+      "animationURI": "ipfs://QmVBQsi3UVfednVWY5xy2VxtgELGGF2JxXcdCbto7pCtWj/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-b8f942e2af8b97028883eb45f08ca8dfe43c36d7",
+      "title": "SODA Pass",
+      "metadataURI": "ipfs://QmWgwaikXgRJeDnKBLZMswoqN9WhZRqQfG7HMEazu2Wppr?1",
+      "metadataSHA256": "2c1cd64f8037a1d732732a940c3f71d7f58a8ddc513e3b4474d9b41c78f1677f",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmW4rnhFQx5beNuKFercCHAHA6TKowq1HwafJ6Z2zTXEdw/",
+      "animationURI": "ipfs://QmW4rnhFQx5beNuKFercCHAHA6TKowq1HwafJ6Z2zTXEdw/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-de0707a74948c2651554b222043fd686d39d5ad1",
+      "title": "#4 Nilesh",
+      "metadataURI": "ipfs://QmViZguTeHUsLeHdhJmqgi8V7xRZTdm9qqDcigJGqv5QAg?1",
+      "metadataSHA256": "ab359173313b1f02cffc719976a5cd32c8c7966191be2f485d34e07a0b15c396",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmRpU1CNEA2eTM5RPaS8zL8dJM2Nf22RKtFadFPc7yV1Ld/",
+      "animationURI": "ipfs://QmRpU1CNEA2eTM5RPaS8zL8dJM2Nf22RKtFadFPc7yV1Ld/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-17365dd92b48778206e700bf3e2e93d00bbdf04f",
+      "title": "#3 Ayush Ranjan",
+      "metadataURI": "ipfs://Qma9UY7qBvhTLQwSGfjy5kSfLkn6GvdD1WVgSbYMQEhKtG?1",
+      "metadataSHA256": "2381a144831154f8371e42b6c091d0cf41c1db5ba841513c4f31c372e0837fd6",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmXwWddht1b46c8kMucDsVjQszHmtW5duAwVHKHr1ckcNm/",
+      "animationURI": "ipfs://QmXwWddht1b46c8kMucDsVjQszHmtW5duAwVHKHr1ckcNm/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-d638efc6080cbff7b10804f3280bdee6e73dec03",
+      "title": "#2 Shane Mac",
+      "metadataURI": "ipfs://QmbD1VddJRbuNsvJ9dwzJ5N7hwuewXX4e6Qm73wNHZAtyk?1",
+      "metadataSHA256": "d1b5382e3f35f24caa56d7d9e58c5361b5d3b6ce66e787889d0852760fece614",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmP1BxXH6FE5LBeWk8nTS3rvh7kAewQAHKFsmYSzsPrc8F/",
+      "animationURI": "ipfs://QmP1BxXH6FE5LBeWk8nTS3rvh7kAewQAHKFsmYSzsPrc8F/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-223f801b71c3e800e1bffcb565247274a2d5b8b1",
+      "title": "#1 Stani Kulechov",
+      "metadataURI": "ipfs://QmSDfTCzMLNFZxCNqE4tc1c8vCnnQdbHczfhDMjvLTnfFt?1",
+      "metadataSHA256": "dc723a5250707c793fa7702ed9a77ac8cbea18dd8bbd5b76a6518342e290706e",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmPSc6kELCzgSZokn8SAmQDj8ubD7tA5BL5ZiP4Jt4NtFh/",
+      "animationURI": "ipfs://QmPSc6kELCzgSZokn8SAmQDj8ubD7tA5BL5ZiP4Jt4NtFh/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-71511ea01a797f87f19348fb0d011b93d7ae7197",
+      "title": "Wild Friends: Mijungla",
+      "metadataURI": "ipfs://Qmc2RJw5gwX3PNYbJZZHiiCjwTUc8YM62MTdPiAcoK1pP4?1",
+      "metadataSHA256": "110faf7ee46dffeeb9f0362597fdf8178e5a4149c78f28850447ccb204733ae6",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmawE7dwPv2ovf3VYQvqM5SqYb1rQtUhuiGE446z9BRTSS/",
+      "animationURI": "ipfs://QmawE7dwPv2ovf3VYQvqM5SqYb1rQtUhuiGE446z9BRTSS/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-41b4af4a3a5e25291773096a90bffc896737e62f",
+      "title": "Wild Friends: Aruma",
+      "metadataURI": "ipfs://QmZE9BMmybTEM1zPMdGG5i4YSzNEEhrSum3NsJjeusEk2k?1",
+      "metadataSHA256": "5a8ee14a95e2e8fc83eca654cb96ac2accf0a8133f33e83097d8ce43411da9ad",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmawE7dwPv2ovf3VYQvqM5SqYb1rQtUhuiGE446z9BRTSS/",
+      "animationURI": "ipfs://QmawE7dwPv2ovf3VYQvqM5SqYb1rQtUhuiGE446z9BRTSS/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-f62a320104e446b456efc6f5d3a55919c14edc9b",
+      "title": "Wild Friends: Cubai",
+      "metadataURI": "ipfs://QmZ3LdL4iJGA4bLc5XKEzPPcPS8rUmjiKyyE2iqVty3tQg?1",
+      "metadataSHA256": "28104361b82eb05e875d1d90a061512fe722bb8503104c06b9d656f9d5337192",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmWqsQWqwuJR7KZiZKrfQhLnitAYMHf1B3fvAP1UumwiSm/",
+      "animationURI": "ipfs://QmWqsQWqwuJR7KZiZKrfQhLnitAYMHf1B3fvAP1UumwiSm/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-017c5d2856e46c71238a1dfedf46be19f877213e",
+      "title": "Forgotten",
+      "metadataURI": "ipfs://QmUnyRcDq8P4AG7eRSfcJXsXFeuaRSGfVmEVCFFygE558m?1",
+      "metadataSHA256": "e20c8f1c6b98e1124199d79f028524e918f9ae75093e5c19301ab9c1ee78e10f",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmYwBVn1AyR6MNUJMspkpB2f3u2BVRdzWtQSwg2Z2nw3uD/",
+      "animationURI": "ipfs://QmYwBVn1AyR6MNUJMspkpB2f3u2BVRdzWtQSwg2Z2nw3uD/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-b2bcceb2952afbeede9e539fe744c1c5d7c71126",
+      "title": "FAMILY VIP GOLD",
+      "metadataURI": "https://bonfire.mypinata.cloud/ipfs/QmR7xSpKqigHGwiV3t7WSExJUHQovWLjPTZkrr5XBgq29H/1",
+      "metadataSHA256": "79f954e533948f7e7c83169d96b0e637cb29f3217a832f73087cdf25f3d1face",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url",
+        "edition"
+      ],
+      "imageURI": "https://bonfire.mypinata.cloud/ipfs/QmagdBAveJTmSDSW3UCR4pyTns99YH84yvRgQaJyzf5V9k/",
+      "animationURI": "https://bonfire.mypinata.cloud/ipfs/QmagdBAveJTmSDSW3UCR4pyTns99YH84yvRgQaJyzf5V9k/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-e2f91dfeacb3fea84d142d5a9fe33cd92a529661",
+      "title": "Cubai #1",
+      "metadataURI": "https://bonfire.mypinata.cloud/ipfs/QmYCUuSvUAPbu3HeJhSy5SPZqPqfPJ9Cnc8cST1AhYohvj/1",
+      "metadataSHA256": "47ddbb8a6867206c5d0826808229fa4e2523c16030123e022f083c370b0b13fe",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url",
+        "edition"
+      ],
+      "imageURI": "https://bonfire.mypinata.cloud/ipfs/QmUBoiT9fH8LPqaVZHk95Y4nGeuBAnp3269teFX9vD5Uht/",
+      "animationURI": "https://bonfire.mypinata.cloud/ipfs/QmUBoiT9fH8LPqaVZHk95Y4nGeuBAnp3269teFX9vD5Uht/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-d9f70695cc6377d2634c543592ce6869c63bcbb4",
+      "title": "just play",
+      "metadataURI": "https://bonfire.mypinata.cloud/ipfs/QmSHzJdsHEdJXRwiCGqhYyJzadGB3GQkyeDmbru6DPkwKS/1",
+      "metadataSHA256": "c5945a841ea0abc232c60cdede952ce5af41c2de6dd57106d3ed9386b28d90e4",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url",
+        "edition"
+      ],
+      "imageURI": "https://bonfire.mypinata.cloud/ipfs/Qmc3xZjnGKA8XcP2wVrkYAWrduaKPxonUbyF7VQ7yA1pgg/",
+      "animationURI": "https://bonfire.mypinata.cloud/ipfs/Qmc3xZjnGKA8XcP2wVrkYAWrduaKPxonUbyF7VQ7yA1pgg/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-c8fa52bc2e4d4b2a0eff792f7557771ef88fdec0",
+      "title": "test",
+      "metadataURI": "https://bonfire.mypinata.cloud/ipfs/QmRQcsigbmXfjBJfMh8f2JmkKiAKwwdDXQ19GAJiLpqTUg/1",
+      "metadataSHA256": "a0ba4100f38b77c9054fe4a2beecf821c5ea994579523457c02b053d4a4325df",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url",
+        "edition"
+      ],
+      "imageURI": "https://bonfire.mypinata.cloud/ipfs/QmNyWWc5AxDTM28QkcqkHoSYt4tCqNPxVyPuBhXpbKELL5/",
+      "animationURI": "https://bonfire.mypinata.cloud/ipfs/QmNyWWc5AxDTM28QkcqkHoSYt4tCqNPxVyPuBhXpbKELL5/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-1-5855ebdc37f15abaa966eaef42e74bb3e3dba41c",
+      "title": "My Prod Drop",
+      "metadataURI": "https://bonfire.mypinata.cloud/ipfs/QmeqeN2hp5Yqq41qzrstDoptNji4o1eFX46jJDwsVAAtih/1",
+      "metadataSHA256": "ae558e6e13967f6186c533e7269a4f47e7a67cf4fd664c5d4a388e3bcadc11e3",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url",
+        "edition"
+      ],
+      "imageURI": "https://bonfire.mypinata.cloud/ipfs/QmTPNNJzFpA5cHTgH896obYpQcchPmMTw2iXHCrMY2eNwy/",
+      "animationURI": "https://bonfire.mypinata.cloud/ipfs/QmTPNNJzFpA5cHTgH896obYpQcchPmMTw2iXHCrMY2eNwy/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-08ea07bd8ac9726ac0b5af1f508fd7ed951b17f5",
+      "title": "Put Your Soul Into It - Pre-release & Membership",
+      "metadataURI": "ipfs://QmPst4Gdt9frRpbBABJCtcRezP45KBhLpiEWYtqsKFQvu4?1",
+      "metadataSHA256": "1f71c341deea7d176dede4255b6a646f0c46235fdfaff62c69a2ecec2a5b50ec",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmYEBTYsEFMT8ijnhzrRFe88YjSPKztRf1SU2t6PcBWLcP/",
+      "animationURI": "ipfs://QmYEBTYsEFMT8ijnhzrRFe88YjSPKztRf1SU2t6PcBWLcP/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Description promises album MP3s/stems to holders but exposes no downloadable music URI.",
+      "followUp": "Music-related description retained as a recovery lead; not a verified playable attachment."
+    },
+    {
+      "id": "recovered-sound-10-1010d65d180d88c9c3a0de7e43db3b47a2c0c00c",
+      "title": "Silver Membership",
+      "metadataURI": "ipfs://QmPbkg2DtAvXhnF67v5KTKuHu8YmC4A2ivVy9CrDqisstS?1",
+      "metadataSHA256": "c030a9c9b0fe0860423a6e6ad685b778ea6500fc7e7d67943af6444092d1a9b5",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmTM4e34rrHMd78BQfGGxPkgcreGrDwj8WYE4QNZ6prdpN/",
+      "animationURI": "ipfs://QmTM4e34rrHMd78BQfGGxPkgcreGrDwj8WYE4QNZ6prdpN/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-62e301f3398eece2ff664ece570e5cc428dff1cf",
+      "title": "tests",
+      "metadataURI": "ipfs://QmTN1rC1ekmvVd5JeeAUMgXn4gmp386C1gS4bcXbtgLy7L?1",
+      "metadataSHA256": "c5690a3d313c014836140a3973cd162dc47f354ef712b3d59e0f59dc5928250c",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmXBPhFGEwNZ3eJwsU9yF4XtFEB23fWNtjALmetNYyxdJm/",
+      "animationURI": "ipfs://QmXBPhFGEwNZ3eJwsU9yF4XtFEB23fWNtjALmetNYyxdJm/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-d2daf5779e3f8e65cea12ffbee125ec1d9b45be9",
+      "title": "2024 Season 1",
+      "metadataURI": "ipfs://QmPicqoD9y66S9HUjFEj9fcLQUgNRtgyWcbmGb228hHDwf?1",
+      "metadataSHA256": "2aa956116a7c523aa5dc34b8207f03768e45f286da1aae33a513b1f0688913ff",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://Qmbkwe6fKcCNAewVc3H77ej28Z7PSQJpu7Han58X7HXG5y/",
+      "animationURI": "ipfs://Qmbkwe6fKcCNAewVc3H77ej28Z7PSQJpu7Han58X7HXG5y/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-5e537e7edd4db2bcacc9fea416b12b890d63efd3",
+      "title": "All-Access Pass",
+      "metadataURI": "ipfs://QmShZWoDPvDF9QcXrnKQG1ZTPp46beaFVzXMbgQdjbhqYU?1",
+      "metadataSHA256": "87244d44798dbaa6dbd68cc357c5044d6a64802faa3101ec71e736eda0c57ac8",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmWadf1PHBXPUMhvJdjhps2ZFrjeo9jnQJ7FTCYBLFRjZw/",
+      "animationURI": "ipfs://QmWadf1PHBXPUMhvJdjhps2ZFrjeo9jnQJ7FTCYBLFRjZw/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-dd26b2e9e5da6e603fda32bbb38d38f29bd5b9b1",
+      "title": "Free Standard Member",
+      "metadataURI": "ipfs://Qmd6gp6mikrsDi5BsSzx48ZodUwYK6XgcDJoSAB5AVKGAP?1",
+      "metadataSHA256": "612cc9a0c8a487c046388c43d8626fa8c6eb81d2c254a65dc386ec97423b1692",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmWqb9H28XqGgsvZEVNAD3Wt8CUmLJKRLabJLHqCw5aAGc/",
+      "animationURI": "ipfs://QmWqb9H28XqGgsvZEVNAD3Wt8CUmLJKRLabJLHqCw5aAGc/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-3a1c81f598598eb30bac3e7b7fdd8f9ca98cb82e",
+      "title": "BUNDLE",
+      "metadataURI": "ipfs://QmfQQAWqqkKCTG3yvYP3V8C3DJ9qhzwj6zpimXLfRdW26p?1",
+      "metadataSHA256": "f9f69c6bb0230342afe61c330efb232426020c7190353409eb9321ed699e4b25",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmUNmNNx6qTWoaEkhz9ypzpqqhKzmq4DKtz3nMiTFDrQ8R/",
+      "animationURI": "ipfs://QmUNmNNx6qTWoaEkhz9ypzpqqhKzmq4DKtz3nMiTFDrQ8R/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Description promises four videos; no video URI exposed.",
+      "followUp": "Music-related description retained as a recovery lead; not a verified playable attachment."
+    },
+    {
+      "id": "recovered-sound-10-627aa71c2286e4a1519cd8d2a7df7424c8b57036",
+      "title": "Joshua Tree",
+      "metadataURI": "ipfs://QmSnPQ22KePHL4NoWDrR1ejNFdTUfUkThf6MYfsqsJhH6B?1",
+      "metadataSHA256": "b0fbff6455fd7ff3d7484670a2fed3424563c4cdb64876794642e8f826619d96",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmZ5auLcLWTrt3bRk8KQKvE1kKzuWyZ5QD4366XFX6m2KY/",
+      "animationURI": "ipfs://QmZ5auLcLWTrt3bRk8KQKvE1kKzuWyZ5QD4366XFX6m2KY/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Description names performance songs; no performance media URI exposed.",
+      "followUp": "Music-related description retained as a recovery lead; not a verified playable attachment."
+    },
+    {
+      "id": "recovered-sound-10-49391bf6149a4f4b83907c693f475679698a5e4e",
+      "title": "Golden Gate Bridge",
+      "metadataURI": "ipfs://QmQ8ChDbmZKRaSsht2XFAXpuejgqzugkA2qWipTZYER4Vg?1",
+      "metadataSHA256": "6d6f78f69baf1c8554cb08dd4ea00fc567c557bbd996ef6ef7ca560c6b67bbe4",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmV1QML7HvoCTGFhpmDgZNV6pe6CHhekpMGTc1VsgyozBE/",
+      "animationURI": "ipfs://QmV1QML7HvoCTGFhpmDgZNV6pe6CHhekpMGTc1VsgyozBE/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Description names performance songs; no performance media URI exposed.",
+      "followUp": "Music-related description retained as a recovery lead; not a verified playable attachment."
+    },
+    {
+      "id": "recovered-sound-10-f4ab3010c35d9c6773ddae91d460f4545a1047a4",
+      "title": "Alex",
+      "metadataURI": "ipfs://QmZbLWipP7HNKosJXj1oFbp7WaondV72cdfogHrSoqcjDa?1",
+      "metadataSHA256": "55e954cabeac7a3364ba8208d34e94ba5ba8aeb779063c6b4d681e0cc6509435",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmU4xcTJvDUkqavLs1Uj4HKHUbYSt8kEyH65df2FPgEkKX/",
+      "animationURI": "ipfs://QmU4xcTJvDUkqavLs1Uj4HKHUbYSt8kEyH65df2FPgEkKX/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-9fba91d9fcee27e6ad26f3fd004f33c0cbb1544c",
+      "title": "Sequoia National Park",
+      "metadataURI": "ipfs://QmdZ5ZrxQe8iZo3Q6182ErHKjYU9Nxgw6HwXtqRqjvfeJs?1",
+      "metadataSHA256": "15e76d3149dbe6be551e27eb9fb2ba853e19d58f45725ebfad6bc3f58a6e7bbc",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmZ3uuv3xJKJ6158wNcQoKqnECrrazaaWyjw9u2GDfodNK/",
+      "animationURI": "ipfs://QmZ3uuv3xJKJ6158wNcQoKqnECrrazaaWyjw9u2GDfodNK/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Description names performance songs; no performance media URI exposed.",
+      "followUp": "Music-related description retained as a recovery lead; not a verified playable attachment."
+    },
+    {
+      "id": "recovered-sound-10-417cd0ba34261d65d1eb4a929efd5f5abf14eb7a",
+      "title": "Starlight Vinyl",
+      "metadataURI": "ipfs://QmaqCahJ85muaEie2FumNceRUf7Jnc3zZYYpfZtpeubik5?1",
+      "metadataSHA256": "45f0fe3247c7c33c057071d669c184506e156dd7ba979904d27c09af8586e327",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmPpGLCfyuZfCsg3ZRqaGcXX4pY2z6fHZMfUB8yvqTS37z/",
+      "animationURI": "ipfs://QmPpGLCfyuZfCsg3ZRqaGcXX4pY2z6fHZMfUB8yvqTS37z/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Description promises stream/download access and vinyl redemption; no audio URI exposed.",
+      "followUp": "Music-related description retained as a recovery lead; not a verified playable attachment."
+    },
+    {
+      "id": "recovered-sound-10-f2777ecffd7de107a95eecc27587ab60127abf85",
+      "title": "Simple Success (Demo)",
+      "metadataURI": "ipfs://QmZBT8ggSJ9VPLCfPYxkWHMVp4hqyzAYGZGE2g9gNr5Zcu?1",
+      "metadataSHA256": "d39809599be8bbf8e2670a48a3842dde58e5a17dda009a34e735ef08a1f92494",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmcPFhUEN5dDXkokfP9PnzwAraFajhDPjbkZcu9JWZSC7M/",
+      "animationURI": "ipfs://QmcPFhUEN5dDXkokfP9PnzwAraFajhDPjbkZcu9JWZSC7M/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-2477d775160e005d596c9f7c15a4020b2075a63c",
+      "title": "testmainnet",
+      "metadataURI": "ipfs://QmWm1yWjKsq9YKr5nvm3oAK6AeUeE6xromjJnZfqTumXb5?1",
+      "metadataSHA256": "4b90cb9d28571ce2af4b7d093e3a93c4ebd629e6532069ce4c70b5effb591653",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmPBf5wNNuoYaNFvD1UA91mypr5ovHC9GgmUuC32nvD9mT/",
+      "animationURI": "ipfs://QmPBf5wNNuoYaNFvD1UA91mypr5ovHC9GgmUuC32nvD9mT/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-c379d08c1a267f5bd74a485b253f1600c2a62377",
+      "title": "New Sound",
+      "metadataURI": "ipfs://QmXGSHDUearMZ1rbp9sVmsMKkqx72HnuYs9ffGC8STFF4V?1",
+      "metadataSHA256": "fd5948c3a8cec7102bc859a546527ffab8c2bfe8ad01320637a2eaecd2b5eaf6",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmWqKdjFBE4jxTrNCbbbq5c6bg8e8mT4uQtuFj6HC8eH5A/",
+      "animationURI": "ipfs://QmWqKdjFBE4jxTrNCbbbq5c6bg8e8mT4uQtuFj6HC8eH5A/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment.",
+      "sharedArtworkRecords": [
+        "recovered-sound-10-ece25fcd707a3c56a0c2e6fcc41f907abcfde999"
+      ],
+      "relationshipCaveat": "Shared artwork across different contracts is not evidence that this token attaches the other recording."
+    },
+    {
+      "id": "recovered-sound-10-5678e2ee5d2ddba88d2134f8ee987bfa47106904",
+      "title": "Test OP",
+      "metadataURI": "ipfs://Qmcp1C6HZdkEMSpW8TCSGPQxCrhU4RJg7ASDv5FpZSEpJ8?1",
+      "metadataSHA256": "9db866d6eeeea018de3ea072d479f3c5d69d167ee730fdd2096586bca62884d5",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmWqKdjFBE4jxTrNCbbbq5c6bg8e8mT4uQtuFj6HC8eH5A/",
+      "animationURI": "ipfs://QmWqKdjFBE4jxTrNCbbbq5c6bg8e8mT4uQtuFj6HC8eH5A/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment.",
+      "sharedArtworkRecords": [
+        "recovered-sound-10-ece25fcd707a3c56a0c2e6fcc41f907abcfde999"
+      ],
+      "relationshipCaveat": "Shared artwork across different contracts is not evidence that this token attaches the other recording."
+    },
+    {
+      "id": "recovered-sound-10-2108ea0d020de274622a4acd756e3c949d4a052f",
+      "title": "testdg",
+      "metadataURI": "ipfs://QmV9zMcEKSF9QUKLposod8JVn3Up6giMhHZfVGtBZGbUvr?1",
+      "metadataSHA256": "04cacf4b65a98535a1e9ea8ca940b145c7604115039012bced32d9da556bd019",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmZvPUc7XCpkM8RqzR9hsMrujxWemBwAutHb7muzRuu9J5/",
+      "animationURI": "ipfs://QmZvPUc7XCpkM8RqzR9hsMrujxWemBwAutHb7muzRuu9J5/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-16ef371edc56fe9ae3abc8882eb4c2d84b1612b1",
+      "title": "Color Storm - PPES",
+      "metadataURI": "ipfs://QmacUKThGGZx8nbpodpZQksZGGYcXKmD2W4KxRsbvCbLCH?1",
+      "metadataSHA256": "58e7b745659e37d298a0bd0a3671eefc31d82dcaea610d88bf4a4e914955e0ae",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmTkc92nXkXWu2Vx8sfNjZmHqkMKgMWYAf8cqNnyyhVg58/",
+      "animationURI": "ipfs://QmTkc92nXkXWu2Vx8sfNjZmHqkMKgMWYAf8cqNnyyhVg58/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-d4ee416f236559613a838f8ab12c8dfa7968b2d0",
+      "title": "Raver Rendition #1 Art Basel Miami",
+      "metadataURI": "ipfs://QmUEqjDzjiU2p8eF24GqNkqdvcfjxbkMo9PVinRzcKRMku?1",
+      "metadataSHA256": "62eb1384fbdc25f9ff11ee285fa71e5e64c0a2617dbdac416644e980f0482b6c",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmVYWFFYm8mVEnJA7syU4yiM8Twvofb9ZVArWYMUfMVZDr/",
+      "animationURI": "ipfs://QmVYWFFYm8mVEnJA7syU4yiM8Twvofb9ZVArWYMUfMVZDr/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-4732aa50bb35475449dfb5821a5f20678d10bd51",
+      "title": "Clean Success",
+      "metadataURI": "ipfs://QmT4Mw6ZV5NWbrrWb8rFGLsK4117Bk733fGk5bMEdmfxWs?1",
+      "metadataSHA256": "194c2f978d324f44cadffa59a64cb46fade9023c3bd986fc0614c70968e14c39",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmQnxtZMfVfYSc5eCaex4vSVhkdyrKn3NidEmpLJtM2tKH/",
+      "animationURI": "ipfs://QmQnxtZMfVfYSc5eCaex4vSVhkdyrKn3NidEmpLJtM2tKH/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Description describes a track; metadata still exposes only the image URI.",
+      "followUp": "Music-related description retained as a recovery lead; not a verified playable attachment."
+    },
+    {
+      "id": "recovered-sound-10-0a37a0030bbc13ce4375d45f2697e7201be82781",
+      "title": "Free .03 Stem Pack",
+      "metadataURI": "ipfs://QmYouGHeT6NufijPJR1Bb7rJanraf5QukweLsCNQuC5bPm?1",
+      "metadataSHA256": "7e58e2c4a414c09d9c2da9f539fb0422a5ab96d232c9938745efee46833b1d01",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmP6Yo5VkGJYA6GUm3cU5hYLHFPLynTvJVz6fhL2MN47Wm/",
+      "animationURI": "ipfs://QmP6Yo5VkGJYA6GUm3cU5hYLHFPLynTvJVz6fhL2MN47Wm/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Description promises a beat/stems; no audio/archive URI exposed.",
+      "followUp": "Music-related description retained as a recovery lead; not a verified playable attachment."
+    },
+    {
+      "id": "recovered-sound-10-c275304a3fabd912803ac3088d98436d81feda2c",
+      "title": "2024 Knead Membership",
+      "metadataURI": "ipfs://QmbZYG6FxigUGZTXxMEfxRtj5LBANmFCJDAtsPKxZy2hk5?1",
+      "metadataSHA256": "ced0dc2c1474ad6acaf27eb77868ea115abd2ee08aef97f1fc2b6d16f84f7fe8",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmSyc2efUKQqN4ybzt2XFrHWbfh4N12tE6TJNiEy45897o/",
+      "animationURI": "ipfs://QmSyc2efUKQqN4ybzt2XFrHWbfh4N12tE6TJNiEy45897o/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-07eb47b7eb0e47af0b3504426354e290fa1dd963",
+      "title": "OP Pass Test",
+      "metadataURI": "ipfs://QmduAqJtJLKhzYLPMXja7YFbuhjxyuHKYr1MnkDvX6TErL?1",
+      "metadataSHA256": "8e83805c5a51c61a6f9e1a68c39077de0e5fe0b03df0a338297cfdbe2e6028ad",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmRBcQ8yvXbvshg5YgrfvboX8KCSGaZdeufkFJ1CAs2sBt/",
+      "animationURI": "ipfs://QmRBcQ8yvXbvshg5YgrfvboX8KCSGaZdeufkFJ1CAs2sBt/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-f1567c06d43eb53e191d94ea2dc1c3bdfbb5fd9f",
+      "title": "Daniel Allan - The Echo ADMIT ONE",
+      "metadataURI": "ipfs://QmdcyLoMGdrYHcJWKUK3yKyPMw9oB9rC6FnEkWaEdnpGKE?1",
+      "metadataSHA256": "8b25ba1400eb2014a7134c8356ddf32cd9f2752fee8a1f97a0c230c14da2081d",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://Qmbq9pFUepboYEzKaKeU1exbaPXgc4UXj3UuKchdHkh2CS/",
+      "animationURI": "ipfs://Qmbq9pFUepboYEzKaKeU1exbaPXgc4UXj3UuKchdHkh2CS/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-fe159dc209dfc74014d5c5b590cb048ebba74fc1",
+      "title": "Daniel Allan - Elsewhere ADMIT ONE",
+      "metadataURI": "ipfs://QmQYG1dSSqfUFfoxiJSoRsVBmHyJJmMXJiRTWcqzYoyCYd?1",
+      "metadataSHA256": "b66c73a7248082c0d4101b50883c67c06cde619d6c33f8be2b0108ee305bc8e6",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://Qmd9dD6cQ9sxnARphd2aQB1cjW1M9MYgTSMTozMHXjFp9k/",
+      "animationURI": "ipfs://Qmd9dD6cQ9sxnARphd2aQB1cjW1M9MYgTSMTozMHXjFp9k/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-9c3e8bab18f56febe39c3314034f90181b09455a",
+      "title": "Daniel Allan - Larimer Lounge ADMIT ONE",
+      "metadataURI": "ipfs://Qmdg1pAwhp36oXobiR4CzEcpSv88XMEzvojgTUPek9yVc4?1",
+      "metadataSHA256": "931cb30b5d4cfe9243599ff4ead8293f6c48df5f58ee94838ec0f89e2e290167",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmQDF7UGWBo7WJXBrs7dnpVucgLqvyPeEk8R6NBtBCKT1d/",
+      "animationURI": "ipfs://QmQDF7UGWBo7WJXBrs7dnpVucgLqvyPeEk8R6NBtBCKT1d/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-c7b0a4a2d70bdd9b603f7281858afb35a8fd3b76",
+      "title": "Test in Prod w/ Rewards",
+      "metadataURI": "ipfs://QmRvtzB7c8CJoA5rSt9DHs7YSPsXfZPkziKpUpeuTLEQZv?1",
+      "metadataSHA256": "5018aa1d778468c724d2ff44ac7f5ce2f9de3882d90eba3834c6c57e29baa15f",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmS99y9CqouKSkA4P4qMma1oWj3bXZDeDw2ix8vVEiX3nA/",
+      "animationURI": "ipfs://QmS99y9CqouKSkA4P4qMma1oWj3bXZDeDw2ix8vVEiX3nA/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-4190d72ba387839204157bd4daa046d0a102b676",
+      "title": "Test Referral Reward",
+      "metadataURI": "ipfs://QmRWWh5juPQS4NN3DSiuqCrVGB8oQwaUtJWYkn8cHfL8Uy?1",
+      "metadataSHA256": "12534c313ddd4651bbc25130195df16e05ef0eb42d0206e987587c965e257cf4",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmT519Smjqhd3eidM9MB3WdktniYk3gxRahwZb8hnVBeVZ/",
+      "animationURI": "ipfs://QmT519Smjqhd3eidM9MB3WdktniYk3gxRahwZb8hnVBeVZ/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-4c110c0f4e989d26c3d1172cec6a01bc20ef61a4",
+      "title": "Music Release",
+      "metadataURI": "ipfs://QmWk2dxsEWpnpe22eQX778G6puoTmG9Sp8SVbhFY2ncVxE?1",
+      "metadataSHA256": "0a8129562c8c65e8b4bcdf5a91fa3d5470fc6b85d52e30564ef6318589d19504",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmdoVfsZoFGrCSXDRvUQiEVuiq8zkEqeaaJ1RZkAiLL8R4/",
+      "animationURI": "ipfs://QmdoVfsZoFGrCSXDRvUQiEVuiq8zkEqeaaJ1RZkAiLL8R4/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-acefaf0824d39158cab1a43723a623fe56614eec",
+      "title": "Robbi",
+      "metadataURI": "ipfs://QmTmZrYZnbUME4uJatbCg8CftCeVJ6frMF1xqmiQMkN4Uy?1",
+      "metadataSHA256": "bdbda2e9797f3859a0c300a5cbebdb1f498c15a2100ee128627e0edd407acfb0",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmS1vf5ZazHVVwpDMm5u1pz82x2LpUqFUtPcWqSYytk4x8/",
+      "animationURI": "ipfs://QmS1vf5ZazHVVwpDMm5u1pz82x2LpUqFUtPcWqSYytk4x8/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-916ed458c67de385bee86b11e8a78b7a973e08d1",
+      "title": "Content Bundle",
+      "metadataURI": "ipfs://QmfLeXYLpnyNJTXCzUJzXSZyrmttL6hKhDMsRxaCm9Us3o?1",
+      "metadataSHA256": "351bac649be8059fd22993e02c9efc108362b9c4843cc3b84e705e7dc430071b",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmS99y9CqouKSkA4P4qMma1oWj3bXZDeDw2ix8vVEiX3nA/",
+      "animationURI": "ipfs://QmS99y9CqouKSkA4P4qMma1oWj3bXZDeDw2ix8vVEiX3nA/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-4802f4128a8ceb4ca6605b14f55850d41cd99260",
+      "title": "Stems",
+      "metadataURI": "ipfs://QmRTUYPfcrM1mgY8PHvykdqwyMQ5dtDeQqTcjGea9ZykvC?1",
+      "metadataSHA256": "165eef36aa96b86946d2d6a3ce3309653a776c8b9df28425963c8cbfda356910",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmRwRNaMvqkC7AHuDJsKZfEbSaDawrsoeNTwLAJaAsTCbn/",
+      "animationURI": "ipfs://QmRwRNaMvqkC7AHuDJsKZfEbSaDawrsoeNTwLAJaAsTCbn/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-f77cfa126a97e3ff9e74f86d0a55af91a0075cfa",
+      "title": "E-book Access",
+      "metadataURI": "ipfs://QmYiHBzbNb2DwRSRLVJrYus6m2zNNiHFS6Gds6vw7hh9dj?1",
+      "metadataSHA256": "c9a6a3c447fc48dc9aed8d1028f8275b6b521926ad8ad1bf4a4a8a11788a2903",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmWFrHC3KWjWzBJ8KLRuMZLksEw1bN2VAxgnBZy2Ph3mBA/",
+      "animationURI": "ipfs://QmWFrHC3KWjWzBJ8KLRuMZLksEw1bN2VAxgnBZy2Ph3mBA/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-fa42f3bc79923e020f358ab5d79ac4f5abacce57",
+      "title": "All-Access Pass",
+      "metadataURI": "ipfs://QmThRUeQeY4esKjVCa3mx2Azz9AwJvFuez81j3w8rWNnbj?1",
+      "metadataSHA256": "043dc3598891b7941843412ec94418c1d87e318ced51fa1916fc51f2f8330502",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmRLzLw4JS9fJ6rAy4wo9T3ZfnGohZ5SUh8mQWtd2iRbt7/",
+      "animationURI": "ipfs://QmRLzLw4JS9fJ6rAy4wo9T3ZfnGohZ5SUh8mQWtd2iRbt7/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-6e5600e53b6c591209f72c3e509f10842d0c1561",
+      "title": "All-Access",
+      "metadataURI": "ipfs://QmRgFepMRBVpJ3pTNwpZb9HeXJhtGuBTnoBKotE3CdMvvs?1",
+      "metadataSHA256": "6f9339496738294b08864b39b6e177d04b4d78bf6996a041e0f38d891eba024f",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmSpgASQzLDSoc6UPYjsbNiPKK8izTVCaiXJKRFrTCUFjg/",
+      "animationURI": "ipfs://QmSpgASQzLDSoc6UPYjsbNiPKK8izTVCaiXJKRFrTCUFjg/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-30bdc29e77f7bb472522e1ce72be80f552d247e5",
+      "title": "The Bonfire Suite",
+      "metadataURI": "ipfs://QmaP67wWcSr2vSqbEZgJtapF6oG7T46BGbsCWxu55nrBSA?1",
+      "metadataSHA256": "702edc5633cfdd0d3d70316fcdd19173e3ea7d75956429624b1e211642f5449b",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmRVfcuTiamq1wJTpgb64J3kBNaeFaNuKdvvvkwRyTuxDf/",
+      "animationURI": "ipfs://QmRVfcuTiamq1wJTpgb64J3kBNaeFaNuKdvvvkwRyTuxDf/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-0509acadf4f50002844d277b492a553e0704d235",
+      "title": "The Vault Season Pass",
+      "metadataURI": "ipfs://QmSvnHmt9VbSHgjjXuK8PvNDzwEi9wnfHXvye5MPZJPSh2?1",
+      "metadataSHA256": "8af78eb04d1cc0e7c6640139f907de39ed77e9b49c79b3daf583178651aa6ce1",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmafpP7XEVq8vCLFUvwppUAkRXim3TWA6N8asXigL12Tu6/",
+      "animationURI": "ipfs://QmafpP7XEVq8vCLFUvwppUAkRXim3TWA6N8asXigL12Tu6/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-bd655258238dee79debd6d28fe455fa5a6fea9be",
+      "title": "Genesis Tour",
+      "metadataURI": "ipfs://QmTgQQvArZ7YUXaBzC2nqtPVwC85rziXtXV7PNoPZ8W2oz?1",
+      "metadataSHA256": "9a52c7eb899768eafc6e443c4150a48b981cb5ca6d4cb630e719652a41f9d883",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmRwRNaMvqkC7AHuDJsKZfEbSaDawrsoeNTwLAJaAsTCbn/",
+      "animationURI": "ipfs://QmRwRNaMvqkC7AHuDJsKZfEbSaDawrsoeNTwLAJaAsTCbn/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-4150556fcbc52ebea99751a3a6ae058d58001fd8",
+      "title": "Blue Orange Season Pass",
+      "metadataURI": "ipfs://QmTG9UiXZuJGW97agQNk4w4z8P1EtZTaQNzYJkY4q5kALJ?1",
+      "metadataSHA256": "d076b683d0227a21bb8f181791cda6983837a019c6c1d6095decee2101df039d",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmaSVdqhgdDYQ6VitHJMiM8zzV6M3u3pvXtfZ5xYzGCUsb/",
+      "animationURI": "ipfs://QmaSVdqhgdDYQ6VitHJMiM8zzV6M3u3pvXtfZ5xYzGCUsb/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    },
+    {
+      "id": "recovered-sound-10-f9bfd739d8a17bd539fb8ebde894891799d6bdbf",
+      "title": "Silver Tier",
+      "metadataURI": "ipfs://QmWVduggHSK6twHhtoo1rTDHHjezMemi8868NRvoE716Sp?1",
+      "metadataSHA256": "6752a802783f4ae202f9ba087dab548d26d4a85a44cb94c19c13196229a26a11",
+      "metadataKeys": [
+        "name",
+        "description",
+        "image",
+        "animation_url"
+      ],
+      "imageURI": "ipfs://QmQB1fcEuakEGduMEpVCZt92Te1Lojfw2cdFF42dZicFtv/",
+      "animationURI": "ipfs://QmQB1fcEuakEGduMEpVCZt92Te1Lojfw2cdFF42dZicFtv/",
+      "attachedAudioOrVideoURI": null,
+      "decision": "exclude_from_listening_catalog",
+      "reason": "Original metadata has identical image and animation URLs and no separate music attachment."
+    }
+  ]
+}

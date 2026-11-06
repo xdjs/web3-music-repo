@@ -1,0 +1,41 @@
+{
+  "records": [
+    {
+      "id": "pete-zora-coin-base-c01f464c55f5b1bec05db5205d2fae9e6a835a5e",
+      "chainId": 8453,
+      "contract": "0xc01f464c55f5b1bec05db5205d2fae9e6a835a5e",
+      "standard": "ERC20",
+      "tokenId": null,
+      "title": "rush",
+      "artist": "p3t3rango",
+      "artistId": "pete-rango",
+      "personIds": [
+        "pete-rango"
+      ],
+      "platform": "Zora",
+      "kind": "video",
+      "mediaScope": "clip",
+      "durationSeconds": 20.633333,
+      "imageURI": "ipfs://bafybeibxppt33ac7setoseyfmos2d5p3kiytyc7p3bbfggtmoghoe7lil4",
+      "originalRelease": "https://zora.co/coin/base:0xc01f464c55f5b1bec05db5205d2fae9e6a835a5e",
+      "note": "A 20-second audiovisual post promoting rush. Recovered from the Base coin contract metadata; not the complete song."
+    }
+  ],
+  "evidence": {
+    "pete-zora-coin-base-c01f464c55f5b1bec05db5205d2fae9e6a835a5e": {
+      "status": "live",
+      "checkedAt": "2026-11-06T08:18:08.784Z",
+      "blockNumber": 53813238,
+      "metadataURI": "ipfs://bafybeic6a5ersjfzxjguumablr4j5m2jvtrqcnzpzsfbytpw44ksoazobm",
+      "metadataURL": "https://magic.decentralized-content.com/ipfs/bafybeic6a5ersjfzxjguumablr4j5m2jvtrqcnzpzsfbytpw44ksoazobm",
+      "metadataLocation": "ERC20 contractURI() \u2192 IPFS metadata",
+      "mediaURI": "ipfs://bafybeiciis2v57i7o3rtfwnonh7mqldmsarc2jfbvtrcaji7beoreu7vqq",
+      "mediaURL": "https://magic.decentralized-content.com/ipfs/bafybeiciis2v57i7o3rtfwnonh7mqldmsarc2jfbvtrcaji7beoreu7vqq",
+      "imageURI": "ipfs://bafybeibxppt33ac7setoseyfmos2d5p3kiytyc7p3bbfggtmoghoe7lil4",
+      "imageURL": "https://magic.decentralized-content.com/ipfs/bafybeibxppt33ac7setoseyfmos2d5p3kiytyc7p3bbfggtmoghoe7lil4",
+      "kind": "video",
+      "title": "rush",
+      "artist": "p3t3rango"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "scope": "Two exact token media attachments discovered through holdings; advancing playback and decoded audio, not whole-track listening.",
+  "results": [
+    {
+      "chainId": 1,
+      "contract": "0xde1553b02fd9f80cc9154b49a3d4fe659b426aa6",
+      "tokenId": "2",
+      "title": "Evermore DEMO Tape REIN X Pete Rango",
+      "mediaURI": "ipfs://bafybeihslgreley6vpasuaifh2snc6rkmogsitlgkh7cb6txvyyg3xrrya?",
+      "checkedAt": "2026-11-06T09:40:20.612Z",
+      "attempts": [
+        {
+          "url": "https://magic.decentralized-content.com/ipfs/bafybeihslgreley6vpasuaifh2snc6rkmogsitlgkh7cb6txvyyg3xrrya?",
+          "status": "played",
+          "currentTime": 0.507384,
+          "duration": 185.6,
+          "readyState": 4,
+          "videoWidth": 0,
+          "audioDecodedBytes": 151552
+        }
+      ],
+      "status": "played",
+      "currentTime": 0.507384,
+      "duration": 185.6,
+      "readyState": 4,
+      "videoWidth": 0,
+      "audioDecodedBytes": 151552,
+      "workingURL": "https://magic.decentralized-content.com/ipfs/bafybeihslgreley6vpasuaifh2snc6rkmogsitlgkh7cb6txvyyg3xrrya?"
+    },
+    {
+      "chainId": 1,
+      "contract": "0x0e616dff8c4d9341ce7cebe3bfa829d76ddb410e",
+      "tokenId": "3",
+      "title": "Say it celly  3/50",
+      "mediaURI": "ipfs://bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+      "checkedAt": "2026-11-06T09:40:32.305Z",
+      "attempts": [
+        {
+          "url": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+          "status": "played",
+          "currentTime": 0.508959,
+          "duration": 141.090907,
+          "readyState": 4,
+          "videoWidth": 0,
+          "audioDecodedBytes": 139264
+        }
+      ],
+      "status": "played",
+      "currentTime": 0.508959,
+      "duration": 141.090907,
+      "readyState": 4,
+      "videoWidth": 0,
+      "audioDecodedBytes": 139264,
+      "workingURL": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y"
+    }
+  ]
+}

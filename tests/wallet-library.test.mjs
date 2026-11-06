@@ -47,3 +47,33 @@ test("indexer failure and hostile cursor cannot become an empty successful colle
     "unavailable",
   );
 });
+
+test("verified sampled edition IDs match a recovered song without assuming unsampled editions", async () => {
+  const records = [
+    {
+      id: "song",
+      chainId: 137,
+      contract,
+      tokenId: "1",
+      observedTokenIds: ["1", "9"],
+    },
+  ];
+  const result = await readWalletPage(
+    wallet,
+    137,
+    null,
+    records,
+    new Map(),
+    async () =>
+      Response.json({
+        items: ["9", "10"].map((id) => ({
+          id,
+          token: { address_hash: contract },
+          value: "1",
+        })),
+        next_page_params: null,
+      }),
+  );
+  assert.equal(result.items[0].recordId, "song");
+  assert.equal(result.items[1].recordId, null);
+});

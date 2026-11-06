@@ -1,3 +1,4 @@
+import { acquireRecoveryLock } from "../src/recovery-job-lock.mjs";
 import {
   readFileSync,
   writeFileSync,
@@ -18,12 +19,25 @@ const load = (p, f) => {
     return f;
   }
 };
+const releaseLock = acquireRecoveryLock(file);
 const result = load(file, { records: {} });
 result.startedAt = new Date().toISOString();
 result.finishedAt = null;
+result.interruptedAt = null;
+let stopping = false;
+process.once("SIGTERM", () => {
+  stopping = true;
+});
+process.once("SIGINT", () => {
+  stopping = true;
+});
 result.scope =
   "Original metadata and explicitly attributed publisher snapshots; audio analysis is stored separately";
-const snapshots = load("data/catalog/original-metadata.json", {});
+const snapshots = {
+  ...load("data/catalog/original-metadata.json", {}),
+  ...load("data/catalog/ethereum-original-metadata.json", {}),
+};
+const mintOriginals = load("data/mint-songs/original-metadata.json", {});
 const cacheDir = "work/music-metadata-cache";
 mkdirSync(cacheDir, { recursive: true });
 const cachePath = (source) =>
@@ -33,16 +47,16 @@ const refresh = process.argv.includes("--refresh");
 const records = bundle.records.filter(
   (r) =>
     (!filter || r.platform === filter) &&
-    (refresh || result.records[r.id]?.schemaVersion !== 3),
+    (refresh || result.records[r.id]?.schemaVersion !== 4),
 );
 const save = () => {
   result.updatedAt = new Date().toISOString();
   result.counts = {
     total: bundle.records.length,
-    read: Object.values(result.records).filter((r) => r.status === "read")
+    read: bundle.records.filter((r) => result.records[r.id]?.status === "read")
       .length,
-    pendingOrUnavailable: Object.values(result.records).filter(
-      (r) => r.status !== "read",
+    pendingOrUnavailable: bundle.records.filter(
+      (r) => result.records[r.id]?.status !== "read",
     ).length,
   };
   writeFileSync(file + ".tmp", JSON.stringify(result, null, 2));
@@ -113,19 +127,22 @@ for (const r of records) {
   const source = s?.source || v?.metadataURI || v?.metadataURL;
   const metadata =
     s?.metadata ||
+    mintOriginals[r.id]?.results ||
     (source && existsSync(cachePath(source))
       ? load(cachePath(source), null)
       : null);
   if (!metadata) continue;
   result.records[r.id] = {
     status: "read",
-    schemaVersion: 3,
+    schemaVersion: 4,
     ...extractMusicMetadata(metadata),
     source,
     metadataURL: v?.metadataURL || null,
     provenance: s
       ? "Catalog official metadata snapshot"
-      : "Previously fetched original metadata",
+      : mintOriginals[r.id]
+        ? "Neume preserved Mint Songs metadata"
+        : "Previously fetched original metadata",
     ...(s ? { snapshotDate: s.snapshotDate } : {}),
     checkedAt: result.records[r.id]?.checkedAt || new Date().toISOString(),
     parsedAt: new Date().toISOString(),
@@ -135,9 +152,9 @@ for (const r of records) {
 save();
 await Promise.all(
   Array.from({ length: 4 }, async () => {
-    while (next < records.length) {
+    while (!stopping && next < records.length) {
       const r = records[next++];
-      if (result.records[r.id]?.schemaVersion === 3 && !refresh) continue;
+      if (result.records[r.id]?.schemaVersion === 4 && !refresh) continue;
       const v = bundle.evidence[r.id],
         source = v?.metadataURI || v?.metadataURL;
       if (!source) {
@@ -151,7 +168,7 @@ await Promise.all(
         const metadata = await read(source);
         result.records[r.id] = {
           status: "read",
-          schemaVersion: 3,
+          schemaVersion: 4,
           ...extractMusicMetadata(metadata),
           source,
           metadataURL: v.metadataURL || null,
@@ -183,6 +200,11 @@ await Promise.all(
     }
   }),
 );
-result.finishedAt = new Date().toISOString();
+result.finishedAt = stopping ? null : new Date().toISOString();
+result.interruptedAt = stopping ? new Date().toISOString() : null;
 save();
-console.log("MUSIC METADATA COMPLETE", JSON.stringify(result.counts));
+releaseLock();
+console.log(
+  stopping ? "MUSIC METADATA CHECKPOINTED" : "MUSIC METADATA COMPLETE",
+  JSON.stringify(result.counts),
+);

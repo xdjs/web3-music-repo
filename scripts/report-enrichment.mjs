@@ -32,6 +32,19 @@ const report = {
     releasesWithVerifiedPayments: 0,
   },
   byPlatform: {},
+  jobs: Object.fromEntries(
+    Object.entries({ metadata, bpm: analysis }).map(([name, job]) => [
+      name,
+      {
+        startedAt: job.startedAt || null,
+        updatedAt: job.updatedAt || null,
+        finishedAt: job.finishedAt || null,
+        interruptedAt: job.interruptedAt || null,
+        completion: job.finishedAt ? "pass-finished" : "not-confirmed-finished",
+        note: "A checkpoint is not proof that a process is alive; failed items remain unresolved even after a pass finishes.",
+      },
+    ]),
+  ),
 };
 for (const r of bundle.records) {
   const facts = musicFacts({ ...r, audioAnalysis: null });
@@ -40,6 +53,10 @@ for (const r of bundle.records) {
     originalBpm: 0,
     originalKey: 0,
     credits: 0,
+    metadataRead: 0,
+    metadataUnresolved: 0,
+    metadataStates: {},
+    attributedCredits: 0,
   });
   stats.records++;
   if (facts.bpm) {
@@ -59,8 +76,20 @@ for (const r of bundle.records) {
   }
   for (const k of Object.keys(r.musicMetadata?.details || {}))
     report.details[k] = (report.details[k] || 0) + 1;
-  if (metadata.records[r.id]?.status === "read") report.metadataRead++;
-  else report.metadataUnresolved++;
+  const metadataState =
+    metadata.records[r.id]?.status ||
+    r.musicMetadata?.status ||
+    "not-attempted";
+  stats.metadataStates[metadataState] =
+    (stats.metadataStates[metadataState] || 0) + 1;
+  if (metadataState === "read") {
+    report.metadataRead++;
+    stats.metadataRead++;
+  } else {
+    report.metadataUnresolved++;
+    stats.metadataUnresolved++;
+  }
+  if (r.credits?.length) stats.attributedCredits++;
   if (r.revenue) report.payments.releasesWithVerifiedPayments++;
   const state = analysis.records[r.id]?.status || "not-queued";
   report.bpmAnalysis[state] = (report.bpmAnalysis[state] || 0) + 1;

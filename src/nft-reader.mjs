@@ -1,8 +1,10 @@
+import { alternateMediaURLs } from "./media-recovery.js";
 // Only known collection/token pairs can reach this read-only adapter.
 const RPCS = {
   1: "https://ethereum-rpc.publicnode.com",
   10: "https://optimism-rpc.publicnode.com",
   8453: "https://base-rpc.publicnode.com",
+  137: "https://polygon-bor-rpc.publicnode.com",
   7777777: "https://rpc.zora.energy",
 };
 export function storageURL(uri) {
@@ -76,6 +78,24 @@ async function jsonResponse(res) {
   return JSON.parse(Buffer.concat(chunks).toString("utf8"));
 }
 async function storageJSON(url, fetcher) {
+  const canonical = storageURL(url);
+  if (new URL(canonical).pathname.startsWith("/ipfs/")) {
+    // Each candidate preserves the same CID and path. Redirects are deliberately
+    // rejected here rather than permitting an upstream-controlled proxy target.
+    let lastError;
+    for (const candidate of [canonical, ...alternateMediaURLs(canonical)]) {
+      try {
+        const res = await fetcher(candidate, {
+          signal: AbortSignal.timeout(12000),
+          redirect: "manual",
+        });
+        return await jsonResponse(res);
+      } catch (error) {
+        lastError = error;
+      }
+    }
+    throw lastError || Error("Storage unavailable");
+  }
   for (let i = 0; i < 4; i++) {
     const res = await fetcher(storageURL(url), {
       signal: AbortSignal.timeout(12000),
@@ -90,6 +110,9 @@ async function storageJSON(url, fetcher) {
   throw Error("Too many storage redirects");
 }
 export async function readNFT(record, fetcher = fetch) {
+  // Older ERC-721 records omit this field. Never treat an unknown explicit
+  // standard as ERC-721, and never synthesize an NFT token ID for a coin.
+  const standard = record.standard === undefined ? "ERC721" : record.standard;
   const rpc = async (method, params) => {
     const d = await jsonResponse(
       await fetcher(RPCS[record.chainId], {
@@ -106,7 +129,11 @@ export async function readNFT(record, fetcher = fetch) {
     if (
       !RPCS[record.chainId] ||
       !/^0x[0-9a-f]{40}$/i.test(record.contract) ||
-      !/^\d+$/.test(record.tokenId)
+      !["ERC721", "ERC1155", "ERC20"].includes(standard) ||
+      (standard === "ERC20"
+        ? record.tokenId !== null
+        : !/^\d{1,78}$/.test(record.tokenId) ||
+          BigInt(record.tokenId) >= 1n << 256n)
     )
       throw Error("Invalid reference");
     const block = await rpc("eth_blockNumber", []);
@@ -115,15 +142,18 @@ export async function readNFT(record, fetcher = fetch) {
         {
           to: record.contract,
           data:
-            (record.standard === "ERC1155" ? "0x0e89341c" : "0xc87b56dd") +
-            BigInt(record.tokenId).toString(16).padStart(64, "0"),
+            standard === "ERC20"
+              ? "0xe8a3d485"
+              : (standard === "ERC1155" ? "0x0e89341c" : "0xc87b56dd") +
+                BigInt(record.tokenId).toString(16).padStart(64, "0"),
         },
         block,
       ]),
     );
     const legacyCatalog =
+      standard === "ERC721" &&
       record.contract.toLowerCase() ===
-      "0xabefbc9fd2f806065b4f3c237d4b59d9a97bcac7";
+        "0xabefbc9fd2f806065b4f3c237d4b59d9a97bcac7";
     const metadataURI = legacyCatalog
       ? decodeString(
           await rpc("eth_call", [
@@ -152,7 +182,10 @@ export async function readNFT(record, fetcher = fetch) {
       : metadata.animation_url ||
         metadata.animation ||
         metadata.audio ||
-        metadata.losslessAudio;
+        metadata.losslessAudio ||
+        (/^(audio|video)\//.test(metadata.content?.mime || "")
+          ? metadata.content?.uri
+          : undefined);
     const mediaURL = storageURL(mediaURI);
     let imageURL = null;
     try {
@@ -160,20 +193,34 @@ export async function readNFT(record, fetcher = fetch) {
         legacyCatalog ? metadata.body?.artwork?.info?.uri : metadata.image,
       );
     } catch {}
+    const polygonMintSongs =
+      record.chainId === 137 &&
+      record.contract.toLowerCase() ===
+        "0xc29cbe04ae322469dc077741afa2fbccda748ae4";
+    const mintAttribute = (name) =>
+      polygonMintSongs && Array.isArray(metadata.attributes)
+        ? metadata.attributes.find((attribute) => attribute.trait_type === name)
+            ?.value
+        : undefined;
     return {
       status: "live",
       chainId: record.chainId,
       contract: record.contract,
       tokenId: record.tokenId,
+      standard,
       blockNumber: parseInt(block, 16),
       checkedAt: new Date().toISOString(),
       title: String(
-        (legacyCatalog ? metadata.body?.title : metadata.name) || record.title,
+        (legacyCatalog
+          ? metadata.body?.title
+          : mintAttribute("Song") || metadata.name) || record.title,
       ).slice(0, 200),
       artist: String(
         (legacyCatalog
           ? metadata.body?.artist
-          : metadata.artist_name || metadata.artist) || "",
+          : metadata.artist_name ||
+            metadata.artist ||
+            mintAttribute("Artist")) || "",
       ).slice(0, 200),
       imageURI: legacyCatalog
         ? metadata.body?.artwork?.info?.uri || null
@@ -186,9 +233,15 @@ export async function readNFT(record, fetcher = fetch) {
       metadataURL,
       metadataURI,
       metadataLocation: metadataURL
-        ? "Token URI → storage metadata"
+        ? standard === "ERC20"
+          ? "ERC20 contractURI() → storage metadata"
+          : "Token URI → storage metadata"
         : "Metadata returned directly by the contract",
       kind: record.kind,
+      ...(record.mediaScope === "clip" ? { mediaScope: "clip" } : {}),
+      ...(Number.isFinite(record.durationSeconds) && record.durationSeconds > 0
+        ? { durationSeconds: record.durationSeconds }
+        : {}),
     };
   } catch {
     return {

@@ -184,3 +184,106 @@ test("Irys redirects permit only content-addressed legacy storage paths", () => 
   ])
     assert.throws(() => storageURL(url));
 });
+
+test("IPFS metadata retries fixed same-CID gateways on failure without following remote redirects", async () => {
+  const seen = [];
+  const value = await readNFT(r, async (url, options) => {
+    if (options.method === "POST") {
+      const body = JSON.parse(options.body);
+      return Response.json({
+        result:
+          body.method === "eth_blockNumber"
+            ? "0x123"
+            : encode("ipfs://bafytest/metadata.json"),
+      });
+    }
+    seen.push(url);
+    assert.equal(options.redirect, "manual");
+    if (seen.length === 1) return new Response("rate limited", { status: 429 });
+    if (seen.length === 2)
+      return new Response("", {
+        status: 302,
+        headers: { location: "http://127.0.0.1/private" },
+      });
+    return Response.json({
+      name: "Recovered",
+      animation_url: "ipfs://bafytest/song.mp3",
+    });
+  });
+  assert.equal(value.status, "live");
+  assert.deepEqual(seen, [
+    "https://ipfs.filebase.io/ipfs/bafytest/metadata.json",
+    "https://gateway.pinata.cloud/ipfs/bafytest/metadata.json",
+    "https://magic.decentralized-content.com/ipfs/bafytest/metadata.json",
+  ]);
+  assert.equal(value.mediaURI, "ipfs://bafytest/song.mp3");
+});
+
+import { readFileSync } from "node:fs";
+test("Polygon Mint Songs onchain metadata keeps song attribution separate from the edition label", async () => {
+  const fixture = JSON.parse(
+    readFileSync(
+      new URL("../data/mint-songs/polygon-discovery.json", import.meta.url),
+    ),
+  );
+  const sample = fixture.samples.find((s) => s.tokenId === "60000");
+  const calls = [];
+  const value = await readNFT(
+    {
+      chainId: 137,
+      contract: fixture.contract,
+      standard: "ERC721",
+      tokenId: "60000",
+      kind: "audio",
+    },
+    async (url, options) => {
+      assert.equal(url, "https://polygon-bor-rpc.publicnode.com");
+      const body = JSON.parse(options.body);
+      calls.push(body);
+      return Response.json(
+        body.method === "eth_blockNumber"
+          ? { result: "0x" + fixture.referenceBlock.toString(16) }
+          : sample.rpcResponse,
+      );
+    },
+  );
+  assert.equal(value.status, "live");
+  assert.equal(value.title, "SHUT IT OFF");
+  assert.equal(value.artist, "TAY");
+  assert.equal(value.mediaURI, sample.metadata.animation_url);
+  assert.equal(value.metadataURL, null);
+  assert.equal(value.blockNumber, fixture.referenceBlock);
+  assert.equal(
+    calls[1].params[1],
+    calls[0].method === "eth_blockNumber"
+      ? "0x" + fixture.referenceBlock.toString(16)
+      : "",
+  );
+  assert.ok(calls[1].params[0].data.startsWith("0xc87b56dd"));
+});
+test("malformed Polygon token JSON remains unresolved rather than guessed or discarded", async () => {
+  const fixture = JSON.parse(
+    readFileSync(
+      new URL("../data/mint-songs/polygon-discovery.json", import.meta.url),
+    ),
+  );
+  const sample = fixture.samples.find((s) => s.tokenId === "1000");
+  const value = await readNFT(
+    {
+      chainId: 137,
+      contract: fixture.contract,
+      standard: "ERC721",
+      tokenId: "1000",
+    },
+    async (url, options) => {
+      const body = JSON.parse(options.body);
+      return Response.json(
+        body.method === "eth_blockNumber"
+          ? { result: "0x123" }
+          : sample.rpcResponse,
+      );
+    },
+  );
+  assert.equal(value.status, "unavailable");
+  assert.equal(value.mediaURI, undefined);
+});

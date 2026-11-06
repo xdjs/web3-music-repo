@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-11-06T09:23:12.337Z",
+  "base": "http://127.0.0.1:4191",
+  "record": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-986",
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "exactAmount": true,
+      "keyboardDisclosure": true,
+      "sourceLinks": true,
+      "sharedTypography": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "exactAmount": true,
+      "keyboardDisclosure": true,
+      "sourceLinks": true,
+      "sharedTypography": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "exactAmount": true,
+      "keyboardDisclosure": true,
+      "sourceLinks": true,
+      "sharedTypography": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "exactAmount": true,
+      "keyboardDisclosure": true,
+      "sourceLinks": true,
+      "sharedTypography": true,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-11-06T08:28:32.155Z",
+  "scope": "Real Privy SDK and configured recovery client, guest login modal only. No OTP sent; no wallet signed; real account completion not verified.",
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "emailFormVisible": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "emailFormVisible": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "emailFormVisible": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "emailFormVisible": true
+    }
+  ],
+  "authResponses": [
+    {
+      "url": "https://auth.privy.io/api/v1/apps/cmlzjxfrh00ak0cjvlap9d3gm",
+      "status": 200
+    },
+    {
+      "url": "https://auth.privy.io/apps/cmlzjxfrh00ak0cjvlap9d3gm/embedded-wallets",
+      "status": 200
+    }
+  ],
+  "errors": []
+}
