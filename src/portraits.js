@@ -1,5 +1,17 @@
 // Source-checked public profile images. Historical dates are not inferred from portraits.
 export const portraits = {
+  campfire: {
+    personId: "campfire",
+    file: null,
+    url: "https://api.spinamp.xyz/v3/graphql",
+    credit:
+      "CAMPFIRE · Spinamp indexed artist profile, matched to original release contracts",
+    alt: "CAMPFIRE flame and logs profile image",
+    kind: "profile image",
+    evidence:
+      "https://ipfs.filebase.io/ipfs/QmXyCgXAz6mFz5KE1MWPPFEwoVVqTqbXpFCvqanx2yqa8e",
+    retrieved: "2026-11-06",
+  },
   "daniel-allan": {
     personId: "daniel-allan",
     file: "daniel-allan",

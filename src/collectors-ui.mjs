@@ -1,3 +1,4 @@
+import { isSolanaAsset, unsupportedSolanaRead } from "./asset-capabilities.mjs";
 export function mountCollectors({
   esc,
   short,
@@ -40,6 +41,8 @@ export function mountCollectors({
     return `<a class="collector-card" href="${walletLink(h.address)}" title="${esc(h.address)}">${avatar(h)}<span class="collector-name">${esc(i.name)}<small>${esc(i.source)}</small></span><span class="collector-editions">${esc(h.balance)}<small>${purchased ? "purchased" : h.balance === "1" ? "edition" : "editions"}</small></span></a>`;
   }
   function content(r, full = false) {
+    if (isSolanaAsset(r))
+      return `<div class="reading"><h2>Solana collectors</h2><p>${esc(unsupportedSolanaRead().message)}</p></div>`;
     if (r.standard === "ERC20")
       return '<div class="reading"><h2>Coin holders</h2><p>This release is a Zora content coin. NFT edition collectors do not apply; coin-holder recovery has not been added yet.</p></div>';
     const s = states.get(r.id);
@@ -48,22 +51,24 @@ export function mountCollectors({
     if (s.error && !s.items.length)
       return `<div class="collector-loading">Collector data is temporarily unavailable. <button class="text-button" data-retry-collectors="${r.id}">Retry ↻</button></div>`;
     const title =
-      s.scope === "catalog-purchases"
-        ? "Collectors in purchase history"
-        : s.scope === "catalog-snapshot"
-          ? "Collectors in Catalog’s snapshot"
-          : [
-                "release",
-                "legacy-release",
-                "media-release",
-                "token-edition",
-              ].includes(s.scope)
-            ? "Collectors"
-            : "Featured edition holder";
+      s.scope === "spinamp-release-snapshot"
+        ? "Indexed collectors"
+        : s.scope === "catalog-purchases"
+          ? "Collectors in purchase history"
+          : s.scope === "catalog-snapshot"
+            ? "Collectors in Catalog’s snapshot"
+            : [
+                  "release",
+                  "legacy-release",
+                  "media-release",
+                  "token-edition",
+                ].includes(s.scope)
+              ? "Collectors"
+              : "Featured edition holder";
     const items = full ? s.items : s.items.slice(0, 8);
-    return `<div class="section-head"><div><h2>${title}</h2><p>${["catalog-snapshot", "catalog-purchases"].includes(s.scope) ? `${s.items.length} wallets · ${chainNames[r.chainId]} · March 9, 2026` : ["release", "legacy-release", "media-release", "token-edition"].includes(s.scope) ? `${s.items.length}${s.nextCursor ? " +" : ""} wallets ${s.nextCursor ? "loaded" : "in this indexed snapshot"} · ${chainNames[r.chainId]}` : `Token ${esc(r.tokenId)} · release-wide recovery still needed`}</p></div>${!full ? `<a class="text-button" href="${recordLink(r)}?tab=collectors">View collectors ↗</a>` : ""}</div><div class="${full ? "collector-grid" : "collector-preview"}">${items.map((h) => row(h, s.scope === "catalog-purchases")).join("") || (s.nextCursor ? '<p class="link-note">More tokens remain to be checked for this release.</p>' : '<p class="link-note">No holders returned in this snapshot.</p>')}</div>${
+    return `<div class="section-head"><div><h2>${title}</h2><p>${s.scope === "spinamp-release-snapshot" ? `${s.items.length} wallets · ${s.mappedTokenCount} mapped editions · ${chainNames[r.chainId]}` : ["catalog-snapshot", "catalog-purchases"].includes(s.scope) ? `${s.items.length} wallets · ${chainNames[r.chainId]} · March 9, 2026` : ["release", "legacy-release", "media-release", "token-edition"].includes(s.scope) ? `${s.items.length}${s.nextCursor ? " +" : ""} wallets ${s.nextCursor ? "loaded" : "in this indexed snapshot"} · ${chainNames[r.chainId]}` : `Token ${esc(r.tokenId)} · release-wide recovery still needed`}</p></div>${!full ? `<a class="text-button" href="${recordLink(r)}?tab=collectors">View collectors ↗</a>` : ""}</div><div class="${full ? "collector-grid" : "collector-preview"}">${items.map((h) => row(h, s.scope === "catalog-purchases")).join("") || (s.nextCursor ? '<p class="link-note">More tokens remain to be checked for this release.</p>' : '<p class="link-note">No holders returned in this snapshot.</p>')}</div>${
       full
-        ? `<p class="link-note">${s.scope === "catalog-purchases" ? "Wallets that received this token through purchases recorded in Catalog’s March 9, 2026 export. Quantities show purchased copies, not current holdings. The exported Base transfers omit mint history, so they cannot establish complete wallet balances." : s.scope === "catalog-snapshot" ? "Historical token balances from Catalog’s official March 9, 2026 export. Ethereum uses the exported token owner; Base balances are reconstructed from exported transfer events. These are not live wallet balances." : s.scope === "token-edition" ? `Current indexed holders of token ${esc(r.tokenId)} only. Other tokens in this contract are excluded. Balances are reported by Blockscout and are not necessarily original mints.` : s.scope === "media-release" ? "Current indexed owners of editions whose original media content address matches this recording. Tokens with other media or missing metadata are excluded. This is a media-matched index snapshot, not an independently verified census or a list of original minters." : ["release", "legacy-release"].includes(s.scope) ? "Current holders of tokens mapped to this release, reported by Blockscout. Legacy artist contracts are filtered by their onchain edition IDs. These are not necessarily the original minters." : "This contract is not yet mapped to a single release. Only the selected token owner is shown; other contract holders are not attributed to this song."} ${s.snapshotDate ? `Snapshot date: ${esc(s.snapshotDate)}` : `Checked ${date(s.checkedAt)}`}. ${s.deployment ? `<a href="${explorers[r.chainId]}/tx/${s.deployment.transaction}" target="_blank" rel="noopener noreferrer">Release factory event ↗</a>` : ""} ${s.source?.startsWith("https:") ? `<a href="${esc(s.source)}" target="_blank" rel="noopener noreferrer">Holder source ↗</a>` : ""}</p>${
+        ? `<p class="link-note">${s.scope === "spinamp-release-snapshot" ? "Spinamp indexed balances for the editions explicitly linked to this recording, with the same original metadata reference. The index’s update time is unknown; these are not independently verified current balances or original minters." : s.scope === "catalog-purchases" ? "Wallets that received this token through purchases recorded in Catalog’s March 9, 2026 export. Quantities show purchased copies, not current holdings. The exported Base transfers omit mint history, so they cannot establish complete wallet balances." : s.scope === "catalog-snapshot" ? "Historical token balances from Catalog’s official March 9, 2026 export. Ethereum uses the exported token owner; Base balances are reconstructed from exported transfer events. These are not live wallet balances." : s.scope === "token-edition" ? `Current indexed holders of token ${esc(r.tokenId)} only. Other tokens in this contract are excluded. Balances are reported by Blockscout and are not necessarily original mints.` : s.scope === "media-release" ? "Current indexed owners of editions whose original media content address matches this recording. Tokens with other media or missing metadata are excluded. This is a media-matched index snapshot, not an independently verified census or a list of original minters." : ["release", "legacy-release"].includes(s.scope) ? "Current holders of tokens mapped to this release, reported by Blockscout. Legacy artist contracts are filtered by their onchain edition IDs. These are not necessarily the original minters." : "This contract is not yet mapped to a single release. Only the selected token owner is shown; other contract holders are not attributed to this song."} ${s.snapshotDate ? `Snapshot date: ${esc(s.snapshotDate)}` : `Checked ${date(s.checkedAt)}`}. ${s.deployment ? `<a href="${explorers[r.chainId]}/tx/${s.deployment.transaction}" target="_blank" rel="noopener noreferrer">Release factory event ↗</a>` : ""} ${s.source?.startsWith("https:") ? `<a href="${esc(s.source)}" target="_blank" rel="noopener noreferrer">Holder source ↗</a>` : ""}</p>${
             s.purchases?.length
               ? `<details class="artist-sources"><summary>Purchases preserved in the snapshot (${s.purchases.length})</summary>${s.purchases
                   .slice(0, 50)
@@ -124,7 +129,8 @@ export function mountCollectors({
     );
   }
   async function load(id, more = false, emptyPages = 0) {
-    if (catalog().find((r) => r.id === id)?.standard === "ERC20") return;
+    const record = catalog().find((r) => r.id === id);
+    if (isSolanaAsset(record) || record?.standard === "ERC20") return;
     activeRecord = id;
     const prior = states.get(id);
     if (prior?.loading) return;

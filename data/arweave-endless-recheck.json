@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-11-06T19:35:18.594Z",
+  "base": "http://127.0.0.1:4191",
+  "scope": "Three user-reported tracks, real player startup/advancement after finite same-transaction Arweave fallback; no whole-track playback claim.",
+  "records": [
+    {
+      "id": "recovered-sound-10-145ac4d1ad5817b28997a479a980ea1d5d53e3e9",
+      "title": "Endless",
+      "artist": "Sound of Fractures",
+      "original": "https://arweave.net/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8",
+      "elapsedMs": 17074,
+      "status": "played",
+      "src": "https://turbo-gateway.com/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8",
+      "time": 1.519979,
+      "duration": 293.686009,
+      "paused": false,
+      "readyState": 4,
+      "decodedAudioBytes": 540144,
+      "videoWidth": 0,
+      "sameTransaction": true,
+      "responses": [
+        {
+          "url": "https://arweave.net/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8",
+          "status": 302,
+          "length": "158"
+        },
+        {
+          "url": "https://arweave.net/MJMx4iB2GoBw0MxHFSEO19LCzPDROmH13l4nJPKolyM",
+          "status": 302,
+          "length": "158"
+        },
+        {
+          "url": "https://gcjtdyraoynia4gqzrdrkiio27jmfthq2e5gd5o6lytsj4vis4rq.arweave.net/MJMx4iB2GoBw0MxHFSEO19LCzPDROmH13l4nJPKolyM",
+          "status": 200,
+          "mime": "image/png",
+          "length": "119474"
+        },
+        {
+          "url": "https://turbo-gateway.com/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8",
+          "status": 302,
+          "mime": "text/plain; charset=utf-8",
+          "length": "145"
+        },
+        {
+          "url": "https://hx6zamw63j3qbvpqxchyohyt5kblfqmmflarwcnlysaxxb3u2lpq.turbo-gateway.com/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8?",
+          "status": 206,
+          "mime": "audio/wave",
+          "contentRange": "bytes 0-77709361/77709362",
+          "length": "77709362"
+        },
+        {
+          "url": "https://arweave.net/MJMx4iB2GoBw0MxHFSEO19LCzPDROmH13l4nJPKolyM",
+          "status": 302,
+          "length": "158"
+        },
+        {
+          "url": "https://gcjtdyraoynia4gqzrdrkiio27jmfthq2e5gd5o6lytsj4vis4rq.arweave.net/MJMx4iB2GoBw0MxHFSEO19LCzPDROmH13l4nJPKolyM",
+          "status": 200,
+          "mime": "image/png",
+          "length": "119474"
+        }
+      ],
+      "failures": [
+        {
+          "url": "https://hx6zamw63j3qbvpqxchyohyt5kblfqmmflarwcnlysaxxb3u2lpq.arweave.net/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8",
+          "error": "net::ERR_ABORTED"
+        }
+      ]
+    }
+  ]
+}

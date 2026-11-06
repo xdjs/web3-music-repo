@@ -1,4 +1,5 @@
 export const chainNames = {
+  solana: "Solana",
   1: "Ethereum",
   10: "Optimism",
   8453: "Base",

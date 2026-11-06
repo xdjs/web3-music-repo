@@ -62,7 +62,10 @@ try {
       await openQueue(width);
       assert.deepEqual(
         await rows(),
-        selection.map((id) => "Play " + title(id)),
+        [
+          ...selection.slice(selection.indexOf(breakdown)),
+          ...selection.slice(0, selection.indexOf(breakdown)),
+        ].map((id) => "Play " + title(id)),
       );
       assert.equal(
         await page.locator("#queue-context").innerText(),
@@ -79,7 +82,7 @@ try {
         await page
           .locator(".queue-item.current [data-queue-play]")
           .getAttribute("data-queue-play"),
-        String(selection.indexOf(breakdown) + 1),
+        "1",
       );
       await page.locator("#clear-queue").click();
       await closeQueue();

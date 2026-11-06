@@ -1,3 +1,12 @@
+// Browsing starts a fresh listening context at the selected recording. Earlier
+// cards remain available after the end of the visible order, rather than being
+// presented as playback history even though they have never played.
+export function automaticQueueStartingWith(id, context = []) {
+  const ids = [...new Set(context.includes(id) ? context : [id, ...context])];
+  const start = ids.indexOf(id);
+  return [...ids.slice(start), ...ids.slice(0, start)];
+}
+
 export function selectQueueTrack(
   state,
   id,
@@ -13,8 +22,11 @@ export function selectQueueTrack(
     };
   }
   if (!state.ids.length || state.mode !== "manual") {
-    const ids = [...new Set(context.includes(id) ? context : [id, ...context])];
-    return { ids, index: ids.indexOf(id), mode: "auto" };
+    return {
+      ids: automaticQueueStartingWith(id, context),
+      index: 0,
+      mode: "auto",
+    };
   }
   const ids = [...state.ids];
   const existing = ids.indexOf(id);

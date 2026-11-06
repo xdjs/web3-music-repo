@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-11-06T19:23:30.754Z",
+  "base": "http://127.0.0.1:4191",
+  "cases": [
+    {
+      "width": 1440,
+      "entities": [
+        {
+          "kind": "record",
+          "id": "record-not4me",
+          "title": "NOT4ME",
+          "copied": "http://127.0.0.1:4191/share/record/record-not4me"
+        },
+        {
+          "kind": "artist",
+          "id": "pete-rango",
+          "title": "Pete Rango",
+          "copied": "http://127.0.0.1:4191/share/artist/pete-rango"
+        },
+        {
+          "kind": "playlist",
+          "id": "04150d7a-d471-48de-a144-54b00474e59f",
+          "title": "Chill n Work",
+          "copied": "http://127.0.0.1:4191/share/playlist/04150d7a-d471-48de-a144-54b00474e59f"
+        }
+      ],
+      "manualFallback": true,
+      "nativeShareAndCancel": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "entities": [
+        {
+          "kind": "record",
+          "id": "record-not4me",
+          "title": "NOT4ME",
+          "copied": "http://127.0.0.1:4191/share/record/record-not4me"
+        },
+        {
+          "kind": "artist",
+          "id": "pete-rango",
+          "title": "Pete Rango",
+          "copied": "http://127.0.0.1:4191/share/artist/pete-rango"
+        },
+        {
+          "kind": "playlist",
+          "id": "04150d7a-d471-48de-a144-54b00474e59f",
+          "title": "Chill n Work",
+          "copied": "http://127.0.0.1:4191/share/playlist/04150d7a-d471-48de-a144-54b00474e59f"
+        }
+      ],
+      "manualFallback": true,
+      "nativeShareAndCancel": true,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

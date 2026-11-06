@@ -30,10 +30,15 @@ const frontend = [
   "now-playing.mjs",
   "personal-playlists.mjs",
   "playlist-share.mjs",
+  "entity-share.mjs",
+  "collection-filters.mjs",
   "listening-queue.mjs",
   "queue-shuffle.mjs",
   "queue-sortable.mjs",
   "recovery-model.mjs",
+  "solana-identity.mjs",
+  "solana-provenance.mjs",
+  "asset-capabilities.mjs",
   "image-recovery.mjs",
 ];
 for (const file of frontend) await copyFile(`src/${file}`, `dist/src/${file}`);

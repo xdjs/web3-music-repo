@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-11-06T19:36:40.309Z",
+  "failedArtHidden": true,
+  "recovered": {
+    "source": "http://127.0.0.1:4191/media/record-69c77ef0-1500.webp",
+    "width": 1500,
+    "display": "block"
+  },
+  "passed": true
+}

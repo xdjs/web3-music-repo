@@ -171,3 +171,58 @@ test("moving across the playhead adjusts index and preserves deletions", async (
   assert.equal(moveShuffleQueue(moved, 0, 7), moved);
   assert.equal(moveShuffleQueue(moved, 1, 1), moved);
 });
+
+test("fourth browsing track starts an auto queue with no fabricated history and no lost tracks", () => {
+  const context = ["a", "b", "c", "d", "e"];
+  const s = selectShuffledTrack(createShuffleQueue(), "d", context);
+  assert.deepEqual(s.ids, ["d", "e", "a", "b", "c"]);
+  assert.equal(s.index, 0);
+  assert.equal(s.mode, "auto");
+  assert.deepEqual(context, ["a", "b", "c", "d", "e"]);
+  const next = selectShuffledTrack(s, "e", [], s.ids, 1);
+  assert.deepEqual(next.ids, s.ids);
+  assert.equal(next.index, 1);
+  const fresh = selectShuffledTrack(next, "c", context);
+  assert.deepEqual(fresh.ids, ["c", "d", "e", "a", "b"]);
+  assert.equal(fresh.index, 0);
+});
+test("shuffle remembered before browsing preserves fourth selection first and restores rotated order", () => {
+  const s = selectShuffledTrack(
+    createShuffleQueue(true),
+    "d",
+    ["a", "b", "c", "d", "e"],
+    null,
+    null,
+    zero,
+  );
+  assert.equal(s.ids[0], "d");
+  assert.equal(s.index, 0);
+  assert.deepEqual([...s.ids].sort(), ["a", "b", "c", "d", "e"]);
+  const off = toggleQueueShuffle(s, false);
+  assert.deepEqual(off.ids, ["d", "e", "a", "b", "c"]);
+  assert.equal(off.entries[0].key, s.entries[0].key);
+});
+test("browsing selection preserves explicit order, duplicate occurrences and manual reorder", async () => {
+  const { moveShuffleQueue } = await import("../src/queue-shuffle.mjs");
+  let s = replaceShuffleQueue(createShuffleQueue(), ["a", "b", "a", "d"], 2);
+  const occurrence = s.entries[2].key;
+  s = moveShuffleQueue(s, 3, 1);
+  const before = s.ids;
+  const selected = selectShuffledTrack(s, "d", ["a", "b", "c", "d", "e"]);
+  assert.deepEqual(selected.ids, before);
+  assert.equal(selected.index, 1);
+  assert.ok(selected.entries.some((e) => e.key === occurrence));
+  const duplicate = selectShuffledTrack(selected, "a", [], selected.ids, 3);
+  assert.equal(duplicate.entries[duplicate.index].key, occurrence);
+});
+test("browsing context deduplicates repeated cards and includes an absent selection once", () => {
+  const s = selectShuffledTrack(createShuffleQueue(), "b", [
+    "a",
+    "b",
+    "a",
+    "c",
+  ]);
+  assert.deepEqual(s.ids, ["b", "c", "a"]);
+  const absent = selectShuffledTrack(s, "x", ["a", "b", "a"]);
+  assert.deepEqual(absent.ids, ["x", "a", "b"]);
+});

@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-11-06T19:35:42.510Z",
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "scope": "Two exact NFT and original-media indexed copies, browser decoded startup/advancement only. Processed copy may be transcoded; no original-byte equality claim.",
+  "records": [
+    {
+      "id": "recovered-sound-10-191fc84c0dd16a5f7aa333c39021227a91cc44a3",
+      "title": "Army of Love",
+      "artist": "TK",
+      "chainId": 10,
+      "contract": "0x191fc84c0dd16a5f7aa333c39021227a91cc44a3",
+      "tokenId": "1",
+      "originalMediaURI": "ar://rimQeZ9Q-Y2QKtAmSVF2hKoTf3HpWObjhMh0nsY_mP4",
+      "originalMediaURL": "https://arweave.net/rimQeZ9Q-Y2QKtAmSVF2hKoTf3HpWObjhMh0nsY_mP4",
+      "metadataURI": "ar://pj-DcUow4F05Qm0CvC4-cCIoQsaEEaUUcsRI5FTF-Uk/1",
+      "indexedTrackId": "optimism/0x191FC84c0dD16a5F7aA333c39021227a91cC44a3/0x319f1c96c54c819dee894fccb5589154133dee42a8a890424a98339e22e88f02",
+      "processedMediaURI": "ipfs://QmWKSC4HYcVHfjpRDW2JXrSCU96rZwhA513mhpJCKWi7nA",
+      "processedMediaURL": "https://ipfs.filebase.io/ipfs/QmWKSC4HYcVHfjpRDW2JXrSCU96rZwhA513mhpJCKWi7nA",
+      "elapsedMs": 4278,
+      "status": "played",
+      "time": 1.513488,
+      "duration": 236.788934,
+      "decodedAudioBytes": 54281,
+      "paused": false,
+      "readyState": 4,
+      "responses": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmWKSC4HYcVHfjpRDW2JXrSCU96rZwhA513mhpJCKWi7nA",
+          "status": 206,
+          "mime": "audio/mpeg",
+          "contentRange": "bytes 0-7828862/7828863",
+          "length": "7828863"
+        }
+      ]
+    },
+    {
+      "id": "recovered-sound-10-145ac4d1ad5817b28997a479a980ea1d5d53e3e9",
+      "title": "Endless",
+      "artist": "Sound of Fractures",
+      "chainId": 10,
+      "contract": "0x145ac4d1ad5817b28997a479a980ea1d5d53e3e9",
+      "tokenId": "1",
+      "originalMediaURI": "ar://Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8",
+      "originalMediaURL": "https://arweave.net/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8",
+      "metadataURI": "ar://3n84KOhGE_uOzkITo8VaQVJJghKSUQ095yWh3y4nVcY/1",
+      "indexedTrackId": "optimism/0x145AC4D1ad5817b28997A479A980ea1d5D53e3e9/0xbc347a93019a7f0596ea4b62be590d6ec8426f0aae636245340da14abdac777f",
+      "processedMediaURI": "ipfs://QmR9U9mrJUvJh4sJwEzSSdGVfNNa6QgNQ1kYhCXaH5KupH",
+      "processedMediaURL": "https://ipfs.filebase.io/ipfs/QmR9U9mrJUvJh4sJwEzSSdGVfNNa6QgNQ1kYhCXaH5KupH",
+      "elapsedMs": 4581,
+      "status": "played",
+      "time": 1.514335,
+      "duration": 293.686009,
+      "decodedAudioBytes": 540144,
+      "paused": false,
+      "readyState": 4,
+      "responses": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmR9U9mrJUvJh4sJwEzSSdGVfNNa6QgNQ1kYhCXaH5KupH",
+          "status": 206,
+          "mime": "audio/wav",
+          "contentRange": "bytes 0-77709361/77709362",
+          "length": "77709362"
+        }
+      ]
+    }
+  ]
+}

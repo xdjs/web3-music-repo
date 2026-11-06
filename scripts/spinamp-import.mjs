@@ -11,6 +11,13 @@ import { pathToFileURL } from "node:url";
 import { createCatalogLoader } from "../src/catalog-bundle.mjs";
 import { storageURL } from "../src/nft-reader.mjs";
 import { extractMusicMetadata } from "../src/extract-music-metadata.mjs";
+import {
+  isSolanaAsset,
+  isSolanaMint,
+  solanaMintIdentity,
+  assetIdentityKey,
+  assetCollectionKey,
+} from "../src/solana-identity.mjs";
 const storage = (s) => {
   try {
     return storageURL(s);
@@ -67,6 +74,7 @@ export function validURI(s) {
   }
 }
 export function nftIdentity(n) {
+  if (n?.chainId === "solana") return solanaMintIdentity(n);
   if (
     !n ||
     !Object.hasOwn(CHAINS, n.chainId) ||
@@ -86,7 +94,7 @@ export function nftIdentity(n) {
     standard,
   };
 }
-const identityKey = (r) => `${r.chainId}:${r.contract}:${r.tokenId}`;
+const identityKey = assetIdentityKey;
 const artistNorm = (s) =>
   String(s || "")
     .toLowerCase()
@@ -101,6 +109,14 @@ export function makeCandidate(t, n, platformNames, checkedAt) {
     return {
       reason: n ? "unsupported-or-invalid-nft-identity" : "no-indexed-nft",
     };
+  const solana = isSolanaAsset(identity);
+  if (
+    solana &&
+    (t.platformId !== "nina" ||
+      t.id !== `solana/${identity.mint}` ||
+      t.platformInternalId !== identity.mint)
+  )
+    return { reason: "unverified-solana-platform-mint-mapping" };
   const cleanURI = (value) => (typeof value === "string" ? value.trim() : null);
   const originalMedia = cleanURI(n.mediaURI),
     image = cleanURI(n.imageURI) || cleanURI(t.lossyArtworkUrl),
@@ -164,7 +180,14 @@ export function makeCandidate(t, n, platformNames, checkedAt) {
     !peteAlias
   )
     return { reason: "artist-attribution-conflict" };
+  const ninaAudioReference =
+    solana &&
+    originalMedia &&
+    contentKey(originalMedia) === contentKey(t.lossyAudioUrl) &&
+    validURI(t.lossyAudioUrl) &&
+    storage(t.lossyAudioUrl);
   if (
+    !ninaAudioReference &&
     !(Number.isFinite(Number(t.duration)) && Number(t.duration) > 0) &&
     !/^audio\/|^video\//.test(n.mimeType || "")
   )
@@ -210,6 +233,16 @@ export function makeCandidate(t, n, platformNames, checkedAt) {
           onchainVerified: false,
         }
       : null;
+  let ninaReleaseAddress = null;
+  if (solana && validURI(t.websiteUrl)) {
+    const u = new URL(t.websiteUrl),
+      address = u.pathname.replace(/^\/|\/$/g, "");
+    if (
+      ["nina.market", "ninaprotocol.com"].includes(u.hostname) &&
+      isSolanaMint(address)
+    )
+      ninaReleaseAddress = address;
+  }
   return {
     record: {
       id,
@@ -225,7 +258,19 @@ export function makeCandidate(t, n, platformNames, checkedAt) {
       discovery: "Spinamp public index",
       spinampTrackId: t.id,
       spinampArtistId: t.artistId,
-      ...(indexedNftCreation ? { indexedNftCreation } : {}),
+      ...(indexedNftCreation
+        ? solana
+          ? {
+              indexedSourceDate: {
+                date: indexedNftCreation.date,
+                source: indexedNftCreation.source,
+                onchainVerified: false,
+                kind: "indexed-metadata-date",
+              },
+            }
+          : { indexedNftCreation }
+        : {}),
+      ...(solana ? { ninaReleaseAddress, mediaTypeProvisional: true } : {}),
       musicMetadata: {
         status: "read",
         schemaVersion: n.musicMetadataSchemaVersion || 3,
@@ -249,9 +294,24 @@ export function makeCandidate(t, n, platformNames, checkedAt) {
       originalMediaMissing: !originalMedia,
       ...(processedFallback ? { originalMediaUnavailableReason } : {}),
       originalMediaURI: originalMedia || null,
-      chainId: identity.chainId,
-      contract: identity.contract,
-      tokenId: identity.tokenId,
+      ...(solana
+        ? {
+            chainId: "solana",
+            mint: identity.mint,
+            standard: identity.standard,
+            mediaEvidence: {
+              basis:
+                "Nina indexed NFT media matches its processed audio reference",
+              durationKnown: Number(t.duration) > 0,
+              indexedMimeType: n.mimeType || null,
+            },
+            mediaKindProvisional: true,
+          }
+        : {
+            chainId: identity.chainId,
+            contract: identity.contract,
+            tokenId: identity.tokenId,
+          }),
       metadataURI,
       metadataURL: storage(metadataURI),
       mediaURI: media,
@@ -313,12 +373,17 @@ export function applyMediaObservation(record, evidence, observation) {
     (observation.chainId !== undefined &&
       observation.chainId !== record.chainId) ||
     (observation.contract &&
-      observation.contract.toLowerCase() !== record.contract.toLowerCase()) ||
+      observation.contract.toLowerCase() !== record.contract?.toLowerCase()) ||
+    (observation.mint && observation.mint !== record.mint) ||
     (observation.tokenId !== undefined &&
       String(observation.tokenId) !== String(record.tokenId))
   )
     return false;
   record.kind = video ? "video" : "audio";
+  if (isSolanaAsset(record)) {
+    record.mediaTypeProvisional = false;
+    evidence.mediaKindProvisional = false;
+  }
   evidence.mediaKindSource =
     "Observed native media startup decode for this exact content reference";
   evidence.mediaKindEvidence =
@@ -326,6 +391,57 @@ export function applyMediaObservation(record, evidence, observation) {
     "data/spinamp/expanded-sample-verification.json";
   if (observation.checkedAt)
     evidence.mediaKindCheckedAt = observation.checkedAt;
+  return true;
+}
+export function applyNinaPlaybackObservation(
+  record,
+  evidence,
+  observation,
+  track,
+) {
+  if (!isSolanaAsset(record))
+    return applyMediaObservation(record, evidence, observation);
+  if (applyMediaObservation(record, evidence, observation)) return true;
+  const fallback = observation?.preservedFallback;
+  const expectedURI =
+    typeof track?.lossyAudioIpfsHash === "string"
+      ? "ipfs://" + track.lossyAudioIpfsHash
+      : null;
+  if (
+    observation?.id !== record.id ||
+    observation.chainId !== "solana" ||
+    observation.mint !== record.mint ||
+    observation.status !== "unavailable" ||
+    contentKey(observation.mediaURI) !== contentKey(evidence.mediaURI) ||
+    fallback?.status !== "played" ||
+    !expectedURI ||
+    contentKey(fallback.mediaURI) !== contentKey(expectedURI) ||
+    !storage(expectedURI)
+  )
+    return false;
+  const testRecord = { ...record },
+    testEvidence = { ...evidence, mediaURI: expectedURI };
+  if (
+    !applyMediaObservation(testRecord, testEvidence, {
+      ...observation,
+      status: "played",
+      mediaURI: expectedURI,
+      playback: fallback.playback,
+    })
+  )
+    return false;
+  Object.assign(record, testRecord);
+  Object.assign(evidence, testEvidence, {
+    originalMediaURI: evidence.originalMediaURI || evidence.mediaURI,
+    originalMediaMissing: false,
+    originalMediaUnavailableReason: "original-startup-timeout",
+    sourceType: "spinamp-processed-media",
+    mediaSourceType: "spinamp-preserved-audio",
+    mediaURI: expectedURI,
+    mediaURL: storage(expectedURI),
+    metadataLocation:
+      "Nina NFT identity and metadata from Spinamp index. Original audio did not start in the bounded browser check; playback uses a separately indexed Spinamp audio copy. Independent chain verification remains pending.",
+  });
   return true;
 }
 export function buildBundle(
@@ -336,16 +452,11 @@ export function buildBundle(
   playbackObservations = [],
 ) {
   const observed = new Map(playbackObservations.map((row) => [row.id, row]));
-  const byToken = new Map(
-      existing.records.map((r) => [
-        identityKey({ ...r, contract: r.contract.toLowerCase() }),
-        r.id,
-      ]),
-    ),
+  const byToken = new Map(existing.records.map((r) => [identityKey(r), r.id])),
     byMedia = new Map();
   for (const r of existing.records) {
     const m = contentKey(existing.evidence[r.id]?.mediaURI);
-    if (m) byMedia.set(`${r.chainId}:${r.contract.toLowerCase()}:${m}`, r.id);
+    if (m) byMedia.set(`${assetCollectionKey(r)}:${m}`, r.id);
   }
   const records = [],
     evidence = {},
@@ -373,13 +484,13 @@ export function buildBundle(
       continue;
     }
     const r = c.record,
-      mediaKey = `${r.chainId}:${r.contract}:${contentKey(c.evidence.mediaURI)}`;
+      mediaKey = `${assetCollectionKey(r)}:${contentKey(c.evidence.mediaURI)}`;
     const match = byToken.get(identityKey(r)) || byMedia.get(mediaKey);
     if (match) {
       duplicates.push({ id: t.id, existingId: match });
       continue;
     }
-    applyMediaObservation(r, c.evidence, observed.get(r.id));
+    applyNinaPlaybackObservation(r, c.evidence, observed.get(r.id), t);
     records.push(r);
     evidence[r.id] = c.evidence;
     people.set(c.person.id, c.person);
@@ -439,6 +550,42 @@ export function buildBundle(
           records.filter((x) => x.platform === k).length,
         ]),
       ),
+      nina: {
+        inventory: inv.records.filter((t) => t.platformId === "nina").length,
+        linked: inv.records.filter(
+          (t) => t.platformId === "nina" && refs.references[t.id],
+        ).length,
+        added: records.filter(isSolanaAsset).length,
+        artistIds: new Set(records.filter(isSolanaAsset).map((r) => r.artistId))
+          .size,
+        unknownDuration: records.filter(
+          (r) => isSolanaAsset(r) && !r.durationSeconds,
+        ).length,
+        unknownIndexedMimeType: records.filter(
+          (r) =>
+            isSolanaAsset(r) && !evidence[r.id].mediaEvidence.indexedMimeType,
+        ).length,
+        observedMediaKind: records.filter(
+          (r) => isSolanaAsset(r) && r.mediaTypeProvisional === false,
+        ).length,
+        excludedReasons: Object.fromEntries(
+          [
+            ...new Set(
+              excluded
+                .filter((x) => x.platformId === "nina")
+                .map((x) => x.reason),
+            ),
+          ].map((reason) => [
+            reason,
+            excluded.filter(
+              (x) => x.platformId === "nina" && x.reason === reason,
+            ).length,
+          ]),
+        ),
+      },
+      indexedSourceDates: records.filter((r) => r.indexedSourceDate?.date)
+        .length,
+      unknownDurationCount: records.filter((r) => !r.durationSeconds).length,
       indexedCreationDates: records.filter((r) => r.indexedNftCreation?.date)
         .length,
       originalMediaUnavailableReasons: Object.fromEntries(
@@ -528,6 +675,7 @@ if (
     [
       "data/spinamp/expanded-sample-verification.json",
       "data/spinamp/video-kind-verification.json",
+      "data/spinamp/nina-playback-verification.json",
     ].flatMap((evidenceFile) => {
       if (!existsSync(evidenceFile)) return [];
       const report = JSON.parse(readFileSync(evidenceFile));

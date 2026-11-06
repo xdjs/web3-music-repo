@@ -2,11 +2,21 @@
 
 Updated November 6, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
-## Latest artist correction and player work
+## Current local release candidate (not yet deployed)
 
-Pete rechecked Planet X's original IPFS media and confirmed the doubling around 1:43 is present in the source itself. This supersedes his earlier app-only report and the unresolved-app framing retained below as historical investigation. No app-specific doubling defect is established. He has a clean master; attachment is pending. Preserve the immutable original CID and provenance, and treat any corrected playback media as a separately labeled artist-supplied master after checking timing and artist authorization. No source audio has been replaced.
+Branch `codex/nina-and-queue` adds 6,054 Nina records through Spinamp: 27,449 Spinamp imports and 37,274 catalog records. The remaining 169 index queries still fail upstream; this is a representative NFT mapping per track, not an all-edition census. Nina playback samples, provenance, filters and chain guards passed. Solana wallet ownership remains unsupported.
 
-The separate requested player changes are published in PR #5: Play stays in browsing context, titles navigate to songs/artists, expansion is explicit, mobile layout fits the viewport, and seeking previews during drag and commits once on release. Production evidence is listed below.
+Song, artist and recovered-playlist Share controls now use server-visible `/share/...` routes with entity-specific OG/Twitter metadata. Personal playlist snapshots use `/share/mix/...`; old hash links remain readable. Native share, copy and manual-copy fallbacks are covered. Actual previews in social apps still depend on their crawlers and caching.
+
+Context queues now start with the selected song at row one. Next-track preloading permits up to three attempts per context with a five-second cooldown, retaining the four-starts-per-minute cap. The exact reported Lens song ends and selects the next track in a local real-media test; the next original Arweave source then stalled at startup for 35 seconds. Do not call that universal seamless playback or assert the cause of Pete's old live queue without its state.
+
+Pete rechecked Planet X's original IPFS media and confirmed the doubling around 1:43 is in the source. He supplied a clean MP3 and video, reviewed the corrected video in QuickTime, and approved it on November 6. The separate 720px artist-supplied playback file is prepared under `public/media/planet-x-artist-corrected-720.mp4`; immutable original metadata and CID remain intact. See `data/planet-x-playback-correction.json`. The original MP3 and full-resolution working copies remain local/ignored. No app-specific doubling defect is established.
+
+The exact Lens release now has an explicitly labeled index snapshot of 13 wallets and 16 editions. Collection search/platform/network/media/collection/date sorting and Explore My collection are ready; linked-wallet results are partial indexed ownership, not creator credits. CAMPFIRE's indexed profile image is recovered and matched to four release contracts. The persistent mini-player cover resets after a previous image failure.
+
+Endless and Army of Love now use exact-identity-bound Spinamp playback copies that passed native decode/advancement tests; original chain metadata and Arweave media remain unchanged and visible in Provenance. Endless's preserved WAV is about 77.7MB, so this is not a claim of compression or a complete streaming-delivery optimization. Same-transaction Arweave gateway fallback also passed real playback checks.
+
+Final unit suite: 269 passed; syntax, formatting and production build pass. Collection/account integration QA used controlled fixtures; real signed-in wallet completeness and social-app preview caching remain user-facing verification boundaries. Instagram Stories export is explicitly deferred until after this production checkpoint. Update the publication receipt after deployment.
 
 ## Current publication
 

@@ -1,3 +1,5 @@
+import { automaticQueueStartingWith } from "./listening-queue.mjs";
+
 // A queue occurrence has its own key: duplicate recording IDs remain distinct.
 // History/current stay in place; only unplayed entries change when toggled.
 const finish = (state, entries, index = state.index, mode = state.mode) => ({
@@ -98,8 +100,8 @@ export function selectShuffledTrack(
       random,
     );
   if (!state.ids.length || state.mode !== "manual") {
-    const ids = [...new Set(context.includes(id) ? context : [id, ...context])];
-    return replaceShuffleQueue(state, ids, ids.indexOf(id), "auto", random);
+    const ids = automaticQueueStartingWith(id, context);
+    return replaceShuffleQueue(state, ids, 0, "auto", random);
   }
   const found = state.ids.indexOf(id);
   if (found >= 0) return finish(state, state.entries, found, "manual");

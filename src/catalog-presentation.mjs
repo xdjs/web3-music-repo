@@ -27,6 +27,7 @@ export function indexRecord(record, evidence) {
     "platform",
     "collection",
     "chainId",
+    "mint",
     "contract",
     "tokenId",
     "standard",
@@ -56,7 +57,12 @@ export function indexRecord(record, evidence) {
       ])
     : null;
   if (record.playback?.workingURL)
-    result.playback = { workingURL: record.playback.workingURL };
+    result.playback = {
+      workingURL: record.playback.workingURL,
+      ...(record.playback.sourceType
+        ? { sourceType: record.playback.sourceType }
+        : {}),
+    };
   if (record.releaseDate)
     result.releaseDate = pick(record.releaseDate, ["timestamp", "date"]);
   const facts = musicFacts(record);

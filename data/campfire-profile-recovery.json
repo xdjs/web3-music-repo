@@ -1,0 +1,106 @@
+{
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "artistId": "ethereum/0x14151e34e61d0B1267e692ff2c53f434fbce791c",
+  "name": "Campfire",
+  "originalURI": "ipfs://QmXyCgXAz6mFz5KE1MWPPFEwoVVqTqbXpFCvqanx2yqa8e",
+  "url": "https://ipfs.filebase.io/ipfs/QmXyCgXAz6mFz5KE1MWPPFEwoVVqTqbXpFCvqanx2yqa8e",
+  "contentType": "image/png",
+  "bytes": 3058541,
+  "sha256": "352474ccfb7f7b9469ba65168a89fb716ae5318d3c3201ba8d77a547d86735c2",
+  "checkedAt": "2026-11-06T19:27:14.645Z",
+  "attempts": [],
+  "identityEvidence": {
+    "source": "Spinamp exact artist ID\u2192processedtrack\u2192indexedNFT contract identity\u2192existing archive release",
+    "artist": "ethereum/0x14151e34e61d0B1267e692ff2c53f434fbce791c",
+    "matches": [
+      {
+        "spinampTrackId": "ethereum/0x69C77EF0b1b4bbAa9ea64F221Ffb891F651F501F/0xb0c1371ee7a0a24ad8b37bc6776195b490d62fe9f4c52e474df8387809949b5c",
+        "title": "MIAMI FREESTYLE (ft. Aly, Tarot, Elle Symone, Early, & TK | prod. AbJo)",
+        "spinampArtistId": "ethereum/0x14151e34e61d0B1267e692ff2c53f434fbce791c",
+        "indexedNft": {
+          "chainId": "ethereum",
+          "contract": "0x69C77EF0b1b4bbAa9ea64F221Ffb891F651F501F",
+          "tokenId": "1"
+        },
+        "matchingAppRecords": [
+          {
+            "id": "record-69c77ef0",
+            "title": "MIAMI FREESTYLE (ft. Aly, Tarot, Elle Symone, Early, & TK | prod. AbJo)",
+            "artistId": "campfire",
+            "artist": "CAMPFIRE",
+            "chainId": 1,
+            "contract": "0x69C77EF0b1b4bbAa9ea64F221Ffb891F651F501F",
+            "tokenId": "105"
+          }
+        ]
+      },
+      {
+        "spinampTrackId": "optimism/0x090be8db9d5D26f7B09dab1902D1B02bB866954C/0xadf95aa892670578428218527973cfab64c5a55ee4f17b8216f5e4bb915b83c1",
+        "title": "STAR GIRL (ft. X&ND, Delarose, & Elle Symone | Prod. Pete Rango)",
+        "spinampArtistId": "ethereum/0x14151e34e61d0B1267e692ff2c53f434fbce791c",
+        "indexedNft": {
+          "chainId": "optimism",
+          "contract": "0x090be8db9d5D26f7B09dab1902D1B02bB866954C",
+          "tokenId": "1"
+        },
+        "matchingAppRecords": [
+          {
+            "id": "recovered-sound-10-090be8db9d5d26f7b09dab1902d1b02bb866954c",
+            "title": "STAR GIRL (ft. X&ND, Delarose, & Elle Symone | Prod. Pete Rango)",
+            "artistId": "campfire",
+            "artist": "Campfire",
+            "chainId": 10,
+            "contract": "0x090be8db9d5d26f7b09dab1902d1b02bb866954c",
+            "tokenId": "1"
+          }
+        ]
+      },
+      {
+        "spinampTrackId": "optimism/0x26497c0928C175f7D1C51a5BD345734d0Db57f69/0x5ad07a48719f49a5b773073febc54e828750eb687bf9c5aa856f65542ffaf512",
+        "title": "Yell & Scream (ft. Leo Pastel, Brenna \ud83c\udf44, Pragmatic, saikochild.xyz, & Tyler Saki | prod. Pete Rango)",
+        "spinampArtistId": "ethereum/0x14151e34e61d0B1267e692ff2c53f434fbce791c",
+        "indexedNft": {
+          "chainId": "optimism",
+          "contract": "0x26497c0928C175f7D1C51a5BD345734d0Db57f69",
+          "tokenId": "1"
+        },
+        "matchingAppRecords": [
+          {
+            "id": "recovered-sound-10-26497c0928c175f7d1c51a5bd345734d0db57f69",
+            "title": "Yell & Scream (ft. Leo Pastel, Brenna \ud83c\udf44, Pragmatic, saikochild.xyz, & Tyler Saki | prod. Pete Rango)",
+            "artistId": "campfire",
+            "artist": "Campfire",
+            "chainId": 10,
+            "contract": "0x26497c0928c175f7d1c51a5bd345734d0db57f69",
+            "tokenId": "1"
+          }
+        ]
+      },
+      {
+        "spinampTrackId": "optimism/0xC5E931a5190E6345A1FF9433887fFD62273c4Cc7/0xe66839e711ca581323a3f1e165f0c02ef58b8019d8ba3455ebd80567660889d6",
+        "title": "Moving On (ft. AL3C, Violetta, Fred Riko, & N\u00e9 Marie | prod. Karma.wav)",
+        "spinampArtistId": "ethereum/0x14151e34e61d0B1267e692ff2c53f434fbce791c",
+        "indexedNft": {
+          "chainId": "optimism",
+          "contract": "0xC5E931a5190E6345A1FF9433887fFD62273c4Cc7",
+          "tokenId": "1"
+        },
+        "matchingAppRecords": [
+          {
+            "id": "recovered-sound-10-c5e931a5190e6345a1ff9433887ffd62273c4cc7",
+            "title": "Moving On (ft. AL3C, Violetta, Fred Riko, & N\u00e9 Marie | prod. Karma.wav)",
+            "artistId": "campfire",
+            "artist": "Campfire",
+            "chainId": 10,
+            "contract": "0xc5e931a5190e6345a1ff9433887ffd62273c4cc7",
+            "tokenId": "1"
+          }
+        ]
+      }
+    ]
+  },
+  "localImages": [
+    "/people/campfire-160.webp",
+    "/people/campfire-640.webp"
+  ]
+}

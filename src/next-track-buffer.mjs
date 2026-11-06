@@ -40,7 +40,7 @@ export function createNextTrackBuffer({
 } = {}) {
   let candidate = null,
     disposed = false;
-  const attempted = new Set(),
+  const attempted = new Map(),
     starts = [];
   const policy = () =>
     !disposed &&
@@ -107,7 +107,13 @@ export function createNextTrackBuffer({
       return !!candidate;
     }
     cancel();
-    if (!policy() || !canWarm() || attempted.has(key)) return false;
+    const prior = attempted.get(key);
+    if (
+      !policy() ||
+      !canWarm() ||
+      (prior && (prior.count >= 3 || now() - prior.at < 5000))
+    )
+      return false;
     while (starts.length && starts[0] <= now() - 60000) starts.shift();
     if (starts.length >= 4) return false;
     const c = (candidate = {
@@ -128,9 +134,11 @@ export function createNextTrackBuffer({
       const media = (c.media = createMedia());
       c.started = true;
       starts.push(now());
-      attempted.add(key);
-      if (attempted.size > 100)
-        attempted.delete(attempted.values().next().value);
+      attempted.set(key, {
+        count: (attempted.get(key)?.count || 0) + 1,
+        at: now(),
+      });
+      if (attempted.size > 100) attempted.delete(attempted.keys().next().value);
       media.preload = "auto";
       media.playsInline = true;
       media.autoplay = false;

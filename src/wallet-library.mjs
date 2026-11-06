@@ -1,3 +1,4 @@
+import { unsupportedSolanaRead } from "./asset-capabilities.mjs";
 const hosts = {
   1: "eth.blockscout.com",
   10: "optimism.blockscout.com",
@@ -13,6 +14,7 @@ export async function readWalletPage(
   registry,
   fetcher = fetch,
 ) {
+  if (chainId === "solana") return unsupportedSolanaRead("wallet");
   try {
     if (!/^0x[0-9a-f]{40}$/i.test(address) || !hosts[chainId])
       throw Error("Invalid wallet or network");

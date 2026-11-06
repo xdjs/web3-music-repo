@@ -126,7 +126,7 @@ test("disposing fallback removes pending seeks and prevents delayed playback fai
   assert.equal(failures, 0);
 });
 
-test("a slow Arweave load stays alive instead of becoming unavailable at the UI deadline", () => {
+test("Arweave tries one same-transaction gateway then keeps the last slow request alive", () => {
   const media = new EventTarget();
   const url = "https://arweave.net/a4b8Spd5rcouKzttmYQnToH_d6nW6Sc-dMY2bHvpTW4";
   let failures = 0,
@@ -136,9 +136,8 @@ test("a slow Arweave load stays alive instead of becoming unavailable at the UI 
     src: url,
     currentTime: 0,
     error: null,
-    load() {
-      assert.fail("Original Arweave request must not restart");
-    },
+    load() {},
+    play: async () => {},
   });
   const recovery = createMediaRecovery(media, {
     originalURL: url,
@@ -147,11 +146,13 @@ test("a slow Arweave load stays alive instead of becoming unavailable at the UI 
     onExhausted: () => failures++,
     onSlow: () => slow++,
   });
+  recovery.recoverSlow();
+  assert.equal(media.src, url.replace("arweave.net", "turbo-gateway.com"));
   assert.equal(recovery.recoverSlow(), "waiting");
   assert.equal(failures, 0);
   assert.equal(slow, 1);
-  assert.equal(switches, 0);
-  // The original pending request may finish normally after the deadline.
+  assert.equal(switches, 1);
+  // The last same-transaction request may finish after its deadline.
   media.currentTime = 1.5;
   media.dispatchEvent(new Event("playing"));
   assert.equal(failures, 0);
@@ -207,4 +208,39 @@ test("soft deadlines advance finite IPFS alternates but keep the last pending re
   recovery.recover();
   assert.equal(failures, 1);
   recovery.dispose();
+});
+
+test("Arweave fallback preserves exact transaction, manifest path and query through fixed gateways", () => {
+  const tx = "YStvDur7I86UT_qwjo2NGC4ccu5GiMybEN8VavqGTdw";
+  assert.deepEqual(alternateMediaURLs(`https://arweave.net/${tx}?ext=mp3`), [
+    `https://turbo-gateway.com/${tx}?ext=mp3`,
+  ]);
+  assert.deepEqual(
+    alternateMediaURLs(`https://www.arweave.net/${tx}/track.wav?download=1`),
+    [
+      `https://turbo-gateway.com/${tx}/track.wav?download=1`,
+      `https://arweave.net/${tx}/track.wav?download=1`,
+    ],
+  );
+  assert.deepEqual(alternateMediaURLs(`https://turbo-gateway.com/${tx}`), [
+    `https://arweave.net/${tx}`,
+  ]);
+  const sandbox = "a".repeat(52);
+  assert.equal(
+    alternateMediaURLs(`https://${sandbox}.arweave.net/${tx}`)[0],
+    `https://turbo-gateway.com/${tx}`,
+  );
+  for (const value of [
+    `https://evil.test/${tx}`,
+    `https://arweave.net.evil.test/${tx}`,
+    `https://arweave.net/graphql`,
+    `https://arweave.net/${tx}/../other`,
+    `https://arweave.net/${tx}/%2e%2e/other`,
+    `https://arweave.net/${tx}/%2fother`,
+    `https://user@arweave.net/${tx}`,
+    `https://arweave.net:8443/${tx}`,
+    `https://name.arweave.net/${tx}`,
+    `https://arweave.net/${tx}/%ZZ`,
+  ])
+    assert.deepEqual(alternateMediaURLs(value), [], value);
 });

@@ -24,7 +24,7 @@ export function createWalletLibraryState({
   const states = new Map(),
     pending = [];
   const controllers = new Set();
-  const key = (chain) => address + ":" + chain;
+  const key = (chain, wallet = address) => wallet + ":" + chain;
   function cancel() {
     epoch++;
     pending.length = 0;
@@ -85,9 +85,9 @@ export function createWalletLibraryState({
   function emit() {
     onChange(snapshot());
   }
-  function enqueue(chain, manual = false) {
-    if (!address || !Object.hasOwn(walletChains, chain)) return;
-    const k = key(chain),
+  function enqueue(chain, manual = false, wallet = address) {
+    if (!wallet || !Object.hasOwn(walletChains, chain)) return;
+    const k = key(chain, wallet),
       prior = states.get(k);
     if (prior && (!manual || ["queued", "loading"].includes(prior.status)))
       return;
@@ -100,7 +100,7 @@ export function createWalletLibraryState({
       checkedAt: prior?.checkedAt || null,
     };
     states.set(k, s);
-    pending.push({ address, chain, k, s, cursor, epoch });
+    pending.push({ address: wallet, chain, k, s, cursor, epoch });
     emit();
     drain();
   }
@@ -160,12 +160,50 @@ export function createWalletLibraryState({
   function start() {
     for (const chain of Object.keys(walletChains)) enqueue(chain);
   }
+  // Explore's owned filter never borrows an unrelated public-wallet lookup.
+  // Reuse exact catalog matches from indexed holdings; do not infer creations.
+  function ownedSnapshot() {
+    const recordIds = new Set();
+    let loading = 0,
+      errors = 0,
+      unchecked = 0,
+      more = 0;
+    for (const wallet of linked)
+      for (const chain of Object.keys(walletChains)) {
+        const s = states.get(key(chain, wallet));
+        if (!s) unchecked++;
+        else {
+          if (["queued", "loading"].includes(s.status)) loading++;
+          if (s.status === "error") errors++;
+          if (s.nextCursor) more++;
+          for (const item of s.items)
+            if (item.recordId) recordIds.add(item.recordId);
+        }
+      }
+    return {
+      accountId,
+      linked: [...linked],
+      recordIds,
+      loading,
+      errors,
+      unchecked,
+      more,
+      automaticWalletLimit: 5,
+    };
+  }
+  function startLinked() {
+    for (const wallet of linked.slice(0, 5))
+      for (const chain of Object.keys(walletChains))
+        enqueue(chain, false, wallet);
+  }
   return {
     setAccount,
     select,
     start,
     scan: (chain) => enqueue(String(chain), true),
     snapshot,
+    ownedSnapshot,
+    startLinked,
     dispose: cancel,
   };
 }

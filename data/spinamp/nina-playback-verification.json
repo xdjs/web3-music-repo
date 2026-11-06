@@ -1,0 +1,236 @@
+{
+  "checkedAt": "2026-11-06T19:10:53.571Z",
+  "scope": "Six source-indexed Nina samples across both public-link eras, including two unknown indexed durations and one 2024+ entry. Real Chromium startup audio decode plus video dimensions. No all-track availability, full-song audition, or independent Solana chain verification claim.",
+  "bundleSha256": "6de42efbc0abf4d3ab383cf148eb653e01179c3642e434884a4bb5d2608a693e",
+  "candidateSolanaRecords": 6054,
+  "results": [
+    {
+      "id": "spinamp-52652b7e8c0c93fdc260",
+      "title": "Error Handling",
+      "artist": "Igor Dyachenko",
+      "label": "legacy nina.market positive duration",
+      "chainId": "solana",
+      "mint": "122gW5E6uqWKEsb1KdCjVhWtarbCTdN7hR1bjt9dgdaw",
+      "originalRelease": "https://nina.market/CZ2wpojt6YHhPPaGJNUuyXPAFDwGjEK1tbJHipcMT1Wn",
+      "mediaURI": "https://www.arweave.net/coo4iW7R26I1GmlCeimuWuRAY8_8M9wSym_XQFwYlc4?ext=mp3",
+      "mediaURL": "https://www.arweave.net/coo4iW7R26I1GmlCeimuWuRAY8_8M9wSym_XQFwYlc4?ext=mp3",
+      "indexedDuration": 246.79,
+      "indexedMimeType": null,
+      "onchainVerified": false,
+      "status": "played",
+      "playback": {
+        "currentTime": 0.505334,
+        "duration": 246.792979,
+        "readyState": 4,
+        "audioDecodedBytes": 32640,
+        "videoDecodedBytes": 0,
+        "videoWidth": 0,
+        "videoHeight": 0
+      },
+      "responses": [
+        {
+          "url": "https://www.arweave.net/coo4iW7R26I1GmlCeimuWuRAY8_8M9wSym_XQFwYlc4?ext=mp3",
+          "status": 302,
+          "contentType": null
+        },
+        {
+          "url": "https://okfdrclo2hn2eni2nfbhuknollseay6p7qz5yewkn7luaxaysxha.arweave.net/coo4iW7R26I1GmlCeimuWuRAY8_8M9wSym_XQFwYlc4?ext=mp3",
+          "status": 200,
+          "contentType": "audio/mp3"
+        }
+      ]
+    },
+    {
+      "id": "spinamp-d3f0055720391112ca3e",
+      "title": "Flying Blind",
+      "artist": "Jachary",
+      "label": "legacy nina.market second artist",
+      "chainId": "solana",
+      "mint": "2d9Qi8ttSS4sYSoKdpdvL6LnP6yYqW876DD2w2swkeE5",
+      "originalRelease": "https://nina.market/53EAdSk2rgTB77Bm4ZjGrFMewzzYToDPjEsjjxpJ4SNT",
+      "mediaURI": "https://www.arweave.net/DVJt0VtDVh_iZWX-mmbKFHU4-NFp3tgv8t8VJn7ybJE?ext=mp3",
+      "mediaURL": "https://www.arweave.net/DVJt0VtDVh_iZWX-mmbKFHU4-NFp3tgv8t8VJn7ybJE?ext=mp3",
+      "indexedDuration": 136.11,
+      "indexedMimeType": null,
+      "onchainVerified": false,
+      "status": "unavailable",
+      "error": "page.waitForFunction: Timeout 25000ms exceeded.",
+      "responses": [
+        {
+          "url": "https://www.arweave.net/DVJt0VtDVh_iZWX-mmbKFHU4-NFp3tgv8t8VJn7ybJE?ext=mp3",
+          "status": 302,
+          "contentType": null
+        }
+      ],
+      "preservedFallback": {
+        "sourceType": "spinamp-preserved-audio",
+        "mediaURI": "ipfs://QmbmSnW4UYxXeKpWoL5ASi6TzHQAupzro7NcGNyzxD9u6J",
+        "mediaURL": "https://ipfs.filebase.io/ipfs/QmbmSnW4UYxXeKpWoL5ASi6TzHQAupzro7NcGNyzxD9u6J",
+        "status": "played",
+        "playback": {
+          "currentTime": 0.506374,
+          "duration": 136.106667,
+          "readyState": 4,
+          "audioDecodedBytes": 33436,
+          "videoDecodedBytes": 0,
+          "videoWidth": 0,
+          "videoHeight": 0
+        }
+      }
+    },
+    {
+      "id": "spinamp-651156bdbb4a7ef993a0",
+      "title": "Hospital For Beasts One",
+      "artist": "Ann Margaret Hogan and Regis",
+      "label": "ninaprotocol unknown indexed duration",
+      "chainId": "solana",
+      "mint": "1278zxv5CugWLvq7SfV5822wkjtL5WKxMtDghiieg5Nd",
+      "originalRelease": "https://ninaprotocol.com/e92QMPupHzWciiCZpWzSMzy9oTkk5gc2qWw5iFt9f11",
+      "mediaURI": "https://www.arweave.net/wkKNXAATb6GbIgrt9o70PAjGwALHXwcakMYzahIm9xg?ext=mp3",
+      "mediaURL": "https://www.arweave.net/wkKNXAATb6GbIgrt9o70PAjGwALHXwcakMYzahIm9xg?ext=mp3",
+      "indexedDuration": null,
+      "indexedMimeType": null,
+      "onchainVerified": false,
+      "status": "unavailable",
+      "error": "page.waitForFunction: Timeout 25000ms exceeded.",
+      "responses": [
+        {
+          "url": "https://www.arweave.net/wkKNXAATb6GbIgrt9o70PAjGwALHXwcakMYzahIm9xg?ext=mp3",
+          "status": 302,
+          "contentType": null
+        }
+      ],
+      "preservedFallback": {
+        "sourceType": "spinamp-preserved-audio",
+        "mediaURI": "ipfs://QmVakmJt1TYwjXuQhK3QEPk1FAZVgyoHRZ52PTiC1dXhJB",
+        "mediaURL": "https://ipfs.filebase.io/ipfs/QmVakmJt1TYwjXuQhK3QEPk1FAZVgyoHRZ52PTiC1dXhJB",
+        "status": "played",
+        "playback": {
+          "currentTime": 0.507377,
+          "duration": 1648.0653,
+          "readyState": 4,
+          "audioDecodedBytes": 32392,
+          "videoDecodedBytes": 0,
+          "videoWidth": 0,
+          "videoHeight": 0
+        }
+      }
+    },
+    {
+      "id": "spinamp-26618e7d833954ef2e2a",
+      "title": "loess",
+      "artist": "Laonikos Psimikakis Chalkokondylis",
+      "label": "ninaprotocol second unknown indexed duration",
+      "chainId": "solana",
+      "mint": "13kiByZ1pwo6iTGMBJBQN7ZFniqUatGLK4dpfKNMLGZu",
+      "originalRelease": "https://ninaprotocol.com/3LbtPZaMQ9pXPhAzps9Zi3ZvsayEFrF2XQyRoR4Ja6Mu",
+      "mediaURI": "https://www.arweave.net/uGnIVDKr8bRqu56uOX4naTmlY9UQeCAchmM2It7tMq8?ext=mp3",
+      "mediaURL": "https://www.arweave.net/uGnIVDKr8bRqu56uOX4naTmlY9UQeCAchmM2It7tMq8?ext=mp3",
+      "indexedDuration": null,
+      "indexedMimeType": null,
+      "onchainVerified": false,
+      "status": "played",
+      "playback": {
+        "currentTime": 0.506869,
+        "duration": 1147.977143,
+        "readyState": 4,
+        "audioDecodedBytes": 31945,
+        "videoDecodedBytes": 0,
+        "videoWidth": 0,
+        "videoHeight": 0
+      },
+      "responses": [
+        {
+          "url": "https://www.arweave.net/uGnIVDKr8bRqu56uOX4naTmlY9UQeCAchmM2It7tMq8?ext=mp3",
+          "status": 302,
+          "contentType": null
+        },
+        {
+          "url": "https://xbu4qvbsvpy3i2v3t2xds7rhne42ky6vcb4cahegmm3cfxxngkxq.arweave.net/uGnIVDKr8bRqu56uOX4naTmlY9UQeCAchmM2It7tMq8?ext=mp3",
+          "status": 200,
+          "contentType": "audio/mpeg"
+        }
+      ]
+    },
+    {
+      "id": "spinamp-aeb2d353eb371f5d54d4",
+      "title": "The Way You Get By",
+      "artist": "Max B",
+      "label": "ninaprotocol positive indexed duration",
+      "chainId": "solana",
+      "mint": "127whZDXyW6W9AwMbDj4zupgYaoxsfb3Vb5LBuUWiCVb",
+      "originalRelease": "https://ninaprotocol.com/Hv9MNXpzUp2icnUt2NXaPt7c6iwNx8d7aKmeRM1DkP23",
+      "mediaURI": "https://www.arweave.net/OB-74VIkfgiNx9epxYqxz4YSMOetH1PnH3Wxf3gMoXs?ext=mp3",
+      "mediaURL": "https://www.arweave.net/OB-74VIkfgiNx9epxYqxz4YSMOetH1PnH3Wxf3gMoXs?ext=mp3",
+      "indexedDuration": 125.07,
+      "indexedMimeType": null,
+      "onchainVerified": false,
+      "status": "played",
+      "playback": {
+        "currentTime": 0.508064,
+        "duration": 125.074292,
+        "readyState": 4,
+        "audioDecodedBytes": 19436,
+        "videoDecodedBytes": 0,
+        "videoWidth": 0,
+        "videoHeight": 0
+      },
+      "responses": [
+        {
+          "url": "https://www.arweave.net/OB-74VIkfgiNx9epxYqxz4YSMOetH1PnH3Wxf3gMoXs?ext=mp3",
+          "status": 302,
+          "contentType": null
+        },
+        {
+          "url": "https://hap3xykser7ardoh26u4lcvrz6dbemhhvupvhzy7owyx66amuf5q.arweave.net/OB-74VIkfgiNx9epxYqxz4YSMOetH1PnH3Wxf3gMoXs?ext=mp3",
+          "status": 200,
+          "contentType": "audio/mpeg"
+        }
+      ]
+    },
+    {
+      "id": "spinamp-09c1f29c786e6f15a7a6",
+      "title": "Anna Lily & Maxim - Fearmore",
+      "artist": "Anna Lily",
+      "label": "2024+ indexed release",
+      "chainId": "solana",
+      "mint": "12AZJXNziW2YrMXUqrjUR3RHFYa3pwbGD7xeFhvc5c4y",
+      "originalRelease": "https://ninaprotocol.com/BCmarvZZLVz727Tdja1MTUHKCo9WBZebBwZjNxNhnwtM",
+      "mediaURI": "https://www.arweave.net/76NjTpV-y7z6gv-cvpI2O2tIU-pjIbTPSjuYrKMkBe4?ext=mp3",
+      "mediaURL": "https://www.arweave.net/76NjTpV-y7z6gv-cvpI2O2tIU-pjIbTPSjuYrKMkBe4?ext=mp3",
+      "indexedDuration": 150.44,
+      "indexedMimeType": null,
+      "onchainVerified": false,
+      "status": "played",
+      "playback": {
+        "currentTime": 0.501937,
+        "duration": 150.447125,
+        "readyState": 4,
+        "audioDecodedBytes": 12956,
+        "videoDecodedBytes": 0,
+        "videoWidth": 0,
+        "videoHeight": 0
+      },
+      "responses": [
+        {
+          "url": "https://www.arweave.net/76NjTpV-y7z6gv-cvpI2O2tIU-pjIbTPSjuYrKMkBe4?ext=mp3",
+          "status": 302,
+          "contentType": null
+        },
+        {
+          "url": "https://56rwgtuvp3f3z6uc76ol5erwhnvuqu7kmmq3jt2khomkzizeaxxa.arweave.net/76NjTpV-y7z6gv-cvpI2O2tIU-pjIbTPSjuYrKMkBe4?ext=mp3",
+          "status": 200,
+          "contentType": "audio/mpeg"
+        }
+      ]
+    }
+  ],
+  "finalCandidate": {
+    "checkedAt": "2026-11-06T19:13:35.836Z",
+    "bundleSha256": "4ac7b895ef935249898f44877d2abf277b6bb09c04e168a12bf817d6af777f55",
+    "recordCount": 27449,
+    "ninaCount": 6054,
+    "priorIdsRetained": 21395,
+    "allSixSelectedMediaReferencesMatched": true
+  }
+}

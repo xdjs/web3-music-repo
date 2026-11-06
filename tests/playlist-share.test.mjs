@@ -38,7 +38,8 @@ test("playlist links round-trip ordered repeats and Unicode while excluding acco
     ),
   );
   assert.equal(url.search, "");
-  assert.match(url.hash, /^#shared-playlist\/v1\./);
+  assert.match(url.pathname, /^\/share\/mix\/v1\./);
+  assert.equal(url.hash, "");
   assert.equal(url.hash.includes("private"), false);
 });
 
@@ -87,7 +88,7 @@ test("sharing uses native share, clipboard fallback, manual fallback and respect
   });
   assert.equal(copied.status, "copied");
   assert.equal(
-    await decodePlaylistShare(new URL(copied.url).hash.split("/")[1]).then(
+    await decodePlaylistShare(new URL(copied.url).pathname.split("/")[3]).then(
       (p) => p.name,
     ),
     sample.name,

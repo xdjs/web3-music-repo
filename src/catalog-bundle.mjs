@@ -1,4 +1,11 @@
+import {
+  assetIdentityKey,
+  assetCollectionKey,
+  isSolanaAsset,
+} from "./solana-identity.mjs";
 import { releaseDateForRecord } from "./release-date.mjs";
+import { applyArtistPlaybackOverride } from "./artist-playback-override.mjs";
+import { applyPreservedPlaybackCopy } from "./preserved-playback-copy.mjs";
 import { readFileSync, statSync } from "node:fs";
 import { nftCatalog as baseCatalog } from "./nft-catalog.js";
 import { people as basePeople, sources } from "./data.js";
@@ -22,10 +29,9 @@ export function mediaKind(record, evidence) {
 export function mergeCatalog(base, baseEvidence, bundles, people) {
   const records = base.map((r) => ({ ...r })),
     evidence = { ...baseEvidence };
-  const tokenKey = (r) =>
-    `${r.chainId}:${r.contract.toLowerCase()}:${r.tokenId}`;
+  const tokenKey = (r) => assetIdentityKey(r) || `unverified:${r.id}`;
   const mediaKey = (r, v) =>
-    `${r.chainId}:${r.contract.toLowerCase()}:${v?.mediaURI || ""}`;
+    `${assetCollectionKey(r) || `unverified:${r.id}`}:${v?.mediaURI || ""}`;
   const tokens = new Map(records.map((r) => [tokenKey(r), r]));
   const media = new Map(
     records
@@ -130,6 +136,8 @@ export function createCatalogLoader() {
       "data/pete-recovery/zora-recovered-media.json",
       "data/supercollector/recovered-media.json",
       "data/spinamp/recovered-media.json",
+      "data/artist-playback-overrides.json",
+      "data/spinamp/playback-copies.json",
     ];
     const next = paths
       .map((p) => {
@@ -218,11 +226,16 @@ export function createCatalogLoader() {
       audioAnalysis: audioAnalysis[r.id] || null,
       royaltyPayments:
         royalties.get(
-          `${r.chainId}-${r.contract.toLowerCase()}-${r.tokenId}`,
+          isSolanaAsset(r)
+            ? null
+            : `${r.chainId}-${r.contract.toLowerCase()}-${r.tokenId}`,
         ) || [],
       revenue:
-        revenue[`${r.chainId}-${r.contract.toLowerCase()}-${r.tokenId}`] ||
-        null,
+        revenue[
+          isSolanaAsset(r)
+            ? null
+            : `${r.chainId}-${r.contract.toLowerCase()}-${r.tokenId}`
+        ] || null,
       musicMetadata:
         musicMetadata[r.id]?.status === "read"
           ? musicMetadata[r.id]
@@ -238,7 +251,23 @@ export function createCatalogLoader() {
           }
         : r.playback || null,
     }));
+    const artistPlaybackOverrides = read(paths[21], { records: {} }).records;
+    merged.records = merged.records.map((record) =>
+      applyArtistPlaybackOverride(
+        record,
+        merged.evidence[record.id],
+        artistPlaybackOverrides[record.id],
+      ),
+    );
     const releaseDates = read(paths[17], {});
+    const preservedCopies = read(paths[22], { records: {} }).records;
+    merged.records = merged.records.map((record) =>
+      applyPreservedPlaybackCopy(
+        record,
+        merged.evidence[record.id],
+        preservedCopies[record.id],
+      ),
+    );
     for (const record of merged.records)
       record.releaseDate = releaseDateForRecord(record, releaseDates);
     // Keep discovery evidence on disk; only music belongs in the listening catalog.
