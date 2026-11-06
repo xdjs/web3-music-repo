@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-11-06T20:08:46.422542+00:00",
+  "base": "http://127.0.0.1:4191",
+  "status": "passed",
+  "cases": [
+    {
+      "engine": "chromium",
+      "kind": "audio",
+      "status": "passed",
+      "receipt": "data/buffer-continuity-chromium-audio.json",
+      "bufferedBeforePause": [
+        [
+          0,
+          5.932
+        ]
+      ],
+      "sameElement": true,
+      "endedToPlayingMs": 1.5999999046325684,
+      "redundantZeroRangeRequests": 0
+    },
+    {
+      "engine": "chromium",
+      "kind": "video",
+      "status": "passed",
+      "receipt": "data/buffer-continuity-chromium-video.json",
+      "bufferedBeforePause": [
+        [
+          0,
+          25.771
+        ]
+      ],
+      "sameElement": true,
+      "endedToPlayingMs": 1.3000001907348633,
+      "redundantZeroRangeRequests": 0
+    },
+    {
+      "engine": "webkit",
+      "kind": "audio",
+      "status": "passed",
+      "receipt": "data/buffer-continuity-webkit-audio.json",
+      "bufferedBeforePause": [
+        [
+          0,
+          170.112
+        ]
+      ],
+      "sameElement": true,
+      "endedToPlayingMs": 21,
+      "redundantZeroRangeRequests": 0
+    },
+    {
+      "engine": "webkit",
+      "kind": "video",
+      "status": "passed",
+      "receipt": "data/buffer-continuity-webkit-video.json",
+      "bufferedBeforePause": [
+        [
+          0,
+          240.084
+        ]
+      ],
+      "sameElement": true,
+      "endedToPlayingMs": 46,
+      "redundantZeroRangeRequests": 0
+    }
+  ],
+  "sourceSHA256": {
+    "src/next-track-buffer.mjs": "8b93c48ff6af18a7e91f99cfd42b76e54e65c8114425996f9c88b2b3d21803b2",
+    "src/archive.js": "3265146ede3b53c49f864119fc08c709548752ef94ef5fa6eeb59a2b0660fae3"
+  },
+  "scope": "Actual media in Chromium and WebKit; audio/audio and video/video transitions after current-source seek near end, allowing native ended event. Pause/resume retained standby; no standby play calls before adoption; exact element reuse and no src/load/emptied/loadstart restart.",
+  "limits": [
+    "Not a full-track audition or sample-accurate gapless guarantee.",
+    "No new transcoding or playback copies. Video sample uses the already approved Planet X correction.",
+    "The full 60-second active warming deadline and gateway-failure paths are unit-tested separately; these browser cases do not claim to exercise those timeouts.",
+    "No physical iOS background lifecycle test."
+  ]
+}

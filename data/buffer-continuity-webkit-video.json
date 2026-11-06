@@ -1,0 +1,529 @@
+{
+  "checkedAt": "2026-11-06T20:08:11.683Z",
+  "base": "http://127.0.0.1:4191",
+  "engine": "webkit",
+  "kind": "video",
+  "ids": [
+    "spinamp-073e25367a01a4e53532",
+    "pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+  ],
+  "scope": "Real app/media. Native ended event after seeking current track near its end; not a full-track audition or sample-accurate gapless claim.",
+  "status": "passed",
+  "requests": [],
+  "errors": [],
+  "before": [
+    {
+      "active": true,
+      "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+      "currentSrc": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+      "paused": false,
+      "time": 8.108144515939289,
+      "duration": 44.067,
+      "readyState": 4,
+      "videoWidth": 1920,
+      "ranges": [
+        [
+          0,
+          22.113
+        ]
+      ],
+      "events": [
+        {
+          "name": "call:pause",
+          "at": 405,
+          "src": null
+        },
+        {
+          "name": "set:src",
+          "at": 407,
+          "value": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:play",
+          "at": 407,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "emptied",
+          "at": 409,
+          "time": 0,
+          "paused": false,
+          "src": ""
+        },
+        {
+          "name": "play",
+          "at": 413,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "waiting",
+          "at": 413,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "loadstart",
+          "at": 415,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "playing",
+          "at": 3089,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        }
+      ]
+    },
+    {
+      "active": false,
+      "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4",
+      "currentSrc": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4",
+      "paused": true,
+      "time": 0,
+      "duration": 240.084,
+      "readyState": 4,
+      "videoWidth": 720,
+      "ranges": [
+        [
+          0,
+          240.084
+        ]
+      ],
+      "events": [
+        {
+          "name": "set:src",
+          "at": 13807,
+          "value": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "call:load",
+          "at": 13807,
+          "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "emptied",
+          "at": 13807,
+          "time": 0,
+          "paused": true,
+          "src": ""
+        },
+        {
+          "name": "loadstart",
+          "at": 13810,
+          "time": 0,
+          "paused": true,
+          "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "suspend",
+          "at": 13873,
+          "time": 0,
+          "paused": true,
+          "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        }
+      ]
+    }
+  ],
+  "suspended": [
+    {
+      "active": true,
+      "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+      "currentSrc": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+      "paused": true,
+      "time": 8.12729464126774,
+      "duration": 44.067,
+      "readyState": 4,
+      "videoWidth": 1920,
+      "ranges": [
+        [
+          0,
+          28.932
+        ]
+      ],
+      "events": [
+        {
+          "name": "call:pause",
+          "at": 405,
+          "src": null
+        },
+        {
+          "name": "set:src",
+          "at": 407,
+          "value": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:play",
+          "at": 407,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "emptied",
+          "at": 409,
+          "time": 0,
+          "paused": false,
+          "src": ""
+        },
+        {
+          "name": "play",
+          "at": 413,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "waiting",
+          "at": 413,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "loadstart",
+          "at": 415,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "playing",
+          "at": 3089,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:pause",
+          "at": 14897,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "pause",
+          "at": 14898,
+          "time": 8.12729464126774,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        }
+      ]
+    },
+    {
+      "active": false,
+      "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4",
+      "currentSrc": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4",
+      "paused": true,
+      "time": 0,
+      "duration": 240.084,
+      "readyState": 4,
+      "videoWidth": 720,
+      "ranges": [
+        [
+          0,
+          240.084
+        ]
+      ],
+      "events": [
+        {
+          "name": "set:src",
+          "at": 13807,
+          "value": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "call:load",
+          "at": 13807,
+          "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "emptied",
+          "at": 13807,
+          "time": 0,
+          "paused": true,
+          "src": ""
+        },
+        {
+          "name": "loadstart",
+          "at": 13810,
+          "time": 0,
+          "paused": true,
+          "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "suspend",
+          "at": 13873,
+          "time": 0,
+          "paused": true,
+          "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "active": false,
+      "src": null,
+      "currentSrc": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+      "paused": true,
+      "time": 0,
+      "duration": null,
+      "readyState": 0,
+      "videoWidth": 0,
+      "ranges": [],
+      "events": [
+        {
+          "name": "call:pause",
+          "at": 405,
+          "src": null
+        },
+        {
+          "name": "set:src",
+          "at": 407,
+          "value": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:play",
+          "at": 407,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "emptied",
+          "at": 409,
+          "time": 0,
+          "paused": false,
+          "src": ""
+        },
+        {
+          "name": "play",
+          "at": 413,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "waiting",
+          "at": 413,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "loadstart",
+          "at": 415,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "playing",
+          "at": 3089,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:pause",
+          "at": 14897,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "pause",
+          "at": 14898,
+          "time": 8.12729464126774,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:play",
+          "at": 15321,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "play",
+          "at": 15322,
+          "time": 8.128071391,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "playing",
+          "at": 15322,
+          "time": 8.128071391,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "suspend",
+          "at": 17056,
+          "time": 43.717,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "pause",
+          "at": 17822,
+          "time": 44.067,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:pause",
+          "at": 17822,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:load",
+          "at": 17823,
+          "src": null
+        },
+        {
+          "name": "ended",
+          "at": 17826,
+          "time": 0,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "emptied",
+          "at": 17870,
+          "time": 0,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4",
+      "currentSrc": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4",
+      "paused": false,
+      "time": 0.5028862096831331,
+      "duration": 240.084,
+      "readyState": 4,
+      "videoWidth": 720,
+      "ranges": [
+        [
+          0,
+          240.084
+        ]
+      ],
+      "events": [
+        {
+          "name": "set:src",
+          "at": 13807,
+          "value": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "call:load",
+          "at": 13807,
+          "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "emptied",
+          "at": 13807,
+          "time": 0,
+          "paused": true,
+          "src": ""
+        },
+        {
+          "name": "loadstart",
+          "at": 13810,
+          "time": 0,
+          "paused": true,
+          "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "suspend",
+          "at": 13873,
+          "time": 0,
+          "paused": true,
+          "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "call:play",
+          "at": 17826,
+          "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "play",
+          "at": 17870,
+          "time": 0,
+          "paused": false,
+          "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "playing",
+          "at": 17872,
+          "time": 0,
+          "paused": false,
+          "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+        }
+      ]
+    }
+  ],
+  "handoff": {
+    "timeOrigin": 1793995692049,
+    "sameElement": true,
+    "oldReleased": true,
+    "activeCount": 1,
+    "endedAt": 17826,
+    "playingAt": 17872,
+    "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4",
+    "events": [
+      {
+        "name": "set:src",
+        "at": 13807,
+        "value": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+      },
+      {
+        "name": "call:load",
+        "at": 13807,
+        "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+      },
+      {
+        "name": "emptied",
+        "at": 13807,
+        "time": 0,
+        "paused": true,
+        "src": ""
+      },
+      {
+        "name": "loadstart",
+        "at": 13810,
+        "time": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+      },
+      {
+        "name": "suspend",
+        "at": 13873,
+        "time": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+      },
+      {
+        "name": "call:play",
+        "at": 17826,
+        "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+      },
+      {
+        "name": "play",
+        "at": 17870,
+        "time": 0,
+        "paused": false,
+        "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+      },
+      {
+        "name": "playing",
+        "at": 17872,
+        "time": 0,
+        "paused": false,
+        "src": "http://127.0.0.1:4191/media/planet-x-artist-corrected-720.mp4"
+      }
+    ],
+    "endedToPlayingMs": 46
+  },
+  "redundantZeroRangeAfterAdoption": []
+}

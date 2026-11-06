@@ -1,0 +1,17 @@
+{
+  "startedAt": "2026-11-06T20:09:03.791Z",
+  "finishedAt": "2026-11-06T20:09:07.671Z",
+  "command": "npm test",
+  "exitCode": 0,
+  "log": "work/queue-buffer-suite-output.log",
+  "summary": [
+    "ℹ tests 276",
+    "ℹ suites 0",
+    "ℹ pass 276",
+    "ℹ fail 0",
+    "ℹ cancelled 0",
+    "ℹ skipped 0",
+    "ℹ todo 0",
+    "ℹ duration_ms 3741.77575"
+  ]
+}

@@ -60,6 +60,7 @@ function setup() {
   };
   const buffer = createNextTrackBuffer({
     createMedia: make,
+    baseURL: "http://127.0.0.1:4191/",
     canWarm: () => warming,
     document: doc,
     navigator: nav,
@@ -80,7 +81,7 @@ function setup() {
   };
   const ready = () => {
     const m = media.at(-1);
-    m.seconds = 10;
+    m.seconds = 30;
     m.buffered.length = 1;
     m.dispatchEvent(new Event("progress"));
     return m;
@@ -110,7 +111,7 @@ test("one native standby buffers next audio without playing and is adopted uncha
   assert.equal(m.src, a.url);
   assert.equal(m.loads, 1);
   assert.equal(m.preload, "auto");
-  s.tick(20000);
+  s.tick(60000);
   assert.equal(m.src, a.url);
   assert.equal(s.buffer.state(), null);
 });
@@ -143,7 +144,7 @@ test("queue/source/context changes cancel previous pending asset and ignore late
 });
 test("deadline and media errors cancel failed loads with no repeated retry loop", () => {
   for (const fail of [
-    (s) => s.tick(20000),
+    (s) => s.tick(60000),
     (s) => s.media[0].dispatchEvent(new Event("error")),
   ]) {
     const s = setup();
@@ -155,26 +156,44 @@ test("deadline and media errors cancel failed loads with no repeated retry loop"
     assert.equal(s.buffer.schedule(a), false);
   }
 });
-test("pause cancels an incomplete load but retains ready buffer without starting new work", () => {
+test("natural-end pause retains partial ranges for adoption; pause/resume never reloads", () => {
   const s = setup();
   s.buffer.schedule(a);
   s.tick(700);
+  const m = s.media[0];
+  m.seconds = 4;
+  m.buffered.length = 1;
   s.warming(false);
   s.buffer.suspend();
-  assert.equal(s.media[0].src, "");
-  const t = setup();
-  t.buffer.schedule(a);
-  t.tick(700);
-  const m = t.ready();
-  t.warming(false);
-  t.buffer.suspend();
   assert.equal(m.src, a.url);
   assert.equal(m.preload, "none");
-  assert.equal(t.buffer.take(a.id, a.url), m);
+  s.warming(true);
+  s.buffer.schedule(a);
+  assert.equal(m.preload, "auto");
+  assert.equal(m.loads, 1);
+  s.warming(false);
+  s.buffer.suspend();
+  assert.equal(s.buffer.take(a.id, a.url), m);
+  assert.equal(m.seconds, 4);
+  assert.equal(m.loads, 1);
 });
-test("visibility/offline/save-data/slow connection policy suppresses and cancels warming", () => {
+test("deadline preserves useful partial ranges without restarting the warm budget", () => {
+  const s = setup();
+  s.buffer.schedule(a);
+  s.tick(700);
+  const m = s.media[0];
+  m.seconds = 3;
+  m.buffered.length = 1;
+  s.tick(60000);
+  assert.equal(s.buffer.state().retained, true);
+  assert.equal(m.preload, "none");
+  s.buffer.schedule(a);
+  assert.equal(m.preload, "none");
+  assert.equal(s.buffer.take(a.id, a.url), m);
+  assert.equal(m.loads, 1);
+});
+test("offline/save-data/slow connection suppress new work and preserve existing partial buffers", () => {
   for (const change of [
-    (s) => (s.doc.hidden = true),
     (s) => (s.nav.onLine = false),
     (s) => (s.nav.connection.saveData = true),
     (s) => (s.nav.connection.effectiveType = "3g"),
@@ -185,15 +204,66 @@ test("visibility/offline/save-data/slow connection policy suppresses and cancels
     const t = setup();
     t.buffer.schedule(a);
     t.tick(700);
+    const m = t.media[0];
+    m.seconds = 3;
+    m.buffered.length = 1;
     change(t);
-    t.doc.dispatchEvent(new Event("visibilitychange"));
-    assert.equal(t.media[0].src, "");
+    t.nav.connection.dispatchEvent(new Event("change"));
+    assert.equal(m.preload, "none");
+    assert.equal(m.src, a.url);
+    assert.equal(m.loads, 1);
+    assert.equal(t.buffer.take(a.id, a.url), m);
   }
 });
-test("video, invalid URLs, changed adoption source and disposed state fail safely", () => {
+test("background active playback retains warming; lack of current headroom suspends it", () => {
+  const s = setup();
+  s.buffer.schedule(a);
+  s.tick(700);
+  const m = s.media[0];
+  s.doc.hidden = true;
+  s.doc.dispatchEvent(new Event("visibilitychange"));
+  assert.equal(m.preload, "auto");
+  assert.equal(m.loads, 1);
+  s.warming(false);
+  s.buffer.schedule(a);
+  assert.equal(m.preload, "none");
+  s.warming(true);
+  s.buffer.schedule(a);
+  assert.equal(m.preload, "auto");
+  assert.equal(m.loads, 1);
+});
+test("video standby uses eight-second target and never plays before adoption", () => {
+  const s = setup();
+  const v = { ...a, kind: "video" };
+  s.buffer.schedule(v);
+  s.tick(700);
+  const m = s.media[0];
+  m.seconds = 8;
+  m.buffered.length = 1;
+  m.dispatchEvent(new Event("progress"));
+  assert.equal(s.buffer.state().ready, true);
+  assert.equal(m.plays, 0);
+  assert.equal(m.autoplay, false);
+  assert.equal(m.preload, "none");
+  assert.equal(s.buffer.take(a.id, a.url), m);
+  assert.equal(m.plays, 0);
+});
+test("same-origin approved relative video URL normalizes to native src for adoption", () => {
+  const s = setup();
+  const url = "/media/planet-x-artist-corrected-720.mp4";
+  s.buffer.schedule({ ...a, kind: "video", url });
+  s.tick(700);
+  const m = s.media[0];
+  assert.equal(m.src, "http://127.0.0.1:4191" + url);
+  assert.equal(s.buffer.take(a.id, url), m);
+  assert.equal(m.loads, 1);
+});
+test("invalid kinds/URLs, changed adoption source and disposed state fail safely", () => {
   const s = setup();
   for (const value of [
-    { ...a, kind: "video" },
+    { ...a, kind: "artwork" },
+    { ...a, url: "http://external.example/a" },
+    { ...a, url: "//external.example/a" },
     { ...a, url: "javascript:bad" },
     { ...a, url: "https://name:secret@host/a" },
   ])
@@ -245,19 +315,87 @@ test("current playback requires contiguous ten-second headroom or fully buffered
   assert.equal(hasPlaybackHeadroom(media), false);
 });
 
-test("interrupted and failed preload can retry after recovery, with a strict attempt cap", () => {
+test("failed network preload can retry after recovery, with a strict attempt cap", () => {
   const s = setup();
   for (let attempt = 0; attempt < 3; attempt++) {
     s.time(attempt * 6000);
     assert.equal(s.buffer.schedule(a), true);
     s.tick(700);
-    s.warming(false);
-    s.buffer.suspend();
-    s.warming(true);
+    s.media.at(-1).dispatchEvent(new Event("error"));
     assert.equal(s.buffer.schedule(a), false);
   }
   s.time(61000);
   assert.equal(s.buffer.schedule(a), false);
   assert.equal(s.media.length, 3);
   assert.equal(s.media.filter((m) => m.src).length, 0);
+});
+
+test("temporary suspension uses only the remaining active warm deadline", () => {
+  const s = setup();
+  s.buffer.schedule(a);
+  s.tick(700);
+  s.time(7000);
+  s.warming(false);
+  s.buffer.suspend();
+  s.time(27000);
+  s.warming(true);
+  s.buffer.schedule(a);
+  s.tick(60000);
+  assert.notEqual(s.buffer.state(), null);
+  s.tick(53000);
+  assert.equal(s.buffer.state(), null);
+});
+
+test("zero-buffer gateway failure retries same CID and adopts actual gateway without resetting it", () => {
+  const s = setup();
+  const source = {
+    ...a,
+    url: "https://ipfs.filebase.io/ipfs/bafyTest/music.mp3?download=1",
+  };
+  s.buffer.schedule(source);
+  s.tick(700);
+  s.media[0].dispatchEvent(new Event("error"));
+  assert.equal(s.buffer.schedule(source), false);
+  s.time(6000);
+  s.buffer.schedule(source);
+  s.tick(700);
+  const second = s.media[1];
+  assert.equal(
+    second.src,
+    "https://gateway.pinata.cloud/ipfs/bafyTest/music.mp3?download=1",
+  );
+  assert.equal(s.buffer.state().url, source.url);
+  assert.equal(s.buffer.take(source.id, source.url), second);
+  assert.equal(second.loads, 1);
+  assert.equal(second.plays, 0);
+});
+
+test("Arweave zero-buffer deadline retries same transaction; partial deadline never switches", () => {
+  const source = {
+    ...a,
+    url: "https://arweave.net/" + "a".repeat(43) + "/audio.mp3",
+  };
+  const s = setup();
+  s.buffer.schedule(source);
+  s.tick(700);
+  s.tick(60000);
+  s.time(61000);
+  s.buffer.schedule(source);
+  s.tick(700);
+  assert.equal(
+    s.media[1].src,
+    source.url.replace("arweave.net", "turbo-gateway.com"),
+  );
+  const t = setup();
+  t.buffer.schedule(source);
+  t.tick(700);
+  const m = t.media[0];
+  m.seconds = 4;
+  m.buffered.length = 1;
+  t.tick(60000);
+  t.time(61000);
+  t.buffer.schedule(source);
+  assert.equal(m.src, source.url);
+  assert.equal(t.media.length, 1);
+  assert.equal(t.buffer.take(source.id, source.url), m);
 });

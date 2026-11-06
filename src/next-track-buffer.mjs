@@ -1,3 +1,5 @@
+import { alternateMediaURLs } from "./media-recovery.js";
+
 // One real standby media element. Reusing this element preserves its native buffer.
 // preload=none after the target is a hint: native buffering has no hard byte cap.
 export function bufferedFromStart(media) {
@@ -35,8 +37,10 @@ export function createNextTrackBuffer({
   clearTimer = clearTimeout,
   now = Date.now,
   delayMs = 700,
-  deadlineMs = 20000,
-  targetSeconds = 10,
+  deadlineMs = 60000,
+  targetSeconds = 30,
+  videoTargetSeconds = 8,
+  baseURL = globalThis.location?.href,
 } = {}) {
   let candidate = null,
     disposed = false;
@@ -44,25 +48,31 @@ export function createNextTrackBuffer({
     starts = [];
   const policy = () =>
     !disposed &&
-    !doc?.hidden &&
     nav?.onLine !== false &&
     !nav?.connection?.saveData &&
     !["slow-2g", "2g", "3g"].includes(nav?.connection?.effectiveType);
-  const valid = (value) => {
+  const normalizeURL = (value) => {
     try {
-      const u = new URL(value?.url);
-      return (
-        !!value.id &&
-        value.kind === "audio" &&
-        u.protocol === "https:" &&
-        !u.username &&
+      const relative =
+        typeof value === "string" &&
+        value.startsWith("/") &&
+        !value.startsWith("//");
+      const u = relative ? new URL(value, baseURL) : new URL(value);
+      const local = baseURL && u.origin === new URL(baseURL).origin;
+      return !u.username &&
         !u.password &&
-        !u.port
-      );
+        ((u.protocol === "https:" && !u.port) ||
+          (local && ["https:", "http:"].includes(u.protocol)))
+        ? u.href
+        : null;
     } catch {
-      return false;
+      return null;
     }
   };
+  const valid = (value) =>
+    !!value?.id &&
+    ["audio", "video"].includes(value.kind) &&
+    normalizeURL(value.url);
   const keyFor = (value) =>
     `${value.contextId || ""}\n${value.id}\n${value.url}`;
   function detach(c) {
@@ -89,22 +99,48 @@ export function createNextTrackBuffer({
     }
   }
   function suspend() {
-    if (candidate?.ready) {
-      candidate.media.preload = "none";
-      return;
+    const c = candidate;
+    if (!c) return;
+    clearTimer(c.delay);
+    c.delay = null;
+    if (c.deadline !== null) {
+      c.remainingMs = Math.max(0, c.remainingMs - (now() - c.activeAt));
+      clearTimer(c.deadline);
+      c.deadline = null;
     }
-    cancel();
+    // Changing the hint preserves native ranges. Never reset src/load on pause,
+    // waiting, or the pause event immediately before natural ended adoption.
+    if (c.media) c.media.preload = "none";
+    c.suspended = true;
+  }
+  function resume(c) {
+    if (!c.media || c.ready || c.retained || !policy() || !canWarm()) return;
+    c.suspended = false;
+    c.media.preload = "auto";
+    if (c.deadline !== null) return;
+    c.activeAt = now();
+    c.deadline = setTimer(() => {
+      c.deadline = null;
+      c.remainingMs = 0;
+      if (candidate !== c || c.ready) return;
+      if (bufferedFromStart(c.media) > 0) {
+        c.retained = true;
+        suspend();
+      } else cancel();
+    }, c.remainingMs);
   }
   function schedule(value) {
     if (!valid(value)) {
       cancel();
       return false;
     }
+    value = { ...value, url: normalizeURL(value.url) };
     const key = keyFor(value);
     if (candidate?.key === key) {
-      if (!policy()) cancel();
-      else if (!canWarm()) suspend();
-      return !!candidate;
+      if (!policy() || !canWarm()) suspend();
+      else if (candidate.media) resume(candidate);
+      else if (candidate.delay === null) startLater(candidate);
+      return true;
     }
     cancel();
     const prior = attempted.get(key);
@@ -119,23 +155,34 @@ export function createNextTrackBuffer({
     const c = (candidate = {
       ...value,
       key,
+      sourceURL: [value.url, ...alternateMediaURLs(value.url)][
+        Math.min(prior?.count || 0, alternateMediaURLs(value.url).length)
+      ],
       ready: false,
       started: false,
       media: null,
       delay: null,
       deadline: null,
+      remainingMs: deadlineMs,
+      activeAt: 0,
+      suspended: false,
+      retained: false,
     });
+    startLater(c);
+    return true;
+  }
+  function startLater(c) {
     c.delay = setTimer(() => {
       c.delay = null;
       if (candidate !== c || !policy() || !canWarm()) {
-        if (candidate === c) cancel();
+        if (candidate === c) suspend();
         return;
       }
       const media = (c.media = createMedia());
       c.started = true;
       starts.push(now());
-      attempted.set(key, {
-        count: (attempted.get(key)?.count || 0) + 1,
+      attempted.set(c.key, {
+        count: (attempted.get(c.key)?.count || 0) + 1,
         at: now(),
       });
       if (attempted.size > 100) attempted.delete(attempted.keys().next().value);
@@ -145,17 +192,18 @@ export function createNextTrackBuffer({
       c.progress = () => {
         if (candidate !== c) return;
         if (!policy()) {
-          cancel();
+          suspend();
           return;
         }
         if (!canWarm()) {
           suspend();
           return;
         }
+        const seconds = c.kind === "video" ? videoTargetSeconds : targetSeconds;
         const target =
           Number.isFinite(media.duration) && media.duration > 0
-            ? Math.min(targetSeconds, media.duration)
-            : targetSeconds;
+            ? Math.min(seconds, media.duration)
+            : seconds;
         if (bufferedFromStart(media) >= target - 0.1) {
           c.ready = true;
           clearTimer(c.deadline);
@@ -170,21 +218,19 @@ export function createNextTrackBuffer({
       media.addEventListener("loadeddata", c.progress);
       media.addEventListener("canplay", c.progress);
       media.addEventListener("error", c.error);
-      media.src = c.url;
+      media.src = c.sourceURL;
       media.load();
-      c.deadline = setTimer(() => {
-        if (candidate === c && !c.ready) cancel();
-      }, deadlineMs);
+      resume(c);
     }, delayMs);
-    return true;
   }
   function take(id, url) {
+    url = normalizeURL(url);
     const c = candidate;
     if (
       !c?.started ||
       c.id !== id ||
       c.url !== url ||
-      c.media.src !== url ||
+      c.media.src !== c.sourceURL ||
       c.media.error
     ) {
       cancel();
@@ -196,7 +242,8 @@ export function createNextTrackBuffer({
     return c.media;
   }
   const onPolicy = () => {
-    if (!policy()) cancel();
+    if (!policy() || !canWarm()) suspend();
+    else if (candidate?.media) resume(candidate);
   };
   doc?.addEventListener("visibilitychange", onPolicy);
   nav?.connection?.addEventListener("change", onPolicy);
@@ -211,8 +258,11 @@ export function createNextTrackBuffer({
         ? {
             id: candidate.id,
             url: candidate.url,
+            sourceURL: candidate.sourceURL,
             started: candidate.started,
             ready: candidate.ready,
+            suspended: candidate.suspended,
+            retained: candidate.retained,
             bufferedSeconds: candidate.media
               ? bufferedFromStart(candidate.media)
               : 0,
