@@ -1,14 +1,14 @@
 {
-  "checkedAt": "2026-11-06T17:27:45.082148+00:00",
+  "checkedAt": "2026-11-06T18:11:15.057773+00:00",
   "method": "Read-only Supabase SELECT after authorized PUT /api/recipes",
   "id": "music-nft-recovery",
   "creatorFromAPI": "peterango",
   "status": "published",
-  "updatedAt": "2026-11-06T17:27:18.794205+00:00",
+  "updatedAt": "2026-11-06T18:10:41.482441+00:00",
   "url": "https://web3-music-repo.vercel.app/",
   "screenshot": "https://web3-music-repo.vercel.app/lab-cover-v2.png",
   "sourceURL": "https://github.com/xdjs/web3-music-repo/tree/main",
-  "aboutMD5": "18b42a64e2cc0e78cd7dad255d01d595",
+  "aboutMD5": "173242746904480b036a4ca3ff4b60a6",
   "instructionsMD5": "8f1cf16eab0fa6188c26255272600dfe",
   "payloadHashesMatch": true,
   "explicitOriginatorCredit": true,
@@ -16,5 +16,8 @@
   "documentaryUpdatedAt": "2026-11-05T23:54:12.202521+00:00",
   "ensCookbook": true,
   "listeningCookbook": true,
-  "existingDescriptionPreserved": true
+  "existingDescriptionPreserved": true,
+  "expandedCatalogCount": 31220,
+  "addedSpinampRecords": 17580,
+  "nowPlayingCookbook": true
 }

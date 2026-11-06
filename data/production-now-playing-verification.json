@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-11-06T18:08:52.688Z",
+  "base": "https://web3-music-repo.vercel.app",
+  "checks": [
+    "Real media plays in Now Playing",
+    "Native MediaSession identifies current song",
+    "Back closes overlay and same single media element keeps playing"
+  ],
+  "before": {
+    "src": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+    "time": 0.307986,
+    "paused": false,
+    "count": 1,
+    "inside": true
+  },
+  "metadata": {
+    "title": "Groove (Jacob Grosse Remix)",
+    "artist": "Mija"
+  },
+  "after": {
+    "src": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+    "time": 0.730965,
+    "paused": false,
+    "count": 1
+  },
+  "passed": true
+}

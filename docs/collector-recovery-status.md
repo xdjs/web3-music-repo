@@ -27,3 +27,7 @@ Existing verified Sound release paths (5,017), legacy Sound paths (276), and Cat
 This change is implemented and locally verified; production deployment is owned by the release orchestrator. Do not describe the fix as live until the deployed endpoint/page has been checked.
 
 Primary endpoint reference: [Blockscout token API documentation](https://github.com/blockscout/agent-skills/blob/main/blockscout-analysis/references/blockscout-api/tokens.md).
+
+## Production checkpoint — November 6, 18:10 UTC
+
+Root verified the deployed collector endpoint returns seven Say it celly wallets on deployment `dpl_HmCSPyouSG5SdoBxcb6Pi1KHK2J5`. The independent production browser attempt could not complete its catalog-count assertion because Chrome evicted the large response from its inspector cache; this is a verification-tool limitation, not evidence of an application failure. Local four-view collector/PFP evidence remains above. The Lab cookbook update is published with the 31,220-record checkpoint, 17,580 additional Spinamp records, Now Playing and exact-token/media-matched collector scope, independently confirmed by database read-back. See `data/lab-update-persistence.json`.

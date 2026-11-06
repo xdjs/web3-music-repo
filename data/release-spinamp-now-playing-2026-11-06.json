@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-06T18:06:43.578783+00:00",
+  "deploymentSourceCommit": "5cec2425c0eba2ee730d4a2c136198ba51cea2e1",
+  "mergedMainCommit": "4fb104a4492d7b45f585f7eab5a01ed84a082513",
+  "treesIdentical": true,
+  "pullRequest": "https://github.com/xdjs/web3-music-repo/pull/3",
+  "deploymentId": "dpl_HmCSPyouSG5SdoBxcb6Pi1KHK2J5",
+  "deployment": "https://web3-music-repo-1g3j3oq2z-musicnerd.vercel.app",
+  "production": "https://web3-music-repo.vercel.app/",
+  "state": "READY",
+  "catalogRecords": 31220,
+  "spinampRecords": 21395,
+  "newSpinampRecords": 17580,
+  "unresolvedSpinampReferences": 169,
+  "suppliedBpm": 7942,
+  "suppliedKeys": 7519,
+  "lyricsTracks": 1311,
+  "audioBpmEstimates": 5666,
+  "validation": {
+    "unitTests": 219,
+    "syntax": true,
+    "format": true,
+    "productionBuild": true,
+    "nowPlayingDeployedModuleMatchesSource": true,
+    "newMediaSamplesPlayed": 10,
+    "liveSayItCellyCollectors": 7,
+    "fullStaticExportHTTP": 200,
+    "fullStaticExportBytes": 109276239,
+    "liveNowPlayingAndBack": true,
+    "liveMediaSessionTitle": true
+  },
+  "remaining": [
+    "Planet X reported delayed/doubled audio not reproduced or resolved; one playing element observed",
+    "New contextual queue clicked at fourth item should begin at row1; deferred by user",
+    "169 Spinamp provider reads unresolved; unsupported chains and excluded records remain outside catalog",
+    "Expanded-catalog mobile performance measurement",
+    "Personal cross-device playlist save/load and physical iOS playback",
+    "Newer audio analysis cohort not started"
+  ],
+  "recoveryWorkersRunning": false,
+  "receipts": [
+    "data/production-now-playing-verification.json",
+    "data/collector-live-verification.json",
+    "data/collector-ui-verification.json",
+    "data/spinamp/expanded-sample-verification.json",
+    "data/playback-overlap-investigation.json",
+    "data/lab-update-persistence.json",
+    "data/lab-submission-verification.json"
+  ],
+  "lab": "https://lab.musicnerd.net/peterango/music-nft-recovery",
+  "labUpdatedAndVerified": true
+}
