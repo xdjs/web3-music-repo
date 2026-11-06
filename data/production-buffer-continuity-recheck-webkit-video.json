@@ -1,0 +1,727 @@
+{
+  "checkedAt": "2026-11-06T20:13:54.056Z",
+  "deploymentId": "dpl_7nLdveuTbLrNn4jx6zvD3mRfmDND",
+  "sourceCommit": "a75e9f3f7ef32dec81cb1993a45c7b60e3d4e20b",
+  "base": "https://web3-music-repo.vercel.app",
+  "engine": "webkit",
+  "kind": "video",
+  "ids": [
+    "spinamp-073e25367a01a4e53532",
+    "pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+  ],
+  "scope": "Real app/media. Native ended event after seeking current track near its end; not a full-track audition or sample-accurate gapless claim.",
+  "status": "failed",
+  "requests": [],
+  "errors": [
+    {
+      "message": "/auth.privy.io'.",
+      "stack": "Permission policy 'Fullscreen' check failed for document with origin 'https://auth.privy.io'.\n    at j (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:43006)\n    at SI (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:38862)\n    at d5 (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:41023)\n    at w (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:2584)\n    at du (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:42181)\n    at dP (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:42328)\n    at J (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:43076)\n    at ef (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:5817)\n    at unknown (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:33139)\n    at unknown (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:42696)\n    at global code (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:43370)"
+    }
+  ],
+  "before": [
+    {
+      "active": true,
+      "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+      "currentSrc": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+      "paused": false,
+      "time": 5.533347124524023,
+      "duration": 44.067,
+      "readyState": 4,
+      "videoWidth": 1920,
+      "ranges": [
+        [
+          0,
+          44.091
+        ]
+      ],
+      "events": [
+        {
+          "name": "call:pause",
+          "at": 2505,
+          "src": null
+        },
+        {
+          "name": "set:src",
+          "at": 2508,
+          "value": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:play",
+          "at": 2513,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "emptied",
+          "at": 2516,
+          "time": 0,
+          "paused": false,
+          "src": ""
+        },
+        {
+          "name": "play",
+          "at": 2519,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "waiting",
+          "at": 2519,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "loadstart",
+          "at": 2521,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "playing",
+          "at": 4182,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "suspend",
+          "at": 10105,
+          "time": 3.6160839988796982,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        }
+      ]
+    },
+    {
+      "active": false,
+      "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4",
+      "currentSrc": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4",
+      "paused": true,
+      "time": 0,
+      "duration": 240.084,
+      "readyState": 4,
+      "videoWidth": 720,
+      "ranges": [
+        [
+          0,
+          24.427
+        ]
+      ],
+      "events": [
+        {
+          "name": "set:src",
+          "at": 10806,
+          "value": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "call:load",
+          "at": 10806,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "emptied",
+          "at": 10807,
+          "time": 0,
+          "paused": true,
+          "src": ""
+        },
+        {
+          "name": "loadstart",
+          "at": 10812,
+          "time": 0,
+          "paused": true,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        }
+      ]
+    }
+  ],
+  "suspended": [
+    {
+      "active": true,
+      "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+      "currentSrc": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+      "paused": true,
+      "time": 5.551615583069231,
+      "duration": 44.067,
+      "readyState": 4,
+      "videoWidth": 1920,
+      "ranges": [
+        [
+          0,
+          44.091
+        ]
+      ],
+      "events": [
+        {
+          "name": "call:pause",
+          "at": 2505,
+          "src": null
+        },
+        {
+          "name": "set:src",
+          "at": 2508,
+          "value": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:play",
+          "at": 2513,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "emptied",
+          "at": 2516,
+          "time": 0,
+          "paused": false,
+          "src": ""
+        },
+        {
+          "name": "play",
+          "at": 2519,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "waiting",
+          "at": 2519,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "loadstart",
+          "at": 2521,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "playing",
+          "at": 4182,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "suspend",
+          "at": 10105,
+          "time": 3.6160839988796982,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:pause",
+          "at": 12040,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "pause",
+          "at": 12041,
+          "time": 5.551615583069231,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        }
+      ]
+    },
+    {
+      "active": false,
+      "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4",
+      "currentSrc": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4",
+      "paused": true,
+      "time": 0,
+      "duration": 240.084,
+      "readyState": 4,
+      "videoWidth": 720,
+      "ranges": [
+        [
+          0,
+          24.427
+        ]
+      ],
+      "events": [
+        {
+          "name": "set:src",
+          "at": 10806,
+          "value": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "call:load",
+          "at": 10806,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "emptied",
+          "at": 10807,
+          "time": 0,
+          "paused": true,
+          "src": ""
+        },
+        {
+          "name": "loadstart",
+          "at": 10812,
+          "time": 0,
+          "paused": true,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "active": false,
+      "src": null,
+      "currentSrc": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+      "paused": true,
+      "time": 0,
+      "duration": null,
+      "readyState": 0,
+      "videoWidth": 0,
+      "ranges": [],
+      "events": [
+        {
+          "name": "call:pause",
+          "at": 2505,
+          "src": null
+        },
+        {
+          "name": "set:src",
+          "at": 2508,
+          "value": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:play",
+          "at": 2513,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "emptied",
+          "at": 2516,
+          "time": 0,
+          "paused": false,
+          "src": ""
+        },
+        {
+          "name": "play",
+          "at": 2519,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "waiting",
+          "at": 2519,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "loadstart",
+          "at": 2521,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "playing",
+          "at": 4182,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "suspend",
+          "at": 10105,
+          "time": 3.6160839988796982,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:pause",
+          "at": 12040,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "pause",
+          "at": 12041,
+          "time": 5.551615583069231,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:play",
+          "at": 12470,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "play",
+          "at": 12470,
+          "time": 5.552590708,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "playing",
+          "at": 12471,
+          "time": 5.552590708,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "pause",
+          "at": 13571,
+          "time": 44.067,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:pause",
+          "at": 13572,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:load",
+          "at": 13573,
+          "src": null
+        },
+        {
+          "name": "ended",
+          "at": 13580,
+          "time": 0,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "emptied",
+          "at": 13584,
+          "time": 0,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4",
+      "currentSrc": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4",
+      "paused": false,
+      "time": 0.5122156587004271,
+      "duration": 240.084,
+      "readyState": 4,
+      "videoWidth": 720,
+      "ranges": [
+        [
+          0,
+          62.252
+        ]
+      ],
+      "events": [
+        {
+          "name": "set:src",
+          "at": 10806,
+          "value": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "call:load",
+          "at": 10806,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "emptied",
+          "at": 10807,
+          "time": 0,
+          "paused": true,
+          "src": ""
+        },
+        {
+          "name": "loadstart",
+          "at": 10812,
+          "time": 0,
+          "paused": true,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "call:play",
+          "at": 13578,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "play",
+          "at": 13584,
+          "time": 0,
+          "paused": false,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "playing",
+          "at": 13584,
+          "time": 0,
+          "paused": false,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        }
+      ]
+    }
+  ],
+  "handoff": {
+    "timeOrigin": 1793996034418,
+    "sameElement": true,
+    "oldReleased": true,
+    "activeCount": 1,
+    "endedAt": 13580,
+    "playingAt": 13584,
+    "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4",
+    "events": [
+      {
+        "name": "set:src",
+        "at": 10806,
+        "value": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+      },
+      {
+        "name": "call:load",
+        "at": 10806,
+        "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+      },
+      {
+        "name": "emptied",
+        "at": 10807,
+        "time": 0,
+        "paused": true,
+        "src": ""
+      },
+      {
+        "name": "loadstart",
+        "at": 10812,
+        "time": 0,
+        "paused": true,
+        "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+      },
+      {
+        "name": "call:play",
+        "at": 13578,
+        "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+      },
+      {
+        "name": "play",
+        "at": 13584,
+        "time": 0,
+        "paused": false,
+        "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+      },
+      {
+        "name": "playing",
+        "at": 13584,
+        "time": 0,
+        "paused": false,
+        "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+      }
+    ],
+    "endedToPlayingMs": 4
+  },
+  "redundantZeroRangeAfterAdoption": [],
+  "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   {\n+     message: \"/auth.privy.io'.\",\n+     stack: \"Permission policy 'Fullscreen' check failed for document with origin 'https://auth.privy.io'.\\n\" +\n+       '    at j (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:43006)\\n' +\n+       '    at SI (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:38862)\\n' +\n+       '    at d5 (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:41023)\\n' +\n+       '    at w (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:2584)\\n' +\n+       '    at du (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:42181)\\n' +\n+       '    at dP (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:42328)\\n' +\n+       '    at J (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:43076)\\n' +\n+       '    at ef (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:5817)\\n' +\n+       '    at unknown (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:33139)\\n' +\n+       '    at unknown (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:42696)\\n' +\n+       '    at global code (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:43370)'\n+   }\n+ ]\n- []\n",
+  "finalState": [
+    {
+      "active": false,
+      "src": null,
+      "currentSrc": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+      "paused": true,
+      "time": 0,
+      "duration": null,
+      "readyState": 0,
+      "videoWidth": 0,
+      "ranges": [],
+      "events": [
+        {
+          "name": "call:pause",
+          "at": 2505,
+          "src": null
+        },
+        {
+          "name": "set:src",
+          "at": 2508,
+          "value": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:play",
+          "at": 2513,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "emptied",
+          "at": 2516,
+          "time": 0,
+          "paused": false,
+          "src": ""
+        },
+        {
+          "name": "play",
+          "at": 2519,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "waiting",
+          "at": 2519,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "loadstart",
+          "at": 2521,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "playing",
+          "at": 4182,
+          "time": 0,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "suspend",
+          "at": 10105,
+          "time": 3.6160839988796982,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:pause",
+          "at": 12040,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "pause",
+          "at": 12041,
+          "time": 5.551615583069231,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:play",
+          "at": 12470,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "play",
+          "at": 12470,
+          "time": 5.552590708,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "playing",
+          "at": 12471,
+          "time": 5.552590708,
+          "paused": false,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "pause",
+          "at": 13571,
+          "time": 44.067,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:pause",
+          "at": 13572,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "call:load",
+          "at": 13573,
+          "src": null
+        },
+        {
+          "name": "ended",
+          "at": 13580,
+          "time": 0,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        },
+        {
+          "name": "emptied",
+          "at": 13584,
+          "time": 0,
+          "paused": true,
+          "src": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4",
+      "currentSrc": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4",
+      "paused": false,
+      "time": 0.5205506166949477,
+      "duration": 240.084,
+      "readyState": 4,
+      "videoWidth": 720,
+      "ranges": [
+        [
+          0,
+          62.252
+        ]
+      ],
+      "events": [
+        {
+          "name": "set:src",
+          "at": 10806,
+          "value": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "call:load",
+          "at": 10806,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "emptied",
+          "at": 10807,
+          "time": 0,
+          "paused": true,
+          "src": ""
+        },
+        {
+          "name": "loadstart",
+          "at": 10812,
+          "time": 0,
+          "paused": true,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "call:play",
+          "at": 13578,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "play",
+          "at": 13584,
+          "time": 0,
+          "paused": false,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        },
+        {
+          "name": "playing",
+          "at": 13584,
+          "time": 0,
+          "paused": false,
+          "src": "https://web3-music-repo.vercel.app/media/planet-x-artist-corrected-720.mp4"
+        }
+      ]
+    }
+  ],
+  "playbackAssertionsPassed": true,
+  "pageErrors": [
+    {
+      "message": "/auth.privy.io'.",
+      "stack": "Permission policy 'Fullscreen' check failed for document with origin 'https://auth.privy.io'.\n    at j (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:43006)\n    at SI (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:38862)\n    at d5 (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:41023)\n    at w (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:2584)\n    at du (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:42181)\n    at dP (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:42328)\n    at J (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:43076)\n    at ef (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:5817)\n    at unknown (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:33139)\n    at unknown (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:42696)\n    at global code (https://auth.privy.io/cdn-cgi/challenge-platform/h/b/scripts/jsd/8340802ab0bb/main.js?ray=a566c3004dd5ebfa:1:43370)"
+    }
+  ],
+  "overallStatus": "failed",
+  "runtimeErrorClassification": "Bounded rerun attributes this to the auth.privy.io Cloudflare challenge-platform fullscreen permission-policy probe. Playback assertions passed; the no-page-errors assertion failed. Login was not tested and no policy was changed."
+}

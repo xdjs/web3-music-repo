@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-06T20:13:09.886986+00:00",
+  "sourceCommit": "a75e9f3f7ef32dec81cb1993a45c7b60e3d4e20b",
+  "pullRequest": "https://github.com/xdjs/web3-music-repo/pull/7",
+  "deploymentId": "dpl_7nLdveuTbLrNn4jx6zvD3mRfmDND",
+  "url": "https://web3-music-repo.vercel.app/",
+  "immutableURL": "https://web3-music-repo-55qq2zj9p-musicnerd.vercel.app",
+  "state": "READY",
+  "target": "production",
+  "sourceSHA256": "8b93c48ff6af18a7e91f99cfd42b76e54e65c8114425996f9c88b2b3d21803b2",
+  "localTests": 276,
+  "localBrowserCases": 4,
+  "runtimeErrorScan": "No error/fatal logs returned for this deployment in the ten-minute query at20:12:55UTC",
+  "mediaChanged": false,
+  "limits": [
+    "No sample-accurate gapless guarantee",
+    "No physical iOS background test",
+    "Gateway delivery can still be slow"
+  ],
+  "productionBrowserChecks": {
+    "chromiumAudio": "passed: retained partial buffer, same-element native ended handoff, no source reload or redundant zero-range request",
+    "webkitVideo": "playback assertions passed twice; overall harness records auth iframe error",
+    "thirdPartyPageError": "auth.privy.io Cloudflare challenge-platform main.js: Permission policy Fullscreen check failed. No auth/browser policy changes made."
+  }
+}

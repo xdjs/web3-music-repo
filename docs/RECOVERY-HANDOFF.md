@@ -2,6 +2,12 @@
 
 Updated November 6, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
+## Playback preference and next-track continuity
+
+Pete explicitly rejected creating new listening/transcoded copies for playback optimization. The Consent AAC experiment under ignored `work/consent-streaming/` is not approved for integration or publication. Preserve original files and focus on buffering plus same-content gateway delivery. The earlier artist-approved Planet X correction remains a separate, specifically approved source repair.
+
+PR #7 (`a75e9f3f7ef32dec81cb1993a45c7b60e3d4e20b`) preserves partial next-track buffers through pause, waiting, background playback and natural endings. It targets 30 seconds audio / 8 seconds video with a 60-second active preload window and 15 seconds of headroom for the current player, retaining one standby and bounded same-content gateway retries. No new media copies or transcodes are included. Chromium and WebKit audio/video native-ended tests passed with the same element/buffer and no redundant restart; 276 tests plus syntax/format/build pass. Physical iOS and arbitrary network gaplessness are not established. Live production is READY at https://web3-music-repo.vercel.app/ with deployment `dpl_7nLdveuTbLrNn4jx6zvD3mRfmDND`; the served buffer module hash matches the merged source. Production Chromium audio passed; WebKit video media assertions passed twice, while the harness retained a separate auth.privy.io Cloudflare Fullscreen permission-policy page error. No auth policy was weakened. See `data/release-buffer-continuity-2026-11-06.json` and the three production buffer receipts.
+
 ## Latest production release — Nina, sharing and collection filters
 
 PR #6, merged at `3a79a4d58a7fe16b475991b867fdbb34d7e4910e`, adds 6,054 Nina records through Spinamp: 27,449 Spinamp imports and 37,274 catalog records. The remaining 169 index queries still fail upstream; this is a representative NFT mapping per track, not an all-edition census. Nina playback samples, provenance, filters and chain guards passed. Solana wallet ownership remains unsupported.

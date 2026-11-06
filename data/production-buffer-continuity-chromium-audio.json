@@ -1,0 +1,606 @@
+{
+  "checkedAt": "2026-11-06T20:12:50.366Z",
+  "deploymentId": "dpl_7nLdveuTbLrNn4jx6zvD3mRfmDND",
+  "sourceCommit": "a75e9f3f7ef32dec81cb1993a45c7b60e3d4e20b",
+  "base": "https://web3-music-repo.vercel.app",
+  "engine": "chromium",
+  "kind": "audio",
+  "ids": [
+    "supercollector-10-0b0abf42c6cd9eb5803e39988850df4756a07956-1",
+    "supercollector-10-0b0abf42c6cd9eb5803e39988850df4756a07956-2"
+  ],
+  "scope": "Real app/media. Native ended event after seeking current track near its end; not a full-track audition or sample-accurate gapless claim.",
+  "status": "passed",
+  "requests": [
+    {
+      "url": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3",
+      "range": "bytes=0-",
+      "at": 1793995976625
+    },
+    {
+      "url": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3",
+      "range": "bytes=0-",
+      "at": 1793995978761
+    },
+    {
+      "url": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3",
+      "range": "bytes=6291456-",
+      "at": 1793995981341
+    }
+  ],
+  "errors": [],
+  "before": [
+    {
+      "active": true,
+      "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3",
+      "currentSrc": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3",
+      "paused": false,
+      "time": 2.60244,
+      "duration": 182.160979,
+      "readyState": 4,
+      "videoWidth": 0,
+      "ranges": [
+        [
+          0,
+          96.954
+        ]
+      ],
+      "events": [
+        {
+          "name": "call:pause",
+          "at": 6203.300000190735,
+          "src": null
+        },
+        {
+          "name": "set:src",
+          "at": 6205.599999904633,
+          "value": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "call:play",
+          "at": 6206,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "emptied",
+          "at": 6246.900000095367,
+          "time": 0,
+          "paused": false,
+          "src": ""
+        },
+        {
+          "name": "play",
+          "at": 6255.099999904633,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "waiting",
+          "at": 6255.199999809265,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "loadstart",
+          "at": 6255.5,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "playing",
+          "at": 7454.699999809265,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "suspend",
+          "at": 9482.400000095367,
+          "time": 1.569702,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        }
+      ]
+    },
+    {
+      "active": false,
+      "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3",
+      "currentSrc": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3",
+      "paused": true,
+      "time": 0,
+      "duration": 170.074083,
+      "readyState": 4,
+      "videoWidth": 0,
+      "ranges": [
+        [
+          0,
+          8.411
+        ]
+      ],
+      "events": [
+        {
+          "name": "set:src",
+          "at": 8386.900000095367,
+          "value": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        },
+        {
+          "name": "call:load",
+          "at": 8386.900000095367,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        },
+        {
+          "name": "emptied",
+          "at": 8387,
+          "time": 0,
+          "paused": true,
+          "src": ""
+        },
+        {
+          "name": "loadstart",
+          "at": 8387.5,
+          "time": 0,
+          "paused": true,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        }
+      ]
+    }
+  ],
+  "suspended": [
+    {
+      "active": true,
+      "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3",
+      "currentSrc": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3",
+      "paused": true,
+      "time": 2.616518,
+      "duration": 182.160979,
+      "readyState": 4,
+      "videoWidth": 0,
+      "ranges": [
+        [
+          0,
+          96.954
+        ]
+      ],
+      "events": [
+        {
+          "name": "call:pause",
+          "at": 6203.300000190735,
+          "src": null
+        },
+        {
+          "name": "set:src",
+          "at": 6205.599999904633,
+          "value": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "call:play",
+          "at": 6206,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "emptied",
+          "at": 6246.900000095367,
+          "time": 0,
+          "paused": false,
+          "src": ""
+        },
+        {
+          "name": "play",
+          "at": 6255.099999904633,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "waiting",
+          "at": 6255.199999809265,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "loadstart",
+          "at": 6255.5,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "playing",
+          "at": 7454.699999809265,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "suspend",
+          "at": 9482.400000095367,
+          "time": 1.569702,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "call:pause",
+          "at": 10539.5,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "pause",
+          "at": 10546.199999809265,
+          "time": 2.616518,
+          "paused": true,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        }
+      ]
+    },
+    {
+      "active": false,
+      "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3",
+      "currentSrc": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3",
+      "paused": true,
+      "time": 0,
+      "duration": 170.074083,
+      "readyState": 4,
+      "videoWidth": 0,
+      "ranges": [
+        [
+          0,
+          9.897
+        ]
+      ],
+      "events": [
+        {
+          "name": "set:src",
+          "at": 8386.900000095367,
+          "value": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        },
+        {
+          "name": "call:load",
+          "at": 8386.900000095367,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        },
+        {
+          "name": "emptied",
+          "at": 8387,
+          "time": 0,
+          "paused": true,
+          "src": ""
+        },
+        {
+          "name": "loadstart",
+          "at": 8387.5,
+          "time": 0,
+          "paused": true,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        },
+        {
+          "name": "suspend",
+          "at": 10799,
+          "time": 0,
+          "paused": true,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "active": false,
+      "src": null,
+      "currentSrc": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3",
+      "paused": true,
+      "time": 0,
+      "duration": null,
+      "readyState": 0,
+      "videoWidth": 0,
+      "ranges": [],
+      "events": [
+        {
+          "name": "call:pause",
+          "at": 6203.300000190735,
+          "src": null
+        },
+        {
+          "name": "set:src",
+          "at": 6205.599999904633,
+          "value": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "call:play",
+          "at": 6206,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "emptied",
+          "at": 6246.900000095367,
+          "time": 0,
+          "paused": false,
+          "src": ""
+        },
+        {
+          "name": "play",
+          "at": 6255.099999904633,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "waiting",
+          "at": 6255.199999809265,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "loadstart",
+          "at": 6255.5,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "playing",
+          "at": 7454.699999809265,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "suspend",
+          "at": 9482.400000095367,
+          "time": 1.569702,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "call:pause",
+          "at": 10539.5,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "pause",
+          "at": 10546.199999809265,
+          "time": 2.616518,
+          "paused": true,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "call:play",
+          "at": 10961.699999809265,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "play",
+          "at": 10969.5,
+          "time": 181.810979,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "playing",
+          "at": 10969.599999904633,
+          "time": 181.810979,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "waiting",
+          "at": 10969.900000095367,
+          "time": 181.810979,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "playing",
+          "at": 13497.099999904633,
+          "time": 181.810979,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "waiting",
+          "at": 13752.199999809265,
+          "time": 181.8316,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "suspend",
+          "at": 14667.800000190735,
+          "time": 181.8316,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "playing",
+          "at": 14672,
+          "time": 182.065916,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "pause",
+          "at": 15656,
+          "time": 182.7389,
+          "paused": true,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "call:pause",
+          "at": 15656.400000095367,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "call:load",
+          "at": 15658.099999904633,
+          "src": null
+        },
+        {
+          "name": "ended",
+          "at": 15661.099999904633,
+          "time": 0,
+          "paused": true,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        },
+        {
+          "name": "emptied",
+          "at": 15661.900000095367,
+          "time": 0,
+          "paused": true,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3",
+      "currentSrc": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3",
+      "paused": false,
+      "time": 0.510804,
+      "duration": 170.074083,
+      "readyState": 4,
+      "videoWidth": 0,
+      "ranges": [
+        [
+          0,
+          25.259
+        ]
+      ],
+      "events": [
+        {
+          "name": "set:src",
+          "at": 8386.900000095367,
+          "value": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        },
+        {
+          "name": "call:load",
+          "at": 8386.900000095367,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        },
+        {
+          "name": "emptied",
+          "at": 8387,
+          "time": 0,
+          "paused": true,
+          "src": ""
+        },
+        {
+          "name": "loadstart",
+          "at": 8387.5,
+          "time": 0,
+          "paused": true,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        },
+        {
+          "name": "suspend",
+          "at": 10799,
+          "time": 0,
+          "paused": true,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        },
+        {
+          "name": "suspend",
+          "at": 14004,
+          "time": 0,
+          "paused": true,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        },
+        {
+          "name": "call:play",
+          "at": 15661,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        },
+        {
+          "name": "play",
+          "at": 15661.900000095367,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        },
+        {
+          "name": "playing",
+          "at": 15662,
+          "time": 0,
+          "paused": false,
+          "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+        }
+      ]
+    }
+  ],
+  "handoff": {
+    "timeOrigin": 1793995970371,
+    "sameElement": true,
+    "oldReleased": true,
+    "activeCount": 1,
+    "endedAt": 15661.099999904633,
+    "playingAt": 15662,
+    "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3",
+    "events": [
+      {
+        "name": "set:src",
+        "at": 8386.900000095367,
+        "value": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+      },
+      {
+        "name": "call:load",
+        "at": 8386.900000095367,
+        "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+      },
+      {
+        "name": "emptied",
+        "at": 8387,
+        "time": 0,
+        "paused": true,
+        "src": ""
+      },
+      {
+        "name": "loadstart",
+        "at": 8387.5,
+        "time": 0,
+        "paused": true,
+        "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+      },
+      {
+        "name": "suspend",
+        "at": 10799,
+        "time": 0,
+        "paused": true,
+        "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+      },
+      {
+        "name": "suspend",
+        "at": 14004,
+        "time": 0,
+        "paused": true,
+        "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+      },
+      {
+        "name": "call:play",
+        "at": 15661,
+        "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+      },
+      {
+        "name": "play",
+        "at": 15661.900000095367,
+        "time": 0,
+        "paused": false,
+        "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+      },
+      {
+        "name": "playing",
+        "at": 15662,
+        "time": 0,
+        "paused": false,
+        "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3"
+      }
+    ],
+    "endedToPlayingMs": 0.9000000953674316
+  },
+  "redundantZeroRangeAfterAdoption": [],
+  "playbackAssertionsPassed": true,
+  "pageErrors": [],
+  "overallStatus": "passed"
+}

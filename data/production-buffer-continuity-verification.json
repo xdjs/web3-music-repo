@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-11-06T20:14:29.729720+00:00",
+  "base": "https://web3-music-repo.vercel.app",
+  "deploymentId": "dpl_7nLdveuTbLrNn4jx6zvD3mRfmDND",
+  "sourceCommit": "a75e9f3f7ef32dec81cb1993a45c7b60e3d4e20b",
+  "status": "playback-passed-with-runtime-error",
+  "playbackAssertionsPassed": true,
+  "cases": [
+    {
+      "receipt": "data/production-buffer-continuity-chromium-audio.json",
+      "engine": "chromium",
+      "kind": "audio",
+      "overallStatus": "passed",
+      "playbackAssertionsPassed": true,
+      "sameElement": true,
+      "endedToPlayingMs": 0.9000000953674316,
+      "pageErrorCount": 0,
+      "redundantZeroRangeRequests": 0
+    },
+    {
+      "receipt": "data/production-buffer-continuity-webkit-video.json",
+      "engine": "webkit",
+      "kind": "video",
+      "overallStatus": "failed",
+      "playbackAssertionsPassed": true,
+      "sameElement": true,
+      "endedToPlayingMs": 45,
+      "pageErrorCount": 1,
+      "redundantZeroRangeRequests": 0
+    },
+    {
+      "receipt": "data/production-buffer-continuity-recheck-webkit-video.json",
+      "engine": "webkit",
+      "kind": "video",
+      "overallStatus": "failed",
+      "playbackAssertionsPassed": true,
+      "sameElement": true,
+      "endedToPlayingMs": 4,
+      "pageErrorCount": 1,
+      "redundantZeroRangeRequests": 0
+    }
+  ],
+  "runtimeFinding": "WebKit emitted Permission policy Fullscreen check failed from auth.privy.io/cdn-cgi/challenge-platform/.../main.js. Reproduced once with full stack. No application or auth settings changed.",
+  "scope": "Actual source playback, pause/resume retention, native ended after a near-end seek, exact standby adoption, no early standby play or redundant source restart. No sample-accurate gapless or full-track playback guarantee.",
+  "stopped": true
+}
