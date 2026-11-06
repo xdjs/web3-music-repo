@@ -51,3 +51,29 @@ test("artwork-only metadata is never presented as a recording", () => {
     "audio",
   );
 });
+
+test("confirmed aliases unite profiles while preserving original release attribution", () => {
+  const record = {
+    ...base,
+    id: "alias-release",
+    artist: "p3t3rango",
+    tokenId: "8",
+  };
+  const out = mergeCatalog(
+    [],
+    {},
+    [
+      {
+        records: [record],
+        evidence: {
+          "alias-release": { status: "live", mediaURI: "ipfs://music" },
+        },
+      },
+    ],
+    [{ id: "pete-rango", name: "Pete Rango", aliases: ["p3t3rango"] }],
+  );
+  assert.equal(out.people.length, 1);
+  assert.equal(out.records[0].artistId, "pete-rango");
+  assert.equal(out.records[0].artist, "p3t3rango");
+  assert.deepEqual(out.records[0].personIds, ["pete-rango"]);
+});

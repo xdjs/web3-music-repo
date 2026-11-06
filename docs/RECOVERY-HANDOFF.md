@@ -57,7 +57,7 @@ After jobs finish: regenerate the report, inspect failures by reason, retry unre
 
 ## Validation
 
-- 62 unit tests pass, including adversarial receipt/currency/payout checks, metadata precedence, collector token scope, account isolation, playlist persistence, and comment provenance.
+- 63 unit tests pass, including adversarial receipt/currency/payout checks, metadata precedence, collector token scope, account isolation, playlist persistence, and comment provenance.
 - Syntax and formatting checks pass in the preview copy.
 - Rendered music metadata/revenue and My profile verified at 1440px and 390px, light and dark, with no overflow or browser errors. Profile tabs do not shift, and the loading placeholder disappears.
 - Browser verification passed playback, search, likes, Pete credits, live ownership/collectors, contract rereads, comments, mobile navigation, and local playlist create/add/reorder/rename/reload/play/next/remove/delete.
@@ -87,3 +87,7 @@ Catalog: `src/catalog-holders.mjs`, `src/catalog-revenue.mjs`, `scripts/recover-
 Comments: `src/zora-comments.mjs`, `scripts/recover-zora-onchain-comments.mjs`, `evidence/zora-comments/`.
 
 The new repository contains implementation and public data, not credentials or a production deployment. Keep that boundary explicit in the next handoff.
+
+## November 6 artist identity follow-up
+
+Pete confirmed `p3t3rango`. Both names now resolve to one profile and search finds all ten explicitly attributed records. Five missing collaborator relationships were sourced and linked; IOI was already imported under the separate alias. See `docs/platform-and-pete-coverage.md` for the ten-record audit, the unimported Zora rush lead, Mint Songs/Nina/Async/Royal gaps, and current Catalog BPM/key coverage. This is not a complete discography.

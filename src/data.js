@@ -1278,6 +1278,8 @@ miamiFreestyle.personIds = [
 miamiFreestyle.note =
   "CAMPFIRE’s genesis release came from its Art Basel artist camp in Miami. Produced by AbJo; mixed and mastered by Pete Rango; artwork by Karey and TK. Original release notes describe CAMPFIRE S1 as songs voted on by its community.";
 const peteContext = people.find((p) => p.id === "pete-rango");
+// Alias confirmed by Pete; original platform artist names remain preserved.
+peteContext.aliases = [...new Set([...(peteContext.aliases || []), "p3t3rango"])];
 peteContext.sources = [
   ...new Set([...peteContext.sources, "credit-record-69c77ef0"]),
 ];
@@ -1293,7 +1295,7 @@ Object.assign(sources, {
     date: "11 July 2023",
     kind: "Original project post",
     url: "https://x.com/Campfire_xyz/status/1678835225378553856",
-    note: "Names the performers and credits Pete Rango as co-producer. Original Sound link is sound.xyz/campfire/yell-and-scream. Contract and original media have not yet been resolved into this prototype; this source does not establish playback availability.",
+    note: "Names the performers and credits Pete Rango as co-producer. Original Sound link is sound.xyz/campfire/yell-and-scream. The release now has a recovered token/media reference in the catalog; playback verification is tracked separately.",
   },
   campfireMoving: {
     title: "Moving On: CAMPFIRE release post",
@@ -1311,7 +1313,7 @@ const campfireContext = people.find((p) => p.id === "campfire");
 Object.assign(campfireContext, {
   kind: "Collective",
   role: "Collaborative artist camps and community-selected releases",
-  bio: "CAMPFIRE’s MIAMI FREESTYLE release notes describe an Art Basel camp in Miami with more than 50 artists collaborating. The project describes its S1 releases as songs selected by community vote. Its own 2023 posts also document Yell & Scream and Moving On. Only Miami Freestyle is currently playable in this selection; the other releases are documented below while their original media is being recovered.",
+  bio: "CAMPFIRE’s MIAMI FREESTYLE release notes describe an Art Basel camp in Miami with more than 50 artists collaborating. The project describes its S1 releases as songs selected by community vote. Its own 2023 posts also document Yell & Scream and Moving On. Recovered media references and source-only leads are distinguished in the catalog; playback and discography coverage remain partial.",
   sources: [...campfireContext.sources, "campfireYell", "campfireMoving"],
 });
 

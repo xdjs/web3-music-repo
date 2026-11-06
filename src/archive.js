@@ -188,7 +188,14 @@ function explore(onlyLikes = false) {
   if (query) {
     const q = query.toLowerCase();
     list = list.filter((r) =>
-      [r.title, r.artist, ...(r.personIds || []).map((id) => person(id).name)]
+      [
+        r.title,
+        r.artist,
+        ...(r.personIds || []).flatMap((id) => [
+          person(id).name,
+          ...(person(id).aliases || []),
+        ]),
+      ]
         .join(" ")
         .toLowerCase()
         .includes(q),
@@ -227,7 +234,9 @@ function artists() {
     (id) =>
       artistRecords(id).length &&
       (!artistQuery ||
-        person(id).name.toLowerCase().includes(artistQuery.toLowerCase())),
+        [person(id).name, ...(person(id).aliases || [])].some((name) =>
+          name.toLowerCase().includes(artistQuery.toLowerCase()),
+        )),
   );
   return `<div class="intro"><div><h1>Artists & collaborators</h1><p>The people behind the records. Credits are preserved where documented.</p></div></div><label class="artist-search-label">Find an artist<input id="artist-search" type="search" placeholder="Search artist names…" value="${esc(artistQuery)}"></label><p class="link-note">${ids.length} artists and collaborators</p><div class="artist-grid section">${ids.slice(0, artistLimit).map(artistCard).join("")}</div>${ids.length > artistLimit ? '<button class="outline-button more" data-more-artists>Load more artists</button>' : ""}`;
 }
@@ -342,7 +351,7 @@ function recordPage(id) {
     )
     .join(
       "",
-    )}</div><div role="tabpanel">${tab === "comments" ? songComments(r) : tab === "proof" ? proof(r) : tab === "collectors" ? `${collectors.panel(r, true)}<details class="ownership-tools"><summary>Additional ownership tools</summary><div class="reading"><h2>Who holds this edition?</h2><p>Read the owner of token ${r.tokenId} directly from ${chainNames[r.chainId]}. This is the current holder of one edition, not a complete collector list or proof of who originally minted it.</p></div><div id="owner-result"><button class="outline-button" data-owner="${r.id}">Read owner from the blockchain ↗</button></div><div class="reading"><h2>Contract holders</h2><p>Current balances reported by the chain indexer. A contract may contain multiple songs; these holders are not automatically collectors of this particular track. ENS labels are current indexer data.</p></div><button class="outline-button" data-holders="${r.id}">Load indexed holders</button><div id="holders-result"></div><div class="notice">Full mint-history reconstruction is still in progress. Today’s owner is not necessarily the original supporter.</div></details>` : `<div class="reading"><h2>Behind the music</h2>${musicFactBadges(r)}<p>${esc(r.note || "Recovered from an original music NFT. Follow the provenance tab to inspect its source.")}</p>${r.credits?.length ? `<h2>Credits</h2>${r.credits.map((c) => `<p><a href="#artist/${c.personId}">${esc(person(c.personId).name)}</a> — ${esc(c.role)}</p>`).join("")}` : ""}${metadataCredits(r)}${songRevenue(r)}<h2>Preservation notes</h2><p>This archive holds a selected token reference for this work. A single recording can have many editions, and a contract can hold multiple works. The catalog is a starting point for recovery, not a claim of completeness.</p>${r.originalRelease ? `<p><a class="error-link" href="https://web.archive.org/web/*/${esc(r.originalRelease)}" target="_blank" rel="noopener noreferrer">Find the original release in the Internet Archive ↗</a></p>` : ""}<p><a class="error-link" href="${recordLink(r)}?tab=proof">Inspect the contract and original storage addresses ↗</a></p></div>${collectors.panel(r, true)}`}</div>`;
+    )}</div><div role="tabpanel">${tab === "comments" ? songComments(r) : tab === "proof" ? proof(r) : tab === "collectors" ? `${collectors.panel(r, true)}<details class="ownership-tools"><summary>Additional ownership tools</summary><div class="reading"><h2>Who holds this edition?</h2><p>Read the owner of token ${r.tokenId} directly from ${chainNames[r.chainId]}. This is the current holder of one edition, not a complete collector list or proof of who originally minted it.</p></div><div id="owner-result"><button class="outline-button" data-owner="${r.id}">Read owner from the blockchain ↗</button></div><div class="reading"><h2>Contract holders</h2><p>Current balances reported by the chain indexer. A contract may contain multiple songs; these holders are not automatically collectors of this particular track. ENS labels are current indexer data.</p></div><button class="outline-button" data-holders="${r.id}">Load indexed holders</button><div id="holders-result"></div><div class="notice">Full mint-history reconstruction is still in progress. Today’s owner is not necessarily the original supporter.</div></details>` : `<div class="reading"><h2>Behind the music</h2>${musicFactBadges(r)}<p>${esc(r.note || "Recovered from an original music NFT. Follow the provenance tab to inspect its source.")}</p>${r.credits?.length ? `<h2>Credits</h2>${r.credits.map((c) => `<p><a href="#artist/${c.personId}">${esc(person(c.personId).name)}</a> — ${esc(c.role)}${c.source ? ` · <a class="link-note" href="${esc(c.source)}" target="_blank" rel="noopener noreferrer">Credit source ↗</a>` : ""}</p>`).join("")}` : ""}${metadataCredits(r)}${songRevenue(r)}<h2>Preservation notes</h2><p>This archive holds a selected token reference for this work. A single recording can have many editions, and a contract can hold multiple works. The catalog is a starting point for recovery, not a claim of completeness.</p>${r.originalRelease ? `<p><a class="error-link" href="https://web.archive.org/web/*/${esc(r.originalRelease)}" target="_blank" rel="noopener noreferrer">Find the original release in the Internet Archive ↗</a></p>` : ""}<p><a class="error-link" href="${recordLink(r)}?tab=proof">Inspect the contract and original storage addresses ↗</a></p></div>${collectors.panel(r, true)}`}</div>`;
 }
 function catalogCoverageView() {
   const c = coverage?.catalogWorks;

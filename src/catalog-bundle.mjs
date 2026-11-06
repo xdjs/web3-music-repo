@@ -106,6 +106,7 @@ export function createCatalogLoader() {
       "data/music-metadata.json",
       "data/audio-analysis.json",
       "data/catalog/song-revenue.json",
+      "data/verified-credits.json",
     ];
     const next = paths
       .map((p) => {
@@ -143,6 +144,28 @@ export function createCatalogLoader() {
         ...read(paths[5], { results: {} }).results,
       },
     };
+    const verifiedCredits = read(paths[12], { records: {} }).records;
+    for (const record of merged.records) {
+      const additions = (verifiedCredits[record.id] || []).filter((c) =>
+        merged.people.some((p) => p.id === c.personId),
+      );
+      if (!additions.length) continue;
+      record.personIds = [
+        ...new Set([
+          ...(record.personIds || []),
+          ...additions.map((c) => c.personId),
+        ]),
+      ];
+      record.credits = [
+        ...(record.credits || []),
+        ...additions.filter(
+          (c) =>
+            !record.credits?.some(
+              (old) => old.personId === c.personId && old.role === c.role,
+            ),
+        ),
+      ];
+    }
     const musicMetadata = read(paths[9], { records: {} }).records;
     const audioAnalysis = read(paths[10], { records: {} }).records;
     const revenue = read(paths[11], { records: {} }).records;
