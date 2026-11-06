@@ -1,0 +1,16 @@
+# Collector discovery and collections
+
+The global search includes public wallet addresses, resolved ENS names, and names from recovered Sound profiles. Results retain explicit wallet addresses and historical identity labels. Enter opens a complete wallet address or an ENS name only after exact resolution; display-name results always require choosing a profile, even when only one match is found. Failed lookups remain errors, not empty successful searches. Successful empty collector results for ordinary music/name queries are hidden so music results stay first; ENS/address absence remains visible. Requests are debounced and stale responses cannot replace a newer search.
+
+Collector profiles embed the same search, platform/network/collection/media filters and sorting used by My collection. Existing public wallet scans load the first page on each supported EVM network. A separately labeled Spinamp collection snapshot loads one page automatically; further pages require an explicit action. Its ownership freshness is unknown, and its recordings do not enter the signed-in listener’s linked-wallet collection. The same filters apply to both sections. NFT-entry counts and matched-recording counts remain distinct.
+
+Failed snapshot pagination retains prior items and its cursor for retry. Arriving data preserves filter focus and text. Historical observations are collapsed below the listening interface, with a warning that purchases and old ownership snapshots do not establish current holdings. Empty historical observation panels are omitted. Song playback uses the existing cards and queue, whose automatic context deduplicates recordings repeated across sections.
+
+## Verification
+
+- `tests/collector-search.test.mjs` covers exact identity selection, ambiguous names, stale asynchronous responses, unavailable providers, and escaped result markup. Alongside existing collection/state tests, thirteen focused tests passed.
+- `scripts/verify-collector-discovery.mjs` runs the actual app with deterministic public API fixtures at 1440px and 390px in both themes. `data/collector-discovery-verification.json` records search navigation, name ambiguity, shared filters, automatic first snapshot page, explicit pagination, failed-page retry with unchanged cursor, preserved filter focus, no horizontal overflow, and no page errors. These fixtures are not real-account ownership verification.
+- Captures use `collector-search-*`, `collector-profile-*`, `collector-collection-*`, and `collector-snapshot-*` prefixes. Some remote artwork can remain placeholders; complete artwork recovery is not claimed.
+- Actual public API/browser smoke is recorded separately in `data/collector-discovery-live-verification.json`: name search returned four explicit profiles; Pete’s wallet loaded 20 then 40 of 256 indexed NFT entries, yielding 8 then 19 distinct recovered recordings. Filters worked at desktop dark and mobile light sizes without page errors or overflow. `captures/collector-live-*` were visually reviewed. Those immediate captures still show remote cover placeholders; media playback and complete wallet recovery are not asserted by this test.
+
+Solana wallet collection lookup remains unsupported. Catalog recovery, provider pagination, and index freshness limit collection completeness.

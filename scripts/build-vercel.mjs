@@ -23,6 +23,7 @@ const frontend = [
   "wallet-library-ui.mjs",
   "wallet-library-state.mjs",
   "collectors-ui.mjs",
+  "collector-search.mjs",
   "media-recovery.js",
   "media-preload.mjs",
   "next-track-buffer.mjs",

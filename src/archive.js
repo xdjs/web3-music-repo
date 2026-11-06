@@ -1,3 +1,8 @@
+import {
+  createCollectorSearch,
+  collectorSearchMarkup,
+  exactCollectorAddress,
+} from "./collector-search.mjs";
 import { isSolanaAsset } from "./solana-identity.mjs";
 import { collectionSelect } from "./collection-filters.mjs";
 import { shareEntity } from "./entity-share.mjs";
@@ -132,6 +137,8 @@ const collectors = mountCollectors({
   chainNames,
   catalog: () => catalog,
   recordLink,
+  collectionView: (address) =>
+    walletLibrary.view(address, false, { profile: true }),
   rerender: () => route(),
 });
 let audio = $("#audio");
@@ -234,6 +241,22 @@ function home() {
       .filter(Boolean);
   return `<div class="intro"><div><h1>The music remains.</h1><p>A living archive of the music NFT era. Follow the records. Press play.</p></div><span class="live-note"><i class="status-dot"></i> Recovery in progress</span></div><section class="hero" aria-label="Featured recording"><img class="hero-bg" src="${esc(image(hero))}" alt=""><div class="hero-copy"><span class="eyebrow"><i class="status-dot"></i> RECOVERED FROM ETHEREUM + ARWEAVE</span><h2>MIAMI<br>FREESTYLE</h2><p class="artist">CAMPFIRE · Aly, Tarot, Elle Symone, Early & TK</p><div class="hero-actions"><button class="primary" data-play="${hero.id}">▶ &nbsp; Listen now</button><a class="hero-proof" href="${recordLink(hero)}?tab=proof">Follow the onchain record ↗</a></div></div><div class="hero-credit"><span>PEOPLE BEHIND THE RECORD</span><a href="#artist/pete-rango"><div>Pete Rango<small>Mixing & mastering</small></div><img src="/people/pete-rango-160.webp" alt=""></a><a href="#artist/abjo"><div>AbJo<small>Production</small></div>${portrait("abjo") ? `<img src="${esc(portrait("abjo"))}" alt="">` : '<span class="credit-initial" aria-hidden="true">A</span>'}</a></div><img class="hero-waveform" src="/recovered/miami-waveform.svg" alt="Waveform derived from the recovered MIAMI FREESTYLE audio"><div class="hero-bottom"><span>◈ Ethereum &nbsp; → &nbsp; Arweave metadata &nbsp; → &nbsp; Original audio</span><span>The platform went offline.<br>The record is still here.</span></div></section><div class="proof-strip"><span><b>${summary.catalogued}</b> records catalogued &nbsp; · &nbsp; <b>${summary.readable}</b> metadata reads recovered</span><span>${summary.chains.join(" · ")}</span><a href="#recovery">Explore the evidence ↗</a></div><section class="section"><div class="section-head"><div><h2>Back in rotation</h2><p>Original music, recovered through its tokens.</p></div><a class="text-button" href="#explore">Explore all ↗</a></div><div class="cards home-cards">${picks.map(card).join("")}</div></section><section class="section"><div class="section-head"><div><h2>The people who made the era</h2><p>Artists, collaborators, and the work that connects them.</p></div><a class="text-button" href="#artists">Meet everyone ↗</a></div><div class="artist-grid">${featuredArtists.map(artistCard).join("")}</div></section><div class="archive-callout"><div class="archive-symbol">◈</div><div><h3>A platform can disappear. A record can survive.</h3><p>We read the original contracts and follow their metadata to the music. Every recording has a trail you can inspect. Web-archived memories are labeled separately.</p></div><a class="outline-button" href="#recovery">How recovery works ↗</a></div>`;
 }
+const collectorSearch = createCollectorSearch({
+  fetchResults: async (value, signal) => {
+    const response = await fetch(
+      "/api/collector-search?q=" + encodeURIComponent(value),
+      { signal: AbortSignal.any([signal, AbortSignal.timeout(22000)]) },
+    );
+    const result = await response.json();
+    if (!response.ok) throw Error("Collector search unavailable");
+    return result;
+  },
+  onChange: (state) => {
+    const target = document.querySelector("[data-collector-search]");
+    if (target && query.trim() === state.query)
+      target.innerHTML = collectorSearchMarkup(state, esc);
+  },
+});
 function explore(onlyLikes = false) {
   const owned =
     myCollectionOnly && !onlyLikes ? walletLibrary.ownedSnapshot() : null;
@@ -315,7 +338,7 @@ function explore(onlyLikes = false) {
     ["title", "Title A–Z"],
     ["artist", "Artist A–Z"],
   ])}</div>${activeFilters ? '<div class="filter-reset"><button class="text-button" data-clear-filters>Reset filters</button></div>' : ""}`;
-  return `<div class="intro"><div><h1>${onlyLikes ? "Liked sounds" : query ? "Search the archive" : "Explore the archive"}</h1><p>${onlyLikes ? "Your selections, saved in this browser." : query ? `Results for “${esc(query)}”` : "Find songs, artists, and collections from the web3 music era"}</p></div></div><div class="filters">${["All", "Sound", "Catalog", "Zora", "Mint Songs", "Supercollector", "Nina", "Other platforms"].map((f) => `<button class="chip ${filter === f ? "active" : ""}" data-filter="${f}" aria-pressed="${filter === f}">${f}</button>`).join("")}${!onlyLikes ? `<button class="chip ${myCollectionOnly ? "active" : ""}" data-owned-filter aria-pressed="${myCollectionOnly}">My collection</button>` : ""}<span class="results">${list.length.toLocaleString()} records</span></div>${ownedNotice}${controls}${["oldest", "newest"].includes(facets.sort) ? '<p class="sort-date-note">Sorted by indexed release or token dates. Undated recordings appear last.</p>' : ""}${list.length ? `<div class="cards library-grid">${list.slice(0, limit).map(card).join("")}</div>${list.length > limit ? '<button class="outline-button more" data-more>Load more recordings</button>' : ""}` : `<div class="empty"><h2>${onlyLikes ? "Make yourself a collection." : "No recordings found."}</h2>${onlyLikes ? "Tap the heart on any recording to keep it here." : "Try another artist, title, or platform."}</div>`}`;
+  return `<div class="intro"><div><h1>${onlyLikes ? "Liked sounds" : query ? "Search the archive" : "Explore the archive"}</h1><p>${onlyLikes ? "Your selections, saved in this browser." : query ? `Results for “${esc(query)}”` : "Find songs, artists, and collections from the web3 music era"}</p></div></div>${!onlyLikes ? `<div data-collector-search>${collectorSearchMarkup(collectorSearch.snapshot(), esc)}</div>` : ""}<div class="filters">${["All", "Sound", "Catalog", "Zora", "Mint Songs", "Supercollector", "Nina", "Other platforms"].map((f) => `<button class="chip ${filter === f ? "active" : ""}" data-filter="${f}" aria-pressed="${filter === f}">${f}</button>`).join("")}${!onlyLikes ? `<button class="chip ${myCollectionOnly ? "active" : ""}" data-owned-filter aria-pressed="${myCollectionOnly}">My collection</button>` : ""}<span class="results">${list.length.toLocaleString()} records</span></div>${ownedNotice}${controls}${["oldest", "newest"].includes(facets.sort) ? '<p class="sort-date-note">Sorted by indexed release or token dates. Undated recordings appear last.</p>' : ""}${list.length ? `<div class="cards library-grid">${list.slice(0, limit).map(card).join("")}</div>${list.length > limit ? '<button class="outline-button more" data-more>Load more recordings</button>' : ""}` : `<div class="empty"><h2>${onlyLikes ? "Make yourself a collection." : "No recordings found."}</h2>${onlyLikes ? "Tap the heart on any recording to keep it here." : "Try another artist, title, or platform."}</div>`}`;
 }
 function artists() {
   const ids = [
@@ -1079,6 +1102,7 @@ document.addEventListener("click", async (e) => {
     facets = { network: "", media: "", sort: "archive", collection: "" };
     query = "";
     $("#search").value = "";
+    collectorSearch.search("");
     limit = 40;
     route();
   }
@@ -1250,9 +1274,29 @@ document.addEventListener("change", (e) => {
 });
 $("#search").addEventListener("input", (e) => {
   query = e.target.value;
+  collectorSearch.search(query);
   limit = 40;
   if (location.hash !== "#explore") location.hash = "explore";
   else route();
+});
+$("#search").addEventListener("keydown", async (event) => {
+  if (event.key !== "Enter") return;
+  event.preventDefault();
+  const value = event.target.value.trim();
+  const direct = exactCollectorAddress(value);
+  if (direct) {
+    location.hash = "collector/" + direct;
+    return;
+  }
+  const result = await collectorSearch.search(value, true);
+  if (
+    !result ||
+    $("#search").value.trim() !== value ||
+    location.hash !== "#explore"
+  )
+    return;
+  const resolved = exactCollectorAddress(value, result);
+  if (resolved) location.hash = "collector/" + resolved;
 });
 document.addEventListener("input", (e) => {
   if (e.target.id === "artist-search") {

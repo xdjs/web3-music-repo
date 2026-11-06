@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-11-06T21:37:52.295Z",
+  "base": "http://127.0.0.1:4191",
+  "scope": "Cross-origin sandbox matching Lab. No OTP, wallet signature or account mutation. Local top-level SDK initialization only; real login requires an approved origin.",
+  "views": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "theme": "light",
+      "authRequests": 0,
+      "nestedFrames": 0,
+      "overflow": false,
+      "capture": "captures/embedded-account-chromium-1440-light.png",
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "theme": "dark",
+      "authRequests": 0,
+      "nestedFrames": 0,
+      "overflow": false,
+      "capture": "captures/embedded-account-chromium-1440-dark.png",
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "theme": "light",
+      "authRequests": 0,
+      "nestedFrames": 0,
+      "overflow": false,
+      "capture": "captures/embedded-account-chromium-390-light.png",
+      "errors": [],
+      "escape": {
+        "topLevel": true,
+        "openerNull": true,
+        "hash": "#me"
+      },
+      "directAccountModuleLoaded": true,
+      "directAccountControl": "My profile"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "theme": "dark",
+      "authRequests": 0,
+      "nestedFrames": 0,
+      "overflow": false,
+      "capture": "captures/embedded-account-chromium-390-dark.png",
+      "errors": [],
+      "escape": {
+        "topLevel": true,
+        "openerNull": true,
+        "hash": "#me"
+      },
+      "directAccountModuleLoaded": true,
+      "directAccountControl": "My profile"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "theme": "dark",
+      "authRequests": 0,
+      "nestedFrames": 0,
+      "overflow": false,
+      "capture": "captures/embedded-account-webkit-390-dark.png",
+      "errors": [],
+      "escape": {
+        "topLevel": true,
+        "openerNull": true,
+        "hash": "#me"
+      },
+      "directAccountModuleLoaded": true,
+      "directAccountControl": "My profile"
+    }
+  ],
+  "status": "passed"
+}
