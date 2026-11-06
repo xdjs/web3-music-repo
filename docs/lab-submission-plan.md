@@ -1,39 +1,40 @@
-# Music NFT Recovery on Music Nerd Lab
+# web3-music-archive on Music Nerd Lab
 
-Status: **published cookbook update, independently verified** on November 6, 2026 at 19:48 UTC. Pete authorized updating the existing listing after the new main release.
+Status: **rename published and independently verified** on November 6, 2026 at 22:16 UTC. The user requested the exact name `web3-music-archive` for the site and its Lab listing.
 
-Public listing: https://lab.musicnerd.net/peterango/music-nft-recovery .
+Public listing: https://lab.musicnerd.net/peterango/music-nft-recovery . The existing listing ID and URL remain stable.
 
-## Preserved listing identity and presentation
+## Published changes and preserved identity
 
-- ID `music-nft-recovery`; creator `peterango`, with explicit **Originated by Pete Rango** credit.
-- Launch https://web3-music-repo.vercel.app/ ; source https://github.com/xdjs/web3-music-repo/tree/main .
-- The current thumbnail is https://raw.githubusercontent.com/xdjs/music-nerd-lab/ae9d01386a15de69c0333d633bd560e15cf883f0/public/social/music-nft-recovery-web-v3.png .
-- Category Artifacts, embedded mode, no requested camera/microphone permissions.
-- Only cookbook/About changed. Name, description, starter recipe, thumbnail, embedded mode, tools, source, launch URL, permissions and published status were preserved exactly.
+- Display name: **web3-music-archive**.
+- Launch/embedded app: https://web3-music-archive.vercel.app/ .
+- Cover: https://web3-music-archive.vercel.app/social/web3-music-archive-v1.png .
+- Cookbook/About: updated opening identity and added accurate descriptions of fresh-visit editorial homepage rotation, automatic signed-in playlist synchronization with visible saving/offline/retry states, and public collector search/library filters with separate source scopes.
 
-An immediate pre-publication read found a separate 19:42 UTC update had changed the thumbnail and embedded mode. The old local draft was corrected to preserve that newer state, and a second read immediately before publication confirmed it had not changed again. No duplicate listing was created.
+Only `name`, `url`, `screenshot`, and `about` changed. The description, reusable starter recipe, source URL, tools, category, embedded mode, permissions, published status, creator/ownership fields, and all other stored fields except the update timestamp were independently compared with the immediate pre-publication record and preserved exactly. The cookbook retains **Originated by Pete Rango**. No duplicate listing was created, and the GitHub repository was not renamed: https://github.com/xdjs/web3-music-repo/tree/main .
 
-## Updated cookbook
+The preserved embedded mode displays the app instead of a thumbnail hero. The new thumbnail is stored for Lab surfaces that use it. Its public response was verified as a 1200×630 PNG, 95,710 bytes, SHA256 `555665dffa499732810963a28fd9a8c6c9cab48c6e93748e5dd6792638863874`, matching the approved deployed asset.
 
-The cookbook describes the 37,274-entry checkpoint, including 6,054 Nina entries; source-indexed Solana mint identity and unavailable Solana ownership support; song, artist and playlist social links; wallet-matched Explore filtering; contextual queues; source-preserving gateway fallback; separately indexed audio copies; and the distinct artist-supplied correction. It retains incomplete-coverage and sampled-playback limitations. The reusable starter recipe remains unchanged.
+## Publication and independent read-back
 
-## API and independent verification
+The latest public record was read before preparing the change, then read again immediately before publication. A full-record comparison confirmed no intervening edit. The update used the existing creator-scoped publishing key through `PUT https://lab.musicnerd.net/api/recipes`; no credential was logged or committed. HTTP 200 returned ID `music-nft-recovery`, creator `peterango`, status `published`, and update time `2026-11-06T22:15:33.104955+00:00`.
 
-The update used `PUT https://lab.musicnerd.net/api/recipes` with the existing creator-scoped publishing key. The API returned HTTP 200, `creator=peterango`, `status=published`, and `updated_at=2026-11-06T19:46:38.494244+00:00`. No credential was logged or committed, and no database or Lab source/schema was changed.
+Fresh unauthenticated public Supabase REST reads independently confirmed every submitted field and equality of all other fields with the pre-publication row. There were no direct database writes, migrations, schema changes, or changes to Lab source code. The Supabase connector did not expose a usable connection identifier, so the read-back used the same public read endpoint as Lab itself; publishing continued through the creator-scoped API.
 
-An independent read-only SELECT confirmed the new cookbook and exact equality of every non-cookbook field with the immediate pre-publication row. Evidence: `data/lab-update-persistence.json`.
+## Render verification
 
-The public cookbook, Pete Rango originator credit, starter recipe and main source link were checked in the browser at 1440 and 390px. The embedded iframe points to the correct live app. The initial captured iframe area was blank, but a bounded follow-up inspection confirmed the recovery homepage and catalog loaded after additional time. Embedded login remains limited: the Privy authentication frame rejected the Lab ancestor under its current `frame-ancestors` policy, and a wallet-provider probe raised a cross-origin `window.ethereum` SecurityError. No auth settings were changed. This verification does **not** establish embedded login or playback; the direct recovery app passed its separate production checks. See `data/lab-embed-inspection.json`. Lab's existing mobile document width is 392px at a 390px viewport; the Lab layout was not changed.
+Actual Lab pages were checked at 1440px and 390px. The renamed title, unchanged recipe, explicit Pete Rango originator credit, expanded cookbook, and new iframe target were verified. Early captures showed the embedded loading shell; these were replaced after a bounded wait for the actual archive homepage heading and featured recording. The final captures show the loaded embedded homepage at both widths. No media was played during this listing verification, and complete remote artwork loading is not asserted.
 
-Rendered evidence: `data/lab-submission-verification.json`, `captures/lab-listing-1440.png`, `captures/lab-listing-390.png`. The independently changed thumbnail is verified in persistence; embedded mode displays the app frame instead of the old thumbnail hero.
+Lab's existing mobile document remains 392px wide at a 390px viewport, as before this update. No Lab layout changes were made. Account completion, real cross-device playlist writes, and physical-device playback are not established by this listing test.
 
-## Release verified before publication
+Evidence: `data/lab-rename-verification.json`, `captures/lab-rename-1440.png`, `captures/lab-rename-390.png`, and `captures/lab-rename-cookbook-1440.png` / `captures/lab-rename-cookbook-390.png`. Public full-row before/after payloads remain in ignored `work/lab-rename/`; the committed receipt contains only the necessary public verification facts.
 
-Deployment `dpl_7uT6F78Wq8syoHRHUMW4BZJHAJia`, main commit `3a79a4d58a7fe16b475991b867fdbb34d7e4910e`, stable URL https://web3-music-repo.vercel.app . Four entity share routes returned specific social metadata and opened their matching app pages without autoplay. All four light/dark 1440/390 share landing captures were visually inspected. CAMPFIRE's local portrait loaded; the corrected Planet X MP4 returned matching byte-range content. Endless and Army of Love both decoded and advanced using their exact verified preserved-copy CIDs. These are bounded samples, not whole-catalog playback certification.
+## Live app release checked before publication
 
-Evidence: `data/production-share-pages-verification.json`, `data/production-preserved-copy-verification.json`, and corresponding production captures. The full frozen-source suite passed 269 tests before deployment.
+Root confirmed the new origin and cover were live, and the actual new-origin Privy modal returnedHTTP 200, before authorizing the Lab update. The app release is source commit `43704fdc498c290adae1a1a724656f24ee06f188`, deployment `dpl_2VkCTfCs8Mrxji1MKUEbt6rC8H6G`. Independent app tests and their limitations remain in their respective playback, collector, homepage and playlist-sync documents. This Lab rename does not claim whole-catalog playback or a complete blockchain census.
 
-## Embedded account follow-up
+## Prior checkpoints
 
-The later account release resolves the unusable nested sign-in path by opening account actions in the full recovery app. In the actual Lab iframe, the recovery app now renders its account card without loading Privy or creating nested auth frames. Its explicit native sign-in link opens a top-level recovery tab, where the real email/wallet modal was verified on production. Lab listing fields and auth origin policies were unchanged. See `data/production-embedded-account-verification.json` and `docs/privy-login-status.md`. Listening remains available inside Lab; account completion was not tested because no OTP or wallet signature was submitted.
+The previous listing was named Music NFT Recovery and launched `https://web3-music-repo.vercel.app/`. Its cookbook update at 19:46 UTC preserved a separately updated cover and embedded mode. Historical evidence remains in `data/lab-update-persistence.json` and `data/lab-submission-verification.json`.
+
+The embedded account follow-up uses a native new-tab sign-in link before importing Privy inside Lab. Standalone account actions open in the full app; no nested login completion is claimed. See `data/production-embedded-account-verification.json` and `docs/privy-login-status.md` for that separate release.

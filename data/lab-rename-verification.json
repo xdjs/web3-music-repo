@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-11-06T22:16:49.366Z",
+  "listingURL": "https://lab.musicnerd.net/peterango/music-nft-recovery",
+  "id": "music-nft-recovery",
+  "name": "web3-music-archive",
+  "url": "https://web3-music-archive.vercel.app/",
+  "cover": "https://web3-music-archive.vercel.app/social/web3-music-archive-v1.png",
+  "viewports": [
+    {
+      "width": 1440,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "nameRendered": true,
+      "embeddedTargetCorrect": true,
+      "embeddedHomepageRendered": true,
+      "cookbookAndRecipeRendered": true
+    },
+    {
+      "width": 390,
+      "dimensions": {
+        "viewport": 390,
+        "document": 392
+      },
+      "nameRendered": true,
+      "embeddedTargetCorrect": true,
+      "embeddedHomepageRendered": true,
+      "cookbookAndRecipeRendered": true
+    }
+  ],
+  "coverVerified": {
+    "bytes": 95710,
+    "sha256": "555665dffa499732810963a28fd9a8c6c9cab48c6e93748e5dd6792638863874",
+    "width": 1200,
+    "height": 630
+  },
+  "updatedAt": "2026-11-06T22:15:33.104955+00:00",
+  "creator": "peterango",
+  "preservedOtherFields": true,
+  "publishHTTPStatus": 200,
+  "readbackMethod": "Fresh unauthenticated public Supabase REST SELECT (mn_apps)",
+  "sourceCommit": "43704fdc498c290adae1a1a724656f24ee06f188",
+  "deploymentId": "dpl_2VkCTfCs8Mrxji1MKUEbt6rC8H6G",
+  "changedFields": [
+    "name",
+    "url",
+    "screenshot",
+    "about"
+  ],
+  "stableListingId": true,
+  "originatorCreditPreserved": true,
+  "starterRecipePreserved": true,
+  "visuallyReviewed": true
+}

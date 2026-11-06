@@ -12,7 +12,7 @@ Manual playlist save/load controls are replaced by automatic signed-in sync: acc
 
 Collection updates reconcile mounted cards rather than rebuilding their images and preserve the viewport anchor as results arrive. Native browser tests show one artwork request, zero extra loads, and zero card displacement in the delayed-network case. Slow remote gateways still affect image/media loading; no listening transcodes were introduced. See `docs/collection-render-performance.md`.
 
-Validation: 307 unit tests pass; syntax, formatting and production build pass. Desktop/mobile light/dark homepage, artist row, playlist UI and name/thumbnail checks passed. Deployment receipt follows publication.
+Validation: 307 unit tests pass; syntax, formatting and production build pass. Desktop/mobile light/dark homepage, artist row, playlist UI and name/thumbnail checks passed. PR #9 merged as `43704fdc498c290adae1a1a724656f24ee06f188` and deployed from the clean source commit as `dpl_2VkCTfCs8Mrxji1MKUEbt6rC8H6G`. The new origin is READY, served asset hashes match, canonical sharing uses the new address, and actual random home navigation/reload plus real Privy login modal checks pass. Lab name, launch URL, cover and About update were independently read back and rendered. See `data/release-home-sync-rename-2026-11-06.json`.
 
 ## Previous production release — collector discovery and embedded sign-in
 

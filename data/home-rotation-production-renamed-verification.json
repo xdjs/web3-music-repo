@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-11-06T22:14:41.287Z",
+  "base": "https://web3-music-archive.vercel.app",
+  "scope": "Actual production random selections and routes, without API fixtures or injected randomness.",
+  "cases": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "errors": [],
+      "title": "web3-music-archive — Music Nerd",
+      "hero": "record-00396a23",
+      "artistLinks": [
+        "#artist/rosalie",
+        "#artist/artist-curtis-roach",
+        "#artist/artist-rms",
+        "#artist/artist-truong-khanh",
+        "#artist/pat-junior",
+        "#artist/black-dave-mk2",
+        "#artist/artist-poolside"
+      ],
+      "artistPage": "Rosalie",
+      "internalRevisitStable": true,
+      "nextHero": "record-not4me",
+      "nextArtistLinks": [
+        "#artist/artist-pussy-riot",
+        "#artist/artist-annika-rose",
+        "#artist/artist-tika",
+        "#artist/spinamp-artist-4d46af76b686864253af",
+        "#artist/artist-blondish",
+        "#artist/songcamp",
+        "#artist/artist-fat-ron"
+      ],
+      "passed": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "errors": [],
+      "title": "web3-music-archive — Music Nerd",
+      "hero": "record-28b708ee",
+      "artistLinks": [
+        "#artist/spinamp-artist-5721a942991496131790",
+        "#artist/artist-miles-ryan-harris",
+        "#artist/artist-sky-bravo",
+        "#artist/artist-egg-records",
+        "#artist/being-there",
+        "#artist/artist-angelbaby",
+        "#artist/dutchyyy"
+      ],
+      "artistPage": "Lyrah",
+      "internalRevisitStable": true,
+      "nextHero": "record-69c77ef0",
+      "nextArtistLinks": [
+        "#artist/jamee-cornelia",
+        "#artist/artist-bearson",
+        "#artist/spinamp-artist-9dddbb732c194a49356b",
+        "#artist/artist-chorus-of-the-forest",
+        "#artist/artist-noise",
+        "#artist/artist-lakim",
+        "#artist/the-park"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

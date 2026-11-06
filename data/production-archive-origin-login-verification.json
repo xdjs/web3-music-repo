@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-06T22:14:37.700Z",
+  "deploymentId": "dpl_2VkCTfCs8Mrxji1MKUEbt6rC8H6G",
+  "sourceCommit": "43704fdc498c290adae1a1a724656f24ee06f188",
+  "origin": "https://web3-music-archive.vercel.app",
+  "scope": "Real production SDK guest modal and isolated browser-local playlist only. No OTP, wallet signature, authenticated account write or real account sync claim.",
+  "checks": [
+    {
+      "name": "Guest playlist creation and reload in isolated new-origin browser",
+      "passed": true
+    },
+    {
+      "name": "Real email and wallet modal",
+      "width": 1440,
+      "theme": "light",
+      "passed": true
+    },
+    {
+      "name": "Real email and wallet modal",
+      "width": 390,
+      "theme": "dark",
+      "passed": true
+    },
+    {
+      "name": "Previous origin remains directly available without redirect",
+      "passed": true
+    }
+  ],
+  "authResponses": [
+    {
+      "url": "https://auth.privy.io/api/v1/apps/cmlzjxfrh00ak0cjvlap9d3gm",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "status": "passed",
+  "config": {
+    "enabled": true,
+    "appId": "cmlzjxfrh00ak0cjvlap9d3gm",
+    "clientId": "client-WY6W53j4q1dvp15KJx1zc88MivQTj6NJ66S4CKzsxEAdJ",
+    "mode": "Music Nerd production identity; private account playlist storage",
+    "playlistStorage": "private-blob"
+  },
+  "title": "web3-music-archive \u2014 Music Nerd",
+  "canonical": "https://web3-music-archive.vercel.app/",
+  "visualReview": "1440 light and 390 dark modal captures inspected; existing Music Nerd lenses and responsive surfaces retained."
+}

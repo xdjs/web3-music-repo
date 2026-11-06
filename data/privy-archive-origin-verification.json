@@ -16,5 +16,6 @@
   "httpOnlyCookieSettingChanged": false,
   "otherClientsEdited": false,
   "personalLoginTested": false,
-  "newOriginModalTested": false
+  "newOriginModalTested": true,
+  "productionVerification": "data/production-archive-origin-login-verification.json"
 }

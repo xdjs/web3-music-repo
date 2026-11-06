@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-11-06T22:17:16.733152+00:00",
+  "status": "READY",
+  "sourceCommit": "43704fdc498c290adae1a1a724656f24ee06f188",
+  "pullRequest": "https://github.com/xdjs/web3-music-repo/pull/9",
+  "deploymentId": "dpl_2VkCTfCs8Mrxji1MKUEbt6rC8H6G",
+  "url": "https://web3-music-archive.vercel.app/",
+  "oldOriginPreserved": "https://web3-music-repo.vercel.app/",
+  "immutableURL": "https://web3-music-repo-bifvqme72-musicnerd.vercel.app",
+  "tests": {
+    "passed": 307,
+    "failed": 0,
+    "syntax": "passed",
+    "format": "passed",
+    "build": "passed"
+  },
+  "receipts": [
+    "data/archive-production-source-verification.json",
+    "data/home-rotation-production-renamed-verification.json",
+    "data/production-archive-origin-login-verification.json",
+    "data/lab-rename-verification.json",
+    "data/playlist-sync-ui-verification.json",
+    "data/collection-render-verification.json"
+  ],
+  "runtimeLogs": {
+    "deploymentScoped": true,
+    "level": [
+      "error",
+      "fatal"
+    ],
+    "from": "2026-11-06T22:05:32.602Z",
+    "to": "2026-11-06T22:15:32.602Z",
+    "matchingLogs": 0
+  },
+  "limitations": [
+    "Authenticated cross-device sync tested with real components and a revision-aware fixture; no real user OTP or authenticated write submitted",
+    "Browser-only playlists remain on old origin until user signs in there and waits for automatic sync",
+    "Remote storage latency and incomplete artwork recovery remain",
+    "Instagram Story export and Solana wallet ownership remain pending"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-06T22:15:04.364711+00:00",
+  "url": "https://web3-music-archive.vercel.app",
+  "sourceCommit": "43704fdc498c290adae1a1a724656f24ee06f188",
+  "deploymentId": "dpl_2VkCTfCs8Mrxji1MKUEbt6rC8H6G",
+  "assets": [
+    {
+      "path": "src/home-selection.mjs",
+      "sha256": "affcfeb152cbd0902d6afa955ec7fab3146f67249dcc1428e950ed7ab7473aa6",
+      "matchesSource": true
+    },
+    {
+      "path": "src/collection-render.mjs",
+      "sha256": "07bd7c0e6f4ed7538eb5afa32b9b06d48eeda48583a4989d93c68c38316e3ab6",
+      "matchesSource": true
+    },
+    {
+      "path": "src/playlist-library.mjs",
+      "sha256": "5d7770c687736fbf36a73124c54fd4ad4aa4777a7020e8540cd2e5e184fe1c4b",
+      "matchesSource": true
+    },
+    {
+      "path": "public/account/account-login.js",
+      "sha256": "d73da7a08ddaff8c3e98f9933255b08100e077bce927dba1106a5d488f655d91",
+      "matchesSource": true
+    },
+    {
+      "path": "public/social/web3-music-archive-v1.png",
+      "sha256": "555665dffa499732810963a28fd9a8c6c9cab48c6e93748e5dd6792638863874",
+      "matchesSource": true
+    }
+  ],
+  "shareCanonical": "https://web3-music-archive.vercel.app/share/record/record-69c77ef0",
+  "status": "passed"
+}
