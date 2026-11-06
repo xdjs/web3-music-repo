@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-06T10:23:14.925Z",
+  "records": 13640,
+  "peteCreditedRecords": 21,
+  "spinampRecords": 3815,
+  "duplicateTokenIdentities": 0,
+  "duplicateRecordIds": 0,
+  "unsupportedChains": 0,
+  "invalidTokenIds": 0,
+  "spinampVerificationOrArtistIssues": 0,
+  "datedRecords": {
+    "release-contract-created": 5016,
+    "token-created": 4036
+  },
+  "spinampDatedRecords": 377,
+  "notes": [
+    "Artist IDs absent from the people table are handled by the existing frontend name fallback; no Spinamp identity mismatch found.",
+    "UI owner corrected loading/failure labels to use mediaLabel and added a source-note fallback for Spinamp portrait attribution; confirmed in source.",
+    "125 Spinamp entries have metadataURI absent in compact evidence; metadata reference was not retained, so proof must not fabricate a URI.",
+    "Historical dates are typed token-created or release-contract-created, not recovery timestamps or public release dates."
+  ],
+  "worker": {
+    "checkpointIgnored": true,
+    "resolvedCount": 26409,
+    "complete": false,
+    "remaining": 26578,
+    "errorCount": 697
+  },
+  "nextScan": "Use live Spinamp allNftFactories scoped to Base Sound V2 metaFactoryId base/0x0000000000aec84F5BFc2af15EAfb943bf4e3522 to enumerate indexed contracts/starting blocks, then verify creation events in bounded small RPC windows. Factory seed starts7272929; index assertions remain distinct from independently verified deployments. No Polygon Sound factory seed was listed."
+}

@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-11-06T10:12:18.715Z",
+  "base": "http://127.0.0.1:4191",
+  "records": 9825,
+  "fullBytes": 35794220,
+  "indexBytes": 8310846,
+  "fullGzip": 5999755,
+  "indexGzip": 1610585,
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "credits": true,
+      "musicFacts": true,
+      "provenance": true,
+      "revenue": true,
+      "noAutoplay": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "credits": true,
+      "musicFacts": true,
+      "provenance": true,
+      "revenue": true,
+      "noAutoplay": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "credits": true,
+      "musicFacts": true,
+      "provenance": true,
+      "revenue": true,
+      "noAutoplay": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "credits": true,
+      "musicFacts": true,
+      "provenance": true,
+      "revenue": true,
+      "noAutoplay": true,
+      "noOverflow": true
+    }
+  ],
+  "lateResponseIgnored": true,
+  "retryAfter503": true,
+  "sameSongHeaderStable": true,
+  "etag304": true,
+  "unknown404": true,
+  "historicalPlaylistMatches": 23,
+  "playback": {
+    "currentTime": 0.515423,
+    "readyState": 4,
+    "source": "https://arweave.net/ShNsHOnksot-5oxBYrFpAz0Ec-pxa7E0YDkweXLPbf0"
+  },
+  "errors": []
+}

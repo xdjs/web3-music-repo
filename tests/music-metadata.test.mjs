@@ -28,7 +28,7 @@ test("unrelated keys, payment recipients and invalid tempo values are not musica
   });
 });
 
-test("Sound enum keys normalize without guessing and lyrics remain a source reference", () => {
+test("Sound enum keys normalize without guessing and original lyric text is retained", () => {
   const r = extractMusicMetadata({
     key: "C_SHARP_MINOR",
     releaseDate: "2022-05-01",
@@ -38,6 +38,7 @@ test("Sound enum keys normalize without guessing and lyrics remain a source refe
   assert.deepEqual(r.details["Release date"], ["2022-05-01"]);
   assert.equal(r.hasLyrics, true);
   assert.equal(r.details.Lyrics, undefined);
+  assert.deepEqual(r.lyrics, [{ text: "An original lyric", field: "lyrics" }]);
 });
 
 test("a parent project contributes its title without copying project-wide credits or musical attributes", () => {

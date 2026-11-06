@@ -1,3 +1,4 @@
+import { renderLyrics } from "./lyrics-ui.mjs";
 import { selectQueueTrack, removeQueueTrack } from "./listening-queue.mjs";
 import { createMediaPreloader } from "./media-preload.mjs";
 import { compareReleaseDates } from "./release-date.mjs";
@@ -50,6 +51,9 @@ let coverage = null,
   artistQuery = "",
   ledgerLimit = 100;
 let catalog = [],
+  catalogById = new Map(),
+  peopleById = new Map(),
+  recordsByPerson = new Map(),
   people = [],
   summary = {},
   archive = null,
@@ -155,18 +159,13 @@ function card(r) {
   return `<article class="record-card"><div class="cover"><a href="${recordLink(r)}" aria-label="Open ${esc(r.title)}">${img(r)}</a><span class="cover-badge">${esc(platform(r))}${r.mediaScope === "clip" ? " · Clip" : ""}</span>${r.kind !== "artwork" ? `<button class="cover-play" data-play="${esc(r.id)}" aria-label="Play ${esc(r.title)}">▶</button>` : ""}</div><h3><a href="${recordLink(r)}">${esc(cleanTitle(r.title))}</a></h3><div class="card-meta"><a href="#artist/${esc(artistId(r))}">${esc(r.artist)}</a><button class="icon heart ${likes.has(r.id) ? "active" : ""}" data-like="${esc(r.id)}" aria-label="${likes.has(r.id) ? "Unlike" : "Like"} ${esc(r.title)}">${likes.has(r.id) ? "♥" : "♡"}</button></div></article>`;
 }
 function artistRecords(id) {
-  return catalog.filter(
-    (r) =>
-      artistId(r) === id ||
-      r.personIds?.includes(id) ||
-      r.credits?.some((c) => c.personId === id),
-  );
+  return recordsByPerson.get(id) || [];
 }
 function person(id) {
   return (
-    people.find((p) => p.id === id) || {
+    peopleById.get(id) || {
       id,
-      name: catalog.find((r) => artistId(r) === id)?.artist || id,
+      name: artistRecords(id).find((r) => artistId(r) === id)?.artist || id,
       bio: "",
     }
   );
@@ -177,10 +176,10 @@ function artistCard(id) {
   return `<a class="artist-card" href="#artist/${esc(id)}">${portraitMarkup(id, true)}<strong>${esc(p.name)}</strong><small>${n} ${id === "pete-rango" ? "credited recordings" : "in the archive"}</small></a>`;
 }
 function home() {
-  const hero = catalog.find((r) => r.id === preferred[0]),
+  const hero = catalogById.get(preferred[0]),
     picks = preferred
       .slice(1, 6)
-      .map((id) => catalog.find((r) => r.id === id))
+      .map((id) => catalogById.get(id))
       .filter(Boolean);
   return `<div class="intro"><div><h1>The music remains.</h1><p>A living archive of the music NFT era. Follow the records. Press play.</p></div><span class="live-note"><i class="status-dot"></i> Recovery in progress</span></div><section class="hero" aria-label="Featured recording"><img class="hero-bg" src="${esc(image(hero))}" alt=""><div class="hero-copy"><span class="eyebrow"><i class="status-dot"></i> RECOVERED FROM ETHEREUM + ARWEAVE</span><h2>MIAMI<br>FREESTYLE</h2><p class="artist">CAMPFIRE · Aly, Tarot, Elle Symone, Early & TK</p><div class="hero-actions"><button class="primary" data-play="${hero.id}">▶ &nbsp; Listen now</button><a class="hero-proof" href="${recordLink(hero)}?tab=proof">Follow the onchain record ↗</a></div></div><div class="hero-credit"><span>PEOPLE BEHIND THE RECORD</span><a href="#artist/pete-rango"><div>Pete Rango<small>Mixing & mastering</small></div><img src="/people/pete-rango-160.webp" alt=""></a><a href="#artist/abjo"><div>AbJo<small>Production</small></div>${portrait("abjo") ? `<img src="${esc(portrait("abjo"))}" alt="">` : '<span class="credit-initial" aria-hidden="true">A</span>'}</a></div><img class="hero-waveform" src="/recovered/miami-waveform.svg" alt="Waveform derived from the recovered MIAMI FREESTYLE audio"><div class="hero-bottom"><span>◈ Ethereum &nbsp; → &nbsp; Arweave metadata &nbsp; → &nbsp; Original audio</span><span>The platform went offline.<br>The record is still here.</span></div></section><div class="proof-strip"><span><b>${summary.catalogued}</b> records catalogued &nbsp; · &nbsp; <b>${summary.readable}</b> metadata reads recovered</span><span>${summary.chains.join(" · ")}</span><a href="#recovery">Explore the evidence ↗</a></div><section class="section"><div class="section-head"><div><h2>Back in rotation</h2><p>Original music, recovered through its tokens.</p></div><a class="text-button" href="#explore">Explore all ↗</a></div><div class="cards home-cards">${picks.map(card).join("")}</div></section><section class="section"><div class="section-head"><div><h2>The people who made the era</h2><p>Artists, collaborators, and the work that connects them.</p></div><a class="text-button" href="#artists">Meet everyone ↗</a></div><div class="artist-grid">${featuredArtists.map(artistCard).join("")}</div></section><div class="archive-callout"><div class="archive-symbol">◈</div><div><h3>A platform can disappear. A record can survive.</h3><p>We read the original contracts and follow their metadata to the music. Every recording has a trail you can inspect. Web-archived memories are labeled separately.</p></div><a class="outline-button" href="#recovery">How recovery works ↗</a></div>`;
 }
@@ -190,7 +189,13 @@ function explore(onlyLikes = false) {
       (!onlyLikes || likes.has(r.id)) &&
       (filter === "All" ||
         (filter === "Other platforms"
-          ? !["Sound", "Catalog", "Zora", "Mint Songs"].includes(platform(r))
+          ? ![
+              "Sound",
+              "Catalog",
+              "Zora",
+              "Mint Songs",
+              "Supercollector",
+            ].includes(platform(r))
           : platform(r) === filter)) &&
       (!facets.network || String(r.chainId) === facets.network) &&
       (!facets.media || r.kind === facets.media) &&
@@ -202,6 +207,7 @@ function explore(onlyLikes = false) {
       [
         r.title,
         r.artist,
+        r.searchCredits || "",
         ...(r.personIds || []).flatMap((id) => [
           person(id).name,
           ...(person(id).aliases || []),
@@ -246,7 +252,7 @@ function explore(onlyLikes = false) {
     ["title", "Title A–Z"],
     ["artist", "Artist A–Z"],
   ])}</div>${activeFilters ? '<div class="filter-reset"><button class="text-button" data-clear-filters>Reset filters</button></div>' : ""}`;
-  return `<div class="intro"><div><h1>${onlyLikes ? "Liked sounds" : query ? "Search the archive" : "Explore the archive"}</h1><p>${onlyLikes ? "Your selections, saved in this browser." : query ? `Results for “${esc(query)}”` : "A growing catalog across Sound, Catalog, Zora, Mint Songs, and beyond."}</p></div></div><div class="filters">${["All", "Sound", "Catalog", "Zora", "Mint Songs", "Other platforms"].map((f) => `<button class="chip ${filter === f ? "active" : ""}" data-filter="${f}" aria-pressed="${filter === f}">${f}</button>`).join("")}<span class="results">${list.length.toLocaleString()} records</span></div>${controls}${["oldest", "newest"].includes(facets.sort) ? '<p class="sort-date-note">Sorted by token or release-contract creation. Undated recordings appear last.</p>' : ""}${list.length ? `<div class="cards library-grid">${list.slice(0, limit).map(card).join("")}</div>${list.length > limit ? '<button class="outline-button more" data-more>Load more recordings</button>' : ""}` : `<div class="empty"><h2>${onlyLikes ? "Make yourself a collection." : "No recordings found."}</h2>${onlyLikes ? "Tap the heart on any recording to keep it here." : "Try another artist, title, or platform."}</div>`}`;
+  return `<div class="intro"><div><h1>${onlyLikes ? "Liked sounds" : query ? "Search the archive" : "Explore the archive"}</h1><p>${onlyLikes ? "Your selections, saved in this browser." : query ? `Results for “${esc(query)}”` : "A growing catalog across Sound, Catalog, Zora, Mint Songs, and beyond."}</p></div></div><div class="filters">${["All", "Sound", "Catalog", "Zora", "Mint Songs", "Supercollector", "Other platforms"].map((f) => `<button class="chip ${filter === f ? "active" : ""}" data-filter="${f}" aria-pressed="${filter === f}">${f}</button>`).join("")}<span class="results">${list.length.toLocaleString()} records</span></div>${controls}${["oldest", "newest"].includes(facets.sort) ? '<p class="sort-date-note">Sorted by token or release-contract creation. Undated recordings appear last.</p>' : ""}${list.length ? `<div class="cards library-grid">${list.slice(0, limit).map(card).join("")}</div>${list.length > limit ? '<button class="outline-button more" data-more>Load more recordings</button>' : ""}` : `<div class="empty"><h2>${onlyLikes ? "Make yourself a collection." : "No recordings found."}</h2>${onlyLikes ? "Tap the heart on any recording to keep it here." : "Try another artist, title, or platform."}</div>`}`;
 }
 function artists() {
   const ids = [
@@ -262,7 +268,7 @@ function artists() {
   return `<div class="intro"><div><h1>Artists</h1><p>The people behind the records. Credits are preserved where documented.</p></div></div><label class="artist-search-label">Find an artist<input id="artist-search" type="search" placeholder="Search artist names…" value="${esc(artistQuery)}"></label><p class="link-note">${ids.length} artists</p><div class="artist-grid section">${ids.slice(0, artistLimit).map(artistCard).join("")}</div>${ids.length > artistLimit ? '<button class="outline-button more" data-more-artists>Load more artists</button>' : ""}`;
 }
 function artistLinks(p) {
-  return `${p.portrait ? `<a class="link-note" href="${esc(p.portrait.source)}" target="_blank" rel="noopener noreferrer">Image: ${esc(p.portrait.credit)} ↗</a>` : ""}<div class="artist-links">${(p.links || []).map((l) => `<a class="outline-button" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)} ↗</a>${l.source ? `<a class="link-note" href="${esc(l.source)}" target="_blank" rel="noopener noreferrer">${esc(l.capturedAt)} source ↗</a>` : ""}`).join("")}</div>${p.links?.length ? '<small class="link-note">Links preserved from research or archived artist profiles; current account ownership has not been reverified.</small>' : ""}${p.sources?.length ? `<details class="artist-sources"><summary>Artist sources & historical context (${p.sources.length})</summary>${p.sources.map((s) => `<p><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a><small>${esc(s.kind)} · ${esc(s.date)}</small></p>`).join("")}</details>` : ""}`;
+  return `${p.portrait ? `<a class="link-note" href="${esc(p.portrait.source)}" target="_blank" rel="noopener noreferrer">Image: ${esc(p.portrait.credit || p.portrait.note || "Profile source")} ↗</a>` : ""}<div class="artist-links">${(p.links || []).map((l) => `<a class="outline-button" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)} ↗</a>${l.source ? `<a class="link-note" href="${esc(l.source)}" target="_blank" rel="noopener noreferrer">${esc(l.capturedAt)} source ↗</a>` : ""}`).join("")}</div>${p.links?.length ? '<small class="link-note">Links preserved from research or archived artist profiles; current account ownership has not been reverified.</small>' : ""}${p.sources?.length ? `<details class="artist-sources"><summary>Artist sources & historical context (${p.sources.length})</summary>${p.sources.map((s) => `<p><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a><small>${esc(s.kind)} · ${esc(s.date)}</small></p>`).join("")}</details>` : ""}`;
 }
 function artistPage(id) {
   const p = person(id),
@@ -272,21 +278,38 @@ function artistPage(id) {
 function mediaLabel(r) {
   return r.recovery?.mediaSourceType === "archived-sound-cdn"
     ? "Archived Sound CDN audio"
-    : "Original media";
+    : r.recovery?.mediaSourceType === "spinamp-preserved-audio"
+      ? "Spinamp preserved audio"
+      : r.recovery?.mediaSourceType === "indexed-nft-media"
+        ? "Indexed NFT media"
+        : "Original media";
 }
 function proof(r) {
   const v = r.recovery;
   const explorer = explorers[r.chainId];
-  const indexedSource =
-    r.platform === "Catalog"
+  const spinampSource = v?.sourceType?.startsWith("spinamp-");
+  const indexedSource = spinampSource
+    ? "Spinamp’s public music index"
+    : r.platform === "Catalog"
       ? "Catalog’s official March 9, 2026 index export"
-      : v?.sourceName || "a preserved public metadata snapshot";
-  const indexedURL =
-    r.platform === "Catalog"
+      : v?.sourceName ||
+        v?.indexedSource ||
+        "a preserved public metadata snapshot";
+  const indexedURL = spinampSource
+    ? v.source
+    : r.platform === "Catalog"
       ? "https://github.com/catalogworks/catalog-squidward-data"
-      : v?.sourceURL;
+      : v?.sourceURL || v?.indexedSourceURL || v?.source;
+  const chainURI = ["mismatch", "template-matches-index"].includes(
+    v?.contractURIRead?.status,
+  )
+    ? v.contractURIRead
+    : null;
+  const chainNotice = chainURI
+    ? `<div class="notice" data-contract-uri-status="${esc(chainURI.status)}"><strong>${chainURI.status === "mismatch" ? "Current contract metadata differs from the published index." : "Contract URI template matches the published index."}</strong><p>${chainURI.status === "mismatch" ? "Playback and release details here follow the platform’s preserved mapping. The current contract URI does not match that metadata path; this is not a verified current token metadata read." : "The URI template returned by the contract matches this index entry. Resolving every token’s current metadata and checking its audio are separate steps."}</p><p>Read at block ${esc(chainURI.blockNumber)} · Current contract URI:</p><code>${esc(chainURI.value)}</code>${indexedURL?.startsWith("https://") ? `<p><a href="${esc(indexedURL)}" target="_blank" rel="noopener noreferrer">Published release source ↗</a></p>` : ""}</div>`
+    : "";
   const coin = r.standard === "ERC20";
-  return `<div class="reading"><h2>Follow the surviving record</h2>${v?.status === "indexed" ? `<p class="notice">Metadata and media references come from ${esc(indexedSource)}. A current contract read is tracked separately. ${indexedURL?.startsWith("https://") ? `<a href="${esc(indexedURL)}" target="_blank" rel="noopener noreferrer">Published source ↗</a>` : ""}</p>` : ""}<p>${v?.chainMetadataHasMedia === false ? "The contract identifies this release, but its current metadata has empty audio fields. A matching archived Sound page preserved the Sound CDN transcode used for playback." : "The blockchain stores the token and its metadata reference. The recording is retrieved from the storage that reference identifies. This path does not depend on Sound’s API."}</p></div><div class="provenance"><div class="proof-step"><span class="step-num">1</span><div><h3>${chainNames[r.chainId]} · Original contract</h3><code>${esc(r.contract)}</code><p>${coin ? "ERC-20 content coin · contractURI()" : `Token ID ${esc(r.tokenId)}`}${v?.blockNumber ? ` · Read at block ${v.blockNumber.toLocaleString()}` : ""}</p></div><a href="${explorer}/token/${r.contract}${coin ? "" : `?a=${r.tokenId}`}" target="_blank" rel="noopener noreferrer">Inspect token ↗</a></div><div class="proof-step"><span class="step-num">2</span><div><h3>${["live", "indexed"].includes(v?.status) ? sourceKind(v.metadataURI || v.metadataURL) + " · Metadata" : "Metadata reference"}</h3><code>${esc(["live", "indexed"].includes(v?.status) ? (v.metadataURI?.startsWith("data:") ? "JSON returned directly by the contract" : v.metadataURI || v.metadataURL) : "Read the contract to resolve its metadata.")}</code><p>${v?.status === "live" ? "The token’s metadata links to the original media." : v?.status === "indexed" ? "The published index preserves this metadata reference." : "No successful current recovery is recorded yet."}</p></div>${v?.metadataURL ? `<a href="${esc(v.metadataURL)}" target="_blank" rel="noopener noreferrer">Open metadata ↗</a>` : ""}</div><div class="proof-step"><span class="step-num">3</span><div><h3>${v?.mediaURI ? sourceKind(v.mediaURI) + " · " + mediaLabel(r) : mediaLabel(r)}</h3><code>${esc(v?.mediaURI || "Unresolved")}</code><p>${v?.mediaSourceType === "archived-sound-cdn" ? "This is Sound’s hosted transcode recovered from an archived page, not the original audio URL in current contract metadata." : "Audio is stored separately from token ownership. Availability depends on the storage network."}</p></div>${v?.mediaURL ? `<a href="${esc(v.mediaURL)}" target="_blank" rel="noopener noreferrer">${v?.mediaSourceType === "archived-sound-cdn" ? "Open recovered audio" : "Open original"} ↗</a>` : ""}</div></div><button class="outline-button" data-recover="${r.id}">↻ Read the contract again</button><div class="notice" id="verify-status">${v?.status === "live" ? `Last successful metadata recovery: ${esc(v.checkedAt)}. Playback is verified separately when you listen.` : v?.status === "indexed" ? "Recovered from a preserved public index; playback and current contract verification are checked separately." : "This record has a known token reference. Its metadata has not been successfully recovered in this pass."}</div>`;
+  return `<div class="reading"><h2>Follow the surviving record</h2>${v?.status === "indexed" ? `<p class="notice">Metadata and media references come from ${esc(indexedSource)}. A current contract read is tracked separately. ${indexedURL?.startsWith("https://") ? `<a href="${esc(indexedURL)}" target="_blank" rel="noopener noreferrer">Published source ↗</a>` : ""}</p>` : ""}<p>${v?.mediaSourceType === "spinamp-preserved-audio" ? "Spinamp preserved this audio separately from the NFT metadata, which had no original media reference in the indexed snapshot. The audio may be transcoded. The token identity and metadata mapping come from Spinamp’s index and are not independently verified onchain here." : v?.status === "indexed" ? "The platform’s published index preserves the token mapping, metadata path, and audio reference. Contract verification is tracked separately below." : v?.chainMetadataHasMedia === false ? "The contract identifies this release, but its current metadata has empty audio fields. A matching archived Sound page preserved the Sound CDN transcode used for playback." : "The blockchain stores the token and its metadata reference. The recording is retrieved from the storage that reference identifies. This path does not depend on Sound’s API."}</p></div>${chainNotice}<div class="provenance"><div class="proof-step"><span class="step-num">1</span><div><h3>${chainNames[r.chainId]} · Original contract</h3><code>${esc(r.contract)}</code><p>${coin ? "ERC-20 content coin · contractURI()" : `Token ID ${esc(r.tokenId)}`}${v?.blockNumber ? ` · Read at block ${v.blockNumber.toLocaleString()}` : ""}</p></div><a href="${explorer}/token/${r.contract}${coin ? "" : `?a=${r.tokenId}`}" target="_blank" rel="noopener noreferrer">Inspect token ↗</a></div><div class="proof-step"><span class="step-num">2</span><div><h3>${["live", "indexed"].includes(v?.status) ? sourceKind(v.metadataURI || v.metadataURL) + " · Metadata" : "Metadata reference"}</h3><code>${esc(["live", "indexed"].includes(v?.status) ? (v.metadataURI?.startsWith("data:") ? "JSON returned directly by the contract" : v.metadataURI || v.metadataURL) : "Read the contract to resolve its metadata.")}</code><p>${v?.status === "live" ? "The token’s metadata links to the original media." : v?.status === "indexed" ? "The published index preserves this metadata reference." : "No successful current recovery is recorded yet."}</p></div>${v?.metadataURL ? `<a href="${esc(v.metadataURL)}" target="_blank" rel="noopener noreferrer">Open metadata ↗</a>` : ""}</div><div class="proof-step"><span class="step-num">3</span><div><h3>${v?.mediaURI ? sourceKind(v.mediaURI) + " · " + mediaLabel(r) : mediaLabel(r)}</h3><code>${esc(v?.mediaURI || "Unresolved")}</code><p>${v?.mediaSourceType === "spinamp-preserved-audio" ? "Audio preserved by Spinamp; it may be transcoded and is not the original audio URI from the token metadata." : v?.mediaSourceType === "indexed-nft-media" ? "Media linked through Spinamp’s NFT index. This mapping has not been independently checked against the current contract." : v?.mediaSourceType === "archived-sound-cdn" ? "This is Sound’s hosted transcode recovered from an archived page, not the original audio URL in current contract metadata." : "Audio is stored separately from token ownership. Availability depends on the storage network."}</p></div>${v?.mediaURL ? `<a href="${esc(v.mediaURL)}" target="_blank" rel="noopener noreferrer">${v?.mediaSourceType === "spinamp-preserved-audio" ? "Open Spinamp audio" : v?.mediaSourceType === "indexed-nft-media" ? "Open indexed media" : v?.mediaSourceType === "archived-sound-cdn" ? "Open recovered audio" : "Open original"} ↗</a>` : ""}</div></div><button class="outline-button" data-recover="${r.id}">↻ Read the contract again</button><div class="notice" id="verify-status">${v?.status === "live" ? `Last successful metadata recovery: ${esc(v.checkedAt)}. Playback is verified separately when you listen.` : v?.status === "indexed" ? "Recovered from a preserved public index; playback and current contract verification are checked separately." : "This record has a known token reference. Its metadata has not been successfully recovered in this pass."}</div>`;
 }
 function matchedComments(r) {
   const matches = (archive?.comments || []).filter(
@@ -349,7 +372,7 @@ function songComments(r) {
   return chainSection + historicalSection;
 }
 function musicFactBadges(r) {
-  const facts = musicFacts(r);
+  const facts = r.musicFacts || musicFacts(r);
   if (!facts.bpm && !facts.key) return "";
   return `<div class="music-facts" aria-label="Recovered music details">${facts.bpm ? `<span class="tag">${facts.source.startsWith("BPM estimated") ? "~" : ""}${facts.bpm} BPM</span>` : ""}${facts.key ? `<span class="tag">${esc(facts.key)}</span>` : ""}<small class="link-note">${esc(facts.source)}</small></div>`;
 }
@@ -359,10 +382,13 @@ function metadataCredits(r) {
   const details = Object.entries(data.details || {}).filter(
     ([key]) => !["Description", "Lyrics"].includes(key),
   );
-  const lyrics = data.hasLyrics && data.metadataURL;
+  const publicRelease = data.sourceType === "official-public-release-page";
+  const indexedMetadata = data.sourceType === "spinamp-indexed-metadata";
+  const metadataSourceURL =
+    publicRelease || indexedMetadata ? data.source : data.metadataURL;
   const description =
     data.details?.Description?.filter((text) => text !== r.note) || [];
-  return `${description.length ? `<details class="artist-sources"><summary>Original release notes</summary>${description.map((text) => `<p>${esc(text)}</p>`).join("")}</details>` : ""}${data.collaborators.length || data.credits.length ? `<h2>Original credits</h2>${data.collaborators.length ? `<p>${esc(data.collaborators.join(" · "))}</p>` : ""}${data.credits.map((credit) => `<p>${esc(credit)}</p>`).join("")}` : ""}${details.length ? `<details class="artist-sources"><summary>More about this recording</summary><dl>${details.map(([label, values]) => `<dt>${esc(label)}</dt><dd>${esc(values.join(" · "))}${label === "Duration" ? " seconds" : ""}</dd>`).join("")}</dl></details>` : ""}${lyrics ? `<p><a class="link-note" href="${esc(data.metadataURL)}" target="_blank" rel="noopener noreferrer">Lyrics in the original metadata ↗</a></p>` : ""}${data.metadataURL ? `<a class="link-note" href="${esc(data.metadataURL)}" target="_blank" rel="noopener noreferrer">${data.snapshotDate ? "Metadata saved by Catalog" : "Original token metadata"} ↗</a>` : ""}`;
+  return `${description.length ? `<details class="artist-sources"><summary>Original release notes</summary>${description.map((text) => `<p>${esc(text)}</p>`).join("")}</details>` : ""}${data.collaborators.length || data.credits.length ? `<h2>Original credits</h2>${data.collaborators.length ? `<p>${esc(data.collaborators.join(" · "))}</p>` : ""}${data.credits.map((credit) => `<p>${esc(credit)}</p>`).join("")}` : ""}${details.length ? `<details class="artist-sources"><summary>More about this recording</summary><dl>${details.map(([label, values]) => `<dt>${esc(label)}</dt><dd>${esc(values.join(" · "))}${label === "Duration" ? " seconds" : ""}</dd>`).join("")}</dl></details>` : ""}${renderLyrics(r, esc)}${metadataSourceURL ? `<a class="link-note" href="${esc(metadataSourceURL)}" target="_blank" rel="noopener noreferrer">${publicRelease ? "Official public release page" : indexedMetadata ? "Spinamp indexed metadata" : data.snapshotDate ? "Metadata saved by Catalog" : "Original token metadata"} ↗</a>` : ""}`;
 }
 function songRevenue(r) {
   const revenue = r.revenue;
@@ -370,8 +396,67 @@ function songRevenue(r) {
   return `<section class="song-revenue"><h2>Support for this release</h2><p><strong>${esc(revenue.artistPaid)} USDC</strong> in verified artist payouts</p><p>${esc(revenue.gross)} USDC in recorded purchases · ${revenue.purchaseCount} purchase${revenue.purchaseCount === 1 ? "" : "s"}</p><details class="artist-sources"><summary>Payments and sources</summary><p>Catalog’s March 9, 2026 export, checked against USDC transfers on Base. Partial recovery: includes only Base token purchases whose receipts and artist transfers were verified; album purchases, resales, and later activity are not included. Artist payouts can go to a collaborator split contract. This is not lifetime income or the artist’s personal take-home pay.</p><p>Platform: ${esc(revenue.platformPaid)} USDC · Referrals: ${esc(revenue.referralsPaid)} USDC</p>${revenue.events.map((event) => `<p><a href="https://basescan.org/tx/${esc(event.transaction)}" target="_blank" rel="noopener noreferrer">${esc(event.date.slice(0, 10))} · ${esc(event.gross)} USDC purchase ↗</a></p>`).join("")}<a href="https://github.com/catalogworks/catalog-squidward-data" target="_blank" rel="noopener noreferrer">Catalog’s original export ↗</a></details></section>`;
 }
 
+const fullRecordIds = new Set(),
+  recordRequests = new Map(),
+  recordErrors = new Set();
+function recordDetailsStatus(r) {
+  return recordErrors.has(r.id)
+    ? `<div class="reading"><p class="notice" role="alert">Recording details could not load. You can still play the music.</p><button class="outline-button" data-retry-record="${esc(r.id)}">Retry details ↻</button></div>`
+    : '<div class="reading"><p class="notice" role="status">Loading recording details…</p></div>';
+}
+function refreshRecordPanel(id) {
+  if (location.hash.split("?")[0] !== recordLink({ id })) return;
+  const panel = main.querySelector('[role="tabpanel"]');
+  if (!panel) return;
+  const y = scrollY;
+  const template = document.createElement("template");
+  template.innerHTML = recordPage(id);
+  panel.replaceChildren(
+    ...template.content.querySelector('[role="tabpanel"]').childNodes,
+  );
+  window.scrollTo({ top: y, behavior: "instant" });
+  if (fullRecordIds.has(id)) collectors.load(id);
+}
+async function loadRecordDetails(id, retry = false) {
+  if (
+    fullRecordIds.has(id) ||
+    recordRequests.has(id) ||
+    (recordErrors.has(id) && !retry)
+  )
+    return;
+  const r = catalogById.get(id);
+  if (!r) return;
+  recordErrors.delete(id);
+  const recoveryBefore = r.recovery;
+  const request = fetch("/api/record/" + encodeURIComponent(id), {
+    signal: AbortSignal.timeout(20000),
+  });
+  recordRequests.set(id, request);
+  if (retry) refreshRecordPanel(id);
+  try {
+    const response = await request;
+    if (!response.ok) throw Error("Recording unavailable");
+    const { record } = await response.json();
+    if (record?.id !== id) throw Error("Unexpected recording");
+    // A user-triggered contract read may finish while details are downloading.
+    const recovery =
+      r.recovery !== recoveryBefore ? r.recovery : record.recovery;
+    Object.assign(r, record, { recovery });
+    delete r.musicFacts; // Full details may contain newer metadata or analysis than the index.
+    fullRecordIds.add(id);
+  } catch {
+    recordErrors.add(id);
+  } finally {
+    recordRequests.delete(id);
+    refreshRecordPanel(id);
+  }
+}
+document.addEventListener("click", (event) => {
+  const retry = event.target.closest("[data-retry-record]");
+  if (retry) loadRecordDetails(retry.dataset.retryRecord, true);
+});
 function recordPage(id) {
-  const r = catalog.find((x) => x.id === id);
+  const r = catalogById.get(id);
   if (!r)
     return '<div class="empty">Recording not found. <a href="#explore">Browse the archive.</a></div>';
   return `<a class="back" href="#explore">← Explore the archive</a><section class="record-head"><div class="cover">${img(r)}</div><div><span class="eyebrow">${esc(platform(r))} · ${chainNames[r.chainId]} · ${r.kind === "artwork" ? "ARTWORK COLLECTIBLE" : r.mediaScope === "clip" ? "VIDEO CLIP" : r.kind === "video" ? "VIDEO" : "RECORDING"}</span><h1>${esc(cleanTitle(r.title))}</h1><p><a href="#artist/${artistId(r)}">${esc(r.artist)}</a></p><div class="actions">${r.kind === "artwork" ? `<p class="notice">This token points to artwork. No separate audio was identified in its metadata.</p>` : `<button class="primary" data-play="${r.id}">▶ &nbsp; Listen now</button><button class="outline-button" data-queue="${r.id}">＋ Add to queue</button><button class="outline-button" data-add-playlist="${r.id}">＋ Add to playlist</button>`}<button class="icon heart ${likes.has(r.id) ? "active" : ""}" data-like="${r.id}" aria-label="Like recording">${likes.has(r.id) ? "♥" : "♡"}</button></div></div></section><div class="tabs" role="tablist" aria-label="Recording details">${[
@@ -386,7 +471,7 @@ function recordPage(id) {
     )
     .join(
       "",
-    )}</div><div role="tabpanel">${tab === "comments" ? songComments(r) : tab === "proof" ? proof(r) : tab === "collectors" ? (r.standard === "ERC20" ? collectors.panel(r, true) : `${collectors.panel(r, true)}<details class="ownership-tools"><summary>Additional ownership tools</summary><div class="reading"><h2>Who holds this edition?</h2><p>Read the owner of token ${r.tokenId} directly from ${chainNames[r.chainId]}. This is the current holder of one edition, not a complete collector list or proof of who originally minted it.</p></div><div id="owner-result"><button class="outline-button" data-owner="${r.id}">Read owner from the blockchain ↗</button></div><div class="reading"><h2>Contract holders</h2><p>Current balances reported by the chain indexer. A contract may contain multiple songs; these holders are not automatically collectors of this particular track. ENS labels are current indexer data.</p></div><button class="outline-button" data-holders="${r.id}">Load indexed holders</button><div id="holders-result"></div><div class="notice">Full mint-history reconstruction is still in progress. Today’s owner is not necessarily the original supporter.</div></details>`) : `<div class="reading"><h2>Behind the music</h2>${musicFactBadges(r)}<p>${esc(r.note || "Recovered from an original music NFT. Follow the provenance tab to inspect its source.")}</p>${r.credits?.length ? `<h2>Credits</h2>${r.credits.map((c) => `<p><a href="#artist/${c.personId}">${esc(person(c.personId).name)}</a> — ${esc(c.role)}${c.source ? ` · <a class="link-note" href="${esc(c.source)}" target="_blank" rel="noopener noreferrer">Credit source ↗</a>` : ""}</p>`).join("")}` : ""}${metadataCredits(r)}${r.archivedCredits?.length ? `<h2>Credits preserved from Sound</h2>${r.archivedCredits.map((credit) => `<p>${esc(credit)}</p>`).join("")}<a class="link-note" href="${esc(r.archivedCreditsSource)}" target="_blank" rel="noopener noreferrer">Archived credit source ↗</a>` : ""}${r.releaseDate ? `<p class="release-date">${esc(r.releaseDate.label)} · <time datetime="${esc(r.releaseDate.date)}">${esc(date(r.releaseDate.date))}</time>${r.releaseDate.source ? ` · <a class="link-note" href="${esc(r.releaseDate.source)}" target="_blank" rel="noopener noreferrer">Date source ↗</a>` : ""}</p>` : ""}${songRevenue(r)}${renderRoyaltyPayments(r, esc)}<h2>Preservation notes</h2><p>${r.standard === "ERC20" ? "This media was referenced by a Zora content coin. Coin balances are not NFT edition counts; the recovered clip is not the complete song." : "This archive holds a selected token reference for this work. A single recording can have many editions, and a contract can hold multiple works. The catalog is a starting point for recovery, not a claim of completeness."}</p>${r.originalRelease ? `<p><a class="error-link" href="https://web.archive.org/web/*/${esc(r.originalRelease)}" target="_blank" rel="noopener noreferrer">Find the original release in the Internet Archive ↗</a></p>` : ""}<p><a class="error-link" href="${recordLink(r)}?tab=proof">Inspect the contract and original storage addresses ↗</a></p></div>${collectors.panel(r, true)}`}</div>`;
+    )}</div><div role="tabpanel">${!fullRecordIds.has(r.id) ? recordDetailsStatus(r) : tab === "comments" ? songComments(r) : tab === "proof" ? proof(r) : tab === "collectors" ? (r.standard === "ERC20" ? collectors.panel(r, true) : `${collectors.panel(r, true)}<details class="ownership-tools"><summary>Additional ownership tools</summary><div class="reading"><h2>Who holds this edition?</h2><p>Read the owner of token ${r.tokenId} directly from ${chainNames[r.chainId]}. This is the current holder of one edition, not a complete collector list or proof of who originally minted it.</p></div><div id="owner-result"><button class="outline-button" data-owner="${r.id}">Read owner from the blockchain ↗</button></div><div class="reading"><h2>Contract holders</h2><p>Current balances reported by the chain indexer. A contract may contain multiple songs; these holders are not automatically collectors of this particular track. ENS labels are current indexer data.</p></div><button class="outline-button" data-holders="${r.id}">Load indexed holders</button><div id="holders-result"></div><div class="notice">Full mint-history reconstruction is still in progress. Today’s owner is not necessarily the original supporter.</div></details>`) : `<div class="reading"><h2>Behind the music</h2>${musicFactBadges(r)}<p>${esc(r.note || "Recovered from an original music NFT. Follow the provenance tab to inspect its source.")}</p>${r.credits?.length ? `<h2>Credits</h2>${r.credits.map((c) => `<p><a href="#artist/${c.personId}">${esc(person(c.personId).name)}</a> — ${esc(c.role)}${c.source ? ` · <a class="link-note" href="${esc(c.source)}" target="_blank" rel="noopener noreferrer">Credit source ↗</a>` : ""}</p>`).join("")}` : ""}${metadataCredits(r)}${r.archivedCredits?.length ? `<h2>Credits preserved from Sound</h2>${r.archivedCredits.map((credit) => `<p>${esc(credit)}</p>`).join("")}<a class="link-note" href="${esc(r.archivedCreditsSource)}" target="_blank" rel="noopener noreferrer">Archived credit source ↗</a>` : ""}${r.releaseDate ? `<p class="release-date">${esc(r.releaseDate.label)} · <time datetime="${esc(r.releaseDate.date)}">${esc(date(r.releaseDate.date))}</time>${r.releaseDate.source ? ` · <a class="link-note" href="${esc(r.releaseDate.source)}" target="_blank" rel="noopener noreferrer">Date source ↗</a>` : ""}</p>` : ""}${songRevenue(r)}${renderRoyaltyPayments(r, esc)}<h2>Preservation notes</h2><p>${r.standard === "ERC20" ? "This media was referenced by a Zora content coin. Coin balances are not NFT edition counts; the recovered clip is not the complete song." : "This archive holds a selected token reference for this work. A single recording can have many editions, and a contract can hold multiple works. The catalog is a starting point for recovery, not a claim of completeness."}</p>${r.originalRelease ? `<p><a class="error-link" href="https://web.archive.org/web/*/${esc(r.originalRelease)}" target="_blank" rel="noopener noreferrer">Find the original release in the Internet Archive ↗</a></p>` : ""}<p><a class="error-link" href="${recordLink(r)}?tab=proof">Inspect the contract and original storage addresses ↗</a></p></div>${collectors.panel(r, true)}`}</div>`;
 }
 function catalogCoverageView() {
   const c = coverage?.catalogWorks;
@@ -532,21 +617,42 @@ function route() {
   preloader.cancel();
   requestAnimationFrame(warmVisibleTrack);
   document.dispatchEvent(new Event("mn:route"));
-  if (view === "record") queueMicrotask(() => collectors.load(id));
+  if (view === "record")
+    queueMicrotask(() => {
+      const recordId = decodeURIComponent(id || "");
+      if (fullRecordIds.has(recordId)) collectors.load(recordId);
+      else loadRecordDetails(recordId);
+    });
   if (view === "collector" && !collectors.hasProfile(id))
     queueMicrotask(() => collectors.loadProfile(id));
   $("#liked-count").textContent = likes.size;
   document.title =
     (view === "record"
-      ? cleanTitle(catalog.find((r) => r.id === id)?.title || "Recording")
+      ? cleanTitle(catalogById.get(id)?.title || "Recording")
       : "The music remains.") + " — Music Nerd";
 }
 async function loadCatalog() {
-  const res = await fetch("/api/catalog");
+  const res = await fetch("/api/catalog?view=index");
   if (!res.ok) throw Error("Catalog unavailable");
   const d = await res.json();
   catalog = d.records;
   people = d.people;
+  catalogById = new Map(catalog.map((record) => [record.id, record]));
+  peopleById = new Map(people.map((person) => [person.id, person]));
+  recordsByPerson = new Map();
+  for (const record of catalog) {
+    const ids = new Set([
+      artistId(record),
+      ...(record.personIds || []),
+      ...(record.credits || []).map((credit) => credit.personId),
+    ]);
+    for (const id of ids) {
+      if (!id) continue;
+      const records = recordsByPerson.get(id) || [];
+      records.push(record);
+      recordsByPerson.set(id, records);
+    }
+  }
   summary = d.summary;
 }
 function toggleLike(id) {
@@ -565,7 +671,7 @@ const preloader = createMediaPreloader(audio, {
   isBusy: () => !!current || wantsPlayback,
 });
 function warmTrack(id) {
-  const r = catalog.find((entry) => entry.id === id);
+  const r = catalogById.get(id);
   if (!r || !["live", "indexed"].includes(r.recovery?.status)) return;
   preloader.schedule({
     id,
@@ -580,7 +686,7 @@ function warmVisibleTrack() {
       box.bottom > 0 &&
       box.top < innerHeight &&
       box.width > 0 &&
-      catalog.find((r) => r.id === node.dataset.play)?.kind === "audio"
+      catalogById.get(node.dataset.play)?.kind === "audio"
     );
   });
   if (button) warmTrack(button.dataset.play);
@@ -613,7 +719,7 @@ function automaticQueueFor(record) {
     .slice(0, 200);
 }
 async function play(id, list = null, index = null) {
-  const r = catalog.find((r) => r.id === id);
+  const r = catalogById.get(id);
   if (!r || r.kind === "artwork") return;
   const version = ++playVersion;
   mediaRecovery?.dispose();
@@ -636,7 +742,7 @@ async function play(id, list = null, index = null) {
   $("#player-title").textContent = cleanTitle(r.title);
   $("#player-artist").textContent = r.artist;
   $("#player-art").src = image(r);
-  $("#player-source").textContent = "Resolving original media…";
+  $("#player-source").textContent = `${mediaLabel(r)} · Loading…`;
   $("#toggle").textContent = "…";
   audio.classList.toggle("video-visible", r.kind === "video");
   let v = r.recovery;
@@ -666,10 +772,8 @@ async function play(id, list = null, index = null) {
     clearTimeout(mediaTimer);
     audio.pause();
     $("#player-source").textContent =
-      "Original media unavailable — press play to retry";
-    notify(
-      "Metadata survived, but the original media could not be played. You can retry.",
-    );
+      `${mediaLabel(r)} unavailable — press play to retry`;
+    notify("This recording’s media could not be played. You can retry.");
   };
   mediaRecovery = createMediaRecovery(audio, {
     originalURL: r.playback?.workingURL || v.mediaURL,
@@ -687,7 +791,7 @@ async function play(id, list = null, index = null) {
     onSlow: () => {
       if (version === playVersion)
         $("#player-source").textContent =
-          "Original media is taking longer to load…";
+          `${mediaLabel(r)} is taking longer to load…`;
     },
   });
   mediaTimer = setTimeout(() => {
@@ -708,7 +812,7 @@ async function play(id, list = null, index = null) {
     ) {
       $("#toggle").innerHTML = navIcon("play");
       notify(
-        "Playback could not start. Press play to retry; the original media may be unavailable.",
+        "Playback could not start. Press play to retry; the media may be unavailable.",
       );
     }
   }
@@ -724,7 +828,7 @@ function showQueue() {
   list.innerHTML = queue.length
     ? queue
         .map((id, i) => {
-          const r = catalog.find((record) => record.id === id);
+          const r = catalogById.get(id);
           if (!r) return "";
           return `<div class="queue-item ${i === queueIndex && current?.id === id ? "current" : ""}"><span>${i + 1}</span><img src="${esc(image(r))}" alt=""><div>${esc(cleanTitle(r.title))}<small>${esc(r.artist)}</small></div><button class="icon" data-queue-play="${i}" aria-label="Play ${esc(r.title)}">${navIcon("play")}</button><button class="icon" data-queue-remove="${i}" aria-label="Remove ${esc(r.title)} from queue">×</button></div>`;
         })
@@ -814,7 +918,7 @@ document.addEventListener("click", async (e) => {
     route();
   }
   if (el.dataset.recover) {
-    const r = catalog.find((x) => x.id === el.dataset.recover);
+    const r = catalogById.get(el.dataset.recover);
     const render = renderVersion;
     el.disabled = true;
     $("#verify-status").textContent =
@@ -840,7 +944,7 @@ document.addEventListener("click", async (e) => {
     }
   }
   if (el.dataset.holders) {
-    const r = catalog.find((x) => x.id === el.dataset.holders),
+    const r = catalogById.get(el.dataset.holders),
       render = renderVersion;
     el.disabled = true;
     el.textContent = "Reading holder index…";
@@ -881,7 +985,7 @@ document.addEventListener("click", async (e) => {
     }
   }
   if (el.dataset.owner) {
-    const r = catalog.find((x) => x.id === el.dataset.owner),
+    const r = catalogById.get(el.dataset.owner),
       render = renderVersion;
     el.disabled = true;
     el.textContent = "Reading ownerOf…";
@@ -1108,7 +1212,8 @@ window.addEventListener("hashchange", (event) => {
       button.setAttribute("aria-selected", String(button.dataset.tab === tab));
     });
     window.scrollTo({ top: y, behavior: "instant" });
-    collectors.load(id);
+    if (fullRecordIds.has(id)) collectors.load(id);
+    else loadRecordDetails(id);
     return;
   }
   route();

@@ -1,5 +1,8 @@
 import { cp, mkdir, readdir, rm, copyFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { gzipSync } from "node:zlib";
+import { createCatalogLoader } from "../src/catalog-bundle.mjs";
+import { buildCatalogPayload } from "../server.mjs";
 await import("./build-account.mjs");
 await rm("dist", { recursive: true, force: true });
 await mkdir("dist/src", { recursive: true });
@@ -15,6 +18,8 @@ const frontend = [
   "catalog-royalty-ui.mjs",
   "archive.css",
   "music-facts.mjs",
+  "lyrics-ui.mjs",
+  "extract-music-metadata.mjs",
   "wallet-library-ui.mjs",
   "collectors-ui.mjs",
   "media-recovery.js",
@@ -26,6 +31,26 @@ const frontend = [
   "image-recovery.mjs",
 ];
 for (const file of frontend) await copyFile(`src/${file}`, `dist/src/${file}`);
+// Public recovery data is fixed for each deployment. Static delivery avoids the
+// Function response-size limit while private account routes remain dynamic.
+await mkdir("dist/catalog", { recursive: true });
+const bundle = createCatalogLoader()();
+const delivery = {
+  records: bundle.records.length,
+  people: bundle.people.length,
+};
+for (const [name, isIndex] of [
+  ["index", true],
+  ["full", false],
+]) {
+  const body = JSON.stringify(buildCatalogPayload(bundle, isIndex));
+  await writeFile(`dist/catalog/${name}.json`, body);
+  delivery[name] = {
+    bytes: Buffer.byteLength(body),
+    gzipBytes: gzipSync(body).length,
+  };
+}
+console.log("Public catalog snapshots: " + JSON.stringify(delivery));
 const assets = [];
 async function scan(dir, prefix = "") {
   for (const entry of await readdir(dir, { withFileTypes: true })) {

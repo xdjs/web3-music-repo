@@ -37,11 +37,17 @@ export function mergeCatalog(base, baseEvidence, bundles, people) {
       r.artist.trim().toLowerCase(),
       r.artistId || slug(r.artist),
     ]),
-    ...people.flatMap((p) =>
-      [p.name, ...(p.aliases || [])].map((n) => [n.trim().toLowerCase(), p.id]),
-    ),
+    ...people
+      .filter((p) => !p.spinampArtistId)
+      .flatMap((p) =>
+        [p.name, ...(p.aliases || [])].map((n) => [
+          n.trim().toLowerCase(),
+          p.id,
+        ]),
+      ),
   ]);
   const addedPeople = new Map();
+  const knownPeople = new Set(people.map((p) => p.id));
   for (const bundle of bundles) {
     for (const r of bundle.records || []) {
       const v = bundle.evidence?.[r.id];
@@ -63,7 +69,9 @@ export function mergeCatalog(base, baseEvidence, bundles, people) {
         continue;
       }
       const artistId =
-        byName.get(r.artist.trim().toLowerCase()) || "artist-" + slug(r.artist);
+        (r.artistId && knownPeople.has(r.artistId) ? r.artistId : null) ||
+        byName.get(r.artist.trim().toLowerCase()) ||
+        "artist-" + slug(r.artist);
       const entry = {
         ...r,
         artistId,
@@ -73,14 +81,14 @@ export function mergeCatalog(base, baseEvidence, bundles, people) {
             ...(r.personIds || []),
             ...(r.credits || []).map((c) => c.personId),
           ]),
-        ].filter((id) => id === artistId || people.some((p) => p.id === id)),
+        ].filter((id) => id === artistId || knownPeople.has(id)),
         origin: "recovered",
       };
       records.push(entry);
       tokens.set(tokenKey(entry), entry);
       media.set(mediaKey(entry, v), entry);
       evidence[entry.id] = v;
-      if (!people.some((p) => p.id === artistId) && !addedPeople.has(artistId))
+      if (!knownPeople.has(artistId) && !addedPeople.has(artistId))
         addedPeople.set(artistId, {
           id: artistId,
           name: r.artist,
@@ -120,6 +128,8 @@ export function createCatalogLoader() {
       "data/catalog/ethereum-revenue-audit.json",
       "data/release-dates.json",
       "data/pete-recovery/zora-recovered-media.json",
+      "data/supercollector/recovered-media.json",
+      "data/spinamp/recovered-media.json",
     ];
     const next = paths
       .map((p) => {
@@ -139,6 +149,14 @@ export function createCatalogLoader() {
       }
     };
     const peteZora = read(paths[18], {});
+    const spinamp = read(paths[20], {});
+    const proposedPeople = new Map(basePeople.map((p) => [p.id, p]));
+    for (const person of [
+      ...(peteZora.proposedPeople || []),
+      ...(spinamp.proposedPeople || []),
+    ]) {
+      if (!proposedPeople.has(person.id)) proposedPeople.set(person.id, person);
+    }
     const merged = mergeCatalog(
       baseCatalog,
       read(paths[0], {}),
@@ -153,13 +171,10 @@ export function createCatalogLoader() {
         read(paths[14], {}),
         read(paths[15], {}),
         peteZora,
+        read(paths[19], {}),
+        spinamp,
       ],
-      [
-        ...basePeople,
-        ...(peteZora.proposedPeople || []).filter(
-          (p) => !basePeople.some((existing) => existing.id === p.id),
-        ),
-      ],
+      [...proposedPeople.values()],
     );
     const audit = {
       results: {

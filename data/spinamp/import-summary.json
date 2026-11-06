@@ -1,0 +1,31 @@
+{
+  "inventoryCount": 52987,
+  "relationsChecked": 12598,
+  "relationScanComplete": false,
+  "added": 3815,
+  "processedMediaFallbackCount": 2011,
+  "duplicateCount": 2489,
+  "excludedCount": 6294,
+  "excludedReasons": {
+    "no-indexed-nft": 6074,
+    "missing-or-artwork-only-original-media": 135,
+    "artist-attribution-conflict": 28,
+    "no-indexed-audio-evidence": 54,
+    "unsupported-original-storage": 3
+  },
+  "chainCounts": {
+    "1": 70,
+    "10": 323,
+    "137": 1,
+    "8453": 3421
+  },
+  "platformCounts": {
+    "Sound": 3814,
+    "Lens": 1
+  },
+  "bundleBytes": 10503743,
+  "bundleGzipBytes": 2676910,
+  "checkedAt": "2026-11-06T10:16:46.552Z",
+  "portraits": 1211,
+  "peteWalletMatchedRecords": 1
+}

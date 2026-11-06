@@ -1,32 +1,40 @@
 {
-  "checkedAt": "2026-11-06T09:48:58.382Z",
-  "totalRecords": 9209,
-  "originalBpm": 1571,
-  "originalKey": 1339,
-  "credits": 185,
+  "checkedAt": "2026-11-06T10:24:59.993Z",
+  "totalRecords": 13640,
+  "scope": "Supplied metadata includes original documents, publisher snapshots, official release pages and explicitly attributed indexer data. Metadata read is not independent chain or playback verification.",
+  "suppliedBpm": 2477,
+  "suppliedKey": 2144,
+  "lyricsTracks": 1275,
+  "metadataSources": {
+    "original-document-or-publisher-snapshot": 9209,
+    "official-public-release-page": 616,
+    "spinamp-indexed-metadata": 3815
+  },
+  "credits": 468,
   "details": {
-    "Description": 8698,
-    "Duration": 9003,
-    "Genre": 4890,
-    "License": 2397,
-    "Track number": 7429,
-    "Recorded in": 2317,
-    "Project": 1052,
+    "Description": 12671,
+    "Duration": 13350,
+    "Genre": 9221,
+    "License": 4313,
+    "Track number": 11160,
+    "Recorded in": 3543,
+    "Project": 1701,
     "Album": 43,
     "Release date": 43,
     "Original release": 1,
     "Mood": 1,
-    "Record label": 463
+    "Record label": 765,
+    "ISRC": 165
   },
-  "metadataRead": 9209,
+  "metadataRead": 13640,
   "metadataUnresolved": 0,
   "bpmAnalysis": {
-    "metadata-bpm": 302,
-    "needs-review": 7,
-    "estimated": 327,
-    "unavailable": 267,
-    "pending": 8300,
-    "not-queued": 6
+    "metadata-bpm": 612,
+    "needs-review": 21,
+    "estimated": 732,
+    "unavailable": 264,
+    "pending": 7574,
+    "not-queued": 4437
   },
   "payments": {
     "verifiedPurchases": 186,
@@ -35,21 +43,21 @@
   },
   "byPlatform": {
     "Sound": {
-      "records": 4915,
-      "originalBpm": 1503,
-      "originalKey": 1292,
+      "records": 8729,
+      "suppliedBpm": 2351,
+      "suppliedKey": 2050,
       "credits": 0,
-      "metadataRead": 4915,
+      "metadataRead": 8729,
       "metadataUnresolved": 0,
       "metadataStates": {
-        "read": 4915
+        "read": 8729
       },
       "attributedCredits": 7
     },
     "Unconfirmed": {
       "records": 10,
-      "originalBpm": 0,
-      "originalKey": 0,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
       "credits": 0,
       "metadataRead": 10,
       "metadataUnresolved": 0,
@@ -60,8 +68,8 @@
     },
     "Arpeggi": {
       "records": 2,
-      "originalBpm": 0,
-      "originalKey": 0,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
       "credits": 0,
       "metadataRead": 2,
       "metadataUnresolved": 0,
@@ -72,8 +80,8 @@
     },
     "Songcamp": {
       "records": 43,
-      "originalBpm": 43,
-      "originalKey": 42,
+      "suppliedBpm": 43,
+      "suppliedKey": 42,
       "credits": 43,
       "metadataRead": 43,
       "metadataUnresolved": 0,
@@ -84,8 +92,8 @@
     },
     "Catalog": {
       "records": 4036,
-      "originalBpm": 25,
-      "originalKey": 5,
+      "suppliedBpm": 25,
+      "suppliedKey": 5,
       "credits": 0,
       "metadataRead": 4036,
       "metadataUnresolved": 0,
@@ -96,8 +104,8 @@
     },
     "Zora": {
       "records": 34,
-      "originalBpm": 0,
-      "originalKey": 0,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
       "credits": 0,
       "metadataRead": 34,
       "metadataUnresolved": 0,
@@ -108,8 +116,8 @@
     },
     "Other": {
       "records": 7,
-      "originalBpm": 0,
-      "originalKey": 0,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
       "credits": 0,
       "metadataRead": 7,
       "metadataUnresolved": 0,
@@ -120,8 +128,8 @@
     },
     "Mint Songs": {
       "records": 162,
-      "originalBpm": 0,
-      "originalKey": 0,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
       "credits": 142,
       "metadataRead": 162,
       "metadataUnresolved": 0,
@@ -129,12 +137,36 @@
         "read": 162
       },
       "attributedCredits": 0
+    },
+    "Supercollector": {
+      "records": 616,
+      "suppliedBpm": 58,
+      "suppliedKey": 47,
+      "credits": 283,
+      "metadataRead": 616,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 616
+      },
+      "attributedCredits": 3
+    },
+    "Lens": {
+      "records": 1,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 1,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 1
+      },
+      "attributedCredits": 0
     }
   },
   "jobs": {
     "metadata": {
       "startedAt": "2026-11-06T09:48:57.954Z",
-      "updatedAt": "2026-11-06T09:48:58.018Z",
+      "updatedAt": "2026-11-06T10:22:17.026Z",
       "finishedAt": "2026-11-06T09:48:58.018Z",
       "interruptedAt": null,
       "completion": "pass-finished",
@@ -142,7 +174,7 @@
     },
     "bpm": {
       "startedAt": "2026-11-06T09:28:46.835Z",
-      "updatedAt": "2026-11-06T09:39:05.228Z",
+      "updatedAt": "2026-11-06T10:24:58.122Z",
       "finishedAt": null,
       "interruptedAt": null,
       "completion": "not-confirmed-finished",

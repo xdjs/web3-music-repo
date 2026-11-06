@@ -32,3 +32,7 @@ data/*.lock
 
 # Generated Vercel static output
 dist/
+
+# Active resumable Spinamp worker checkpoint; frozen runtime bundle is tracked.
+/data/spinamp/nft-references.json.gz
+/data/spinamp/nft-references.json.gz.tmp

@@ -49,8 +49,12 @@ export function musicFacts(record) {
           : null,
     source: estimated
       ? "BPM estimated by Open BPM; tempo may be half or double. Key, when shown, comes from release metadata."
-      : original && (original.bpms.length || original.keys.length)
-        ? "Original token metadata; not audio-analysis estimates"
-        : "Release notes; not audio-analysis estimates",
+      : original?.sourceType === "spinamp-indexed-metadata"
+        ? "Spinamp indexed metadata; not independently verified onchain"
+        : original?.sourceType === "official-public-release-page"
+          ? "Official release metadata; not audio-analysis estimates"
+          : original && (original.bpms.length || original.keys.length)
+            ? "Original token metadata; not audio-analysis estimates"
+            : "Release notes; not audio-analysis estimates",
   };
 }

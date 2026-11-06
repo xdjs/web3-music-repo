@@ -866,6 +866,9 @@ main {
   line-height: 1.8;
   margin: 18px 0;
 }
+.notice code {
+  overflow-wrap: anywhere;
+}
 .owner-row {
   display: flex;
   align-items: center;
@@ -2418,6 +2421,20 @@ dialog::backdrop {
 
 .original-lyrics {
   white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+.lyrics-panel {
+  font-size: inherit;
+}
+.lyrics-collapse-label {
+  display: none;
+}
+.lyrics-panel[open] .lyrics-expand-label,
+.lyrics-panel[open] + .lyrics-preview {
+  display: none;
+}
+.lyrics-panel[open] .lyrics-collapse-label {
+  display: inline;
 }
 .song-revenue {
   margin-block: 2rem;

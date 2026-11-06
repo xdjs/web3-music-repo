@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-11-06T10:23:22.352Z",
+  "base": "http://127.0.0.1:4191",
+  "preserved": "spinamp-94ba38fe64af02a6ebd6",
+  "original": "spinamp-c4fbf6953ce75fd2a410",
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "preservedAudioLabel": true,
+      "transcodeScope": true,
+      "independentChainReadNotClaimed": true,
+      "indexedOriginalLabel": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "preservedAudioLabel": true,
+      "transcodeScope": true,
+      "independentChainReadNotClaimed": true,
+      "indexedOriginalLabel": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "preservedAudioLabel": true,
+      "transcodeScope": true,
+      "independentChainReadNotClaimed": true,
+      "indexedOriginalLabel": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "preservedAudioLabel": true,
+      "transcodeScope": true,
+      "independentChainReadNotClaimed": true,
+      "indexedOriginalLabel": true,
+      "noOverflow": true
+    }
+  ],
+  "errors": []
+}

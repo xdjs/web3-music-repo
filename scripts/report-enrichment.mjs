@@ -19,8 +19,12 @@ const metadata = read("data/music-metadata.json", { records: {} }),
 const report = {
   checkedAt: new Date().toISOString(),
   totalRecords: bundle.records.length,
-  originalBpm: 0,
-  originalKey: 0,
+  scope:
+    "Supplied metadata includes original documents, publisher snapshots, official release pages and explicitly attributed indexer data. Metadata read is not independent chain or playback verification.",
+  suppliedBpm: 0,
+  suppliedKey: 0,
+  lyricsTracks: 0,
+  metadataSources: {},
   credits: 0,
   details: {},
   metadataRead: 0,
@@ -50,8 +54,8 @@ for (const r of bundle.records) {
   const facts = musicFacts({ ...r, audioAnalysis: null });
   const stats = (report.byPlatform[r.platform] ||= {
     records: 0,
-    originalBpm: 0,
-    originalKey: 0,
+    suppliedBpm: 0,
+    suppliedKey: 0,
     credits: 0,
     metadataRead: 0,
     metadataUnresolved: 0,
@@ -60,12 +64,12 @@ for (const r of bundle.records) {
   });
   stats.records++;
   if (facts.bpm) {
-    report.originalBpm++;
-    stats.originalBpm++;
+    report.suppliedBpm++;
+    stats.suppliedBpm++;
   }
   if (facts.key) {
-    report.originalKey++;
-    stats.originalKey++;
+    report.suppliedKey++;
+    stats.suppliedKey++;
   }
   if (
     r.musicMetadata?.credits?.length ||
@@ -85,11 +89,15 @@ for (const r of bundle.records) {
   if (metadataState === "read") {
     report.metadataRead++;
     stats.metadataRead++;
+    const source =
+      r.musicMetadata?.sourceType || "original-document-or-publisher-snapshot";
+    report.metadataSources[source] = (report.metadataSources[source] || 0) + 1;
   } else {
     report.metadataUnresolved++;
     stats.metadataUnresolved++;
   }
   if (r.credits?.length) stats.attributedCredits++;
+  if (r.musicMetadata?.lyrics?.length) report.lyricsTracks++;
   if (r.revenue) report.payments.releasesWithVerifiedPayments++;
   const state = analysis.records[r.id]?.status || "not-queued";
   report.bpmAnalysis[state] = (report.bpmAnalysis[state] || 0) + 1;

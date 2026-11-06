@@ -1,6 +1,6 @@
 # Music Nerd Lab submission — prepared November 6, 2026
 
-Status: **prepared, not published**. Wait for the recovery application's verified public deployment URL before submitting. Pete explicitly requested adding the deployed project to Lab under Pete Rango.
+Status: **published and verified**, November 6 at 09:57 UTC. Pete explicitly requested adding the deployed project to Lab under Pete Rango. Public listing: https://lab.musicnerd.net/peterango/music-nft-recovery .
 
 ## Confirmed publishing path
 
@@ -33,3 +33,9 @@ The full prepared payload and submission helper are under ignored `work/lab-subm
 6. Open `https://lab.musicnerd.net/peterango/music-nft-recovery` in a browser. Verify title, Pete Rango attribution, cover, launch destination, cookbook, and starter recipe actually render. An API success alone does not prove public rendering.
 
 No Lab application source, schema, existing listing, publishing key registration, or production database record was changed during preparation. The existing key is shared with prior authorized publishing work; do not revoke it automatically as if it were a new disposable key.
+
+## Publication result
+
+Submitted through `PUT /api/recipes` after production browser QA passed for deployment `dpl_EvGcZJyofBcXUXehfhyNQXZxGckt` (source `4a21953`). API returned HTTP 200, creator `peterango`, status `published`. Read-only database verification confirmed exact launch URL, screenshot, source, cookbook, starter recipe and external mode. The separate `music-nft-era` entry retained its prior URL and update timestamp.
+
+Public rendered page verified at 1440 and 390px: title, Pete Rango attribution, explicit originator credit, loaded original app screenshot, correct launch destination, expanded cookbook, and starter recipe. Lab's page measures 392px document width at a 390px viewport; the 2px overflow is a Lab layout limitation, not a recovery app change. No Lab source was modified. Evidence: `data/lab-submission-verification.json`, `captures/lab-listing-*.png`.

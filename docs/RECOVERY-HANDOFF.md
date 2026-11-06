@@ -10,9 +10,9 @@ Dedicated public repository: https://github.com/xdjs/web3-music-repo . The imple
 - Active preview and bulk workers: `/Users/peterarango/Documents/Music Nerd/Apps/music-nft-recovery`, http://127.0.0.1:4190.
 - The preview directory remains a preserved local working copy without Git. Its `.env.local` and private playlist data were deliberately not transferred.
 - The documentary at `/Users/peterarango/Documents/Music Nerd/Music NFT Era` is a different, dirty repository. Do not reset, stage or overwrite it.
-- Public deployment: https://web3-music-repo.vercel.app . The next release is being assembled; verify its deployed source/build before treating local polish as live.
+- Public deployment: https://web3-music-repo.vercel.app . Core release `4a21953` deployed as `dpl_EvGcZJyofBcXUXehfhyNQXZxGckt` and passed live browser verification. Later source edits require a new deployment.
 - The canonical Music Nerd database is used for read-only account lookup. Account playlists use a separate private Vercel Blob store. No canonical account creation or merge is performed.
-- Lab submission under Pete Rango is prepared and explicitly authorized, but remains unpublished until final live QA. See `docs/lab-submission-plan.md`.
+- Lab listing is published and verified under Pete Rango: https://lab.musicnerd.net/peterango/music-nft-recovery . See `docs/lab-submission-plan.md`.
 
 Before editing, inspect running processes and working directories. Do not run two writers against one data file. Recovery data continues to change in the preview copy; the Git checkout is a reviewed checkpoint, not an automatic mirror.
 
@@ -79,10 +79,10 @@ After jobs finish: regenerate the report, inspect failures by reason, retry unre
 1. Complete the metadata/BPM workers and review unavailable/low-confidence results. Arweave is returning HTTP 429 for some content. Preserve original values and distinguish unknown, unavailable, and estimated.
 2. Broaden revenue: Catalog Ethereum sales/royalties, album allocation, Sound mint payments/splits, then Zora. Never multiply current price by editions or call secondary sale volume artist income. Keep currencies and historical USD conversions separate.
 3. Sound Base/Polygon historical scans remain incomplete. Empty responses caused by errors are not completed censuses. Additional Zora music discovery is multi-chain and cannot rely on a universal music tag.
-4. Privy origin configuration is fixed: local client allows only localhost/127.0.0.1:4190; production client allows only https://web3-music-repo.vercel.app. Both live API read-backs passed, with main/default settings preserved. Production environment is configured; final deployment/modal QA is pending. Real personal sign-in, linked-wallet flow and account save/load still need user testing. Unknown canonical accounts receive 409 and must first onboard through Music Nerd.
+4. Privy origin configuration is fixed: local client allows only localhost/127.0.0.1:4190; production client allows only https://web3-music-repo.vercel.app. Both live API read-backs passed, with main/default settings preserved. Production environment is configured and real SDK modal QA passed in both viewports/themes. Real personal sign-in, linked-wallet flow and account save/load still need user testing. Unknown canonical accounts receive 409 and must first onboard through Music Nerd.
 5. Private Vercel Blob storage now provides durable production account playlists with conditional writes and account isolation. Guest playlists remain browser-local; real personal end-to-end persistence is unverified. Wallet library only matches known catalog tokens and supported indexers, not every wallet NFT on every chain.
 6. Missing PFPs need attributable historical images or forward-verified ENS. Do not choose arbitrary NFTs as a person's avatar. More artist banners and faithful historical organization remain useful.
-7. Reassess wallet dependency advisories before deployment (last audit: 29 transitive issues, 11 moderate/18 high). No forced breaking downgrade was applied.
+7. Reassess wallet dependency advisories before deployment (last install audit: 32 transitive issues, 11 moderate/21 high). No forced breaking downgrade was applied.
 
 ## Design reference and file map
 
@@ -110,8 +110,29 @@ Pete confirmed `p3t3rango`. Both names resolve to one profile. The ten explicitl
 - Shared playlist links contain a bounded compressed title/track-ID snapshot. A recipient can play without login and save an independent editable copy. Four historical Sound playlists have play/save/share/like controls.
 - Six additional verified Pete-related recordings: Dreamvibe, Planet X, Tragg Park, Oms at Play, Evermore DEMO Tape REIN X Pete Rango, and Mavi Taylor's Say it celly. Alongside the earlier ten NFTs and rush clip, Pete now has 17 attributed records. See `docs/pete-zora-expanded.md`; this is not a complete discography. Evermore remains platform Other pending exact platform provenance.
 - OpenSea holdings: 412 unique enumerated items versus a displayed413 total; creator attribution is independently established. New Base Sound-looking contracts remain discovery leads until factory provenance is verified.
-- Instagram/audio clip exports were discussed as the next sharing feature; they are not implemented. Supercollector catalog investigation is a separate next import.
+- Instagram/audio clip exports were discussed as the next sharing feature; they are not implemented. Supercollector was subsequently imported in the expanded checkpoint below.
 
 Release verification before deploy: 148 JavaScript tests and five Catalog-export Python tests pass; syntax, formatting, private-Blob live CAS probe, selected actual-media playback, playlist sharing, four historical playlists, navigation/filter and queue checks pass. Real personal email OTP, wallet signing, linked-wallet persistence and real-account playlist save/load remain user checks.
 
 Metadata checkpoint 2026-11-06T09:48:58.382Z: 9209 current records read; 1571 supplied BPM values; 1339 supplied keys. Open BPM remains running locally and its output is not automatically deployed.
+
+## November 6 expanded release checkpoint
+
+The expanded candidate contains **13,640 records** (8,729 Sound, 4,036 Catalog, 616 Supercollector, 162 Mint Songs, 43 Songcamp, 34 Zora, 1 Lens, and 19 other/unconfirmed/Arpeggi entries). Pete's attributed profile now has 21 records, including the verified Supercollector collaborator credits and exact-wallet Lens identity. This supersedes earlier inventory totals above. It is not a complete discography or platform census.
+
+- **Inline lyrics:** 1,275 songs recovered from existing original metadata caches, readable on the song page with preserved line breaks and expand/collapse. The schema5 extractor and additive application script preserve existing metadata fields. See `docs/lyrics-recovery.md`.
+- **Spinamp:** 3,815 frozen additional NFT-linked records, including 2,011 explicitly labeled preserved-audio fallbacks; 1,211 attributed artist portrait references. Full discovery inventory 52,987 tracks, exact relation checks 12,598 at release freeze; remaining inventory is not in the app yet. Chain verification is separately pending. See `docs/spinamp-recovery-plan.md` and release-audit.
+- **Supercollector:** 616 eligible public tracks, all 152 contract standards checked; contractURI/index mismatches remain visible. Unreleased records and 7 missing per-track references are excluded. See `docs/supercollector-recovery.md`.
+- **Musical data:** 2,477 supplied BPM values, 2,144 supplied keys across original metadata, publisher snapshots, official release pages and explicitly indexed metadata. Metadata read counts include these distinct source classes; they are not independent onchain reads.
+- **Delivery:** compact catalog and lazy song detail; static CDN catalog snapshots on Vercel. Current gzip index 2.41MB versus full 8.99MB. Shared payload builder keeps local/API/static forms consistent.
+- **Branding:** current Music Nerd black/pink record sleeve and original lenses; 1200×630OG and Lab cover. Exact live system font verified. See `docs/share-image.md`.
+
+Validation: 167 JavaScript tests and 5 Catalog-export Python checks passed before release. New lyrics, Spinamp and Supercollector panels were rendered and reviewed at 1440/390px, light/dark; no overflow. Selected real audio starts passed; neither all-track playback nor all remote portraits is verified. Final production deployment and Lab read-back are recorded separately after the main merge; prior verified production was core `4a21953`.
+
+### Continuing local work
+
+The Open BPM worker remains in `../music-nft-recovery`, PID 85147 at verification, with a single-writer lock. The committed snapshot from 10:24:58 UTC has 732 estimates, 21 low-confidence, 264 unavailable, 7,574 pending and 612 supplied-BPM skips; 4,437 newer records have not been queued in this run. Check current PID/cwd/lock before resuming. Do not overwrite its output with this older release checkpoint.
+
+The Spinamp relation resolver continues only `data/spinamp/nft-references.json.gz`, which is deliberately gitignored. The frozen runtime bundle does not update automatically. At the final audit 26,409/52,987 relations were checked with 697 retryable provider failures. Inspect live process/checkpoint, then regenerate a deliberate release candidate using the importer, preserving exact identity/media/source qualifications.
+
+Remaining: complete relation and BPM scans; verify newly indexed NFT metadata/media independently; use the 28 discovered factory seeds for targeted multi-chain census gaps; add a Solana/Nina adapter; continue comments/history recovery. Instagram audio/video exports remain a proposal, not an implemented feature. Personal email OTP, wallet signature/link, and real-account playlist save/load still require the user. Main/default Music Nerd Privy settings remain unchanged.

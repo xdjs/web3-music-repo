@@ -1,0 +1,137 @@
+{
+  "checkedAt": "2026-11-06T10:13:48.598Z",
+  "scope": "Offline original metadata extraction; no network calls or active worker writes",
+  "catalogRecords": 9825,
+  "documentsMatched": 9199,
+  "lyricsTracks": 1275,
+  "referenceOnlyTracks": 0,
+  "oversizedTracks": 0,
+  "byPlatform": {
+    "Sound": {
+      "records": 4915,
+      "documentsMatched": 4915,
+      "lyricsTracks": 1275,
+      "referenceOnlyTracks": 0
+    },
+    "Unconfirmed": {
+      "records": 10,
+      "documentsMatched": 4,
+      "lyricsTracks": 0,
+      "referenceOnlyTracks": 0
+    },
+    "Arpeggi": {
+      "records": 2,
+      "documentsMatched": 2,
+      "lyricsTracks": 0,
+      "referenceOnlyTracks": 0
+    },
+    "Songcamp": {
+      "records": 43,
+      "documentsMatched": 43,
+      "lyricsTracks": 0,
+      "referenceOnlyTracks": 0
+    },
+    "Catalog": {
+      "records": 4036,
+      "documentsMatched": 4036,
+      "lyricsTracks": 0,
+      "referenceOnlyTracks": 0
+    },
+    "Zora": {
+      "records": 34,
+      "documentsMatched": 33,
+      "lyricsTracks": 0,
+      "referenceOnlyTracks": 0
+    },
+    "Other": {
+      "records": 7,
+      "documentsMatched": 4,
+      "lyricsTracks": 0,
+      "referenceOnlyTracks": 0
+    },
+    "Mint Songs": {
+      "records": 162,
+      "documentsMatched": 162,
+      "lyricsTracks": 0,
+      "referenceOnlyTracks": 0
+    },
+    "Supercollector": {
+      "records": 616,
+      "documentsMatched": 0,
+      "lyricsTracks": 0,
+      "referenceOnlyTracks": 0
+    }
+  },
+  "samples": [
+    {
+      "id": "record-1956ba25",
+      "title": "Consent",
+      "platform": "Sound",
+      "versions": 1
+    },
+    {
+      "id": "record-5fee7f03",
+      "title": "magnetic",
+      "platform": "Sound",
+      "versions": 1
+    },
+    {
+      "id": "record-d266e5c9",
+      "title": "THINKIN BOUT YOU II",
+      "platform": "Sound",
+      "versions": 1
+    },
+    {
+      "id": "record-d4f56fa9",
+      "title": "trip (live)",
+      "platform": "Sound",
+      "versions": 1
+    },
+    {
+      "id": "record-4e6ba8f6",
+      "title": "Need That ft. Iman Europe",
+      "platform": "Sound",
+      "versions": 1
+    },
+    {
+      "id": "record-not4me",
+      "title": "NOT4ME",
+      "platform": "Sound",
+      "versions": 1
+    },
+    {
+      "id": "record-not4me-acoustic",
+      "title": "NOT4ME (Acoustic)",
+      "platform": "Sound",
+      "versions": 1
+    },
+    {
+      "id": "sound-v2-0d8422ac9be719487efab830999b11fbe29c3993",
+      "title": "Stars - Golden Egg",
+      "platform": "Sound",
+      "versions": 1
+    },
+    {
+      "id": "sound-v2-c69644ed374e3df1660f5019597686ff728f8a0d",
+      "title": "SWIMMING - Limited",
+      "platform": "Sound",
+      "versions": 1
+    },
+    {
+      "id": "sound-v2-2799ba9dc623bd52ae38bcb103c3c50de72e5e6a",
+      "title": "Strange People  - Golden Egg",
+      "platform": "Sound",
+      "versions": 1
+    }
+  ],
+  "cacheFiles": [
+    {
+      "path": "../music-nft-recovery/work/music-metadata-cache",
+      "count": 5061
+    },
+    {
+      "path": "work/music-metadata-cache",
+      "count": 6
+    }
+  ]
+}

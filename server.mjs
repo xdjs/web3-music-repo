@@ -1,3 +1,5 @@
+import { createHash } from "node:crypto";
+import { indexRecord, presentRecord } from "./src/catalog-presentation.mjs";
 import { catalogHolders } from "./src/catalog-holders.mjs";
 import { readWalletPage } from "./src/wallet-library.mjs";
 import { accountAPI } from "./src/account-api.mjs";
@@ -163,6 +165,87 @@ const json = (res, data, status = 200) => {
   const serialized = JSON.stringify(data);
   res.end(res.wantsGzip ? gzipSync(serialized) : serialized);
 };
+const indexResponses = new WeakMap();
+function publicIndex(req, res, bundle, build) {
+  let cached = indexResponses.get(bundle);
+  if (!cached) {
+    const body = JSON.stringify(build());
+    cached = {
+      body,
+      gzip: gzipSync(body),
+      etag:
+        'W/"' +
+        createHash("sha256").update(body).digest("hex").slice(0, 24) +
+        '"',
+    };
+    indexResponses.set(bundle, cached);
+  }
+  const headers = {
+    "Content-Type": "application/json",
+    "Cache-Control": "public, max-age=0, must-revalidate",
+    Vary: "Accept-Encoding",
+    ETag: cached.etag,
+  };
+  if (
+    req.headers["if-none-match"]
+      ?.split(",")
+      .map((value) => value.trim())
+      .includes(cached.etag)
+  ) {
+    res.writeHead(304, headers);
+    return res.end();
+  }
+  const body = res.wantsGzip ? cached.gzip : cached.body;
+  res.writeHead(200, {
+    ...headers,
+    ...(res.wantsGzip ? { "Content-Encoding": "gzip" } : {}),
+    "Content-Length": Buffer.byteLength(body),
+  });
+  res.end(req.method === "HEAD" ? undefined : body);
+}
+export function buildCatalogPayload(bundle, isIndex = false) {
+  const records = bundle.records;
+  const snapshot = bundle.evidence;
+  const recordsByArtist = new Map();
+  for (const record of records) {
+    const artistRecords = recordsByArtist.get(record.artistId) || [];
+    artistRecords.push(record);
+    recordsByArtist.set(record.artistId, artistRecords);
+  }
+  return {
+    records: records.map((r) =>
+      (isIndex ? indexRecord : presentRecord)(r, snapshot[r.id]),
+    ),
+    people: bundle.people.map((p) => ({
+      id: p.id,
+      name: p.name,
+      bio: artistPresentation[p.id]?.bio || p.bio,
+      role: p.role,
+      kind: p.kind,
+      portrait:
+        artistPortrait(p.id) ||
+        archivedArtistPortrait(p, recordsByArtist.get(p.id) || []) ||
+        p.portrait ||
+        null,
+      banner: artistPresentation[p.id] || null,
+      aliases: p.aliases || [],
+      links: [
+        ...(p.links || []),
+        ...(archivedArtist(p, recordsByArtist.get(p.id) || [])?.links || []),
+      ].filter((l) => /^https:\/\//.test(l.url)),
+      sources: (p.sources || [])
+        .map((id) => sources[id])
+        .filter(Boolean)
+        .map((s) => ({
+          title: s.title,
+          url: s.url,
+          date: s.date,
+          kind: s.kind,
+        })),
+    })),
+    summary: recoverySummary(records, snapshot),
+  };
+}
 const types = {
   ".html": "text/html; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
@@ -204,42 +287,23 @@ export async function handler(req, res) {
       );
       return json(res, value, value.status === "indexed" ? 200 : 503);
     }
+    if (url.pathname.startsWith("/api/record/")) {
+      let id;
+      try {
+        id = decodeURIComponent(url.pathname.slice(12));
+      } catch {
+        return json(res, { error: "Invalid recording ID" }, 400);
+      }
+      const record = nftCatalog.find((record) => record.id === id);
+      return record
+        ? json(res, { record: presentRecord(record, bundle.evidence[id]) })
+        : json(res, { error: "Recording not found" }, 404);
+    }
     if (url.pathname === "/api/catalog") {
-      const snapshot = bundle.evidence;
-      return json(res, {
-        records: nftCatalog.map((r) => {
-          let imageURL;
-          try {
-            imageURL = storageURL(r.imageURI);
-          } catch {}
-          return { ...r, imageURL, recovery: snapshot[r.id] || null };
-        }),
-        people: bundle.people.map((p) => ({
-          id: p.id,
-          name: p.name,
-          bio: artistPresentation[p.id]?.bio || p.bio,
-          role: p.role,
-          kind: p.kind,
-          portrait:
-            artistPortrait(p.id) || archivedArtistPortrait(p, nftCatalog),
-          banner: artistPresentation[p.id] || null,
-          aliases: p.aliases || [],
-          links: [
-            ...(p.links || []),
-            ...(archivedArtist(p, nftCatalog)?.links || []),
-          ].filter((l) => /^https:\/\//.test(l.url)),
-          sources: (p.sources || [])
-            .map((id) => sources[id])
-            .filter(Boolean)
-            .map((s) => ({
-              title: s.title,
-              url: s.url,
-              date: s.date,
-              kind: s.kind,
-            })),
-        })),
-        summary: recoverySummary(nftCatalog, snapshot),
-      });
+      const isIndex = url.searchParams.get("view") === "index";
+      return isIndex
+        ? publicIndex(req, res, bundle, () => buildCatalogPayload(bundle, true))
+        : json(res, buildCatalogPayload(bundle));
     }
     if (url.pathname === "/api/coverage")
       return json(res, {

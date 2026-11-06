@@ -10,7 +10,15 @@
       "excludeFiles": "{public/**,dist/**,work/**,private/**,captures/**,docs/**,tests/**,.env*,evidence/reference-screens/**,evidence/catalog-payments/**}"
     }
   },
-  "rewrites": [{ "source": "/api/:path*", "destination": "/api/index" }],
+  "rewrites": [
+    {
+      "source": "/api/catalog",
+      "has": [{ "type": "query", "key": "view", "value": "index" }],
+      "destination": "/catalog/index.json"
+    },
+    { "source": "/api/catalog", "destination": "/catalog/full.json" },
+    { "source": "/api/:path*", "destination": "/api/index" }
+  ],
   "headers": [
     {
       "source": "/(.*)",

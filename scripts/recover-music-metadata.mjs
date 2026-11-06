@@ -47,7 +47,7 @@ const refresh = process.argv.includes("--refresh");
 const records = bundle.records.filter(
   (r) =>
     (!filter || r.platform === filter) &&
-    (refresh || result.records[r.id]?.schemaVersion !== 4),
+    (refresh || result.records[r.id]?.schemaVersion !== 5),
 );
 const save = () => {
   result.updatedAt = new Date().toISOString();
@@ -134,7 +134,7 @@ for (const r of records) {
   if (!metadata) continue;
   result.records[r.id] = {
     status: "read",
-    schemaVersion: 4,
+    schemaVersion: 5,
     ...extractMusicMetadata(metadata),
     source,
     metadataURL: v?.metadataURL || null,
@@ -154,7 +154,7 @@ await Promise.all(
   Array.from({ length: 4 }, async () => {
     while (!stopping && next < records.length) {
       const r = records[next++];
-      if (result.records[r.id]?.schemaVersion === 4 && !refresh) continue;
+      if (result.records[r.id]?.schemaVersion === 5 && !refresh) continue;
       const v = bundle.evidence[r.id],
         source = v?.metadataURI || v?.metadataURL;
       if (!source) {
@@ -168,7 +168,7 @@ await Promise.all(
         const metadata = await read(source);
         result.records[r.id] = {
           status: "read",
-          schemaVersion: 4,
+          schemaVersion: 5,
           ...extractMusicMetadata(metadata),
           source,
           metadataURL: v.metadataURL || null,

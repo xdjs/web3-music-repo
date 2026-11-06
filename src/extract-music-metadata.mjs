@@ -1,3 +1,55 @@
+export const LYRICS_BYTE_LIMIT = 100 * 1024;
+export function extractLyrics(metadata) {
+  const roots = [
+    [metadata, "lyrics"],
+    [metadata?.body, "body.lyrics"],
+    [metadata?.properties, "properties.lyrics"],
+  ];
+  const lyrics = [],
+    references = [],
+    seen = new Set();
+  let bytes = 0,
+    tooLarge = false;
+  for (const [root, field] of roots) {
+    const raw =
+      typeof root?.lyrics === "string" ? root.lyrics : root?.lyrics?.text;
+    if (typeof raw !== "string") continue;
+    const text = raw
+      .replace(/\r\n?/g, "\n")
+      .replace(/\u0000/g, "")
+      .trim();
+    if (!text || seen.has(text)) continue;
+    seen.add(text);
+    if (text.length > LYRICS_BYTE_LIMIT) {
+      tooLarge = true;
+      continue;
+    }
+    if (/^(?:(?:https?:|ipfs:|ar:)\/\/|www\.|\/\/)\S+$/i.test(text)) {
+      if (text.length <= 4096) references.push({ url: text, field });
+      else tooLarge = true;
+      continue;
+    }
+    if (
+      /^(?:n\/?a|none|null|undefined|false|true|no lyrics(?: available)?|lyrics (?:unavailable|not available)|not available|instrumental|\[instrumental\]|tba|tbd)$/i.test(
+        text,
+      )
+    )
+      continue;
+    const size = new TextEncoder().encode(text).byteLength;
+    if (size + bytes > LYRICS_BYTE_LIMIT) {
+      tooLarge = true;
+      continue;
+    }
+    lyrics.push({ text, field });
+    bytes += size;
+  }
+  return {
+    ...(lyrics.length ? { hasLyrics: true, lyrics } : {}),
+    ...(references.length ? { lyricsReferences: references } : {}),
+    ...(tooLarge ? { lyricsOmittedReason: "text-exceeds-100kb-limit" } : {}),
+  };
+}
+
 export function extractMusicMetadata(metadata) {
   const roots = [metadata, metadata?.body, metadata?.properties].filter(
     (x) => x && typeof x === "object",
@@ -7,7 +59,6 @@ export function extractMusicMetadata(metadata) {
     collaborators = [],
     credits = [],
     details = {};
-  let hasLyrics = false;
   const add = (key, value) => {
     if (typeof value !== "string" && typeof value !== "number") return;
     const text = String(value).trim();
@@ -66,11 +117,6 @@ export function extractMusicMetadata(metadata) {
     if (["songcredits", "credits"].includes(key)) credits.push(text);
   };
   for (const root of roots) {
-    if (
-      (typeof root.lyrics === "string" && root.lyrics.trim()) ||
-      (typeof root.lyrics?.text === "string" && root.lyrics.text.trim())
-    )
-      hasLyrics = true;
     for (const [key, value] of Object.entries(root)) add(key, value);
     if (typeof root.project?.title === "string")
       add("project", root.project.title);
@@ -90,7 +136,7 @@ export function extractMusicMetadata(metadata) {
     }
   }
   return {
-    ...(hasLyrics ? { hasLyrics: true } : {}),
+    ...extractLyrics(metadata),
     bpms: [...new Set(bpms)],
     keys: [...new Set(keys)],
     collaborators: [...new Set(collaborators)],

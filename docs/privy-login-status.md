@@ -52,3 +52,7 @@ Pete explicitly approved enabling login on the live site. Created and saved **Mu
 - New client uses its own different-domain configuration; main app cookie and session settings were not changed. Email and wallet authentication remain enabled.
 - Dashboard displayed “App client was updated successfully”. Independent public API read-back returned HTTP 200 and the exact single origin. Separate public API checks confirmed the default client's three origins and the local client's two origins are preserved.
 - Evidence: `data/privy-production-client-verification.json`. Release orchestrator owns setting the production environment variable, redeployment, and real live modal verification. No OTP or wallet signature was requested during setup.
+
+## Live production verification — 09:54 UTC
+
+Deployment `dpl_EvGcZJyofBcXUXehfhyNQXZxGckt` serves the exact production client and reports `playlistStorage: private-blob`. The real Privy SDK login modal passed at 1440/390px in light/dark themes, with email and wallet choices, Music Nerd lenses, no overflow or JavaScript errors, and a successful HTTP 200 public configuration request. No invalid-origin response occurred. Evidence: `data/privy-production-login-verification.json`, `captures/privy-production-login-*.png`, `scripts/verify-production-login.mjs`. No OTP or wallet signature was sent; real account completion remains a personal test.

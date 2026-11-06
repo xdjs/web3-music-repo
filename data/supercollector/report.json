@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-06T09:51:30.366Z",
+  "indexReleases": 152,
+  "indexTracks": 717,
+  "directoryArtists": 74,
+  "directoryReleases": 152,
+  "releasePagesRead": 152,
+  "releasePageFailures": [],
+  "publicRecords": 616,
+  "withheldByReason": {
+    "metadata-token-number-unconfirmed": 7,
+    "restricted-or-unconfirmed": 94
+  },
+  "chains": {
+    "10": 152
+  },
+  "originalBPMTracks": 58,
+  "originalKeyTracks": 47,
+  "creditedTracks": 283,
+  "peteAttributedTracks": 3,
+  "chainAudit": {
+    "blockNumber": 159180072,
+    "outcomes": {
+      "verified": 152,
+      "template-matches-index": 581,
+      "mismatch": 42
+    }
+  },
+  "scope": "Public release-search snapshot reconciled against artist directory; not a complete historical onchain census"
+}

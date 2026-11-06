@@ -1,0 +1,238 @@
+{
+  "checkedAt": "2026-11-06T10:15:13.051Z",
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "query": "{ allMetaFactories(first:100){totalCount nodes{id chainId platformId address startingBlock contractType}} }",
+  "body": {
+    "data": {
+      "allMetaFactories": {
+        "totalCount": 28,
+        "nodes": [
+          {
+            "id": "0x0000000000aec84F5BFc2af15EAfb943bf4e3522",
+            "chainId": "ethereum",
+            "platformId": "sound",
+            "address": "0x0000000000aec84F5BFc2af15EAfb943bf4e3522",
+            "startingBlock": "18202905",
+            "contractType": "soundCreatorV2"
+          },
+          {
+            "id": "0x006A667D701088243238A4Af19A2543fd37b1C6A",
+            "chainId": "ethereum",
+            "platformId": "decent",
+            "address": "0x006A667D701088243238A4Af19A2543fd37b1C6A",
+            "startingBlock": "16192478",
+            "contractType": "decentV2"
+          },
+          {
+            "id": "0x0C00bC13d73591911Ff3BF1Af9CE3391a66bF428",
+            "chainId": "ethereum",
+            "platformId": "decent",
+            "address": "0x0C00bC13d73591911Ff3BF1Af9CE3391a66bF428",
+            "startingBlock": "15975456",
+            "contractType": "decentV2"
+          },
+          {
+            "id": "0x327793Fa255bdD63C20a4aAD11c3A944A1EA62d6",
+            "chainId": "ethereum",
+            "platformId": "decent",
+            "address": "0x327793Fa255bdD63C20a4aAD11c3A944A1EA62d6",
+            "startingBlock": "15691421",
+            "contractType": "decentV2"
+          },
+          {
+            "id": "0x52BA52306aD4bc10B317fcD8602a4A5e0f708646",
+            "chainId": "ethereum",
+            "platformId": "decent",
+            "address": "0x52BA52306aD4bc10B317fcD8602a4A5e0f708646",
+            "startingBlock": "16649285",
+            "contractType": "decentV2"
+          },
+          {
+            "id": "0x78E3aDc0E811e4f93BD9F1f9389b923c9A3355c2",
+            "chainId": "ethereum",
+            "platformId": "sound",
+            "address": "0x78E3aDc0E811e4f93BD9F1f9389b923c9A3355c2",
+            "startingBlock": "13725565",
+            "contractType": "soundArtistProfileCreator"
+          },
+          {
+            "id": "0xAef3e8c8723D9c31863BE8dE54dF2668Ef7c4B89",
+            "chainId": "ethereum",
+            "platformId": "sound",
+            "address": "0xAef3e8c8723D9c31863BE8dE54dF2668Ef7c4B89",
+            "startingBlock": "15570833",
+            "contractType": "soundCreatorV1"
+          },
+          {
+            "id": "0xF74B146ce44CC162b601deC3BE331784DB111DC1",
+            "chainId": "ethereum",
+            "platformId": "zora",
+            "address": "0xF74B146ce44CC162b601deC3BE331784DB111DC1",
+            "startingBlock": "14758779",
+            "contractType": "zoraDropCreator"
+          },
+          {
+            "id": "2ZvRTpStD4gQ9WPoXuiA4MtFpiZze9K9fPfFtCTnzdGo",
+            "chainId": "solana",
+            "platformId": "kota",
+            "address": "2ZvRTpStD4gQ9WPoXuiA4MtFpiZze9K9fPfFtCTnzdGo",
+            "startingBlock": null,
+            "contractType": "candyMachine"
+          },
+          {
+            "id": "base/0x0000000000aec84F5BFc2af15EAfb943bf4e3522",
+            "chainId": "base",
+            "platformId": "sound",
+            "address": "0x0000000000aec84F5BFc2af15EAfb943bf4e3522",
+            "startingBlock": "7272929",
+            "contractType": "soundCreatorV2"
+          },
+          {
+            "id": "base/0x137d7d27af9B4d7b467Ac008AFdcDb8C9Ac4ddd9",
+            "chainId": "base",
+            "platformId": "anotherblock",
+            "address": "0x137d7d27af9B4d7b467Ac008AFdcDb8C9Ac4ddd9",
+            "startingBlock": "2134462",
+            "contractType": "anotherblock"
+          },
+          {
+            "id": "base/0x58C3ccB2dcb9384E5AB9111CD1a5DEA916B0f33c",
+            "chainId": "base",
+            "platformId": "zora",
+            "address": "0x58C3ccB2dcb9384E5AB9111CD1a5DEA916B0f33c",
+            "startingBlock": "1461362",
+            "contractType": "zoraDropCreator"
+          },
+          {
+            "id": "base/0x9b24FD165a371042e5CA81e8d066d25CAD11EDE7",
+            "chainId": "base",
+            "platformId": "zora",
+            "address": "0x9b24FD165a371042e5CA81e8d066d25CAD11EDE7",
+            "startingBlock": "1496186",
+            "contractType": "zora1155DropCreator"
+          },
+          {
+            "id": "base/0xc7d7131e8CC6b57faEDd57fD5562D1f732955dFF",
+            "chainId": "base",
+            "platformId": "pods",
+            "address": "0xc7d7131e8CC6b57faEDd57fD5562D1f732955dFF",
+            "startingBlock": "11398343",
+            "contractType": "zora1155DropCreator"
+          },
+          {
+            "id": "EY55PALTTj1ZYbT74w21KRCiR1GpgRxaCwJdtSYEry1b",
+            "chainId": "solana",
+            "platformId": "kota",
+            "address": "EY55PALTTj1ZYbT74w21KRCiR1GpgRxaCwJdtSYEry1b",
+            "startingBlock": null,
+            "contractType": "candyMachine"
+          },
+          {
+            "id": "ninaN2tm9vUkxoanvGcNApEeWiidLMM2TdBX8HoJuL4",
+            "chainId": "solana",
+            "platformId": "nina",
+            "address": "ninaN2tm9vUkxoanvGcNApEeWiidLMM2TdBX8HoJuL4",
+            "startingBlock": null,
+            "contractType": "ninaMintCreator"
+          },
+          {
+            "id": "optimism/0x0000000000aec84F5BFc2af15EAfb943bf4e3522",
+            "chainId": "optimism",
+            "platformId": "sound",
+            "address": "0x0000000000aec84F5BFc2af15EAfb943bf4e3522",
+            "startingBlock": "109963103",
+            "contractType": "soundCreatorV2"
+          },
+          {
+            "id": "optimism/0x5bCF5773BCf1f131A0Cad5c74aa9Be1a80b63c55",
+            "chainId": "optimism",
+            "platformId": "sound",
+            "address": "0x5bCF5773BCf1f131A0Cad5c74aa9Be1a80b63c55",
+            "startingBlock": "105010251",
+            "contractType": "soundCreatorV1"
+          },
+          {
+            "id": "optimism/0x68392873003d60229011c14cf2970365E9C8Bd3f",
+            "chainId": "optimism",
+            "platformId": "decent",
+            "address": "0x68392873003d60229011c14cf2970365E9C8Bd3f",
+            "startingBlock": "96976820",
+            "contractType": "decentSeries"
+          },
+          {
+            "id": "optimism/0x777777C338d93e2C7adf08D102d45CA7CC4Ed021",
+            "chainId": "optimism",
+            "platformId": "zora",
+            "address": "0x777777C338d93e2C7adf08D102d45CA7CC4Ed021",
+            "startingBlock": "4664190",
+            "contractType": "zora1155DropCreator"
+          },
+          {
+            "id": "optimism/0x78b524931e9d847c40BcBf225c25e154a7B05fDA",
+            "chainId": "optimism",
+            "platformId": "zora",
+            "address": "0x78b524931e9d847c40BcBf225c25e154a7B05fDA",
+            "startingBlock": "97158994",
+            "contractType": "zora1155DropCreator"
+          },
+          {
+            "id": "optimism/0x7d1a46c6e614A0091c39E102F2798C27c1fA8892",
+            "chainId": "optimism",
+            "platformId": "zora",
+            "address": "0x7d1a46c6e614A0091c39E102F2798C27c1fA8892",
+            "startingBlock": "97155864",
+            "contractType": "zoraDropCreator"
+          },
+          {
+            "id": "optimism/0x888a01579374A702Bf3911B086b6E72834f7a416",
+            "chainId": "optimism",
+            "platformId": "spinamp",
+            "address": "0x888a01579374A702Bf3911B086b6E72834f7a416",
+            "startingBlock": "124628098",
+            "contractType": "zora1155DropCreator"
+          },
+          {
+            "id": "optimism/0xc7d7131e8CC6b57faEDd57fD5562D1f732955dFF",
+            "chainId": "optimism",
+            "platformId": "investinmusic.xyz",
+            "address": "0xc7d7131e8CC6b57faEDd57fD5562D1f732955dFF",
+            "startingBlock": "109521639",
+            "contractType": "zora1155DropCreator"
+          },
+          {
+            "id": "polygon/0xDb46d1Dc155634FbC732f92E853b10B288AD5a1d",
+            "chainId": "polygon",
+            "platformId": "lens",
+            "address": "0xDb46d1Dc155634FbC732f92E853b10B288AD5a1d",
+            "startingBlock": "28384640",
+            "contractType": "lens"
+          },
+          {
+            "id": "sepolia/0x2fBdBc34B6015e7b40638179Aa05a2D2267452c7",
+            "chainId": "sepolia",
+            "platformId": "zora",
+            "address": "0x2fBdBc34B6015e7b40638179Aa05a2D2267452c7",
+            "startingBlock": "4418104",
+            "contractType": "zoraDropCreator"
+          },
+          {
+            "id": "zora/0x777777C338d93e2C7adf08D102d45CA7CC4Ed021",
+            "chainId": "zora",
+            "platformId": "zora",
+            "address": "0x777777C338d93e2C7adf08D102d45CA7CC4Ed021",
+            "startingBlock": "4664190",
+            "contractType": "zora1155DropCreator"
+          },
+          {
+            "id": "zora/0xA2c2A96A232113Dd4993E8b048EEbc3371AE8d85",
+            "chainId": "zora",
+            "platformId": "zora",
+            "address": "0xA2c2A96A232113Dd4993E8b048EEbc3371AE8d85",
+            "startingBlock": "46798",
+            "contractType": "zoraDropCreator"
+          }
+        ]
+      }
+    }
+  }
+}

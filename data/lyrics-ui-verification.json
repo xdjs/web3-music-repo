@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-11-06T10:24:28.175Z",
+  "base": "http://127.0.0.1:4191",
+  "record": "record-1956ba25",
+  "recordsWithLyrics": 1275,
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "inlinePreview": true,
+      "keyboardExpand": true,
+      "originalLineBreaks": true,
+      "collapse": true,
+      "sourceLink": true,
+      "absentWhenUnrecovered": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "inlinePreview": true,
+      "keyboardExpand": true,
+      "originalLineBreaks": true,
+      "collapse": true,
+      "sourceLink": true,
+      "absentWhenUnrecovered": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "inlinePreview": true,
+      "keyboardExpand": true,
+      "originalLineBreaks": true,
+      "collapse": true,
+      "sourceLink": true,
+      "absentWhenUnrecovered": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "inlinePreview": true,
+      "keyboardExpand": true,
+      "originalLineBreaks": true,
+      "collapse": true,
+      "sourceLink": true,
+      "absentWhenUnrecovered": true,
+      "noOverflow": true
+    }
+  ],
+  "errors": []
+}

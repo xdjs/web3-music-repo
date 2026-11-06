@@ -1,0 +1,562 @@
+{
+  "checkedAt": "2026-11-06T09:50:59.475Z",
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "query": "query Audit { allPlatforms { nodes { id name } } allProcessedTracks(first: 1) { totalCount pageInfo { hasNextPage endCursor } nodes { id title platformInternalId platformId websiteUrl lossyAudioUrl lossyAudioIpfsHash artistId artistByArtistId { name slug } } } __type(name: \"ProcessedTrack\") { fields { name type { name kind ofType { name kind } } } } }",
+  "body": {
+    "data": {
+      "allPlatforms": {
+        "nodes": [
+          {
+            "id": "0x719C6d392fc659f4fe9b0576cBC46E18939687a7",
+            "name": "danielallan.xyz"
+          },
+          {
+            "id": "0x8427e46826a520b1264b55f31fcb5ddfdc31e349",
+            "name": "Chaos"
+          },
+          {
+            "id": "0xdeafbeef",
+            "name": "0xDEAFBEEF"
+          },
+          {
+            "id": "0xe80c7fee3d41e311e0351244231919e04e699e56",
+            "name": "jagwartwin.com"
+          },
+          {
+            "id": "anotherblock",
+            "name": "anotherblock"
+          },
+          {
+            "id": "arpeggi",
+            "name": "Arpeggi"
+          },
+          {
+            "id": "astro",
+            "name": "projectastro.io"
+          },
+          {
+            "id": "batista",
+            "name": "batistaonthebeat.com"
+          },
+          {
+            "id": "billyracxx",
+            "name": "Billyracxx"
+          },
+          {
+            "id": "bully-meow",
+            "name": "bully-meow"
+          },
+          {
+            "id": "c4",
+            "name": "C4"
+          },
+          {
+            "id": "catalog",
+            "name": "Catalog"
+          },
+          {
+            "id": "decent",
+            "name": "Decent"
+          },
+          {
+            "id": "ed-keziah",
+            "name": "edkeziah.xyz"
+          },
+          {
+            "id": "flourish-prosper",
+            "name": "flourishprosper.net"
+          },
+          {
+            "id": "geniuscorp.fr",
+            "name": "geniuscorp.fr"
+          },
+          {
+            "id": "greenring",
+            "name": "artiva.app"
+          },
+          {
+            "id": "heds",
+            "name": "Heds"
+          },
+          {
+            "id": "hollyplus",
+            "name": "hollyplus"
+          },
+          {
+            "id": "hume",
+            "name": "Hume"
+          },
+          {
+            "id": "investinmusic.xyz",
+            "name": "Invest In Music"
+          },
+          {
+            "id": "josh-savage",
+            "name": "joshsavagemusic.com"
+          },
+          {
+            "id": "kota",
+            "name": "KOTA"
+          },
+          {
+            "id": "lens",
+            "name": "Lens"
+          },
+          {
+            "id": "lucid-haus",
+            "name": "LucidHaus"
+          },
+          {
+            "id": "maiworld",
+            "name": "MAiWORLD"
+          },
+          {
+            "id": "manifold",
+            "name": "Manifold.xyz"
+          },
+          {
+            "id": "midibot",
+            "name": "midibot"
+          },
+          {
+            "id": "mike-shupp",
+            "name": "mikeshupp.com"
+          },
+          {
+            "id": "mintsongs",
+            "name": "Mintsongs"
+          },
+          {
+            "id": "mozado",
+            "name": "Mozado"
+          },
+          {
+            "id": "mr-swe",
+            "name": "Mr.Swe"
+          },
+          {
+            "id": "nina",
+            "name": "Nina"
+          },
+          {
+            "id": "noizd",
+            "name": "NOIZD"
+          },
+          {
+            "id": "omgkirby",
+            "name": "omgkirby"
+          },
+          {
+            "id": "opensea",
+            "name": "OpenSea"
+          },
+          {
+            "id": "pods",
+            "name": "Pods"
+          },
+          {
+            "id": "raver-realm",
+            "name": "Raver Realm"
+          },
+          {
+            "id": "relics",
+            "name": "RELICS"
+          },
+          {
+            "id": "rohki",
+            "name": "RŌHKI"
+          },
+          {
+            "id": "sammy-arriaga",
+            "name": "pixelated.love"
+          },
+          {
+            "id": "scenes-sound-of-fractures",
+            "name": "Sound of Fractures"
+          },
+          {
+            "id": "song-a-day",
+            "name": "songaday.world"
+          },
+          {
+            "id": "sound",
+            "name": "Sound.xyz"
+          },
+          {
+            "id": "spinamp",
+            "name": "Spinamp"
+          },
+          {
+            "id": "spottiewifi",
+            "name": "spottiewifi.io"
+          },
+          {
+            "id": "stvdionouveau",
+            "name": "stvdionouveau.com"
+          },
+          {
+            "id": "supercollector-release",
+            "name": "Supercollector"
+          },
+          {
+            "id": "token-traxx",
+            "name": "TokenTraxx"
+          },
+          {
+            "id": "wavgame",
+            "name": "wavGame"
+          },
+          {
+            "id": "weinbagz",
+            "name": "Weinbagz"
+          },
+          {
+            "id": "ziggy-ziggy-music",
+            "name": "ZiggyZiggyMusic"
+          },
+          {
+            "id": "zora",
+            "name": "Zora"
+          },
+          {
+            "id": "zoraOriginal",
+            "name": "Zora"
+          },
+          {
+            "id": "zyla",
+            "name": "Zyla"
+          }
+        ]
+      },
+      "allProcessedTracks": {
+        "totalCount": 52987,
+        "pageInfo": {
+          "hasNextPage": true,
+          "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiYmFzZS8weDAwMGI2NTQ3ZWYxMTk0ODA2MzU0MDczRkEyNzc3NWM0ZTNENkFDYzQvMHg0NDc1ZmEwNTkzNjM2NDhjZjBlMzMxYzFkN2E0YWExOWJkYzE5ODg0NDE4ZDlkNTYzNjI4MDYzNDg1YzZkNmE5Il1d"
+        },
+        "nodes": [
+          {
+            "id": "base/0x000b6547ef1194806354073FA27775c4e3D6ACc4/0x4475fa059363648cf0e331c1d7a4aa19bdc19884418d9d563628063485c6d6a9",
+            "title": "DIGITAL DAYDREAM (alt ver.)",
+            "platformInternalId": "base/0x000b6547ef1194806354073FA27775c4e3D6ACc4/0x4475fa059363648cf0e331c1d7a4aa19bdc19884418d9d563628063485c6d6a9",
+            "platformId": "sound",
+            "websiteUrl": "https://www.sound.xyz/alastair/digital-daydream-alt-ver",
+            "lossyAudioUrl": "https://arweave.net/2a3HamwDVS_nYxnREZKdU4vJR_HmAC8aA-tmiQpB_3Y",
+            "lossyAudioIpfsHash": "QmW2WzhsmfaH6G3ThVNqbJ953xRU3Zhx2XFHBP2HqC7bW3",
+            "artistId": "ethereum/0xcD09eA78E229F93692c9bbc10B2B742899D9Dee7",
+            "artistByArtistId": {
+              "name": "Alastair",
+              "slug": "alastair-1710290739221"
+            }
+          }
+        ]
+      },
+      "__type": {
+        "fields": [
+          {
+            "name": "nodeId",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "createdAtTime",
+            "type": {
+              "name": "Datetime",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "createdAtBlockNumber",
+            "type": {
+              "name": "BigInt",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "title",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "slug",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "platformInternalId",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "lossyAudioIpfsHash",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "lossyAudioUrl",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "description",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "lossyArtworkIpfsHash",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "lossyArtworkUrl",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "websiteUrl",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "platformId",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "artistId",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "supportingArtist",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "insertionId",
+            "type": {
+              "name": "Int",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "phasesUpdatedAtBlock",
+            "type": {
+              "name": "Int",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "chorusStart",
+            "type": {
+              "name": "BigFloat",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "duration",
+            "type": {
+              "name": "BigFloat",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "lossyAudioMimeType",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "lossyArtworkMimeType",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "mintStart",
+            "type": {
+              "name": "Datetime",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "artistByArtistId",
+            "type": {
+              "name": "Artist",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "platformByPlatformId",
+            "type": {
+              "name": "Platform",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "artistBySupportingArtist",
+            "type": {
+              "name": "Artist",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "feedItemsByEntityId",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "FeedItemsConnection",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "historiesByTrackId",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "HistoriesConnection",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "nftFactoriesProcessedTracksByProcessedTrackId",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "NftFactoriesProcessedTracksConnection",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "nftsProcessedTracksByProcessedTrackId",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "NftsProcessedTracksConnection",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "playbackEventsByTrackId",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "PlaybackEventsConnection",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "tagsByEntityId",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "TagsConnection",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "trackPhasesByProcessedTrackId",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "TrackPhasesConnection",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "trendingTracksByTrackId",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "TrendingTracksConnection",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
