@@ -635,10 +635,16 @@
       "checkedAt": "2026-11-06T07:35:20.106Z"
     },
     "sound-v2-2799ba9dc623bd52ae38bcb103c3c50de72e5e6a": {
-      "status": "unavailable",
-      "error": "Media HTTP 429",
+      "status": "estimated",
+      "bpm": 126.23,
+      "confidence": 0.3317,
+      "gridOffset": 0.085472,
+      "durationSeconds": 231.397917,
       "source": "ar://jQscOjk73jLio9S3sxTxqM5rukm-Crxab61v7X7QJHY",
-      "checkedAt": "2026-11-06T07:35:09.797Z"
+      "sha256": "d8ae7684768ff5c320fe4fe4d40830cd7f935c42ba920d70c6a46416b94ca9ec",
+      "bytes": 66732542,
+      "url": "https://rufryorzhppdfyvd2s33gfhrvdhgxosjxyflywtpvvx627wqer3a.arweave.net/jQscOjk73jLio9S3sxTxqM5rukm-Crxab61v7X7QJHY",
+      "checkedAt": "2026-11-06T07:44:48.020Z"
     },
     "sound-v2-9d65b584ebd9fc6f7b97b005c835563fe779bae0": {
       "status": "estimated",
@@ -677,16 +683,28 @@
       "checkedAt": "2026-11-06T07:35:15.351Z"
     },
     "sound-v2-1eeae99ee911c8f0fd2279e236ee44e79d2b3945": {
-      "status": "unavailable",
-      "error": "Media HTTP 429",
+      "status": "estimated",
+      "bpm": 95.025,
+      "confidence": 0.5581,
+      "gridOffset": 0.179347,
+      "durationSeconds": 166.736848,
       "source": "ar://o0sm5tVo_gWytvwc9hQJyq9sGItY2Q8YuNVsKYDc77I",
-      "checkedAt": "2026-11-06T07:35:15.566Z"
+      "sha256": "2f19593d6a7359f3b1467d56febae3ec376fcf61282ab567e4bc036be46fe6d5",
+      "bytes": 29412458,
+      "url": "https://unfsnzwvnd7almvw7qopmfajzkxwygelldmq6gfy2vwctag456za.arweave.net/o0sm5tVo_gWytvwc9hQJyq9sGItY2Q8YuNVsKYDc77I",
+      "checkedAt": "2026-11-06T07:45:14.424Z"
     },
     "sound-v2-1a25f2ced85cd01611f7d50b63547378d7a7c869": {
-      "status": "unavailable",
-      "error": "Media HTTP 429",
+      "status": "estimated",
+      "bpm": 159.72,
+      "confidence": 0.6015,
+      "gridOffset": 0.023707,
+      "durationSeconds": 174,
       "source": "ar://SNDaiLbgzaj5snL-0cBRK66AqTrhjq44Ps4HHE4wEcU",
-      "checkedAt": "2026-11-06T07:35:15.759Z"
+      "sha256": "c366c51a27b28185ea920a41c14d5b03f21a95bc8e9fb82adf3186897d49f6e8",
+      "bytes": 66883314,
+      "url": "https://jdinvcfw4dg2r6nsol7ndqcrfoxibkj24ghk4ob6zydrytrqchcq.arweave.net/SNDaiLbgzaj5snL-0cBRK66AqTrhjq44Ps4HHE4wEcU",
+      "checkedAt": "2026-11-06T07:45:21.268Z"
     },
     "sound-v2-ccf21c074d04dc8ade42763d4c3fb1ebaf602325": {
       "status": "estimated",
@@ -701,10 +719,16 @@
       "checkedAt": "2026-11-06T07:35:28.042Z"
     },
     "sound-v2-c8b3d60285e602c1f5c314a698889f9dfa758fa4": {
-      "status": "unavailable",
-      "error": "Media HTTP 429",
+      "status": "estimated",
+      "bpm": 123.22,
+      "confidence": 0.3503,
+      "gridOffset": 0.317694,
+      "durationSeconds": 262.834717,
       "source": "ar://g15TdcqFvr9hO7-PW623zW_-5a_jtTcaGZkAE-ON7Zk",
-      "checkedAt": "2026-11-06T07:35:20.329Z"
+      "sha256": "9f5b2e8a829b7696e1751d8e3fda8ae7d3c0687b91e93929ff1b67e475c61b91",
+      "bytes": 69637692,
+      "url": "https://qnpfg5okqw7l6yj3x6hvxlnxzvx75znp4o2togqzteabhy4n5wmq.arweave.net/g15TdcqFvr9hO7-PW623zW_-5a_jtTcaGZkAE-ON7Zk",
+      "checkedAt": "2026-11-06T07:45:59.609Z"
     },
     "sound-v2-15288862dff2a4ff9f2413ee4fb906c6fc3fe636": {
       "status": "metadata-bpm",
@@ -723,34 +747,52 @@
       "checkedAt": "2026-11-06T07:35:31.267Z"
     },
     "sound-v2-22cb342583863edc4e4b8750e673a76e8c43fe79": {
-      "status": "unavailable",
-      "error": "Media HTTP 429",
+      "status": "estimated",
+      "bpm": 100.04,
+      "confidence": 0.5173,
+      "gridOffset": 0.273872,
+      "durationSeconds": 133.798313,
       "source": "ar://UE-is5PllSLcHTADEqDy7E__3HJ-wg7DWg52sLoOAKg",
-      "checkedAt": "2026-11-06T07:35:28.476Z"
+      "sha256": "f6666bce35be94c4dd7ff446d3f228c4794839940532c22d7bc485bf21b49bbe",
+      "bytes": 25895038,
+      "url": "https://kbh2fm4t4wksfxa5gabrfihs5rh77xdsp3ba5q22bz3lboqoacua.arweave.net/UE-is5PllSLcHTADEqDy7E__3HJ-wg7DWg52sLoOAKg",
+      "checkedAt": "2026-11-06T07:46:22.163Z"
     },
     "sound-v2-03676689c0e461643fe5bf177b51b80e6fa91faf": {
       "status": "unavailable",
       "error": "Media HTTP 429",
       "source": "ar://57t-8Kbpxj92LbCQ3Fx4J7kQz2GWviCmLg1X85DbiKs",
-      "checkedAt": "2026-11-06T07:35:28.675Z"
+      "checkedAt": "2026-11-06T07:47:46.155Z"
     },
     "sound-v2-e2f8ab9a479184c91979b74b167d207a0477e543": {
       "status": "unavailable",
       "error": "Media HTTP 429",
       "source": "ar://rcF_5scclBwFV-A6Imp3PFByQlI85RLJUMq-ttSTgmM",
-      "checkedAt": "2026-11-06T07:35:28.870Z"
+      "checkedAt": "2026-11-06T07:48:46.319Z"
     },
     "sound-v2-24bff4bccb9ab5d6ffbba5f5537bc81ae9004f50": {
-      "status": "unavailable",
-      "error": "Media HTTP 429",
+      "status": "estimated",
+      "bpm": 114.98,
+      "confidence": 0.4409,
+      "gridOffset": 0.150877,
+      "durationSeconds": 129.391313,
       "source": "ar://3SQfzlqR84tHncA9lujG46_fc-BxmTeUBQu6Do-RZwQ",
-      "checkedAt": "2026-11-06T07:35:29.144Z"
+      "sha256": "f25f436f5c9a62decdb5931ede68584e628901b5153b6da98e7290da32d85b6b",
+      "bytes": 25042182,
+      "url": "https://3usb7ts2shzywr45ya6zn2gg4ox5647aogmtpfafbo5a5d4rm4ca.arweave.net/3SQfzlqR84tHncA9lujG46_fc-BxmTeUBQu6Do-RZwQ",
+      "checkedAt": "2026-11-06T07:49:23.661Z"
     },
     "sound-v2-27360e424987cc8d34c97a4512ef4597f4a5696a": {
-      "status": "unavailable",
-      "error": "Media HTTP 429",
+      "status": "estimated",
+      "bpm": 173.74,
+      "confidence": 0.5063,
+      "gridOffset": 0.079819,
+      "durationSeconds": 178.244155,
       "source": "ar://JvO7RaGiXsLcMJJw0JRikEdqHp2FGb2JfrljziT9hQQ",
-      "checkedAt": "2026-11-06T07:35:29.397Z"
+      "sha256": "2d9c21b15186dae59aa97eb2c67fbbe1beaf3863443da94630f6334b1af12c7d",
+      "bytes": 5676096,
+      "url": "https://e3z3wrnbujpmfxbqsjynbfdcsbdwuhu5qum33cl6xfr44jh5quca.arweave.net/JvO7RaGiXsLcMJJw0JRikEdqHp2FGb2JfrljziT9hQQ",
+      "checkedAt": "2026-11-06T07:49:50.448Z"
     },
     "sound-v2-85cdd1ff679c28d2f10d5ee9f041d45552994b09": {
       "status": "estimated",
@@ -812,7 +854,7 @@
       "status": "unavailable",
       "error": "Media HTTP 429",
       "source": "ar://WmGyohWJKtD1r1t2OTgTx1diiPDtk11ZSJQtcaLq0cQ",
-      "checkedAt": "2026-11-06T07:35:58.887Z"
+      "checkedAt": "2026-11-06T07:51:17.497Z"
     },
     "sound-v2-86454f1277c7f565b29da70c8f0b958dcae19458": {
       "status": "estimated",
@@ -27945,12 +27987,12 @@
   },
   "startedAt": "2026-11-06T07:38:50.980Z",
   "finishedAt": null,
-  "updatedAt": "2026-11-06T07:44:35.633Z",
+  "updatedAt": "2026-11-06T07:51:17.497Z",
   "counts": {
     "metadata-bpm": 71,
     "needs-review": 1,
-    "estimated": 68,
-    "unavailable": 42,
+    "estimated": 75,
+    "unavailable": 35,
     "pending": 8857
   }
 }

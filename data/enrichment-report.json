@@ -1,27 +1,28 @@
 {
-  "checkedAt": "2026-11-06T07:41:03.613Z",
+  "checkedAt": "2026-11-06T07:51:05.196Z",
   "totalRecords": 9099,
   "originalBpm": 339,
-  "originalKey": 48,
+  "originalKey": 193,
   "credits": 43,
   "details": {
-    "Description": 1540,
-    "Duration": 1815,
-    "Genre": 310,
-    "License": 143,
-    "Track number": 1813,
-    "Recorded in": 135,
+    "Description": 1822,
+    "Duration": 2060,
+    "Genre": 557,
+    "License": 261,
+    "Track number": 2058,
+    "Recorded in": 246,
     "Project": 2,
     "Album": 43,
+    "Release date": 43,
     "Record label": 463
   },
-  "metadataRead": 2593,
-  "metadataUnresolved": 6506,
+  "metadataRead": 2596,
+  "metadataUnresolved": 6503,
   "bpmAnalysis": {
     "metadata-bpm": 71,
     "needs-review": 1,
-    "estimated": 66,
-    "unavailable": 44,
+    "estimated": 75,
+    "unavailable": 35,
     "not-queued": 60,
     "pending": 8857
   },
@@ -34,7 +35,7 @@
     "Sound": {
       "records": 4974,
       "originalBpm": 272,
-      "originalKey": 1,
+      "originalKey": 146,
       "credits": 0
     },
     "Unconfirmed": {

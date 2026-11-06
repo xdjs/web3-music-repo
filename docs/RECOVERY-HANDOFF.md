@@ -4,7 +4,7 @@ Checkpoint: November 5 evening / November 6, 2026 UTC. This document replaces th
 
 ## Repository and local workspaces
 
-Dedicated public repository: https://github.com/xdjs/web3-music-repo . The implementation is being published on `codex/recovery-app`; check the PR/branch before assuming main contains the app.
+Dedicated public repository: https://github.com/xdjs/web3-music-repo . The implementation and public data are published in [draft PR #1](https://github.com/xdjs/web3-music-repo/pull/1), branch `codex/recovery-app`. Main remains the earlier handoff checkpoint until merged.
 
 - Git checkout: `/Users/peterarango/Documents/Music Nerd/Apps/web3-music-repo`.
 - Active preview and bulk workers: `/Users/peterarango/Documents/Music Nerd/Apps/music-nft-recovery`, http://127.0.0.1:4190.
@@ -57,7 +57,7 @@ After jobs finish: regenerate the report, inspect failures by reason, retry unre
 
 ## Validation
 
-- 61 unit tests pass, including adversarial receipt/currency/payout checks, metadata precedence, collector token scope, account isolation, playlist persistence, and comment provenance.
+- 62 unit tests pass, including adversarial receipt/currency/payout checks, metadata precedence, collector token scope, account isolation, playlist persistence, and comment provenance.
 - Syntax and formatting checks pass in the preview copy.
 - Rendered music metadata/revenue and My profile verified at 1440px and 390px, light and dark, with no overflow or browser errors. Profile tabs do not shift, and the loading placeholder disappears.
 - Browser verification passed playback, search, likes, Pete credits, live ownership/collectors, contract rereads, comments, mobile navigation, and local playlist create/add/reorder/rename/reload/play/next/remove/delete.

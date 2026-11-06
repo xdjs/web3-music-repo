@@ -19,6 +19,8 @@ const load = (p, f) => {
   }
 };
 const result = load(file, { records: {} });
+result.startedAt = new Date().toISOString();
+result.finishedAt = null;
 result.scope =
   "Original metadata and explicitly attributed publisher snapshots; audio analysis is stored separately";
 const snapshots = load("data/catalog/original-metadata.json", {});
@@ -31,7 +33,7 @@ const refresh = process.argv.includes("--refresh");
 const records = bundle.records.filter(
   (r) =>
     (!filter || r.platform === filter) &&
-    (refresh || result.records[r.id]?.schemaVersion !== 2),
+    (refresh || result.records[r.id]?.schemaVersion !== 3),
 );
 const save = () => {
   result.updatedAt = new Date().toISOString();
@@ -103,21 +105,31 @@ async function read(source) {
     }
   }
 }
-// Consume the official saved JSON before making network requests.
+// Re-extract saved documents before touching rate-limited gateways.
 for (const r of records) {
   const key = `${r.chainId}-${r.contract.toLowerCase()}-${r.tokenId}`,
-    s = snapshots[key];
-  if (!s) continue;
-  const source = s.source || bundle.evidence[r.id]?.metadataURI;
+    s = snapshots[key],
+    v = bundle.evidence[r.id];
+  const source = s?.source || v?.metadataURI || v?.metadataURL;
+  const metadata =
+    s?.metadata ||
+    (source && existsSync(cachePath(source))
+      ? load(cachePath(source), null)
+      : null);
+  if (!metadata) continue;
   result.records[r.id] = {
     status: "read",
-    schemaVersion: 2,
-    ...extractMusicMetadata(s.metadata),
+    schemaVersion: 3,
+    ...extractMusicMetadata(metadata),
     source,
-    metadataURL: bundle.evidence[r.id]?.metadataURL || null,
-    provenance: "Catalog official metadata snapshot",
-    snapshotDate: s.snapshotDate,
-    checkedAt: new Date().toISOString(),
+    metadataURL: v?.metadataURL || null,
+    provenance: s
+      ? "Catalog official metadata snapshot"
+      : "Previously fetched original metadata",
+    ...(s ? { snapshotDate: s.snapshotDate } : {}),
+    checkedAt: result.records[r.id]?.checkedAt || new Date().toISOString(),
+    parsedAt: new Date().toISOString(),
+    referenceBlock: v?.blockNumber || null,
   };
 }
 save();
@@ -125,7 +137,7 @@ await Promise.all(
   Array.from({ length: 4 }, async () => {
     while (next < records.length) {
       const r = records[next++];
-      if (result.records[r.id]?.schemaVersion === 2 && !refresh) continue;
+      if (result.records[r.id]?.schemaVersion === 3 && !refresh) continue;
       const v = bundle.evidence[r.id],
         source = v?.metadataURI || v?.metadataURL;
       if (!source) {
@@ -139,7 +151,7 @@ await Promise.all(
         const metadata = await read(source);
         result.records[r.id] = {
           status: "read",
-          schemaVersion: 2,
+          schemaVersion: 3,
           ...extractMusicMetadata(metadata),
           source,
           metadataURL: v.metadataURL || null,

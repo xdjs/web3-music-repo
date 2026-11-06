@@ -7,6 +7,7 @@ export function extractMusicMetadata(metadata) {
     collaborators = [],
     credits = [],
     details = {};
+  let hasLyrics = false;
   const add = (key, value) => {
     if (typeof value !== "string" && typeof value !== "number") return;
     const text = String(value).trim();
@@ -25,9 +26,10 @@ export function extractMusicMetadata(metadata) {
       publisher: "Publisher",
       locationcreated: "Recorded in",
       originalreleasedate: "Original release",
+      releasedate: "Release date",
       project: "Project",
       album: "Album",
-      lyrics: "Lyrics",
+
       description: "Description",
       notes: "Description",
       duration: "Duration",
@@ -48,18 +50,27 @@ export function extractMusicMetadata(metadata) {
       Number(text) <= 400
     )
       bpms.push(Number(text));
+    const keyText = text
+      .replace(/_SHARP_/g, "# ")
+      .replace(/_FLAT_/g, "b ")
+      .replace(/_/g, " ");
     if (
       ["key", "musicalkey", "musickey", "keysig", "keysignature"].includes(
         key,
       ) &&
-      /^[A-G](?:#|b|♭|♯)?\s*(?:major|minor|maj|min|m)?$/i.test(text)
+      /^[A-G](?:#|b|♭|♯)?\s*(?:major|minor|maj|min|m)?$/i.test(keyText)
     )
-      keys.push(text);
+      keys.push(keyText);
     if (["collaborators", "collaborator"].includes(key))
       collaborators.push(text);
     if (["songcredits", "credits"].includes(key)) credits.push(text);
   };
   for (const root of roots) {
+    if (
+      (typeof root.lyrics === "string" && root.lyrics.trim()) ||
+      (typeof root.lyrics?.text === "string" && root.lyrics.text.trim())
+    )
+      hasLyrics = true;
     for (const [key, value] of Object.entries(root)) add(key, value);
     for (const trait of Array.isArray(root.attributes) ? root.attributes : [])
       add(trait.trait_type || trait.name || "", trait.value);
@@ -77,6 +88,7 @@ export function extractMusicMetadata(metadata) {
     }
   }
   return {
+    ...(hasLyrics ? { hasLyrics: true } : {}),
     bpms: [...new Set(bpms)],
     keys: [...new Set(keys)],
     collaborators: [...new Set(collaborators)],

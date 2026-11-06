@@ -27,3 +27,15 @@ test("unrelated keys, payment recipients and invalid tempo values are not musica
     details: {},
   });
 });
+
+test("Sound enum keys normalize without guessing and lyrics remain a source reference", () => {
+  const r = extractMusicMetadata({
+    key: "C_SHARP_MINOR",
+    releaseDate: "2022-05-01",
+    lyrics: { text: "An original lyric" },
+  });
+  assert.deepEqual(r.keys, ["C# MINOR"]);
+  assert.deepEqual(r.details["Release date"], ["2022-05-01"]);
+  assert.equal(r.hasLyrics, true);
+  assert.equal(r.details.Lyrics, undefined);
+});

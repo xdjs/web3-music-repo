@@ -315,10 +315,10 @@ function metadataCredits(r) {
   const details = Object.entries(data.details || {}).filter(
     ([key]) => !["Description", "Lyrics"].includes(key),
   );
-  const lyrics = data.details?.Lyrics || [];
+  const lyrics = data.hasLyrics && data.metadataURL;
   const description =
     data.details?.Description?.filter((text) => text !== r.note) || [];
-  return `${description.length ? `<details class="artist-sources"><summary>Original release notes</summary>${description.map((text) => `<p>${esc(text)}</p>`).join("")}</details>` : ""}${data.collaborators.length || data.credits.length ? `<h2>Original credits</h2>${data.collaborators.length ? `<p>${esc(data.collaborators.join(" · "))}</p>` : ""}${data.credits.map((credit) => `<p>${esc(credit)}</p>`).join("")}` : ""}${details.length ? `<details class="artist-sources"><summary>More about this recording</summary><dl>${details.map(([label, values]) => `<dt>${esc(label)}</dt><dd>${esc(values.join(" · "))}${label === "Duration" ? " seconds" : ""}</dd>`).join("")}</dl></details>` : ""}${lyrics.length ? `<details class="artist-sources"><summary>Lyrics</summary>${lyrics.map((text) => `<p class="original-lyrics">${esc(text)}</p>`).join("")}</details>` : ""}${data.metadataURL ? `<a class="link-note" href="${esc(data.metadataURL)}" target="_blank" rel="noopener noreferrer">${data.snapshotDate ? "Metadata saved by Catalog" : "Original token metadata"} ↗</a>` : ""}`;
+  return `${description.length ? `<details class="artist-sources"><summary>Original release notes</summary>${description.map((text) => `<p>${esc(text)}</p>`).join("")}</details>` : ""}${data.collaborators.length || data.credits.length ? `<h2>Original credits</h2>${data.collaborators.length ? `<p>${esc(data.collaborators.join(" · "))}</p>` : ""}${data.credits.map((credit) => `<p>${esc(credit)}</p>`).join("")}` : ""}${details.length ? `<details class="artist-sources"><summary>More about this recording</summary><dl>${details.map(([label, values]) => `<dt>${esc(label)}</dt><dd>${esc(values.join(" · "))}${label === "Duration" ? " seconds" : ""}</dd>`).join("")}</dl></details>` : ""}${lyrics ? `<p><a class="link-note" href="${esc(data.metadataURL)}" target="_blank" rel="noopener noreferrer">Lyrics in the original metadata ↗</a></p>` : ""}${data.metadataURL ? `<a class="link-note" href="${esc(data.metadataURL)}" target="_blank" rel="noopener noreferrer">${data.snapshotDate ? "Metadata saved by Catalog" : "Original token metadata"} ↗</a>` : ""}`;
 }
 function songRevenue(r) {
   const revenue = r.revenue;

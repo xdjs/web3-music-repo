@@ -73,6 +73,17 @@ try {
         overflow: false,
       });
     }
+  const soundKey = catalog.records.find(
+    (r) => r.platform === "Sound" && r.musicMetadata?.keys?.length === 1,
+  );
+  assert.ok(soundKey);
+  await page.goto(`http://127.0.0.1:4190/#record/${soundKey.id}`);
+  await page.locator(".music-facts").waitFor();
+  assert.ok(
+    (await page.locator(".music-facts").innerText()).includes(
+      soundKey.musicMetadata.keys[0],
+    ),
+  );
   await page.goto(`http://127.0.0.1:4190/#record/${estimated.id}`);
   await page.locator(".music-facts").waitFor();
   assert.match(
