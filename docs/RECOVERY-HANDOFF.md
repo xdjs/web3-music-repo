@@ -6,15 +6,18 @@ Updated November 6, 2026. Created and originated by **Pete Rango**. This is the 
 
 Pete rechecked Planet X's original IPFS media and confirmed the doubling around 1:43 is present in the source itself. This supersedes his earlier app-only report and the unresolved-app framing retained below as historical investigation. No app-specific doubling defect is established. He has a clean master; attachment is pending. Preserve the immutable original CID and provenance, and treat any corrected playback media as a separately labeled artist-supplied master after checking timing and artist authorization. No source audio has been replaced.
 
-The separate requested player changes are in progress: Play stays in browsing context, titles navigate to songs/artists, expansion is explicit, mobile layout fits the viewport, and seeking previews during drag and commits once on release. Publication evidence will identify the completed release.
+The separate requested player changes are published in PR #5: Play stays in browsing context, titles navigate to songs/artists, expansion is explicit, mobile layout fits the viewport, and seeking previews during drag and commits once on release. Production evidence is listed below.
 
 ## Current publication
 
-- Repository: https://github.com/xdjs/web3-music-repo — PR #4 merged to `main` at `b29ccddfc2d5583c1597e5a43f349b58d6e41abc`. Deployment uses that exact clean commit; its tree matches the tested branch (verified by git diff).
-- Live app: https://web3-music-repo.vercel.app/ . Production deployment `dpl_HujJprUvd8DtaFVFojupFtHLmGNX`. Vercel independently reported READY and both production aliases assigned.
-- Immutable deployment: https://web3-music-repo-p187dq3f2-musicnerd.vercel.app .
-- Existing Lab listing: https://lab.musicnerd.net/peterango/music-nft-recovery . It launches the Vercel app, not a separate build. Cookbook updated at 18:10 UTC for the 31,220-record expansion, Now Playing, linked collections, ENS and playback controls; saved data and desktop/mobile rendering independently verified. Cover, source link, description and Pete Rango originator credit preserved. Its launch URL now opens this mobile/video release too.
-- `data/release-mobile-media-2026-11-06.json` identifies the latest release; `data/release-spinamp-now-playing-2026-11-06.json` and `data/release-wallet-player-2026-11-06.json` describe earlier releases. Verification/docs commits after deployment do not change the deployed app. Older receipts are historical.
+- Repository: https://github.com/xdjs/web3-music-repo — PR #5 merged at `927dcf1737e9d1298e19ece34d09a88d30f45ef1`, deployed from that exact clean commit.
+- Live: https://web3-music-repo.vercel.app/ — READY deployment `dpl_2eYRpYzzPZEyoDujAeXEiYw7BiDH`.
+- Immutable: https://web3-music-repo-5cqfkj7zv-musicnerd.vercel.app .
+- Lab's existing listing launches this same production URL; no separate app deployment is needed.
+- Play stays in context; song/artist links navigate; expansion is explicit; mobile uses available viewport height. Single persistent media stage avoids moving the media element. Seeking previews while dragging and commits once on release.
+- Pete Rango is credited as producer on `spinamp-1c68061e5fc9d737da8a` (triunfo), based on his attestation. Original xueniversal.eth mint identity is retained; live compact catalog links the record to Pete's profile.
+- 223 tests, syntax/format/build pass. Fourteen viewport/theme views reviewed. Production actual video/navigation/expansion/one-commit seek/back verified with a single source. One local Helmet City startup attempt timed out; universal playback reliability is not claimed.
+- Latest receipt: `data/release-context-player-2026-11-06.json`. Older receipts and investigation sections below are historical; the artist's Planet X correction above takes precedence.
 
 ## Mobile player and media correction follow-up
 

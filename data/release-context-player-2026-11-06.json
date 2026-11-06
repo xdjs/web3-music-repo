@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-11-06T19:04:04.269497+00:00",
+  "commit": "927dcf1737e9d1298e19ece34d09a88d30f45ef1",
+  "pullRequest": "https://github.com/xdjs/web3-music-repo/pull/5",
+  "deploymentId": "dpl_2eYRpYzzPZEyoDujAeXEiYw7BiDH",
+  "production": "https://web3-music-repo.vercel.app/",
+  "deployment": "https://web3-music-repo-5cqfkj7zv-musicnerd.vercel.app",
+  "state": "READY",
+  "unitTests": 223,
+  "catalogRecords": 31220,
+  "liveTriunfoPeteAssociation": true,
+  "liveNowPlayingModuleMatches": true,
+  "productionSmoke": "data/production-context-player-verification.json",
+  "planetX": "Artist confirmed original media contains doubling; clean master pending, original unchanged",
+  "remaining": [
+    "Artist-supplied Planet X master",
+    "Deferred contextual queue start ordering",
+    "Nina Solana adapter/import",
+    "169 unresolved Spinamp reads",
+    "Gateway startup reliability and physical iOS verification"
+  ],
+  "recoveryWorkersRunning": false
+}

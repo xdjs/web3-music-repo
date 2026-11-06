@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-11-06T19:03:22.564Z",
+  "base": "https://web3-music-repo.vercel.app",
+  "cases": [
+    {
+      "touch": false,
+      "navigation": {
+        "artist": "#artist/spinamp-artist-976bf605e3696b3b1dda",
+        "recording": "#record/spinamp-073e25367a01a4e53532"
+      },
+      "video": {
+        "width": 1920,
+        "height": 1080,
+        "count": 1,
+        "source": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+        "position": "fixed",
+        "box": "{\"x\":460,\"y\":149.34375,\"width\":520,\"height\":520,\"top\":149.34375,\"right\":980,\"bottom\":669.34375,\"left\":460}"
+      },
+      "during": {
+        "slider": "604",
+        "calls": []
+      },
+      "after": {
+        "time": 26.622928,
+        "duration": 44.066667,
+        "paused": false,
+        "seekCalls": [
+          26.616266
+        ],
+        "source": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+      },
+      "rewind": {
+        "time": 0.003944,
+        "paused": false
+      },
+      "afterBack": {
+        "time": 0.249024,
+        "source": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+        "paused": false
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}
