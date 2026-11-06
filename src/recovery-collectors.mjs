@@ -1,5 +1,10 @@
 import { readLegacyCollectors } from "./legacy-collectors.mjs";
-import { readHolders } from "./recovery-holders.mjs";
+import {
+  readHolders,
+  readTokenHolders,
+  readMediaHolders,
+  holderMediaKey,
+} from "./recovery-holders.mjs";
 import { readOwner } from "./recovery-owner.mjs";
 import { soundDeployments } from "../scripts/sound-contracts.mjs";
 export function releaseRegistry(indexes) {
@@ -32,7 +37,13 @@ export async function readCollectors(
   record,
   cursor,
   registry,
-  adapters = { readHolders, readOwner, readLegacyCollectors },
+  adapters = {
+    readHolders,
+    readOwner,
+    readLegacyCollectors,
+    readTokenHolders,
+    readMediaHolders,
+  },
 ) {
   if (record.standard === "ERC20")
     return {
@@ -69,12 +80,23 @@ export async function readCollectors(
     }
     return result;
   }
+  if (record.standard === "ERC1155" && adapters.readTokenHolders)
+    return adapters.readTokenHolders(record, cursor);
   const deployment = registry.get(
     `${record.chainId}:${record.contract.toLowerCase()}`,
   );
   if (deployment) {
     const v = await adapters.readHolders(record, cursor);
     return { ...v, scope: "release", deployment };
+  }
+  if (holderMediaKey(record.collectorMediaURI) && adapters.readMediaHolders) {
+    const matched = await adapters.readMediaHolders(record, cursor);
+    if (
+      cursor ||
+      (matched.status === "indexed" &&
+        (matched.items?.length || matched.nextCursor))
+    )
+      return matched;
   }
   const owner = await adapters.readOwner(record);
   if (owner.status !== "verified")

@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-11-06T17:48:38.224Z",
+  "base": "http://127.0.0.1:4191",
+  "open": {
+    "inside": true,
+    "visible": true,
+    "paused": false,
+    "time": 0.50473,
+    "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+    "count": 1
+  },
+  "closed": {
+    "visible": false,
+    "paused": false,
+    "time": 1.018667,
+    "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+    "count": 1
+  },
+  "passed": true
+}

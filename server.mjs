@@ -443,7 +443,18 @@ export async function handler(req, res) {
       const v =
         (catalogHolderSnapshot &&
           catalogHolders(record, catalogHolderSnapshot)) ||
-        (await readCollectors(record, cursor, registry));
+        (await readCollectors(
+          {
+            ...record,
+            collectorMediaURI:
+              bundle.evidence[record.id]?.sourceType ===
+              "spinamp-processed-media"
+                ? bundle.evidence[record.id]?.originalMediaURI
+                : bundle.evidence[record.id]?.mediaURI,
+          },
+          cursor,
+          registry,
+        ));
       v.items = v.items?.map((h) => ({
         ...h,
         archived:

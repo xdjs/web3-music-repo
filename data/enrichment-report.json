@@ -1,39 +1,41 @@
 {
-  "checkedAt": "2026-11-06T17:11:06.553Z",
-  "totalRecords": 13640,
+  "checkedAt": "2026-11-06T17:44:06.411Z",
+  "totalRecords": 31220,
   "scope": "Supplied metadata includes original documents, publisher snapshots, official release pages and explicitly attributed indexer data. Metadata read is not independent chain or playback verification.",
-  "suppliedBpm": 2477,
-  "suppliedKey": 2144,
-  "lyricsTracks": 1275,
+  "suppliedBpm": 7942,
+  "suppliedKey": 7519,
+  "lyricsTracks": 1311,
   "metadataSources": {
     "original-document-or-publisher-snapshot": 9209,
     "official-public-release-page": 616,
-    "spinamp-indexed-metadata": 3815
+    "spinamp-indexed-metadata": 21395
   },
-  "credits": 468,
+  "credits": 486,
   "details": {
-    "Description": 12671,
-    "Duration": 13350,
-    "Genre": 9221,
-    "License": 4313,
-    "Track number": 11160,
-    "Recorded in": 3543,
-    "Project": 1701,
-    "Album": 43,
-    "Release date": 43,
-    "Original release": 1,
-    "Mood": 1,
-    "Record label": 765,
-    "ISRC": 165
+    "Description": 29532,
+    "Duration": 14721,
+    "Genre": 15647,
+    "License": 5006,
+    "Track number": 12417,
+    "Recorded in": 4088,
+    "Project": 1728,
+    "Album": 70,
+    "Release date": 51,
+    "Original release": 128,
+    "Mood": 5062,
+    "Record label": 841,
+    "ISRC": 296,
+    "Instruments": 5060,
+    "Publisher": 8
   },
-  "metadataRead": 13640,
+  "metadataRead": 31220,
   "metadataUnresolved": 0,
   "bpmAnalysis": {
     "metadata-bpm": 1571,
     "needs-review": 193,
     "estimated": 5666,
     "unavailable": 1773,
-    "not-queued": 4437
+    "not-queued": 22017
   },
   "payments": {
     "verifiedPurchases": 186,
@@ -42,14 +44,14 @@
   },
   "byPlatform": {
     "Sound": {
-      "records": 8729,
-      "suppliedBpm": 2351,
-      "suppliedKey": 2050,
+      "records": 9779,
+      "suppliedBpm": 2672,
+      "suppliedKey": 2325,
       "credits": 0,
-      "metadataRead": 8729,
+      "metadataRead": 9779,
       "metadataUnresolved": 0,
       "metadataStates": {
-        "read": 8729
+        "read": 9779
       },
       "attributedCredits": 7
     },
@@ -66,14 +68,14 @@
       "attributedCredits": 0
     },
     "Arpeggi": {
-      "records": 2,
-      "suppliedBpm": 0,
-      "suppliedKey": 0,
+      "records": 7,
+      "suppliedBpm": 5,
+      "suppliedKey": 5,
       "credits": 0,
-      "metadataRead": 2,
+      "metadataRead": 7,
       "metadataUnresolved": 0,
       "metadataStates": {
-        "read": 2
+        "read": 7
       },
       "attributedCredits": 0
     },
@@ -102,14 +104,14 @@
       "attributedCredits": 0
     },
     "Zora": {
-      "records": 34,
-      "suppliedBpm": 0,
-      "suppliedKey": 0,
+      "records": 1240,
+      "suppliedBpm": 4,
+      "suppliedKey": 2,
       "credits": 0,
-      "metadataRead": 34,
+      "metadataRead": 1240,
       "metadataUnresolved": 0,
       "metadataStates": {
-        "read": 34
+        "read": 1240
       },
       "attributedCredits": 4
     },
@@ -138,18 +140,198 @@
       "attributedCredits": 0
     },
     "Supercollector": {
-      "records": 616,
-      "suppliedBpm": 58,
-      "suppliedKey": 47,
+      "records": 718,
+      "suppliedBpm": 69,
+      "suppliedKey": 58,
       "credits": 283,
-      "metadataRead": 616,
+      "metadataRead": 718,
       "metadataUnresolved": 0,
       "metadataStates": {
-        "read": 616
+        "read": 718
       },
       "attributedCredits": 3
     },
-    "Lens": {
+    "anotherblock": {
+      "records": 13,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 13,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 13
+      },
+      "attributedCredits": 0
+    },
+    "Manifold.xyz": {
+      "records": 60,
+      "suppliedBpm": 1,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 60,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 60
+      },
+      "attributedCredits": 0
+    },
+    "Decent": {
+      "records": 55,
+      "suppliedBpm": 7,
+      "suppliedKey": 4,
+      "credits": 9,
+      "metadataRead": 55,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 55
+      },
+      "attributedCredits": 0
+    },
+    "Hume": {
+      "records": 5,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 5,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 5
+      },
+      "attributedCredits": 0
+    },
+    "mikeshupp.com": {
+      "records": 10,
+      "suppliedBpm": 0,
+      "suppliedKey": 10,
+      "credits": 0,
+      "metadataRead": 10,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 10
+      },
+      "attributedCredits": 0
+    },
+    "songaday.world": {
+      "records": 5060,
+      "suppliedBpm": 5018,
+      "suppliedKey": 5000,
+      "credits": 0,
+      "metadataRead": 5060,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 5060
+      },
+      "attributedCredits": 0
+    },
+    "RŌHKI": {
+      "records": 2,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 2,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 2
+      },
+      "attributedCredits": 0
+    },
+    "bully-meow": {
+      "records": 7,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 7,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 7
+      },
+      "attributedCredits": 0
+    },
+    "joshsavagemusic.com": {
+      "records": 23,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 23,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 23
+      },
+      "attributedCredits": 0
+    },
+    "RELICS": {
+      "records": 50,
+      "suppliedBpm": 50,
+      "suppliedKey": 50,
+      "credits": 0,
+      "metadataRead": 50,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 50
+      },
+      "attributedCredits": 0
+    },
+    "TokenTraxx": {
+      "records": 142,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 142,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 142
+      },
+      "attributedCredits": 0
+    },
+    "stvdionouveau.com": {
+      "records": 4,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 4,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 4
+      },
+      "attributedCredits": 0
+    },
+    "jagwartwin.com": {
+      "records": 11,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 11,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 11
+      },
+      "attributedCredits": 0
+    },
+    "spottiewifi.io": {
+      "records": 85,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 85,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 85
+      },
+      "attributedCredits": 0
+    },
+    "hollyplus": {
+      "records": 58,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 58,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 58
+      },
+      "attributedCredits": 0
+    },
+    "midibot": {
       "records": 1,
       "suppliedBpm": 0,
       "suppliedKey": 0,
@@ -158,6 +340,318 @@
       "metadataUnresolved": 0,
       "metadataStates": {
         "read": 1
+      },
+      "attributedCredits": 0
+    },
+    "Weinbagz": {
+      "records": 11,
+      "suppliedBpm": 0,
+      "suppliedKey": 10,
+      "credits": 0,
+      "metadataRead": 11,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 11
+      },
+      "attributedCredits": 0
+    },
+    "omgkirby": {
+      "records": 8546,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 8546,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 8546
+      },
+      "attributedCredits": 0
+    },
+    "artiva.app": {
+      "records": 1,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 1,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 1
+      },
+      "attributedCredits": 0
+    },
+    "danielallan.xyz": {
+      "records": 4,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 4,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 4
+      },
+      "attributedCredits": 0
+    },
+    "Zyla": {
+      "records": 3,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 3,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 3
+      },
+      "attributedCredits": 0
+    },
+    "pixelated.love": {
+      "records": 14,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 14,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 14
+      },
+      "attributedCredits": 0
+    },
+    "Chaos": {
+      "records": 2,
+      "suppliedBpm": 2,
+      "suppliedKey": 2,
+      "credits": 2,
+      "metadataRead": 2,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 2
+      },
+      "attributedCredits": 0
+    },
+    "Mozado": {
+      "records": 11,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 11,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 11
+      },
+      "attributedCredits": 0
+    },
+    "geniuscorp.fr": {
+      "records": 14,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 14,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 14
+      },
+      "attributedCredits": 0
+    },
+    "Mr.Swe": {
+      "records": 3,
+      "suppliedBpm": 1,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 3,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 3
+      },
+      "attributedCredits": 0
+    },
+    "batistaonthebeat.com": {
+      "records": 16,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 16,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 16
+      },
+      "attributedCredits": 0
+    },
+    "flourishprosper.net": {
+      "records": 1,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 1,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 1
+      },
+      "attributedCredits": 0
+    },
+    "LucidHaus": {
+      "records": 15,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 15,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 15
+      },
+      "attributedCredits": 0
+    },
+    "MAiWORLD": {
+      "records": 14,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 14,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 14
+      },
+      "attributedCredits": 0
+    },
+    "0xDEAFBEEF": {
+      "records": 239,
+      "suppliedBpm": 26,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 239,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 239
+      },
+      "attributedCredits": 0
+    },
+    "projectastro.io": {
+      "records": 13,
+      "suppliedBpm": 13,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 13,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 13
+      },
+      "attributedCredits": 0
+    },
+    "Heds": {
+      "records": 10,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 10,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 10
+      },
+      "attributedCredits": 0
+    },
+    "NOIZD": {
+      "records": 42,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 42,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 42
+      },
+      "attributedCredits": 0
+    },
+    "Invest In Music": {
+      "records": 7,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 7,
+      "metadataRead": 7,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 7
+      },
+      "attributedCredits": 0
+    },
+    "Sound of Fractures": {
+      "records": 3,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 3,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 3
+      },
+      "attributedCredits": 0
+    },
+    "Spinamp": {
+      "records": 10,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 10,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 10
+      },
+      "attributedCredits": 0
+    },
+    "OpenSea": {
+      "records": 1,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 1,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 1
+      },
+      "attributedCredits": 0
+    },
+    "Lens": {
+      "records": 628,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 628,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 628
+      },
+      "attributedCredits": 0
+    },
+    "edkeziah.xyz": {
+      "records": 6,
+      "suppliedBpm": 6,
+      "suppliedKey": 6,
+      "credits": 0,
+      "metadataRead": 6,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 6
+      },
+      "attributedCredits": 0
+    },
+    "wavGame": {
+      "records": 13,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 13,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 13
+      },
+      "attributedCredits": 0
+    },
+    "C4": {
+      "records": 5,
+      "suppliedBpm": 0,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 5,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 5
       },
       "attributedCredits": 0
     }

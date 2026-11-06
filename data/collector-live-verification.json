@@ -1,0 +1,195 @@
+{
+  "checkedAt": "2026-11-06T17:41:19.576Z",
+  "say": {
+    "id": "pete-zora-1-0e616dff8c4d9341ce7cebe3bfa829d76ddb410e-3",
+    "contract": "0x0e616dff8c4d9341ce7cebe3bfa829d76ddb410e",
+    "result": {
+      "status": "indexed",
+      "scope": "media-release",
+      "items": [
+        {
+          "address": "0xe055721B972D58F0bCf6370C357879fb3a37d2f3",
+          "ens": null,
+          "balance": "1",
+          "tokenIds": [
+            "7"
+          ]
+        },
+        {
+          "address": "0x60ceB822f5Fb39D837886eD17039811254337540",
+          "ens": "jazii.eth",
+          "balance": "1",
+          "tokenIds": [
+            "6"
+          ]
+        },
+        {
+          "address": "0x6fdF1430AbfB5B66A04122C3bfF7Ef374764f815",
+          "ens": null,
+          "balance": "1",
+          "tokenIds": [
+            "5"
+          ]
+        },
+        {
+          "address": "0x13eF06797F095D5C62BabF704d983cf1B4bDE9E5",
+          "ens": null,
+          "balance": "1",
+          "tokenIds": [
+            "4"
+          ]
+        },
+        {
+          "address": "0x625307dE45Bd25AD6bf6cC7391a308fc84067cf7",
+          "ens": "p3t3rango.eth",
+          "balance": "1",
+          "tokenIds": [
+            "3"
+          ]
+        },
+        {
+          "address": "0xCf2175eadE4Bd433C756554548688712067DdC6A",
+          "ens": null,
+          "balance": "1",
+          "tokenIds": [
+            "2"
+          ]
+        },
+        {
+          "address": "0xcfBf34d385EA2d5Eb947063b67eA226dcDA3DC38",
+          "ens": "sw\u03be\u03bet.eth",
+          "balance": "1",
+          "tokenIds": [
+            "1"
+          ]
+        }
+      ],
+      "nextCursor": null,
+      "source": "https://eth.blockscout.com/api/v2/tokens/0x0e616dff8c4d9341ce7cebe3bfa829d76ddb410e/instances",
+      "checkedAt": "2026-11-06T17:41:18.325Z",
+      "matchedMediaURI": "ipfs://bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+      "scannedTokenCount": 7,
+      "unmatchedTokenCount": 0
+    }
+  },
+  "samples": [
+    {
+      "id": "supercollector-10-daf442a4cca2951f9cc81a840910f3d7e6db8bbc-1",
+      "title": "Misplaced",
+      "chainId": 10,
+      "contract": "0xdaf442a4cca2951f9cc81a840910f3d7e6db8bbc",
+      "tokenId": "1",
+      "result": {
+        "status": "indexed",
+        "scope": "token-edition",
+        "items": [],
+        "nextCursor": null,
+        "source": "https://optimism.blockscout.com/api/v2/tokens/0xdaf442a4cca2951f9cc81a840910f3d7e6db8bbc/instances/1/holders",
+        "checkedAt": "2026-11-06T17:41:18.938Z",
+        "tokenId": "1"
+      }
+    },
+    {
+      "id": "park-zora-happy-friday-v2",
+      "title": "happy friday v2",
+      "chainId": 8453,
+      "contract": "0x103122e491199Ac6ed8586F5C88fb7999125650c",
+      "tokenId": "3",
+      "result": {
+        "status": "unavailable",
+        "scope": "token-edition",
+        "items": [],
+        "message": "The token-specific holder index could not be read. Retry; no empty-holder conclusion is drawn."
+      }
+    },
+    {
+      "id": "park-s001-do-it-2",
+      "title": "DO IT",
+      "chainId": 7777777,
+      "contract": "0x91dccffe742653fb533f8b5aca94ef2aa58e25b4",
+      "tokenId": "2",
+      "result": {
+        "status": "unavailable",
+        "scope": "token-edition",
+        "items": [],
+        "message": "The token-specific holder index could not be read. Retry; no empty-holder conclusion is drawn."
+      }
+    },
+    {
+      "title": "ROUND N ROUND",
+      "standard": "ERC1155",
+      "chainId": 10,
+      "contract": "0x0b0AbF42c6cD9Eb5803E39988850df4756A07956",
+      "tokenId": "2",
+      "result": {
+        "status": "indexed",
+        "scope": "token-edition",
+        "items": [
+          {
+            "address": "0xEdDd437F511f63e465302D7aaD4DC0Bc41260001",
+            "ens": null,
+            "balance": "1",
+            "tokenId": "2"
+          },
+          {
+            "address": "0xb5acDED340D66678f01097818940A0F028DAFB8d",
+            "ens": "sweetman.eth",
+            "balance": "1",
+            "tokenId": "2"
+          },
+          {
+            "address": "0x7b753919B953b1021A33F55671716Dc13c1eAe08",
+            "ens": "cxy.eth",
+            "balance": "1",
+            "tokenId": "2"
+          },
+          {
+            "address": "0x729F002B41E2Ea645ADEE9722Bd93E56B00847A3",
+            "ens": "colomborkrdz.eth",
+            "balance": "1",
+            "tokenId": "2"
+          },
+          {
+            "address": "0x6e786fCFcB98Da9df87ab0b7a2D64067c90DaBa9",
+            "ens": "callmelatasha.eth",
+            "balance": "1",
+            "tokenId": "2"
+          }
+        ],
+        "nextCursor": null,
+        "source": "https://optimism.blockscout.com/api/v2/tokens/0x0b0AbF42c6cD9Eb5803E39988850df4756A07956/instances/2/holders",
+        "checkedAt": "2026-11-06T17:42:57.322Z",
+        "tokenId": "2"
+      }
+    }
+  ],
+  "independentChecks": [
+    {
+      "chainId": 1,
+      "contract": "0x0e616dff8c4d9341ce7cebe3bfa829d76ddb410e",
+      "tokenId": "3",
+      "address": "0x625307dE45Bd25AD6bf6cC7391a308fc84067cf7",
+      "blockNumber": 26357376,
+      "method": "ownerOf",
+      "matches": true,
+      "status": "read"
+    },
+    {
+      "chainId": 10,
+      "contract": "0x0b0AbF42c6cD9Eb5803E39988850df4756A07956",
+      "tokenId": "2",
+      "address": "0xEdDd437F511f63e465302D7aaD4DC0Bc41260001",
+      "blockNumber": 159194100,
+      "method": "balanceOf",
+      "matches": true,
+      "status": "read"
+    }
+  ],
+  "scope": "Bounded live index samples. Seven Say it celly editions share exact original mediaCID; ERC1155 holders use token-specific endpoint. RPC confirmations are separately reported; provider failures do not establish empty holdings.",
+  "canonicalServerERC1155": {
+    "base": "http://127.0.0.1:4191",
+    "scope": "token-edition",
+    "status": "indexed",
+    "holders": 5
+  }
+}

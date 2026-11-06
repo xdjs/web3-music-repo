@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-11-06T17:40:12.453Z",
+  "base": "http://127.0.0.1:4191",
+  "checks": [
+    "Controlled delayed metadata can be paused; completing recovery does not autoplay; Play then starts the real recovered media",
+    "Actual media network failure resets every control to Play; retry after removing fault plays the original real source",
+    "Decoded shared playlist rows adopt live state and pause the shared player",
+    "Bad Radio original description is visible once with paragraph breaks; editorial introduction and collapsed duplicate are absent"
+  ],
+  "errors": [],
+  "passed": true
+}
