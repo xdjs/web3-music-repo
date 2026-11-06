@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-11-06T10:41:28.355590+00:00",
+  "appCommit": "e3458a1e29ff581dded2a90c0c6b19e454fa5548",
+  "pullRequest": "https://github.com/xdjs/web3-music-repo/pull/1",
+  "deploymentId": "dpl_EzRjTGwjs26ny3bDyrUvDJnF1uEr",
+  "deployment": "https://web3-music-repo-ql7ogjao5-musicnerd.vercel.app",
+  "production": "https://web3-music-repo.vercel.app/",
+  "state": "READY",
+  "lab": "https://lab.musicnerd.net/peterango/music-nft-recovery",
+  "labUpdatedAndVerified": true,
+  "creator": "Pete Rango",
+  "records": 13640,
+  "lyricsTracks": 1275,
+  "suppliedBpm": 2477,
+  "suppliedKeys": 2144,
+  "validation": {
+    "javascriptTests": 167,
+    "catalogExportPythonTests": 5,
+    "syntax": true,
+    "format": true,
+    "productionBuild": true,
+    "publicStaticCatalogParity": true,
+    "selectedRealPlayback": true,
+    "realPrivyModal": true,
+    "labPersistenceAndRenderedPage": true
+  },
+  "receipts": [
+    "data/production-final-verification.json",
+    "data/production-release-ui-verification.json",
+    "data/privy-production-login-verification.json",
+    "data/lab-update-persistence.json",
+    "data/lab-submission-verification.json"
+  ],
+  "notVerified": [
+    "Personal email OTP and wallet signing/linking",
+    "Real-account playlist save/load",
+    "All-track playback and complete platform census"
+  ],
+  "continuingWork": "Open BPM analysis and Spinamp relation discovery continue in isolated local checkpoints; they do not update production automatically."
+}

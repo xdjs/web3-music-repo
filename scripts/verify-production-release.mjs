@@ -87,8 +87,8 @@ try {
   const report = {
     checkedAt: new Date().toISOString(),
     base,
-    deployment: "dpl_EvGcZJyofBcXUXehfhyNQXZxGckt",
-    sourceCommit: "4a21953",
+    deployment: process.env.RELEASE_DEPLOYMENT_ID || null,
+    sourceCommit: process.env.RELEASE_SOURCE_COMMIT || null,
     passed: true,
     checks,
     playback,

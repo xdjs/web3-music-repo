@@ -1,41 +1,32 @@
-# Music Nerd Lab submission — prepared November 6, 2026
+# Music NFT Recovery on Music Nerd Lab
 
-Status: **published and verified**, November 6 at 09:57 UTC. Pete explicitly requested adding the deployed project to Lab under Pete Rango. Public listing: https://lab.musicnerd.net/peterango/music-nft-recovery .
+Status: **published, updated, and independently verified** on November 6, 2026 at 10:38 UTC. Pete explicitly authorized the original submission and the later update after merging to main.
 
-## Confirmed publishing path
+Public listing: https://lab.musicnerd.net/peterango/music-nft-recovery .
 
-The live [Lab API documentation](https://lab.musicnerd.net/recipe-api.md) specifies `PUT https://lab.musicnerd.net/api/recipes`. This is the current recipe/app submission path; `/api/protocols` remains a compatibility alias. A successful write creates or updates an external experience in Lab, together with its cookbook and starter recipe.
+## Current published listing
 
-The API accepts a dedicated creator-scoped publishing key, not a Supabase service-role credential. Creator identity is determined by that key; do not send `creator` or `owner_id` in the payload. A read-only verification found that the existing local publishing key matches an active database registration for creator `peterango`, whose public name is **Pete Rango**. The earlier key-mismatch note is not the current state.
-
-The intended ID `music-nft-recovery` is unused. `music-nft-era` already belongs to the separate documentary and must remain unchanged. Reusing the recovery ID makes retries idempotent.
-
-## Prepared listing
-
+- ID: `music-nft-recovery`; creator: `peterango` / **Pete Rango**. The existing listing was updated; no duplicate was created.
 - Name: **Music NFT Recovery**.
-- Description: Listen to recovered music NFTs, find artists and collaborators, explore collectors, and make playlists from across the music NFT era.
-- Category: Artifacts.
-- Launch mode: external; no camera or microphone permissions.
-- Source: https://github.com/xdjs/web3-music-repo/tree/codex/recovery-app .
-- Cover: actual 1440×900 rendered homepage screenshot, `public/lab-cover.png`, to be served from the verified deployment.
-- Cookbook: explains listening features, token/metadata provenance, the actual recovery process, original versus estimated musical metadata, and incomplete coverage.
-- Starter recipe: a short adaptable prompt asking one question at a time, beginning with the artists or collections to preserve.
+- Launch: https://web3-music-repo.vercel.app/ .
+- Source: https://github.com/xdjs/web3-music-repo/tree/main .
+- Cover: https://web3-music-repo.vercel.app/lab-cover-v2.png — the approved 1200×630 Music Nerd cover, matching the deployment's social image.
+- Category: Artifacts. External launch mode; no camera or microphone permissions.
+- Cookbook: explicit “Originated by Pete Rango” credit, the documentary-to-contract recovery process, current listening/lyrics/playlist/account features, Supercollector and Spinamp recovery, source distinctions, and incomplete coverage. It makes no complete-discography or lifetime-income claim.
+- Starter recipe: a short adaptable prompt, beginning with the artists or collections to preserve. It remains distinct from the project's actual creation narrative.
 
-The full prepared payload and submission helper are under ignored `work/lab-submission/`. The helper validates the complete payload using Lab's current `protocolInput` schema. A dry run validated all text fields and limits with a placeholder origin; that is not a deployed URL check or a publication.
+## API and persistence verification
 
-## Publish and verify
+Updated through `PUT https://lab.musicnerd.net/api/recipes` using the existing creator-scoped publishing key. The [public API documentation](https://lab.musicnerd.net/recipe-api.md) documents this route; `/api/protocols` is a compatibility alias. Creator identity comes from the key; the payload does not supply `creator` or `owner_id`. No key was printed, committed, rotated, or revoked.
 
-1. Confirm the recovery HTTPS origin is deployed and publicly accessible, and its `/lab-cover.png` serves the screenshot.
-2. Prepare the final payload with that exact origin. Review all fields, then run the helper with `--publish` only after the orchestrator's go-ahead.
-3. Submit to `/api/recipes` using the existing Pete-scoped publishing key. The helper loads the key privately and does not print it or include it in source control. It refuses redirects when transmitting authorization.
-4. Require HTTP 200 with `id=music-nft-recovery`, `creator=peterango`, `status=published`.
-5. Read back the persisted record, including exact deployment URL, image, source, and text.
-6. Open `https://lab.musicnerd.net/peterango/music-nft-recovery` in a browser. Verify title, Pete Rango attribution, cover, launch destination, cookbook, and starter recipe actually render. An API success alone does not prove public rendering.
+The API returned HTTP200 with `id=music-nft-recovery`, `creator=peterango`, `status=published`, and `updated_at=2026-11-06T10:37:42.600764+00:00`. An independent read-only database SELECT confirmed the exact launch URL, new cover, main source URL, category, external mode, status, and explicit originator credit. Stored cookbook and starter-recipe hashes match the submitted text.
 
-No Lab application source, schema, existing listing, publishing key registration, or production database record was changed during preparation. The existing key is shared with prior authorized publishing work; do not revoke it automatically as if it were a new disposable key.
+The separate `music-nft-era` documentary retains its original URL, cover, source, and update timestamp `2026-11-05T23:54:12.202521+00:00`. No Lab source or schema was changed. The ignored `work/lab-submission/` folder contains the payload and submission helper; credentials remain outside source control.
 
-## Publication result
+## Rendered and deployment verification
 
-Submitted through `PUT /api/recipes` after production browser QA passed for deployment `dpl_EvGcZJyofBcXUXehfhyNQXZxGckt` (source `4a21953`). API returned HTTP 200, creator `peterango`, status `published`. Read-only database verification confirmed exact launch URL, screenshot, source, cookbook, starter recipe and external mode. The separate `music-nft-era` entry retained its prior URL and update timestamp.
+Updated only after production deployment `dpl_EzRjTGwjs26ny3bDyrUvDJnF1uEr` from merged main commit `e3458a1e29ff581dded2a90c0c6b19e454fa5548` passed the real live catalog, lyrics, artist portrait, login-modal, shared-playlist and audio checks.
 
-Public rendered page verified at 1440 and 390px: title, Pete Rango attribution, explicit originator credit, loaded original app screenshot, correct launch destination, expanded cookbook, and starter recipe. Lab's page measures 392px document width at a 390px viewport; the 2px overflow is a Lab layout limitation, not a recovery app change. No Lab source was modified. Evidence: `data/lab-submission-verification.json`, `captures/lab-listing-*.png`.
+The public Lab page was then opened and visually inspected at 1440 and 390px. Its new cover loads, the launch button targets the live recovery app, the source link targets main, and the expanded cookbook, originator credit, and starter recipe render correctly. Lab's existing page measures 392px document width at a 390px viewport; that minor Lab layout issue was not changed as part of this recovery app update.
+
+Evidence: `data/lab-update-persistence.json`, `data/lab-submission-verification.json`, and `captures/lab-listing-{1440,390}.png`. The first publication at 09:57 UTC used the prior homepage screenshot and recovery branch; this update supersedes those listing fields.

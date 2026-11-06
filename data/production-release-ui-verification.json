@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-06T09:55:42.222Z",
+  "checkedAt": "2026-11-06T10:36:28.611Z",
   "base": "https://web3-music-repo.vercel.app",
-  "deployment": "dpl_EvGcZJyofBcXUXehfhyNQXZxGckt",
-  "sourceCommit": "4a21953",
+  "deployment": "dpl_EzRjTGwjs26ny3bDyrUvDJnF1uEr",
+  "sourceCommit": "e3458a1e29ff581dded2a90c0c6b19e454fa5548",
   "passed": true,
   "checks": [
     "Live navigation SVG icons, Artists label, four visible filters",
@@ -11,7 +11,7 @@
     "Four historical playlists surface; Chill n Work has 23 rows and 23 playable token matches"
   ],
   "playback": {
-    "time": 1.012534,
+    "time": 1.00907,
     "duration": 180.675875,
     "readyState": 4,
     "source": "https://arweave.net/ShNsHOnksot-5oxBYrFpAz0Ec-pxa7E0YDkweXLPbf0"

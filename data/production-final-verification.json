@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-11-06T10:35:55.515Z",
+  "base": "https://web3-music-repo.vercel.app",
+  "records": 13640,
+  "people": 3280,
+  "recordsWithLyrics": 1275,
+  "indexBytes": 11935505,
+  "fullBytes": 49264634,
+  "indexDelivery": {
+    "encodedBodySize": 2285031,
+    "decodedBodySize": 11935505,
+    "transferSize": 2285331,
+    "durationMS": 480,
+    "protocol": "h2",
+    "contentEncoding": "br",
+    "cache": "HIT"
+  },
+  "indexETag": "W/\"306a204500531af69611576e04894c63\"",
+  "staticIndexETag": "W/\"306a204500531af69611576e04894c63\"",
+  "checks": [
+    "API index rewrite matches static index; full API is distinct and has identical record count",
+    "Lazy record details display actual recovered lyrics inline",
+    "OG/Twitter image and new1200x630Labcover available"
+  ],
+  "cover": {
+    "width": 1200,
+    "height": 630
+  },
+  "portrait": {
+    "id": "spinamp-artist-225376380137d5ba4860",
+    "name": "Alastair",
+    "source": "https://api.spinamp.xyz/v3/graphql",
+    "views": [
+      {
+        "width": 1440,
+        "theme": "light",
+        "loaded": true,
+        "url": "https://ipfs.filebase.io/ipfs/QmczdSoQuedcpcTgXjc7rxeDwiDX2zkXYzgsvoRKQTCP4T",
+        "naturalWidth": 853
+      },
+      {
+        "width": 1440,
+        "theme": "dark",
+        "loaded": true,
+        "url": "https://ipfs.filebase.io/ipfs/QmczdSoQuedcpcTgXjc7rxeDwiDX2zkXYzgsvoRKQTCP4T",
+        "naturalWidth": 853
+      },
+      {
+        "width": 390,
+        "theme": "light",
+        "loaded": true,
+        "url": "https://ipfs.filebase.io/ipfs/QmczdSoQuedcpcTgXjc7rxeDwiDX2zkXYzgsvoRKQTCP4T",
+        "naturalWidth": 853
+      },
+      {
+        "width": 390,
+        "theme": "dark",
+        "loaded": true,
+        "url": "https://ipfs.filebase.io/ipfs/QmczdSoQuedcpcTgXjc7rxeDwiDX2zkXYzgsvoRKQTCP4T",
+        "naturalWidth": 853
+      }
+    ]
+  },
+  "errors": []
+}

@@ -56,3 +56,9 @@ Pete explicitly approved enabling login on the live site. Created and saved **Mu
 ## Live production verification — 09:54 UTC
 
 Deployment `dpl_EvGcZJyofBcXUXehfhyNQXZxGckt` serves the exact production client and reports `playlistStorage: private-blob`. The real Privy SDK login modal passed at 1440/390px in light/dark themes, with email and wallet choices, Music Nerd lenses, no overflow or JavaScript errors, and a successful HTTP 200 public configuration request. No invalid-origin response occurred. Evidence: `data/privy-production-login-verification.json`, `captures/privy-production-login-*.png`, `scripts/verify-production-login.mjs`. No OTP or wallet signature was sent; real account completion remains a personal test.
+
+## Main release recheck — November 6, 10:36 UTC
+
+Rechecked the stable production site after deployment `dpl_EzRjTGwjs26ny3bDyrUvDJnF1uEr` from merged main commit `e3458a1e29ff581dded2a90c0c6b19e454fa5548`. The actual Privy SDK modal still passes at 1440/390px in light/dark with the dedicated production client above, email and wallet options, HTTP200 public configuration, no invalid-origin response, no overflow, and no JavaScript errors. The live account configuration reports `private-blob` storage.
+
+Evidence was refreshed in `data/privy-production-login-verification.json` and `captures/privy-production-login-*.png`. No authentication settings were changed during this recheck. No OTP or wallet signature was sent; the real personal sign-in and authenticated playlist save/load boundary remains unchanged.

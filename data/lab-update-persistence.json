@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-11-06T10:38:42.477368+00:00",
+  "method": "Read-only Supabase SELECT after authorized PUT /api/recipes",
+  "id": "music-nft-recovery",
+  "creatorFromAPI": "peterango",
+  "status": "published",
+  "updatedAt": "2026-11-06T10:37:42.600764+00:00",
+  "url": "https://web3-music-repo.vercel.app/",
+  "screenshot": "https://web3-music-repo.vercel.app/lab-cover-v2.png",
+  "sourceURL": "https://github.com/xdjs/web3-music-repo/tree/main",
+  "aboutMD5": "80f389f7bcd10332f979c6c1637ae8e1",
+  "instructionsMD5": "8f1cf16eab0fa6188c26255272600dfe",
+  "payloadHashesMatch": true,
+  "explicitOriginatorCredit": true,
+  "documentaryUnchanged": true,
+  "documentaryUpdatedAt": "2026-11-05T23:54:12.202521+00:00"
+}

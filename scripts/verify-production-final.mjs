@@ -8,6 +8,14 @@ const browser = await chromium.launch({ headless: true }),
   errors = [],
   checks = [];
 page.on("pageerror", (e) => errors.push(e.message));
+let browserIndexResponse;
+page.on("response", (response) => {
+  if (
+    new URL(response.url()).pathname === "/api/catalog" &&
+    new URL(response.url()).searchParams.get("view") === "index"
+  )
+    browserIndexResponse = response;
+});
 const hash = (value) => createHash("sha256").update(value).digest("hex");
 try {
   const ir = await page.request.get(base + "/api/catalog?view=index", {
@@ -53,6 +61,28 @@ try {
       .evaluate((e) => e.textContent.length)) > 280,
   );
   checks.push("Lazy record details display actual recovered lyrics inline");
+  const indexDelivery = await page.evaluate(() => {
+    const entry = performance
+      .getEntriesByType("resource")
+      .find((item) => item.name.includes("/api/catalog?view=index"));
+    return entry
+      ? {
+          encodedBodySize: entry.encodedBodySize,
+          decodedBodySize: entry.decodedBodySize,
+          transferSize: entry.transferSize,
+          durationMS: Math.round(entry.duration),
+          protocol: entry.nextHopProtocol,
+        }
+      : null;
+  });
+  assert.ok(
+    indexDelivery,
+    "Browser initial catalog resource timing must be present",
+  );
+  const indexDeliveryHeaders = await browserIndexResponse.allHeaders();
+  indexDelivery.contentEncoding =
+    indexDeliveryHeaders["content-encoding"] || "identity";
+  indexDelivery.cache = indexDeliveryHeaders["x-vercel-cache"] || null;
   assert.equal(
     await page.locator('meta[property="og:image"]').getAttribute("content"),
     base + "/social/music-nft-recovery-v1.png",
@@ -102,7 +132,7 @@ try {
         );
       const observed = await avatar.evaluate((i) => ({
         loaded: i.complete && i.naturalWidth > 0,
-        width: i.naturalWidth,
+        naturalWidth: i.naturalWidth,
         url: i.currentSrc || i.src,
       }));
       assert.ok(
@@ -126,6 +156,7 @@ try {
     ).length,
     indexBytes: Buffer.byteLength(indexText),
     fullBytes: Buffer.byteLength(fullText),
+    indexDelivery,
     indexETag: ir.headers().etag,
     staticIndexETag: sr.headers().etag,
     checks,

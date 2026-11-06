@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-06T09:54:29.899Z",
+  "checkedAt": "2026-11-06T10:36:00.235Z",
   "scope": "Real Privy SDK and configured recovery client, guest login modal only. No OTP sent; no wallet signed; real account completion not verified.",
   "config": {
     "enabled": true,
