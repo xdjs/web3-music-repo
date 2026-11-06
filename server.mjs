@@ -6,6 +6,9 @@ import { indexRecord, presentRecord } from "./src/catalog-presentation.mjs";
 import { catalogHolders } from "./src/catalog-holders.mjs";
 import { readWalletPage } from "./src/wallet-library.mjs";
 import { resolveWalletName } from "./src/wallet-name.mjs";
+import { createCollectorSearch } from "./src/collector-search-index.mjs";
+import { collectorSnapshotHoldings } from "./src/collector-snapshot-library.mjs";
+import { createSpinampWalletReader } from "./src/spinamp-wallet-library.mjs";
 import { accountAPI } from "./src/account-api.mjs";
 import {
   expansionCoverage,
@@ -52,6 +55,11 @@ const comments = await load(
   [],
 );
 const historicalProfiles = await load("data/historical-profiles.json", []);
+const collectorSearch = createCollectorSearch(historicalProfiles);
+const spinampCollectorSnapshots = await load(
+  "data/spinamp/collector-snapshots.json",
+  { records: {} },
+);
 const zoraComments = await load("data/zora-onchain-comments.json", {
   comments: [],
 });
@@ -87,6 +95,7 @@ const registry = releaseRegistry(
   ),
 );
 const collectorCache = new Map();
+const spinampWalletReader = createSpinampWalletReader();
 const catalogHolderSnapshot = await load(
   "data/catalog/holder-history.json",
   null,
@@ -418,6 +427,34 @@ export async function handler(req, res) {
         },
         capturedAt: "2023-05-01T06:11:19Z",
       });
+    if (url.pathname === "/api/collector-search") {
+      const result = await collectorSearch(url.searchParams.get("q"));
+      return json(
+        res,
+        result,
+        result.status === "invalid"
+          ? 400
+          : result.status === "unavailable"
+            ? 503
+            : 200,
+      );
+    }
+    if (/^\/api\/collector\/0x[0-9a-f]{40}\/collection$/i.test(url.pathname)) {
+      if (url.searchParams.get("source") !== "spinamp")
+        return json(
+          res,
+          { status: "invalid", message: "Select the Spinamp index source." },
+          400,
+        );
+      const address = url.pathname.split("/")[3];
+      const result = await spinampWalletReader(
+        address,
+        url.searchParams.get("cursor"),
+        nftCatalog,
+        registry,
+      );
+      return json(res, result, result.status === "indexed" ? 200 : 503);
+    }
     if (url.pathname.startsWith("/api/collector/")) {
       const address = url.pathname.slice(15);
       if (!/^0x[0-9a-f]{40}$/i.test(address))
@@ -426,7 +463,14 @@ export async function handler(req, res) {
       const held = [];
       for (const [key, entry] of collectorCache) {
         if (
-          entry.value.scope === "release" &&
+          [
+            "release",
+            "legacy-release",
+            "media-release",
+            "token-edition",
+            "token",
+            "spinamp-release-snapshot",
+          ].includes(entry.value.scope) &&
           entry.value.items?.some(
             (h) => h.address.toLowerCase() === address.toLowerCase(),
           )
@@ -439,12 +483,21 @@ export async function handler(req, res) {
               artist: record.artist,
               chainId: record.chainId,
               checkedAt: entry.value.checkedAt,
+              scope: entry.value.scope,
+              source: entry.value.source,
             });
         }
       }
       return json(res, {
         ...identity,
         observedHoldings: held,
+        snapshotHoldings: collectorSnapshotHoldings(
+          address,
+          nftCatalog,
+          bundle.evidence,
+          catalogHolderSnapshot,
+          spinampCollectorSnapshots,
+        ),
         comments: comments.filter(
           (c) =>
             c.ownerAddressAtCapture?.toLowerCase() === address.toLowerCase(),
