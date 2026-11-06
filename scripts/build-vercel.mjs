@@ -35,6 +35,7 @@ const frontend = [
   "playlist-share.mjs",
   "entity-share.mjs",
   "collection-filters.mjs",
+  "filter-preferences.mjs",
   "collection-render.mjs",
   "listening-queue.mjs",
   "queue-shuffle.mjs",

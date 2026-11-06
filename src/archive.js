@@ -1,4 +1,5 @@
 import { createHomeSelection } from "./home-selection.mjs";
+import { createFilterPreferences } from "./filter-preferences.mjs";
 import {
   createCollectorSearch,
   collectorSearchMarkup,
@@ -12,6 +13,8 @@ import {
   recordingControlState,
   recordingControlSelector,
   syncRecordingControls,
+  playbackFeedback,
+  syncPlaybackButton,
 } from "./playback-controls.mjs";
 import { mountNowPlaying, bindSeekRange } from "./now-playing.mjs";
 import { renderLyrics } from "./lyrics-ui.mjs";
@@ -100,6 +103,22 @@ let catalog = [],
   renderVersion = 0,
   playVersion = 0,
   toastTimer;
+const explorePreferences = createFilterPreferences("explore", {
+  choices: () => ({
+    platform: [
+      "All",
+      "Sound",
+      "Catalog",
+      "Zora",
+      "Mint Songs",
+      "Supercollector",
+      "Nina",
+      "Other platforms",
+    ],
+    network: [...new Set(catalog.map((r) => String(r.chainId)))],
+    collection: [...new Set(catalog.map((r) => r.collection).filter(Boolean))],
+  }),
+});
 let queueState = createShuffleQueue();
 try {
   queueState = createShuffleQueue(
@@ -1114,6 +1133,7 @@ document.addEventListener("click", async (e) => {
     walletLibrary.stopOwned();
     filter = "All";
     facets = { network: "", media: "", sort: "archive", collection: "" };
+    explorePreferences.reset();
     query = "";
     $("#search").value = "";
     collectorSearch.search("");
@@ -1130,6 +1150,7 @@ document.addEventListener("click", async (e) => {
   }
   if (el.dataset.filter) {
     filter = el.dataset.filter;
+    explorePreferences.save({ platform: filter, ...facets });
     limit = 40;
     route();
   }
@@ -1282,6 +1303,7 @@ document.addEventListener("change", (e) => {
   const name = e.target.dataset.facet;
   if (!Object.hasOwn(facets, name)) return;
   facets[name] = e.target.value;
+  explorePreferences.save({ platform: filter, ...facets });
   limit = 40;
   route();
   document.querySelector(`[data-facet="${name}"]`)?.focus();
@@ -1368,6 +1390,9 @@ function playbackState() {
     paused: audio.paused,
     ended: !startingPlayback && audio.ended,
     error: !startingPlayback && !!audio.error,
+    readyState: audio.readyState,
+    currentTime: audio.currentTime,
+    seeking: audio.seeking,
     queueIndex,
   };
 }
@@ -1397,11 +1422,20 @@ function syncPlaybackControls() {
     icon: navIcon,
   });
   const { action } = recordingControlState({ ...state, id: current?.id });
-  $("#toggle").innerHTML = navIcon(action);
-  $("#toggle").setAttribute(
-    "aria-label",
-    action === "pause" ? "Pause" : "Play",
-  );
+  const feedback = playbackFeedback(state);
+  syncPlaybackButton($("#toggle"), { action, feedback }, navIcon);
+  const source = $("#player-source");
+  const recoveryMessages = ["Retrying media…", "Taking longer to load…"];
+  if (feedback.busy) {
+    if (!recoveryMessages.includes(source.textContent))
+      source.textContent = feedback.message;
+  } else if (
+    ["Loading…", "Buffering…", "Seeking…", ...recoveryMessages].includes(
+      source.textContent,
+    )
+  ) {
+    source.textContent = "";
+  }
   nowPlaying?.update();
 }
 async function activateRecording(
@@ -1570,6 +1604,9 @@ function bindPlayerEvents() {
   });
   bind("error", syncPlaybackControls);
   bind("loadstart", syncPlaybackControls);
+  bind("seeking", syncPlaybackControls);
+  bind("seeked", syncPlaybackControls);
+  bind("canplay", syncPlaybackControls);
   bind("progress", warmNextTrack);
   bind("waiting", () => {
     nextTrackBuffer.suspend();
@@ -1577,6 +1614,7 @@ function bindPlayerEvents() {
   });
   bind("stalled", () => {
     if (!hasPlaybackHeadroom(audio)) nextTrackBuffer.suspend();
+    syncPlaybackControls();
   });
 }
 nowPlaying = mountNowPlaying({
@@ -1593,6 +1631,7 @@ nowPlaying = mountNowPlaying({
       : "#",
     action: recordingControlState({ ...playbackState(), id: current?.id })
       .action,
+    feedback: playbackFeedback(playbackState()),
     shuffle: queueState.enabled,
     liked: likes.has(current?.id),
     durationSeconds: audio.duration,
@@ -1718,6 +1757,10 @@ window.addEventListener("hashchange", (event) => {
 });
 try {
   await loadCatalog();
+  const { platform: rememberedPlatform, ...savedFacets } =
+    explorePreferences.load();
+  filter = rememberedPlatform;
+  Object.assign(facets, savedFacets);
   route();
   fetch("/api/coverage")
     .then((r) => (r.ok ? r.json() : null))

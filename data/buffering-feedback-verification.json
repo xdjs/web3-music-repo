@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-11-06T22:31:22.546Z",
+  "base": "http://127.0.0.1:4191",
+  "scope": "Actual app and native local artist-approved MP4 playback, with request held to verify loading. Buffering readiness/waiting and error states are explicitly injected UI fixtures, not remote-provider outage claims.",
+  "cases": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "errors": [],
+      "pendingPause": true,
+      "nativePlayback": true,
+      "bufferingAndReadyTransitions": true,
+      "errorStopsSpinner": true,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "errors": [],
+      "pendingPause": true,
+      "nativePlayback": true,
+      "bufferingAndReadyTransitions": true,
+      "errorStopsSpinner": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "errors": [],
+      "pendingPause": true,
+      "nativePlayback": true,
+      "bufferingAndReadyTransitions": true,
+      "errorStopsSpinner": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "errors": [],
+      "pendingPause": true,
+      "nativePlayback": true,
+      "bufferingAndReadyTransitions": true,
+      "errorStopsSpinner": true,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

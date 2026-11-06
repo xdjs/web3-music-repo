@@ -1,3 +1,5 @@
+import { syncPlaybackButton } from "./playback-controls.mjs";
+
 // Native range input remains in control during a gesture. Commit only once on
 // change, so decoder seeks do not compete with every intermediate thumb move.
 export function bindSeekRange(input, { commit, preview = () => {} }) {
@@ -55,6 +57,11 @@ export function mountNowPlaying({
 }) {
   const find = (name) => dialog.querySelector(`[data-now="${name}"]`);
   let returnTo, pointerReturn;
+  const status = dialog.ownerDocument.createElement("div");
+  status.className = "now-playing-status";
+  status.setAttribute("role", "status");
+  status.setAttribute("aria-live", "polite");
+  dialog.querySelector(".now-playing-transport").before(status);
   const seek = bindSeekRange(find("seek"), {
     commit: (value) => onAction("seek", value),
     preview: (value) => {
@@ -117,11 +124,13 @@ export function mountNowPlaying({
     find("title").href = s.recordHref;
     find("artist").href = s.artistHref;
     if (find("art").getAttribute("src") !== s.image) find("art").src = s.image;
-    find("toggle").innerHTML = icon(s.action);
-    find("toggle").setAttribute(
-      "aria-label",
-      s.action === "pause" ? "Pause" : "Play",
+    syncPlaybackButton(
+      find("toggle"),
+      { action: s.action, feedback: s.feedback },
+      icon,
     );
+    const message = s.feedback?.message || "";
+    if (status.textContent !== message) status.textContent = message;
     find("shuffle").setAttribute("aria-pressed", String(s.shuffle));
     find("like").innerHTML = icon("liked");
     find("like").classList.toggle("active", s.liked);
