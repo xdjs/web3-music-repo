@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-11-06T17:10:43.777Z",
+  "base": "http://127.0.0.1:4191",
+  "scope": "Real Ethereum ENS resolution and wallet API in a public lookup; sign-in configuration disabled only in this browser fixture. No wallet linked or signature requested.",
+  "resolution": {
+    "status": "resolved",
+    "name": "vitalik.eth",
+    "address": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+    "checkedAt": "2026-11-06T17:10:43.651Z",
+    "source": "https://app.ens.domains/vitalik.eth"
+  },
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "normalizedAddress": true,
+      "ensNameAndSourceVisible": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "normalizedAddress": true,
+      "ensNameAndSourceVisible": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "normalizedAddress": true,
+      "ensNameAndSourceVisible": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "normalizedAddress": true,
+      "ensNameAndSourceVisible": true,
+      "noOverflow": true
+    }
+  ],
+  "errors": []
+}

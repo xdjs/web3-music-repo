@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { indexRecord, presentRecord } from "./src/catalog-presentation.mjs";
 import { catalogHolders } from "./src/catalog-holders.mjs";
 import { readWalletPage } from "./src/wallet-library.mjs";
+import { resolveWalletName } from "./src/wallet-name.mjs";
 import { accountAPI } from "./src/account-api.mjs";
 import {
   expansionCoverage,
@@ -276,6 +277,16 @@ export async function handler(req, res) {
     if (!["GET", "HEAD"].includes(req.method)) {
       res.writeHead(405);
       return res.end();
+    }
+    if (url.pathname === "/api/wallet/resolve") {
+      const result = await resolveWalletName(url.searchParams.get("name"));
+      const status = {
+        resolved: 200,
+        invalid: 400,
+        "not-found": 404,
+        unavailable: 503,
+      };
+      return json(res, result, status[result.status]);
     }
     if (url.pathname.startsWith("/api/wallet/")) {
       const value = await readWalletPage(

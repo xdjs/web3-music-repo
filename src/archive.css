@@ -2473,3 +2473,82 @@ dialog::backdrop {
 .queue-toolbar button {
   flex-shrink: 0;
 }
+
+/* Shuffle uses the existing player control and theme tokens. */
+#shuffle[aria-pressed="true"] {
+  color: var(--accent);
+  background: var(--soft);
+  box-shadow: inset 0 -2px 0 currentColor;
+}
+@media (max-width: 800px) {
+  .player {
+    grid-template-columns: minmax(0, 1fr) 171px;
+  }
+  .transport .icon {
+    width: 30px;
+  }
+  .now-playing span,
+  .now-playing small {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 360px) {
+  .tabs {
+    gap: 18px;
+  }
+}
+
+/* Queue-only drag affordance; other dialog and player controls keep their layout. */
+#queue-list .queue-item {
+  position: relative;
+}
+#queue-list .queue-drag-handle {
+  width: 26px;
+  color: var(--muted);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+#queue-list .queue-dragging {
+  opacity: 0.55;
+}
+#queue-list .queue-dragging .queue-drag-handle {
+  cursor: grabbing;
+}
+#queue-list .queue-drop-before::before,
+#queue-list .queue-drop-after::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  pointer-events: none;
+}
+#queue-list .queue-drop-before::before {
+  top: -1px;
+}
+#queue-list .queue-drop-after::after {
+  bottom: -1px;
+}
+#queue-list .queue-position {
+  min-width: 16px;
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 500px) {
+  #queue-dialog {
+    padding: 18px;
+  }
+  #queue-list .queue-item {
+    gap: 8px;
+  }
+  #queue-list .queue-item img {
+    width: 32px;
+    height: 32px;
+  }
+  #queue-list .queue-item .icon:not(.queue-drag-handle) {
+    width: 30px;
+  }
+}

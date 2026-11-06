@@ -1,6 +1,19 @@
 import { renderLyrics } from "./lyrics-ui.mjs";
-import { selectQueueTrack, removeQueueTrack } from "./listening-queue.mjs";
+import { mountQueueSortable } from "./queue-sortable.mjs";
+import {
+  createShuffleQueue,
+  selectShuffledTrack,
+  toggleQueueShuffle,
+  appendShuffleQueue,
+  removeShuffleQueue,
+  clearShuffleQueue,
+  moveShuffleQueue,
+} from "./queue-shuffle.mjs";
 import { createMediaPreloader } from "./media-preload.mjs";
+import {
+  createNextTrackBuffer,
+  hasPlaybackHeadroom,
+} from "./next-track-buffer.mjs";
 import { compareReleaseDates } from "./release-date.mjs";
 import { navIcon } from "./nav-icons.mjs";
 import { renderRoyaltyPayments } from "./catalog-royalty-ui.mjs";
@@ -70,6 +83,21 @@ let catalog = [],
   renderVersion = 0,
   playVersion = 0,
   toastTimer;
+let queueState = createShuffleQueue();
+try {
+  queueState = createShuffleQueue(
+    localStorage.getItem("mn-archive-shuffle") === "true",
+  );
+} catch {}
+function applyQueueState(next) {
+  queueState = next;
+  queue = next.ids;
+  queueIndex = next.index;
+  queueMode = next.mode;
+  $("#shuffle").setAttribute("aria-pressed", String(next.enabled));
+  $("#shuffle").title = next.enabled ? "Shuffle on" : "Shuffle off";
+  warmNextTrack();
+}
 let likes = new Set();
 try {
   likes = new Set(JSON.parse(localStorage.getItem("mn-archive-likes") || "[]"));
@@ -95,7 +123,7 @@ const collectors = mountCollectors({
   recordLink,
   rerender: () => route(),
 });
-const audio = $("#audio");
+let audio = $("#audio");
 audio.volume = 0.8;
 const preferred = [
   "record-69c77ef0",
@@ -550,7 +578,6 @@ const walletLibrary = mountWalletLibrary({
   esc,
   catalog: () => catalog,
   card,
-  rerender: () => route(),
 });
 function profilePage() {
   const args = new URLSearchParams(location.hash.split("?")[1]);
@@ -667,9 +694,52 @@ function toggleLike(id) {
 let mediaRecovery,
   mediaTimer,
   wantsPlayback = false;
-const preloader = createMediaPreloader(audio, {
+let preloader = createMediaPreloader(audio, {
   isBusy: () => !!current || wantsPlayback,
 });
+const nextTrackBuffer = createNextTrackBuffer({
+  canWarm: () =>
+    !!current &&
+    wantsPlayback &&
+    hasPlaybackHeadroom(audio) &&
+    current.kind !== "video",
+});
+function warmNextTrack() {
+  const id = queue[queueIndex + 1];
+  const r = catalogById.get(id);
+  if (!r || !["live", "indexed"].includes(r.recovery?.status)) {
+    nextTrackBuffer.cancel();
+    return;
+  }
+  nextTrackBuffer.schedule({
+    id,
+    kind: r.kind,
+    url: r.playback?.workingURL || r.recovery.mediaURL,
+    contextId: String(queueState.entries[queueIndex]?.key ?? current?.id ?? ""),
+  });
+}
+let mediaEvents;
+function adoptBufferedMedia(warmed) {
+  const old = audio;
+  preloader.dispose();
+  mediaEvents?.abort();
+  old.removeAttribute("id");
+  warmed.id = "audio";
+  warmed.className = old.className;
+  warmed.setAttribute("playsinline", "");
+  warmed.volume = old.volume;
+  warmed.muted = old.muted;
+  warmed.playbackRate = old.playbackRate;
+  old.replaceWith(warmed);
+  audio = warmed;
+  bindPlayerEvents();
+  preloader = createMediaPreloader(audio, {
+    isBusy: () => !!current || wantsPlayback,
+  });
+  old.removeAttribute("src");
+  old.preload = "none";
+  old.load();
+}
 function warmTrack(id) {
   const r = catalogById.get(id);
   if (!r || !["live", "indexed"].includes(r.recovery?.status)) return;
@@ -725,18 +795,22 @@ async function play(id, list = null, index = null) {
   mediaRecovery?.dispose();
   clearTimeout(mediaTimer);
   wantsPlayback = true;
+  const warmed = nextTrackBuffer.take(
+    id,
+    r.playback?.workingURL || r.recovery?.mediaURL,
+  );
   audio.pause();
-  const nextQueue = selectQueueTrack(
-    { ids: queue, index: queueIndex, mode: queueMode },
+  if (warmed) adoptBufferedMedia(warmed);
+  const nextQueue = selectShuffledTrack(
+    queueState,
     id,
     automaticQueueFor(r),
     list,
     index,
   );
-  queue = nextQueue.ids;
-  queueIndex = nextQueue.index;
-  queueMode = nextQueue.mode;
+  applyQueueState(nextQueue);
   current = r;
+  if ($("#queue-dialog").open) showQueue();
   document.body.classList.add("has-player");
   $("#player").hidden = false;
   $("#player-title").textContent = cleanTitle(r.title);
@@ -766,7 +840,8 @@ async function play(id, list = null, index = null) {
   }
   if (version !== playVersion) return;
   const mediaURL = r.playback?.workingURL || v.mediaURL;
-  if (!preloader.take(id, mediaURL)) audio.src = mediaURL;
+  if ((!warmed || audio.src !== mediaURL) && !preloader.take(id, mediaURL))
+    audio.src = mediaURL;
   const exhausted = () => {
     if (version !== playVersion) return;
     clearTimeout(mediaTimer);
@@ -811,18 +886,26 @@ async function play(id, list = null, index = null) {
       !audio.error
     ) {
       $("#toggle").innerHTML = navIcon("play");
-      notify(
-        "Playback could not start. Press play to retry; the media may be unavailable.",
-      );
+      if (error.name === "NotAllowedError") {
+        clearTimeout(mediaTimer);
+        wantsPlayback = false;
+        $("#player-source").textContent = "Ready — press play to continue";
+        notify("Press play to continue this recording.");
+      } else {
+        notify(
+          "Playback could not start. Press play to retry; the media may be unavailable.",
+        );
+      }
     }
   }
 }
 function showQueue() {
+  queueSorting.cancel();
   const list = $("#queue-list");
   $("#queue-context").textContent = queue.length
     ? queueMode === "auto"
-      ? "Playing from your browsing selection"
-      : "Your listening order"
+      ? "Your browsing selection · Drag handles to reorder"
+      : "Your listening order · Drag handles to reorder"
     : "Choose a recording to start a new queue.";
   $("#clear-queue").disabled = !queue.length;
   list.innerHTML = queue.length
@@ -830,12 +913,31 @@ function showQueue() {
         .map((id, i) => {
           const r = catalogById.get(id);
           if (!r) return "";
-          return `<div class="queue-item ${i === queueIndex && current?.id === id ? "current" : ""}"><span>${i + 1}</span><img src="${esc(image(r))}" alt=""><div>${esc(cleanTitle(r.title))}<small>${esc(r.artist)}</small></div><button class="icon" data-queue-play="${i}" aria-label="Play ${esc(r.title)}">${navIcon("play")}</button><button class="icon" data-queue-remove="${i}" aria-label="Remove ${esc(r.title)} from queue">×</button></div>`;
+          return `<div class="queue-item ${i === queueIndex && current?.id === id ? "current" : ""}" data-queue-key="${queueState.entries[i].key}"><button class="icon queue-drag-handle" type="button" data-queue-drag aria-label="Move ${esc(cleanTitle(r.title))}, position ${i + 1} of ${queue.length}. Use Arrow Up or Arrow Down to reorder." aria-keyshortcuts="ArrowUp ArrowDown" title="Drag to reorder">${navIcon("grip")}</button><span class="queue-position">${i + 1}</span><img src="${esc(image(r))}" alt=""><div>${esc(cleanTitle(r.title))}<small>${esc(r.artist)}</small></div><button class="icon" data-queue-play="${i}" aria-label="Play ${esc(r.title)}">${navIcon("play")}</button><button class="icon" data-queue-remove="${i}" aria-label="Remove ${esc(r.title)} from queue">×</button></div>`;
         })
         .join("")
     : '<div class="empty">Your queue is clear. The current recording will keep playing.</div>';
   if (!$("#queue-dialog").open) $("#queue-dialog").showModal();
 }
+
+const queueSorting = mountQueueSortable($("#queue-list"), {
+  announce: notify,
+  onMove: (key, to, inputType) => {
+    const from = queueState.entries.findIndex(
+      (entry) => String(entry.key) === key,
+    );
+    const next = moveShuffleQueue(queueState, from, to);
+    if (next === queueState) return;
+    applyQueueState(next);
+    showQueue();
+    $("#queue-list")
+      .querySelector(`[data-queue-key="${key}"] [data-queue-drag]`)
+      ?.focus({ preventScroll: inputType !== "keyboard" });
+    notify(
+      `Moved to position ${to + 1}. Your order is kept when shuffle is off.`,
+    );
+  },
+});
 
 document.addEventListener("click", async (e) => {
   const el = e.target.closest("button,a");
@@ -849,26 +951,18 @@ document.addEventListener("click", async (e) => {
     return;
   }
   if (el.dataset.queue) {
-    queue.push(el.dataset.queue);
-    queueMode = "manual";
+    applyQueueState(appendShuffleQueue(queueState, el.dataset.queue));
     notify("Added to your listening queue");
     return;
   }
   if (el.dataset.queueRemove !== undefined) {
-    const next = removeQueueTrack(
-      { ids: queue, index: queueIndex, mode: queueMode },
-      Number(el.dataset.queueRemove),
-    );
-    queue = next.ids;
-    queueIndex = next.index;
-    queueMode = next.mode;
+    const next = removeShuffleQueue(queueState, Number(el.dataset.queueRemove));
+    applyQueueState(next);
     showQueue();
     return;
   }
   if (el.id === "clear-queue") {
-    queue = [];
-    queueIndex = -1;
-    queueMode = null;
+    applyQueueState(clearShuffleQueue(queueState));
     showQueue();
     notify("Queue cleared. Your current recording keeps playing.");
     return;
@@ -1077,6 +1171,14 @@ $("#theme").onclick = () => {
     localStorage.setItem("mn-archive-theme", theme);
   } catch {}
 };
+applyQueueState(queueState);
+$("#shuffle").onclick = () => {
+  applyQueueState(toggleQueueShuffle(queueState));
+  try {
+    localStorage.setItem("mn-archive-shuffle", String(queueState.enabled));
+  } catch {}
+  if ($("#queue-dialog").open) showQueue();
+};
 $("#mobile-queue").onclick = showQueue;
 $("#show-queue").onclick = showQueue;
 $("#queue-now").onclick = showQueue;
@@ -1129,32 +1231,54 @@ $("#mute").onclick = () => {
     audio.muted ? "Unmute audio" : "Mute audio",
   );
 };
-audio.addEventListener("playing", () => {
-  clearTimeout(mediaTimer);
-  if (current)
-    $("#player-source").textContent =
-      `${chainNames[current.chainId]} → ${sourceKind(current.recovery?.mediaURI)} · ${mediaLabel(current)}`;
-});
-audio.addEventListener("timeupdate", () => {
-  if (audio.currentTime > 0) clearTimeout(mediaTimer);
-  $("#elapsed").textContent = time(audio.currentTime);
-  $("#duration").textContent = time(audio.duration);
-  $("#seek").value = Number.isFinite(audio.duration)
-    ? (audio.currentTime / audio.duration) * 1000
-    : 0;
-});
-audio.addEventListener("play", () => {
-  $("#toggle").innerHTML = navIcon("pause");
-  $("#toggle").setAttribute("aria-label", "Pause");
-});
-audio.addEventListener("pause", () => {
-  $("#toggle").innerHTML = navIcon("play");
-  $("#toggle").setAttribute("aria-label", "Play");
-});
-audio.addEventListener("ended", () => {
-  if (queueIndex + 1 < queue.length)
-    play(queue[queueIndex + 1], queue, queueIndex + 1);
-});
+function bindPlayerEvents() {
+  mediaEvents?.abort();
+  mediaEvents = new AbortController();
+  const element = audio;
+  const bind = (event, handler) =>
+    element.addEventListener(
+      event,
+      () => {
+        if (element === audio) handler();
+      },
+      { signal: mediaEvents.signal },
+    );
+  bind("playing", () => {
+    clearTimeout(mediaTimer);
+    warmNextTrack();
+    if (current)
+      $("#player-source").textContent =
+        `${chainNames[current.chainId]} → ${sourceKind(current.recovery?.mediaURI)} · ${mediaLabel(current)}`;
+  });
+  bind("timeupdate", () => {
+    if (audio.currentTime > 0) clearTimeout(mediaTimer);
+    warmNextTrack();
+    $("#elapsed").textContent = time(audio.currentTime);
+    $("#duration").textContent = time(audio.duration);
+    $("#seek").value = Number.isFinite(audio.duration)
+      ? (audio.currentTime / audio.duration) * 1000
+      : 0;
+  });
+  bind("play", () => {
+    $("#toggle").innerHTML = navIcon("pause");
+    $("#toggle").setAttribute("aria-label", "Pause");
+  });
+  bind("pause", () => {
+    nextTrackBuffer.suspend();
+    $("#toggle").innerHTML = navIcon("play");
+    $("#toggle").setAttribute("aria-label", "Play");
+  });
+  bind("ended", () => {
+    if (queueIndex + 1 < queue.length)
+      play(queue[queueIndex + 1], queue, queueIndex + 1);
+  });
+  bind("progress", warmNextTrack);
+  bind("waiting", () => nextTrackBuffer.suspend());
+  bind("stalled", () => {
+    if (!hasPlaybackHeadroom(audio)) nextTrackBuffer.suspend();
+  });
+}
+bindPlayerEvents();
 const mobile = document.createElement("div");
 mobile.className = "mobile-nav";
 mobile.setAttribute("aria-label", "Mobile navigation");

@@ -1,0 +1,191 @@
+{
+  "base": "http://127.0.0.1:4191",
+  "checkedAt": "2026-11-06T17:03:24.634Z",
+  "checks": [
+    {
+      "name": "toggle preserves real playback, duplicates and restores upcoming order",
+      "before": {
+        "src": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+        "time": 1.011367
+      },
+      "after": {
+        "src": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+        "time": 1.37137,
+        "paused": false,
+        "events": []
+      }
+    },
+    {
+      "name": "Next walks existing shuffle and removed occurrence stays removed"
+    },
+    {
+      "name": "clear retains current playback and shuffle preference",
+      "clearingTime": 0.541476
+    },
+    {
+      "name": "320px no horizontal overflow"
+    },
+    {
+      "name": "saved shuffle preference survives reload and next context"
+    }
+  ],
+  "views": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "bounds": [
+        {
+          "id": "shuffle",
+          "left": 624.984375,
+          "right": 659.984375,
+          "top": 829.5,
+          "bottom": 864.5
+        },
+        {
+          "id": "previous",
+          "left": 677.984375,
+          "right": 712.984375,
+          "top": 829.5,
+          "bottom": 864.5
+        },
+        {
+          "id": "toggle",
+          "left": 730.984375,
+          "right": 761.984375,
+          "top": 829.5,
+          "bottom": 860.5
+        },
+        {
+          "id": "next",
+          "left": 779.984375,
+          "right": 814.984375,
+          "top": 829.5,
+          "bottom": 864.5
+        }
+      ],
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "bounds": [
+        {
+          "id": "shuffle",
+          "left": 624.984375,
+          "right": 659.984375,
+          "top": 829.5,
+          "bottom": 864.5
+        },
+        {
+          "id": "previous",
+          "left": 677.984375,
+          "right": 712.984375,
+          "top": 829.5,
+          "bottom": 864.5
+        },
+        {
+          "id": "toggle",
+          "left": 730.984375,
+          "right": 761.984375,
+          "top": 829.5,
+          "bottom": 860.5
+        },
+        {
+          "id": "next",
+          "left": 779.984375,
+          "right": 814.984375,
+          "top": 829.5,
+          "bottom": 864.5
+        }
+      ],
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "bounds": [
+        {
+          "id": "mobile-queue",
+          "left": 203,
+          "right": 233,
+          "top": 840,
+          "bottom": 875
+        },
+        {
+          "id": "shuffle",
+          "left": 238,
+          "right": 268,
+          "top": 840,
+          "bottom": 875
+        },
+        {
+          "id": "previous",
+          "left": 273,
+          "right": 303,
+          "top": 840,
+          "bottom": 875
+        },
+        {
+          "id": "toggle",
+          "left": 308,
+          "right": 339,
+          "top": 840,
+          "bottom": 871
+        },
+        {
+          "id": "next",
+          "left": 344,
+          "right": 374,
+          "top": 840,
+          "bottom": 875
+        }
+      ],
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "bounds": [
+        {
+          "id": "mobile-queue",
+          "left": 203,
+          "right": 233,
+          "top": 840,
+          "bottom": 875
+        },
+        {
+          "id": "shuffle",
+          "left": 238,
+          "right": 268,
+          "top": 840,
+          "bottom": 875
+        },
+        {
+          "id": "previous",
+          "left": 273,
+          "right": 303,
+          "top": 840,
+          "bottom": 875
+        },
+        {
+          "id": "toggle",
+          "left": 308,
+          "right": 339,
+          "top": 840,
+          "bottom": 871
+        },
+        {
+          "id": "next",
+          "left": 344,
+          "right": 374,
+          "top": 840,
+          "bottom": 875
+        }
+      ],
+      "noOverflow": true
+    }
+  ],
+  "errors": [],
+  "smallViewportOverflow": [],
+  "passed": true
+}

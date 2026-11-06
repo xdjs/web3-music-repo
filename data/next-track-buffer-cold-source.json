@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-06T17:09:32.126761+00:00",
+  "scope": "Observed real app cold Arweave candidate; original current track kept playing",
+  "activeTitle": "OFF THE LEASH",
+  "candidateTitle": "MIAMI FREESTYLE",
+  "candidateURL": "https://arweave.net/YPaPFwWrTrMJDwObXBrJfI0sJMybg2gl-H_IhLNAKWs",
+  "candidateRequestStarted": true,
+  "candidateTimedOutAfterMs": 6500,
+  "candidateSourceCleared": true,
+  "candidateBufferedSeconds": 0,
+  "activePaused": false,
+  "activeCurrentTimeObserved": 12.5586,
+  "activeReadyState": 4,
+  "pageErrors": [],
+  "result": "Bounded timeout cancellation worked; this candidate did not become ready and will use normal playback on demand"
+}

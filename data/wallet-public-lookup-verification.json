@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-11-06T17:02:25.079Z",
+  "scope": "Live public holdings API first-page checks for the wallet shown by the user; no private account credentials used.",
+  "wallet": "0x625307de45bd25ad6bf6cc7391a308fc84067cf7",
+  "networks": [
+    {
+      "network": "ethereum",
+      "chainId": 1,
+      "status": "indexed",
+      "tokenEntries": 50,
+      "distinctCatalogMatches": 20,
+      "morePages": true,
+      "source": "https://eth.blockscout.com/address/0x625307dE45Bd25AD6bf6cC7391a308fc84067cf7"
+    },
+    {
+      "network": "optimism",
+      "chainId": 10,
+      "status": "indexed",
+      "tokenEntries": 50,
+      "distinctCatalogMatches": 18,
+      "morePages": true,
+      "source": "https://optimism.blockscout.com/address/0x625307dE45Bd25AD6bf6cC7391a308fc84067cf7"
+    },
+    {
+      "network": "base",
+      "chainId": 8453,
+      "status": "unavailable",
+      "tokenEntries": 0,
+      "distinctCatalogMatches": 0,
+      "morePages": false,
+      "source": null
+    },
+    {
+      "network": "polygon",
+      "chainId": 137,
+      "status": "unavailable",
+      "tokenEntries": 0,
+      "distinctCatalogMatches": 0,
+      "morePages": false,
+      "source": null
+    },
+    {
+      "network": "zora",
+      "chainId": 7777777,
+      "status": "unavailable",
+      "tokenEntries": 0,
+      "distinctCatalogMatches": 0,
+      "morePages": false,
+      "source": null
+    }
+  ],
+  "providerFindings": {
+    "base": "Current public Blockscout NFT endpoint returned HTTP403 challenge",
+    "polygon": "Current public Blockscout NFT endpoint returned HTTP403 challenge",
+    "zora": "Legacy Blockscout API path returned HTTP404 on the current explorer",
+    "alternate": "Documented Routescan Blockscout-compatible endpoint requires a paid API key; no key configured or purchase made"
+  }
+}

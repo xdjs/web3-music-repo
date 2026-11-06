@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-11-06T17:15:00.823Z",
+  "scope": "Real cold Arweave next-track attempt, 20-second candidate deadline; current playback has >=10 seconds buffered headroom",
+  "candidateTitle": "MIAMI FREESTYLE",
+  "candidateSourceCleared": true,
+  "candidateBufferedSeconds": 0,
+  "elapsedMs": 20012.099999904633,
+  "activePaused": false,
+  "activeTime": 20.720456,
+  "activeReadyState": 4,
+  "errors": []
+}

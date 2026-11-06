@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-06T17:16:25.463Z",
+  "base": "http://127.0.0.1:4191",
+  "engine": "webkit",
+  "mode": "ended",
+  "status": "passed",
+  "scope": "Real app: OFF THE LEASH playing while ROUND N ROUND native buffer warms. Actual element reuse on Next, volume/mute/event continuity and request count verified. No mocked media. Not a sample-accurate gapless guarantee.",
+  "before": {
+    "src": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/d3d65bfb-3d34-4769-b614-7f8be3c6e142/encoded/LIL-LIL-PETE-RANGO---ROUND-N-ROUND_MASTER.mp3",
+    "buffered": 170.112,
+    "events": [
+      {
+        "name": "emptied",
+        "at": 3592
+      },
+      {
+        "name": "loadstart",
+        "at": 3594
+      }
+    ],
+    "readyState": 4,
+    "preload": "none",
+    "activeTime": 6.733609874819815,
+    "volume": 0.35,
+    "muted": false
+  },
+  "after": {
+    "sameElement": true,
+    "handoffMs": 765,
+    "oldReleased": true,
+    "ids": 1,
+    "events": [
+      {
+        "name": "emptied",
+        "at": 3592
+      },
+      {
+        "name": "loadstart",
+        "at": 3594
+      },
+      {
+        "name": "playing",
+        "at": 9010
+      }
+    ],
+    "volume": 0.35,
+    "muted": false,
+    "currentTime": 0.5184843246904304,
+    "standbys": 0
+  },
+  "requestsBefore": 2,
+  "requestsAfter": 2,
+  "errors": []
+}
