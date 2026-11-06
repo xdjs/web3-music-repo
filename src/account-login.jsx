@@ -10,7 +10,11 @@ import {
   useConnectWallet,
 } from "@privy-io/react-auth";
 import { AccountProfile } from "./account-profile.jsx";
-import { accountRequest, loginErrorMessage } from "./account-client.mjs";
+import {
+  accountRequest,
+  loginErrorMessage,
+  linkedWallets,
+} from "./account-client.mjs";
 function Account() {
   const { ready, authenticated, user, logout, getAccessToken } = usePrivy();
   const [account, setAccount] = useState(null),
@@ -19,6 +23,33 @@ function Account() {
     [busy, setBusy] = useState(false),
     [retry, setRetry] = useState(0),
     [needsMusicNerdAccount, setNeedsMusicNerdAccount] = useState(false);
+  const walletAddresses = linkedWallets(user?.linkedAccounts || [])
+    .filter(
+      (wallet) =>
+        (wallet.chainType || "ethereum") === "ethereum" &&
+        /^0x[0-9a-f]{40}$/i.test(wallet.address),
+    )
+    .map((wallet) => wallet.address.toLowerCase());
+  const walletSignature = walletAddresses.join(",");
+  useEffect(() => {
+    const publish = () =>
+      document.dispatchEvent(
+        new CustomEvent("mn:account-wallets", {
+          detail: {
+            ready,
+            authenticated,
+            accountId: authenticated ? user?.id || null : null,
+            addresses: authenticated
+              ? walletSignature.split(",").filter(Boolean)
+              : [],
+          },
+        }),
+      );
+    publish();
+    document.addEventListener("mn:request-account-wallets", publish);
+    return () =>
+      document.removeEventListener("mn:request-account-wallets", publish);
+  }, [ready, authenticated, user?.id, walletSignature]);
   const identity = useRef(user?.id);
   identity.current = authenticated ? user?.id : null;
   const { login: openLogin } = useLogin({
@@ -182,6 +213,16 @@ function Account() {
             onConnect={() => connectWallet()}
             onLogout={() => {
               identity.current = null;
+              document.dispatchEvent(
+                new CustomEvent("mn:account-wallets", {
+                  detail: {
+                    ready: true,
+                    authenticated: false,
+                    accountId: null,
+                    addresses: [],
+                  },
+                }),
+              );
               setAccount(null);
               setRevision(null);
               logout();

@@ -30,9 +30,9 @@ See `data/privy-client-config-verification.json`, `data/privy-login-verification
 
 Seven account/client unit tests pass. A separate full-app browser fixture with a mocked Privy SDK and mocked account HTTP responses passes linked-wallet display/add/connect, account setup retry, save/load of browser playlists, clearing wallet state after logout, and 1440/390px light/dark layouts. See `data/privy-profile-verification.json`. This fixture is not evidence of a real user's authentication or production account persistence.
 
-No email OTP was sent and no wallet signature was requested. Pete still needs to complete one real login, link a wallet if desired, and save/load a playlist. The real login screen is verified; the personal authenticated transaction remains unverified.
+No email OTP was sent and no wallet signature was requested by the agent. Pete’s later signed-in profile screenshot confirms that Privy exposes his real linked wallet. The collection issue was missing UI wiring, not a need to repeat sign-in. A new wallet-link signature and personal authenticated playlist save/load remain separate, unverified actions.
 
-Guest playlists remain browser-local. Local account playlists use filesystem storage. The production integration now supports private Vercel Blob storage with per-account isolation and conditional revision writes; the release orchestrator configured and tested that durable adapter. A real personal login and playlist save/load remain separate checks from storage-adapter tests.
+Guest playlists remain browser-local. Local account playlists use filesystem storage. The production integration now supports private Vercel Blob storage with per-account isolation and conditional revision writes; the release orchestrator configured and tested that durable adapter. Pete has since confirmed real sign-in and linked-wallet display; authenticated playlist save/load remains a separate personal check from storage-adapter tests.
 
 ## Recheck
 
@@ -62,3 +62,11 @@ Deployment `dpl_EvGcZJyofBcXUXehfhyNQXZxGckt` serves the exact production client
 Rechecked the stable production site after deployment `dpl_EzRjTGwjs26ny3bDyrUvDJnF1uEr` from merged main commit `e3458a1e29ff581dded2a90c0c6b19e454fa5548`. The actual Privy SDK modal still passes at 1440/390px in light/dark with the dedicated production client above, email and wallet options, HTTP200 public configuration, no invalid-origin response, no overflow, and no JavaScript errors. The live account configuration reports `private-blob` storage.
 
 Evidence was refreshed in `data/privy-production-login-verification.json` and `captures/privy-production-login-*.png`. No authentication settings were changed during this recheck. No OTP or wallet signature was sent; the real personal sign-in and authenticated playlist save/load boundary remains unchanged.
+
+## Linked collection and ENS fix — November 6, 17:10 UTC
+
+The account component now publishes a minimal linked-EVM-wallet snapshot to the collection UI. My collection selects the first supported linked wallet when no explicit public-wallet query is present and starts one page on each of five supported networks, with at most two concurrent lookups. Additional pages remain explicit. Account switches and logout cancel old requests and clear automatic selection; an explicit public wallet remains a public selection. Loading, provider errors, empty pages, and unmatched tokens are distinct states. Network results replace only the collection results, preserving the account portal, form focus, scroll position and player node.
+
+The same field accepts an ENS name on submission. Resolution is a public Ethereum lookup, not a way to link a wallet or prove account ownership. It preserves existing results while pending, displays failures inline, and discards responses after input, account or route changes. A successful result navigates to the normalized address and attributes the ENS name/source.
+
+Four controller tests and four rendered viewport/theme cases pass with explicitly mocked Privy/account/wallet responses, including account-switch races, explicit public-query priority, pagination and logout. The additional ENS fixture checks invalid names and stale responses. A separate real browser check resolved `vitalik.eth` through the actual local backend to the expected address, with a visible source label and no overflow in all four views; only sign-in configuration was disabled in that public-lookup test. Evidence: `data/wallet-autoload-ui-verification.json`, `data/wallet-ens-ui-verification.json`, and `captures/wallet-{autoload,ens}-*.png`. This does not substitute for a complete live wallet census.
