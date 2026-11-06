@@ -2,9 +2,9 @@
 
 Updated November 6, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
-## Current local release candidate (not yet deployed)
+## Latest production release — Nina, sharing and collection filters
 
-Branch `codex/nina-and-queue` adds 6,054 Nina records through Spinamp: 27,449 Spinamp imports and 37,274 catalog records. The remaining 169 index queries still fail upstream; this is a representative NFT mapping per track, not an all-edition census. Nina playback samples, provenance, filters and chain guards passed. Solana wallet ownership remains unsupported.
+PR #6, merged at `3a79a4d58a7fe16b475991b867fdbb34d7e4910e`, adds 6,054 Nina records through Spinamp: 27,449 Spinamp imports and 37,274 catalog records. The remaining 169 index queries still fail upstream; this is a representative NFT mapping per track, not an all-edition census. Nina playback samples, provenance, filters and chain guards passed. Solana wallet ownership remains unsupported.
 
 Song, artist and recovered-playlist Share controls now use server-visible `/share/...` routes with entity-specific OG/Twitter metadata. Personal playlist snapshots use `/share/mix/...`; old hash links remain readable. Native share, copy and manual-copy fallbacks are covered. Actual previews in social apps still depend on their crawlers and caching.
 
@@ -16,9 +16,9 @@ The exact Lens release now has an explicitly labeled index snapshot of 13 wallet
 
 Endless and Army of Love now use exact-identity-bound Spinamp playback copies that passed native decode/advancement tests; original chain metadata and Arweave media remain unchanged and visible in Provenance. Endless's preserved WAV is about 77.7MB, so this is not a claim of compression or a complete streaming-delivery optimization. Same-transaction Arweave gateway fallback also passed real playback checks.
 
-Final unit suite: 269 passed; syntax, formatting and production build pass. Collection/account integration QA used controlled fixtures; real signed-in wallet completeness and social-app preview caching remain user-facing verification boundaries. Instagram Stories export is explicitly deferred until after this production checkpoint. Update the publication receipt after deployment.
+Final unit suite: 269 passed; syntax, formatting and production build pass. Collection/account integration QA used controlled fixtures; real signed-in wallet completeness and social-app preview caching remain user-facing verification boundaries. Instagram Stories export is explicitly deferred until after this production checkpoint. Production is READY at https://web3-music-repo.vercel.app/ (deployment `dpl_7uT6F78Wq8syoHRHUMW4BZJHAJia`). See `data/release-nina-sharing-2026-11-06.json`. Live catalog/Nina counts and the 13-wallet Lens snapshot were verified. No deployment-scoped error/fatal logs were returned in the post-release ten-minute query.
 
-## Current publication
+## Previous production publication (superseded by PR #6)
 
 - Repository: https://github.com/xdjs/web3-music-repo — PR #5 merged at `927dcf1737e9d1298e19ece34d09a88d30f45ef1`, deployed from that exact clean commit.
 - Live: https://web3-music-repo.vercel.app/ — READY deployment `dpl_2eYRpYzzPZEyoDujAeXEiYw7BiDH`.

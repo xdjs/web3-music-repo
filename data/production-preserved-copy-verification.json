@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-11-06T19:44:44.818Z",
+  "deploymentId": "dpl_7uT6F78Wq8syoHRHUMW4BZJHAJia",
+  "sourceCommit": "3a79a4d58a7fe16b475991b867fdbb34d7e4910e",
+  "base": "https://web3-music-repo.vercel.app",
+  "scope": "Two user-reported tracks, actual production player startup and advancement with exact-index matched preserved copies; no whole-track playback claim.",
+  "records": [
+    {
+      "id": "recovered-sound-10-145ac4d1ad5817b28997a479a980ea1d5d53e3e9",
+      "title": "Endless",
+      "artist": "Sound of Fractures",
+      "original": "https://arweave.net/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8",
+      "elapsedMs": 10724,
+      "status": "played",
+      "src": "https://ipfs.filebase.io/ipfs/QmR9U9mrJUvJh4sJwEzSSdGVfNNa6QgNQ1kYhCXaH5KupH",
+      "time": 1.532876,
+      "duration": 293.686009,
+      "paused": false,
+      "readyState": 4,
+      "decodedAudioBytes": 544236,
+      "videoWidth": 0,
+      "sameTransaction": false,
+      "responses": [
+        {
+          "url": "https://arweave.net/MJMx4iB2GoBw0MxHFSEO19LCzPDROmH13l4nJPKolyM",
+          "status": 302,
+          "length": "158"
+        },
+        {
+          "url": "https://gcjtdyraoynia4gqzrdrkiio27jmfthq2e5gd5o6lytsj4vis4rq.arweave.net/MJMx4iB2GoBw0MxHFSEO19LCzPDROmH13l4nJPKolyM",
+          "status": 200,
+          "mime": "image/png",
+          "length": "119474"
+        },
+        {
+          "url": "https://arweave.net/MJMx4iB2GoBw0MxHFSEO19LCzPDROmH13l4nJPKolyM",
+          "status": 302,
+          "length": "158"
+        },
+        {
+          "url": "https://gcjtdyraoynia4gqzrdrkiio27jmfthq2e5gd5o6lytsj4vis4rq.arweave.net/MJMx4iB2GoBw0MxHFSEO19LCzPDROmH13l4nJPKolyM",
+          "status": 200,
+          "mime": "image/png",
+          "length": "119474"
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "recovered-sound-10-191fc84c0dd16a5f7aa333c39021227a91cc44a3",
+      "title": "Army of Love",
+      "artist": "TK",
+      "original": "https://arweave.net/rimQeZ9Q-Y2QKtAmSVF2hKoTf3HpWObjhMh0nsY_mP4",
+      "elapsedMs": 18218,
+      "status": "played",
+      "src": "https://ipfs.filebase.io/ipfs/QmWKSC4HYcVHfjpRDW2JXrSCU96rZwhA513mhpJCKWi7nA",
+      "time": 1.515053,
+      "duration": 236.788934,
+      "paused": false,
+      "readyState": 4,
+      "decodedAudioBytes": 54281,
+      "videoWidth": 0,
+      "sameTransaction": false,
+      "responses": [
+        {
+          "url": "https://arweave.net/5MqeACUohirHns-x2JhI9IZwetfpBJepX6fF03UuRUE",
+          "status": 302,
+          "length": "158"
+        },
+        {
+          "url": "https://arweave.net/5MqeACUohirHns-x2JhI9IZwetfpBJepX6fF03UuRUE",
+          "status": 302,
+          "length": "158"
+        }
+      ],
+      "failures": []
+    }
+  ]
+}

@@ -1,16 +1,17 @@
 {
-  "checkedAt": "2026-11-06T18:11:20.028Z",
+  "checkedAt": "2026-11-06T19:48:00.653Z",
   "url": "https://lab.musicnerd.net/peterango/music-nft-recovery",
   "status": "published",
   "httpStatus": 200,
   "creator": "peterango",
   "name": "Music NFT Recovery",
   "launchURL": "https://web3-music-repo.vercel.app/",
-  "coverLoaded": true,
+  "coverPersistenceVerified": true,
+  "embeddedAppTargetVerified": true,
   "originatorCredit": true,
   "cookbookRendered": true,
   "starterRecipeRendered": true,
-  "persistedReadback": "data/lab-update-persistence.json; independent DB read-back with matching payload hash",
+  "persistedReadback": "data/lab-update-persistence.json",
   "viewports": [
     1440,
     390
@@ -19,8 +20,7 @@
     "viewport": 390,
     "document": 392
   },
-  "publishedUpdateAt": "2026-11-06T18:10:41.482441+00:00",
-  "expandedCatalogCount": 31220,
-  "addedSpinampRecords": 17580,
-  "nowPlayingCookbook": true
+  "embeddedPlaybackVerified": false,
+  "embeddedObservation": "Initial captures show blank frame before app render. Later bounded frame inspection confirmed recovery homepage/catalog loaded; embedded Privy authentication was blocked by frame-ancestors and a provider probe raised a cross-origin SecurityError. See data/lab-embed-inspection.json.",
+  "embeddedAppLoadedAfterWait": true
 }

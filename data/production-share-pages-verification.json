@@ -1,0 +1,118 @@
+{
+  "checkedAt": "2026-11-06T19:44:45.571Z",
+  "deploymentId": "dpl_7uT6F78Wq8syoHRHUMW4BZJHAJia",
+  "sourceCommit": "3a79a4d58a7fe16b475991b867fdbb34d7e4910e",
+  "scope": "Actual deployed HTTP metadata, browser landing, portrait, static-video range and responsive share-view checks; no account submissions or remote image proxying.",
+  "http": [
+    {
+      "kind": "record",
+      "status": 200,
+      "title": "Sara Phillips - i don&#39;t feel like dancing anymore \u2014 Sara Phillips",
+      "image": "https://web3-music-repo.vercel.app/recovered/record-00396a23.img",
+      "canonical": "https://web3-music-repo.vercel.app/share/record/record-00396a23",
+      "cacheControl": "public, max-age=300",
+      "target": "/#record/record-00396a23"
+    },
+    {
+      "kind": "artist",
+      "status": 200,
+      "title": "Pete Rango",
+      "image": "https://web3-music-repo.vercel.app/people/pete-rango-160.webp",
+      "canonical": "https://web3-music-repo.vercel.app/share/artist/pete-rango",
+      "cacheControl": "public, max-age=300",
+      "target": "/#artist/pete-rango"
+    },
+    {
+      "kind": "playlist",
+      "status": 200,
+      "title": "Chill n Work",
+      "image": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/2434908-newImage.png",
+      "canonical": "https://web3-music-repo.vercel.app/share/playlist/04150d7a-d471-48de-a144-54b00474e59f",
+      "cacheControl": "public, max-age=300",
+      "target": "/#historic-playlists/04150d7a-d471-48de-a144-54b00474e59f"
+    },
+    {
+      "kind": "mix",
+      "status": 200,
+      "title": "Late Night Recovery",
+      "image": "https://web3-music-repo.vercel.app/recovered/record-00396a23.img",
+      "canonical": "https://web3-music-repo.vercel.app/share/mix/v1.H4sIAAAAAAAAE6tWKlOyMtRRykvMTVWyUvJJLElV8MtMzyhRCEpNzi9LLapU0lEqAjKLUjxTipWsoqEcXQMDY0uzRCNjpdhaAEIUGhlEAAAA",
+      "cacheControl": "no-store",
+      "target": "/#shared-playlist/v1.H4sIAAAAAAAAE6tWKlOyMtRRykvMTVWyUvJJLElV8MtMzyhRCEpNzi9LLapU0lEqAjKLUjxTipWsoqEcXQMDY0uzRCNjpdhaAEIUGhlEAAAA"
+    }
+  ],
+  "landings": [
+    {
+      "kind": "record",
+      "target": "/#record/record-00396a23",
+      "h1": "Sara Phillips - i don't feel like dancing anymore",
+      "paused": true
+    },
+    {
+      "kind": "artist",
+      "target": "/#artist/pete-rango",
+      "h1": "Pete Rango",
+      "paused": true
+    },
+    {
+      "kind": "playlist",
+      "target": "/#historic-playlists/04150d7a-d471-48de-a144-54b00474e59f",
+      "h1": "Playlists from the era",
+      "paused": true
+    },
+    {
+      "kind": "mix",
+      "target": "/#shared-playlist/v1.H4sIAAAAAAAAE6tWKlOyMtRRykvMTVWyUvJJLElV8MtMzyhRCEpNzi9LLapU0lEqAjKLUjxTipWsoqEcXQMDY0uzRCNjpdhaAEIUGhlEAAAA",
+      "h1": "Late Night Recovery",
+      "paused": true
+    }
+  ],
+  "views": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "path": "captures/production-share-landing-1440-light.png",
+      "artworkLoaded": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "path": "captures/production-share-landing-1440-dark.png",
+      "artworkLoaded": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "path": "captures/production-share-landing-390-light.png",
+      "artworkLoaded": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "path": "captures/production-share-landing-390-dark.png",
+      "artworkLoaded": true
+    }
+  ],
+  "campfirePortrait": [
+    {
+      "src": "https://web3-music-repo.vercel.app/people/campfire-160.webp",
+      "loaded": true,
+      "width": 160
+    }
+  ],
+  "unknownStatus": 404,
+  "headStatus": 200,
+  "videoRange": {
+    "status": 206,
+    "contentRange": "bytes 0-31/29304810",
+    "contentType": "video/mp4",
+    "bytes": 32,
+    "matchesOriginalFile": true
+  },
+  "visualReview": "All four share captures and CAMPFIRE profile inspected.",
+  "harnessCorrection": "Initial portrait assertion required 640px variant; current component correctly uses 160px. Rechecked actual loaded asset."
+}

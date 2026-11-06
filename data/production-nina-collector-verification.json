@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-11-06T19:45:37.152329+00:00",
+  "url": "https://web3-music-repo.vercel.app/",
+  "records": 37274,
+  "nina": 6054,
+  "campfirePortrait": {
+    "src": "/people/campfire-160.webp",
+    "alt": "CAMPFIRE flame and logs profile image",
+    "credit": "CAMPFIRE \u00b7 Spinamp indexed artist profile, matched to original release contracts",
+    "source": "https://ipfs.filebase.io/ipfs/QmXyCgXAz6mFz5KE1MWPPFEwoVVqTqbXpFCvqanx2yqa8e",
+    "retrieved": "2026-11-06"
+  },
+  "collectors": {
+    "status": "indexed",
+    "scope": "spinamp-release-snapshot",
+    "source": "https://api.spinamp.xyz/v3/graphql",
+    "complete": null,
+    "total": null,
+    "totalHolders": null,
+    "totalTokens": null
+  },
+  "collectorRows": 13
+}

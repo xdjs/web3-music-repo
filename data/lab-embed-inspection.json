@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-11-06T19:48:42.898Z",
+  "iframes": [
+    {
+      "src": "https://web3-music-repo.vercel.app/",
+      "sandbox": "allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-downloads",
+      "allow": "fullscreen"
+    },
+    {
+      "src": "https://privy.musicnerd.net/apps/cmlzjxfrh00ak0cjvlap9d3gm/embedded-wallets?caid=f0c5b9bd-d754-41be-8f4b-58417353593b",
+      "sandbox": null,
+      "allow": ""
+    }
+  ],
+  "frames": [
+    {
+      "url": "https://web3-music-repo.vercel.app/",
+      "text": "Skip to music\nMUSIC NERD\nTHE MUSIC NFT ARCHIVE\nHome\nExplore music\nArtists\nPlaylists\nYOUR LIBRARY\nMy profile\nCollected music\nLiked sounds\n0\nListening queue\nPRESERVING THE ERA\nRecovery ledger\n An independent living archive\n\nSound first. An entire era to recover.\n\nAbout this archive \u2197\n\u2315\n/\n\u25d0\nSign in\nThe music remains.\n\nA living archive of the music NFT era. Follow the records. Press play.\n\n Recovery in progress\nRECOVERED FROM ETHEREUM + ARWEAVE\nMIAMI\nFREESTYLE\n\nCAMPFIRE \u00b7 Aly, Tarot, Elle Symone, Early & TK\n\nPlay\nFollow the onchain record \u2197\nPEOPLE BEHIND THE RECORD\nPete Rango\nMixing & mastering\nAbJo\nProduction\n\u25c8 Ethereum \u00a0 \u2192 \u00a0 Arweave metadata \u00a0 \u2192 \u00a0 Original audio\nThe platform went offline.\nThe record is still here.\n37274 records catalogued \u00a0 \u00b7 \u00a0 7915 metadata reads recovered\nEthereum \u00b7 Optimism \u00b7 Base \u00b7 Zora \u00b7 Polygon \u00b7 Solana\nExplore the evidence \u2197\nBack in rotation\n\nOriginal music, recovered through its tokens.\n\nExplore all \u2197\nSound\nNOT4ME\nAL3C\n\u2661\nSound\nNew Paths\nSound of Fractures\n\u2661\nSound"
+    }
+  ],
+  "errors": [
+    "Blocked autofocusing on a <button> element in a cross-origin subframe.",
+    "SecurityError: Failed to read a named property 'ethereum' from 'Window': Blocked a frame with origin \"https://web3-music-repo.vercel.app\" from accessing a cross-origin frame.\n    at Object.getProvider (https://web3-music-repo.vercel.app/account/dist-44S6PAPP.js:16:72355)\n    at https://web3-music-repo.vercel.app/account/chunk-GDU2R5PA.js:1:17752\n    at async gt.initialize (https://web3-music-repo.vercel.app/account/chunk-GDU2R5PA.js:1:15916)",
+    "Framing 'https://auth.privy.io/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://web3-music-repo.vercel.app https://auth.privy.io\". The request has been blocked.\n"
+  ],
+  "conclusion": "The app loaded inside the iframe after additional time. Nested Privy login is blocked by auth frame-ancestors; a wallet-provider probe also raised a cross-origin window.ethereum SecurityError. No auth settings changed."
+}

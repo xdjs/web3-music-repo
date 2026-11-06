@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-11-06T19:46:22.058938+00:00",
+  "sourceCommit": "3a79a4d58a7fe16b475991b867fdbb34d7e4910e",
+  "pullRequest": "https://github.com/xdjs/web3-music-repo/pull/6",
+  "deploymentId": "dpl_7uT6F78Wq8syoHRHUMW4BZJHAJia",
+  "url": "https://web3-music-repo.vercel.app/",
+  "immutableURL": "https://web3-music-repo-p93jyrt10-musicnerd.vercel.app",
+  "target": "production",
+  "state": "READY",
+  "localValidation": {
+    "tests": 269,
+    "passed": 269,
+    "failed": 0,
+    "syntax": "passed",
+    "format": "passed",
+    "productionBuild": "passed"
+  },
+  "catalog": {
+    "records": 37274,
+    "spinamp": 27449,
+    "nina": 6054,
+    "unresolvedSpinampReferences": 169
+  },
+  "productionChecks": [
+    "catalog record and Nina counts",
+    "CAMPFIRE portrait reference",
+    "Lens release snapshot 13 indexed collector wallets"
+  ],
+  "runtimeErrorScan": {
+    "deploymentScoped": true,
+    "lookback": "10m",
+    "levels": [
+      "error",
+      "fatal"
+    ],
+    "result": "No matching logs at 2026-11-06T19:45:51Z"
+  },
+  "remaining": [
+    "Instagram Stories export deferred",
+    "Managed streaming cache / delivery optimization",
+    "Indexed holdings coverage and freshness remain partial",
+    "Physical mobile and real signed-in account flows need user testing"
+  ]
+}
