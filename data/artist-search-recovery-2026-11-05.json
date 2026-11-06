@@ -1,0 +1,317 @@
+{
+  "records": [
+    {
+      "chainId": 1,
+      "contract": "0xeA0E0e1A3B3078E8FF4b5d2855932082DEABe291",
+      "tokenId": "42",
+      "id": "recovery-ea0e0e1a3b3078e8ff4b5d2855932082deabe291-42",
+      "artist": "Emma Miller",
+      "title": "Early For Emma",
+      "kind": "video",
+      "imageURI": "https://arweave.net/peNwCFiEu0Rq9f-m5zeKKu4HvGses1cer0UR2lbi4aA",
+      "platform": "Other",
+      "collection": "Emma Miller",
+      "note": "Original token metadata and media checked during the artist-coverage review.",
+      "discovery": "https://eth.blockscout.com/token/0xeA0E0e1A3B3078E8FF4b5d2855932082DEABe291",
+      "checkedBlock": 26351744,
+      "checkedAt": "2026-11-05T22:53:02.582Z"
+    },
+    {
+      "chainId": 1,
+      "contract": "0x328B49C56a8A15fb34aB3eCD8883Fac5F9512453",
+      "tokenId": "5200",
+      "id": "recovery-328b49c56a8a15fb34ab3ecd8883fac5f9512453-5200",
+      "artist": "Violetta Zironi",
+      "title": "Another Life by Violetta Zironi",
+      "kind": "audio",
+      "imageURI": "https://cyan-adjacent-gazelle-655.mypinata.cloud/ipfs/QmSMVf3Atwjwqkf5KooKvd2kxuvwg3XZXVzb8bwVuRRCxb/5200.png",
+      "platform": "Other",
+      "collection": "Another Life by Violetta Zironi",
+      "note": "Original token metadata and media checked during the artist-coverage review.",
+      "discovery": "https://eth.blockscout.com/token/0x328B49C56a8A15fb34aB3eCD8883Fac5F9512453",
+      "checkedBlock": 26351746,
+      "checkedAt": "2026-11-05T22:53:37.738Z"
+    }
+  ],
+  "evidence": [
+    {
+      "lead": "Jamee Cornelia",
+      "contract": "0xcA47FbD3441b1eBb64c8D51032C469978ACcd376",
+      "metadata": {
+        "animation_url": "ipfs://bafybeihnz7lpi7fk3iguzdxxwyz5x5n3a474epp4qwlonjjqyimy3rkcq4?",
+        "description": "Skyzone started in 2020 with an entirely different sounding record, I felt like the sound was too experimental when the homie Eric (from 4km) started it but then I revisited the record in 2022 and knew exactly who to reach out to: Jamee Cornelia and Jadyn Violet. Jamee came in with an absolutely infectious energy and such a superstar verse, then Jadyn laced the record with some beautiful melodies and I went back in and redid my verse and we had a whole ass bop \n\n\n\nWritten by Jon Waltz, Jamee Cornelia & Jadyn Violet \n\nProd by 4km\n\nArtwork by Jules Lauber ",
+        "image": "ipfs://bafkreibm4oqx3yl6rayfs5f6rxit7dljjpwy66c6mqu4m7sdt2bw2wsak4?",
+        "name": "SKYZONE- JON WALTZ, JAMEE CORNELIA, & JADYN VIOLET"
+      },
+      "mediaType": "audio/wav",
+      "mediaStatus": 200
+    },
+    {
+      "lead": "Jamee Cornelia",
+      "contract": "0x19Ed8B4f86f451FEB79BfF0Fc676AcA30c1B8129",
+      "metadata": {
+        "animation_url": "ipfs://bafybeieluj4x7w6f5onzc227cwey6x6limnpeqyr5zvlegq4cnhotxipfu",
+        "description": "Jamee Cornelia performing Dizzy during Zoratopia FETE at Art N Folly Gallery in Miami\nSaturday, December 3rd, 2022\nShot by Terrance T Young + Jahmel Reynolds + Mariana Makwaia\nEdited by Terrance T Young + Jahmel Reynolds",
+        "image": "ipfs://bafybeidtma63ngmspibyk2wef2mc33arfcwyc7653uwcvx3iekibio4lmi",
+        "name": "Jamee Cornelia  - Dizzy (Zoratopia Miami ‘22) 19",
+        "properties": {
+          "name": "Jamee Cornelia  - Dizzy (Zoratopia Miami ‘22)",
+          "number": 19
+        }
+      },
+      "mediaType": "video/mp4",
+      "mediaStatus": 200
+    },
+    {
+      "lead": "Cam Murdoch",
+      "contract": "0x5351A2E2a5BD6fbB0be3f5d2bf02D444eF1E2BA1",
+      "metadata": {
+        "animation_url": "ipfs://bafybeify7xjzr5ujy773mpjy5fgc3vtp4zgf4yhz3ztcihrkhbbsysqh5e",
+        "description": "SONATA audio / visual collaboration between rappers Cam Murdoch and J Burn, and artist Bongdoe is an anthem for the underdogs on the rise.",
+        "image": "ipfs://bafybeihxjzhz6a2bt6quo5fnf4sluigdrcymw53xgr7deznfgrqeloeuha",
+        "name": "SONATA (Cam Murdoch x J Burn x Bongdoe) 15/15",
+        "properties": {
+          "name": "SONATA (Cam Murdoch x J Burn x Bongdoe)",
+          "number": 15
+        }
+      },
+      "mediaType": "video/mp4",
+      "mediaStatus": 200
+    },
+    {
+      "lead": "Cam Murdoch",
+      "contract": "0x59B748ac036Dec64362d695A0514C02B609B1b9B",
+      "metadata": {
+        "animation_url": "ipfs://bafybeib4zm4wg62bszzajaxw3nzernbsemzjy25ivrehbmcwbo4ikns4t4",
+        "description": "Cam Murdoch performing Love U Down during Zoratopia FETE at Art N Folly Gallery in Miami\nSaturday, December 3rd, 2022\nVideography by Terrance T Young + Jahmel Reynolds + Mariana Makwaia\nEdited by Nic Jara + Jahmel Reynolds",
+        "image": "ipfs://bafybeiadjjv63ww6e4gejlnzpxx6dnlqt65fzkqdf2onwqg7fpftcr5kh4",
+        "name": "Cam Murdoch - Love U Down (Zoratopia Miami ‘22) 4",
+        "properties": {
+          "name": "Cam Murdoch - Love U Down (Zoratopia Miami ‘22)",
+          "number": 4
+        }
+      },
+      "mediaType": "video/mp4",
+      "mediaStatus": 200
+    },
+    {
+      "lead": "Emma Miller",
+      "contract": "0xeA0E0e1A3B3078E8FF4b5d2855932082DEABe291",
+      "metadata": {
+        "animation": "https://arweave.net/Ws_kkTOHaY7hdhDQ7dZdlb6QCS4YS5qjtUunmLF4HiI",
+        "animation_details": {
+          "bytes": 12103404,
+          "codecs": [
+            "H.264",
+            "AAC"
+          ],
+          "duration": 60,
+          "format": "MP4",
+          "height": 720,
+          "sha256": "4ff69f54b7c53d13c67b4f567f6b512e095377a72a36b46513f59e9ec23b1f56",
+          "width": 720
+        },
+        "animation_url": "https://arweave.net/Ws_kkTOHaY7hdhDQ7dZdlb6QCS4YS5qjtUunmLF4HiI",
+        "attributes": [
+          {
+            "trait_type": "Artist",
+            "value": "Emma Miller"
+          },
+          {
+            "trait_type": "Song Snippet 1",
+            "value": "Meet Me On The Lake"
+          },
+          {
+            "trait_type": "Song Snippet 2",
+            "value": "Low Light"
+          },
+          {
+            "trait_type": "Song Snippet 3",
+            "value": "In The Smoke"
+          }
+        ],
+        "created_by": "Emma Miller",
+        "description": "Chapter 1 of my journey into web 3 began with three small batch editions of Music NFTs. If you're a holder of this NFT it most likely means you joined me during that time, so welcome aboard. This is a collectors item and represents a moment in my personal web 3 history. \n\nThe medley you hear starts with 'Meet Me On The Lake' - my first ever Music NFT, 10 editions and a national radio debut on BBC Radio Scotland. Next comes 'Low Light' a small, peaceful song from 2020 which found its way into many hearts on Twitter space performances and was subsequently dropped as 20 editions. Finally, this trilogy of tracks is completed by 'In The Smoke', my genesis drop on SoundXYZ.  \n",
+        "image": "https://arweave.net/peNwCFiEu0Rq9f-m5zeKKu4HvGses1cer0UR2lbi4aA",
+        "image_details": {
+          "bytes": 2222479,
+          "format": "JPEG",
+          "height": 2286,
+          "sha256": "dfce1820f074288120faf1df990498b204ea6b1044b693f9bd6e188a33bb4c78",
+          "width": 2286
+        },
+        "image_url": "https://arweave.net/peNwCFiEu0Rq9f-m5zeKKu4HvGses1cer0UR2lbi4aA",
+        "name": "Early For Emma"
+      },
+      "mediaType": "video/mp4",
+      "mediaStatus": 200
+    },
+    {
+      "lead": "Violetta Zironi",
+      "contract": "0x328B49C56a8A15fb34aB3eCD8883Fac5F9512453",
+      "metadata": {
+        "animation_url": "https://cyan-adjacent-gazelle-655.mypinata.cloud/ipfs/QmWAKnDzr9Yxn7wFQDkEdxq6GFLwQp2nHowVNEKJVKdKAv/A%20Little%20Rain%20Must%20Fall.mp3",
+        "attributes": [
+          {
+            "trait_type": "Background",
+            "value": "Dusk"
+          },
+          {
+            "trait_type": "Skin",
+            "value": "Olive"
+          },
+          {
+            "trait_type": "Outfit",
+            "value": "Green Dot"
+          },
+          {
+            "trait_type": "Face Back",
+            "value": "Black Mask"
+          },
+          {
+            "trait_type": "Head",
+            "value": "Brunette"
+          },
+          {
+            "trait_type": "Neck",
+            "value": "Stud Choker"
+          },
+          {
+            "trait_type": "Frame",
+            "value": "Amber"
+          },
+          {
+            "trait_type": "Song",
+            "value": "A Little Rain Must Fall"
+          },
+          {
+            "trait_type": "Artist",
+            "value": "Violetta Zironi"
+          }
+        ],
+        "description": "Another Life is a music NFT/PFP collection by Violetta Zironi: 5 original songs recorded on tape paired with 5200 unique hand drawn PFPs inspired by the music.  The songs are written and produced by Violetta Zironi and Michael Hunter Ochs.  The artworks are hand drawn by Arianna Rea.",
+        "dna": "9aa255b042bbe259c1def5c07322d4136c8c5a04",
+        "image": "https://cyan-adjacent-gazelle-655.mypinata.cloud/ipfs/QmSMVf3Atwjwqkf5KooKvd2kxuvwg3XZXVzb8bwVuRRCxb/5200.png",
+        "name": "Another Life by Violetta Zironi #5200"
+      },
+      "mediaType": "audio/mpeg",
+      "mediaStatus": 200
+    },
+    {
+      "lead": "Violetta Zironi",
+      "contract": "0x00ac4b0E7bfa3C0f9dC93aA06dF08325398a9351",
+      "metadata": {
+        "animation_url": "ipfs://bafybeie3jglfcxzt6qejpeueqsijloayuzrcxbgccazngsgrsa3v5pm6ky/Music%20&%20Me%20Track%202%20Violetta%20Final%20Edit%20.mp3",
+        "description": "Welcome to \"Music & Me,\" the podcast that delves deep into the captivating world of music on the blockchain. On our 2nd ep, \"Track 2,\" we're honored to feature Violetta Zironi, a multi-talented singer, songwriter, and musician. Join us as we uncover the creative process behind Violetta's beloved records, exploring the inspirations and stories that have shaped her music. From melodic melodies to inspiring lyrics, this episode offers an intimate and insightful conversation with Violetta. Additionally, Violetta generously shares advice for aspiring musicians interested in entering the world of WEB3, providing valuable insights and guidance. Don't miss this remarkable episode of \"Music & Me\" as we celebrate the power of music and the profound impact it has on our lives.",
+        "image": "ipfs://bafybeihssxjin3vqzxzopn4ala3vskvosdxe3qoep23ez3swescmmeuidq/Music%20&%20Me.png",
+        "name": "Music & Me: Track 2 ft Violetta Zironi "
+      },
+      "mediaType": "audio/mpeg",
+      "mediaStatus": 200
+    }
+  ],
+  "gaps": [
+    {
+      "artist": "Jamee Cornelia",
+      "contract": "0xcA47FbD3441b1eBb64c8D51032C469978ACcd376",
+      "title": "SKYZONE- JON WALTZ, JAMEE CORNELIA, & JADYN VIOLET",
+      "reason": "Artist attribution needs manual metadata review"
+    },
+    {
+      "artist": "Jamee Cornelia",
+      "contract": "0x2ADAc4aDd4c3fc4181ed7f46D83A9968079A2665",
+      "title": "BOOM! [W/ JADYN VIOLET + JAMEE CORNELIA]",
+      "reason": "No indexed media metadata"
+    },
+    {
+      "artist": "Jamee Cornelia",
+      "contract": "0x8FE536bbb3F8Da5d696907b97C9FF64FB8DE5F09",
+      "title": "BOOM! [REMIX] - LACKHONEY x MATTHEW CHAIM x JADYN VIOLET x JAMEE CORNELIA]",
+      "reason": "No indexed media metadata"
+    },
+    {
+      "artist": "Jamee Cornelia",
+      "contract": "0x603d15c59BF999841Ca3517C63a58Ad832F4ABc5",
+      "title": "Matthew Chaim (feat. Jamee Cornelia) - Flavors",
+      "reason": "No indexed media metadata"
+    },
+    {
+      "artist": "Jamee Cornelia",
+      "contract": "0x19Ed8B4f86f451FEB79BfF0Fc676AcA30c1B8129",
+      "title": "Jamee Cornelia  - Dizzy (Zoratopia Miami ‘22)",
+      "reason": "Artist attribution needs manual metadata review"
+    },
+    {
+      "artist": "Jamee Cornelia",
+      "contract": "0x8B64BBf8e0B14aA3d7F5f6DdCb7553706c9c6Ef3",
+      "title": "Jamee Cornelia",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "artist": "Jamee Cornelia",
+      "contract": "0xB597c53c47027533D54Dc8733191D474aA05025f",
+      "title": "\"You Are Legend\" (f/ Jamee Cornelia)",
+      "reason": "No indexed media metadata"
+    },
+    {
+      "artist": "Jamee Cornelia",
+      "contract": "0x3F720A0ea57ac06f18AA00B58fF5fB5a13f85221",
+      "title": "BOO OFFICIAL MUSIC VIDEO [GRL FEAT. GLR | SHOT BY JAMEE CORNELIA]",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "artist": "Jamee Cornelia",
+      "contract": "0xAcbbd2519399086A9ED51eed5E4a799b37476F86",
+      "title": "FR3NZ EP (W/ SIIMBIIE LAKEW, LUCA MAXIIM, MoRuf, JAMEE CORNELIA, AND GRL)",
+      "reason": "No indexed media metadata"
+    },
+    {
+      "artist": "Cam Murdoch",
+      "contract": "0x774a15823ec8d5F507853aA7695BC6a69FeCC7d2",
+      "title": "Intuition Remix (LIVE) ft. Cam Murdoch",
+      "reason": "No indexed media metadata"
+    },
+    {
+      "artist": "Cam Murdoch",
+      "contract": "0x5351A2E2a5BD6fbB0be3f5d2bf02D444eF1E2BA1",
+      "title": "SONATA (Cam Murdoch x J Burn x Bongdoe)",
+      "reason": "Artist attribution needs manual metadata review"
+    },
+    {
+      "artist": "Cam Murdoch",
+      "contract": "0x59B748ac036Dec64362d695A0514C02B609B1b9B",
+      "title": "Cam Murdoch - Love U Down (Zoratopia Miami ‘22)",
+      "reason": "Artist attribution needs manual metadata review"
+    },
+    {
+      "artist": "Emma Miller",
+      "contract": "0x4cBE3724cAF315da7e2B08084aFb7A34CFBa2398",
+      "title": "Artifacts by Emma Miller",
+      "reason": "Live token metadata unavailable"
+    },
+    {
+      "artist": "Emma Miller",
+      "contract": "0x08e6096ef3a0560211eCcA3dEb63B073679Ef3f3",
+      "title": "Emma Miller",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "artist": "Violetta Zironi",
+      "contract": "0x462dBC7392c6f4F4C619e76C129B44BA68f5a309",
+      "title": "Blaze of Glory - Violetta Zironi & Jesperish",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "artist": "Violetta Zironi",
+      "contract": "0x00ac4b0E7bfa3C0f9dC93aA06dF08325398a9351",
+      "title": "Music & Me: Track 2 ft Violetta Zironi",
+      "reason": "Artist attribution needs manual metadata review"
+    },
+    {
+      "artist": "Art School Dropout",
+      "contract": "0x97fA14095A5D7E576C3d09e4eC9E104AaCC61B23",
+      "title": "ART SCHOOL DROPOUT",
+      "reason": "No indexed media metadata"
+    }
+  ]
+}

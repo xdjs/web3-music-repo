@@ -1,0 +1,4168 @@
+{
+  "startedAt": "2026-11-06T02:52:34.655Z",
+  "scope": "Starting 232-record catalog",
+  "method": "Muted Chromium playback beyond 0.25 seconds, not complete-track audition",
+  "results": {
+    "record-1a5d314b": {
+      "id": "record-1a5d314b",
+      "title": "Black Dave - Calm Down",
+      "artist": "Black Dave",
+      "chainId": 1,
+      "mediaURI": "ipfs://bafybeiasgbouvoqjhlweheyczhwz5256i7kbpytra6ewdp4gi2wbewl4cq?id=91",
+      "checkedAt": "2026-11-06T02:52:37.151Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeiasgbouvoqjhlweheyczhwz5256i7kbpytra6ewdp4gi2wbewl4cq?id=91",
+          "status": "played",
+          "currentTime": 0.263476,
+          "duration": 98.461542,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-00396a23": {
+      "id": "record-00396a23",
+      "title": "Sara Phillips - i don't feel like dancing anymore",
+      "artist": "Sara Phillips",
+      "chainId": 1,
+      "mediaURI": "ar://Urs1Qmf1JdtxuXue13xRCzOMPPOyPXyyZXtxv81WNJM",
+      "checkedAt": "2026-11-06T02:52:38.269Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/Urs1Qmf1JdtxuXue13xRCzOMPPOyPXyyZXtxv81WNJM",
+          "status": "played",
+          "currentTime": 0.288289,
+          "duration": 82.181225,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-462bf6be": {
+      "id": "record-462bf6be",
+      "title": "Part Three: Escapism (In The Meantime Short Film)",
+      "artist": "Heno.",
+      "chainId": 1,
+      "mediaURI": "ipfs://bafybeidpi2naqwwj437zo4bsnbdqt7cotutrpdv32ackapseezk7joes5i",
+      "checkedAt": "2026-11-06T02:52:39.552Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeidpi2naqwwj437zo4bsnbdqt7cotutrpdv32ackapseezk7joes5i",
+          "status": "played",
+          "currentTime": 0.262547,
+          "duration": 152.405333,
+          "readyState": 3
+        }
+      ]
+    },
+    "record-42d6235d": {
+      "id": "record-42d6235d",
+      "title": "Different World",
+      "artist": "Jazii",
+      "chainId": 1,
+      "mediaURI": "ar://s57mks5qxyo24pPol6tgRwVvPBZBX9du_vk3pXo1vJc",
+      "checkedAt": "2026-11-06T02:52:39.554Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/s57mks5qxyo24pPol6tgRwVvPBZBX9du_vk3pXo1vJc",
+          "status": "played",
+          "currentTime": 0.263787,
+          "duration": 145.821315,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-0e1581bc": {
+      "id": "record-0e1581bc",
+      "title": "INTRO",
+      "artist": "Felly",
+      "chainId": 1,
+      "mediaURI": "ar://-RaxqDgJq1p0lVwWioe9o5sVMUta1CUzNoYXy4SUcbg",
+      "checkedAt": "2026-11-06T02:52:41.229Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/-RaxqDgJq1p0lVwWioe9o5sVMUta1CUzNoYXy4SUcbg",
+          "status": "played",
+          "currentTime": 0.309137,
+          "duration": 47.400227,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-1956ba25": {
+      "id": "record-1956ba25",
+      "title": "Consent",
+      "artist": "Azekel",
+      "chainId": 1,
+      "mediaURI": "ar://OPL5CLCE6LHG-J9Stl4C8DQIjxS6dFgo_2KPB94RFzQ",
+      "checkedAt": "2026-11-06T02:52:45.148Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/OPL5CLCE6LHG-J9Stl4C8DQIjxS6dFgo_2KPB94RFzQ",
+          "status": "played",
+          "currentTime": 0.307535,
+          "duration": 226.031474,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-5fee7f03": {
+      "id": "record-5fee7f03",
+      "title": "magnetic",
+      "artist": "Charm Taylor",
+      "chainId": 1,
+      "mediaURI": "ar://q7DnleeqVhqfRH5f8MZoqe6nGtLq386DdEg0wvTjFZ8",
+      "checkedAt": "2026-11-06T02:52:50.433Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/q7DnleeqVhqfRH5f8MZoqe6nGtLq386DdEg0wvTjFZ8",
+          "status": "played",
+          "currentTime": 0.302039,
+          "duration": 185,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-5c38284c": {
+      "id": "record-5c38284c",
+      "title": "endless sky",
+      "artist": "Houndtrack",
+      "chainId": 1,
+      "mediaURI": "ar://x776ocDzAMWnVMokC8eVqqornRznD2ovp5mImfKIy4A",
+      "checkedAt": "2026-11-06T02:52:54.600Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/x776ocDzAMWnVMokC8eVqqornRznD2ovp5mImfKIy4A",
+          "status": "played",
+          "currentTime": 0.282418,
+          "duration": 192.486712,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-61048859": {
+      "id": "record-61048859",
+      "title": "Por Tu Barrio",
+      "artist": "AL3C & HeyBela",
+      "chainId": 1,
+      "mediaURI": "ar://YStvDur7I86UT_qwjo2NGC4ccu5GiMybEN8VavqGTdw",
+      "checkedAt": "2026-11-06T02:52:59.631Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/YStvDur7I86UT_qwjo2NGC4ccu5GiMybEN8VavqGTdw",
+          "status": "played",
+          "currentTime": 0.297772,
+          "duration": 178.407574,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-93382a43": {
+      "id": "record-93382a43",
+      "title": "New Age Bedroom R&B",
+      "artist": "Edwin",
+      "chainId": 1,
+      "mediaURI": "https://arpeggi-prod-public.s3.us-west-2.amazonaws.com/media-collection-demos/clfiks7t27tp901lj615s15xa.wav",
+      "checkedAt": "2026-11-06T02:53:00.274Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arpeggi-prod-public.s3.us-west-2.amazonaws.com/media-collection-demos/clfiks7t27tp901lj615s15xa.wav",
+          "status": "played",
+          "currentTime": 0.325747,
+          "duration": 61.333333,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-999be15f": {
+      "id": "record-999be15f",
+      "title": "AbJonian Vault Selections",
+      "artist": "AbJo",
+      "chainId": 1,
+      "mediaURI": "https://arpeggi-prod-public.s3.us-west-2.amazonaws.com/media-collection-demos/clep67r5502pu01l9d32r8o9e.wav",
+      "checkedAt": "2026-11-06T02:53:00.838Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arpeggi-prod-public.s3.us-west-2.amazonaws.com/media-collection-demos/clep67r5502pu01l9d32r8o9e.wav",
+          "status": "played",
+          "currentTime": 0.323798,
+          "duration": 77,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-69c77ef0": {
+      "id": "record-69c77ef0",
+      "title": "MIAMI FREESTYLE (ft. Aly, Tarot, Elle Symone, Early, & TK | prod. AbJo)",
+      "artist": "CAMPFIRE",
+      "chainId": 1,
+      "mediaURI": "ar://YPaPFwWrTrMJDwObXBrJfI0sJMybg2gl-H_IhLNAKWs",
+      "checkedAt": "2026-11-06T02:53:02.278Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/YPaPFwWrTrMJDwObXBrJfI0sJMybg2gl-H_IhLNAKWs",
+          "status": "played",
+          "currentTime": 0.314794,
+          "duration": 153.443225,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-a131cb1e": {
+      "id": "record-a131cb1e",
+      "title": "\"DYSTOPIA\" by Heno. + Andre Oshea",
+      "artist": "Heno. & Andre Oshea",
+      "chainId": 1,
+      "mediaURI": "ipfs://bafybeib44yzvzv2jxyvjpkqt445zzexqhokzqpo6v44ilhoaavc4s7n75i",
+      "checkedAt": "2026-11-06T02:53:03.803Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeib44yzvzv2jxyvjpkqt445zzexqhokzqpo6v44ilhoaavc4s7n75i",
+          "status": "played",
+          "currentTime": 0.293031,
+          "duration": 5,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-7de1ee42": {
+      "id": "record-7de1ee42",
+      "title": "SWIM",
+      "artist": "LNRZ",
+      "chainId": 1,
+      "mediaURI": "ar://QAzOvfLWS1lZWM3WUw8TZKL6lqMZ2j2Q0n-GcmUdq-s",
+      "checkedAt": "2026-11-06T02:53:07.964Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/QAzOvfLWS1lZWM3WUw8TZKL6lqMZ2j2Q0n-GcmUdq-s",
+          "status": "played",
+          "currentTime": 0.31469,
+          "duration": 115.603146,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-a76cb910": {
+      "id": "record-a76cb910",
+      "title": "Never Forget",
+      "artist": "TK the Legend",
+      "chainId": 1,
+      "mediaURI": "ar://t3rXdB4leXz0j1gvMxQXyNZ3_pbWP-PFkAWxIvC83gM",
+      "checkedAt": "2026-11-06T02:53:10.687Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/t3rXdB4leXz0j1gvMxQXyNZ3_pbWP-PFkAWxIvC83gM",
+          "status": "played",
+          "currentTime": 0.300103,
+          "duration": 209.684218,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-c54c6c76": {
+      "id": "record-c54c6c76",
+      "title": "Let Me Hit Somethin",
+      "artist": "Snoop Dogg",
+      "chainId": 1,
+      "mediaURI": "ar://iAk5xOhXJQ0iE8SbMEv2orWPMff7nkgznscorN78fiQ",
+      "checkedAt": "2026-11-06T02:53:13.330Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/iAk5xOhXJQ0iE8SbMEv2orWPMff7nkgznscorN78fiQ",
+          "status": "played",
+          "currentTime": 0.310786,
+          "duration": 235.793333,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-4850d617": {
+      "id": "record-4850d617",
+      "title": "AL3C Acoustic Session #00 - Never Forget by TK",
+      "artist": "AL3C",
+      "chainId": 1,
+      "mediaURI": "ipfs://bafybeicozlndwtzhdvuww5egxrgi6gjb5liitb4tg36qk4vp2qcbwj2yxq",
+      "checkedAt": "2026-11-06T03:03:59.823Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeicozlndwtzhdvuww5egxrgi6gjb5liitb4tg36qk4vp2qcbwj2yxq",
+          "status": "played",
+          "currentTime": 0.263781,
+          "duration": 231.2,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-d266e5c9": {
+      "id": "record-d266e5c9",
+      "title": "THINKIN BOUT YOU II",
+      "artist": "QUIN",
+      "chainId": 1,
+      "mediaURI": "ar://O_sSpP9WbTcSTZifs3KQMu392QDufRWAnCiynDVXWIg",
+      "checkedAt": "2026-11-06T02:53:17.095Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/O_sSpP9WbTcSTZifs3KQMu392QDufRWAnCiynDVXWIg",
+          "status": "played",
+          "currentTime": 0.27381,
+          "duration": 198.669932,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-9ce05cb8": {
+      "id": "record-9ce05cb8",
+      "title": "The AbJonian Suite, Vol. III (Mini-Mix #2)",
+      "artist": "AbJo",
+      "chainId": 1,
+      "mediaURI": "ar://86D91DIMYBZqgAShrvHg-SDR-_qTAeqXEcrcWWiKFww",
+      "checkedAt": "2026-11-06T03:04:26.405Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/86D91DIMYBZqgAShrvHg-SDR-_qTAeqXEcrcWWiKFww",
+          "status": "unavailable",
+          "reason": "MEDIA_ELEMENT_ERROR: Format error",
+          "code": 4
+        }
+      ]
+    },
+    "record-be0c31a9": {
+      "id": "record-be0c31a9",
+      "title": "Joyful Resistance Part I (Kabuki remix)",
+      "artist": "Mark de Clive-Lowe & Kabuki",
+      "chainId": 1,
+      "mediaURI": "ar://HiNAwuOqKVMZszPZkZVn_nTGyKFwrEih1vtcdz0QBqU",
+      "checkedAt": "2026-11-06T02:53:19.090Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/HiNAwuOqKVMZszPZkZVn_nTGyKFwrEih1vtcdz0QBqU",
+          "status": "played",
+          "currentTime": 0.307868,
+          "duration": 186,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-ec94f828": {
+      "id": "record-ec94f828",
+      "title": "Relics",
+      "artist": "Toha",
+      "chainId": 1,
+      "mediaURI": "ar://MNJQgVW1VbcuT4vqTgMLW3NsM81erDvI28yt7CM_zSk",
+      "checkedAt": "2026-11-06T02:53:30.056Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/MNJQgVW1VbcuT4vqTgMLW3NsM81erDvI28yt7CM_zSk",
+          "status": "played",
+          "currentTime": 0.317047,
+          "duration": 154.83873,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-d4f56fa9": {
+      "id": "record-d4f56fa9",
+      "title": "trip (live)",
+      "artist": "Charm Taylor",
+      "chainId": 1,
+      "mediaURI": "ar://tGhzz74u3WYe-wvEhkz4OdMUOq9lwClmgHdyDfRCV1g",
+      "checkedAt": "2026-11-06T02:53:30.207Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/tGhzz74u3WYe-wvEhkz4OdMUOq9lwClmgHdyDfRCV1g",
+          "status": "played",
+          "currentTime": 0.274035,
+          "duration": 240.065306,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-e6516778": {
+      "id": "record-e6516778",
+      "title": "New Paths",
+      "artist": "Sound of Fractures",
+      "chainId": 1,
+      "mediaURI": "ar://9DjN99Zte5y0crJnN85W79vrIWWuLdT9JV_0803S5nM",
+      "checkedAt": "2026-11-06T03:04:17.989Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/9DjN99Zte5y0crJnN85W79vrIWWuLdT9JV_0803S5nM",
+          "status": "played",
+          "currentTime": 0.26002,
+          "duration": 238.110249,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-ec7e3067": {
+      "id": "record-ec7e3067",
+      "title": "EMPIRE (ft. Reo Cragun & Icona Pop)",
+      "artist": "Kids of the Apocalypse",
+      "chainId": 1,
+      "mediaURI": "ar://LWaa-a_qnJAtSCn8U0PDOcmhbEvxA5dA2tBlE-yPSwo",
+      "checkedAt": "2026-11-06T02:53:35.164Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/LWaa-a_qnJAtSCn8U0PDOcmhbEvxA5dA2tBlE-yPSwo",
+          "status": "played",
+          "currentTime": 0.304551,
+          "duration": 182.047664,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-4e6ba8f6": {
+      "id": "record-4e6ba8f6",
+      "title": "Need That ft. Iman Europe",
+      "artist": "Iman Europe",
+      "chainId": 1,
+      "mediaURI": "ar://785r5KuCgaSsE5HSSKYzbcftkESUUyjiBN2_0_6YuxY",
+      "checkedAt": "2026-11-06T02:53:40.368Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/785r5KuCgaSsE5HSSKYzbcftkESUUyjiBN2_0_6YuxY",
+          "status": "played",
+          "currentTime": 0.263997,
+          "duration": 229.4432,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-df1c8ee5": {
+      "id": "record-df1c8ee5",
+      "title": "\"Just Off In Our Own World\"",
+      "artist": "Dutchyyy",
+      "chainId": 1,
+      "mediaURI": "ar://Kpw8zoKW8VSBoZmsgW97JZ5MuCUXCNCE2-ww01BzWgc",
+      "checkedAt": "2026-11-06T02:53:45.739Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/Kpw8zoKW8VSBoZmsgW97JZ5MuCUXCNCE2-ww01BzWgc",
+          "status": "played",
+          "currentTime": 0.268589,
+          "duration": 123.586688,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-a0008369": {
+      "id": "record-a0008369",
+      "title": "Iman Europe - REALLY LIT!",
+      "artist": "Iman Europe",
+      "chainId": 1,
+      "mediaURI": "ar://b_dHeWrUgTUa9de5GE7LC-9R1noGW1UZR_GfoILeccE",
+      "checkedAt": "2026-11-06T02:53:47.572Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/b_dHeWrUgTUa9de5GE7LC-9R1noGW1UZR_GfoILeccE",
+          "status": "played",
+          "currentTime": 0.258937,
+          "duration": 146.285714,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-28b708ee": {
+      "id": "record-28b708ee",
+      "title": "stay solid.",
+      "artist": "Iman Europe",
+      "chainId": 1,
+      "mediaURI": "ar://TI_HNj3lJejaTqug_is9Px5ac2zKDLIWCy5WrngKkQo",
+      "checkedAt": "2026-11-06T03:04:29.355Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/TI_HNj3lJejaTqug_is9Px5ac2zKDLIWCy5WrngKkQo",
+          "status": "played",
+          "currentTime": 0.261995,
+          "duration": 211.612925,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-1e31c103": {
+      "id": "record-1e31c103",
+      "title": "Iman Europe  - MWWM (Zoratopia Miami ‘22)",
+      "artist": "Iman Europe",
+      "chainId": 1,
+      "mediaURI": "ipfs://bafybeickizrxavfhil2vdtfxx3fdivtq7b7jjxgtwkj6zqj7w22pc3enj4",
+      "checkedAt": "2026-11-06T02:53:48.775Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeickizrxavfhil2vdtfxx3fdivtq7b7jjxgtwkj6zqj7w22pc3enj4",
+          "status": "played",
+          "currentTime": 0.272121,
+          "duration": 49.984,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-3944d87d": {
+      "id": "record-3944d87d",
+      "title": "Rock",
+      "artist": "Rae Isla",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmbNQSpXqacuQS3PcQe5FK7tGSDYeqvFDuUgxnB6LEjL1E/Downpour.mp3",
+      "checkedAt": "2026-11-06T02:53:49.334Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmbNQSpXqacuQS3PcQe5FK7tGSDYeqvFDuUgxnB6LEjL1E/Downpour.mp3",
+          "status": "played",
+          "currentTime": 0.260005,
+          "duration": 233.636458,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-bbdd481a": {
+      "id": "record-bbdd481a",
+      "title": "BULLS ON PARADE (with Reo Cragun, Iman Europe & Lackhoney)",
+      "artist": "Iman Europe",
+      "chainId": 1,
+      "mediaURI": "ar://tKAYrzQTzF3xEXAIOK_jL_3LnPJO0Pz2bbUyCDIjNtQ",
+      "checkedAt": "2026-11-06T02:53:50.542Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/tKAYrzQTzF3xEXAIOK_jL_3LnPJO0Pz2bbUyCDIjNtQ",
+          "status": "played",
+          "currentTime": 0.321688,
+          "duration": 158.769252,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-b31b7bac": {
+      "id": "record-b31b7bac",
+      "title": "CULTURE",
+      "artist": "LATASHÁ",
+      "chainId": 1,
+      "mediaURI": "ar://NB1qJroaeffWvA9QaLJRPS1WFTvKcEI-MbMCgh79E2U",
+      "checkedAt": "2026-11-06T02:53:54.138Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/NB1qJroaeffWvA9QaLJRPS1WFTvKcEI-MbMCgh79E2U",
+          "status": "played",
+          "currentTime": 0.279117,
+          "duration": 97.636372,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-2f2ac4ec": {
+      "id": "record-2f2ac4ec",
+      "title": "Sammy Arriaga & Rae Isla - Heartbreak Closer (LIVE in Austin, TX)",
+      "artist": "Rae Isla",
+      "chainId": 1,
+      "mediaURI": "ipfs://bafybeigft55vmjzqnpyghgki4j5supn5z3reuyodowzc3nm6t7p3mykxta",
+      "checkedAt": "2026-11-06T02:54:02.223Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeigft55vmjzqnpyghgki4j5supn5z3reuyodowzc3nm6t7p3mykxta",
+          "status": "played",
+          "currentTime": 0.327196,
+          "duration": 140.873991,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-11bbbbaf": {
+      "id": "record-11bbbbaf",
+      "title": "Ep 17 - Iman Europe",
+      "artist": "Iman Europe",
+      "chainId": 1,
+      "mediaURI": "ar://d1K1HmEtUTQMg3MYksvxCsu8t64K7zzI3PDmcPV0FKw",
+      "checkedAt": "2026-11-06T03:04:58.088Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/d1K1HmEtUTQMg3MYksvxCsu8t64K7zzI3PDmcPV0FKw",
+          "status": "unavailable",
+          "reason": "MEDIA_ELEMENT_ERROR: Format error",
+          "code": 4
+        }
+      ]
+    },
+    "record-chaos-walls": {
+      "id": "record-chaos-walls",
+      "title": "Walls — CHAOS, Act II",
+      "artist": "Three Oscillators · Lackhoney · Boy Untitled",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%201%20-%20Walls.mp3",
+      "checkedAt": "2026-11-06T02:54:04.627Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%201%20-%20Walls.mp3",
+          "status": "played",
+          "currentTime": 0.27855,
+          "duration": 147.51345,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4733": {
+      "id": "chaos-song-4733",
+      "title": "It All Led Me Back To You",
+      "artist": "Three Oscillators, Dontmesswithjuan, Kyle Tolbert",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%201%20-%20It%20All%20Led%20Me%20Back%20To%20You.mp3",
+      "checkedAt": "2026-11-06T02:54:05.912Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%201%20-%20It%20All%20Led%20Me%20Back%20To%20You.mp3",
+          "status": "played",
+          "currentTime": 0.319082,
+          "duration": 202.18775,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4734": {
+      "id": "chaos-song-4734",
+      "title": "Lagrimas De Cielo",
+      "artist": "HOUNDTRACK, Wilter, Alan Lili",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%207%20-%20Lagrimas%20De%20Cielo.mp3",
+      "checkedAt": "2026-11-06T02:54:06.715Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%207%20-%20Lagrimas%20De%20Cielo.mp3",
+          "status": "played",
+          "currentTime": 0.283891,
+          "duration": 129.776325,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4732": {
+      "id": "chaos-song-4732",
+      "title": "Gonna Make It",
+      "artist": "Nightshifts, Lackhoney, Kinney",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%203%20-%20Gonna%20Make%20It.mp3",
+      "checkedAt": "2026-11-06T02:54:07.758Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%203%20-%20Gonna%20Make%20It.mp3",
+          "status": "played",
+          "currentTime": 0.30216,
+          "duration": 158.641625,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-08056544": {
+      "id": "record-08056544",
+      "title": "Anatomía",
+      "artist": "Xcelencia",
+      "chainId": 1,
+      "mediaURI": "ar://7XaoDxqwzwW9v8r65JNp-D783wWUtbJ5SGcxG_fsX_8",
+      "checkedAt": "2026-11-06T02:54:08.383Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/7XaoDxqwzwW9v8r65JNp-D783wWUtbJ5SGcxG_fsX_8",
+          "status": "played",
+          "currentTime": 0.328772,
+          "duration": 167.364218,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-47a1026d": {
+      "id": "record-47a1026d",
+      "title": "Ol' BK Soul",
+      "artist": "LATASHÁ",
+      "chainId": 1,
+      "mediaURI": "https://arweave.net/ZAYnNb58Fn-60br19Q1067EZXdpDxVeqQFW26mCZiqk",
+      "checkedAt": "2026-11-06T03:04:55.784Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/ZAYnNb58Fn-60br19Q1067EZXdpDxVeqQFW26mCZiqk",
+          "status": "unavailable",
+          "reason": "MEDIA_ELEMENT_ERROR: Format error",
+          "code": 4
+        }
+      ]
+    },
+    "chaos-song-4730": {
+      "id": "chaos-song-4730",
+      "title": "Walls to Fade",
+      "artist": "Rex Kalibur (David Young), dilip, Alan Lili",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%208%20-%20Walls%20to%20Fade.mp3",
+      "checkedAt": "2026-11-06T02:54:09.117Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%208%20-%20Walls%20to%20Fade.mp3",
+          "status": "played",
+          "currentTime": 0.297903,
+          "duration": 148.976325,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4735": {
+      "id": "chaos-song-4735",
+      "title": "Chaos",
+      "artist": "Abel Romijin, Zach Britt, Jenn Morel",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%209%20-%20Chaos.mp3",
+      "checkedAt": "2026-11-06T02:54:09.203Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%209%20-%20Chaos.mp3",
+          "status": "played",
+          "currentTime": 0.26165,
+          "duration": 206.4457,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4731": {
+      "id": "chaos-song-4731",
+      "title": "We've Been Here",
+      "artist": "Sunday, Wilter, Sophia Alexa",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%204%20-%20We_ve%20Been%20Here.mp3",
+      "checkedAt": "2026-11-06T02:54:09.589Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%204%20-%20We_ve%20Been%20Here.mp3",
+          "status": "played",
+          "currentTime": 0.274919,
+          "duration": 187.06285,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4727": {
+      "id": "chaos-song-4727",
+      "title": "Single Hater",
+      "artist": "Jeff Middleton, L. Ariel, Jenn Morel",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%207%20-%20Single%20Hater.mp3",
+      "checkedAt": "2026-11-06T02:54:10.085Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%207%20-%20Single%20Hater.mp3",
+          "status": "played",
+          "currentTime": 0.328345,
+          "duration": 193.3061,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4726": {
+      "id": "chaos-song-4726",
+      "title": "Moviess",
+      "artist": "Rex Kalibur (David Young), Karma.wav, TYLERxCORDY",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%208%20-%20Moviess.mp3",
+      "checkedAt": "2026-11-06T02:54:10.554Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%208%20-%20Moviess.mp3",
+          "status": "played",
+          "currentTime": 0.269086,
+          "duration": 218.174675,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4725": {
+      "id": "chaos-song-4725",
+      "title": "Everseen",
+      "artist": "Prodcolin, Ireen Amnes, Kinney",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%204%20-%20Everseen.mp3",
+      "checkedAt": "2026-11-06T02:54:10.567Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%204%20-%20Everseen.mp3",
+          "status": "played",
+          "currentTime": 0.322961,
+          "duration": 168.5159,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-382a5be6": {
+      "id": "record-382a5be6",
+      "title": "tulengua ft. Xcelencia & Paula Pazos - dias prometidos",
+      "artist": "Xcelencia",
+      "chainId": 1,
+      "mediaURI": "ipfs://bafybeih3bjgblxonqq6vm6ywmcd7kvoujuhplhhraidaydy5a56ttotp3q?",
+      "checkedAt": "2026-11-06T02:54:10.629Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeih3bjgblxonqq6vm6ywmcd7kvoujuhplhhraidaydy5a56ttotp3q?",
+          "status": "played",
+          "currentTime": 0.307938,
+          "duration": 223.352604,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4721": {
+      "id": "chaos-song-4721",
+      "title": ".ETHY",
+      "artist": "HOUNDTRACK, Oceantied, tyler coolidge",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%207%20-%20Ethy.mp3",
+      "checkedAt": "2026-11-06T02:54:11.290Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%207%20-%20Ethy.mp3",
+          "status": "played",
+          "currentTime": 0.253933,
+          "duration": 123.454675,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4718": {
+      "id": "chaos-song-4718",
+      "title": "Honeybee",
+      "artist": "Sunday, Zach Britt, Jonn Hart",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%2012%20-%20Honeybee.mp3",
+      "checkedAt": "2026-11-06T02:54:11.691Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%2012%20-%20Honeybee.mp3",
+          "status": "played",
+          "currentTime": 0.300599,
+          "duration": 204.486525,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4719": {
+      "id": "chaos-song-4719",
+      "title": "Ruckus",
+      "artist": "anatu, Darby Trash, Jenn Morel",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%2011%20-%20Ruckus.mp3",
+      "checkedAt": "2026-11-06T02:54:11.838Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%2011%20-%20Ruckus.mp3",
+          "status": "played",
+          "currentTime": 0.272112,
+          "duration": 178.311825,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4715": {
+      "id": "chaos-song-4715",
+      "title": "Immortalized",
+      "artist": "Pozibelle, Wilter, TYLERxCORDY",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%205%20-%20Immortalized.mp3",
+      "checkedAt": "2026-11-06T02:54:12.151Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%205%20-%20Immortalized.mp3",
+          "status": "played",
+          "currentTime": 0.267635,
+          "duration": 164.02285,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4717": {
+      "id": "chaos-song-4717",
+      "title": "Let It Fall",
+      "artist": "Jeff Middleton, J.Mack, Rosalie",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%2010%20-%20Let%20It%20Fall.mp3",
+      "checkedAt": "2026-11-06T02:54:12.656Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%2010%20-%20Let%20It%20Fall.mp3",
+          "status": "played",
+          "currentTime": 0.282997,
+          "duration": 210.5208,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4716": {
+      "id": "chaos-song-4716",
+      "title": "Falling",
+      "artist": "Three Oscillators, Ireen Amnes, Rosalie",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%209%20-%20Falling.mp3",
+      "checkedAt": "2026-11-06T02:54:12.815Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%209%20-%20Falling.mp3",
+          "status": "played",
+          "currentTime": 0.324135,
+          "duration": 209.711,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4714": {
+      "id": "chaos-song-4714",
+      "title": "Monday",
+      "artist": "Glasstempo, Ireen Amnes, Sophia Alexa",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%202%20-%20Monday.mp3",
+      "checkedAt": "2026-11-06T02:54:13.435Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%202%20-%20Monday.mp3",
+          "status": "played",
+          "currentTime": 0.296095,
+          "duration": 195.526525,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4711": {
+      "id": "chaos-song-4711",
+      "title": "Part Time Internet Friends",
+      "artist": "Sad Alex, James Gardin, Kyle Tolbert",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%208%20-%20Part%20Time%20Internet%20Friends.mp3",
+      "checkedAt": "2026-11-06T02:54:13.460Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%208%20-%20Part%20Time%20Internet%20Friends.mp3",
+          "status": "played",
+          "currentTime": 0.282534,
+          "duration": 177.266925,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4709": {
+      "id": "chaos-song-4709",
+      "title": "Content",
+      "artist": "Pozibelle, Oceantied, Leo Pastel",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%205%20-%20Content.mp3",
+      "checkedAt": "2026-11-06T02:54:14.643Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%205%20-%20Content.mp3",
+          "status": "played",
+          "currentTime": 0.26383,
+          "duration": 140.773875,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4707": {
+      "id": "chaos-song-4707",
+      "title": "Crash",
+      "artist": "Jeff Middleton, James Gardin, Jonn Hart",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%2010%20-%20Crash.mp3",
+      "checkedAt": "2026-11-06T02:54:14.739Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%2010%20-%20Crash.mp3",
+          "status": "played",
+          "currentTime": 0.305994,
+          "duration": 147.069375,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4702": {
+      "id": "chaos-song-4702",
+      "title": "Enemies",
+      "artist": "anatu, Dontmesswithjuan, TYLERxCORDY",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%201%20-%20Enemies.mp3",
+      "checkedAt": "2026-11-06T02:54:14.823Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%201%20-%20Enemies.mp3",
+          "status": "played",
+          "currentTime": 0.256071,
+          "duration": 156.1861,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4705": {
+      "id": "chaos-song-4705",
+      "title": "Cocktail",
+      "artist": "Sad Alex, dilip, tyler coolidge",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%206%20-%20Cocktail.mp3",
+      "checkedAt": "2026-11-06T02:54:14.878Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%206%20-%20Cocktail.mp3",
+          "status": "played",
+          "currentTime": 0.304542,
+          "duration": 141.714275,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4697": {
+      "id": "chaos-song-4697",
+      "title": "Here and Now",
+      "artist": "Pozibelle, J.Mack, Boy Untitled",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%205%20-%20Here%20and%20Now.mp3",
+      "checkedAt": "2026-11-06T02:54:15.782Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%205%20-%20Here%20and%20Now.mp3",
+          "status": "played",
+          "currentTime": 0.28491,
+          "duration": 203.36325,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4700": {
+      "id": "chaos-song-4700",
+      "title": "Pull Me Under",
+      "artist": "Nightshifts, Dontmesswithjuan, Sophia Alexa",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%203%20-%20Pull%20Me%20Under.mp3",
+      "checkedAt": "2026-11-06T02:54:16.163Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%203%20-%20Pull%20Me%20Under.mp3",
+          "status": "played",
+          "currentTime": 0.323498,
+          "duration": 257.149375,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4701": {
+      "id": "chaos-song-4701",
+      "title": "I'm Alright",
+      "artist": "Rex Kalibur (David Young), Darby Trash, Kinney",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%2011%20-%20Im%20Alright.mp3",
+      "checkedAt": "2026-11-06T02:54:16.167Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%2011%20-%20Im%20Alright.mp3",
+          "status": "played",
+          "currentTime": 0.282443,
+          "duration": 193.201625,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4690": {
+      "id": "chaos-song-4690",
+      "title": "Bonsai",
+      "artist": "HOUNDTRACK, Zach Britt, Michael Onabolu",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%202%20-%20Bonsai.mp3",
+      "checkedAt": "2026-11-06T02:54:16.590Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%202%20-%20Bonsai.mp3",
+          "status": "played",
+          "currentTime": 0.257038,
+          "duration": 172.9306,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4686": {
+      "id": "chaos-song-4686",
+      "title": "Forget You",
+      "artist": "Nightshifts, Oceantied, Jonn Hart",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%203%20-%20Forget%20You.mp3",
+      "checkedAt": "2026-11-06T02:54:16.986Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%203%20-%20Forget%20You.mp3",
+          "status": "played",
+          "currentTime": 0.286273,
+          "duration": 196.101225,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4689": {
+      "id": "chaos-song-4689",
+      "title": "Where Things Fall Apart",
+      "artist": "Prodcolin, L.Ariel, Boy Untitled",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%204%20-%20Where%20Things%20Fall%20Apart.mp3",
+      "checkedAt": "2026-11-06T02:54:17.131Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%204%20-%20Where%20Things%20Fall%20Apart.mp3",
+          "status": "played",
+          "currentTime": 0.31205,
+          "duration": 148.062025,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4682": {
+      "id": "chaos-song-4682",
+      "title": "Late Bloomer",
+      "artist": "Glasstempo, dilip, Leo Pastel",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%2010%20-%20Late%20Bloomer.mp3",
+      "checkedAt": "2026-11-06T02:54:17.446Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%2010%20-%20Late%20Bloomer.mp3",
+          "status": "played",
+          "currentTime": 0.334554,
+          "duration": 167.75835,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4673": {
+      "id": "chaos-song-4673",
+      "title": "Special",
+      "artist": "Abel Romijin, Lackhoney, tyler coolidge",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%206%20-%20Special.mp3",
+      "checkedAt": "2026-11-06T02:54:17.632Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%206%20-%20Special.mp3",
+          "status": "played",
+          "currentTime": 0.287193,
+          "duration": 149.47265,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4669": {
+      "id": "chaos-song-4669",
+      "title": "OuttaControl!",
+      "artist": "Handsome Grandson, Shamanic, Conor Dalton",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Alchemy%20A%20-%20OuttaControl!.mp3",
+      "checkedAt": "2026-11-06T02:54:18.509Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Alchemy%20A%20-%20OuttaControl!.mp3",
+          "status": "played",
+          "currentTime": 0.279803,
+          "duration": 206.96815,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4681": {
+      "id": "chaos-song-4681",
+      "title": "Golden Apple",
+      "artist": "Abel Romijin, James Gardin, Michael Onabolu",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%209%20-%20Golden%20Apple.mp3",
+      "checkedAt": "2026-11-06T02:54:18.657Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%209%20-%20Golden%20Apple.mp3",
+          "status": "played",
+          "currentTime": 0.27294,
+          "duration": 198.086525,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4659": {
+      "id": "chaos-song-4659",
+      "title": "Moonrise",
+      "artist": "Sad Alex, Karma.wav, Leo Pastel",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%206%20-%20Moonrise.mp3",
+      "checkedAt": "2026-11-06T02:54:18.674Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%206%20-%20Moonrise.mp3",
+          "status": "played",
+          "currentTime": 0.290617,
+          "duration": 150.909375,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4667": {
+      "id": "chaos-song-4667",
+      "title": "Struggle No More",
+      "artist": "anatu, J.Mack, Michael Onabolu",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%2011%20-%20Struggle%20No%20More.mp3",
+      "checkedAt": "2026-11-06T02:54:19.211Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%2011%20-%20Struggle%20No%20More.mp3",
+          "status": "played",
+          "currentTime": 0.291326,
+          "duration": 196.048975,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4643": {
+      "id": "chaos-song-4643",
+      "title": "Unravel Me",
+      "artist": "Glasstempo, L.Ariel, Kyle Tolbert",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%202%20-%20Unravel%20Me.mp3",
+      "checkedAt": "2026-11-06T02:54:19.638Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Band%202%20-%20Unravel%20Me.mp3",
+          "status": "played",
+          "currentTime": 0.314693,
+          "duration": 161.5151,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4646": {
+      "id": "chaos-song-4646",
+      "title": "Way Of The DAO",
+      "artist": "Handsome Grandson, Shamanic, Deadwalker, Violetta Hyland, James Gardin",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Alchemy%20A%20-%20Way%20Of%20The%20DAO.mp3",
+      "checkedAt": "2026-11-06T02:54:19.712Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Alchemy%20A%20-%20Way%20Of%20The%20DAO.mp3",
+          "status": "played",
+          "currentTime": 0.263138,
+          "duration": 191.13795,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4657": {
+      "id": "chaos-song-4657",
+      "title": "You",
+      "artist": "Prodcolin, Karma.wav, Alan Lili",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%2012%20-%20You.mp3",
+      "checkedAt": "2026-11-06T02:54:19.939Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Band%2012%20-%20You.mp3",
+          "status": "played",
+          "currentTime": 0.268637,
+          "duration": 153.286525,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4636": {
+      "id": "chaos-song-4636",
+      "title": "iNVASiON ",
+      "artist": "MAiWORLD, Deadwalker, Violetta Hyland",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Alchemy%20C%20-%20Invasion.mp3",
+      "checkedAt": "2026-11-06T02:54:20.093Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Alchemy%20C%20-%20Invasion.mp3",
+          "status": "played",
+          "currentTime": 0.272899,
+          "duration": 167.0008,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4590": {
+      "id": "chaos-song-4590",
+      "title": "Six of Wands",
+      "artist": "Handsome Grandson, Shamanic, Conor Dalton",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Alchemy%20A%20-%20Six%20Of%20Wands.mp3",
+      "checkedAt": "2026-11-06T02:54:20.983Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Alchemy%20A%20-%20Six%20Of%20Wands.mp3",
+          "status": "played",
+          "currentTime": 0.322076,
+          "duration": 214.07345,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4642": {
+      "id": "chaos-song-4642",
+      "title": "In The Silence",
+      "artist": "Sunday, Darby Trash, Rosalie",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%2012%20-%20In%20The%20Silence.mp3",
+      "checkedAt": "2026-11-06T02:54:21.000Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Band%2012%20-%20In%20The%20Silence.mp3",
+          "status": "played",
+          "currentTime": 0.262212,
+          "duration": 202.9453,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4616": {
+      "id": "chaos-song-4616",
+      "title": "FROLiC",
+      "artist": "MAiWORLD, Snacks, Matthew Chaim, Will Juergens, Iara Bloomz, greydient, Violetta Hyland, Fran, Michael Onobolu, L. Ariel, Kathleen Regan, Max Dembling (handsome grandson), HOUNDTRACK, Rosalie, Abel Romijin, LosA, Levi Downey (Planteater), Anatu, Mark Redito, Jackintheway, David Young, Papa ",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Alchemy%20C%20-%20Frolic.mp3",
+      "checkedAt": "2026-11-06T02:54:21.317Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%203%20Alchemy%20C%20-%20Frolic.mp3",
+          "status": "played",
+          "currentTime": 0.300026,
+          "duration": 205.8449,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4315": {
+      "id": "chaos-song-4315",
+      "title": "The Fire",
+      "artist": "Snacks.xyz, Charlie Crown, Frances Miller",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Alchemy%20B%20-%20The%20Fire.mp3",
+      "checkedAt": "2026-11-06T02:54:21.618Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%202%20Alchemy%20B%20-%20The%20Fire.mp3",
+          "status": "played",
+          "currentTime": 0.32166,
+          "duration": 168.594275,
+          "readyState": 4
+        }
+      ]
+    },
+    "chaos-song-4513": {
+      "id": "chaos-song-4513",
+      "title": "Mad Vision",
+      "artist": "Snacks.xyz, Charlie Crown, Frances Miller",
+      "chainId": 1,
+      "mediaURI": "ipfs://QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Alchemy%20B%20-%20Mad%20Vision.mp3",
+      "checkedAt": "2026-11-06T02:54:22.595Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmUbtVMriquE1RAL2rdNnA8Yd5GKfZamnPN9zbn8uCbivD/Act%201%20Alchemy%20B%20-%20Mad%20Vision.mp3",
+          "status": "played",
+          "currentTime": 0.304142,
+          "duration": 148.924075,
+          "readyState": 4
+        }
+      ]
+    },
+    "catalog-eprom-1715": {
+      "id": "catalog-eprom-1715",
+      "title": "How U Make Me Feel",
+      "artist": "EPROM",
+      "chainId": 1,
+      "mediaURI": "https://ipfs.io/ipfs/bafybeihchfopng2uv7xjahwu3q6yrkhgrsjzrropcjdiuiklyqanc2d2ui",
+      "checkedAt": "2026-11-06T02:54:23.882Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeihchfopng2uv7xjahwu3q6yrkhgrsjzrropcjdiuiklyqanc2d2ui",
+          "status": "played",
+          "currentTime": 0.253274,
+          "duration": 180.512834,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-xcelencia-isla": {
+      "id": "record-xcelencia-isla",
+      "title": "ISLA REMIX",
+      "artist": "Xcelencia",
+      "chainId": 1,
+      "mediaURI": "ar://_MS9rL0C_qghx7C9ADdhp5dxZrjR9OrqylcQoPAkpko",
+      "checkedAt": "2026-11-06T02:54:27.879Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/_MS9rL0C_qghx7C9ADdhp5dxZrjR9OrqylcQoPAkpko",
+          "status": "played",
+          "currentTime": 0.269023,
+          "duration": 200.856,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-xcelencia-soltera": {
+      "id": "record-xcelencia-soltera",
+      "title": "Soltera",
+      "artist": "Xcelencia",
+      "chainId": 1,
+      "mediaURI": "ar://kPw_l6Blwm-6LEx-vd6mlCi4mh1Kb9yitvcJ9CNVI44",
+      "checkedAt": "2026-11-06T02:54:31.331Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/kPw_l6Blwm-6LEx-vd6mlCi4mh1Kb9yitvcJ9CNVI44",
+          "status": "played",
+          "currentTime": 0.300557,
+          "duration": 177.386667,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-not4me-acoustic": {
+      "id": "record-not4me-acoustic",
+      "title": "NOT4ME (Acoustic)",
+      "artist": "AL3C",
+      "chainId": 1,
+      "mediaURI": "ar://FKRIMuT2oYmstVldoNEAg_FyvJatejATM4Q-OUTnS8w",
+      "checkedAt": "2026-11-06T02:54:32.102Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/FKRIMuT2oYmstVldoNEAg_FyvJatejATM4Q-OUTnS8w",
+          "status": "played",
+          "currentTime": 0.324426,
+          "duration": 203.178685,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-0d8422ac9be719487efab830999b11fbe29c3993": {
+      "id": "sound-v2-0d8422ac9be719487efab830999b11fbe29c3993",
+      "title": "Stars - Golden Egg",
+      "artist": "Lark",
+      "chainId": 1,
+      "mediaURI": "ar://n-2KBZw0VLKXutq8qqSeiXvGKjLMhQ2ZsMdWKkr54U4",
+      "checkedAt": "2026-11-06T02:54:32.603Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/n-2KBZw0VLKXutq8qqSeiXvGKjLMhQ2ZsMdWKkr54U4",
+          "status": "played",
+          "currentTime": 0.287006,
+          "duration": 197.880725,
+          "readyState": 4
+        }
+      ]
+    },
+    "record-not4me": {
+      "id": "record-not4me",
+      "title": "NOT4ME",
+      "artist": "AL3C",
+      "chainId": 1,
+      "mediaURI": "ar://a4b8Spd5rcouKzttmYQnToH_d6nW6Sc-dMY2bHvpTW4",
+      "checkedAt": "2026-11-06T02:54:33.002Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/a4b8Spd5rcouKzttmYQnToH_d6nW6Sc-dMY2bHvpTW4",
+          "status": "played",
+          "currentTime": 0.267277,
+          "duration": 174.097007,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-9bee4a521bf04d8db84c08c4bb1c3e64018ee2cc": {
+      "id": "sound-v2-9bee4a521bf04d8db84c08c4bb1c3e64018ee2cc",
+      "title": "Never Change - Limited",
+      "artist": "daeton",
+      "chainId": 1,
+      "mediaURI": "ar://o4DJFdkXhmD8hLunsrlnsoEKVFrnyXTsbK6vDfv93fI",
+      "checkedAt": "2026-11-06T02:54:35.307Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/o4DJFdkXhmD8hLunsrlnsoEKVFrnyXTsbK6vDfv93fI",
+          "status": "played",
+          "currentTime": 0.279686,
+          "duration": 207.3938,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-d7bdd16ef8b12b1eae0f6e12abefcaf15495cf5a": {
+      "id": "sound-v2-d7bdd16ef8b12b1eae0f6e12abefcaf15495cf5a",
+      "title": "So Fly - Limited",
+      "artist": "NEMO",
+      "chainId": 1,
+      "mediaURI": "ar://aODwXcr_j1eqQ2RtLGYQC1cKJH-_LYmx7cWJwKrc_Ac",
+      "checkedAt": "2026-11-06T02:54:35.807Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/aODwXcr_j1eqQ2RtLGYQC1cKJH-_LYmx7cWJwKrc_Ac",
+          "status": "played",
+          "currentTime": 0.260015,
+          "duration": 232.960146,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-397f55964eb428a317ea512ea9c3c63811285b1e": {
+      "id": "sound-v2-397f55964eb428a317ea512ea9c3c63811285b1e",
+      "title": "Dollaz - Golden Egg",
+      "artist": "daeton",
+      "chainId": 1,
+      "mediaURI": "ar://e0LOgRYzxwWat7hd11ma0BKNDxKEJGET2X0oxB0mcX0",
+      "checkedAt": "2026-11-06T02:54:36.128Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/e0LOgRYzxwWat7hd11ma0BKNDxKEJGET2X0oxB0mcX0",
+          "status": "played",
+          "currentTime": 0.280725,
+          "duration": 180.5792,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-c69644ed374e3df1660f5019597686ff728f8a0d": {
+      "id": "sound-v2-c69644ed374e3df1660f5019597686ff728f8a0d",
+      "title": "SWIMMING - Limited",
+      "artist": "Devan Ibiza",
+      "chainId": 1,
+      "mediaURI": "ar://HIFJFSSLVfPb5Nx3yh4-hB-jwibLOemNZn-7Ue9kHEw",
+      "checkedAt": "2026-11-06T02:54:40.777Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/HIFJFSSLVfPb5Nx3yh4-hB-jwibLOemNZn-7Ue9kHEw",
+          "status": "played",
+          "currentTime": 0.257355,
+          "duration": 176,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-9d65b584ebd9fc6f7b97b005c835563fe779bae0": {
+      "id": "sound-v2-9d65b584ebd9fc6f7b97b005c835563fe779bae0",
+      "title": "Untitled thoughts - Limited",
+      "artist": "artonymousartifakt",
+      "chainId": 1,
+      "mediaURI": "ar://lHQ03IzhfRvtYGT4OAJ4pXwAtn8t_fDL-xYaUeJbZNY",
+      "checkedAt": "2026-11-06T02:54:43.343Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/lHQ03IzhfRvtYGT4OAJ4pXwAtn8t_fDL-xYaUeJbZNY",
+          "status": "played",
+          "currentTime": 0.312791,
+          "duration": 198.6,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-e8127d7649a6a2f81152e3aa2445c23a6152ff13": {
+      "id": "sound-v2-e8127d7649a6a2f81152e3aa2445c23a6152ff13",
+      "title": "The Plague - Limited",
+      "artist": "Grooveshake",
+      "chainId": 1,
+      "mediaURI": "ar://6mo3bKdi0f2sGrumrErE6gbiGtyWRP9vnbsN4fxex5g",
+      "checkedAt": "2026-11-06T02:54:44.371Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/6mo3bKdi0f2sGrumrErE6gbiGtyWRP9vnbsN4fxex5g",
+          "status": "played",
+          "currentTime": 0.302014,
+          "duration": 162.070499,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-080b2441712e1e010c2d1241e76d608d58f23dd3": {
+      "id": "sound-v2-080b2441712e1e010c2d1241e76d608d58f23dd3",
+      "title": "Memory - Limited",
+      "artist": "artonymousartifakt",
+      "chainId": 1,
+      "mediaURI": "ar://0GitXuPae_OkMPvYdyQSIRgIlhqZGj865sd0JqVQ5VM",
+      "checkedAt": "2026-11-06T02:54:46.856Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/0GitXuPae_OkMPvYdyQSIRgIlhqZGj865sd0JqVQ5VM",
+          "status": "played",
+          "currentTime": 0.250894,
+          "duration": 113.592,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-495436bb45c642e47f273f673d975853e8ef35c4": {
+      "id": "sound-v2-495436bb45c642e47f273f673d975853e8ef35c4",
+      "title": "If I could turn back time I would not do it - Limited",
+      "artist": "artonymousartifakt",
+      "chainId": 1,
+      "mediaURI": "ar://N9scfHZN5JRMoVHN5C8rgFK33G4lLXV1Jqv3KjLIIT0",
+      "checkedAt": "2026-11-06T02:54:47.106Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/N9scfHZN5JRMoVHN5C8rgFK33G4lLXV1Jqv3KjLIIT0",
+          "status": "played",
+          "currentTime": 0.291723,
+          "duration": 212.76,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-01cf537f0000bff04ac58ba9766d47cff9d77d36": {
+      "id": "sound-v2-01cf537f0000bff04ac58ba9766d47cff9d77d36",
+      "title": "REFLECTION - Golden Egg",
+      "artist": "Giaby",
+      "chainId": 1,
+      "mediaURI": "ar://xRdnJex1tscGwOYSneJpkMjszJH9UM6vRwRRzmhacmU",
+      "checkedAt": "2026-11-06T02:54:47.950Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/xRdnJex1tscGwOYSneJpkMjszJH9UM6vRwRRzmhacmU",
+          "status": "played",
+          "currentTime": 0.321304,
+          "duration": 137.712789,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-2799ba9dc623bd52ae38bcb103c3c50de72e5e6a": {
+      "id": "sound-v2-2799ba9dc623bd52ae38bcb103c3c50de72e5e6a",
+      "title": "Strange People  - Golden Egg",
+      "artist": "Urban Trout ",
+      "chainId": 1,
+      "mediaURI": "ar://jQscOjk73jLio9S3sxTxqM5rukm-Crxab61v7X7QJHY",
+      "checkedAt": "2026-11-06T02:54:51.892Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/jQscOjk73jLio9S3sxTxqM5rukm-Crxab61v7X7QJHY",
+          "status": "played",
+          "currentTime": 0.304356,
+          "duration": 231.397917,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-ccf21c074d04dc8ade42763d4c3fb1ebaf602325": {
+      "id": "sound-v2-ccf21c074d04dc8ade42763d4c3fb1ebaf602325",
+      "title": "MASTERPIECE - Limited",
+      "artist": "werb",
+      "chainId": 1,
+      "mediaURI": "ar://X0H3WhR-7lSBMO2Vaq7Ih3PQJbohT8YzNjPe9PuMaHs",
+      "checkedAt": "2026-11-06T02:54:55.153Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/X0H3WhR-7lSBMO2Vaq7Ih3PQJbohT8YzNjPe9PuMaHs",
+          "status": "played",
+          "currentTime": 0.284711,
+          "duration": 145.182494,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-1eeae99ee911c8f0fd2279e236ee44e79d2b3945": {
+      "id": "sound-v2-1eeae99ee911c8f0fd2279e236ee44e79d2b3945",
+      "title": "FEETPIX - Limited",
+      "artist": "Manny X",
+      "chainId": 1,
+      "mediaURI": "ar://o0sm5tVo_gWytvwc9hQJyq9sGItY2Q8YuNVsKYDc77I",
+      "checkedAt": "2026-11-06T02:55:01.020Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/o0sm5tVo_gWytvwc9hQJyq9sGItY2Q8YuNVsKYDc77I",
+          "status": "played",
+          "currentTime": 0.294198,
+          "duration": 166.736848,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-1a25f2ced85cd01611f7d50b63547378d7a7c869": {
+      "id": "sound-v2-1a25f2ced85cd01611f7d50b63547378d7a7c869",
+      "title": "Wya? - Golden Egg",
+      "artist": "C. Hood",
+      "chainId": 1,
+      "mediaURI": "ar://SNDaiLbgzaj5snL-0cBRK66AqTrhjq44Ps4HHE4wEcU",
+      "checkedAt": "2026-11-06T03:05:16.748Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/SNDaiLbgzaj5snL-0cBRK66AqTrhjq44Ps4HHE4wEcU",
+          "status": "played",
+          "currentTime": 0.300024,
+          "duration": 174,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-15288862dff2a4ff9f2413ee4fb906c6fc3fe636": {
+      "id": "sound-v2-15288862dff2a4ff9f2413ee4fb906c6fc3fe636",
+      "title": "Selfish - Golden Egg",
+      "artist": "Andy Tudor",
+      "chainId": 1,
+      "mediaURI": "ar://bTP0gpeAdNrhqtwpcWuCBFfjGAJpicVZzH4dnUqxrZA",
+      "checkedAt": "2026-11-06T02:55:05.157Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/bTP0gpeAdNrhqtwpcWuCBFfjGAJpicVZzH4dnUqxrZA",
+          "status": "played",
+          "currentTime": 0.314049,
+          "duration": 217.931043,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-03676689c0e461643fe5bf177b51b80e6fa91faf": {
+      "id": "sound-v2-03676689c0e461643fe5bf177b51b80e6fa91faf",
+      "title": "Quite Frankly - Limited",
+      "artist": "Casually",
+      "chainId": 1,
+      "mediaURI": "ar://57t-8Kbpxj92LbCQ3Fx4J7kQz2GWviCmLg1X85DbiKs",
+      "checkedAt": "2026-11-06T02:55:08.362Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/57t-8Kbpxj92LbCQ3Fx4J7kQz2GWviCmLg1X85DbiKs",
+          "status": "played",
+          "currentTime": 0.290092,
+          "duration": 166.008125,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-c8b3d60285e602c1f5c314a698889f9dfa758fa4": {
+      "id": "sound-v2-c8b3d60285e602c1f5c314a698889f9dfa758fa4",
+      "title": "Nostalgia - Limited",
+      "artist": "Thomas Selby",
+      "chainId": 1,
+      "mediaURI": "ar://g15TdcqFvr9hO7-PW623zW_-5a_jtTcaGZkAE-ON7Zk",
+      "checkedAt": "2026-11-06T03:05:13.405Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/g15TdcqFvr9hO7-PW623zW_-5a_jtTcaGZkAE-ON7Zk",
+          "status": "unavailable",
+          "reason": "MEDIA_ELEMENT_ERROR: Format error",
+          "code": 4
+        }
+      ]
+    },
+    "sound-v2-c2f48a54595fc59a8a7d5e7556a921197d0b76b2": {
+      "id": "sound-v2-c2f48a54595fc59a8a7d5e7556a921197d0b76b2",
+      "title": "Mythical Sands - SAIDI - Limited",
+      "artist": "Moataz.film",
+      "chainId": 1,
+      "mediaURI": "ar://PQLkM7WHMxaxgTmWPRtn0cKNzVrl88kIfHhMKE97GXM",
+      "checkedAt": "2026-11-06T02:55:11.663Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/PQLkM7WHMxaxgTmWPRtn0cKNzVrl88kIfHhMKE97GXM",
+          "status": "played",
+          "currentTime": 0.285183,
+          "duration": 141.545458,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-e2f8ab9a479184c91979b74b167d207a0477e543": {
+      "id": "sound-v2-e2f8ab9a479184c91979b74b167d207a0477e543",
+      "title": "Tis the Season - Limited",
+      "artist": "Rozegold Hunned ",
+      "chainId": 1,
+      "mediaURI": "ar://rcF_5scclBwFV-A6Imp3PFByQlI85RLJUMq-ttSTgmM",
+      "checkedAt": "2026-11-06T02:55:13.006Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/rcF_5scclBwFV-A6Imp3PFByQlI85RLJUMq-ttSTgmM",
+          "status": "played",
+          "currentTime": 0.260933,
+          "duration": 217.129775,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-27360e424987cc8d34c97a4512ef4597f4a5696a": {
+      "id": "sound-v2-27360e424987cc8d34c97a4512ef4597f4a5696a",
+      "title": "AfterDark - Limited",
+      "artist": "Ak Honest",
+      "chainId": 1,
+      "mediaURI": "ar://JvO7RaGiXsLcMJJw0JRikEdqHp2FGb2JfrljziT9hQQ",
+      "checkedAt": "2026-11-06T02:55:15.108Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/JvO7RaGiXsLcMJJw0JRikEdqHp2FGb2JfrljziT9hQQ",
+          "status": "played",
+          "currentTime": 0.273,
+          "duration": 178.244155,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-22cb342583863edc4e4b8750e673a76e8c43fe79": {
+      "id": "sound-v2-22cb342583863edc4e4b8750e673a76e8c43fe79",
+      "title": "Mythical Sands - AYOUP - Limited",
+      "artist": "Moataz.film",
+      "chainId": 1,
+      "mediaURI": "ar://UE-is5PllSLcHTADEqDy7E__3HJ-wg7DWg52sLoOAKg",
+      "checkedAt": "2026-11-06T02:55:15.435Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/UE-is5PllSLcHTADEqDy7E__3HJ-wg7DWg52sLoOAKg",
+          "status": "played",
+          "currentTime": 0.255399,
+          "duration": 133.798313,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-eeb3be4f38f01f0b14876fff794979212dad5b30": {
+      "id": "sound-v2-eeb3be4f38f01f0b14876fff794979212dad5b30",
+      "title": "Chambo - Limited",
+      "artist": "uXu",
+      "chainId": 1,
+      "mediaURI": "ar://ME2TIsNo7x5NFPT15b1Df0QvziOrPIE-0Z_4YFRv__A",
+      "checkedAt": "2026-11-06T02:55:18.793Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/ME2TIsNo7x5NFPT15b1Df0QvziOrPIE-0Z_4YFRv__A",
+          "status": "played",
+          "currentTime": 0.254945,
+          "duration": 38.787891,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-895e8b90d59458931ea75b39aab1e6ac5cd9f298": {
+      "id": "sound-v2-895e8b90d59458931ea75b39aab1e6ac5cd9f298",
+      "title": "RIGHT NOW | KID LUV - Limited",
+      "artist": "LoveLewyy",
+      "chainId": 1,
+      "mediaURI": "ar://qyxUsteqqS8_C4S_a2zI3inSgAoLLEYTSnK-13O54P0",
+      "checkedAt": "2026-11-06T02:55:20.716Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/qyxUsteqqS8_C4S_a2zI3inSgAoLLEYTSnK-13O54P0",
+          "status": "played",
+          "currentTime": 0.293438,
+          "duration": 230.976,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-24bff4bccb9ab5d6ffbba5f5537bc81ae9004f50": {
+      "id": "sound-v2-24bff4bccb9ab5d6ffbba5f5537bc81ae9004f50",
+      "title": "Mythical Sands - FARHA - Limited",
+      "artist": "Moataz.film",
+      "chainId": 1,
+      "mediaURI": "ar://3SQfzlqR84tHncA9lujG46_fc-BxmTeUBQu6Do-RZwQ",
+      "checkedAt": "2026-11-06T02:55:21.275Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/3SQfzlqR84tHncA9lujG46_fc-BxmTeUBQu6Do-RZwQ",
+          "status": "played",
+          "currentTime": 0.299418,
+          "duration": 129.391313,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-88715b67293163ce72c26646e0b5b4367cba7c21": {
+      "id": "sound-v2-88715b67293163ce72c26646e0b5b4367cba7c21",
+      "title": "Issues - Limited",
+      "artist": "Travis Storch",
+      "chainId": 1,
+      "mediaURI": "ar://Qr0Ie1I7HPlW7gYmHAPmRmRXuEf4_49bjWtfMhXwUzE",
+      "checkedAt": "2026-11-06T02:55:25.519Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/Qr0Ie1I7HPlW7gYmHAPmRmRXuEf4_49bjWtfMhXwUzE",
+          "status": "played",
+          "currentTime": 0.291999,
+          "duration": 211.707324,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-5e8e708e0c7d267e210bbb4bf7184cce4b309149": {
+      "id": "sound-v2-5e8e708e0c7d267e210bbb4bf7184cce4b309149",
+      "title": "PEPE RAP - Limited",
+      "artist": "MoonPie Joe",
+      "chainId": 1,
+      "mediaURI": "ar://9tGB3hJxQBzjv1N7m5TcZX6VM7j2tF5EckxXG7T9XL8",
+      "checkedAt": "2026-11-06T02:55:27.361Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/9tGB3hJxQBzjv1N7m5TcZX6VM7j2tF5EckxXG7T9XL8",
+          "status": "played",
+          "currentTime": 0.297559,
+          "duration": 204.6512,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-85cdd1ff679c28d2f10d5ee9f041d45552994b09": {
+      "id": "sound-v2-85cdd1ff679c28d2f10d5ee9f041d45552994b09",
+      "title": "Vonpsyche - Homesick - Limited",
+      "artist": "Non-Human Intelligence",
+      "chainId": 1,
+      "mediaURI": "ar://toidxqf5hu2yRNtrLTdJNYYi5Oegs6bI1CV9ZFmXEoY",
+      "checkedAt": "2026-11-06T03:05:31.250Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/toidxqf5hu2yRNtrLTdJNYYi5Oegs6bI1CV9ZFmXEoY",
+          "status": "played",
+          "currentTime": 0.31633,
+          "duration": 305.425896,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-61d0379d1b00c0d4dae2911c6b211a0b799a9da4": {
+      "id": "sound-v2-61d0379d1b00c0d4dae2911c6b211a0b799a9da4",
+      "title": "\"Tell Me Why\" - Limited",
+      "artist": "Rohan da Great",
+      "chainId": 1,
+      "mediaURI": "ar://LbapL24DyByi1IM_gR1FqLlagG974EmN5Yq1LzVl61A",
+      "checkedAt": "2026-11-06T02:55:33.920Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/LbapL24DyByi1IM_gR1FqLlagG974EmN5Yq1LzVl61A",
+          "status": "played",
+          "currentTime": 0.321095,
+          "duration": 159.069771,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-86454f1277c7f565b29da70c8f0b958dcae19458": {
+      "id": "sound-v2-86454f1277c7f565b29da70c8f0b958dcae19458",
+      "title": "Howl like a Rebel - Limited",
+      "artist": "krp",
+      "chainId": 1,
+      "mediaURI": "ar://9pqf63Y7lQCJMyHQuJXFX9uB4DEhuxWvLE99d4id-f8",
+      "checkedAt": "2026-11-06T02:55:34.725Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/9pqf63Y7lQCJMyHQuJXFX9uB4DEhuxWvLE99d4id-f8",
+          "status": "played",
+          "currentTime": 0.322118,
+          "duration": 97.6,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-667469cc0415db29de4490f2a0d5903d41c963f4": {
+      "id": "sound-v2-667469cc0415db29de4490f2a0d5903d41c963f4",
+      "title": "Mythical Sands - ARATASIA - Limited",
+      "artist": "Moataz.film",
+      "chainId": 1,
+      "mediaURI": "ar://WmGyohWJKtD1r1t2OTgTx1diiPDtk11ZSJQtcaLq0cQ",
+      "checkedAt": "2026-11-06T02:55:35.124Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/WmGyohWJKtD1r1t2OTgTx1diiPDtk11ZSJQtcaLq0cQ",
+          "status": "played",
+          "currentTime": 0.323777,
+          "duration": 128.669354,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-d867aaabde1e54b82102032a2d4d73f3a40a4ec5": {
+      "id": "sound-v2-d867aaabde1e54b82102032a2d4d73f3a40a4ec5",
+      "title": "PRESSURE - Limited",
+      "artist": "Skrypt",
+      "chainId": 1,
+      "mediaURI": "ar://nH8gir8MZQ66M10Aq0e01IWU6MBJ56nG2kx38QT9Dow",
+      "checkedAt": "2026-11-06T02:55:38.650Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/nH8gir8MZQ66M10Aq0e01IWU6MBJ56nG2kx38QT9Dow",
+          "status": "played",
+          "currentTime": 0.26587,
+          "duration": 239.1804,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-893a5ae7beba92cbed046151a36d5d9fabcbb71f": {
+      "id": "sound-v2-893a5ae7beba92cbed046151a36d5d9fabcbb71f",
+      "title": "TRICK OR TREAT - Limited",
+      "artist": "Rizzo The Boss ",
+      "chainId": 1,
+      "mediaURI": "ar://Mozg7B1lEoywB32UYMWZS7owb3zrjqIDHDqoxlDCfS8",
+      "checkedAt": "2026-11-06T02:55:40.973Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/Mozg7B1lEoywB32UYMWZS7owb3zrjqIDHDqoxlDCfS8",
+          "status": "played",
+          "currentTime": 0.27598,
+          "duration": 271.13263,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-c0cbb04bede63c30c1b7ba2d206c36d28e7b3a34": {
+      "id": "sound-v2-c0cbb04bede63c30c1b7ba2d206c36d28e7b3a34",
+      "title": "$DORK - Limited",
+      "artist": "CryptoRapGod",
+      "chainId": 1,
+      "mediaURI": "ar://gf23r_XAfdIX7hqTDYyt1KLyjFDySDfs002VX_yEUMI",
+      "checkedAt": "2026-11-06T02:55:41.656Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/gf23r_XAfdIX7hqTDYyt1KLyjFDySDfs002VX_yEUMI",
+          "status": "played",
+          "currentTime": 0.250711,
+          "duration": 144.005329,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-5c747d14383ff69c2b020d2c603f56a4107de381": {
+      "id": "sound-v2-5c747d14383ff69c2b020d2c603f56a4107de381",
+      "title": "Magic (feat. Rich Wave) - Limited",
+      "artist": "C. Hood",
+      "chainId": 1,
+      "mediaURI": "ar://AX_2kuTNqaz2lgOgkfwhmeW4NDeyS6EJo9zgyrxT8l0",
+      "checkedAt": "2026-11-06T02:55:48.254Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/AX_2kuTNqaz2lgOgkfwhmeW4NDeyS6EJo9zgyrxT8l0",
+          "status": "played",
+          "currentTime": 0.328859,
+          "duration": 113.548396,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-ae0a5c90f8ca73dc13c5d8d5fee4ebb9bbea8fc6": {
+      "id": "sound-v2-ae0a5c90f8ca73dc13c5d8d5fee4ebb9bbea8fc6",
+      "title": "Mythical Sands - PHARAONIC - Limited",
+      "artist": "Moataz.film",
+      "chainId": 1,
+      "mediaURI": "ar://4EOqbElvSbGUXn4dy1CWrgitM-O6uaqb0n28mUUZBSQ",
+      "checkedAt": "2026-11-06T02:55:49.218Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/4EOqbElvSbGUXn4dy1CWrgitM-O6uaqb0n28mUUZBSQ",
+          "status": "played",
+          "currentTime": 0.324662,
+          "duration": 141,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-83f97baedc513924fcf1ef5cdfe85306b696badd": {
+      "id": "sound-v2-83f97baedc513924fcf1ef5cdfe85306b696badd",
+      "title": "Is It All - Limited",
+      "artist": "Space Fight",
+      "chainId": 1,
+      "mediaURI": "ar://lnod8yfEkSKTj8KWoFh-_4gfeyWloke7c5_jDUpBhvg",
+      "checkedAt": "2026-11-06T03:05:25.027Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/lnod8yfEkSKTj8KWoFh-_4gfeyWloke7c5_jDUpBhvg",
+          "status": "unavailable",
+          "reason": "MEDIA_ELEMENT_ERROR: Format error",
+          "code": 4
+        }
+      ]
+    },
+    "sound-v2-10-328e63fd31dc236b6ac63027d50a3d32f8e8eee1": {
+      "id": "sound-v2-10-328e63fd31dc236b6ac63027d50a3d32f8e8eee1",
+      "title": "Paper Planes - Golden Egg",
+      "artist": "Mr.FLEN",
+      "chainId": 10,
+      "mediaURI": "ar://oSLRbdpqUX55PIZ24vLxAkqxOSEuorxT6xBC8tB3d68",
+      "checkedAt": "2026-11-06T02:55:54.098Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/oSLRbdpqUX55PIZ24vLxAkqxOSEuorxT6xBC8tB3d68",
+          "status": "played",
+          "currentTime": 0.294836,
+          "duration": 199.919977,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-bd3e2ad94a97ec79dc93eae324d47d66d9c7976a": {
+      "id": "sound-v2-bd3e2ad94a97ec79dc93eae324d47d66d9c7976a",
+      "title": "Power Of Love - Limited",
+      "artist": "Boris Muzychuk",
+      "chainId": 1,
+      "mediaURI": "ar://htIKkHn3obEKtaSzWWoldb57iVO0ceBR3Zk8JduXW7M",
+      "checkedAt": "2026-11-06T02:55:54.140Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/htIKkHn3obEKtaSzWWoldb57iVO0ceBR3Zk8JduXW7M",
+          "status": "played",
+          "currentTime": 0.278211,
+          "duration": 210,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-7a10b54e3b5bc56c354a2402344aa78bfde01a9e": {
+      "id": "sound-v2-10-7a10b54e3b5bc56c354a2402344aa78bfde01a9e",
+      "title": "mommy - Golden Egg",
+      "artist": "baby",
+      "chainId": 10,
+      "mediaURI": "ar://zxjSPv3x6x-EdV9_ndT72Pv5NVCF5Mi1wGsuCsHvxeU",
+      "checkedAt": "2026-11-06T02:55:56.902Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/zxjSPv3x6x-EdV9_ndT72Pv5NVCF5Mi1wGsuCsHvxeU",
+          "status": "played",
+          "currentTime": 0.315437,
+          "duration": 145.68,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-227a62c1801cecd0f6bcf095a7f4b2b9f0fac084": {
+      "id": "sound-v2-10-227a62c1801cecd0f6bcf095a7f4b2b9f0fac084",
+      "title": "superking - Golden Egg",
+      "artist": "shshez",
+      "chainId": 10,
+      "mediaURI": "ar://yGhUoEusBR1EoS210-_Bzt38qYIIsCIig6-eYHsZm0w",
+      "checkedAt": "2026-11-06T02:55:57.102Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/yGhUoEusBR1EoS210-_Bzt38qYIIsCIig6-eYHsZm0w",
+          "status": "played",
+          "currentTime": 0.266061,
+          "duration": 178,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-6897be1e892e202342994c4bb1f24b23c80527b2": {
+      "id": "sound-v2-10-6897be1e892e202342994c4bb1f24b23c80527b2",
+      "title": "black - Limited",
+      "artist": "bob",
+      "chainId": 10,
+      "mediaURI": "ar://GmofPWunFsryF1ZEc2bz_pM45yvMbLYCbtUcuyjvsCs",
+      "checkedAt": "2026-11-06T02:55:58.505Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/GmofPWunFsryF1ZEc2bz_pM45yvMbLYCbtUcuyjvsCs",
+          "status": "played",
+          "currentTime": 0.250367,
+          "duration": 170.32,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-e512c7666147ad9b89fff3fbb0bcb5f58f01fde9": {
+      "id": "sound-v2-10-e512c7666147ad9b89fff3fbb0bcb5f58f01fde9",
+      "title": "Out The Cage ft. Rizzo The Boss and Ms.Fathom - Limited",
+      "artist": "Adé Kafeel",
+      "chainId": 10,
+      "mediaURI": "ar://sMei_iyv1JSPdWZyEF5K-JdP4MP0HL5aegACKTpBguQ",
+      "checkedAt": "2026-11-06T02:56:01.470Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/sMei_iyv1JSPdWZyEF5K-JdP4MP0HL5aegACKTpBguQ",
+          "status": "played",
+          "currentTime": 0.328469,
+          "duration": 193.213243,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-e9168094c706d1b644b5a14d42820c9944bc3f4b": {
+      "id": "sound-v2-e9168094c706d1b644b5a14d42820c9944bc3f4b",
+      "title": "Wait Till Dawn - Limited",
+      "artist": "azel north",
+      "chainId": 1,
+      "mediaURI": "ar://SqgyR4f9N1nBsWhFsf_lElyAnn-F9IYohjmyG_V0Vdc",
+      "checkedAt": "2026-11-06T02:56:03.218Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/SqgyR4f9N1nBsWhFsf_lElyAnn-F9IYohjmyG_V0Vdc",
+          "status": "played",
+          "currentTime": 0.253127,
+          "duration": 136.505215,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-65a5fb92e336f9ab5496ceee0ef8c3962d58a507": {
+      "id": "sound-v2-65a5fb92e336f9ab5496ceee0ef8c3962d58a507",
+      "title": "Do You Get It - Limited",
+      "artist": "Spottie WiFi",
+      "chainId": 1,
+      "mediaURI": "ar://n45YIqLoV1HEjwDl0RbTO97YRH_MCXFrHFkc4KMCtks",
+      "checkedAt": "2026-11-06T02:56:04.824Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/n45YIqLoV1HEjwDl0RbTO97YRH_MCXFrHFkc4KMCtks",
+          "status": "played",
+          "currentTime": 0.281872,
+          "duration": 174.315792,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-d3666cd75257410887e8619350c8125f40eeb45b": {
+      "id": "sound-v2-10-d3666cd75257410887e8619350c8125f40eeb45b",
+      "title": "BTC - Limited",
+      "artist": "angel",
+      "chainId": 10,
+      "mediaURI": "ar://LOyQ61euH9gI8-Pbcgrn8uC-vo-ktofU2pkiFfVXw0o",
+      "checkedAt": "2026-11-06T02:56:05.065Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/LOyQ61euH9gI8-Pbcgrn8uC-vo-ktofU2pkiFfVXw0o",
+          "status": "played",
+          "currentTime": 0.251438,
+          "duration": 169.56,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-6dcb6f8a00ebe9edd7711dd3f9fbdb464c114304": {
+      "id": "sound-v2-10-6dcb6f8a00ebe9edd7711dd3f9fbdb464c114304",
+      "title": "$TATT - Golden Egg",
+      "artist": "Goose Pärk",
+      "chainId": 10,
+      "mediaURI": "ar://KscI7_O17a-adrRFYQDh9Y-uYYscIJF77zB-crsDvb8",
+      "checkedAt": "2026-11-06T02:56:06.866Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/KscI7_O17a-adrRFYQDh9Y-uYYscIJF77zB-crsDvb8",
+          "status": "played",
+          "currentTime": 0.323381,
+          "duration": 192,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-5392cfe3e75ae9f61ceb055379416388d0c5a88c": {
+      "id": "sound-v2-10-5392cfe3e75ae9f61ceb055379416388d0c5a88c",
+      "title": "old days - Limited",
+      "artist": "dogy",
+      "chainId": 10,
+      "mediaURI": "ar://nKqrcfWY4hArtxBkordhI-9AZAO89T3g207_EH4V5_8",
+      "checkedAt": "2026-11-06T02:56:09.870Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/nKqrcfWY4hArtxBkordhI-9AZAO89T3g207_EH4V5_8",
+          "status": "played",
+          "currentTime": 0.265738,
+          "duration": 206.32,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-df0bebbf7692c0aeb32740255b67e1f8d32765a0": {
+      "id": "sound-v2-10-df0bebbf7692c0aeb32740255b67e1f8d32765a0",
+      "title": "Comment Below - Limited",
+      "artist": "RoCkY2GriMeY",
+      "chainId": 10,
+      "mediaURI": "ar://Og7z9LhQl_jpLyT5-916ijW8P9YLBmZnep3oGvcDPIA",
+      "checkedAt": "2026-11-06T02:56:11.430Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/Og7z9LhQl_jpLyT5-916ijW8P9YLBmZnep3oGvcDPIA",
+          "status": "played",
+          "currentTime": 0.314406,
+          "duration": 200.4773,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-0c1fdf35f6bf604c8a607f17a3379b0ce1db63d6": {
+      "id": "sound-v2-10-0c1fdf35f6bf604c8a607f17a3379b0ce1db63d6",
+      "title": "Stand right here - Golden Egg",
+      "artist": "kotal",
+      "chainId": 10,
+      "mediaURI": "ar://iEyrK_lbJKtf9M2O1kAwycfCH-3XDkuGlTtjHXtcnaI",
+      "checkedAt": "2026-11-06T02:56:13.154Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/iEyrK_lbJKtf9M2O1kAwycfCH-3XDkuGlTtjHXtcnaI",
+          "status": "played",
+          "currentTime": 0.316819,
+          "duration": 301.2569,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-a51440c0b7d975f0804cec454262e2d43f6cccc8": {
+      "id": "sound-v2-10-a51440c0b7d975f0804cec454262e2d43f6cccc8",
+      "title": "DroidZz  - Golden Egg",
+      "artist": "Maxwell Bruno",
+      "chainId": 10,
+      "mediaURI": "ar://uQa1nX1T4MbEfzQejHSAJzUJxBW9qcGRjkybM8m54a4",
+      "checkedAt": "2026-11-06T02:56:14.666Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/uQa1nX1T4MbEfzQejHSAJzUJxBW9qcGRjkybM8m54a4",
+          "status": "played",
+          "currentTime": 0.262084,
+          "duration": 176.597333,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-45719a6e73e9f30af8200d697ec0a8c43ae6e665": {
+      "id": "sound-v2-10-45719a6e73e9f30af8200d697ec0a8c43ae6e665",
+      "title": "William Jourdain - SRA Five - Golden Egg",
+      "artist": "Distroy",
+      "chainId": 10,
+      "mediaURI": "ar://doV-6co_B_LcQuzVHxhG8a_RZaT8nxrRIhuvG7SqKac",
+      "checkedAt": "2026-11-06T03:05:36.258Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/doV-6co_B_LcQuzVHxhG8a_RZaT8nxrRIhuvG7SqKac",
+          "status": "unavailable",
+          "reason": "MEDIA_ELEMENT_ERROR: Format error",
+          "code": 4
+        }
+      ]
+    },
+    "sound-v2-10-a8e8131f62a3a440842a473570bd9e7e76c6e67d": {
+      "id": "sound-v2-10-a8e8131f62a3a440842a473570bd9e7e76c6e67d",
+      "title": "Una causa perdida - Limited",
+      "artist": "OzzyTorres",
+      "chainId": 10,
+      "mediaURI": "ar://rdk8EzL3wdxd5bCgMy210vAwcnm8PWjkkvUxLF6ECSU",
+      "checkedAt": "2026-11-06T02:56:21.870Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/rdk8EzL3wdxd5bCgMy210vAwcnm8PWjkkvUxLF6ECSU",
+          "status": "played",
+          "currentTime": 0.283361,
+          "duration": 126.453787,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-0a2c2f10ffec82c6299a08f0fca7c2d435a0c9f0": {
+      "id": "sound-v2-10-0a2c2f10ffec82c6299a08f0fca7c2d435a0c9f0",
+      "title": "The Cha$e - Limited",
+      "artist": "Adé Kafeel",
+      "chainId": 10,
+      "mediaURI": "ar://5_oSSU6q02D6P4wW7ULREyR7k6dH_WGsaTyY6scYsIU",
+      "checkedAt": "2026-11-06T02:56:23.875Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/5_oSSU6q02D6P4wW7ULREyR7k6dH_WGsaTyY6scYsIU",
+          "status": "played",
+          "currentTime": 0.315205,
+          "duration": 152.983515,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-c800ec042a0f3c58d3f59e74e209a6acbfe169a3": {
+      "id": "sound-v2-10-c800ec042a0f3c58d3f59e74e209a6acbfe169a3",
+      "title": "Rise - Limited",
+      "artist": "Fletcher Christian",
+      "chainId": 10,
+      "mediaURI": "ar://XAG5OhVVIncNU2EgkeETb21Y2OsiiUCNvNp5xEesFbQ",
+      "checkedAt": "2026-11-06T02:56:27.320Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/XAG5OhVVIncNU2EgkeETb21Y2OsiiUCNvNp5xEesFbQ",
+          "status": "played",
+          "currentTime": 0.306268,
+          "duration": 81.881,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-b07652d39a81d4a14bc308f4bcd54dd17e3bfc11": {
+      "id": "sound-v2-10-b07652d39a81d4a14bc308f4bcd54dd17e3bfc11",
+      "title": "Domus - Golden Egg",
+      "artist": "Verbo Pluriel",
+      "chainId": 10,
+      "mediaURI": "ar://_x8tc8koawj_Tqk_oSbQPvEjOnOcseMR7tL9QCV80yU",
+      "checkedAt": "2026-11-06T03:06:02.999Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/_x8tc8koawj_Tqk_oSbQPvEjOnOcseMR7tL9QCV80yU",
+          "status": "unavailable",
+          "reason": "MEDIA_ELEMENT_ERROR: Format error",
+          "code": 4
+        }
+      ]
+    },
+    "sound-v2-10-231f0639a456491b37db2291fdff1c63a2c7cbd1": {
+      "id": "sound-v2-10-231f0639a456491b37db2291fdff1c63a2c7cbd1",
+      "title": "ELEVATED - Limited",
+      "artist": "MahoganyTheArtist",
+      "chainId": 10,
+      "mediaURI": "ar://VZCSo_i7NcRqStHbdacec7V0jteRz_U4PdzciMC_LY0",
+      "checkedAt": "2026-11-06T03:05:46.385Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/VZCSo_i7NcRqStHbdacec7V0jteRz_U4PdzciMC_LY0",
+          "status": "unavailable",
+          "reason": "MEDIA_ELEMENT_ERROR: Format error",
+          "code": 4
+        }
+      ]
+    },
+    "sound-v2-10-ec41b91d4f9abd5d88dbb995eb6c8ccd0f23c20e": {
+      "id": "sound-v2-10-ec41b91d4f9abd5d88dbb995eb6c8ccd0f23c20e",
+      "title": "Toxic - Golden Egg",
+      "artist": "Wallace",
+      "chainId": 10,
+      "mediaURI": "ar://uQ6Gx4erXYntp1iIl6Lzuz9M59kbpbRxiwTP2Z0w1pQ",
+      "checkedAt": "2026-11-06T02:56:32.920Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/uQ6Gx4erXYntp1iIl6Lzuz9M59kbpbRxiwTP2Z0w1pQ",
+          "status": "played",
+          "currentTime": 0.277119,
+          "duration": 194.418095,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-b78a5a7f3bba79174c1725c4d5d78ac357215cad": {
+      "id": "sound-v2-10-b78a5a7f3bba79174c1725c4d5d78ac357215cad",
+      "title": "Elefreq  - Limited",
+      "artist": "Adé Kafeel",
+      "chainId": 10,
+      "mediaURI": "ar://jegf9_sRwyochPhxWkppX1191bv-2tVgKkLi9BGbClE",
+      "checkedAt": "2026-11-06T02:56:36.765Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/jegf9_sRwyochPhxWkppX1191bv-2tVgKkLi9BGbClE",
+          "status": "played",
+          "currentTime": 0.283797,
+          "duration": 158.519546,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-822c402919dea1a72a0b3f7a1714e70d0a166860": {
+      "id": "sound-v2-10-822c402919dea1a72a0b3f7a1714e70d0a166860",
+      "title": "enough. - Golden Egg",
+      "artist": "Qiyāh Abdul",
+      "chainId": 10,
+      "mediaURI": "ar://NnteFmwJaZC0JlBggdvHVNNp39Z7XNlvLeHvjmALAn0",
+      "checkedAt": "2026-11-06T02:56:38.441Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/NnteFmwJaZC0JlBggdvHVNNp39Z7XNlvLeHvjmALAn0",
+          "status": "played",
+          "currentTime": 0.32001,
+          "duration": 114.938776,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-55aeb965a6d0723e142afb9d44d620c7a5b8ba60": {
+      "id": "sound-v2-10-55aeb965a6d0723e142afb9d44d620c7a5b8ba60",
+      "title": "When Lambo (Dezknoph hybrid remix) - Limited",
+      "artist": "Dezknoph",
+      "chainId": 10,
+      "mediaURI": "ar://2zs0L9fn0NOik3YUTacFU14SponwedCBLjCF2d46mvc",
+      "checkedAt": "2026-11-06T02:56:39.359Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/2zs0L9fn0NOik3YUTacFU14SponwedCBLjCF2d46mvc",
+          "status": "played",
+          "currentTime": 0.307174,
+          "duration": 168,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-fb642a0989930e1bc3207a611cf19977de6dbdbd": {
+      "id": "sound-v2-10-fb642a0989930e1bc3207a611cf19977de6dbdbd",
+      "title": "U Tried - Limited",
+      "artist": "IamThanos",
+      "chainId": 10,
+      "mediaURI": "ar://FsCREzS50y9hXgaDEXYMUKI-sRC8cN3VSJhISIZWq3w",
+      "checkedAt": "2026-11-06T02:56:39.890Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/FsCREzS50y9hXgaDEXYMUKI-sRC8cN3VSJhISIZWq3w",
+          "status": "played",
+          "currentTime": 0.313575,
+          "duration": 181.733878,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-fe3607283fc16ba743602a161faea87c207565f6": {
+      "id": "sound-v2-10-fe3607283fc16ba743602a161faea87c207565f6",
+      "title": "Hold Me - Golden Egg",
+      "artist": "Felps Miera",
+      "chainId": 10,
+      "mediaURI": "ar://E34YFCXPowZ76vZbkZGKAtkCNd9K39j9NVEcbrClDFw",
+      "checkedAt": "2026-11-06T02:56:41.245Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/E34YFCXPowZ76vZbkZGKAtkCNd9K39j9NVEcbrClDFw",
+          "status": "played",
+          "currentTime": 0.258139,
+          "duration": 174.828,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-d118e71b12ef352c0a4f29cc10bdb8bb19278cf4": {
+      "id": "sound-v2-10-d118e71b12ef352c0a4f29cc10bdb8bb19278cf4",
+      "title": "I Cant Escape - Golden Egg",
+      "artist": "Hossein Taheri",
+      "chainId": 10,
+      "mediaURI": "ar://laohPVqdmgzQ2cM13ebwIjnUSsZffkitNtZ7Hm_1D8M",
+      "checkedAt": "2026-11-06T02:56:43.970Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/laohPVqdmgzQ2cM13ebwIjnUSsZffkitNtZ7Hm_1D8M",
+          "status": "played",
+          "currentTime": 0.265385,
+          "duration": 179.6234,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-a753a52b20a199b44863bd147e53afd176be4d3b": {
+      "id": "sound-v2-10-a753a52b20a199b44863bd147e53afd176be4d3b",
+      "title": "JUST LIVE NOW - Limited",
+      "artist": "dRy",
+      "chainId": 10,
+      "mediaURI": "ar://irgj_4kiJCJbOydAefx2mNFFAwE-7XR_A9HbPSKDNTM",
+      "checkedAt": "2026-11-06T03:06:09.146Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/irgj_4kiJCJbOydAefx2mNFFAwE-7XR_A9HbPSKDNTM",
+          "status": "unavailable",
+          "reason": "MEDIA_ELEMENT_ERROR: Format error",
+          "code": 4
+        }
+      ]
+    },
+    "sound-v2-10-787f2647bc648d0324df375e216dfb95e6b1c8c7": {
+      "id": "sound-v2-10-787f2647bc648d0324df375e216dfb95e6b1c8c7",
+      "title": "Bad Mission - Golden Egg",
+      "artist": "Beats By LOR",
+      "chainId": 10,
+      "mediaURI": "ar://0mpDEbYJJF5eVR19QwEyvKdK3K1laNVY68jljLeIY9A",
+      "checkedAt": "2026-11-06T02:56:49.975Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/0mpDEbYJJF5eVR19QwEyvKdK3K1laNVY68jljLeIY9A",
+          "status": "played",
+          "currentTime": 0.265322,
+          "duration": 195.8192,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-f71ce3906ff3bec74545f88b4bdc23cb94e075a9": {
+      "id": "sound-v2-10-f71ce3906ff3bec74545f88b4bdc23cb94e075a9",
+      "title": "Coming or Going - Golden Egg",
+      "artist": "Mr.FLEN",
+      "chainId": 10,
+      "mediaURI": "ar://r86BFdVJtTdLAtHulgcgYAlmHayspIiBrpk36NLsTPw",
+      "checkedAt": "2026-11-06T02:56:50.562Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/r86BFdVJtTdLAtHulgcgYAlmHayspIiBrpk36NLsTPw",
+          "status": "played",
+          "currentTime": 0.260061,
+          "duration": 337.651882,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-8c8974ea5d482a8e11ad5b1ffa26a2497acba0ae": {
+      "id": "sound-v2-10-8c8974ea5d482a8e11ad5b1ffa26a2497acba0ae",
+      "title": "Los astros - Golden Egg",
+      "artist": "El Negro Brote",
+      "chainId": 10,
+      "mediaURI": "ar://kKgF1JXCyTxCUGXOCGC-bUCe_O0Qjv7mYdYl0FX4JN4",
+      "checkedAt": "2026-11-06T02:56:50.688Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/kKgF1JXCyTxCUGXOCGC-bUCe_O0Qjv7mYdYl0FX4JN4",
+          "status": "played",
+          "currentTime": 0.258728,
+          "duration": 259.8255,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-8f2e1a4e20a828b014bb3ae2accecb8b5007b58d": {
+      "id": "sound-v2-10-8f2e1a4e20a828b014bb3ae2accecb8b5007b58d",
+      "title": "MODO SOBREVIVENTE - Golden Egg",
+      "artist": "OG BRITTO",
+      "chainId": 10,
+      "mediaURI": "ar://BqiiXU9fazdAJ4DGjADMah_98pMJaCMwxmW36infouw",
+      "checkedAt": "2026-11-06T02:56:50.856Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/BqiiXU9fazdAJ4DGjADMah_98pMJaCMwxmW36infouw",
+          "status": "played",
+          "currentTime": 0.282484,
+          "duration": 137.142857,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-3e80fa2f33724273627bb12958bca7d91489878e": {
+      "id": "sound-v2-10-3e80fa2f33724273627bb12958bca7d91489878e",
+      "title": "Lie Foam - Limited",
+      "artist": "safirdacompeter",
+      "chainId": 10,
+      "mediaURI": "ar://f1eyUUUU1Wt8UvnWchgEB498JNRY-B0Gtxb3nvGmMDw",
+      "checkedAt": "2026-11-06T02:56:52.940Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/f1eyUUUU1Wt8UvnWchgEB498JNRY-B0Gtxb3nvGmMDw",
+          "status": "played",
+          "currentTime": 0.291593,
+          "duration": 192.432,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-d6f1a08b6c2632bbb0a8ea9b9b87d3406e543dc2": {
+      "id": "sound-v2-10-d6f1a08b6c2632bbb0a8ea9b9b87d3406e543dc2",
+      "title": "The Eye - Limited",
+      "artist": "Felps Miera",
+      "chainId": 10,
+      "mediaURI": "ar://Y-bfGMgNwf4s4BzXotG1N79UrP6gqruavh6_3KQAPZc",
+      "checkedAt": "2026-11-06T02:56:53.900Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/Y-bfGMgNwf4s4BzXotG1N79UrP6gqruavh6_3KQAPZc",
+          "status": "played",
+          "currentTime": 0.31201,
+          "duration": 207.972,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-dad1d0d5b448916a878616952d187f01d429cc11": {
+      "id": "sound-v2-10-dad1d0d5b448916a878616952d187f01d429cc11",
+      "title": "Street - Golden Egg",
+      "artist": "Felps Miera",
+      "chainId": 10,
+      "mediaURI": "ar://hpEqRRixSF7NwlznZiNOk6VtdwmetcMSkiH1qf7jFUI",
+      "checkedAt": "2026-11-06T02:56:55.046Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/hpEqRRixSF7NwlznZiNOk6VtdwmetcMSkiH1qf7jFUI",
+          "status": "played",
+          "currentTime": 0.265996,
+          "duration": 209.436,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-aafdf85e82b907474833ba42fedd1fa4cfb90a08": {
+      "id": "sound-v2-10-aafdf85e82b907474833ba42fedd1fa4cfb90a08",
+      "title": "Automatic - Golden Egg",
+      "artist": "Wallace",
+      "chainId": 10,
+      "mediaURI": "ar://JvnZ3WsQhxSnfk95ujRH1cOvkujM5fRI4koue-58jqQ",
+      "checkedAt": "2026-11-06T02:57:01.292Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/JvnZ3WsQhxSnfk95ujRH1cOvkujM5fRI4koue-58jqQ",
+          "status": "played",
+          "currentTime": 0.253934,
+          "duration": 204.141519,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-002cad1f3bf7db21490d486dc31871ac7e4014eb": {
+      "id": "sound-v2-10-002cad1f3bf7db21490d486dc31871ac7e4014eb",
+      "title": "Stepper - Golden Egg",
+      "artist": "Jason Mateus",
+      "chainId": 10,
+      "mediaURI": "ar://MWpHjRZabhYzeB81NXHdpUp2Wa5JTeSOMXMw7y9It8E",
+      "checkedAt": "2026-11-06T02:57:01.893Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/MWpHjRZabhYzeB81NXHdpUp2Wa5JTeSOMXMw7y9It8E",
+          "status": "played",
+          "currentTime": 0.294183,
+          "duration": 193.100023,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-4456112e21f67908d26e00aecc32ee5a7ad1e548": {
+      "id": "sound-v2-10-4456112e21f67908d26e00aecc32ee5a7ad1e548",
+      "title": "Tore André Flo - Golden Egg",
+      "artist": "Borja Moskv",
+      "chainId": 10,
+      "mediaURI": "ar://T4kAVJsTND5EMhsOVg1_e7gco7eODgCTly3i5IsTRcw",
+      "checkedAt": "2026-11-06T02:57:02.224Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/T4kAVJsTND5EMhsOVg1_e7gco7eODgCTly3i5IsTRcw",
+          "status": "played",
+          "currentTime": 0.252849,
+          "duration": 207.748934,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-d23f4fb770c11ff2cf57265f532c13d2665ec17a": {
+      "id": "sound-v2-10-d23f4fb770c11ff2cf57265f532c13d2665ec17a",
+      "title": "Genesis  - Limited",
+      "artist": "Felps Miera",
+      "chainId": 10,
+      "mediaURI": "ar://Yr3YEmFoVp8M0gZWjLkcK90lQOigIeBBhoaaKqGRujM",
+      "checkedAt": "2026-11-06T02:57:04.620Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/Yr3YEmFoVp8M0gZWjLkcK90lQOigIeBBhoaaKqGRujM",
+          "status": "played",
+          "currentTime": 0.25472,
+          "duration": 155.964,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-47ce07fb003bf9da8ce57c50b716c716f1a28595": {
+      "id": "sound-v2-10-47ce07fb003bf9da8ce57c50b716c716f1a28595",
+      "title": "SUCKS TO BE YOU - Golden Egg",
+      "artist": "benny mayne",
+      "chainId": 10,
+      "mediaURI": "ar://PINT56egN6jj0-gurPWhFGKqGLTt-SCi8GJ2U5AHgZk",
+      "checkedAt": "2026-11-06T02:57:05.585Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/PINT56egN6jj0-gurPWhFGKqGLTt-SCi8GJ2U5AHgZk",
+          "status": "played",
+          "currentTime": 0.315845,
+          "duration": 134.754104,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-1-507ebbd2c779a1dd9ab0617c755e4ced3eb0adc0": {
+      "id": "sound-v1-1-507ebbd2c779a1dd9ab0617c755e4ced3eb0adc0",
+      "title": "Half-Steppin' w/ Snoop Dogg",
+      "artist": "Nessy the Rilla",
+      "chainId": 1,
+      "mediaURI": "ar://GHb46Lj2Q--ADYoOG38jlNb6twkokGVnGLAVnnqlkEc",
+      "checkedAt": "2026-11-06T02:57:08.946Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/GHb46Lj2Q--ADYoOG38jlNb6twkokGVnGLAVnnqlkEc",
+          "status": "played",
+          "currentTime": 0.280982,
+          "duration": 214.073475,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v2-10-44889f73d3c2249db70abf06fdbdc34dcf18c578": {
+      "id": "sound-v2-10-44889f73d3c2249db70abf06fdbdc34dcf18c578",
+      "title": "Mercy - Golden Egg",
+      "artist": "Blake Rave",
+      "chainId": 10,
+      "mediaURI": "ar://tQvjD6ZzvheMky9F2m9fiKTgvnr4yq-XcpFfFVUIy_g",
+      "checkedAt": "2026-11-06T02:57:09.699Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/tQvjD6ZzvheMky9F2m9fiKTgvnr4yq-XcpFfFVUIy_g",
+          "status": "played",
+          "currentTime": 0.300779,
+          "duration": 267.279751,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-1-b01dfaf3646fbb07929cc8ec3c0a30336716ad9b": {
+      "id": "sound-v1-1-b01dfaf3646fbb07929cc8ec3c0a30336716ad9b",
+      "title": "SONG TWO",
+      "artist": "DATAP3",
+      "chainId": 1,
+      "mediaURI": "ar://u0Lpdz_wObuxovVmijPwy28EOYECVE0gMx3FJYHAqk4",
+      "checkedAt": "2026-11-06T03:06:12.485Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/u0Lpdz_wObuxovVmijPwy28EOYECVE0gMx3FJYHAqk4",
+          "status": "unavailable",
+          "reason": "MEDIA_ELEMENT_ERROR: Format error",
+          "code": 4
+        }
+      ]
+    },
+    "sound-v1-10-02a9949f5c67fbc3bd0b81df3db14328a7bde0a8": {
+      "id": "sound-v1-10-02a9949f5c67fbc3bd0b81df3db14328a7bde0a8",
+      "title": "CERULEAN EP SET",
+      "artist": "Artist not identified in metadata",
+      "chainId": 10,
+      "mediaURI": "ar://VbBFGzh5UcSQjg9fCidwKA1svHRgrSt6g-jemHoeJhc",
+      "checkedAt": "2026-11-06T03:06:54.153Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/VbBFGzh5UcSQjg9fCidwKA1svHRgrSt6g-jemHoeJhc",
+          "status": "unavailable",
+          "reason": "Playback did not advance within 45 seconds",
+          "readyState": 0
+        }
+      ]
+    },
+    "sound-v1-10-01461edc6c66c957875076151cd7cfd51284097d": {
+      "id": "sound-v1-10-01461edc6c66c957875076151cd7cfd51284097d",
+      "title": "CERULEAN EP SET",
+      "artist": "Artist not identified in metadata",
+      "chainId": 10,
+      "mediaURI": "ar://VbBFGzh5UcSQjg9fCidwKA1svHRgrSt6g-jemHoeJhc",
+      "checkedAt": "2026-11-06T03:06:57.489Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/VbBFGzh5UcSQjg9fCidwKA1svHRgrSt6g-jemHoeJhc",
+          "status": "unavailable",
+          "reason": "Playback did not advance within 45 seconds",
+          "readyState": 0
+        }
+      ]
+    },
+    "sound-v1-1-b05150f784664534cd145743e199e12584641d50": {
+      "id": "sound-v1-1-b05150f784664534cd145743e199e12584641d50",
+      "title": "XRP (Theme Song)",
+      "artist": "Mic Ruiz",
+      "chainId": 1,
+      "mediaURI": "ar://ETcBzAytfrXamEceLldCV6FHhzJeImrz8y0Kg9IfmWE",
+      "checkedAt": "2026-11-06T02:57:20.870Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/ETcBzAytfrXamEceLldCV6FHhzJeImrz8y0Kg9IfmWE",
+          "status": "played",
+          "currentTime": 0.25743,
+          "duration": 156.888753,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-14cb474d8f3372e6ac427f08801fc043860b5db1": {
+      "id": "sound-v1-10-14cb474d8f3372e6ac427f08801fc043860b5db1",
+      "title": "CHERRY",
+      "artist": "RAISSA",
+      "chainId": 10,
+      "mediaURI": "ar://HfJkrt74KOIBALH3KqfsqN0Vg4aktuvHdvVDEJkvG5E",
+      "checkedAt": "2026-11-06T02:57:23.194Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/HfJkrt74KOIBALH3KqfsqN0Vg4aktuvHdvVDEJkvG5E",
+          "status": "played",
+          "currentTime": 0.256751,
+          "duration": 166.97465,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-4a838f03ba10e093ded2e392f7d6b59f6295ce79": {
+      "id": "sound-v1-10-4a838f03ba10e093ded2e392f7d6b59f6295ce79",
+      "title": "Emrah Is & Furkan Syzo - In My Life",
+      "artist": "Million Records",
+      "chainId": 10,
+      "mediaURI": "ar://UqWpYAkNtCQwW3c5tYXdPLKgptj6N-PPLOjoFUMWbfk",
+      "checkedAt": "2026-11-06T02:57:25.168Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/UqWpYAkNtCQwW3c5tYXdPLKgptj6N-PPLOjoFUMWbfk",
+          "status": "played",
+          "currentTime": 0.300126,
+          "duration": 172.586644,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-78dd0c58fe9b484060d74d9a7f1a41997a2cfde9": {
+      "id": "sound-v1-10-78dd0c58fe9b484060d74d9a7f1a41997a2cfde9",
+      "title": "Mad World by Gary Jules(Drill version)",
+      "artist": "Flacc40rty",
+      "chainId": 10,
+      "mediaURI": "ar://2yer6Hs5_fpbfORXpSIZjMjYHelVrjmBMoqGlqqiePc",
+      "checkedAt": "2026-11-06T02:57:30.355Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/2yer6Hs5_fpbfORXpSIZjMjYHelVrjmBMoqGlqqiePc",
+          "status": "played",
+          "currentTime": 0.288427,
+          "duration": 142.222222,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-3401bc7262645db0af153d860121db05b2e94098": {
+      "id": "sound-v1-10-3401bc7262645db0af153d860121db05b2e94098",
+      "title": "SUNRISE",
+      "artist": "Dan Cohen",
+      "chainId": 10,
+      "mediaURI": "ar://pPg60TyawMUP9sV43kbiQc1cJ9wM97ayzw_wSQXK6Z0",
+      "checkedAt": "2026-11-06T02:57:31.439Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/pPg60TyawMUP9sV43kbiQc1cJ9wM97ayzw_wSQXK6Z0",
+          "status": "played",
+          "currentTime": 0.322345,
+          "duration": 308.059138,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-7a8509d33ff2940cf58768d83c025715e7dcd6f3": {
+      "id": "sound-v1-10-7a8509d33ff2940cf58768d83c025715e7dcd6f3",
+      "title": "Ivana Kupala",
+      "artist": "PELYUH",
+      "chainId": 10,
+      "mediaURI": "ar://8nxT3gdccjPto3fUrtShmmejFmmf8jAJTiU-Ba0ZHcQ",
+      "checkedAt": "2026-11-06T02:57:37.413Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/8nxT3gdccjPto3fUrtShmmejFmmf8jAJTiU-Ba0ZHcQ",
+          "status": "played",
+          "currentTime": 0.257432,
+          "duration": 140.328118,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-ce39b863b8d0a3af057dd11a6dae93f187decfa7": {
+      "id": "sound-v1-10-ce39b863b8d0a3af057dd11a6dae93f187decfa7",
+      "title": "Running My Mouth",
+      "artist": "Refs",
+      "chainId": 10,
+      "mediaURI": "ar://btty9ppJP10eubMh_orkUYUoxbR5NtSxgYGjjgyMu68",
+      "checkedAt": "2026-11-06T03:07:17.041Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/btty9ppJP10eubMh_orkUYUoxbR5NtSxgYGjjgyMu68",
+          "status": "played",
+          "currentTime": 0.305095,
+          "duration": 230.593605,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-74956d380fd21000f257c3a5d1fb5cb2293ac239": {
+      "id": "sound-v1-10-74956d380fd21000f257c3a5d1fb5cb2293ac239",
+      "title": "Neutral Trip - Constellation",
+      "artist": "Electro Spick Records",
+      "chainId": 10,
+      "mediaURI": "ar://SEoYSvyoa0a5vMeMRk_Gf0u2t3Uw52fP8D_E_91xTfE",
+      "checkedAt": "2026-11-06T02:57:41.845Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/SEoYSvyoa0a5vMeMRk_Gf0u2t3Uw52fP8D_E_91xTfE",
+          "status": "played",
+          "currentTime": 0.301185,
+          "duration": 176.982778,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-c6bb597c7cfdb01a2cd9eb470a728a883fcd3332": {
+      "id": "sound-v1-10-c6bb597c7cfdb01a2cd9eb470a728a883fcd3332",
+      "title": "PICKACHU",
+      "artist": "Gryazin",
+      "chainId": 10,
+      "mediaURI": "ar://MpCU1A4zqtSwcDe0kV9e2HlOaUu7Uk8CnQ8IZ-snlH4",
+      "checkedAt": "2026-11-06T02:57:44.999Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/MpCU1A4zqtSwcDe0kV9e2HlOaUu7Uk8CnQ8IZ-snlH4",
+          "status": "played",
+          "currentTime": 0.323665,
+          "duration": 131.5,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-b3e78191749b6ae5dba14e99ffb21999aca811a4": {
+      "id": "sound-v1-10-b3e78191749b6ae5dba14e99ffb21999aca811a4",
+      "title": "Mines",
+      "artist": "Vessy Mink",
+      "chainId": 10,
+      "mediaURI": "ar://ghW5oWyLPXQ-DUnv1iffCTgIW2aNiLScduDcBtwfdMo",
+      "checkedAt": "2026-11-06T02:57:48.603Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/ghW5oWyLPXQ-DUnv1iffCTgIW2aNiLScduDcBtwfdMo",
+          "status": "played",
+          "currentTime": 0.316167,
+          "duration": 175.310658,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-9a7e7f0451980136834c5c955a5fd50e47ab9360": {
+      "id": "sound-v1-10-9a7e7f0451980136834c5c955a5fd50e47ab9360",
+      "title": "The Sound Of My Soul Vs. Ernesto Cisneros",
+      "artist": "Mi Retratito",
+      "chainId": 10,
+      "mediaURI": "ar://NqP7DHl2TjmSCusT5iWpdc-XgX2XH_kwdnh87qisQms",
+      "checkedAt": "2026-11-06T02:57:50.145Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/NqP7DHl2TjmSCusT5iWpdc-XgX2XH_kwdnh87qisQms",
+          "status": "played",
+          "currentTime": 0.308333,
+          "duration": 107.181833,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-bfe806391afb2a503672960926a78cf1c6818084": {
+      "id": "sound-v1-10-bfe806391afb2a503672960926a78cf1c6818084",
+      "title": "Lamprey ",
+      "artist": "valentina cy",
+      "chainId": 10,
+      "mediaURI": "ar://3EZc7LEk4_xAPKVn64ZUyfNa-RSq4-GQVQuy_kRpUt0",
+      "checkedAt": "2026-11-06T02:57:50.848Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/3EZc7LEk4_xAPKVn64ZUyfNa-RSq4-GQVQuy_kRpUt0",
+          "status": "played",
+          "currentTime": 0.281012,
+          "duration": 96.05225,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-d4bdf385a5bc031856f7125109bfb8a8d36b8c71": {
+      "id": "sound-v1-10-d4bdf385a5bc031856f7125109bfb8a8d36b8c71",
+      "title": "Sleepless",
+      "artist": "Nanobro",
+      "chainId": 10,
+      "mediaURI": "ar://ZAoeJmRJ9t9SwxdBR1mK7ZvtQoY9BSXhbq_JGJca9Q0",
+      "checkedAt": "2026-11-06T03:07:06.535Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/ZAoeJmRJ9t9SwxdBR1mK7ZvtQoY9BSXhbq_JGJca9Q0",
+          "status": "played",
+          "currentTime": 0.268711,
+          "duration": 252.630998,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-c840ec343c8c5044b0d9c2da929cfb343579b691": {
+      "id": "sound-v1-10-c840ec343c8c5044b0d9c2da929cfb343579b691",
+      "title": "I Miss Flying to You",
+      "artist": "Jubile3 Le3 ",
+      "chainId": 10,
+      "mediaURI": "ar://DKEI0LFe26OJYNzrn1WrJrCM5j-1JN3BgkBiUjaAvsE",
+      "checkedAt": "2026-11-06T03:07:59.630Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/DKEI0LFe26OJYNzrn1WrJrCM5j-1JN3BgkBiUjaAvsE",
+          "status": "unavailable",
+          "reason": "Playback did not advance within 45 seconds",
+          "readyState": 0
+        }
+      ]
+    },
+    "sound-v1-10-20b46159bb17acbcade1991954a302ffb73fb942": {
+      "id": "sound-v1-10-20b46159bb17acbcade1991954a302ffb73fb942",
+      "title": "Blockchain Girl",
+      "artist": "p2pmusic",
+      "chainId": 10,
+      "mediaURI": "ar://7pY_Jr48jtACzJUKuJ6UULA81R669OPhoXbhNaI5hgA",
+      "checkedAt": "2026-11-06T03:07:14.621Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/7pY_Jr48jtACzJUKuJ6UULA81R669OPhoXbhNaI5hgA",
+          "status": "played",
+          "currentTime": 0.268027,
+          "duration": 176.625011,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-ac23c47c861c47110fc14501b60c829d090e6361": {
+      "id": "sound-v1-10-ac23c47c861c47110fc14501b60c829d090e6361",
+      "title": "Moonwalkn' Out Maui ( @web3rp Daily Drop )",
+      "artist": "Malik Naim",
+      "chainId": 10,
+      "mediaURI": "ar://rXdFHOh97PPpYaeKaJg-7BHwoUi4ZbJg0mllkjose_k",
+      "checkedAt": "2026-11-06T02:58:00.551Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/rXdFHOh97PPpYaeKaJg-7BHwoUi4ZbJg0mllkjose_k",
+          "status": "played",
+          "currentTime": 0.27087,
+          "duration": 197.664,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-087594d3ce5e9a63f9fc6502d5d98706e8f58b63": {
+      "id": "sound-v1-10-087594d3ce5e9a63f9fc6502d5d98706e8f58b63",
+      "title": "\"Sin DJ No Hay Show\" Mismo Perro Beat",
+      "artist": "Banfora Records",
+      "chainId": 10,
+      "mediaURI": "ar://kWq91Hnnd9_Y9qvv9bi4CPOqe7ks8eIBmuf6UM0vU7g",
+      "checkedAt": "2026-11-06T02:58:01.895Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/kWq91Hnnd9_Y9qvv9bi4CPOqe7ks8eIBmuf6UM0vU7g",
+          "status": "played",
+          "currentTime": 0.308688,
+          "duration": 181.589333,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-c805d57f4f81c213cde8baafd149c6396fa521b0": {
+      "id": "sound-v1-10-c805d57f4f81c213cde8baafd149c6396fa521b0",
+      "title": "\"He Sido\" El Kalvo",
+      "artist": "Banfora Records",
+      "chainId": 10,
+      "mediaURI": "ar://4xjS-5iamB0nFNpcd7IuIO2FKH2-E9wi-CtafKQV8Qg",
+      "checkedAt": "2026-11-06T03:08:02.048Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/4xjS-5iamB0nFNpcd7IuIO2FKH2-E9wi-CtafKQV8Qg",
+          "status": "unavailable",
+          "reason": "Playback did not advance within 45 seconds",
+          "readyState": 0
+        }
+      ]
+    },
+    "sound-v1-10-47629bd68bea950b8e24f2a557ea963caedf7379": {
+      "id": "sound-v1-10-47629bd68bea950b8e24f2a557ea963caedf7379",
+      "title": "Prueba 2",
+      "artist": "David",
+      "chainId": 10,
+      "mediaURI": "ar://l1h8kyLkZxMSkBJamYTYXRDBnORYre8eggKJz3py3xU",
+      "checkedAt": "2026-11-06T03:08:39.602Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/l1h8kyLkZxMSkBJamYTYXRDBnORYre8eggKJz3py3xU",
+          "status": "unavailable",
+          "reason": "MEDIA_ELEMENT_ERROR: Format error",
+          "code": 4
+        }
+      ]
+    },
+    "sound-v1-10-f9d6b2e5c243267952771781d74471dfe546c13d": {
+      "id": "sound-v1-10-f9d6b2e5c243267952771781d74471dfe546c13d",
+      "title": "Nebula Dogs - Casino Underwater",
+      "artist": "Outro Selo",
+      "chainId": 10,
+      "mediaURI": "ar://bb_Zou36DzQQ7y1CePc_wdkSsrdlB9MLpVBtG5124Lw",
+      "checkedAt": "2026-11-06T03:08:18.292Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/bb_Zou36DzQQ7y1CePc_wdkSsrdlB9MLpVBtG5124Lw",
+          "status": "played",
+          "currentTime": 0.316273,
+          "duration": 218.548118,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-legacy-ffcf0f0ce6c72ae208a2002f286d37b26e4275de-1": {
+      "id": "sound-legacy-ffcf0f0ce6c72ae208a2002f286d37b26e4275de-1",
+      "title": "infinite",
+      "artist": "Charm Taylor",
+      "chainId": 1,
+      "mediaURI": "ar://I9YZ_J2OAPJARpYB6rO2JvsOHMIfP-AJdUxM4V7nec8",
+      "checkedAt": "2026-11-06T02:58:19.135Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/I9YZ_J2OAPJARpYB6rO2JvsOHMIfP-AJdUxM4V7nec8",
+          "status": "played",
+          "currentTime": 0.265203,
+          "duration": 243.954542,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-zora-happy-friday-v2": {
+      "id": "park-zora-happy-friday-v2",
+      "title": "happy friday v2",
+      "artist": "The Park",
+      "chainId": 8453,
+      "mediaURI": "ipfs://bafybeihksahxcntj5fbcpoa5davkrkycvdvgnw5md7ql2nnkqkqum4p6hu",
+      "checkedAt": "2026-11-06T02:58:19.604Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeihksahxcntj5fbcpoa5davkrkycvdvgnw5md7ql2nnkqkqum4p6hu",
+          "status": "played",
+          "currentTime": 0.280558,
+          "duration": 176.6192,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-v1-10-b4c89fe1103fd9557af826e3b9bd4f8772215540": {
+      "id": "sound-v1-10-b4c89fe1103fd9557af826e3b9bd4f8772215540",
+      "title": "FUN",
+      "artist": "Niko Alerce",
+      "chainId": 10,
+      "mediaURI": "ar://J_lX5Ivr6CeP5J96apz22m76WFKzT2utS68fID4TuPs",
+      "checkedAt": "2026-11-06T03:08:39.402Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/J_lX5Ivr6CeP5J96apz22m76WFKzT2utS68fID4TuPs",
+          "status": "unavailable",
+          "reason": "MEDIA_ELEMENT_ERROR: Format error",
+          "code": 4
+        }
+      ]
+    },
+    "park-zora-s002-everything-v8": {
+      "id": "park-zora-s002-everything-v8",
+      "title": "everything_v8",
+      "artist": "The Park, Tim Anderson, WaveIQ",
+      "chainId": 8453,
+      "mediaURI": "ipfs://bafybeifhaoattybduu2uykb2ig2wn7wlcqk4jjiz3ps6r52x7vhtjtuoqq",
+      "checkedAt": "2026-11-06T02:58:23.506Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeifhaoattybduu2uykb2ig2wn7wlcqk4jjiz3ps6r52x7vhtjtuoqq",
+          "status": "played",
+          "currentTime": 0.274724,
+          "duration": 220.3952,
+          "readyState": 4
+        }
+      ]
+    },
+    "sound-legacy-fa947daea2b941da51ed42147cb9e8cdcf6445fc-1": {
+      "id": "sound-legacy-fa947daea2b941da51ed42147cb9e8cdcf6445fc-1",
+      "title": "No One Knows Me Like You ft. Scott Quinn",
+      "artist": "Sound of Fractures",
+      "chainId": 1,
+      "mediaURI": "ar://gotckqvEUr3B35Z2lolHwxhrNgmKNK5whdiy2j-lOi0",
+      "checkedAt": "2026-11-06T02:58:25.781Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/gotckqvEUr3B35Z2lolHwxhrNgmKNK5whdiy2j-lOi0",
+          "status": "played",
+          "currentTime": 0.283453,
+          "duration": 222.992125,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-zora-s002-llamame-v5": {
+      "id": "park-zora-s002-llamame-v5",
+      "title": "LLAMAME_v5",
+      "artist": "The Park, Tim Anderson, WaveIQ",
+      "chainId": 8453,
+      "mediaURI": "ipfs://bafybeibk2zsvxhbf4a232glm4l3rol5h3ioamaeg4enhdny5zmehhngtyi",
+      "checkedAt": "2026-11-06T02:58:28.489Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeibk2zsvxhbf4a232glm4l3rol5h3ioamaeg4enhdny5zmehhngtyi",
+          "status": "played",
+          "currentTime": 0.328865,
+          "duration": 172.388604,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-zora-s002-heaven-v2": {
+      "id": "park-zora-s002-heaven-v2",
+      "title": "HEAVEN_V2",
+      "artist": "The Park, Tim Anderson, WaveIQ",
+      "chainId": 8453,
+      "mediaURI": "ipfs://bafybeih4mhoxdz3dbpq7pm2lnmdd25j3lsi6tt6ya3vdgw4ags4pagjcyi",
+      "checkedAt": "2026-11-06T02:58:28.824Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeih4mhoxdz3dbpq7pm2lnmdd25j3lsi6tt6ya3vdgw4ags4pagjcyi",
+          "status": "played",
+          "currentTime": 0.256669,
+          "duration": 211.0352,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-zora-s002-right-here-right-noun": {
+      "id": "park-zora-s002-right-here-right-noun",
+      "title": "right here right NOUN",
+      "artist": "The Park, Tim Anderson, WaveIQ",
+      "chainId": 8453,
+      "mediaURI": "ipfs://bafybeia5imuvqgngktzmyf2frtf2vvec4gcdfcjpzwqpeh7szbhbehlz4i",
+      "checkedAt": "2026-11-06T02:58:30.072Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeia5imuvqgngktzmyf2frtf2vvec4gcdfcjpzwqpeh7szbhbehlz4i",
+          "status": "played",
+          "currentTime": 0.324901,
+          "duration": 234.9392,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-zora-becky-v2": {
+      "id": "park-zora-becky-v2",
+      "title": "becky v2",
+      "artist": "The Park, Shwento, Tim Anderson",
+      "chainId": 8453,
+      "mediaURI": "ipfs://bafybeidlchbg3bhl6y5or5sjzincggyk43prnej7xukqnendjmjdflsff4",
+      "checkedAt": "2026-11-06T02:58:34.019Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeidlchbg3bhl6y5or5sjzincggyk43prnej7xukqnendjmjdflsff4",
+          "status": "played",
+          "currentTime": 0.294737,
+          "duration": 183.333333,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-sound-do-it": {
+      "id": "park-sound-do-it",
+      "title": "Do It",
+      "artist": "The Park, Being There",
+      "chainId": 1,
+      "mediaURI": "ar://4e8phVUfPbm5d3Cj-Bcagig3pDPWey9pAyXs9XHtRzc",
+      "checkedAt": "2026-11-06T02:58:39.758Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/4e8phVUfPbm5d3Cj-Bcagig3pDPWey9pAyXs9XHtRzc",
+          "status": "played",
+          "currentTime": 0.265999,
+          "duration": 312.277324,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-sound-pbj": {
+      "id": "park-sound-pbj",
+      "title": "PB&J",
+      "artist": "The Park",
+      "chainId": 1,
+      "mediaURI": "ar://FkzdiB-zQX6CVlzaKnQ3Vl1M35bLD2WBiDiPCRaTUmU",
+      "checkedAt": "2026-11-06T02:58:47.865Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/FkzdiB-zQX6CVlzaKnQ3Vl1M35bLD2WBiDiPCRaTUmU",
+          "status": "played",
+          "currentTime": 0.274071,
+          "duration": 179.2,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-catalog-belle": {
+      "id": "park-catalog-belle",
+      "title": "Belle",
+      "artist": "Ben Schwier, Derek Taylor, Josh Lippi, Nate Mercereau",
+      "chainId": 1,
+      "mediaURI": "https://ipfs.io/ipfs/bafybeigwek3m7mjlkxkkyn2h3wek5ericmbgorqc6inehk3jkcomvfrgle",
+      "checkedAt": "2026-11-06T02:58:49.229Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeigwek3m7mjlkxkkyn2h3wek5ericmbgorqc6inehk3jkcomvfrgle",
+          "status": "played",
+          "currentTime": 0.304899,
+          "duration": 338,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-zora-the-park-with-the-park": {
+      "id": "park-zora-the-park-with-the-park",
+      "title": "the park with the park",
+      "artist": "The Park",
+      "chainId": 1,
+      "mediaURI": "ipfs://bafybeibgxnng3pbtjjhtg4bdfwj5gdklcdkrmidwqdcingstojx622v4v4?id=69",
+      "checkedAt": "2026-11-06T02:58:50.353Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeibgxnng3pbtjjhtg4bdfwj5gdklcdkrmidwqdcingstojx622v4v4?id=69",
+          "status": "played",
+          "currentTime": 0.289979,
+          "duration": 56.9312,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-do-it-2": {
+      "id": "park-s001-do-it-2",
+      "title": "DO IT",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeif46gpt7vkldut46cbk4kdpkjtktkolbdtrnahsz46yky52q45zci",
+      "checkedAt": "2026-11-06T02:58:51.159Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeif46gpt7vkldut46cbk4kdpkjtktkolbdtrnahsz46yky52q45zci",
+          "status": "played",
+          "currentTime": 0.315485,
+          "duration": 290,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-sound-rainwater": {
+      "id": "park-sound-rainwater",
+      "title": "Rainwater",
+      "artist": "The Park",
+      "chainId": 1,
+      "mediaURI": "ar://BxjiCEmJ2waBSjjyy5dCJ9ffvLEDlqCQasFEsge3PLk",
+      "checkedAt": "2026-11-06T03:08:58.210Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/BxjiCEmJ2waBSjjyy5dCJ9ffvLEDlqCQasFEsge3PLk",
+          "status": "played",
+          "currentTime": 0.263412,
+          "duration": 216.405333,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-zora-s002-the-caller": {
+      "id": "park-zora-s002-the-caller",
+      "title": "The Caller",
+      "artist": "The Park, Tim Anderson, WaveIQ",
+      "chainId": 8453,
+      "mediaURI": "ipfs://bafybeicx3qrz5ikl35gavgnwvgifjxosydxnnjjm4toeuq7xcbpsxajdei",
+      "checkedAt": "2026-11-06T03:08:40.607Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeicx3qrz5ikl35gavgnwvgifjxosydxnnjjm4toeuq7xcbpsxajdei",
+          "status": "played",
+          "currentTime": 0.276648,
+          "duration": 208.256,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-zora-s002-last-straw": {
+      "id": "park-zora-s002-last-straw",
+      "title": "Last Straw",
+      "artist": "The Park, Tim Anderson, WaveIQ",
+      "chainId": 8453,
+      "mediaURI": "ipfs://bafybeiaemooh4sm7dz7jbzvvgyrbodh6epa57fjbjhf2dp6yn7bkbzratu",
+      "checkedAt": "2026-11-06T03:08:40.806Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeiaemooh4sm7dz7jbzvvgyrbodh6epa57fjbjhf2dp6yn7bkbzratu",
+          "status": "played",
+          "currentTime": 0.305409,
+          "duration": 272.727271,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-water-5": {
+      "id": "park-s001-water-5",
+      "title": "WATÉR",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeiafatcvlwhuddbngotlwwbz7touaflj4uxrwztsgyo64gha24kfee",
+      "checkedAt": "2026-11-06T02:59:06.113Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeiafatcvlwhuddbngotlwwbz7touaflj4uxrwztsgyo64gha24kfee",
+          "status": "played",
+          "currentTime": 0.269398,
+          "duration": 184.149333,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-youre-so-high-3": {
+      "id": "park-s001-youre-so-high-3",
+      "title": "You're So High",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeib6zqlncbwbxbbivp3ymhew5kp2rarsevzhj7sjqzzpejennrg3hu",
+      "checkedAt": "2026-11-06T03:08:41.851Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeib6zqlncbwbxbbivp3ymhew5kp2rarsevzhj7sjqzzpejennrg3hu",
+          "status": "played",
+          "currentTime": 0.252096,
+          "duration": 304.027771,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-i-dont-care-about-your-man-4": {
+      "id": "park-s001-i-dont-care-about-your-man-4",
+      "title": "I Don't Care About Your Man",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeiauj7xnbonh746z2h3bovi3x4s3fegsatgr42bewmpo3rdpu7dv2e",
+      "checkedAt": "2026-11-06T03:08:42.975Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeiauj7xnbonh746z2h3bovi3x4s3fegsatgr42bewmpo3rdpu7dv2e",
+          "status": "played",
+          "currentTime": 0.269963,
+          "duration": 188.64,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-always-good-6": {
+      "id": "park-s001-always-good-6",
+      "title": "Always Good",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeid7nugjy2k3jfg4jhilasu4frjtlbjprq2tpm4bjyegr7a4bha77m",
+      "checkedAt": "2026-11-06T03:08:44.018Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeid7nugjy2k3jfg4jhilasu4frjtlbjprq2tpm4bjyegr7a4bha77m",
+          "status": "played",
+          "currentTime": 0.268404,
+          "duration": 192,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-hit-em-where-it-hurts-7": {
+      "id": "park-s001-hit-em-where-it-hurts-7",
+      "title": "HIT EM WHERE IT HURTS",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeihhv2zc2sz3bljywpbhqomcaunqamcyecy2tgknzc6spzcln3ejqa",
+      "checkedAt": "2026-11-06T03:08:44.986Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeihhv2zc2sz3bljywpbhqomcaunqamcyecy2tgknzc6spzcln3ejqa",
+          "status": "played",
+          "currentTime": 0.287777,
+          "duration": 151.836729,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-all-that-i-have-9": {
+      "id": "park-s001-all-that-i-have-9",
+      "title": "All That I Have",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeibmixmk5n22qame677fobguufbg6cysk6ywtci7ptfkbff4uvqioi",
+      "checkedAt": "2026-11-06T02:59:51.383Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeibmixmk5n22qame677fobguufbg6cysk6ywtci7ptfkbff4uvqioi",
+          "status": "played",
+          "currentTime": 0.307066,
+          "duration": 217.429333,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-better-than-that-10": {
+      "id": "park-s001-better-than-that-10",
+      "title": "Better Than That",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeib3qbbtpzbpvhpts3oc3pefzop3e4etbji3hktqm7mexvygdlqury",
+      "checkedAt": "2026-11-06T02:59:53.247Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeib3qbbtpzbpvhpts3oc3pefzop3e4etbji3hktqm7mexvygdlqury",
+          "status": "played",
+          "currentTime": 0.281291,
+          "duration": 229.978667,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-tokyo-blend-8": {
+      "id": "park-s001-tokyo-blend-8",
+      "title": "Tokyo Blend",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeif62mivi6wubfl46dhexcins6vgcklmowdz2vopcf5y3xgnc2dxsy",
+      "checkedAt": "2026-11-06T03:08:46.273Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeif62mivi6wubfl46dhexcins6vgcklmowdz2vopcf5y3xgnc2dxsy",
+          "status": "played",
+          "currentTime": 0.292358,
+          "duration": 300.444438,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-imagine-13": {
+      "id": "park-s001-imagine-13",
+      "title": "Imagine",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeia33mebrbedtcu24ftbpprm4m5mlgmq5ohgfzkzk6ugftoueybioa",
+      "checkedAt": "2026-11-06T03:00:04.609Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeia33mebrbedtcu24ftbpprm4m5mlgmq5ohgfzkzk6ugftoueybioa",
+          "status": "played",
+          "currentTime": 0.326319,
+          "duration": 242.561,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-settling-11": {
+      "id": "park-s001-settling-11",
+      "title": "Settling",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeigduqgcw42jriiqiigcmhrpsonf2arnw6d3xg4pyjbmftt2km5kau",
+      "checkedAt": "2026-11-06T03:08:47.158Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeigduqgcw42jriiqiigcmhrpsonf2arnw6d3xg4pyjbmftt2km5kau",
+          "status": "played",
+          "currentTime": 0.288355,
+          "duration": 237.117792,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-rooms-in-the-house-1-14": {
+      "id": "park-s001-rooms-in-the-house-1-14",
+      "title": "Rooms in the House 1",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeia7e4lu52ocnbv4vzofmsnz6howus222f4c4xfdqobxa2xpixyoqe",
+      "checkedAt": "2026-11-06T03:08:47.963Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeia7e4lu52ocnbv4vzofmsnz6howus222f4c4xfdqobxa2xpixyoqe",
+          "status": "played",
+          "currentTime": 0.29153,
+          "duration": 146.218667,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-zora-arpeggi-fridays": {
+      "id": "park-zora-arpeggi-fridays",
+      "title": "Fridays At The Park (Arpeggi)",
+      "artist": "The Park",
+      "chainId": 1,
+      "mediaURI": "https://arpeggi-prod-public.s3.us-west-2.amazonaws.com/media-collection-demos/clgo1rs0600da01lf93vqhjk4.wav",
+      "checkedAt": "2026-11-06T03:00:29.985Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arpeggi-prod-public.s3.us-west-2.amazonaws.com/media-collection-demos/clgo1rs0600da01lf93vqhjk4.wav",
+          "status": "played",
+          "currentTime": 0.33038,
+          "duration": 89.097234,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-rooms-in-the-house-2-15": {
+      "id": "park-s001-rooms-in-the-house-2-15",
+      "title": "Rooms in the House 2",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeigsqk5pq2qf4xu3b6pogvsv3bkn3ixpleq2cnitksmpp7zmct7lim",
+      "checkedAt": "2026-11-06T03:08:49.091Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeigsqk5pq2qf4xu3b6pogvsv3bkn3ixpleq2cnitksmpp7zmct7lim",
+          "status": "played",
+          "currentTime": 0.254052,
+          "duration": 248.830958,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-rooms-in-the-house-3-16": {
+      "id": "park-s001-rooms-in-the-house-3-16",
+      "title": "Rooms in the House 3",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeihhomkxloibbeqhnq23egfkog5ar6tfaxapt6umsii3fgpwpf3jwy",
+      "checkedAt": "2026-11-06T03:08:50.218Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeihhomkxloibbeqhnq23egfkog5ar6tfaxapt6umsii3fgpwpf3jwy",
+          "status": "played",
+          "currentTime": 0.302384,
+          "duration": 50.688,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovery-01ab7d30525e4f3010af27a003180463a6c811a6-1020847100762815390390123822295304634404": {
+      "id": "recovery-01ab7d30525e4f3010af27a003180463a6c811a6-1020847100762815390390123822295304634404",
+      "title": "Bounce",
+      "artist": "Dot",
+      "chainId": 1,
+      "mediaURI": "ar://KyuKfwmJecToQ0pLjKb0jDxMhx2oJl9qH6udgQlsVag",
+      "checkedAt": "2026-11-06T03:09:06.386Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/KyuKfwmJecToQ0pLjKb0jDxMhx2oJl9qH6udgQlsVag",
+          "status": "played",
+          "currentTime": 0.302738,
+          "duration": 234.19356,
+          "readyState": 4
+        }
+      ]
+    },
+    "park-s001-rooms-in-the-house-4-17": {
+      "id": "park-s001-rooms-in-the-house-4-17",
+      "title": "Rooms in the House 4",
+      "artist": "The Park",
+      "chainId": 7777777,
+      "mediaURI": "ipfs://bafybeig5di6xfht7wn5nhi3rpacisxehx6aae32weoqac6oienosvrtzii",
+      "checkedAt": "2026-11-06T03:08:51.343Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeig5di6xfht7wn5nhi3rpacisxehx6aae32weoqac6oienosvrtzii",
+          "status": "played",
+          "currentTime": 0.322673,
+          "duration": 259.243708,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovery-01ab7d30525e4f3010af27a003180463a6c811a6-680564733841876926926749214863536422935": {
+      "id": "recovery-01ab7d30525e4f3010af27a003180463a6c811a6-680564733841876926926749214863536422935",
+      "title": "AMBUSH EP",
+      "artist": "Dot",
+      "chainId": 1,
+      "mediaURI": "ar://Egmih8ZB3QjIUrqQ54cdKMbeKCO68lYOjlA_TzJxvxE",
+      "checkedAt": "2026-11-06T03:09:43.217Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/Egmih8ZB3QjIUrqQ54cdKMbeKCO68lYOjlA_TzJxvxE",
+          "status": "unavailable",
+          "reason": "Playback did not advance within 45 seconds",
+          "readyState": 0
+        }
+      ]
+    },
+    "recovery-8b64bbf8e0b14aa3d7f5f6ddcb7553706c9c6ef3-25": {
+      "id": "recovery-8b64bbf8e0b14aa3d7f5f6ddcb7553706c9c6ef3-25",
+      "title": "real shit tho",
+      "artist": "Jamee Cornelia",
+      "chainId": 1,
+      "mediaURI": "ar://HtxSGaqhdjtIKfU3XlwTJBzLcoBAvlw5qiJiKQjyZUM",
+      "checkedAt": "2026-11-06T03:09:18.950Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/HtxSGaqhdjtIKfU3XlwTJBzLcoBAvlw5qiJiKQjyZUM",
+          "status": "played",
+          "currentTime": 0.319129,
+          "duration": 176.551375,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovery-4a5576f8792f20d878cfc507384ffb4625713f3e-55": {
+      "id": "recovery-4a5576f8792f20d878cfc507384ffb4625713f3e-55",
+      "title": "Gotta Be pt.2",
+      "artist": "MoRuf",
+      "chainId": 1,
+      "mediaURI": "ar://1F8mO4wojHZWMylav9qy9PsiuHYU6BMzBTWoZx5sMXI",
+      "checkedAt": "2026-11-06T03:01:00.156Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/1F8mO4wojHZWMylav9qy9PsiuHYU6BMzBTWoZx5sMXI",
+          "status": "played",
+          "currentTime": 0.251463,
+          "duration": 170.052653,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovery-4a5576f8792f20d878cfc507384ffb4625713f3e-1020847100762815390390123822295304634384": {
+      "id": "recovery-4a5576f8792f20d878cfc507384ffb4625713f3e-1020847100762815390390123822295304634384",
+      "title": "Moo Better. (GOD IN ME)",
+      "artist": "MoRuf",
+      "chainId": 1,
+      "mediaURI": "ar://wTxy8efcu-0LXusltBgCAci_pvIC-_5ACF2uPKstbHg",
+      "checkedAt": "2026-11-06T03:09:41.596Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/wTxy8efcu-0LXusltBgCAci_pvIC-_5ACF2uPKstbHg",
+          "status": "played",
+          "currentTime": 0.285033,
+          "duration": 268.322993,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovery-ea0e0e1a3b3078e8ff4b5d2855932082deabe291-42": {
+      "id": "recovery-ea0e0e1a3b3078e8ff4b5d2855932082deabe291-42",
+      "title": "Early For Emma",
+      "artist": "Emma Miller",
+      "chainId": 1,
+      "mediaURI": "https://arweave.net/Ws_kkTOHaY7hdhDQ7dZdlb6QCS4YS5qjtUunmLF4HiI",
+      "checkedAt": "2026-11-06T03:01:10.882Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/Ws_kkTOHaY7hdhDQ7dZdlb6QCS4YS5qjtUunmLF4HiI",
+          "status": "played",
+          "currentTime": 0.329,
+          "duration": 59.766667,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovery-328b49c56a8a15fb34ab3ecd8883fac5f9512453-5200": {
+      "id": "recovery-328b49c56a8a15fb34ab3ecd8883fac5f9512453-5200",
+      "title": "Another Life by Violetta Zironi",
+      "artist": "Violetta Zironi",
+      "chainId": 1,
+      "mediaURI": "https://cyan-adjacent-gazelle-655.mypinata.cloud/ipfs/QmWAKnDzr9Yxn7wFQDkEdxq6GFLwQp2nHowVNEKJVKdKAv/A%20Little%20Rain%20Must%20Fall.mp3",
+      "checkedAt": "2026-11-06T03:01:12.326Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmWAKnDzr9Yxn7wFQDkEdxq6GFLwQp2nHowVNEKJVKdKAv/A%20Little%20Rain%20Must%20Fall.mp3",
+          "status": "played",
+          "currentTime": 0.266509,
+          "duration": 192.850563,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovery-4a5576f8792f20d878cfc507384ffb4625713f3e-25": {
+      "id": "recovery-4a5576f8792f20d878cfc507384ffb4625713f3e-25",
+      "title": "HYPNO",
+      "artist": "MoRuf",
+      "chainId": 1,
+      "mediaURI": "ar://5dGSbSR1xvLlyTloJeFS1m1zz0q6wDbyIj3ZEpl5kaM",
+      "checkedAt": "2026-11-06T03:01:14.818Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/5dGSbSR1xvLlyTloJeFS1m1zz0q6wDbyIj3ZEpl5kaM",
+          "status": "played",
+          "currentTime": 0.317559,
+          "duration": 260.199274,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovery-29d8c82adba12c822c37090fc1cf7f430bbc1a60-1361129467683753853853498429727072845874": {
+      "id": "recovery-29d8c82adba12c822c37090fc1cf7f430bbc1a60-1361129467683753853853498429727072845874",
+      "title": "Honey",
+      "artist": "Daniel Allan",
+      "chainId": 1,
+      "mediaURI": "ar://Ole71M0OCHWg5bLQcI6y2Dxs8LC0ETDXre4zpSe4-QY",
+      "checkedAt": "2026-11-06T03:09:55.920Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/Ole71M0OCHWg5bLQcI6y2Dxs8LC0ETDXre4zpSe4-QY",
+          "status": "played",
+          "currentTime": 0.2857,
+          "duration": 142.978729,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovery-3bf96afe2291d76f2934350624080faefeec9a46-1020847100762815390390123822295304634418": {
+      "id": "recovery-3bf96afe2291d76f2934350624080faefeec9a46-1020847100762815390390123822295304634418",
+      "title": "black eyes (with Mara Anne)",
+      "artist": "oshi",
+      "chainId": 1,
+      "mediaURI": "ar://NAB_l8SF-Diomu2W6eAjofupOq_0yTg_NWs7vQ18YdM",
+      "checkedAt": "2026-11-06T03:01:17.921Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/NAB_l8SF-Diomu2W6eAjofupOq_0yTg_NWs7vQ18YdM",
+          "status": "played",
+          "currentTime": 0.312863,
+          "duration": 169.624082,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovery-ca47fbd3441b1ebb64c8d51032c469978accd376-110": {
+      "id": "recovery-ca47fbd3441b1ebb64c8d51032c469978accd376-110",
+      "title": "SKYZONE",
+      "artist": "Jon Waltz, Jamee Cornelia, Jadyn Violet",
+      "chainId": 1,
+      "mediaURI": "ipfs://bafybeihnz7lpi7fk3iguzdxxwyz5x5n3a474epp4qwlonjjqyimy3rkcq4?",
+      "checkedAt": "2026-11-06T03:01:18.412Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeihnz7lpi7fk3iguzdxxwyz5x5n3a474epp4qwlonjjqyimy3rkcq4?",
+          "status": "played",
+          "currentTime": 0.324522,
+          "duration": 168,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovery-5351a2e2a5bd6fbb0be3f5d2bf02d444ef1e2ba1-15": {
+      "id": "recovery-5351a2e2a5bd6fbb0be3f5d2bf02d444ef1e2ba1-15",
+      "title": "SONATA",
+      "artist": "Cam Murdoch, J Burn, Bongdoe",
+      "chainId": 1,
+      "mediaURI": "ipfs://bafybeify7xjzr5ujy773mpjy5fgc3vtp4zgf4yhz3ztcihrkhbbsysqh5e",
+      "checkedAt": "2026-11-06T03:01:18.474Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeify7xjzr5ujy773mpjy5fgc3vtp4zgf4yhz3ztcihrkhbbsysqh5e",
+          "status": "played",
+          "currentTime": 0.280908,
+          "duration": 151.433333,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovery-59b748ac036dec64362d695a0514c02b609b1b9b-4": {
+      "id": "recovery-59b748ac036dec64362d695a0514c02b609b1b9b-4",
+      "title": "Love U Down (Zoratopia Miami ’22)",
+      "artist": "Cam Murdoch",
+      "chainId": 1,
+      "mediaURI": "ipfs://bafybeib4zm4wg62bszzajaxw3nzernbsemzjy25ivrehbmcwbo4ikns4t4",
+      "checkedAt": "2026-11-06T03:01:18.646Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeib4zm4wg62bszzajaxw3nzernbsemzjy25ivrehbmcwbo4ikns4t4",
+          "status": "played",
+          "currentTime": 0.27303,
+          "duration": 27.328,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovery-19ed8b4f86f451feb79bff0fc676aca30c1b8129-19": {
+      "id": "recovery-19ed8b4f86f451feb79bff0fc676aca30c1b8129-19",
+      "title": "Dizzy (Zoratopia Miami ’22)",
+      "artist": "Jamee Cornelia",
+      "chainId": 1,
+      "mediaURI": "ipfs://bafybeieluj4x7w6f5onzc227cwey6x6limnpeqyr5zvlegq4cnhotxipfu",
+      "checkedAt": "2026-11-06T03:01:28.102Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeieluj4x7w6f5onzc227cwey6x6limnpeqyr5zvlegq4cnhotxipfu",
+          "status": "played",
+          "currentTime": 0.320515,
+          "duration": 28.48,
+          "readyState": 4
+        }
+      ]
+    }
+  },
+  "updatedAt": "2026-11-06T03:09:55.920Z",
+  "finishedAt": "2026-11-06T03:09:55.968Z"
+}

@@ -1,0 +1,27 @@
+node_modules
+.firecrawl/
+.DS_Store
+AGENT-PROMPT.md
+*-tree.txt
+docs/musicnerd-design-reference.md
+captures/reference-*.png
+work/
+
+test-results/
+playwright-report/
+
+.vercel/
+.vercel
+
+# Raw historic frontend bundles are research evidence, not redistributable application code.
+evidence/sound-wayback/app.js
+evidence/sound-wayback/home-202305.html
+evidence/sound-wayback/playlist-202301.html
+public/recovered/*.audio
+
+.env*
+private/
+
+# Atomic recovery checkpoints
+data/**/*.tmp
+data/*.tmp

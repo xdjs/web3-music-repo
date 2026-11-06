@@ -1,0 +1,159 @@
+{
+  "checkedAt": "2026-11-05T22:50:23.520Z",
+  "records": [
+    {
+      "chainId": 1,
+      "contract": "0x01ab7d30525e4f3010af27a003180463a6c811a6",
+      "tokenId": "1020847100762815390390123822295304634404",
+      "kind": "audio",
+      "id": "recovery-01ab7d30525e4f3010af27a003180463a6c811a6-1020847100762815390390123822295304634404",
+      "artist": "Dot",
+      "title": "Bounce",
+      "imageURI": "ar://9_zRIP2SbDvzIXt9OOKCd_7Rd5ZxABQ-nwv67JE4H2U",
+      "platform": "Sound",
+      "collection": "Bounce",
+      "originalRelease": "https://www.sound.xyz/dot/bounce",
+      "note": "Recovered from Sound factory inventory and original token metadata; one representative edition per discovered release.",
+      "discovery": "https://eth.blockscout.com/tx/0x32bd72997d82b2bdb05ee120983a06605ec6055135397d5aa4499719a9e609fa",
+      "checkedBlock": 26351732,
+      "checkedAt": "2026-11-05T22:50:37.433Z"
+    },
+    {
+      "chainId": 1,
+      "contract": "0x01ab7d30525e4f3010af27a003180463a6c811a6",
+      "tokenId": "680564733841876926926749214863536422935",
+      "kind": "audio",
+      "id": "recovery-01ab7d30525e4f3010af27a003180463a6c811a6-680564733841876926926749214863536422935",
+      "artist": "Dot",
+      "title": "AMBUSH EP",
+      "imageURI": "ar://tbDIEAhJp3PpDPBS7fQ8o1I5ZuqShI7dmAxnLyaoFTA",
+      "platform": "Sound",
+      "collection": "AMBUSH EP",
+      "originalRelease": "https://www.sound.xyz/dot/ambush-ep",
+      "note": "Recovered from Sound factory inventory and original token metadata; one representative edition per discovered release.",
+      "discovery": "https://eth.blockscout.com/tx/0x32bd72997d82b2bdb05ee120983a06605ec6055135397d5aa4499719a9e609fa",
+      "checkedBlock": 26351733,
+      "checkedAt": "2026-11-05T22:50:53.827Z"
+    },
+    {
+      "chainId": 1,
+      "contract": "0x8b64bbf8e0b14aa3d7f5f6ddcb7553706c9c6ef3",
+      "tokenId": "25",
+      "kind": "audio",
+      "id": "recovery-8b64bbf8e0b14aa3d7f5f6ddcb7553706c9c6ef3-25",
+      "artist": "Jamee Cornelia",
+      "title": "real shit tho",
+      "imageURI": "ar://iiP5OhY6xyrXhfenVqTGwHbJHF1QJQ62t0T09O1odeU",
+      "platform": "Sound",
+      "collection": "real shit tho",
+      "originalRelease": "https://www.sound.xyz/jameecornelia/real-shit-tho",
+      "note": "Recovered from Sound factory inventory and original token metadata; one representative edition per discovered release.",
+      "discovery": "https://eth.blockscout.com/tx/0x193acdc6e69d426424646b5a5e5ded69317714bf4ca1c5803eb9c5b1aa149e83",
+      "checkedBlock": 26351734,
+      "checkedAt": "2026-11-05T22:51:09.076Z"
+    },
+    {
+      "chainId": 1,
+      "contract": "0x4a5576f8792f20d878cfc507384ffb4625713f3e",
+      "tokenId": "1020847100762815390390123822295304634384",
+      "kind": "audio",
+      "id": "recovery-4a5576f8792f20d878cfc507384ffb4625713f3e-1020847100762815390390123822295304634384",
+      "artist": "MoRuf",
+      "title": "Moo Better. (GOD IN ME)",
+      "imageURI": "ar://hM2HPl-UykqmTvXpgHgQJpRU-fzk9M8KRrza9xVL83Q",
+      "platform": "Sound",
+      "collection": "Moo Better. (GOD IN ME)",
+      "originalRelease": "https://www.sound.xyz/moruf/moo-better-god-in-me",
+      "note": "Recovered from Sound factory inventory and original token metadata; one representative edition per discovered release.",
+      "discovery": "https://eth.blockscout.com/tx/0x5ffe38aa3926d269e1453f5700e802fe6a6a05fdb206fe681d7392682ea27b3e",
+      "checkedBlock": 26351736,
+      "checkedAt": "2026-11-05T22:51:20.716Z"
+    },
+    {
+      "chainId": 1,
+      "contract": "0x4a5576f8792f20d878cfc507384ffb4625713f3e",
+      "tokenId": "55",
+      "kind": "audio",
+      "id": "recovery-4a5576f8792f20d878cfc507384ffb4625713f3e-55",
+      "artist": "MoRuf",
+      "title": "Gotta Be pt.2",
+      "imageURI": "ar://cECUhBUozK3RhuO_G6RKUL-Cg8A_8PAoRa4y9mEUnF8",
+      "platform": "Sound",
+      "collection": "Gotta Be pt.2",
+      "originalRelease": "https://www.sound.xyz/moruf/gotta-be-pt2",
+      "note": "Recovered from Sound factory inventory and original token metadata; one representative edition per discovered release.",
+      "discovery": "https://eth.blockscout.com/tx/0x5ffe38aa3926d269e1453f5700e802fe6a6a05fdb206fe681d7392682ea27b3e",
+      "checkedBlock": 26351736,
+      "checkedAt": "2026-11-05T22:51:24.270Z"
+    },
+    {
+      "chainId": 1,
+      "contract": "0x4a5576f8792f20d878cfc507384ffb4625713f3e",
+      "tokenId": "25",
+      "kind": "audio",
+      "id": "recovery-4a5576f8792f20d878cfc507384ffb4625713f3e-25",
+      "artist": "MoRuf",
+      "title": "HYPNO",
+      "imageURI": "ar://EXGXMv8S0zt1-V4z3JjlUkaO-UUr7Wn1SPF3Qgf2ak0",
+      "platform": "Sound",
+      "collection": "HYPNO",
+      "originalRelease": "https://www.sound.xyz/moruf/hypno",
+      "note": "Recovered from Sound factory inventory and original token metadata; one representative edition per discovered release.",
+      "discovery": "https://eth.blockscout.com/tx/0x5ffe38aa3926d269e1453f5700e802fe6a6a05fdb206fe681d7392682ea27b3e",
+      "checkedBlock": 26351736,
+      "checkedAt": "2026-11-05T22:51:28.332Z"
+    },
+    {
+      "chainId": 1,
+      "contract": "0x29d8c82adba12c822c37090fc1cf7f430bbc1a60",
+      "tokenId": "1361129467683753853853498429727072845874",
+      "kind": "audio",
+      "id": "recovery-29d8c82adba12c822c37090fc1cf7f430bbc1a60-1361129467683753853853498429727072845874",
+      "artist": "Daniel Allan",
+      "title": "Honey",
+      "imageURI": "ar://1CpKm71fyBUOcUK1AIvVMElnoV_kbfRAjtvgEnWFQ9c",
+      "platform": "Sound",
+      "collection": "Honey",
+      "originalRelease": "https://www.sound.xyz/danielallan/honey",
+      "note": "Recovered from Sound factory inventory and original token metadata; one representative edition per discovered release.",
+      "discovery": "https://eth.blockscout.com/tx/0x7d8d201c709f0c24604b79aed771d7ed36580d93c04ad47ba0a62f7484497244",
+      "checkedBlock": 26351737,
+      "checkedAt": "2026-11-05T22:51:38.513Z"
+    },
+    {
+      "chainId": 1,
+      "contract": "0x3bf96afe2291d76f2934350624080faefeec9a46",
+      "tokenId": "1020847100762815390390123822295304634418",
+      "kind": "audio",
+      "id": "recovery-3bf96afe2291d76f2934350624080faefeec9a46-1020847100762815390390123822295304634418",
+      "artist": "oshi",
+      "title": "black eyes (with Mara Anne)",
+      "imageURI": "ar://hR58OWA9SNqAzXGyngWA8PXAdP1684vcc23NRoQmEWs",
+      "platform": "Sound",
+      "collection": "black eyes (with Mara Anne)",
+      "originalRelease": "https://www.sound.xyz/oshi/black-eyes-with-mara-anne",
+      "note": "Recovered from Sound factory inventory and original token metadata; one representative edition per discovered release.",
+      "discovery": "https://eth.blockscout.com/tx/0xa4321d70a306ef7f8e9c5790e9b56b0082c92600a7783b7ff0243e55e604c041",
+      "checkedBlock": 26351738,
+      "checkedAt": "2026-11-05T22:51:46.229Z"
+    }
+  ],
+  "gaps": [
+    {
+      "artist": "Dot",
+      "reason": "Further edition pages remain; not an exhaustive discography"
+    },
+    {
+      "artist": "MoRuf",
+      "reason": "Further edition pages remain; not an exhaustive discography"
+    },
+    {
+      "artist": "Daniel Allan",
+      "reason": "Further edition pages remain; not an exhaustive discography"
+    },
+    {
+      "artist": "oshi",
+      "reason": "Further edition pages remain; not an exhaustive discography"
+    }
+  ]
+}

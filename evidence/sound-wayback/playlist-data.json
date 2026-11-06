@@ -1,0 +1,3739 @@
+{
+  "props": {
+    "pageProps": {
+      "shelf": {
+        "__typename": "Shelf",
+        "id": "04150d7a-d471-48de-a144-54b00474e59f",
+        "name": "Chill n Work",
+        "trackIds": [
+          "5c2c6a78-d005-4642-bb17-8aa94a02e913",
+          "7096af24-4929-49f1-9047-9731995adcc2",
+          "97636846-ef94-43aa-a7d8-d416736bc643",
+          "1b41387a-3d38-4ede-9829-aba5b9a14d64",
+          "3d214b75-f381-400c-9455-d81ee496d1c0",
+          "fe05fbaa-dd22-4ad3-9c5a-2e49729bbae1",
+          "71855289-0ffc-4217-8128-fd76c120c1b0",
+          "1271e4db-502e-4574-9243-0fbd92674318",
+          "595f5854-c035-4e14-8b22-febc469c05b1",
+          "91c6a647-deef-40fd-b491-8a731c0dec7a",
+          "aad9df2a-7e96-4842-9c74-7211b7267a6c",
+          "c12bb74e-32ef-42e7-afd5-674966309932",
+          "5a3d7123-a202-4a00-a89f-46f697a3ac8d",
+          "2b6a6212-3641-4283-83c3-ebe1182004b7",
+          "5892a3fd-b2d3-4868-b762-7263623b92d9",
+          "7521420c-c924-405a-b2c9-7d29ba7e8f68",
+          "fa55a6be-169b-4b46-ad51-ccb06d455c08",
+          "7ab64317-263d-45c4-bd84-3d7c8033f223",
+          "a7f920f4-010c-4d42-ae1e-60fb130705ce",
+          "6d37f670-2fe5-463b-86e6-46a8547e8cb9",
+          "e4433f65-f374-476c-a895-4f2dde1736b4",
+          "7fd98dce-a04d-4786-8edc-47b9c75ad025",
+          "935562a1-d786-459c-8547-2e14f05bbead"
+        ],
+        "description": "Music for coding",
+        "playTimeInSeconds": 4695,
+        "releaseCount": 23,
+        "type": "DEFAULT",
+        "likes": 0,
+        "user": {
+          "__typename": "User",
+          "id": "daf14ff4-497b-4304-aeec-f83e28d15556",
+          "username": "Juan Latorre",
+          "publicAddress": "0x4c70c2c49d10e62aa99be1889de305bc7d7bb392",
+          "hasArtistRole": false,
+          "avatar": {
+            "__typename": "Media",
+            "id": "70fea819-26fb-423b-8965-2b9bb5e07823",
+            "url": "https://d2i9ybouka0ieh.cloudfront.net/user-uploads/daf14ff4-497b-4304-aeec-f83e28d15556/AVATAR_IMAGE/880238-TEGBMMJA3-U01PZ9LV61X-20f32de09e9d-512.jpeg"
+          },
+          "followerCount": 1,
+          "followingCount": 4,
+          "nftsOwned": 0,
+          "artist": null,
+          "creditAllocations": []
+        },
+        "previewReleases": [
+          {
+            "__typename": "ShelfRelease",
+            "id": "869eeb6a-cd1e-4296-8391-93822b0d5a58",
+            "release": {
+              "__typename": "Release",
+              "id": "9720a150-b942-4214-a87e-ad334cefb465",
+              "coverImage": {
+                "__typename": "Media",
+                "id": "9e9102d9-e3a4-45c9-bf86-1862b534128a",
+                "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/2434908-newImage.png"
+              },
+              "staticCoverImage": null
+            },
+            "ownedGoldenEgg": null
+          },
+          {
+            "__typename": "ShelfRelease",
+            "id": "3a5f3254-a2c3-4fab-a1f6-5d1383b5c76a",
+            "release": {
+              "__typename": "Release",
+              "id": "a269b1d4-37ec-4214-bfd2-ae0623447405",
+              "coverImage": {
+                "__typename": "Media",
+                "id": "2f6ec6df-50db-40cb-9bc4-115be16a5d96",
+                "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/1431984-newImage.png"
+              },
+              "staticCoverImage": null
+            },
+            "ownedGoldenEgg": null
+          },
+          {
+            "__typename": "ShelfRelease",
+            "id": "2237a5f0-72b7-4c68-8cf0-a1dfe3dc70cd",
+            "release": {
+              "__typename": "Release",
+              "id": "057adb7c-2988-4cbc-9194-1fb5115a2659",
+              "coverImage": {
+                "__typename": "Media",
+                "id": "ac73c122-dad9-473c-81cd-6f0f2baef5b6",
+                "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/7619029-newImage.png"
+              },
+              "staticCoverImage": null
+            },
+            "ownedGoldenEgg": null
+          },
+          {
+            "__typename": "ShelfRelease",
+            "id": "02e1deb9-6882-4cb6-861b-c21b05d2a6fd",
+            "release": {
+              "__typename": "Release",
+              "id": "816da019-6bff-4ed5-a4c0-aa67eb842a72",
+              "coverImage": {
+                "__typename": "Media",
+                "id": "bec1175d-4e72-4330-b730-4171b3b45129",
+                "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/4781387-newImage.png"
+              },
+              "staticCoverImage": null
+            },
+            "ownedGoldenEgg": null
+          }
+        ]
+      },
+      "shelfData": {
+        "id": "04150d7a-d471-48de-a144-54b00474e59f",
+        "trackIds": [
+          "5c2c6a78-d005-4642-bb17-8aa94a02e913",
+          "7096af24-4929-49f1-9047-9731995adcc2",
+          "97636846-ef94-43aa-a7d8-d416736bc643",
+          "1b41387a-3d38-4ede-9829-aba5b9a14d64",
+          "3d214b75-f381-400c-9455-d81ee496d1c0",
+          "fe05fbaa-dd22-4ad3-9c5a-2e49729bbae1",
+          "71855289-0ffc-4217-8128-fd76c120c1b0",
+          "1271e4db-502e-4574-9243-0fbd92674318",
+          "595f5854-c035-4e14-8b22-febc469c05b1",
+          "91c6a647-deef-40fd-b491-8a731c0dec7a",
+          "aad9df2a-7e96-4842-9c74-7211b7267a6c",
+          "c12bb74e-32ef-42e7-afd5-674966309932",
+          "5a3d7123-a202-4a00-a89f-46f697a3ac8d",
+          "2b6a6212-3641-4283-83c3-ebe1182004b7",
+          "5892a3fd-b2d3-4868-b762-7263623b92d9",
+          "7521420c-c924-405a-b2c9-7d29ba7e8f68",
+          "fa55a6be-169b-4b46-ad51-ccb06d455c08",
+          "7ab64317-263d-45c4-bd84-3d7c8033f223",
+          "a7f920f4-010c-4d42-ae1e-60fb130705ce",
+          "6d37f670-2fe5-463b-86e6-46a8547e8cb9",
+          "e4433f65-f374-476c-a895-4f2dde1736b4",
+          "7fd98dce-a04d-4786-8edc-47b9c75ad025",
+          "935562a1-d786-459c-8547-2e14f05bbead"
+        ],
+        "releases": {
+          "edges": [
+            {
+              "node": {
+                "id": "869eeb6a-cd1e-4296-8391-93822b0d5a58",
+                "release": {
+                  "id": "9720a150-b942-4214-a87e-ad334cefb465",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "5c2c6a78-d005-4642-bb17-8aa94a02e913",
+                    "duration": 165,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "ebfb6493-a203-4e89-b7a0-b49973070fa7",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/5c2c6a78-d005-4642-bb17-8aa94a02e913/AUDIO_TRANSCODED/8499697-2178051-Paris_Master1.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "9720a150-b942-4214-a87e-ad334cefb465",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "3a8f7a30-1e89-4aea-b3e4-65b42896db81",
+                    "name": "valentina cy",
+                    "soundHandle": "valentinacy",
+                    "user": {
+                      "id": "9f19fa8a-78ff-48b8-91dd-59807e0eb588",
+                      "publicAddress": "0xc59addc6ef782e002332bc8e4442bcc6b4879b01",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "9e9102d9-e3a4-45c9-bf86-1862b534128a",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/2434908-newImage.png",
+                    "__typename": "Media"
+                  },
+                  "title": "for you I bought a ticket to Paris ",
+                  "titleSlug": "for-you-i-bought-a-ticket-to-paris",
+                  "quantityUpperBound": 30,
+                  "publicListeningParty": 1674068400000,
+                  "staticCoverImage": null,
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674160111460,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "3a5f3254-a2c3-4fab-a1f6-5d1383b5c76a",
+                "release": {
+                  "id": "a269b1d4-37ec-4214-bfd2-ae0623447405",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "7096af24-4929-49f1-9047-9731995adcc2",
+                    "duration": 160,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "e4018c75-46ab-4e7d-8193-51a3bed95f60",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/7096af24-4929-49f1-9047-9731995adcc2/AUDIO_TRANSCODED/5329565-12848-Ja_germeister___Master.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "a269b1d4-37ec-4214-bfd2-ae0623447405",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "3a8f7a30-1e89-4aea-b3e4-65b42896db81",
+                    "name": "valentina cy",
+                    "soundHandle": "valentinacy",
+                    "user": {
+                      "id": "9f19fa8a-78ff-48b8-91dd-59807e0eb588",
+                      "publicAddress": "0xc59addc6ef782e002332bc8e4442bcc6b4879b01",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "2f6ec6df-50db-40cb-9bc4-115be16a5d96",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/1431984-newImage.png",
+                    "__typename": "Media"
+                  },
+                  "title": "J\u00e4germeister",
+                  "titleSlug": "jagermeister",
+                  "quantityUpperBound": 40,
+                  "publicListeningParty": 1670443200000,
+                  "staticCoverImage": null,
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674160111460,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "2237a5f0-72b7-4c68-8cf0-a1dfe3dc70cd",
+                "release": {
+                  "id": "057adb7c-2988-4cbc-9194-1fb5115a2659",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "97636846-ef94-43aa-a7d8-d416736bc643",
+                    "duration": 161,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "0a8e0570-a766-46f4-b3a2-c8489c437516",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/97636846-ef94-43aa-a7d8-d416736bc643/AUDIO_TRANSCODED/5193786-2263951-I_ll_Meet_You_Where_the_Lobsters_grow_Master.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "057adb7c-2988-4cbc-9194-1fb5115a2659",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "3a8f7a30-1e89-4aea-b3e4-65b42896db81",
+                    "name": "valentina cy",
+                    "soundHandle": "valentinacy",
+                    "user": {
+                      "id": "9f19fa8a-78ff-48b8-91dd-59807e0eb588",
+                      "publicAddress": "0xc59addc6ef782e002332bc8e4442bcc6b4879b01",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "ac73c122-dad9-473c-81cd-6f0f2baef5b6",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/7619029-newImage.png",
+                    "__typename": "Media"
+                  },
+                  "title": "i'll meet you where the lobsters grow ",
+                  "titleSlug": "ill-meet-you-where-the-lobsters-grow",
+                  "quantityUpperBound": 50,
+                  "publicListeningParty": 1673467200000,
+                  "staticCoverImage": null,
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674176648406,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "02e1deb9-6882-4cb6-861b-c21b05d2a6fd",
+                "release": {
+                  "id": "816da019-6bff-4ed5-a4c0-aa67eb842a72",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "1b41387a-3d38-4ede-9829-aba5b9a14d64",
+                    "duration": 181,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "bfcd8e52-e6e0-426c-8f42-ca63f411498a",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/1b41387a-3d38-4ede-9829-aba5b9a14d64/AUDIO_TRANSCODED/2033859-5843968-I_Hate_1st_Dates.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "816da019-6bff-4ed5-a4c0-aa67eb842a72",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "3a8f7a30-1e89-4aea-b3e4-65b42896db81",
+                    "name": "valentina cy",
+                    "soundHandle": "valentinacy",
+                    "user": {
+                      "id": "9f19fa8a-78ff-48b8-91dd-59807e0eb588",
+                      "publicAddress": "0xc59addc6ef782e002332bc8e4442bcc6b4879b01",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "bec1175d-4e72-4330-b730-4171b3b45129",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/4781387-newImage.png",
+                    "__typename": "Media"
+                  },
+                  "title": "i hate 1st dates ",
+                  "titleSlug": "i-hate-1st-dates",
+                  "quantityUpperBound": 25,
+                  "publicListeningParty": 1672858800000,
+                  "staticCoverImage": null,
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674176657152,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "3f35317b-7515-4df9-b99f-eccde70a878d",
+                "release": {
+                  "id": "675e58c0-89c9-407f-8a36-3a597a3cb243",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "3d214b75-f381-400c-9455-d81ee496d1c0",
+                    "duration": 140,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "c6bfc6cc-3324-4bed-91de-1600b3e636b3",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/3d214b75-f381-400c-9455-d81ee496d1c0/AUDIO_TRANSCODED/6716020-1056652-The_Crevice_of_You_master_rev2.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "675e58c0-89c9-407f-8a36-3a597a3cb243",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "3a8f7a30-1e89-4aea-b3e4-65b42896db81",
+                    "name": "valentina cy",
+                    "soundHandle": "valentinacy",
+                    "user": {
+                      "id": "9f19fa8a-78ff-48b8-91dd-59807e0eb588",
+                      "publicAddress": "0xc59addc6ef782e002332bc8e4442bcc6b4879b01",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "9a43217f-a5d5-4143-9948-bcf308cd698b",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/2878457-newImage.png",
+                    "__typename": "Media"
+                  },
+                  "title": "the crevice of you",
+                  "titleSlug": "the-crevice-of-you",
+                  "quantityUpperBound": 20,
+                  "publicListeningParty": 1671048000000,
+                  "staticCoverImage": null,
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674176668860,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "a6beba5b-a453-45ff-8aee-e20f8b22092a",
+                "release": {
+                  "id": "b794a785-c98d-4b26-b5fd-a15f1a644086",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "fe05fbaa-dd22-4ad3-9c5a-2e49729bbae1",
+                    "duration": 208,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "2659b9e1-98d8-4d9a-8b8b-e9924e30b8bb",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fe05fbaa-dd22-4ad3-9c5a-2e49729bbae1/AUDIO_TRANSCODED/8771324-8588865-Pomegranite_Master_V1.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "b794a785-c98d-4b26-b5fd-a15f1a644086",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "568dd1ba-1dff-4317-8631-8f3b9e01a9d5",
+                    "name": "bloody white",
+                    "soundHandle": "bloodywhite",
+                    "user": {
+                      "id": "160ffc56-bc64-4430-b27d-bc966c3260af",
+                      "publicAddress": "0xd54094d09109dd8d30340d3dfb66356c838a3b0c",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "b36b0108-ff28-4142-95e3-485adac50f2f",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/568dd1ba-1dff-4317-8631-8f3b9e01a9d5/RELEASE_COVER_IMAGE/3299476-B7A72390-7FE0-4F6A-9FE5-801E212A07BF.JPG",
+                    "__typename": "Media"
+                  },
+                  "title": "pomegranate",
+                  "titleSlug": "pomegranate",
+                  "quantityUpperBound": 25,
+                  "publicListeningParty": 1658959200000,
+                  "staticCoverImage": null,
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674194962660,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "c7d29e9a-14f0-4642-b353-9af6a66eb593",
+                "release": {
+                  "id": "2bd0aa63-0a70-4c73-9089-514e94fe4126",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "71855289-0ffc-4217-8128-fd76c120c1b0",
+                    "duration": 156,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "83c403cb-1ff3-483d-9594-941ea7ecf781",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/71855289-0ffc-4217-8128-fd76c120c1b0/AUDIO_TRANSCODED/5946283-3200742-Too%252520Close%2525208.26%252520V2.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "2bd0aa63-0a70-4c73-9089-514e94fe4126",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "36342e73-1559-4ad4-9bcc-48cca84f1866",
+                    "name": "Daniel Allan",
+                    "soundHandle": "danielallan",
+                    "user": {
+                      "id": "21efd574-9dac-4422-ac5c-e6c0a758e57e",
+                      "publicAddress": "0xbcefc4906b443e4db64e2b00b9af2c39e76c785c",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "91c14a08-2459-4e6d-b61a-c8c6e9e5a9e7",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/36342e73-1559-4ad4-9bcc-48cca84f1866/RELEASE_COVER_IMAGE/5357899-ezgif.com-gif-maker%2520(3).gif",
+                    "__typename": "Media"
+                  },
+                  "title": "Too Close",
+                  "titleSlug": "too-close",
+                  "quantityUpperBound": 25,
+                  "publicListeningParty": 1639087044000,
+                  "staticCoverImage": {
+                    "id": "cdd3e7d4-df99-4de4-9298-0b573f8270a2",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/36342e73-1559-4ad4-9bcc-48cca84f1866/RELEASE_COVER_IMAGE/5357899-ezgif.com-gif-maker%2520(3).gif/static_autogen.png",
+                    "__typename": "Media"
+                  },
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674194973250,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "bff2040d-5dee-450c-8948-7a5f6f3d9de8",
+                "release": {
+                  "id": "5ea2aa3a-0166-4d50-ba4d-6d2fa37f88a6",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "1271e4db-502e-4574-9243-0fbd92674318",
+                    "duration": 98,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "7dcaf145-02e1-40dc-badf-b11e1831f8ab",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/1271e4db-502e-4574-9243-0fbd92674318/AUDIO_TRANSCODED/817696-7856644-bloom__master___v1_.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "5ea2aa3a-0166-4d50-ba4d-6d2fa37f88a6",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "568dd1ba-1dff-4317-8631-8f3b9e01a9d5",
+                    "name": "bloody white",
+                    "soundHandle": "bloodywhite",
+                    "user": {
+                      "id": "160ffc56-bc64-4430-b27d-bc966c3260af",
+                      "publicAddress": "0xd54094d09109dd8d30340d3dfb66356c838a3b0c",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "ea121ab4-d5c3-4227-8c4b-4c71811c9088",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/568dd1ba-1dff-4317-8631-8f3b9e01a9d5/RELEASE_COVER_IMAGE/4032535-default",
+                    "__typename": "Media"
+                  },
+                  "title": "BLOOM",
+                  "titleSlug": "bloom",
+                  "quantityUpperBound": 50,
+                  "publicListeningParty": 1663884000000,
+                  "staticCoverImage": null,
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674194982817,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "d44f735d-a77f-416a-b9c0-f74e85a60dc6",
+                "release": {
+                  "id": "e81454c9-c8d2-48ea-aa4d-97bb915a9486",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "595f5854-c035-4e14-8b22-febc469c05b1",
+                    "duration": 188,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "55001570-784f-4d85-998f-6a6eb63cc0bc",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/595f5854-c035-4e14-8b22-febc469c05b1/AUDIO_TRANSCODED/7524596-366918-Green_Ring_-_In_The_Trees.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "e81454c9-c8d2-48ea-aa4d-97bb915a9486",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "88ad8b00-0c9c-44b8-9b01-d27dd80617de",
+                    "name": "Green Ring",
+                    "soundHandle": "greenring",
+                    "user": {
+                      "id": "bf39b9e5-ccc4-4427-86b4-c1fc51d5650a",
+                      "publicAddress": "0xc3af8efe3c865b8363a79b13b27db530eb5d24af",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "ee150eb5-0441-46de-b9b9-89eee43f32c5",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88ad8b00-0c9c-44b8-9b01-d27dd80617de/RELEASE_COVER_IMAGE/3250861-Green_Ring_-_In_The_Trees-optimized.gif",
+                    "__typename": "Media"
+                  },
+                  "title": "In The Trees",
+                  "titleSlug": "in-the-trees",
+                  "quantityUpperBound": 40,
+                  "publicListeningParty": 1667941200000,
+                  "staticCoverImage": {
+                    "id": "0bcc7316-7549-42f7-98c8-61a95a04a188",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88ad8b00-0c9c-44b8-9b01-d27dd80617de/RELEASE_COVER_IMAGE/3250861-Green_Ring_-_In_The_Trees-optimized.gif/static_autogen.png",
+                    "__typename": "Media"
+                  },
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674194992342,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "d2171468-ae2c-4793-a4d4-ed3c501f1e1d",
+                "release": {
+                  "id": "37dde2f0-c9e7-4f6a-9ed1-d20843a58fb1",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "91c6a647-deef-40fd-b491-8a731c0dec7a",
+                    "duration": 137,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "dd0607b3-e2a2-428b-b634-ee8fc6c7acec",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/91c6a647-deef-40fd-b491-8a731c0dec7a/AUDIO_TRANSCODED/3901238-1722642-phaethon__m_.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "37dde2f0-c9e7-4f6a-9ed1-d20843a58fb1",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "568dd1ba-1dff-4317-8631-8f3b9e01a9d5",
+                    "name": "bloody white",
+                    "soundHandle": "bloodywhite",
+                    "user": {
+                      "id": "160ffc56-bc64-4430-b27d-bc966c3260af",
+                      "publicAddress": "0xd54094d09109dd8d30340d3dfb66356c838a3b0c",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "471e05a9-18b6-4965-8bff-f08629b2d40e",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/568dd1ba-1dff-4317-8631-8f3b9e01a9d5/RELEASE_COVER_IMAGE/9159063-newImage.png",
+                    "__typename": "Media"
+                  },
+                  "title": "APATHY",
+                  "titleSlug": "apathy",
+                  "quantityUpperBound": 75,
+                  "publicListeningParty": 1669676400000,
+                  "staticCoverImage": null,
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674195012101,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "5fc776af-b7bc-444a-8f8f-c2e09af8cfad",
+                "release": {
+                  "id": "cb8ba18e-2fcb-42ec-991c-45bce3fbbc06",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "aad9df2a-7e96-4842-9c74-7211b7267a6c",
+                    "duration": 152,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "c489b57f-a2c0-40c7-bab1-2ca9708c7380",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/aad9df2a-7e96-4842-9c74-7211b7267a6c/AUDIO_TRANSCODED/4042640-9644403-Radio_Silence___GPB_4.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "cb8ba18e-2fcb-42ec-991c-45bce3fbbc06",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "949430a7-2b9e-4024-a922-2d88f480ba3d",
+                    "name": "R\u00dcDE C\u00c5T",
+                    "soundHandle": "rudecat",
+                    "user": {
+                      "id": "68f76750-4c02-4242-af03-7cf9e7f1bf94",
+                      "publicAddress": "0xeeee33cd5fc4ccc316977006128f050264b1bb12",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "cda061c7-e66c-4b97-851a-dec761ae0548",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/949430a7-2b9e-4024-a922-2d88f480ba3d/RELEASE_COVER_IMAGE/9857797-newImage.png",
+                    "__typename": "Media"
+                  },
+                  "title": "Radio Silence Pt.1 (RAW)",
+                  "titleSlug": "radio-silence-pt1-raw",
+                  "quantityUpperBound": 70,
+                  "publicListeningParty": 1667592000000,
+                  "staticCoverImage": null,
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674195229753,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "03838db6-5e01-42c0-aee9-3bacc72352e0",
+                "release": {
+                  "id": "41fa837f-0f21-41cc-9f0a-06b084d537f3",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "c12bb74e-32ef-42e7-afd5-674966309932",
+                    "duration": 186,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "e744bc4e-1039-4995-b63d-ee10eb577a2e",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/c12bb74e-32ef-42e7-afd5-674966309932/AUDIO_TRANSCODED/2825204-9273008-07_-_Kelechief_-_Fine_Wine_feat_Amaarae__copy.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "41fa837f-0f21-41cc-9f0a-06b084d537f3",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "f706dbd2-9208-4cd2-ad16-935a836aea5c",
+                    "name": "Kelechief",
+                    "soundHandle": "kelechief",
+                    "user": {
+                      "id": "26b1fa30-0467-4738-8395-1a072f0bee73",
+                      "publicAddress": "0x850213e46cf7b567c4c6c0407891945604f6a4f6",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "6eb3abb0-60c1-40d5-b88d-c1a09965f474",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/f706dbd2-9208-4cd2-ad16-935a836aea5c/RELEASE_COVER_IMAGE/1667606-newImage.png",
+                    "__typename": "Media"
+                  },
+                  "title": "Fine Wine feat Amaarae",
+                  "titleSlug": "fine-wine-feat-amaarae",
+                  "quantityUpperBound": 25,
+                  "publicListeningParty": 1674165600000,
+                  "staticCoverImage": null,
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674226374918,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "a6e3f64c-46ab-4ef2-b42b-ffdd449ea0a7",
+                "release": {
+                  "id": "94042d13-d950-426a-aa7c-f24ba35f5ed7",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "5a3d7123-a202-4a00-a89f-46f697a3ac8d",
+                    "duration": 222,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "209a4c2f-7704-4cd3-a335-61699417616f",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/5a3d7123-a202-4a00-a89f-46f697a3ac8d/AUDIO_TRANSCODED/2191594-3948583-Think_of_You_9.16.19.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "94042d13-d950-426a-aa7c-f24ba35f5ed7",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "0bc9d819-b21e-4d81-b5b7-b878712cc54f",
+                    "name": "Yasminah",
+                    "soundHandle": "yasminah",
+                    "user": {
+                      "id": "c9ee1e4c-6e6b-491c-ac73-b565189a411a",
+                      "publicAddress": "0xfe9cfbde3b69b817cbcc45fac1b38aedfb18df63",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "a7294df4-fa2e-4dac-be2d-f1a3a9f368de",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/0bc9d819-b21e-4d81-b5b7-b878712cc54f/RELEASE_COVER_IMAGE/5304655-newImage.png",
+                    "__typename": "Media"
+                  },
+                  "title": "Think of You",
+                  "titleSlug": "think-of-you",
+                  "quantityUpperBound": 25,
+                  "publicListeningParty": 1673388000000,
+                  "staticCoverImage": null,
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674226404541,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "26b6be12-730d-412a-85ae-a5e072aae074",
+                "release": {
+                  "id": "b107d9d6-d35f-4d76-80dd-e92dcbe832e9",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "2b6a6212-3641-4283-83c3-ebe1182004b7",
+                    "duration": 154,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "561cb5c8-2c0b-4b2f-91aa-4556279019b6",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/2b6a6212-3641-4283-83c3-ebe1182004b7/AUDIO_TRANSCODED/8325012-4016478-Blk_Orchid_-_Keep_Pushin__Full_.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "b107d9d6-d35f-4d76-80dd-e92dcbe832e9",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "302f9c37-58be-4caa-99a2-d16235338ccb",
+                    "name": "Blk Orchid",
+                    "soundHandle": "iamblkorchid",
+                    "user": {
+                      "id": "612fb5db-8273-4dee-a901-a2fee8a95df1",
+                      "publicAddress": "0xea889ccbde865894e8323875a36e77c838d5099c",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "62bae8c8-c376-4446-892d-f5e743b83445",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/302f9c37-58be-4caa-99a2-d16235338ccb/RELEASE_COVER_IMAGE/3524092-newImage.png",
+                    "__typename": "Media"
+                  },
+                  "title": "Keep Pushing",
+                  "titleSlug": "keep-pushing",
+                  "quantityUpperBound": 25,
+                  "publicListeningParty": 1673388000000,
+                  "staticCoverImage": null,
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674226422329,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            },
+            {
+              "node": {
+                "id": "eb02010e-b383-422f-a5fa-dcf01f196629",
+                "release": {
+                  "id": "c1de234f-daaf-41c7-a9cc-8f41ae5762a5",
+                  "__typename": "Release",
+                  "track": {
+                    "id": "5892a3fd-b2d3-4868-b762-7263623b92d9",
+                    "duration": 188,
+                    "__typename": "Track",
+                    "revealedAudio": {
+                      "id": "f902b686-60f1-4559-bee5-e5df57b34497",
+                      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/5892a3fd-b2d3-4868-b762-7263623b92d9/AUDIO_TRANSCODED/1224436-169294-FOR_YOU.m4a",
+                      "__typename": "Media"
+                    },
+                    "release": {
+                      "id": "c1de234f-daaf-41c7-a9cc-8f41ae5762a5",
+                      "__typename": "Release"
+                    }
+                  },
+                  "artist": {
+                    "id": "ff7ecfde-91bf-45d4-a104-f49d19c93ce6",
+                    "name": "Edwin",
+                    "soundHandle": "edwin",
+                    "user": {
+                      "id": "5e475aaa-bc6f-4f28-88f3-e291045848a0",
+                      "publicAddress": "0xd647fbe11e7a0bbcae5c36f808e130ef71fc7a42",
+                      "__typename": "User"
+                    },
+                    "__typename": "Artist"
+                  },
+                  "coverImage": {
+                    "id": "c2060aac-e86b-4a9e-993a-04d71a9c6c67",
+                    "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/ff7ecfde-91bf-45d4-a104-f49d19c93ce6/RELEASE_COVER_IMAGE/3032802-newImage.png",
+                    "__typename": "Media"
+                  },
+                  "title": "For You",
+                  "titleSlug": "for-you",
+                  "quantityUpperBound": 30,
+                  "publicListeningParty": 1673380800000,
+                  "staticCoverImage": null,
+                  "type": "SINGLE"
+                },
+                "addedAt": 1674226429070,
+                "ownedSerialNumbers": null,
+                "ownedFirstNft": null,
+                "ownedGoldenEgg": null,
+                "__typename": "ShelfRelease"
+              },
+              "__typename": "ShelfReleaseConnectionEdge"
+            }
+          ],
+          "pageInfo": {
+            "hasNextPage": true,
+            "endCursor": "MTR8ZWIwMjAxMGUtYjM4My00MjJmLWE1ZmEtZGNmMDFmMTk2NjI5",
+            "__typename": "PageInfo"
+          },
+          "__typename": "ShelfReleaseConnection"
+        },
+        "__typename": "Shelf"
+      },
+      "initialApolloState": {
+        "Media:70fea819-26fb-423b-8965-2b9bb5e07823": {
+          "__typename": "Media",
+          "id": "70fea819-26fb-423b-8965-2b9bb5e07823",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/user-uploads/daf14ff4-497b-4304-aeec-f83e28d15556/AVATAR_IMAGE/880238-TEGBMMJA3-U01PZ9LV61X-20f32de09e9d-512.jpeg"
+        },
+        "User:daf14ff4-497b-4304-aeec-f83e28d15556": {
+          "__typename": "User",
+          "id": "daf14ff4-497b-4304-aeec-f83e28d15556",
+          "username": "Juan Latorre",
+          "publicAddress": "0x4c70c2c49d10e62aa99be1889de305bc7d7bb392",
+          "hasArtistRole": false,
+          "avatar": {
+            "__ref": "Media:70fea819-26fb-423b-8965-2b9bb5e07823"
+          },
+          "followerCount": 1,
+          "followingCount": 4,
+          "nftsOwned": 0,
+          "artist": null,
+          "creditAllocations": []
+        },
+        "Media:9e9102d9-e3a4-45c9-bf86-1862b534128a": {
+          "__typename": "Media",
+          "id": "9e9102d9-e3a4-45c9-bf86-1862b534128a",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/2434908-newImage.png"
+        },
+        "Release:9720a150-b942-4214-a87e-ad334cefb465": {
+          "__typename": "Release",
+          "id": "9720a150-b942-4214-a87e-ad334cefb465",
+          "coverImage": {
+            "__ref": "Media:9e9102d9-e3a4-45c9-bf86-1862b534128a"
+          },
+          "staticCoverImage": null,
+          "track": {
+            "__ref": "Track:5c2c6a78-d005-4642-bb17-8aa94a02e913"
+          },
+          "artist": {
+            "__ref": "Artist:3a8f7a30-1e89-4aea-b3e4-65b42896db81"
+          },
+          "title": "for you I bought a ticket to Paris ",
+          "titleSlug": "for-you-i-bought-a-ticket-to-paris",
+          "quantityUpperBound": 30,
+          "publicListeningParty": 1674068400000,
+          "type": "SINGLE"
+        },
+        "ShelfRelease:869eeb6a-cd1e-4296-8391-93822b0d5a58": {
+          "__typename": "ShelfRelease",
+          "id": "869eeb6a-cd1e-4296-8391-93822b0d5a58",
+          "release": {
+            "__ref": "Release:9720a150-b942-4214-a87e-ad334cefb465"
+          },
+          "ownedGoldenEgg": null,
+          "addedAt": 1674160111460,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null
+        },
+        "Media:2f6ec6df-50db-40cb-9bc4-115be16a5d96": {
+          "__typename": "Media",
+          "id": "2f6ec6df-50db-40cb-9bc4-115be16a5d96",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/1431984-newImage.png"
+        },
+        "Release:a269b1d4-37ec-4214-bfd2-ae0623447405": {
+          "__typename": "Release",
+          "id": "a269b1d4-37ec-4214-bfd2-ae0623447405",
+          "coverImage": {
+            "__ref": "Media:2f6ec6df-50db-40cb-9bc4-115be16a5d96"
+          },
+          "staticCoverImage": null,
+          "track": {
+            "__ref": "Track:7096af24-4929-49f1-9047-9731995adcc2"
+          },
+          "artist": {
+            "__ref": "Artist:3a8f7a30-1e89-4aea-b3e4-65b42896db81"
+          },
+          "title": "J\u00e4germeister",
+          "titleSlug": "jagermeister",
+          "quantityUpperBound": 40,
+          "publicListeningParty": 1670443200000,
+          "type": "SINGLE"
+        },
+        "ShelfRelease:3a5f3254-a2c3-4fab-a1f6-5d1383b5c76a": {
+          "__typename": "ShelfRelease",
+          "id": "3a5f3254-a2c3-4fab-a1f6-5d1383b5c76a",
+          "release": {
+            "__ref": "Release:a269b1d4-37ec-4214-bfd2-ae0623447405"
+          },
+          "ownedGoldenEgg": null,
+          "addedAt": 1674160111460,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null
+        },
+        "Media:ac73c122-dad9-473c-81cd-6f0f2baef5b6": {
+          "__typename": "Media",
+          "id": "ac73c122-dad9-473c-81cd-6f0f2baef5b6",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/7619029-newImage.png"
+        },
+        "Release:057adb7c-2988-4cbc-9194-1fb5115a2659": {
+          "__typename": "Release",
+          "id": "057adb7c-2988-4cbc-9194-1fb5115a2659",
+          "coverImage": {
+            "__ref": "Media:ac73c122-dad9-473c-81cd-6f0f2baef5b6"
+          },
+          "staticCoverImage": null,
+          "track": {
+            "__ref": "Track:97636846-ef94-43aa-a7d8-d416736bc643"
+          },
+          "artist": {
+            "__ref": "Artist:3a8f7a30-1e89-4aea-b3e4-65b42896db81"
+          },
+          "title": "i'll meet you where the lobsters grow ",
+          "titleSlug": "ill-meet-you-where-the-lobsters-grow",
+          "quantityUpperBound": 50,
+          "publicListeningParty": 1673467200000,
+          "type": "SINGLE"
+        },
+        "ShelfRelease:2237a5f0-72b7-4c68-8cf0-a1dfe3dc70cd": {
+          "__typename": "ShelfRelease",
+          "id": "2237a5f0-72b7-4c68-8cf0-a1dfe3dc70cd",
+          "release": {
+            "__ref": "Release:057adb7c-2988-4cbc-9194-1fb5115a2659"
+          },
+          "ownedGoldenEgg": null,
+          "addedAt": 1674176648406,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null
+        },
+        "Media:bec1175d-4e72-4330-b730-4171b3b45129": {
+          "__typename": "Media",
+          "id": "bec1175d-4e72-4330-b730-4171b3b45129",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/4781387-newImage.png"
+        },
+        "Release:816da019-6bff-4ed5-a4c0-aa67eb842a72": {
+          "__typename": "Release",
+          "id": "816da019-6bff-4ed5-a4c0-aa67eb842a72",
+          "coverImage": {
+            "__ref": "Media:bec1175d-4e72-4330-b730-4171b3b45129"
+          },
+          "staticCoverImage": null,
+          "track": {
+            "__ref": "Track:1b41387a-3d38-4ede-9829-aba5b9a14d64"
+          },
+          "artist": {
+            "__ref": "Artist:3a8f7a30-1e89-4aea-b3e4-65b42896db81"
+          },
+          "title": "i hate 1st dates ",
+          "titleSlug": "i-hate-1st-dates",
+          "quantityUpperBound": 25,
+          "publicListeningParty": 1672858800000,
+          "type": "SINGLE"
+        },
+        "ShelfRelease:02e1deb9-6882-4cb6-861b-c21b05d2a6fd": {
+          "__typename": "ShelfRelease",
+          "id": "02e1deb9-6882-4cb6-861b-c21b05d2a6fd",
+          "release": {
+            "__ref": "Release:816da019-6bff-4ed5-a4c0-aa67eb842a72"
+          },
+          "ownedGoldenEgg": null,
+          "addedAt": 1674176657152,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null
+        },
+        "Shelf:04150d7a-d471-48de-a144-54b00474e59f": {
+          "__typename": "Shelf",
+          "id": "04150d7a-d471-48de-a144-54b00474e59f",
+          "name": "Chill n Work",
+          "trackIds": [
+            "5c2c6a78-d005-4642-bb17-8aa94a02e913",
+            "7096af24-4929-49f1-9047-9731995adcc2",
+            "97636846-ef94-43aa-a7d8-d416736bc643",
+            "1b41387a-3d38-4ede-9829-aba5b9a14d64",
+            "3d214b75-f381-400c-9455-d81ee496d1c0",
+            "fe05fbaa-dd22-4ad3-9c5a-2e49729bbae1",
+            "71855289-0ffc-4217-8128-fd76c120c1b0",
+            "1271e4db-502e-4574-9243-0fbd92674318",
+            "595f5854-c035-4e14-8b22-febc469c05b1",
+            "91c6a647-deef-40fd-b491-8a731c0dec7a",
+            "aad9df2a-7e96-4842-9c74-7211b7267a6c",
+            "c12bb74e-32ef-42e7-afd5-674966309932",
+            "5a3d7123-a202-4a00-a89f-46f697a3ac8d",
+            "2b6a6212-3641-4283-83c3-ebe1182004b7",
+            "5892a3fd-b2d3-4868-b762-7263623b92d9",
+            "7521420c-c924-405a-b2c9-7d29ba7e8f68",
+            "fa55a6be-169b-4b46-ad51-ccb06d455c08",
+            "7ab64317-263d-45c4-bd84-3d7c8033f223",
+            "a7f920f4-010c-4d42-ae1e-60fb130705ce",
+            "6d37f670-2fe5-463b-86e6-46a8547e8cb9",
+            "e4433f65-f374-476c-a895-4f2dde1736b4",
+            "7fd98dce-a04d-4786-8edc-47b9c75ad025",
+            "935562a1-d786-459c-8547-2e14f05bbead"
+          ],
+          "description": "Music for coding",
+          "playTimeInSeconds": 4695,
+          "releaseCount": 23,
+          "type": "DEFAULT",
+          "likes": 0,
+          "user": {
+            "__ref": "User:daf14ff4-497b-4304-aeec-f83e28d15556"
+          },
+          "previewReleases": [
+            {
+              "__ref": "ShelfRelease:869eeb6a-cd1e-4296-8391-93822b0d5a58"
+            },
+            {
+              "__ref": "ShelfRelease:3a5f3254-a2c3-4fab-a1f6-5d1383b5c76a"
+            },
+            {
+              "__ref": "ShelfRelease:2237a5f0-72b7-4c68-8cf0-a1dfe3dc70cd"
+            },
+            {
+              "__ref": "ShelfRelease:02e1deb9-6882-4cb6-861b-c21b05d2a6fd"
+            }
+          ],
+          "trackIds({\"sort\":{\"index\":\"ASC\"}})": [
+            "5c2c6a78-d005-4642-bb17-8aa94a02e913",
+            "7096af24-4929-49f1-9047-9731995adcc2",
+            "97636846-ef94-43aa-a7d8-d416736bc643",
+            "1b41387a-3d38-4ede-9829-aba5b9a14d64",
+            "3d214b75-f381-400c-9455-d81ee496d1c0",
+            "fe05fbaa-dd22-4ad3-9c5a-2e49729bbae1",
+            "71855289-0ffc-4217-8128-fd76c120c1b0",
+            "1271e4db-502e-4574-9243-0fbd92674318",
+            "595f5854-c035-4e14-8b22-febc469c05b1",
+            "91c6a647-deef-40fd-b491-8a731c0dec7a",
+            "aad9df2a-7e96-4842-9c74-7211b7267a6c",
+            "c12bb74e-32ef-42e7-afd5-674966309932",
+            "5a3d7123-a202-4a00-a89f-46f697a3ac8d",
+            "2b6a6212-3641-4283-83c3-ebe1182004b7",
+            "5892a3fd-b2d3-4868-b762-7263623b92d9",
+            "7521420c-c924-405a-b2c9-7d29ba7e8f68",
+            "fa55a6be-169b-4b46-ad51-ccb06d455c08",
+            "7ab64317-263d-45c4-bd84-3d7c8033f223",
+            "a7f920f4-010c-4d42-ae1e-60fb130705ce",
+            "6d37f670-2fe5-463b-86e6-46a8547e8cb9",
+            "e4433f65-f374-476c-a895-4f2dde1736b4",
+            "7fd98dce-a04d-4786-8edc-47b9c75ad025",
+            "935562a1-d786-459c-8547-2e14f05bbead"
+          ],
+          "releases({\"pagination\":{\"after\":null,\"first\":15,\"sort\":{\"index\":\"ASC\"}}})": {
+            "__typename": "ShelfReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:869eeb6a-cd1e-4296-8391-93822b0d5a58"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:3a5f3254-a2c3-4fab-a1f6-5d1383b5c76a"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:2237a5f0-72b7-4c68-8cf0-a1dfe3dc70cd"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:02e1deb9-6882-4cb6-861b-c21b05d2a6fd"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:3f35317b-7515-4df9-b99f-eccde70a878d"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:a6beba5b-a453-45ff-8aee-e20f8b22092a"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:c7d29e9a-14f0-4642-b353-9af6a66eb593"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:bff2040d-5dee-450c-8948-7a5f6f3d9de8"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:d44f735d-a77f-416a-b9c0-f74e85a60dc6"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:d2171468-ae2c-4793-a4d4-ed3c501f1e1d"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:5fc776af-b7bc-444a-8f8f-c2e09af8cfad"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:03838db6-5e01-42c0-aee9-3bacc72352e0"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:a6e3f64c-46ab-4ef2-b42b-ffdd449ea0a7"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:26b6be12-730d-412a-85ae-a5e072aae074"
+                }
+              },
+              {
+                "__typename": "ShelfReleaseConnectionEdge",
+                "node": {
+                  "__ref": "ShelfRelease:eb02010e-b383-422f-a5fa-dcf01f196629"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "MTR8ZWIwMjAxMGUtYjM4My00MjJmLWE1ZmEtZGNmMDFmMTk2NjI5"
+            }
+          }
+        },
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "playlistV2({\"id\":\"04150d7a-d471-48de-a144-54b00474e59f\"})": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "playlistActivityFeed({\"pagination\":{\"after\":null,\"first\":15},\"playlistId\":\"04150d7a-d471-48de-a144-54b00474e59f\"})": {
+            "__ref": "PlaylistActionConnection:04150d7a-d471-48de-a144-54b00474e59f"
+          }
+        },
+        "Track:935562a1-d786-459c-8547-2e14f05bbead": {
+          "__typename": "Track",
+          "id": "935562a1-d786-459c-8547-2e14f05bbead"
+        },
+        "Media:50319195-8505-44f8-8c25-90deea92311f": {
+          "__typename": "Media",
+          "id": "50319195-8505-44f8-8c25-90deea92311f",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/e4d26ee4-07bf-4904-839e-7fae94e3f057/RELEASE_COVER_IMAGE/4091670-newImage.png"
+        },
+        "Media:7f8e0064-b312-4de6-911b-a1c38b9db7d8": {
+          "__typename": "Media",
+          "id": "7f8e0064-b312-4de6-911b-a1c38b9db7d8",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/e4d26ee4-07bf-4904-839e-7fae94e3f057/RELEASE_GOLDEN_EGG_IMAGE/3802282-newImage.png"
+        },
+        "EggGame:43712abd-213b-4b72-b49f-b118ec9d6bd5": {
+          "__typename": "EggGame",
+          "id": "43712abd-213b-4b72-b49f-b118ec9d6bd5",
+          "goldenEggImage": {
+            "__ref": "Media:7f8e0064-b312-4de6-911b-a1c38b9db7d8"
+          },
+          "animatedGoldenEggImageOptimized": null
+        },
+        "Artist:e4d26ee4-07bf-4904-839e-7fae94e3f057": {
+          "__typename": "Artist",
+          "id": "e4d26ee4-07bf-4904-839e-7fae94e3f057",
+          "name": "LNRZ",
+          "soundHandle": "lnrz"
+        },
+        "Release:3d563897-165c-48d4-af0c-a0af373c83ea": {
+          "__typename": "Release",
+          "id": "3d563897-165c-48d4-af0c-a0af373c83ea",
+          "track": {
+            "__ref": "Track:935562a1-d786-459c-8547-2e14f05bbead"
+          },
+          "coverImage": {
+            "__ref": "Media:50319195-8505-44f8-8c25-90deea92311f"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": {
+            "__ref": "EggGame:43712abd-213b-4b72-b49f-b118ec9d6bd5"
+          },
+          "title": "Jon Waltz x Tate Tucker - Safeguard",
+          "titleSlug": "jon-waltz-x-tate-tucker-safeguard",
+          "artist": {
+            "__ref": "Artist:e4d26ee4-07bf-4904-839e-7fae94e3f057"
+          }
+        },
+        "ReleasesAddedToPlaylist:0c18509c-7e5a-4f3f-be79-c192838df74f": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "0c18509c-7e5a-4f3f-be79-c192838df74f",
+          "date": "2023-01-20T16:28:48.032Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:3d563897-165c-48d4-af0c-a0af373c83ea"
+                }
+              }
+            ]
+          }
+        },
+        "Track:7fd98dce-a04d-4786-8edc-47b9c75ad025": {
+          "__typename": "Track",
+          "id": "7fd98dce-a04d-4786-8edc-47b9c75ad025"
+        },
+        "Media:857aeaef-075b-4119-8381-4a77803f03c1": {
+          "__typename": "Media",
+          "id": "857aeaef-075b-4119-8381-4a77803f03c1",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/a57908a9-627c-4879-a23d-1eae5c2c5683/RELEASE_COVER_IMAGE/929119-default"
+        },
+        "Media:ce545391-1904-4e86-b239-20ac258794a0": {
+          "__typename": "Media",
+          "id": "ce545391-1904-4e86-b239-20ac258794a0",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/a57908a9-627c-4879-a23d-1eae5c2c5683/RELEASE_GOLDEN_EGG_IMAGE/5456391-default"
+        },
+        "EggGame:025fe83b-cc9c-4968-8359-54bf5a796a81": {
+          "__typename": "EggGame",
+          "id": "025fe83b-cc9c-4968-8359-54bf5a796a81",
+          "goldenEggImage": {
+            "__ref": "Media:ce545391-1904-4e86-b239-20ac258794a0"
+          },
+          "animatedGoldenEggImageOptimized": null
+        },
+        "Artist:a57908a9-627c-4879-a23d-1eae5c2c5683": {
+          "__typename": "Artist",
+          "id": "a57908a9-627c-4879-a23d-1eae5c2c5683",
+          "name": "Devault",
+          "soundHandle": "devault"
+        },
+        "Release:2aa7a71f-cffd-45b9-b3e6-1c813a15d049": {
+          "__typename": "Release",
+          "id": "2aa7a71f-cffd-45b9-b3e6-1c813a15d049",
+          "track": {
+            "__ref": "Track:7fd98dce-a04d-4786-8edc-47b9c75ad025"
+          },
+          "coverImage": {
+            "__ref": "Media:857aeaef-075b-4119-8381-4a77803f03c1"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": {
+            "__ref": "EggGame:025fe83b-cc9c-4968-8359-54bf5a796a81"
+          },
+          "title": "I WILL ",
+          "titleSlug": "i-will",
+          "artist": {
+            "__ref": "Artist:a57908a9-627c-4879-a23d-1eae5c2c5683"
+          }
+        },
+        "ReleasesAddedToPlaylist:54a6cb8c-e079-4c9b-9522-ae92bf9f993f": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "54a6cb8c-e079-4c9b-9522-ae92bf9f993f",
+          "date": "2023-01-20T16:18:40.907Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:2aa7a71f-cffd-45b9-b3e6-1c813a15d049"
+                }
+              }
+            ]
+          }
+        },
+        "Track:e4433f65-f374-476c-a895-4f2dde1736b4": {
+          "__typename": "Track",
+          "id": "e4433f65-f374-476c-a895-4f2dde1736b4"
+        },
+        "Media:8454f551-9867-4225-bf19-280a4c4a4619": {
+          "__typename": "Media",
+          "id": "8454f551-9867-4225-bf19-280a4c4a4619",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/83612508-7b9b-4d62-b032-f195736236e0/RELEASE_COVER_IMAGE/5281259-newImage.png"
+        },
+        "Media:4bc93d78-b873-47f5-8032-fee5a2a828ec": {
+          "__typename": "Media",
+          "id": "4bc93d78-b873-47f5-8032-fee5a2a828ec",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/83612508-7b9b-4d62-b032-f195736236e0/RELEASE_GOLDEN_EGG_IMAGE/1935120-newImage.png"
+        },
+        "EggGame:3c7c0c85-9bbd-4de8-949b-ca08dd2d4e8a": {
+          "__typename": "EggGame",
+          "id": "3c7c0c85-9bbd-4de8-949b-ca08dd2d4e8a",
+          "goldenEggImage": {
+            "__ref": "Media:4bc93d78-b873-47f5-8032-fee5a2a828ec"
+          },
+          "animatedGoldenEggImageOptimized": null
+        },
+        "Artist:83612508-7b9b-4d62-b032-f195736236e0": {
+          "__typename": "Artist",
+          "id": "83612508-7b9b-4d62-b032-f195736236e0",
+          "name": "Kathleen Regan",
+          "soundHandle": "kathleenregan"
+        },
+        "Release:d013ff88-c2bb-46de-9717-feebb3437b85": {
+          "__typename": "Release",
+          "id": "d013ff88-c2bb-46de-9717-feebb3437b85",
+          "track": {
+            "__ref": "Track:e4433f65-f374-476c-a895-4f2dde1736b4"
+          },
+          "coverImage": {
+            "__ref": "Media:8454f551-9867-4225-bf19-280a4c4a4619"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": {
+            "__ref": "EggGame:3c7c0c85-9bbd-4de8-949b-ca08dd2d4e8a"
+          },
+          "title": "I Wrote this Today",
+          "titleSlug": "i-wrote-this-today",
+          "artist": {
+            "__ref": "Artist:83612508-7b9b-4d62-b032-f195736236e0"
+          }
+        },
+        "ReleasesAddedToPlaylist:55146829-8c5c-45e9-a525-cf5407a566cd": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "55146829-8c5c-45e9-a525-cf5407a566cd",
+          "date": "2023-01-20T16:00:30.571Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:d013ff88-c2bb-46de-9717-feebb3437b85"
+                }
+              }
+            ]
+          }
+        },
+        "Track:6d37f670-2fe5-463b-86e6-46a8547e8cb9": {
+          "__typename": "Track",
+          "id": "6d37f670-2fe5-463b-86e6-46a8547e8cb9"
+        },
+        "Media:c230af6c-17fa-469c-8d0e-6094e2fdc9e0": {
+          "__typename": "Media",
+          "id": "c230af6c-17fa-469c-8d0e-6094e2fdc9e0",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/e4d26ee4-07bf-4904-839e-7fae94e3f057/RELEASE_COVER_IMAGE/7359573-newImage.png"
+        },
+        "Media:ad7ffbdd-5c88-4a63-a794-0536e5989558": {
+          "__typename": "Media",
+          "id": "ad7ffbdd-5c88-4a63-a794-0536e5989558",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/e4d26ee4-07bf-4904-839e-7fae94e3f057/RELEASE_GOLDEN_EGG_IMAGE/2212079-newImage.png"
+        },
+        "EggGame:08d68127-515e-4e35-a0b1-6cb4587534d8": {
+          "__typename": "EggGame",
+          "id": "08d68127-515e-4e35-a0b1-6cb4587534d8",
+          "goldenEggImage": {
+            "__ref": "Media:ad7ffbdd-5c88-4a63-a794-0536e5989558"
+          },
+          "animatedGoldenEggImageOptimized": null
+        },
+        "Release:514723fd-877e-42f8-a2c4-eff1a9d42395": {
+          "__typename": "Release",
+          "id": "514723fd-877e-42f8-a2c4-eff1a9d42395",
+          "track": {
+            "__ref": "Track:6d37f670-2fe5-463b-86e6-46a8547e8cb9"
+          },
+          "coverImage": {
+            "__ref": "Media:c230af6c-17fa-469c-8d0e-6094e2fdc9e0"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": {
+            "__ref": "EggGame:08d68127-515e-4e35-a0b1-6cb4587534d8"
+          },
+          "title": "Mija x Mark Evans - No Matter What I Do",
+          "titleSlug": "mija-x-mark-evans-no-matter-what-i-do",
+          "artist": {
+            "__ref": "Artist:e4d26ee4-07bf-4904-839e-7fae94e3f057"
+          }
+        },
+        "ReleasesAddedToPlaylist:a0ef7c20-0da8-49a3-a1ad-65d316b7c51b": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "a0ef7c20-0da8-49a3-a1ad-65d316b7c51b",
+          "date": "2023-01-20T15:25:03.566Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:514723fd-877e-42f8-a2c4-eff1a9d42395"
+                }
+              }
+            ]
+          }
+        },
+        "Track:a7f920f4-010c-4d42-ae1e-60fb130705ce": {
+          "__typename": "Track",
+          "id": "a7f920f4-010c-4d42-ae1e-60fb130705ce"
+        },
+        "Media:38da9ab6-4bd9-4b94-9d46-d12e9ddba06f": {
+          "__typename": "Media",
+          "id": "38da9ab6-4bd9-4b94-9d46-d12e9ddba06f",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/e21cca40-62bf-4cf4-ae27-5101781460ab/RELEASE_COVER_IMAGE/5702784-default"
+        },
+        "Media:420ed142-5e51-4a74-ba5f-78a410ef14fd": {
+          "__typename": "Media",
+          "id": "420ed142-5e51-4a74-ba5f-78a410ef14fd",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/e21cca40-62bf-4cf4-ae27-5101781460ab/RELEASE_GOLDEN_EGG_IMAGE/4224073-default"
+        },
+        "EggGame:7ba9f721-f9de-4e2a-b1c9-0f3c5b21315e": {
+          "__typename": "EggGame",
+          "id": "7ba9f721-f9de-4e2a-b1c9-0f3c5b21315e",
+          "goldenEggImage": {
+            "__ref": "Media:420ed142-5e51-4a74-ba5f-78a410ef14fd"
+          },
+          "animatedGoldenEggImageOptimized": null
+        },
+        "Artist:e21cca40-62bf-4cf4-ae27-5101781460ab": {
+          "__typename": "Artist",
+          "id": "e21cca40-62bf-4cf4-ae27-5101781460ab",
+          "name": "Mark de Clive-Lowe",
+          "soundHandle": "mdcl"
+        },
+        "Release:1b8f9b3e-dd8c-489f-98cd-57bc1f2130f9": {
+          "__typename": "Release",
+          "id": "1b8f9b3e-dd8c-489f-98cd-57bc1f2130f9",
+          "track": {
+            "__ref": "Track:a7f920f4-010c-4d42-ae1e-60fb130705ce"
+          },
+          "coverImage": {
+            "__ref": "Media:38da9ab6-4bd9-4b94-9d46-d12e9ddba06f"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": {
+            "__ref": "EggGame:7ba9f721-f9de-4e2a-b1c9-0f3c5b21315e"
+          },
+          "title": "My\u014dken",
+          "titleSlug": "myoken",
+          "artist": {
+            "__ref": "Artist:e21cca40-62bf-4cf4-ae27-5101781460ab"
+          }
+        },
+        "ReleasesAddedToPlaylist:204f0c4b-f76f-4135-a213-6f2fd384690b": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "204f0c4b-f76f-4135-a213-6f2fd384690b",
+          "date": "2023-01-20T15:15:57.909Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:1b8f9b3e-dd8c-489f-98cd-57bc1f2130f9"
+                }
+              }
+            ]
+          }
+        },
+        "Track:7ab64317-263d-45c4-bd84-3d7c8033f223": {
+          "__typename": "Track",
+          "id": "7ab64317-263d-45c4-bd84-3d7c8033f223"
+        },
+        "Media:cdc83647-e9fd-4955-86fc-11395bf2a11d": {
+          "__typename": "Media",
+          "id": "cdc83647-e9fd-4955-86fc-11395bf2a11d",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/74a94bf7-133b-402b-8e6d-22073d16409f/RELEASE_COVER_IMAGE/7705223-newImage.png"
+        },
+        "Media:9505fd73-4cdf-455c-91fe-43a3cc2ca852": {
+          "__typename": "Media",
+          "id": "9505fd73-4cdf-455c-91fe-43a3cc2ca852",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/74a94bf7-133b-402b-8e6d-22073d16409f/RELEASE_GOLDEN_EGG_IMAGE/9799263-newImage.png"
+        },
+        "EggGame:da4deebb-7ccd-4700-859d-2f7453959ffd": {
+          "__typename": "EggGame",
+          "id": "da4deebb-7ccd-4700-859d-2f7453959ffd",
+          "goldenEggImage": {
+            "__ref": "Media:9505fd73-4cdf-455c-91fe-43a3cc2ca852"
+          },
+          "animatedGoldenEggImageOptimized": null
+        },
+        "Artist:74a94bf7-133b-402b-8e6d-22073d16409f": {
+          "__typename": "Artist",
+          "id": "74a94bf7-133b-402b-8e6d-22073d16409f",
+          "name": "Mark Evans",
+          "soundHandle": "markevans"
+        },
+        "Release:cb8dee15-106c-4bee-92f1-ecb0c345a132": {
+          "__typename": "Release",
+          "id": "cb8dee15-106c-4bee-92f1-ecb0c345a132",
+          "track": {
+            "__ref": "Track:7ab64317-263d-45c4-bd84-3d7c8033f223"
+          },
+          "coverImage": {
+            "__ref": "Media:cdc83647-e9fd-4955-86fc-11395bf2a11d"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": {
+            "__ref": "EggGame:da4deebb-7ccd-4700-859d-2f7453959ffd"
+          },
+          "title": "lofi tape",
+          "titleSlug": "lofi-tape",
+          "artist": {
+            "__ref": "Artist:74a94bf7-133b-402b-8e6d-22073d16409f"
+          }
+        },
+        "ReleasesAddedToPlaylist:c0b64efb-8137-4150-af93-e31c9cbb214d": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "c0b64efb-8137-4150-af93-e31c9cbb214d",
+          "date": "2023-01-20T14:54:36.491Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:cb8dee15-106c-4bee-92f1-ecb0c345a132"
+                }
+              }
+            ]
+          }
+        },
+        "Track:fa55a6be-169b-4b46-ad51-ccb06d455c08": {
+          "__typename": "Track",
+          "id": "fa55a6be-169b-4b46-ad51-ccb06d455c08"
+        },
+        "Media:648187d1-5c22-4671-831e-8e2a632c11da": {
+          "__typename": "Media",
+          "id": "648187d1-5c22-4671-831e-8e2a632c11da",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/949430a7-2b9e-4024-a922-2d88f480ba3d/RELEASE_COVER_IMAGE/4489425-newImage.png"
+        },
+        "Media:bb1af76f-46d0-43b7-b6c1-8072931f3632": {
+          "__typename": "Media",
+          "id": "bb1af76f-46d0-43b7-b6c1-8072931f3632",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/949430a7-2b9e-4024-a922-2d88f480ba3d/RELEASE_GOLDEN_EGG_IMAGE/8642379-newImage.png"
+        },
+        "EggGame:0cc20b38-fc68-49a6-97df-cf2d52f92f06": {
+          "__typename": "EggGame",
+          "id": "0cc20b38-fc68-49a6-97df-cf2d52f92f06",
+          "goldenEggImage": {
+            "__ref": "Media:bb1af76f-46d0-43b7-b6c1-8072931f3632"
+          },
+          "animatedGoldenEggImageOptimized": null
+        },
+        "Artist:949430a7-2b9e-4024-a922-2d88f480ba3d": {
+          "__typename": "Artist",
+          "id": "949430a7-2b9e-4024-a922-2d88f480ba3d",
+          "name": "R\u00dcDE C\u00c5T",
+          "soundHandle": "rudecat",
+          "user": {
+            "__ref": "User:68f76750-4c02-4242-af03-7cf9e7f1bf94"
+          }
+        },
+        "Release:32d1edf4-695b-4aa4-8831-3a87e9cd380a": {
+          "__typename": "Release",
+          "id": "32d1edf4-695b-4aa4-8831-3a87e9cd380a",
+          "track": {
+            "__ref": "Track:fa55a6be-169b-4b46-ad51-ccb06d455c08"
+          },
+          "coverImage": {
+            "__ref": "Media:648187d1-5c22-4671-831e-8e2a632c11da"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": {
+            "__ref": "EggGame:0cc20b38-fc68-49a6-97df-cf2d52f92f06"
+          },
+          "title": "Do You Mind",
+          "titleSlug": "do-you-mind",
+          "artist": {
+            "__ref": "Artist:949430a7-2b9e-4024-a922-2d88f480ba3d"
+          }
+        },
+        "ReleasesAddedToPlaylist:754f8075-25eb-4d80-a513-7b632e72efbe": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "754f8075-25eb-4d80-a513-7b632e72efbe",
+          "date": "2023-01-20T14:54:27.967Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:32d1edf4-695b-4aa4-8831-3a87e9cd380a"
+                }
+              }
+            ]
+          }
+        },
+        "Track:7521420c-c924-405a-b2c9-7d29ba7e8f68": {
+          "__typename": "Track",
+          "id": "7521420c-c924-405a-b2c9-7d29ba7e8f68"
+        },
+        "Media:b2f2343e-d5a9-4299-bf53-ef43884da51c": {
+          "__typename": "Media",
+          "id": "b2f2343e-d5a9-4299-bf53-ef43884da51c",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88acadd3-c4a1-4966-b736-d3ce9efc690e/RELEASE_COVER_IMAGE/2636649-newImage.png"
+        },
+        "Media:db5cb389-c314-4eb1-bc7a-0b696937bab4": {
+          "__typename": "Media",
+          "id": "db5cb389-c314-4eb1-bc7a-0b696937bab4",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88acadd3-c4a1-4966-b736-d3ce9efc690e/RELEASE_GOLDEN_EGG_IMAGE/4343317-newImage.png"
+        },
+        "EggGame:da5d7b6b-fb9d-4650-a260-85821da24eed": {
+          "__typename": "EggGame",
+          "id": "da5d7b6b-fb9d-4650-a260-85821da24eed",
+          "goldenEggImage": {
+            "__ref": "Media:db5cb389-c314-4eb1-bc7a-0b696937bab4"
+          },
+          "animatedGoldenEggImageOptimized": null
+        },
+        "Artist:88acadd3-c4a1-4966-b736-d3ce9efc690e": {
+          "__typename": "Artist",
+          "id": "88acadd3-c4a1-4966-b736-d3ce9efc690e",
+          "name": "pearson",
+          "soundHandle": "pearson"
+        },
+        "Release:8b160a66-ff67-497d-bfc6-b6ebf198cc5a": {
+          "__typename": "Release",
+          "id": "8b160a66-ff67-497d-bfc6-b6ebf198cc5a",
+          "track": {
+            "__ref": "Track:7521420c-c924-405a-b2c9-7d29ba7e8f68"
+          },
+          "coverImage": {
+            "__ref": "Media:b2f2343e-d5a9-4299-bf53-ef43884da51c"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": {
+            "__ref": "EggGame:da5d7b6b-fb9d-4650-a260-85821da24eed"
+          },
+          "title": "procrastinate",
+          "titleSlug": "procrastinate",
+          "artist": {
+            "__ref": "Artist:88acadd3-c4a1-4966-b736-d3ce9efc690e"
+          }
+        },
+        "ReleasesAddedToPlaylist:3740f9b3-3344-4062-9ac4-7a9fc26557c2": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "3740f9b3-3344-4062-9ac4-7a9fc26557c2",
+          "date": "2023-01-20T14:54:10.806Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:8b160a66-ff67-497d-bfc6-b6ebf198cc5a"
+                }
+              }
+            ]
+          }
+        },
+        "Track:5892a3fd-b2d3-4868-b762-7263623b92d9": {
+          "__typename": "Track",
+          "id": "5892a3fd-b2d3-4868-b762-7263623b92d9",
+          "duration": 188,
+          "revealedAudio": {
+            "__ref": "Media:f902b686-60f1-4559-bee5-e5df57b34497"
+          },
+          "release": {
+            "__ref": "Release:c1de234f-daaf-41c7-a9cc-8f41ae5762a5"
+          }
+        },
+        "Media:c2060aac-e86b-4a9e-993a-04d71a9c6c67": {
+          "__typename": "Media",
+          "id": "c2060aac-e86b-4a9e-993a-04d71a9c6c67",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/ff7ecfde-91bf-45d4-a104-f49d19c93ce6/RELEASE_COVER_IMAGE/3032802-newImage.png"
+        },
+        "Media:76addb99-f637-4758-ad68-e7274e768825": {
+          "__typename": "Media",
+          "id": "76addb99-f637-4758-ad68-e7274e768825",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/ff7ecfde-91bf-45d4-a104-f49d19c93ce6/RELEASE_GOLDEN_EGG_IMAGE/6324809-newImage.png"
+        },
+        "EggGame:08696c45-8b19-4c2b-93e6-caff3a39bd59": {
+          "__typename": "EggGame",
+          "id": "08696c45-8b19-4c2b-93e6-caff3a39bd59",
+          "goldenEggImage": {
+            "__ref": "Media:76addb99-f637-4758-ad68-e7274e768825"
+          },
+          "animatedGoldenEggImageOptimized": null
+        },
+        "Artist:ff7ecfde-91bf-45d4-a104-f49d19c93ce6": {
+          "__typename": "Artist",
+          "id": "ff7ecfde-91bf-45d4-a104-f49d19c93ce6",
+          "name": "Edwin",
+          "soundHandle": "edwin",
+          "user": {
+            "__ref": "User:5e475aaa-bc6f-4f28-88f3-e291045848a0"
+          }
+        },
+        "Release:c1de234f-daaf-41c7-a9cc-8f41ae5762a5": {
+          "__typename": "Release",
+          "id": "c1de234f-daaf-41c7-a9cc-8f41ae5762a5",
+          "track": {
+            "__ref": "Track:5892a3fd-b2d3-4868-b762-7263623b92d9"
+          },
+          "coverImage": {
+            "__ref": "Media:c2060aac-e86b-4a9e-993a-04d71a9c6c67"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": {
+            "__ref": "EggGame:08696c45-8b19-4c2b-93e6-caff3a39bd59"
+          },
+          "title": "For You",
+          "titleSlug": "for-you",
+          "artist": {
+            "__ref": "Artist:ff7ecfde-91bf-45d4-a104-f49d19c93ce6"
+          },
+          "quantityUpperBound": 30,
+          "publicListeningParty": 1673380800000,
+          "type": "SINGLE"
+        },
+        "ReleasesAddedToPlaylist:01d26130-7183-4e6d-8afc-d9d87a69cd8a": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "01d26130-7183-4e6d-8afc-d9d87a69cd8a",
+          "date": "2023-01-20T14:53:49.070Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:c1de234f-daaf-41c7-a9cc-8f41ae5762a5"
+                }
+              }
+            ]
+          }
+        },
+        "Track:2b6a6212-3641-4283-83c3-ebe1182004b7": {
+          "__typename": "Track",
+          "id": "2b6a6212-3641-4283-83c3-ebe1182004b7",
+          "duration": 154,
+          "revealedAudio": {
+            "__ref": "Media:561cb5c8-2c0b-4b2f-91aa-4556279019b6"
+          },
+          "release": {
+            "__ref": "Release:b107d9d6-d35f-4d76-80dd-e92dcbe832e9"
+          }
+        },
+        "Media:62bae8c8-c376-4446-892d-f5e743b83445": {
+          "__typename": "Media",
+          "id": "62bae8c8-c376-4446-892d-f5e743b83445",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/302f9c37-58be-4caa-99a2-d16235338ccb/RELEASE_COVER_IMAGE/3524092-newImage.png"
+        },
+        "Artist:302f9c37-58be-4caa-99a2-d16235338ccb": {
+          "__typename": "Artist",
+          "id": "302f9c37-58be-4caa-99a2-d16235338ccb",
+          "name": "Blk Orchid",
+          "soundHandle": "iamblkorchid",
+          "user": {
+            "__ref": "User:612fb5db-8273-4dee-a901-a2fee8a95df1"
+          }
+        },
+        "Release:b107d9d6-d35f-4d76-80dd-e92dcbe832e9": {
+          "__typename": "Release",
+          "id": "b107d9d6-d35f-4d76-80dd-e92dcbe832e9",
+          "track": {
+            "__ref": "Track:2b6a6212-3641-4283-83c3-ebe1182004b7"
+          },
+          "coverImage": {
+            "__ref": "Media:62bae8c8-c376-4446-892d-f5e743b83445"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": null,
+          "title": "Keep Pushing",
+          "titleSlug": "keep-pushing",
+          "artist": {
+            "__ref": "Artist:302f9c37-58be-4caa-99a2-d16235338ccb"
+          },
+          "quantityUpperBound": 25,
+          "publicListeningParty": 1673388000000,
+          "type": "SINGLE"
+        },
+        "ReleasesAddedToPlaylist:0440ba65-500b-428d-9c38-e69073771018": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "0440ba65-500b-428d-9c38-e69073771018",
+          "date": "2023-01-20T14:53:42.329Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:b107d9d6-d35f-4d76-80dd-e92dcbe832e9"
+                }
+              }
+            ]
+          }
+        },
+        "Track:5a3d7123-a202-4a00-a89f-46f697a3ac8d": {
+          "__typename": "Track",
+          "id": "5a3d7123-a202-4a00-a89f-46f697a3ac8d",
+          "duration": 222,
+          "revealedAudio": {
+            "__ref": "Media:209a4c2f-7704-4cd3-a335-61699417616f"
+          },
+          "release": {
+            "__ref": "Release:94042d13-d950-426a-aa7c-f24ba35f5ed7"
+          }
+        },
+        "Media:a7294df4-fa2e-4dac-be2d-f1a3a9f368de": {
+          "__typename": "Media",
+          "id": "a7294df4-fa2e-4dac-be2d-f1a3a9f368de",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/0bc9d819-b21e-4d81-b5b7-b878712cc54f/RELEASE_COVER_IMAGE/5304655-newImage.png"
+        },
+        "Artist:0bc9d819-b21e-4d81-b5b7-b878712cc54f": {
+          "__typename": "Artist",
+          "id": "0bc9d819-b21e-4d81-b5b7-b878712cc54f",
+          "name": "Yasminah",
+          "soundHandle": "yasminah",
+          "user": {
+            "__ref": "User:c9ee1e4c-6e6b-491c-ac73-b565189a411a"
+          }
+        },
+        "Release:94042d13-d950-426a-aa7c-f24ba35f5ed7": {
+          "__typename": "Release",
+          "id": "94042d13-d950-426a-aa7c-f24ba35f5ed7",
+          "track": {
+            "__ref": "Track:5a3d7123-a202-4a00-a89f-46f697a3ac8d"
+          },
+          "coverImage": {
+            "__ref": "Media:a7294df4-fa2e-4dac-be2d-f1a3a9f368de"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": null,
+          "title": "Think of You",
+          "titleSlug": "think-of-you",
+          "artist": {
+            "__ref": "Artist:0bc9d819-b21e-4d81-b5b7-b878712cc54f"
+          },
+          "quantityUpperBound": 25,
+          "publicListeningParty": 1673388000000,
+          "type": "SINGLE"
+        },
+        "ReleasesAddedToPlaylist:cb83efcb-35a1-4912-9e3a-dd48b1f2d420": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "cb83efcb-35a1-4912-9e3a-dd48b1f2d420",
+          "date": "2023-01-20T14:53:24.541Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:94042d13-d950-426a-aa7c-f24ba35f5ed7"
+                }
+              }
+            ]
+          }
+        },
+        "Track:c12bb74e-32ef-42e7-afd5-674966309932": {
+          "__typename": "Track",
+          "id": "c12bb74e-32ef-42e7-afd5-674966309932",
+          "duration": 186,
+          "revealedAudio": {
+            "__ref": "Media:e744bc4e-1039-4995-b63d-ee10eb577a2e"
+          },
+          "release": {
+            "__ref": "Release:41fa837f-0f21-41cc-9f0a-06b084d537f3"
+          }
+        },
+        "Media:6eb3abb0-60c1-40d5-b88d-c1a09965f474": {
+          "__typename": "Media",
+          "id": "6eb3abb0-60c1-40d5-b88d-c1a09965f474",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/f706dbd2-9208-4cd2-ad16-935a836aea5c/RELEASE_COVER_IMAGE/1667606-newImage.png"
+        },
+        "Artist:f706dbd2-9208-4cd2-ad16-935a836aea5c": {
+          "__typename": "Artist",
+          "id": "f706dbd2-9208-4cd2-ad16-935a836aea5c",
+          "name": "Kelechief",
+          "soundHandle": "kelechief",
+          "user": {
+            "__ref": "User:26b1fa30-0467-4738-8395-1a072f0bee73"
+          }
+        },
+        "Release:41fa837f-0f21-41cc-9f0a-06b084d537f3": {
+          "__typename": "Release",
+          "id": "41fa837f-0f21-41cc-9f0a-06b084d537f3",
+          "track": {
+            "__ref": "Track:c12bb74e-32ef-42e7-afd5-674966309932"
+          },
+          "coverImage": {
+            "__ref": "Media:6eb3abb0-60c1-40d5-b88d-c1a09965f474"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": null,
+          "title": "Fine Wine feat Amaarae",
+          "titleSlug": "fine-wine-feat-amaarae",
+          "artist": {
+            "__ref": "Artist:f706dbd2-9208-4cd2-ad16-935a836aea5c"
+          },
+          "quantityUpperBound": 25,
+          "publicListeningParty": 1674165600000,
+          "type": "SINGLE"
+        },
+        "ReleasesAddedToPlaylist:7efdf75f-0568-487f-9b39-d2756331635f": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "7efdf75f-0568-487f-9b39-d2756331635f",
+          "date": "2023-01-20T14:52:54.918Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:41fa837f-0f21-41cc-9f0a-06b084d537f3"
+                }
+              }
+            ]
+          }
+        },
+        "Track:aad9df2a-7e96-4842-9c74-7211b7267a6c": {
+          "__typename": "Track",
+          "id": "aad9df2a-7e96-4842-9c74-7211b7267a6c",
+          "duration": 152,
+          "revealedAudio": {
+            "__ref": "Media:c489b57f-a2c0-40c7-bab1-2ca9708c7380"
+          },
+          "release": {
+            "__ref": "Release:cb8ba18e-2fcb-42ec-991c-45bce3fbbc06"
+          }
+        },
+        "Media:cda061c7-e66c-4b97-851a-dec761ae0548": {
+          "__typename": "Media",
+          "id": "cda061c7-e66c-4b97-851a-dec761ae0548",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/949430a7-2b9e-4024-a922-2d88f480ba3d/RELEASE_COVER_IMAGE/9857797-newImage.png"
+        },
+        "Media:5874b735-b33e-44d7-8df0-b74054355bfd": {
+          "__typename": "Media",
+          "id": "5874b735-b33e-44d7-8df0-b74054355bfd",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/949430a7-2b9e-4024-a922-2d88f480ba3d/RELEASE_GOLDEN_EGG_IMAGE/2016258-newImage.png"
+        },
+        "EggGame:bc56ba93-ba9f-4c3b-80c5-fdbfdc6280cd": {
+          "__typename": "EggGame",
+          "id": "bc56ba93-ba9f-4c3b-80c5-fdbfdc6280cd",
+          "goldenEggImage": {
+            "__ref": "Media:5874b735-b33e-44d7-8df0-b74054355bfd"
+          },
+          "animatedGoldenEggImageOptimized": null
+        },
+        "Release:cb8ba18e-2fcb-42ec-991c-45bce3fbbc06": {
+          "__typename": "Release",
+          "id": "cb8ba18e-2fcb-42ec-991c-45bce3fbbc06",
+          "track": {
+            "__ref": "Track:aad9df2a-7e96-4842-9c74-7211b7267a6c"
+          },
+          "coverImage": {
+            "__ref": "Media:cda061c7-e66c-4b97-851a-dec761ae0548"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": {
+            "__ref": "EggGame:bc56ba93-ba9f-4c3b-80c5-fdbfdc6280cd"
+          },
+          "title": "Radio Silence Pt.1 (RAW)",
+          "titleSlug": "radio-silence-pt1-raw",
+          "artist": {
+            "__ref": "Artist:949430a7-2b9e-4024-a922-2d88f480ba3d"
+          },
+          "quantityUpperBound": 70,
+          "publicListeningParty": 1667592000000,
+          "type": "SINGLE"
+        },
+        "ReleasesAddedToPlaylist:f4b95d7b-f748-425e-a981-3ba490bb69f1": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "f4b95d7b-f748-425e-a981-3ba490bb69f1",
+          "date": "2023-01-20T06:13:49.753Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:cb8ba18e-2fcb-42ec-991c-45bce3fbbc06"
+                }
+              }
+            ]
+          }
+        },
+        "Track:91c6a647-deef-40fd-b491-8a731c0dec7a": {
+          "__typename": "Track",
+          "id": "91c6a647-deef-40fd-b491-8a731c0dec7a",
+          "duration": 137,
+          "revealedAudio": {
+            "__ref": "Media:dd0607b3-e2a2-428b-b634-ee8fc6c7acec"
+          },
+          "release": {
+            "__ref": "Release:37dde2f0-c9e7-4f6a-9ed1-d20843a58fb1"
+          }
+        },
+        "Media:471e05a9-18b6-4965-8bff-f08629b2d40e": {
+          "__typename": "Media",
+          "id": "471e05a9-18b6-4965-8bff-f08629b2d40e",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/568dd1ba-1dff-4317-8631-8f3b9e01a9d5/RELEASE_COVER_IMAGE/9159063-newImage.png"
+        },
+        "Media:5be3631e-1e67-454d-8e13-ba21f1a918d2": {
+          "__typename": "Media",
+          "id": "5be3631e-1e67-454d-8e13-ba21f1a918d2",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/568dd1ba-1dff-4317-8631-8f3b9e01a9d5/RELEASE_GOLDEN_EGG_IMAGE/544603-newImage.png"
+        },
+        "EggGame:50828745-ade7-475b-97b3-91dd8fb9c277": {
+          "__typename": "EggGame",
+          "id": "50828745-ade7-475b-97b3-91dd8fb9c277",
+          "goldenEggImage": {
+            "__ref": "Media:5be3631e-1e67-454d-8e13-ba21f1a918d2"
+          },
+          "animatedGoldenEggImageOptimized": null
+        },
+        "Artist:568dd1ba-1dff-4317-8631-8f3b9e01a9d5": {
+          "__typename": "Artist",
+          "id": "568dd1ba-1dff-4317-8631-8f3b9e01a9d5",
+          "name": "bloody white",
+          "soundHandle": "bloodywhite",
+          "user": {
+            "__ref": "User:160ffc56-bc64-4430-b27d-bc966c3260af"
+          }
+        },
+        "Release:37dde2f0-c9e7-4f6a-9ed1-d20843a58fb1": {
+          "__typename": "Release",
+          "id": "37dde2f0-c9e7-4f6a-9ed1-d20843a58fb1",
+          "track": {
+            "__ref": "Track:91c6a647-deef-40fd-b491-8a731c0dec7a"
+          },
+          "coverImage": {
+            "__ref": "Media:471e05a9-18b6-4965-8bff-f08629b2d40e"
+          },
+          "animatedCoverImage": null,
+          "staticCoverImage": null,
+          "eggGame": {
+            "__ref": "EggGame:50828745-ade7-475b-97b3-91dd8fb9c277"
+          },
+          "title": "APATHY",
+          "titleSlug": "apathy",
+          "artist": {
+            "__ref": "Artist:568dd1ba-1dff-4317-8631-8f3b9e01a9d5"
+          },
+          "quantityUpperBound": 75,
+          "publicListeningParty": 1669676400000,
+          "type": "SINGLE"
+        },
+        "ReleasesAddedToPlaylist:abcf8e7a-8a69-415e-8373-47df5b1cd8c2": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "abcf8e7a-8a69-415e-8373-47df5b1cd8c2",
+          "date": "2023-01-20T06:10:12.101Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:37dde2f0-c9e7-4f6a-9ed1-d20843a58fb1"
+                }
+              }
+            ]
+          }
+        },
+        "Track:595f5854-c035-4e14-8b22-febc469c05b1": {
+          "__typename": "Track",
+          "id": "595f5854-c035-4e14-8b22-febc469c05b1",
+          "duration": 188,
+          "revealedAudio": {
+            "__ref": "Media:55001570-784f-4d85-998f-6a6eb63cc0bc"
+          },
+          "release": {
+            "__ref": "Release:e81454c9-c8d2-48ea-aa4d-97bb915a9486"
+          }
+        },
+        "Media:ee150eb5-0441-46de-b9b9-89eee43f32c5": {
+          "__typename": "Media",
+          "id": "ee150eb5-0441-46de-b9b9-89eee43f32c5",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88ad8b00-0c9c-44b8-9b01-d27dd80617de/RELEASE_COVER_IMAGE/3250861-Green_Ring_-_In_The_Trees-optimized.gif"
+        },
+        "Media:6b28a0e6-1f31-45f5-9d13-8584296c2e84": {
+          "__typename": "Media",
+          "id": "6b28a0e6-1f31-45f5-9d13-8584296c2e84",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88ad8b00-0c9c-44b8-9b01-d27dd80617de/RELEASE_COVER_IMAGE/3250861-Green_Ring_-_In_The_Trees-optimized.gif/optimized_400x400.webp"
+        },
+        "Media:0bcc7316-7549-42f7-98c8-61a95a04a188": {
+          "__typename": "Media",
+          "id": "0bcc7316-7549-42f7-98c8-61a95a04a188",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88ad8b00-0c9c-44b8-9b01-d27dd80617de/RELEASE_COVER_IMAGE/3250861-Green_Ring_-_In_The_Trees-optimized.gif/static_autogen.png"
+        },
+        "Media:654b3cd6-23c9-4e89-8429-984aa99cea16": {
+          "__typename": "Media",
+          "id": "654b3cd6-23c9-4e89-8429-984aa99cea16",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88ad8b00-0c9c-44b8-9b01-d27dd80617de/RELEASE_GOLDEN_EGG_IMAGE/6459392-Green_Ring_-_In_The_Trees__Golden_Egg_.gif"
+        },
+        "Media:5d6cc58e-7bb5-4786-b203-a21bdabac414": {
+          "__typename": "Media",
+          "id": "5d6cc58e-7bb5-4786-b203-a21bdabac414",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88ad8b00-0c9c-44b8-9b01-d27dd80617de/RELEASE_GOLDEN_EGG_IMAGE/6459392-Green_Ring_-_In_The_Trees__Golden_Egg_.gif/optimized_400x400.webp"
+        },
+        "EggGame:e49ccb3b-f5bf-492f-93c3-a6a06b2d033e": {
+          "__typename": "EggGame",
+          "id": "e49ccb3b-f5bf-492f-93c3-a6a06b2d033e",
+          "goldenEggImage": {
+            "__ref": "Media:654b3cd6-23c9-4e89-8429-984aa99cea16"
+          },
+          "animatedGoldenEggImageOptimized": {
+            "__ref": "Media:5d6cc58e-7bb5-4786-b203-a21bdabac414"
+          }
+        },
+        "Artist:88ad8b00-0c9c-44b8-9b01-d27dd80617de": {
+          "__typename": "Artist",
+          "id": "88ad8b00-0c9c-44b8-9b01-d27dd80617de",
+          "name": "Green Ring",
+          "soundHandle": "greenring",
+          "user": {
+            "__ref": "User:bf39b9e5-ccc4-4427-86b4-c1fc51d5650a"
+          }
+        },
+        "Release:e81454c9-c8d2-48ea-aa4d-97bb915a9486": {
+          "__typename": "Release",
+          "id": "e81454c9-c8d2-48ea-aa4d-97bb915a9486",
+          "track": {
+            "__ref": "Track:595f5854-c035-4e14-8b22-febc469c05b1"
+          },
+          "coverImage": {
+            "__ref": "Media:ee150eb5-0441-46de-b9b9-89eee43f32c5"
+          },
+          "animatedCoverImage": {
+            "__ref": "Media:6b28a0e6-1f31-45f5-9d13-8584296c2e84"
+          },
+          "staticCoverImage": {
+            "__ref": "Media:0bcc7316-7549-42f7-98c8-61a95a04a188"
+          },
+          "eggGame": {
+            "__ref": "EggGame:e49ccb3b-f5bf-492f-93c3-a6a06b2d033e"
+          },
+          "title": "In The Trees",
+          "titleSlug": "in-the-trees",
+          "artist": {
+            "__ref": "Artist:88ad8b00-0c9c-44b8-9b01-d27dd80617de"
+          },
+          "quantityUpperBound": 40,
+          "publicListeningParty": 1667941200000,
+          "type": "SINGLE"
+        },
+        "ReleasesAddedToPlaylist:b99358cc-22b6-4be6-a3ba-05125c16a885": {
+          "__typename": "ReleasesAddedToPlaylist",
+          "id": "b99358cc-22b6-4be6-a3ba-05125c16a885",
+          "date": "2023-01-20T06:09:52.342Z",
+          "numAddedReleases": 1,
+          "playlist": {
+            "__ref": "Shelf:04150d7a-d471-48de-a144-54b00474e59f"
+          },
+          "addedReleases({\"pagination\":{\"first\":3}})": {
+            "__typename": "ReleaseConnection",
+            "edges": [
+              {
+                "__typename": "ReleaseConnectionEdge",
+                "node": {
+                  "__ref": "Release:e81454c9-c8d2-48ea-aa4d-97bb915a9486"
+                }
+              }
+            ]
+          }
+        },
+        "PlaylistActionConnection:04150d7a-d471-48de-a144-54b00474e59f": {
+          "__typename": "PlaylistActionConnection",
+          "pageInfo": {
+            "__typename": "PageInfo",
+            "hasNextPage": true,
+            "endCursor": "MTY3NDE5NDk5MjM0MnxiOTkzNThjYy0yMmI2LTRiZTYtYTNiYS0wNTEyNWMxNmE4ODU="
+          },
+          "edges": [
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:0c18509c-7e5a-4f3f-be79-c192838df74f"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:54a6cb8c-e079-4c9b-9522-ae92bf9f993f"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:55146829-8c5c-45e9-a525-cf5407a566cd"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:a0ef7c20-0da8-49a3-a1ad-65d316b7c51b"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:204f0c4b-f76f-4135-a213-6f2fd384690b"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:c0b64efb-8137-4150-af93-e31c9cbb214d"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:754f8075-25eb-4d80-a513-7b632e72efbe"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:3740f9b3-3344-4062-9ac4-7a9fc26557c2"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:01d26130-7183-4e6d-8afc-d9d87a69cd8a"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:0440ba65-500b-428d-9c38-e69073771018"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:cb83efcb-35a1-4912-9e3a-dd48b1f2d420"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:7efdf75f-0568-487f-9b39-d2756331635f"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:f4b95d7b-f748-425e-a981-3ba490bb69f1"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:abcf8e7a-8a69-415e-8373-47df5b1cd8c2"
+              }
+            },
+            {
+              "__typename": "PlaylistActionConnectionEdge",
+              "node": {
+                "__ref": "ReleasesAddedToPlaylist:b99358cc-22b6-4be6-a3ba-05125c16a885"
+              }
+            }
+          ],
+          "id": "04150d7a-d471-48de-a144-54b00474e59f"
+        },
+        "Track:5c2c6a78-d005-4642-bb17-8aa94a02e913": {
+          "__typename": "Track",
+          "id": "5c2c6a78-d005-4642-bb17-8aa94a02e913",
+          "duration": 165,
+          "revealedAudio": {
+            "__ref": "Media:ebfb6493-a203-4e89-b7a0-b49973070fa7"
+          },
+          "release": {
+            "__ref": "Release:9720a150-b942-4214-a87e-ad334cefb465"
+          }
+        },
+        "User:9f19fa8a-78ff-48b8-91dd-59807e0eb588": {
+          "__typename": "User",
+          "id": "9f19fa8a-78ff-48b8-91dd-59807e0eb588",
+          "publicAddress": "0xc59addc6ef782e002332bc8e4442bcc6b4879b01"
+        },
+        "Artist:3a8f7a30-1e89-4aea-b3e4-65b42896db81": {
+          "__typename": "Artist",
+          "id": "3a8f7a30-1e89-4aea-b3e4-65b42896db81",
+          "name": "valentina cy",
+          "soundHandle": "valentinacy",
+          "user": {
+            "__ref": "User:9f19fa8a-78ff-48b8-91dd-59807e0eb588"
+          }
+        },
+        "Media:ebfb6493-a203-4e89-b7a0-b49973070fa7": {
+          "__typename": "Media",
+          "id": "ebfb6493-a203-4e89-b7a0-b49973070fa7",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/5c2c6a78-d005-4642-bb17-8aa94a02e913/AUDIO_TRANSCODED/8499697-2178051-Paris_Master1.m4a"
+        },
+        "Track:7096af24-4929-49f1-9047-9731995adcc2": {
+          "__typename": "Track",
+          "id": "7096af24-4929-49f1-9047-9731995adcc2",
+          "duration": 160,
+          "revealedAudio": {
+            "__ref": "Media:e4018c75-46ab-4e7d-8193-51a3bed95f60"
+          },
+          "release": {
+            "__ref": "Release:a269b1d4-37ec-4214-bfd2-ae0623447405"
+          }
+        },
+        "Media:e4018c75-46ab-4e7d-8193-51a3bed95f60": {
+          "__typename": "Media",
+          "id": "e4018c75-46ab-4e7d-8193-51a3bed95f60",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/7096af24-4929-49f1-9047-9731995adcc2/AUDIO_TRANSCODED/5329565-12848-Ja_germeister___Master.m4a"
+        },
+        "Track:97636846-ef94-43aa-a7d8-d416736bc643": {
+          "__typename": "Track",
+          "id": "97636846-ef94-43aa-a7d8-d416736bc643",
+          "duration": 161,
+          "revealedAudio": {
+            "__ref": "Media:0a8e0570-a766-46f4-b3a2-c8489c437516"
+          },
+          "release": {
+            "__ref": "Release:057adb7c-2988-4cbc-9194-1fb5115a2659"
+          }
+        },
+        "Media:0a8e0570-a766-46f4-b3a2-c8489c437516": {
+          "__typename": "Media",
+          "id": "0a8e0570-a766-46f4-b3a2-c8489c437516",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/97636846-ef94-43aa-a7d8-d416736bc643/AUDIO_TRANSCODED/5193786-2263951-I_ll_Meet_You_Where_the_Lobsters_grow_Master.m4a"
+        },
+        "Track:1b41387a-3d38-4ede-9829-aba5b9a14d64": {
+          "__typename": "Track",
+          "id": "1b41387a-3d38-4ede-9829-aba5b9a14d64",
+          "duration": 181,
+          "revealedAudio": {
+            "__ref": "Media:bfcd8e52-e6e0-426c-8f42-ca63f411498a"
+          },
+          "release": {
+            "__ref": "Release:816da019-6bff-4ed5-a4c0-aa67eb842a72"
+          }
+        },
+        "Media:bfcd8e52-e6e0-426c-8f42-ca63f411498a": {
+          "__typename": "Media",
+          "id": "bfcd8e52-e6e0-426c-8f42-ca63f411498a",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/1b41387a-3d38-4ede-9829-aba5b9a14d64/AUDIO_TRANSCODED/2033859-5843968-I_Hate_1st_Dates.m4a"
+        },
+        "Release:675e58c0-89c9-407f-8a36-3a597a3cb243": {
+          "__typename": "Release",
+          "id": "675e58c0-89c9-407f-8a36-3a597a3cb243",
+          "track": {
+            "__ref": "Track:3d214b75-f381-400c-9455-d81ee496d1c0"
+          },
+          "artist": {
+            "__ref": "Artist:3a8f7a30-1e89-4aea-b3e4-65b42896db81"
+          },
+          "coverImage": {
+            "__ref": "Media:9a43217f-a5d5-4143-9948-bcf308cd698b"
+          },
+          "title": "the crevice of you",
+          "titleSlug": "the-crevice-of-you",
+          "quantityUpperBound": 20,
+          "publicListeningParty": 1671048000000,
+          "staticCoverImage": null,
+          "type": "SINGLE"
+        },
+        "Track:3d214b75-f381-400c-9455-d81ee496d1c0": {
+          "__typename": "Track",
+          "id": "3d214b75-f381-400c-9455-d81ee496d1c0",
+          "duration": 140,
+          "revealedAudio": {
+            "__ref": "Media:c6bfc6cc-3324-4bed-91de-1600b3e636b3"
+          },
+          "release": {
+            "__ref": "Release:675e58c0-89c9-407f-8a36-3a597a3cb243"
+          }
+        },
+        "Media:9a43217f-a5d5-4143-9948-bcf308cd698b": {
+          "__typename": "Media",
+          "id": "9a43217f-a5d5-4143-9948-bcf308cd698b",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/3a8f7a30-1e89-4aea-b3e4-65b42896db81/RELEASE_COVER_IMAGE/2878457-newImage.png"
+        },
+        "Media:c6bfc6cc-3324-4bed-91de-1600b3e636b3": {
+          "__typename": "Media",
+          "id": "c6bfc6cc-3324-4bed-91de-1600b3e636b3",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/3d214b75-f381-400c-9455-d81ee496d1c0/AUDIO_TRANSCODED/6716020-1056652-The_Crevice_of_You_master_rev2.m4a"
+        },
+        "ShelfRelease:3f35317b-7515-4df9-b99f-eccde70a878d": {
+          "__typename": "ShelfRelease",
+          "id": "3f35317b-7515-4df9-b99f-eccde70a878d",
+          "release": {
+            "__ref": "Release:675e58c0-89c9-407f-8a36-3a597a3cb243"
+          },
+          "addedAt": 1674176668860,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null,
+          "ownedGoldenEgg": null
+        },
+        "Release:b794a785-c98d-4b26-b5fd-a15f1a644086": {
+          "__typename": "Release",
+          "id": "b794a785-c98d-4b26-b5fd-a15f1a644086",
+          "track": {
+            "__ref": "Track:fe05fbaa-dd22-4ad3-9c5a-2e49729bbae1"
+          },
+          "artist": {
+            "__ref": "Artist:568dd1ba-1dff-4317-8631-8f3b9e01a9d5"
+          },
+          "coverImage": {
+            "__ref": "Media:b36b0108-ff28-4142-95e3-485adac50f2f"
+          },
+          "title": "pomegranate",
+          "titleSlug": "pomegranate",
+          "quantityUpperBound": 25,
+          "publicListeningParty": 1658959200000,
+          "staticCoverImage": null,
+          "type": "SINGLE"
+        },
+        "Track:fe05fbaa-dd22-4ad3-9c5a-2e49729bbae1": {
+          "__typename": "Track",
+          "id": "fe05fbaa-dd22-4ad3-9c5a-2e49729bbae1",
+          "duration": 208,
+          "revealedAudio": {
+            "__ref": "Media:2659b9e1-98d8-4d9a-8b8b-e9924e30b8bb"
+          },
+          "release": {
+            "__ref": "Release:b794a785-c98d-4b26-b5fd-a15f1a644086"
+          }
+        },
+        "User:160ffc56-bc64-4430-b27d-bc966c3260af": {
+          "__typename": "User",
+          "id": "160ffc56-bc64-4430-b27d-bc966c3260af",
+          "publicAddress": "0xd54094d09109dd8d30340d3dfb66356c838a3b0c"
+        },
+        "Media:b36b0108-ff28-4142-95e3-485adac50f2f": {
+          "__typename": "Media",
+          "id": "b36b0108-ff28-4142-95e3-485adac50f2f",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/568dd1ba-1dff-4317-8631-8f3b9e01a9d5/RELEASE_COVER_IMAGE/3299476-B7A72390-7FE0-4F6A-9FE5-801E212A07BF.JPG"
+        },
+        "Media:2659b9e1-98d8-4d9a-8b8b-e9924e30b8bb": {
+          "__typename": "Media",
+          "id": "2659b9e1-98d8-4d9a-8b8b-e9924e30b8bb",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fe05fbaa-dd22-4ad3-9c5a-2e49729bbae1/AUDIO_TRANSCODED/8771324-8588865-Pomegranite_Master_V1.m4a"
+        },
+        "ShelfRelease:a6beba5b-a453-45ff-8aee-e20f8b22092a": {
+          "__typename": "ShelfRelease",
+          "id": "a6beba5b-a453-45ff-8aee-e20f8b22092a",
+          "release": {
+            "__ref": "Release:b794a785-c98d-4b26-b5fd-a15f1a644086"
+          },
+          "addedAt": 1674194962660,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null,
+          "ownedGoldenEgg": null
+        },
+        "Release:2bd0aa63-0a70-4c73-9089-514e94fe4126": {
+          "__typename": "Release",
+          "id": "2bd0aa63-0a70-4c73-9089-514e94fe4126",
+          "track": {
+            "__ref": "Track:71855289-0ffc-4217-8128-fd76c120c1b0"
+          },
+          "artist": {
+            "__ref": "Artist:36342e73-1559-4ad4-9bcc-48cca84f1866"
+          },
+          "coverImage": {
+            "__ref": "Media:91c14a08-2459-4e6d-b61a-c8c6e9e5a9e7"
+          },
+          "title": "Too Close",
+          "titleSlug": "too-close",
+          "quantityUpperBound": 25,
+          "publicListeningParty": 1639087044000,
+          "staticCoverImage": {
+            "__ref": "Media:cdd3e7d4-df99-4de4-9298-0b573f8270a2"
+          },
+          "type": "SINGLE"
+        },
+        "Track:71855289-0ffc-4217-8128-fd76c120c1b0": {
+          "__typename": "Track",
+          "id": "71855289-0ffc-4217-8128-fd76c120c1b0",
+          "duration": 156,
+          "revealedAudio": {
+            "__ref": "Media:83c403cb-1ff3-483d-9594-941ea7ecf781"
+          },
+          "release": {
+            "__ref": "Release:2bd0aa63-0a70-4c73-9089-514e94fe4126"
+          }
+        },
+        "User:21efd574-9dac-4422-ac5c-e6c0a758e57e": {
+          "__typename": "User",
+          "id": "21efd574-9dac-4422-ac5c-e6c0a758e57e",
+          "publicAddress": "0xbcefc4906b443e4db64e2b00b9af2c39e76c785c"
+        },
+        "Artist:36342e73-1559-4ad4-9bcc-48cca84f1866": {
+          "__typename": "Artist",
+          "id": "36342e73-1559-4ad4-9bcc-48cca84f1866",
+          "name": "Daniel Allan",
+          "soundHandle": "danielallan",
+          "user": {
+            "__ref": "User:21efd574-9dac-4422-ac5c-e6c0a758e57e"
+          }
+        },
+        "Media:91c14a08-2459-4e6d-b61a-c8c6e9e5a9e7": {
+          "__typename": "Media",
+          "id": "91c14a08-2459-4e6d-b61a-c8c6e9e5a9e7",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/36342e73-1559-4ad4-9bcc-48cca84f1866/RELEASE_COVER_IMAGE/5357899-ezgif.com-gif-maker%2520(3).gif"
+        },
+        "Media:cdd3e7d4-df99-4de4-9298-0b573f8270a2": {
+          "__typename": "Media",
+          "id": "cdd3e7d4-df99-4de4-9298-0b573f8270a2",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/36342e73-1559-4ad4-9bcc-48cca84f1866/RELEASE_COVER_IMAGE/5357899-ezgif.com-gif-maker%2520(3).gif/static_autogen.png"
+        },
+        "Media:83c403cb-1ff3-483d-9594-941ea7ecf781": {
+          "__typename": "Media",
+          "id": "83c403cb-1ff3-483d-9594-941ea7ecf781",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/71855289-0ffc-4217-8128-fd76c120c1b0/AUDIO_TRANSCODED/5946283-3200742-Too%252520Close%2525208.26%252520V2.m4a"
+        },
+        "ShelfRelease:c7d29e9a-14f0-4642-b353-9af6a66eb593": {
+          "__typename": "ShelfRelease",
+          "id": "c7d29e9a-14f0-4642-b353-9af6a66eb593",
+          "release": {
+            "__ref": "Release:2bd0aa63-0a70-4c73-9089-514e94fe4126"
+          },
+          "addedAt": 1674194973250,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null,
+          "ownedGoldenEgg": null
+        },
+        "Release:5ea2aa3a-0166-4d50-ba4d-6d2fa37f88a6": {
+          "__typename": "Release",
+          "id": "5ea2aa3a-0166-4d50-ba4d-6d2fa37f88a6",
+          "track": {
+            "__ref": "Track:1271e4db-502e-4574-9243-0fbd92674318"
+          },
+          "artist": {
+            "__ref": "Artist:568dd1ba-1dff-4317-8631-8f3b9e01a9d5"
+          },
+          "coverImage": {
+            "__ref": "Media:ea121ab4-d5c3-4227-8c4b-4c71811c9088"
+          },
+          "title": "BLOOM",
+          "titleSlug": "bloom",
+          "quantityUpperBound": 50,
+          "publicListeningParty": 1663884000000,
+          "staticCoverImage": null,
+          "type": "SINGLE"
+        },
+        "Track:1271e4db-502e-4574-9243-0fbd92674318": {
+          "__typename": "Track",
+          "id": "1271e4db-502e-4574-9243-0fbd92674318",
+          "duration": 98,
+          "revealedAudio": {
+            "__ref": "Media:7dcaf145-02e1-40dc-badf-b11e1831f8ab"
+          },
+          "release": {
+            "__ref": "Release:5ea2aa3a-0166-4d50-ba4d-6d2fa37f88a6"
+          }
+        },
+        "Media:ea121ab4-d5c3-4227-8c4b-4c71811c9088": {
+          "__typename": "Media",
+          "id": "ea121ab4-d5c3-4227-8c4b-4c71811c9088",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/568dd1ba-1dff-4317-8631-8f3b9e01a9d5/RELEASE_COVER_IMAGE/4032535-default"
+        },
+        "Media:7dcaf145-02e1-40dc-badf-b11e1831f8ab": {
+          "__typename": "Media",
+          "id": "7dcaf145-02e1-40dc-badf-b11e1831f8ab",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/1271e4db-502e-4574-9243-0fbd92674318/AUDIO_TRANSCODED/817696-7856644-bloom__master___v1_.m4a"
+        },
+        "ShelfRelease:bff2040d-5dee-450c-8948-7a5f6f3d9de8": {
+          "__typename": "ShelfRelease",
+          "id": "bff2040d-5dee-450c-8948-7a5f6f3d9de8",
+          "release": {
+            "__ref": "Release:5ea2aa3a-0166-4d50-ba4d-6d2fa37f88a6"
+          },
+          "addedAt": 1674194982817,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null,
+          "ownedGoldenEgg": null
+        },
+        "User:bf39b9e5-ccc4-4427-86b4-c1fc51d5650a": {
+          "__typename": "User",
+          "id": "bf39b9e5-ccc4-4427-86b4-c1fc51d5650a",
+          "publicAddress": "0xc3af8efe3c865b8363a79b13b27db530eb5d24af"
+        },
+        "Media:55001570-784f-4d85-998f-6a6eb63cc0bc": {
+          "__typename": "Media",
+          "id": "55001570-784f-4d85-998f-6a6eb63cc0bc",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/595f5854-c035-4e14-8b22-febc469c05b1/AUDIO_TRANSCODED/7524596-366918-Green_Ring_-_In_The_Trees.m4a"
+        },
+        "ShelfRelease:d44f735d-a77f-416a-b9c0-f74e85a60dc6": {
+          "__typename": "ShelfRelease",
+          "id": "d44f735d-a77f-416a-b9c0-f74e85a60dc6",
+          "release": {
+            "__ref": "Release:e81454c9-c8d2-48ea-aa4d-97bb915a9486"
+          },
+          "addedAt": 1674194992342,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null,
+          "ownedGoldenEgg": null
+        },
+        "Media:dd0607b3-e2a2-428b-b634-ee8fc6c7acec": {
+          "__typename": "Media",
+          "id": "dd0607b3-e2a2-428b-b634-ee8fc6c7acec",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/91c6a647-deef-40fd-b491-8a731c0dec7a/AUDIO_TRANSCODED/3901238-1722642-phaethon__m_.m4a"
+        },
+        "ShelfRelease:d2171468-ae2c-4793-a4d4-ed3c501f1e1d": {
+          "__typename": "ShelfRelease",
+          "id": "d2171468-ae2c-4793-a4d4-ed3c501f1e1d",
+          "release": {
+            "__ref": "Release:37dde2f0-c9e7-4f6a-9ed1-d20843a58fb1"
+          },
+          "addedAt": 1674195012101,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null,
+          "ownedGoldenEgg": null
+        },
+        "User:68f76750-4c02-4242-af03-7cf9e7f1bf94": {
+          "__typename": "User",
+          "id": "68f76750-4c02-4242-af03-7cf9e7f1bf94",
+          "publicAddress": "0xeeee33cd5fc4ccc316977006128f050264b1bb12"
+        },
+        "Media:c489b57f-a2c0-40c7-bab1-2ca9708c7380": {
+          "__typename": "Media",
+          "id": "c489b57f-a2c0-40c7-bab1-2ca9708c7380",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/aad9df2a-7e96-4842-9c74-7211b7267a6c/AUDIO_TRANSCODED/4042640-9644403-Radio_Silence___GPB_4.m4a"
+        },
+        "ShelfRelease:5fc776af-b7bc-444a-8f8f-c2e09af8cfad": {
+          "__typename": "ShelfRelease",
+          "id": "5fc776af-b7bc-444a-8f8f-c2e09af8cfad",
+          "release": {
+            "__ref": "Release:cb8ba18e-2fcb-42ec-991c-45bce3fbbc06"
+          },
+          "addedAt": 1674195229753,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null,
+          "ownedGoldenEgg": null
+        },
+        "User:26b1fa30-0467-4738-8395-1a072f0bee73": {
+          "__typename": "User",
+          "id": "26b1fa30-0467-4738-8395-1a072f0bee73",
+          "publicAddress": "0x850213e46cf7b567c4c6c0407891945604f6a4f6"
+        },
+        "Media:e744bc4e-1039-4995-b63d-ee10eb577a2e": {
+          "__typename": "Media",
+          "id": "e744bc4e-1039-4995-b63d-ee10eb577a2e",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/c12bb74e-32ef-42e7-afd5-674966309932/AUDIO_TRANSCODED/2825204-9273008-07_-_Kelechief_-_Fine_Wine_feat_Amaarae__copy.m4a"
+        },
+        "ShelfRelease:03838db6-5e01-42c0-aee9-3bacc72352e0": {
+          "__typename": "ShelfRelease",
+          "id": "03838db6-5e01-42c0-aee9-3bacc72352e0",
+          "release": {
+            "__ref": "Release:41fa837f-0f21-41cc-9f0a-06b084d537f3"
+          },
+          "addedAt": 1674226374918,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null,
+          "ownedGoldenEgg": null
+        },
+        "User:c9ee1e4c-6e6b-491c-ac73-b565189a411a": {
+          "__typename": "User",
+          "id": "c9ee1e4c-6e6b-491c-ac73-b565189a411a",
+          "publicAddress": "0xfe9cfbde3b69b817cbcc45fac1b38aedfb18df63"
+        },
+        "Media:209a4c2f-7704-4cd3-a335-61699417616f": {
+          "__typename": "Media",
+          "id": "209a4c2f-7704-4cd3-a335-61699417616f",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/5a3d7123-a202-4a00-a89f-46f697a3ac8d/AUDIO_TRANSCODED/2191594-3948583-Think_of_You_9.16.19.m4a"
+        },
+        "ShelfRelease:a6e3f64c-46ab-4ef2-b42b-ffdd449ea0a7": {
+          "__typename": "ShelfRelease",
+          "id": "a6e3f64c-46ab-4ef2-b42b-ffdd449ea0a7",
+          "release": {
+            "__ref": "Release:94042d13-d950-426a-aa7c-f24ba35f5ed7"
+          },
+          "addedAt": 1674226404541,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null,
+          "ownedGoldenEgg": null
+        },
+        "User:612fb5db-8273-4dee-a901-a2fee8a95df1": {
+          "__typename": "User",
+          "id": "612fb5db-8273-4dee-a901-a2fee8a95df1",
+          "publicAddress": "0xea889ccbde865894e8323875a36e77c838d5099c"
+        },
+        "Media:561cb5c8-2c0b-4b2f-91aa-4556279019b6": {
+          "__typename": "Media",
+          "id": "561cb5c8-2c0b-4b2f-91aa-4556279019b6",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/2b6a6212-3641-4283-83c3-ebe1182004b7/AUDIO_TRANSCODED/8325012-4016478-Blk_Orchid_-_Keep_Pushin__Full_.m4a"
+        },
+        "ShelfRelease:26b6be12-730d-412a-85ae-a5e072aae074": {
+          "__typename": "ShelfRelease",
+          "id": "26b6be12-730d-412a-85ae-a5e072aae074",
+          "release": {
+            "__ref": "Release:b107d9d6-d35f-4d76-80dd-e92dcbe832e9"
+          },
+          "addedAt": 1674226422329,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null,
+          "ownedGoldenEgg": null
+        },
+        "User:5e475aaa-bc6f-4f28-88f3-e291045848a0": {
+          "__typename": "User",
+          "id": "5e475aaa-bc6f-4f28-88f3-e291045848a0",
+          "publicAddress": "0xd647fbe11e7a0bbcae5c36f808e130ef71fc7a42"
+        },
+        "Media:f902b686-60f1-4559-bee5-e5df57b34497": {
+          "__typename": "Media",
+          "id": "f902b686-60f1-4559-bee5-e5df57b34497",
+          "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/5892a3fd-b2d3-4868-b762-7263623b92d9/AUDIO_TRANSCODED/1224436-169294-FOR_YOU.m4a"
+        },
+        "ShelfRelease:eb02010e-b383-422f-a5fa-dcf01f196629": {
+          "__typename": "ShelfRelease",
+          "id": "eb02010e-b383-422f-a5fa-dcf01f196629",
+          "release": {
+            "__ref": "Release:c1de234f-daaf-41c7-a9cc-8f41ae5762a5"
+          },
+          "addedAt": 1674226429070,
+          "ownedSerialNumbers": null,
+          "ownedFirstNft": null,
+          "ownedGoldenEgg": null
+        }
+      },
+      "activityData": {
+        "__typename": "PlaylistActionConnection",
+        "scrollIndex": 0,
+        "pageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "MTY3NDE5NDk5MjM0MnxiOTkzNThjYy0yMmI2LTRiZTYtYTNiYS0wNTEyNWMxNmE4ODU="
+        },
+        "edges": [
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "0c18509c-7e5a-4f3f-be79-c192838df74f",
+              "date": "2023-01-20T16:28:48.032Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "3d563897-165c-48d4-af0c-a0af373c83ea",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "935562a1-d786-459c-8547-2e14f05bbead"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "50319195-8505-44f8-8c25-90deea92311f",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/e4d26ee4-07bf-4904-839e-7fae94e3f057/RELEASE_COVER_IMAGE/4091670-newImage.png"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": {
+                        "__typename": "EggGame",
+                        "id": "43712abd-213b-4b72-b49f-b118ec9d6bd5",
+                        "goldenEggImage": {
+                          "__typename": "Media",
+                          "id": "7f8e0064-b312-4de6-911b-a1c38b9db7d8",
+                          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/e4d26ee4-07bf-4904-839e-7fae94e3f057/RELEASE_GOLDEN_EGG_IMAGE/3802282-newImage.png"
+                        },
+                        "animatedGoldenEggImageOptimized": null
+                      },
+                      "title": "Jon Waltz x Tate Tucker - Safeguard",
+                      "titleSlug": "jon-waltz-x-tate-tucker-safeguard",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "e4d26ee4-07bf-4904-839e-7fae94e3f057",
+                        "name": "LNRZ",
+                        "soundHandle": "lnrz"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "54a6cb8c-e079-4c9b-9522-ae92bf9f993f",
+              "date": "2023-01-20T16:18:40.907Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "2aa7a71f-cffd-45b9-b3e6-1c813a15d049",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "7fd98dce-a04d-4786-8edc-47b9c75ad025"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "857aeaef-075b-4119-8381-4a77803f03c1",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/a57908a9-627c-4879-a23d-1eae5c2c5683/RELEASE_COVER_IMAGE/929119-default"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": {
+                        "__typename": "EggGame",
+                        "id": "025fe83b-cc9c-4968-8359-54bf5a796a81",
+                        "goldenEggImage": {
+                          "__typename": "Media",
+                          "id": "ce545391-1904-4e86-b239-20ac258794a0",
+                          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/a57908a9-627c-4879-a23d-1eae5c2c5683/RELEASE_GOLDEN_EGG_IMAGE/5456391-default"
+                        },
+                        "animatedGoldenEggImageOptimized": null
+                      },
+                      "title": "I WILL ",
+                      "titleSlug": "i-will",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "a57908a9-627c-4879-a23d-1eae5c2c5683",
+                        "name": "Devault",
+                        "soundHandle": "devault"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "55146829-8c5c-45e9-a525-cf5407a566cd",
+              "date": "2023-01-20T16:00:30.571Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "d013ff88-c2bb-46de-9717-feebb3437b85",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "e4433f65-f374-476c-a895-4f2dde1736b4"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "8454f551-9867-4225-bf19-280a4c4a4619",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/83612508-7b9b-4d62-b032-f195736236e0/RELEASE_COVER_IMAGE/5281259-newImage.png"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": {
+                        "__typename": "EggGame",
+                        "id": "3c7c0c85-9bbd-4de8-949b-ca08dd2d4e8a",
+                        "goldenEggImage": {
+                          "__typename": "Media",
+                          "id": "4bc93d78-b873-47f5-8032-fee5a2a828ec",
+                          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/83612508-7b9b-4d62-b032-f195736236e0/RELEASE_GOLDEN_EGG_IMAGE/1935120-newImage.png"
+                        },
+                        "animatedGoldenEggImageOptimized": null
+                      },
+                      "title": "I Wrote this Today",
+                      "titleSlug": "i-wrote-this-today",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "83612508-7b9b-4d62-b032-f195736236e0",
+                        "name": "Kathleen Regan",
+                        "soundHandle": "kathleenregan"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "a0ef7c20-0da8-49a3-a1ad-65d316b7c51b",
+              "date": "2023-01-20T15:25:03.566Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "514723fd-877e-42f8-a2c4-eff1a9d42395",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "6d37f670-2fe5-463b-86e6-46a8547e8cb9"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "c230af6c-17fa-469c-8d0e-6094e2fdc9e0",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/e4d26ee4-07bf-4904-839e-7fae94e3f057/RELEASE_COVER_IMAGE/7359573-newImage.png"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": {
+                        "__typename": "EggGame",
+                        "id": "08d68127-515e-4e35-a0b1-6cb4587534d8",
+                        "goldenEggImage": {
+                          "__typename": "Media",
+                          "id": "ad7ffbdd-5c88-4a63-a794-0536e5989558",
+                          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/e4d26ee4-07bf-4904-839e-7fae94e3f057/RELEASE_GOLDEN_EGG_IMAGE/2212079-newImage.png"
+                        },
+                        "animatedGoldenEggImageOptimized": null
+                      },
+                      "title": "Mija x Mark Evans - No Matter What I Do",
+                      "titleSlug": "mija-x-mark-evans-no-matter-what-i-do",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "e4d26ee4-07bf-4904-839e-7fae94e3f057",
+                        "name": "LNRZ",
+                        "soundHandle": "lnrz"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "204f0c4b-f76f-4135-a213-6f2fd384690b",
+              "date": "2023-01-20T15:15:57.909Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "1b8f9b3e-dd8c-489f-98cd-57bc1f2130f9",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "a7f920f4-010c-4d42-ae1e-60fb130705ce"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "38da9ab6-4bd9-4b94-9d46-d12e9ddba06f",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/e21cca40-62bf-4cf4-ae27-5101781460ab/RELEASE_COVER_IMAGE/5702784-default"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": {
+                        "__typename": "EggGame",
+                        "id": "7ba9f721-f9de-4e2a-b1c9-0f3c5b21315e",
+                        "goldenEggImage": {
+                          "__typename": "Media",
+                          "id": "420ed142-5e51-4a74-ba5f-78a410ef14fd",
+                          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/e21cca40-62bf-4cf4-ae27-5101781460ab/RELEASE_GOLDEN_EGG_IMAGE/4224073-default"
+                        },
+                        "animatedGoldenEggImageOptimized": null
+                      },
+                      "title": "My\u014dken",
+                      "titleSlug": "myoken",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "e21cca40-62bf-4cf4-ae27-5101781460ab",
+                        "name": "Mark de Clive-Lowe",
+                        "soundHandle": "mdcl"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "c0b64efb-8137-4150-af93-e31c9cbb214d",
+              "date": "2023-01-20T14:54:36.491Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "cb8dee15-106c-4bee-92f1-ecb0c345a132",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "7ab64317-263d-45c4-bd84-3d7c8033f223"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "cdc83647-e9fd-4955-86fc-11395bf2a11d",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/74a94bf7-133b-402b-8e6d-22073d16409f/RELEASE_COVER_IMAGE/7705223-newImage.png"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": {
+                        "__typename": "EggGame",
+                        "id": "da4deebb-7ccd-4700-859d-2f7453959ffd",
+                        "goldenEggImage": {
+                          "__typename": "Media",
+                          "id": "9505fd73-4cdf-455c-91fe-43a3cc2ca852",
+                          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/74a94bf7-133b-402b-8e6d-22073d16409f/RELEASE_GOLDEN_EGG_IMAGE/9799263-newImage.png"
+                        },
+                        "animatedGoldenEggImageOptimized": null
+                      },
+                      "title": "lofi tape",
+                      "titleSlug": "lofi-tape",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "74a94bf7-133b-402b-8e6d-22073d16409f",
+                        "name": "Mark Evans",
+                        "soundHandle": "markevans"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "754f8075-25eb-4d80-a513-7b632e72efbe",
+              "date": "2023-01-20T14:54:27.967Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "32d1edf4-695b-4aa4-8831-3a87e9cd380a",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "fa55a6be-169b-4b46-ad51-ccb06d455c08"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "648187d1-5c22-4671-831e-8e2a632c11da",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/949430a7-2b9e-4024-a922-2d88f480ba3d/RELEASE_COVER_IMAGE/4489425-newImage.png"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": {
+                        "__typename": "EggGame",
+                        "id": "0cc20b38-fc68-49a6-97df-cf2d52f92f06",
+                        "goldenEggImage": {
+                          "__typename": "Media",
+                          "id": "bb1af76f-46d0-43b7-b6c1-8072931f3632",
+                          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/949430a7-2b9e-4024-a922-2d88f480ba3d/RELEASE_GOLDEN_EGG_IMAGE/8642379-newImage.png"
+                        },
+                        "animatedGoldenEggImageOptimized": null
+                      },
+                      "title": "Do You Mind",
+                      "titleSlug": "do-you-mind",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "949430a7-2b9e-4024-a922-2d88f480ba3d",
+                        "name": "R\u00dcDE C\u00c5T",
+                        "soundHandle": "rudecat"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "3740f9b3-3344-4062-9ac4-7a9fc26557c2",
+              "date": "2023-01-20T14:54:10.806Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "8b160a66-ff67-497d-bfc6-b6ebf198cc5a",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "7521420c-c924-405a-b2c9-7d29ba7e8f68"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "b2f2343e-d5a9-4299-bf53-ef43884da51c",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88acadd3-c4a1-4966-b736-d3ce9efc690e/RELEASE_COVER_IMAGE/2636649-newImage.png"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": {
+                        "__typename": "EggGame",
+                        "id": "da5d7b6b-fb9d-4650-a260-85821da24eed",
+                        "goldenEggImage": {
+                          "__typename": "Media",
+                          "id": "db5cb389-c314-4eb1-bc7a-0b696937bab4",
+                          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88acadd3-c4a1-4966-b736-d3ce9efc690e/RELEASE_GOLDEN_EGG_IMAGE/4343317-newImage.png"
+                        },
+                        "animatedGoldenEggImageOptimized": null
+                      },
+                      "title": "procrastinate",
+                      "titleSlug": "procrastinate",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "88acadd3-c4a1-4966-b736-d3ce9efc690e",
+                        "name": "pearson",
+                        "soundHandle": "pearson"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "01d26130-7183-4e6d-8afc-d9d87a69cd8a",
+              "date": "2023-01-20T14:53:49.070Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "c1de234f-daaf-41c7-a9cc-8f41ae5762a5",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "5892a3fd-b2d3-4868-b762-7263623b92d9"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "c2060aac-e86b-4a9e-993a-04d71a9c6c67",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/ff7ecfde-91bf-45d4-a104-f49d19c93ce6/RELEASE_COVER_IMAGE/3032802-newImage.png"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": {
+                        "__typename": "EggGame",
+                        "id": "08696c45-8b19-4c2b-93e6-caff3a39bd59",
+                        "goldenEggImage": {
+                          "__typename": "Media",
+                          "id": "76addb99-f637-4758-ad68-e7274e768825",
+                          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/ff7ecfde-91bf-45d4-a104-f49d19c93ce6/RELEASE_GOLDEN_EGG_IMAGE/6324809-newImage.png"
+                        },
+                        "animatedGoldenEggImageOptimized": null
+                      },
+                      "title": "For You",
+                      "titleSlug": "for-you",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "ff7ecfde-91bf-45d4-a104-f49d19c93ce6",
+                        "name": "Edwin",
+                        "soundHandle": "edwin"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "0440ba65-500b-428d-9c38-e69073771018",
+              "date": "2023-01-20T14:53:42.329Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "b107d9d6-d35f-4d76-80dd-e92dcbe832e9",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "2b6a6212-3641-4283-83c3-ebe1182004b7"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "62bae8c8-c376-4446-892d-f5e743b83445",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/302f9c37-58be-4caa-99a2-d16235338ccb/RELEASE_COVER_IMAGE/3524092-newImage.png"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": null,
+                      "title": "Keep Pushing",
+                      "titleSlug": "keep-pushing",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "302f9c37-58be-4caa-99a2-d16235338ccb",
+                        "name": "Blk Orchid",
+                        "soundHandle": "iamblkorchid"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "cb83efcb-35a1-4912-9e3a-dd48b1f2d420",
+              "date": "2023-01-20T14:53:24.541Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "94042d13-d950-426a-aa7c-f24ba35f5ed7",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "5a3d7123-a202-4a00-a89f-46f697a3ac8d"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "a7294df4-fa2e-4dac-be2d-f1a3a9f368de",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/0bc9d819-b21e-4d81-b5b7-b878712cc54f/RELEASE_COVER_IMAGE/5304655-newImage.png"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": null,
+                      "title": "Think of You",
+                      "titleSlug": "think-of-you",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "0bc9d819-b21e-4d81-b5b7-b878712cc54f",
+                        "name": "Yasminah",
+                        "soundHandle": "yasminah"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "7efdf75f-0568-487f-9b39-d2756331635f",
+              "date": "2023-01-20T14:52:54.918Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "41fa837f-0f21-41cc-9f0a-06b084d537f3",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "c12bb74e-32ef-42e7-afd5-674966309932"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "6eb3abb0-60c1-40d5-b88d-c1a09965f474",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/f706dbd2-9208-4cd2-ad16-935a836aea5c/RELEASE_COVER_IMAGE/1667606-newImage.png"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": null,
+                      "title": "Fine Wine feat Amaarae",
+                      "titleSlug": "fine-wine-feat-amaarae",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "f706dbd2-9208-4cd2-ad16-935a836aea5c",
+                        "name": "Kelechief",
+                        "soundHandle": "kelechief"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "f4b95d7b-f748-425e-a981-3ba490bb69f1",
+              "date": "2023-01-20T06:13:49.753Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "cb8ba18e-2fcb-42ec-991c-45bce3fbbc06",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "aad9df2a-7e96-4842-9c74-7211b7267a6c"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "cda061c7-e66c-4b97-851a-dec761ae0548",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/949430a7-2b9e-4024-a922-2d88f480ba3d/RELEASE_COVER_IMAGE/9857797-newImage.png"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": {
+                        "__typename": "EggGame",
+                        "id": "bc56ba93-ba9f-4c3b-80c5-fdbfdc6280cd",
+                        "goldenEggImage": {
+                          "__typename": "Media",
+                          "id": "5874b735-b33e-44d7-8df0-b74054355bfd",
+                          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/949430a7-2b9e-4024-a922-2d88f480ba3d/RELEASE_GOLDEN_EGG_IMAGE/2016258-newImage.png"
+                        },
+                        "animatedGoldenEggImageOptimized": null
+                      },
+                      "title": "Radio Silence Pt.1 (RAW)",
+                      "titleSlug": "radio-silence-pt1-raw",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "949430a7-2b9e-4024-a922-2d88f480ba3d",
+                        "name": "R\u00dcDE C\u00c5T",
+                        "soundHandle": "rudecat"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "abcf8e7a-8a69-415e-8373-47df5b1cd8c2",
+              "date": "2023-01-20T06:10:12.101Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "37dde2f0-c9e7-4f6a-9ed1-d20843a58fb1",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "91c6a647-deef-40fd-b491-8a731c0dec7a"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "471e05a9-18b6-4965-8bff-f08629b2d40e",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/568dd1ba-1dff-4317-8631-8f3b9e01a9d5/RELEASE_COVER_IMAGE/9159063-newImage.png"
+                      },
+                      "animatedCoverImage": null,
+                      "staticCoverImage": null,
+                      "eggGame": {
+                        "__typename": "EggGame",
+                        "id": "50828745-ade7-475b-97b3-91dd8fb9c277",
+                        "goldenEggImage": {
+                          "__typename": "Media",
+                          "id": "5be3631e-1e67-454d-8e13-ba21f1a918d2",
+                          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/568dd1ba-1dff-4317-8631-8f3b9e01a9d5/RELEASE_GOLDEN_EGG_IMAGE/544603-newImage.png"
+                        },
+                        "animatedGoldenEggImageOptimized": null
+                      },
+                      "title": "APATHY",
+                      "titleSlug": "apathy",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "568dd1ba-1dff-4317-8631-8f3b9e01a9d5",
+                        "name": "bloody white",
+                        "soundHandle": "bloodywhite"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "PlaylistActionConnectionEdge",
+            "node": {
+              "__typename": "ReleasesAddedToPlaylist",
+              "id": "b99358cc-22b6-4be6-a3ba-05125c16a885",
+              "date": "2023-01-20T06:09:52.342Z",
+              "numAddedReleases": 1,
+              "playlist": {
+                "__typename": "Shelf",
+                "id": "04150d7a-d471-48de-a144-54b00474e59f",
+                "name": "Chill n Work"
+              },
+              "addedReleases": {
+                "__typename": "ReleaseConnection",
+                "edges": [
+                  {
+                    "__typename": "ReleaseConnectionEdge",
+                    "node": {
+                      "__typename": "Release",
+                      "id": "e81454c9-c8d2-48ea-aa4d-97bb915a9486",
+                      "track": {
+                        "__typename": "Track",
+                        "id": "595f5854-c035-4e14-8b22-febc469c05b1"
+                      },
+                      "coverImage": {
+                        "__typename": "Media",
+                        "id": "ee150eb5-0441-46de-b9b9-89eee43f32c5",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88ad8b00-0c9c-44b8-9b01-d27dd80617de/RELEASE_COVER_IMAGE/3250861-Green_Ring_-_In_The_Trees-optimized.gif"
+                      },
+                      "animatedCoverImage": {
+                        "__typename": "Media",
+                        "id": "6b28a0e6-1f31-45f5-9d13-8584296c2e84",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88ad8b00-0c9c-44b8-9b01-d27dd80617de/RELEASE_COVER_IMAGE/3250861-Green_Ring_-_In_The_Trees-optimized.gif/optimized_400x400.webp"
+                      },
+                      "staticCoverImage": {
+                        "__typename": "Media",
+                        "id": "0bcc7316-7549-42f7-98c8-61a95a04a188",
+                        "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88ad8b00-0c9c-44b8-9b01-d27dd80617de/RELEASE_COVER_IMAGE/3250861-Green_Ring_-_In_The_Trees-optimized.gif/static_autogen.png"
+                      },
+                      "eggGame": {
+                        "__typename": "EggGame",
+                        "id": "e49ccb3b-f5bf-492f-93c3-a6a06b2d033e",
+                        "goldenEggImage": {
+                          "__typename": "Media",
+                          "id": "654b3cd6-23c9-4e89-8429-984aa99cea16",
+                          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88ad8b00-0c9c-44b8-9b01-d27dd80617de/RELEASE_GOLDEN_EGG_IMAGE/6459392-Green_Ring_-_In_The_Trees__Golden_Egg_.gif"
+                        },
+                        "animatedGoldenEggImageOptimized": {
+                          "__typename": "Media",
+                          "id": "5d6cc58e-7bb5-4786-b203-a21bdabac414",
+                          "url": "https://d2i9ybouka0ieh.cloudfront.net/artist-uploads/88ad8b00-0c9c-44b8-9b01-d27dd80617de/RELEASE_GOLDEN_EGG_IMAGE/6459392-Green_Ring_-_In_The_Trees__Golden_Egg_.gif/optimized_400x400.webp"
+                        }
+                      },
+                      "title": "In The Trees",
+                      "titleSlug": "in-the-trees",
+                      "artist": {
+                        "__typename": "Artist",
+                        "id": "88ad8b00-0c9c-44b8-9b01-d27dd80617de",
+                        "name": "Green Ring",
+                        "soundHandle": "greenring"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "__N_SSG": true
+  },
+  "page": "/playlist/[id]",
+  "query": {
+    "id": "04150d7a-d471-48de-a144-54b00474e59f"
+  },
+  "buildId": "MDgx-l2w0CmAxX-V8C-2n",
+  "runtimeConfig": {
+    "WEBAPP_VERSION": "15.28.0"
+  },
+  "isFallback": false,
+  "gsp": true,
+  "scriptLoader": []
+}

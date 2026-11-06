@@ -1,0 +1,1 @@
+import{build}from'esbuild';await build({entryPoints:['src/account-login.jsx'],outdir:'public/account',bundle:true,format:'esm',splitting:true,minify:true,define:{'process.env.NODE_ENV':'"production"'},target:['es2022'],logLevel:'warning'});console.log('Account interface built');

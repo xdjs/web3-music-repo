@@ -1,0 +1,81 @@
+[
+  {
+    "name": "Forrest Mortifee",
+    "items": []
+  },
+  {
+    "name": "Mavi Taylor",
+    "items": [
+      {
+        "address_hash": "0x78aeFcD2d3B088dF6309D184e2F2B3718365Befe",
+        "address_url": "/address/0x78aeFcD2d3B088dF6309D184e2F2B3718365Befe",
+        "certified": false,
+        "circulating_market_cap": null,
+        "exchange_rate": null,
+        "icon_url": null,
+        "is_smart_contract_address": true,
+        "is_smart_contract_verified": false,
+        "is_verified_via_admin_panel": false,
+        "name": "MAVI TAYLORED",
+        "priority": 2,
+        "reputation": "ok",
+        "symbol": "MAVITAYLORED",
+        "token_type": "ERC-721",
+        "token_url": "/token/0x78aeFcD2d3B088dF6309D184e2F2B3718365Befe",
+        "total_supply": "1",
+        "type": "token"
+      }
+    ]
+  },
+  {
+    "name": "Erin Ivey",
+    "items": []
+  },
+  {
+    "name": "Cam Murdoch",
+    "items": []
+  },
+  {
+    "name": "Jamee Cornelia",
+    "items": [
+      {
+        "address_hash": "0xa6C0fbEBcc1E2B04C6CA17f5261bB2f43b8FBb22",
+        "address_url": "/address/0xa6C0fbEBcc1E2B04C6CA17f5261bB2f43b8FBb22",
+        "certified": false,
+        "circulating_market_cap": null,
+        "exchange_rate": null,
+        "icon_url": null,
+        "is_smart_contract_address": true,
+        "is_smart_contract_verified": false,
+        "is_verified_via_admin_panel": false,
+        "name": "Cabin Fever Ft. Jamee Cornelia & Jazii",
+        "priority": 2,
+        "reputation": "ok",
+        "symbol": "CBNFVRFT",
+        "token_type": "ERC-721",
+        "token_url": "/token/0xa6C0fbEBcc1E2B04C6CA17f5261bB2f43b8FBb22",
+        "total_supply": "30",
+        "type": "token"
+      },
+      {
+        "address_hash": "0xEEE2F6d89263A8d09c0621dA0B975b816D18945C",
+        "address_url": "/address/0xEEE2F6d89263A8d09c0621dA0B975b816D18945C",
+        "certified": false,
+        "circulating_market_cap": null,
+        "exchange_rate": null,
+        "icon_url": null,
+        "is_smart_contract_address": true,
+        "is_smart_contract_verified": false,
+        "is_verified_via_admin_panel": false,
+        "name": "HIGH FREQUENCY Vol. 1: \"Flavors\" by Matthew Chaim feat. Jamee Cornelia",
+        "priority": 2,
+        "reputation": "ok",
+        "symbol": "HIGHFREQUENCYVOL1FLAVORSBYMATTHEWCHAIMFEATJAMEECORNELIA",
+        "token_type": "ERC-721",
+        "token_url": "/token/0xEEE2F6d89263A8d09c0621dA0B975b816D18945C",
+        "total_supply": "3",
+        "type": "token"
+      }
+    ]
+  }
+]

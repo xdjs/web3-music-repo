@@ -1,0 +1,271 @@
+{
+  "startedAt": "2026-11-06T02:51:46.012Z",
+  "sources": [
+    {
+      "repo": "https://github.com/soundxyz/sound-protocol",
+      "commit": "cd04022e178d071c3e86d201106335bc960161c4"
+    },
+    {
+      "repo": "https://github.com/soundxyz/protocol",
+      "commit": "c6cdc7bf7eb00f661f0a44a755b62beb78c531fe"
+    }
+  ],
+  "scope": "Known official factories plus canonical-address probes; public index pagination, not a proof that no unknown factory exists",
+  "probes": [
+    {
+      "chainId": 1,
+      "factory": "0x78e3adc0e811e4f93bd9f1f9389b923c9a3355c2",
+      "block": 26352934,
+      "codePresent": true,
+      "codeSha256": "9a9f8d8580e1352fa5cd4f875dc77122deb6e97391fb5ee49521c12d4b1c9882",
+      "checkedAt": "2026-11-06T02:51:46.375Z"
+    },
+    {
+      "chainId": 1,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "block": 26352934,
+      "codePresent": true,
+      "codeSha256": "9bf3008f5e92ef63a58f51863dcfb0771b9c3bcedb126870d4bdf8b88ba2ae1b",
+      "checkedAt": "2026-11-06T02:51:46.460Z"
+    },
+    {
+      "chainId": 1,
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "block": 26352934,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:46.546Z"
+    },
+    {
+      "chainId": 1,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "block": 26352934,
+      "codePresent": true,
+      "codeSha256": "40d14b39699d9a12ce9e862ead96872cf36760353de89066c17dea9fbac5d3fd",
+      "checkedAt": "2026-11-06T02:51:46.645Z"
+    },
+    {
+      "chainId": 10,
+      "factory": "0x78e3adc0e811e4f93bd9f1f9389b923c9a3355c2",
+      "block": 159167364,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:46.915Z"
+    },
+    {
+      "chainId": 10,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "block": 159167364,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:47.010Z"
+    },
+    {
+      "chainId": 10,
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "block": 159167364,
+      "codePresent": true,
+      "codeSha256": "fea6ff46d4364e2b754fbdcf447bcde0a6a266798e8c9acc5cf1fac48de85249",
+      "checkedAt": "2026-11-06T02:51:47.102Z"
+    },
+    {
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "block": 159167364,
+      "codePresent": true,
+      "codeSha256": "ba8f76c611014c6d2703a31f9631265d6ae0ffe49fa3e714e74e1c1f05247f78",
+      "checkedAt": "2026-11-06T02:51:47.196Z"
+    },
+    {
+      "chainId": 137,
+      "factory": "0x78e3adc0e811e4f93bd9f1f9389b923c9a3355c2",
+      "block": 96818701,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:47.528Z"
+    },
+    {
+      "chainId": 137,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "block": 96818701,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:47.616Z"
+    },
+    {
+      "chainId": 137,
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "block": 96818701,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:47.704Z"
+    },
+    {
+      "chainId": 137,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "block": 96818701,
+      "codePresent": true,
+      "codeSha256": "590b8379defab3cda219570774eb9b09717eca25af483bd7021eb0dbb0f0f366",
+      "checkedAt": "2026-11-06T02:51:47.858Z"
+    },
+    {
+      "chainId": 8453,
+      "factory": "0x78e3adc0e811e4f93bd9f1f9389b923c9a3355c2",
+      "block": 53715662,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:48.186Z"
+    },
+    {
+      "chainId": 8453,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "block": 53715662,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:48.382Z"
+    },
+    {
+      "chainId": 8453,
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "block": 53715662,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:48.489Z"
+    },
+    {
+      "chainId": 8453,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "block": 53715662,
+      "codePresent": true,
+      "codeSha256": "b0ed403bbfffaac8f1c8c3499b6557ce139877c7079d615fe0f2919e9b2e39d9",
+      "checkedAt": "2026-11-06T02:51:48.598Z"
+    },
+    {
+      "chainId": 42161,
+      "factory": "0x78e3adc0e811e4f93bd9f1f9389b923c9a3355c2",
+      "block": 521667019,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:48.904Z"
+    },
+    {
+      "chainId": 42161,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "block": 521667019,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:48.985Z"
+    },
+    {
+      "chainId": 42161,
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "block": 521667019,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:49.072Z"
+    },
+    {
+      "chainId": 42161,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "block": 521667019,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:49.162Z"
+    },
+    {
+      "chainId": 7777777,
+      "factory": "0x78e3adc0e811e4f93bd9f1f9389b923c9a3355c2",
+      "block": 53619835,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:49.554Z"
+    },
+    {
+      "chainId": 7777777,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "block": 53619835,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:49.580Z"
+    },
+    {
+      "chainId": 7777777,
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "block": 53619835,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:49.607Z"
+    },
+    {
+      "chainId": 7777777,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "block": 53619835,
+      "codePresent": false,
+      "codeSha256": null,
+      "checkedAt": "2026-11-06T02:51:49.646Z"
+    }
+  ],
+  "factories": [
+    {
+      "key": "0:1",
+      "chainId": 1,
+      "version": 0,
+      "factory": "0x78e3adc0e811e4f93bd9f1f9389b923c9a3355c2",
+      "toBlock": 26352934,
+      "contracts": 172,
+      "pages": 4,
+      "complete": true,
+      "checkedAt": "2026-11-06T02:51:53.107Z",
+      "file": "data/census/0-1.json"
+    },
+    {
+      "key": "1:1",
+      "chainId": 1,
+      "version": 1,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "toBlock": 26352934,
+      "contracts": 1640,
+      "pages": 33,
+      "complete": true,
+      "checkedAt": "2026-11-06T02:52:24.983Z",
+      "file": "data/census/1-1.json"
+    },
+    {
+      "key": "2:1",
+      "chainId": 1,
+      "version": 2,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "toBlock": 26352934,
+      "contracts": 115,
+      "pages": 3,
+      "complete": true,
+      "checkedAt": "2026-11-06T02:52:27.458Z",
+      "file": "data/census/2-1.json"
+    },
+    {
+      "key": "1:10",
+      "chainId": 10,
+      "version": 1,
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "toBlock": 159167364,
+      "contracts": 1787,
+      "pages": 36,
+      "complete": true,
+      "checkedAt": "2026-11-06T02:53:09.130Z",
+      "file": "data/census/1-10.json"
+    },
+    {
+      "key": "2:10",
+      "chainId": 10,
+      "version": 2,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "toBlock": 159167364,
+      "contracts": 5774,
+      "pages": 221,
+      "complete": true,
+      "checkedAt": "2026-11-06T02:57:11.226Z",
+      "file": "data/census/2-10.json"
+    }
+  ],
+  "finishedAt": "2026-11-06T02:57:11.591Z"
+}

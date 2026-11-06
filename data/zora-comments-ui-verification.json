@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-06T07:02:06.824Z",
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "comments": 9,
+      "overflow": false,
+      "tabScrollPreserved": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "comments": 9,
+      "overflow": false,
+      "tabScrollPreserved": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "comments": 9,
+      "overflow": false,
+      "tabScrollPreserved": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "comments": 9,
+      "overflow": false,
+      "tabScrollPreserved": true
+    }
+  ],
+  "soundCommentsSeparate": true,
+  "errors": []
+}

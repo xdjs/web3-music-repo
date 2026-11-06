@@ -1,0 +1,224 @@
+{
+  "startedAt": "2026-11-06T03:15:09.722Z",
+  "scope": "Sample of expanded modern and legacy catalog",
+  "method": "Muted Chromium playback beyond 0.25 seconds, not complete-track audition",
+  "results": {
+    "recovered-sound-1-a72692152aff82100e1e692734b412a89aa48994": {
+      "id": "recovered-sound-1-a72692152aff82100e1e692734b412a89aa48994",
+      "title": "2AM",
+      "artist": "P.S. Kaguya",
+      "chainId": 1,
+      "mediaURI": "ar://u5BQhx4NxCtqbdS_QFTHMqraTLc8ejzvTEmM7ih6KBs",
+      "checkedAt": "2026-11-06T03:15:17.789Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/u5BQhx4NxCtqbdS_QFTHMqraTLc8ejzvTEmM7ih6KBs",
+          "status": "played",
+          "currentTime": 0.260758,
+          "duration": 221.71875,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovered-sound-1-b5819e17b468324c1f775d365c03f123081d9638": {
+      "id": "recovered-sound-1-b5819e17b468324c1f775d365c03f123081d9638",
+      "title": "To Live and Die in Carolina",
+      "artist": "Toigo",
+      "chainId": 1,
+      "mediaURI": "ar://ALjSkwwuqdd1ZU9ia703ySptlERERW0RevhCIxoi-gc",
+      "checkedAt": "2026-11-06T03:19:12.644Z",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://arweave.net/ALjSkwwuqdd1ZU9ia703ySptlERERW0RevhCIxoi-gc",
+          "status": "unavailable",
+          "reason": "MEDIA_ELEMENT_ERROR: Format error",
+          "code": 4
+        }
+      ]
+    },
+    "recovered-sound-1-b2cb781aa0b35aec7acef3f9751b61505fd5715a": {
+      "id": "recovered-sound-1-b2cb781aa0b35aec7acef3f9751b61505fd5715a",
+      "title": "Breakdown",
+      "artist": "Pete Rango",
+      "chainId": 1,
+      "mediaURI": "ar://ShNsHOnksot-5oxBYrFpAz0Ec-pxa7E0YDkweXLPbf0",
+      "checkedAt": "2026-11-06T03:15:28.895Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/ShNsHOnksot-5oxBYrFpAz0Ec-pxa7E0YDkweXLPbf0",
+          "status": "played",
+          "currentTime": 0.300015,
+          "duration": 180.675875,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovered-sound-1-f2c8afbd7c6d56ccda0ace629ed97650c9112b57": {
+      "id": "recovered-sound-1-f2c8afbd7c6d56ccda0ace629ed97650c9112b57",
+      "title": "HARBOUR OF DREAMS",
+      "artist": "DARK AND DARK",
+      "chainId": 1,
+      "mediaURI": "ar://RIKupA2QzXwAFJ82zhMAXhOp3zFf-qOMUJR_l0uiSsA",
+      "checkedAt": "2026-11-06T03:15:37.462Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/RIKupA2QzXwAFJ82zhMAXhOp3zFf-qOMUJR_l0uiSsA",
+          "status": "played",
+          "currentTime": 0.262775,
+          "duration": 126.315792,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovered-sound-10-c6b22b38f412b236d84e11763eb29df782560d06": {
+      "id": "recovered-sound-10-c6b22b38f412b236d84e11763eb29df782560d06",
+      "title": "Amnesia",
+      "artist": "Urkle",
+      "chainId": 10,
+      "mediaURI": "ar://KRYO97jVLL2WSxyUi_nYx9LHNdpvk5Dkxtwb2El7uEc",
+      "checkedAt": "2026-11-06T03:15:39.939Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/KRYO97jVLL2WSxyUi_nYx9LHNdpvk5Dkxtwb2El7uEc",
+          "status": "played",
+          "currentTime": 0.253641,
+          "duration": 163.2,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovered-sound-10-e56d812fb077282cbf9f92d25d9eebaddd1af8ac": {
+      "id": "recovered-sound-10-e56d812fb077282cbf9f92d25d9eebaddd1af8ac",
+      "title": "Death Valley",
+      "artist": "Tony Livadas",
+      "chainId": 10,
+      "mediaURI": "ar://_DU7py3InIz28fA5jRmH0_FDI5bUnEVtn79rcVDOIv0",
+      "checkedAt": "2026-11-06T03:15:42.989Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/_DU7py3InIz28fA5jRmH0_FDI5bUnEVtn79rcVDOIv0",
+          "status": "played",
+          "currentTime": 0.271136,
+          "duration": 165.348866,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovered-sound-10-195385e5ce0b4fd379af2fd4ff3050e318b49cf4": {
+      "id": "recovered-sound-10-195385e5ce0b4fd379af2fd4ff3050e318b49cf4",
+      "title": "Daniel Allan, han.irl<3, Rome in Silver - Elysian Park [VIP]",
+      "artist": "Family Affair",
+      "chainId": 10,
+      "mediaURI": "ar://-ScF_GzfPGvAql2O3dUSYIIp6qCFTmynwlOGrDHF8XI",
+      "checkedAt": "2026-11-06T03:15:51.704Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/-ScF_GzfPGvAql2O3dUSYIIp6qCFTmynwlOGrDHF8XI",
+          "status": "played",
+          "currentTime": 0.322789,
+          "duration": 95.342479,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovered-sound-10-31536ff48decbb6779af6f4e3508fd209a3a8da3": {
+      "id": "recovered-sound-10-31536ff48decbb6779af6f4e3508fd209a3a8da3",
+      "title": "Let Me Go",
+      "artist": "ZØYA",
+      "chainId": 10,
+      "mediaURI": "ar://R4V_AWVcISita-fYtxIJy9TgiRdTQY9lZH8l0Rk_5tM",
+      "checkedAt": "2026-11-06T03:15:55.630Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/R4V_AWVcISita-fYtxIJy9TgiRdTQY9lZH8l0Rk_5tM",
+          "status": "played",
+          "currentTime": 0.261489,
+          "duration": 221.934875,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovered-sound-10-2e654a81736b4a88bf88b18542799c9af3fa9385": {
+      "id": "recovered-sound-10-2e654a81736b4a88bf88b18542799c9af3fa9385",
+      "title": "Summertime (Doce x Leif x J Matty)",
+      "artist": "Doce ",
+      "chainId": 10,
+      "mediaURI": "ar://wMR8dcU9IVxHQyhMACrql2oka7Pc6XxLuckraWFjLp4",
+      "checkedAt": "2026-11-06T03:15:55.872Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/wMR8dcU9IVxHQyhMACrql2oka7Pc6XxLuckraWFjLp4",
+          "status": "played",
+          "currentTime": 0.302808,
+          "duration": 191.578957,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovered-legacy-b19efeb1215d58ca464db03daa509ae4aba3764f-1": {
+      "id": "recovered-legacy-b19efeb1215d58ca464db03daa509ae4aba3764f-1",
+      "title": "off the map",
+      "artist": "Ramzoid",
+      "chainId": 1,
+      "mediaURI": "ar://7041NybYDq7_RWB5N4pNftaVhJbtBIoanH-EqXx7STQ",
+      "checkedAt": "2026-11-06T03:18:52.931Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/7041NybYDq7_RWB5N4pNftaVhJbtBIoanH-EqXx7STQ",
+          "status": "played",
+          "currentTime": 0.252857,
+          "duration": 129.113938,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovered-legacy-b8dfff430eb204eeeae713a9d4642352e3df6887-1": {
+      "id": "recovered-legacy-b8dfff430eb204eeeae713a9d4642352e3df6887-1",
+      "title": "Be Here Long",
+      "artist": "Miles Ryan Harris",
+      "chainId": 1,
+      "mediaURI": "ar://wXGv5sq3CApntguexndZh0r5shuicWuUTYArxnnw1yo",
+      "checkedAt": "2026-11-06T03:18:55.324Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/wXGv5sq3CApntguexndZh0r5shuicWuUTYArxnnw1yo",
+          "status": "played",
+          "currentTime": 0.283398,
+          "duration": 216.306825,
+          "readyState": 4
+        }
+      ]
+    },
+    "recovered-legacy-2a5ef3d72dcad693bf57ec6a5a4909bf8fb37205-1": {
+      "id": "recovered-legacy-2a5ef3d72dcad693bf57ec6a5a4909bf8fb37205-1",
+      "title": "Miracles",
+      "artist": "Ging",
+      "chainId": 1,
+      "mediaURI": "ar://aJvj77BwgceDXZV5Njhd3y3mQVDZ1qCOMIXrk6eB1U8",
+      "checkedAt": "2026-11-06T03:19:20.536Z",
+      "status": "played",
+      "attempts": [
+        {
+          "url": "https://arweave.net/aJvj77BwgceDXZV5Njhd3y3mQVDZ1qCOMIXrk6eB1U8",
+          "status": "played",
+          "currentTime": 0.30483,
+          "duration": 196.266667,
+          "readyState": 4
+        }
+      ]
+    }
+  },
+  "updatedAt": "2026-11-06T03:19:20.536Z",
+  "finishedAt": "2026-11-06T03:19:20.580Z"
+}

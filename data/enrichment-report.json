@@ -1,0 +1,77 @@
+{
+  "checkedAt": "2026-11-06T07:41:03.613Z",
+  "totalRecords": 9099,
+  "originalBpm": 339,
+  "originalKey": 48,
+  "credits": 43,
+  "details": {
+    "Description": 1540,
+    "Duration": 1815,
+    "Genre": 310,
+    "License": 143,
+    "Track number": 1813,
+    "Recorded in": 135,
+    "Project": 2,
+    "Album": 43,
+    "Record label": 463
+  },
+  "metadataRead": 2593,
+  "metadataUnresolved": 6506,
+  "bpmAnalysis": {
+    "metadata-bpm": 71,
+    "needs-review": 1,
+    "estimated": 66,
+    "unavailable": 44,
+    "not-queued": 60,
+    "pending": 8857
+  },
+  "payments": {
+    "verifiedPurchases": 186,
+    "unresolvedPurchases": 0,
+    "releasesWithVerifiedPayments": 113
+  },
+  "byPlatform": {
+    "Sound": {
+      "records": 4974,
+      "originalBpm": 272,
+      "originalKey": 1,
+      "credits": 0
+    },
+    "Unconfirmed": {
+      "records": 10,
+      "originalBpm": 0,
+      "originalKey": 0,
+      "credits": 0
+    },
+    "Arpeggi": {
+      "records": 2,
+      "originalBpm": 0,
+      "originalKey": 0,
+      "credits": 0
+    },
+    "Songcamp": {
+      "records": 43,
+      "originalBpm": 43,
+      "originalKey": 42,
+      "credits": 43
+    },
+    "Catalog": {
+      "records": 4036,
+      "originalBpm": 24,
+      "originalKey": 5,
+      "credits": 0
+    },
+    "Zora": {
+      "records": 28,
+      "originalBpm": 0,
+      "originalKey": 0,
+      "credits": 0
+    },
+    "Other": {
+      "records": 6,
+      "originalBpm": 0,
+      "originalKey": 0,
+      "credits": 0
+    }
+  }
+}

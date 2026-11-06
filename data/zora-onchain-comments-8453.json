@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-11-06T07:09:32.251Z",
+  "chainId": 8453,
+  "rpcURL": "https://base-rpc.publicnode.com",
+  "emitter": "0x04e2516a2c207e84a1839755675dfd8ef6302f0a",
+  "deploymentSource": "https://github.com/ourzora/zora-protocol/blob/32c2931a444b4405b107a49016dff0059b05b06f/legacy/1155-contracts/addresses/8453.json",
+  "sourceCode": "https://github.com/ourzora/zora-protocol/blob/32c2931a444b4405b107a49016dff0059b05b06f/legacy/1155-contracts/src/minters/fixed-price/ZoraCreatorFixedPriceSaleStrategy.sol",
+  "scope": "Selected archive collections on the specified network; fixed-price ERC1155 MintComment only. Not all Zora music or all comment mechanisms.",
+  "scans": [
+    {
+      "contract": "0x103122e491199ac6ed8586f5c88fb7999125650c",
+      "fromBlock": "0x0",
+      "toBlock": "0x334d0d9",
+      "status": "unavailable",
+      "error": "Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode"
+    },
+    {
+      "contract": "0xb5ce496d53d7440a5c18de9322b6837c9a518e21",
+      "fromBlock": "0x0",
+      "toBlock": "0x334d0d9",
+      "status": "unavailable",
+      "error": "Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode"
+    },
+    {
+      "contract": "0x1bbea2cc3b2c41774687fd00684ad12f9a666557",
+      "fromBlock": "0x0",
+      "toBlock": "0x334d0d9",
+      "status": "unavailable",
+      "error": "Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode"
+    }
+  ],
+  "comments": [],
+  "endBlock": "0x334d0d9",
+  "endBlockHash": "0x6f9e548d02d3873791205f5100d4f668b4044a272a7f9d1882b334df658ecd73",
+  "minterRuntimeHash": "0xb3441e3a02cad3342fb216de6b5a1e6cb4d14732130da7d2d86a2255efa337d4"
+}

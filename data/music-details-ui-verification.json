@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-11-06T07:36:46.823Z",
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "metadata": true,
+      "revenue": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "metadata": true,
+      "revenue": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "metadata": true,
+      "revenue": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "metadata": true,
+      "revenue": true,
+      "overflow": false
+    }
+  ],
+  "estimatedLabel": true,
+  "profilePlaceholderCleared": true,
+  "errors": []
+}

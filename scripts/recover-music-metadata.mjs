@@ -1,0 +1,176 @@
+import {
+  readFileSync,
+  writeFileSync,
+  renameSync,
+  mkdirSync,
+  existsSync,
+} from "node:fs";
+import { createHash } from "node:crypto";
+import { createCatalogLoader } from "../src/catalog-bundle.mjs";
+import { storageURL } from "../src/nft-reader.mjs";
+import { extractMusicMetadata } from "../src/extract-music-metadata.mjs";
+const bundle = createCatalogLoader()(),
+  file = "data/music-metadata.json";
+const load = (p, f) => {
+  try {
+    return JSON.parse(readFileSync(p));
+  } catch {
+    return f;
+  }
+};
+const result = load(file, { records: {} });
+result.scope =
+  "Original metadata and explicitly attributed publisher snapshots; audio analysis is stored separately";
+const snapshots = load("data/catalog/original-metadata.json", {});
+const cacheDir = "work/music-metadata-cache";
+mkdirSync(cacheDir, { recursive: true });
+const cachePath = (source) =>
+  `${cacheDir}/${createHash("sha256").update(source).digest("hex")}.json`;
+const filter = process.argv.find((a) => a.startsWith("--platform="))?.slice(11);
+const refresh = process.argv.includes("--refresh");
+const records = bundle.records.filter(
+  (r) =>
+    (!filter || r.platform === filter) &&
+    (refresh || result.records[r.id]?.schemaVersion !== 2),
+);
+const save = () => {
+  result.updatedAt = new Date().toISOString();
+  result.counts = {
+    total: bundle.records.length,
+    read: Object.values(result.records).filter((r) => r.status === "read")
+      .length,
+    pendingOrUnavailable: Object.values(result.records).filter(
+      (r) => r.status !== "read",
+    ).length,
+  };
+  writeFileSync(file + ".tmp", JSON.stringify(result, null, 2));
+  renameSync(file + ".tmp", file);
+};
+let next = 0,
+  done = 0,
+  nextRequest = 0;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+async function pace() {
+  const now = Date.now(),
+    at = Math.max(now, nextRequest);
+  nextRequest = at + 300;
+  await sleep(at - now);
+}
+async function read(source) {
+  const path = cachePath(source);
+  if (existsSync(path)) return load(path, null);
+  if (source.startsWith("data:application/json;base64,"))
+    return JSON.parse(Buffer.from(source.split(",")[1], "base64").toString());
+  for (let attempt = 0; attempt < 3; attempt++) {
+    let url = storageURL(source);
+    try {
+      for (let redirects = 0; redirects < 4; redirects++) {
+        await pace();
+        const res = await fetch(url, {
+          redirect: "manual",
+          signal: AbortSignal.timeout(15000),
+        });
+        if ([301, 302, 303, 307, 308].includes(res.status)) {
+          url = storageURL(new URL(res.headers.get("location"), url).href);
+          await res.body?.cancel();
+          continue;
+        }
+        if (res.status === 429) {
+          const retry = Number(res.headers.get("retry-after"));
+          await res.body?.cancel();
+          nextRequest = Math.max(
+            nextRequest,
+            Date.now() + Math.min(60000, Math.max(5000, (retry || 5) * 1000)),
+          );
+          throw Error("Metadata HTTP 429 (retryable)");
+        }
+        if (!res.ok) throw Error("Metadata HTTP " + res.status);
+        let bytes = 0;
+        const chunks = [];
+        for await (const chunk of res.body) {
+          bytes += chunk.length;
+          if (bytes > 1048576) throw Error("Metadata exceeds limit");
+          chunks.push(chunk);
+        }
+        const metadata = JSON.parse(Buffer.concat(chunks).toString());
+        writeFileSync(path, JSON.stringify(metadata));
+        return metadata;
+      }
+      throw Error("Redirect limit");
+    } catch (e) {
+      if (attempt === 2) throw e;
+      await sleep(1000 * (attempt + 1));
+    }
+  }
+}
+// Consume the official saved JSON before making network requests.
+for (const r of records) {
+  const key = `${r.chainId}-${r.contract.toLowerCase()}-${r.tokenId}`,
+    s = snapshots[key];
+  if (!s) continue;
+  const source = s.source || bundle.evidence[r.id]?.metadataURI;
+  result.records[r.id] = {
+    status: "read",
+    schemaVersion: 2,
+    ...extractMusicMetadata(s.metadata),
+    source,
+    metadataURL: bundle.evidence[r.id]?.metadataURL || null,
+    provenance: "Catalog official metadata snapshot",
+    snapshotDate: s.snapshotDate,
+    checkedAt: new Date().toISOString(),
+  };
+}
+save();
+await Promise.all(
+  Array.from({ length: 4 }, async () => {
+    while (next < records.length) {
+      const r = records[next++];
+      if (result.records[r.id]?.schemaVersion === 2 && !refresh) continue;
+      const v = bundle.evidence[r.id],
+        source = v?.metadataURI || v?.metadataURL;
+      if (!source) {
+        result.records[r.id] = {
+          status: "missing-reference",
+          checkedAt: new Date().toISOString(),
+        };
+        continue;
+      }
+      try {
+        const metadata = await read(source);
+        result.records[r.id] = {
+          status: "read",
+          schemaVersion: 2,
+          ...extractMusicMetadata(metadata),
+          source,
+          metadataURL: v.metadataURL || null,
+          checkedAt: new Date().toISOString(),
+          referenceBlock: v.blockNumber || null,
+        };
+      } catch (e) {
+        const previous = result.records[r.id];
+        result.records[r.id] =
+          previous?.status === "read"
+            ? { ...previous, lastRefreshError: e.message }
+            : {
+                status: "unavailable",
+                source,
+                error: e.message,
+                checkedAt: new Date().toISOString(),
+              };
+      }
+      if (++done % 25 === 0) {
+        save();
+        console.log(
+          "MUSIC METADATA",
+          done,
+          "/",
+          records.length,
+          JSON.stringify(result.counts),
+        );
+      }
+    }
+  }),
+);
+result.finishedAt = new Date().toISOString();
+save();
+console.log("MUSIC METADATA COMPLETE", JSON.stringify(result.counts));
