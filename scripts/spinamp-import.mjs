@@ -289,6 +289,45 @@ export function makeCandidate(t, n, platformNames, checkedAt) {
     },
   };
 }
+export function applyMediaObservation(record, evidence, observation) {
+  const playback = observation?.playback;
+  const key = contentKey(evidence.mediaURI);
+  const video =
+    Number.isInteger(playback?.videoWidth) &&
+    playback.videoWidth > 0 &&
+    Number.isInteger(playback?.videoHeight) &&
+    playback.videoHeight > 0;
+  if (
+    observation?.id !== record.id ||
+    observation.status !== "played" ||
+    !key ||
+    contentKey(observation.mediaURI) !== key ||
+    !(playback?.currentTime > 0) ||
+    !(
+      playback.audioDecodedBytes > 0 ||
+      (video && playback.videoDecodedBytes > 0)
+    )
+  )
+    return false;
+  if (
+    (observation.chainId !== undefined &&
+      observation.chainId !== record.chainId) ||
+    (observation.contract &&
+      observation.contract.toLowerCase() !== record.contract.toLowerCase()) ||
+    (observation.tokenId !== undefined &&
+      String(observation.tokenId) !== String(record.tokenId))
+  )
+    return false;
+  record.kind = video ? "video" : "audio";
+  evidence.mediaKindSource =
+    "Observed native media startup decode for this exact content reference";
+  evidence.mediaKindEvidence =
+    observation.evidenceFile ||
+    "data/spinamp/expanded-sample-verification.json";
+  if (observation.checkedAt)
+    evidence.mediaKindCheckedAt = observation.checkedAt;
+  return true;
+}
 export function buildBundle(
   inv,
   refs,
@@ -340,18 +379,7 @@ export function buildBundle(
       duplicates.push({ id: t.id, existingId: match });
       continue;
     }
-    const observation = observed.get(r.id);
-    if (
-      observation?.status === "played" &&
-      observation.playback?.audioDecodedBytes > 0 &&
-      contentKey(observation.mediaURI) === contentKey(c.evidence.mediaURI)
-    ) {
-      r.kind = observation.playback.videoWidth > 0 ? "video" : "audio";
-      c.evidence.mediaKindSource =
-        "Observed native media startup decode for this exact content reference";
-      c.evidence.mediaKindEvidence =
-        "data/spinamp/expanded-sample-verification.json";
-    }
+    applyMediaObservation(r, c.evidence, observed.get(r.id));
     records.push(r);
     evidence[r.id] = c.evidence;
     people.set(c.person.id, c.person);
@@ -497,11 +525,18 @@ if (
       };
     })(),
     names,
-    existsSync("data/spinamp/expanded-sample-verification.json")
-      ? JSON.parse(
-          readFileSync("data/spinamp/expanded-sample-verification.json"),
-        ).results || []
-      : [],
+    [
+      "data/spinamp/expanded-sample-verification.json",
+      "data/spinamp/video-kind-verification.json",
+    ].flatMap((evidenceFile) => {
+      if (!existsSync(evidenceFile)) return [];
+      const report = JSON.parse(readFileSync(evidenceFile));
+      return (report.results || []).map((row) => ({
+        ...row,
+        evidenceFile,
+        checkedAt: report.checkedAt,
+      }));
+    }),
   );
   const outputDir = process.env.SPINAMP_OUTPUT_DIR || "data/spinamp";
   mkdirSync(outputDir, { recursive: true });

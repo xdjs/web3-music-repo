@@ -1,0 +1,143 @@
+{
+  "checkedAt": "2026-11-06T18:16:58.839Z",
+  "scope": "Two exact content references, three NFT records. Actual Chromium native decoded video dimensions and advancing time; no title heuristics and no independent chain verification.",
+  "results": [
+    {
+      "id": "spinamp-4bff201350e878d8dcfc",
+      "title": "Helmet City: Mecha Gardens (Teaser Trailer)",
+      "chainId": 8453,
+      "contract": "0x0651996b6a6eebd1fc697e5735a2dca541bbe06b",
+      "tokenId": "1",
+      "mediaURI": "ipfs://bafybeidfyu5wkhhdvlpo35fnyskd6oqtqwyl4eklulfc7reu4lhf5skp6a",
+      "previousKind": "audio",
+      "status": "played",
+      "playback": {
+        "currentTime": 0.40387,
+        "duration": 61.833333,
+        "readyState": 4,
+        "audioDecodedBytes": 26403,
+        "videoDecodedBytes": 23902,
+        "videoWidth": 1536,
+        "videoHeight": 896
+      },
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeidfyu5wkhhdvlpo35fnyskd6oqtqwyl4eklulfc7reu4lhf5skp6a",
+          "status": "played",
+          "currentTime": 0.40387,
+          "duration": 61.833333,
+          "readyState": 4,
+          "audioDecodedBytes": 26403,
+          "videoDecodedBytes": 23902,
+          "videoWidth": 1536,
+          "videoHeight": 896
+        }
+      ],
+      "responses": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeidfyu5wkhhdvlpo35fnyskd6oqtqwyl4eklulfc7reu4lhf5skp6a",
+          "status": 206,
+          "contentType": "video/mp4"
+        }
+      ]
+    },
+    {
+      "id": "spinamp-073e25367a01a4e53532",
+      "title": "Base Day Two : Your Turn",
+      "chainId": 8453,
+      "contract": "0x01fd53723c4f2efe53780dd40dac41a60bdc2d6e",
+      "tokenId": "1",
+      "mediaURI": "ipfs://bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+      "previousKind": "audio",
+      "status": "played",
+      "playback": {
+        "currentTime": 0.403268,
+        "duration": 44.066667,
+        "readyState": 4,
+        "audioDecodedBytes": 18142,
+        "videoDecodedBytes": 23503,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+          "status": "played",
+          "currentTime": 0.403268,
+          "duration": 44.066667,
+          "readyState": 4,
+          "audioDecodedBytes": 18142,
+          "videoDecodedBytes": 23503,
+          "videoWidth": 1920,
+          "videoHeight": 1080
+        }
+      ],
+      "responses": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+          "status": 206,
+          "contentType": "video/mp4"
+        }
+      ]
+    },
+    {
+      "id": "spinamp-5b4c2c956adbbf20e7f9",
+      "title": "Base Day Two : Your Turn",
+      "chainId": 8453,
+      "contract": "0xe1a01e8e3d1e41d8ac87901715517b6aa8c666fa",
+      "tokenId": "1",
+      "mediaURI": "ipfs://bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+      "previousKind": "audio",
+      "status": "played",
+      "playback": {
+        "currentTime": 0.403268,
+        "duration": 44.066667,
+        "readyState": 4,
+        "audioDecodedBytes": 18142,
+        "videoDecodedBytes": 23503,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+          "status": "played",
+          "currentTime": 0.403268,
+          "duration": 44.066667,
+          "readyState": 4,
+          "audioDecodedBytes": 18142,
+          "videoDecodedBytes": 23503,
+          "videoWidth": 1920,
+          "videoHeight": 1080
+        }
+      ],
+      "responses": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+          "status": 206,
+          "contentType": "video/mp4"
+        },
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+          "status": 206,
+          "contentType": "video/mp4"
+        }
+      ]
+    }
+  ]
+}

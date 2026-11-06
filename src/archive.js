@@ -709,7 +709,8 @@ const nextTrackBuffer = createNextTrackBuffer({
     !!current &&
     wantsPlayback &&
     hasPlaybackHeadroom(audio) &&
-    current.kind !== "video",
+    current.kind !== "video" &&
+    !audio.classList.contains("video-visible"),
 });
 function warmNextTrack() {
   const id = queue[queueIndex + 1];
@@ -827,7 +828,7 @@ async function play(id, list = null, index = null) {
   $("#player-title").textContent = cleanTitle(r.title);
   $("#player-artist").textContent = r.artist;
   $("#player-art").src = image(r);
-  $("#player-source").textContent = `${mediaLabel(r)} · Loading…`;
+  $("#player-source").textContent = "Loading…";
   syncPlaybackControls();
   audio.classList.toggle("video-visible", r.kind === "video");
   let v = r.recovery;
@@ -863,16 +864,14 @@ async function play(id, list = null, index = null) {
     startingPlayback = false;
     audio.pause();
     syncPlaybackControls();
-    $("#player-source").textContent =
-      `${mediaLabel(r)} unavailable — press play to retry`;
+    $("#player-source").textContent = "Media unavailable — press play to retry";
     notify("This recording’s media could not be played. You can retry.");
   };
   mediaRecovery = createMediaRecovery(audio, {
     originalURL: r.playback?.workingURL || v.mediaURL,
     shouldPlay: () => wantsPlayback && version === playVersion,
     onSwitch: () => {
-      $("#player-source").textContent =
-        "Retrying the same IPFS content through another gateway…";
+      $("#player-source").textContent = "Retrying media…";
       clearTimeout(mediaTimer);
       mediaTimer = setTimeout(() => {
         if (version === playVersion && audio.currentTime === 0 && wantsPlayback)
@@ -882,16 +881,14 @@ async function play(id, list = null, index = null) {
     onExhausted: exhausted,
     onSlow: () => {
       if (version === playVersion)
-        $("#player-source").textContent =
-          `${mediaLabel(r)} is taking longer to load…`;
+        $("#player-source").textContent = "Taking longer to load…";
     },
   });
   mediaTimer = setTimeout(() => {
     if (version === playVersion && audio.currentTime === 0 && wantsPlayback)
       mediaRecovery.recoverSlow();
   }, 12000);
-  $("#player-source").textContent =
-    `${chainNames[r.chainId]} → ${sourceKind(v.mediaURI)} · ${mediaLabel(r)}`;
+  $("#player-source").textContent = "Loading…";
   $("#player-like").textContent = likes.has(id) ? "♥" : "♡";
   startingPlayback = false;
   syncPlaybackControls();
@@ -1370,13 +1367,24 @@ function bindPlayerEvents() {
       },
       { signal: mediaEvents.signal },
     );
+  const detectVideo = () => {
+    if (!current || audio.readyState < 1) return;
+    const hasVideo = audio.videoWidth > 0 && audio.videoHeight > 0;
+    audio.classList.toggle(
+      "video-visible",
+      hasVideo || current.kind === "video",
+    );
+    if (hasVideo) nextTrackBuffer.cancel();
+  };
+  bind("loadedmetadata", detectVideo);
+  bind("loadeddata", detectVideo);
+  bind("resize", detectVideo);
   bind("playing", () => {
+    detectVideo();
     clearTimeout(mediaTimer);
     warmNextTrack();
     syncPlaybackControls();
-    if (current)
-      $("#player-source").textContent =
-        `${chainNames[current.chainId]} → ${sourceKind(current.recovery?.mediaURI)} · ${mediaLabel(current)}`;
+    if (current) $("#player-source").textContent = "";
   });
   bind("timeupdate", () => {
     if (audio.currentTime > 0) clearTimeout(mediaTimer);
@@ -1420,7 +1428,6 @@ nowPlaying = mountNowPlaying({
   getState: () => ({
     record: current && { ...current, title: cleanTitle(current.title) },
     image: current ? image(current) : "",
-    source: $("#player-source").textContent,
     action: recordingControlState({ ...playbackState(), id: current?.id })
       .action,
     shuffle: queueState.enabled,
@@ -1436,10 +1443,7 @@ nowPlaying = mountNowPlaying({
   onAction: (action, value) => {
     if (action === "toggle") void toggleCurrentPlayback();
     else if (action === "queue") showQueue();
-    else if (action === "record") {
-      nowPlaying.close();
-      location.hash = recordLink(current);
-    } else if (action === "like") {
+    else if (action === "like") {
       // Updating a like from the overlay must not replace the page underneath.
       likes.has(current.id) ? likes.delete(current.id) : likes.add(current.id);
       try {

@@ -1,13 +1,30 @@
 export function mountNowPlaying({ dialog, getState, onAction, icon }) {
   const find = (name) => dialog.querySelector(`[data-now="${name}"]`);
-  let returnTo;
+  let returnTo, pointerReturn;
+  dialog.dataset.inputMethod = "pointer";
+  document.addEventListener(
+    "pointerdown",
+    () => {
+      dialog.dataset.inputMethod = "pointer";
+    },
+    true,
+  );
+  document.addEventListener(
+    "keydown",
+    (event) => {
+      if (event.metaKey || event.ctrlKey || event.altKey) return;
+      dialog.dataset.inputMethod = "keyboard";
+      pointerReturn?.removeAttribute("data-now-pointer-focus");
+      pointerReturn = null;
+    },
+    true,
+  );
   const update = () => {
     const s = getState();
     if (!s.record) return;
     find("title").textContent = s.record.title;
     find("artist").textContent = s.record.artist;
     if (find("art").getAttribute("src") !== s.image) find("art").src = s.image;
-    find("source").textContent = s.source;
     find("toggle").innerHTML = icon(s.action);
     find("toggle").setAttribute(
       "aria-label",
@@ -64,8 +81,14 @@ export function mountNowPlaying({ dialog, getState, onAction, icon }) {
   dialog.addEventListener("close", () => {
     document.body.classList.remove("now-playing-open");
     if (returnTo?.hash === location.hash) {
-      if (returnTo.focus?.isConnected)
+      if (returnTo.focus?.isConnected) {
+        if (dialog.dataset.inputMethod === "pointer") {
+          pointerReturn?.removeAttribute("data-now-pointer-focus");
+          pointerReturn = returnTo.focus;
+          pointerReturn.setAttribute("data-now-pointer-focus", "");
+        }
         returnTo.focus.focus({ preventScroll: true });
+      }
       window.scrollTo({
         left: returnTo.x,
         top: returnTo.y,

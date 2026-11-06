@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-11-06T18:18:58.593241+00:00",
+  "recording": "Planet X",
+  "source": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+  "sourceCID": "bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne",
+  "sourceSizeBytes": 310039114,
+  "sourceDurationSeconds": 240.083333,
+  "streams": [
+    {
+      "index": 0,
+      "codec_name": "h264",
+      "codec_type": "video",
+      "duration": "240.083333"
+    },
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration": "240.083333"
+    }
+  ],
+  "download": {
+    "source": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+    "checkedAt": "2026-11-06T18:18:01.231Z",
+    "httpStatus": 206,
+    "contentRange": "bytes 137959295-171392595/310039114",
+    "etag": "\"bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne\"",
+    "bytesDownloaded": 33433301,
+    "totalBytesIncludingExistingHead": 34481877
+  },
+  "requestedExcerptSeconds": {
+    "start": 108,
+    "end": 130
+  },
+  "copiedAACDurationSeconds": 22.006,
+  "packetsInspectedInExcerpt": 1031,
+  "allExcerptPacketsWithinDownloadedRange": true,
+  "excerptPacketTimestampsStrictlyIncreasing": true,
+  "artifacts": [
+    {
+      "path": "/Users/peterarango/Documents/Music Nerd/Apps/web3-music-repo/work/planet-x-108-130-original.m4a",
+      "bytes": 881765,
+      "sha256": "c2e7096af4fa23af3cec30519874cc4fc182770933d0f6b414e33008cbdc2e22",
+      "processing": "AAC stream copy, no re-encoding"
+    },
+    {
+      "path": "/Users/peterarango/Documents/Music Nerd/Apps/web3-music-repo/work/planet-x-108-130-original.wav",
+      "bytes": 4224078,
+      "sha256": "001352f0d9e8113268534bd38ee189b0f01c4e03e90c3147c4539f9bee9757b6",
+      "processing": "AAC decoded to stereo 48kHz PCM; no normalization, remix or effects"
+    }
+  ],
+  "conclusion": "The source container has one stereo AAC stream and the inspected excerpt has a single increasing audio packet timeline. This does not establish whether overlapping musical material is baked into that stream. No perceptual overlap verdict was made. Compare this direct original-source excerpt with the app at108\u2013130seconds.",
+  "scope": "Bounded technical source inspection; no full310MBdownload, original media modification, app modification, or global playback fix claimed."
+}

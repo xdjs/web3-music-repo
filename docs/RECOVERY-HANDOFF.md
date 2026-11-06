@@ -10,6 +10,16 @@ Updated November 6, 2026. Created and originated by **Pete Rango**. This is the 
 - Existing Lab listing: https://lab.musicnerd.net/peterango/music-nft-recovery . It launches the Vercel app, not a separate build. Cookbook updated at18:10UTC for the31,220record expansion, NowPlaying, linkedcollections, ENS andplaybackcontrols; saved data and desktop/mobile rendering independently verified. Cover, source link, description and Pete Rango originator credit preserved.
 - `data/release-spinamp-now-playing-2026-11-06.json` identifies the latest release; `data/release-wallet-player-2026-11-06.json` describes the earlier release. Verification/docs commits after deployment do not change the deployed app. Older receipts are historical.
 
+## Mobile player and media correction follow-up
+
+Prepared on branch `codex/mobile-player-media` after the expanded release. Remove storage/network labels from both players at rest; provenance stays on song pages. Full-screen player removes footer source/details text, replaces Back with a close-chevron, hides mobile volume and mute, retains seeking, and avoids pointer/touch focus boxes while preserving keyboard focus and navigation.
+
+Helmet City and both Base Day Two entries are verified videos (1536×896 and1920×1080 respectively). Their original metadata MIME was empty; three exact records now retain audited video classification. Runtime checks decoded native video dimensions too, so extensionless/video-mislabeled sources display inside Now Playing without a second player. The single media element remains laid out during startup; touch WebKit confirmed both named recordings show video and play before Back, and continue after Back. Desktop/mobile light/dark and keyboard checks passed; physical iOS confirmation is still useful.
+
+The original Planet X file contains one H264 video stream and one stereo AAC stream. A bounded byte-range extraction created an unmodified22.006s AAC excerpt of1:48–2:10 under ignored `work/`; see `docs/planet-x-source-inspection.md` and `data/playback-source-inspection.json`. No audible diagnosis is claimed. Pete was asked to compare the original video outside the app; awaiting that comparison. Queue-start ordering remains deliberately deferred.
+
+A bounded retry of20 previously unresolved Spinamp entries made no progress: upstream statement/transaction timeouts. All169 stay retryable. The writer stopped and removed its lock. Listening counts remain31,220total/21,395Spinamp; no new bulk recovery or BPM worker is running. Before publication220unit tests, syntax/format and build pass. See `data/now-playing-mobile-verification.json`, `data/runtime-video-verification.json`, and `data/spinamp/video-kind-verification.json`.
+
 ## Expanded Spinamp and listening checkpoint
 
 User requested this checkpoint be deployed on November 6 after asking for a stopping point. Merged PR #3; deployment confirmation is recorded separately in the release receipt.

@@ -1,4 +1,5 @@
 const shapes = {
+  collapse: '<path d="m6 9 6 6 6-6"/>',
   grip: '<g fill="currentColor" stroke="none"><circle cx="9" cy="5" r="1.4"/><circle cx="15" cy="5" r="1.4"/><circle cx="9" cy="12" r="1.4"/><circle cx="15" cy="12" r="1.4"/><circle cx="9" cy="19" r="1.4"/><circle cx="15" cy="19" r="1.4"/></g>',
   shuffle:
     '<path d="M3 6h2c5 0 9 12 14 12h2m-4-4 4 4-4 4M3 18h2c2.1 0 4-2.1 5.8-4.5M13.2 10.5C15 8.1 17 6 19 6h2m-4-4 4 4-4 4"/>',
