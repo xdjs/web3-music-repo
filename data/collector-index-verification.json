@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-06T21:38:54.747Z",
+  "address": "0x625307de45bd25ad6bf6cc7391a308fc84067cf7",
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "scope": "Two bounded public indexed wallet pages; freshness unknown, not independently checked current balances",
+  "pages": [
+    {
+      "status": "indexed",
+      "elapsedMs": 605,
+      "loadedNfts": 20,
+      "totalIndexedNfts": 256,
+      "matchedEntries": 17,
+      "unmatchedNfts": 3,
+      "unsupportedNfts": 0,
+      "incompleteTrackRelations": 0,
+      "hasNextPage": true
+    },
+    {
+      "status": "indexed",
+      "elapsedMs": 304,
+      "loadedNfts": 20,
+      "totalIndexedNfts": 256,
+      "matchedEntries": 14,
+      "unmatchedNfts": 6,
+      "unsupportedNfts": 0,
+      "incompleteTrackRelations": 0,
+      "hasNextPage": true
+    }
+  ],
+  "uniqueMatchedRecords": 19,
+  "uniqueMatchedNFTs": 31
+}

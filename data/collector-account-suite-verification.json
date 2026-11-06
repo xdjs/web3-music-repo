@@ -1,0 +1,25 @@
+{
+  "startedAt": "2026-11-06T21:40:33.792Z",
+  "finishedAt": "2026-11-06T21:40:38.539Z",
+  "command": "npm test",
+  "exitCode": 0,
+  "log": "work/collector-account-suite-output.log",
+  "summary": [
+    "\u2139 tests 294",
+    "\u2139 suites 0",
+    "\u2139 pass 294",
+    "\u2139 fail 0",
+    "\u2139 cancelled 0",
+    "\u2139 skipped 0",
+    "\u2139 todo 0",
+    "\u2139 duration_ms 4557.585875"
+  ],
+  "finalRootRun": {
+    "command": "npm test",
+    "tests": 295,
+    "passed": 295,
+    "failed": 0,
+    "durationMs": 4734.436667,
+    "note": "Includes final empty-name collector-results regression."
+  }
+}

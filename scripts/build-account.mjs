@@ -6,7 +6,7 @@ const outdir = path.resolve("public/account");
 // Finish the entire build before replacing any served asset. A failed compile
 // leaves the previous login interface intact.
 const result = await build({
-  entryPoints: ["src/account-login.jsx"],
+  entryPoints: { "account-login": "src/account-entry.mjs" },
   outdir,
   bundle: true,
   format: "esm",

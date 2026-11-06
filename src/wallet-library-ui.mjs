@@ -15,7 +15,7 @@ export function mountWalletLibrary({
   platform = (r) => r.platform || "",
   onCollectionChange = () => {},
 }) {
-  let context = { requested: "", embedded: false };
+  let context = { requested: "", embedded: false, profile: false };
   let ownedRequested = false,
     visibleLimit = 40;
   const filters = {
@@ -29,6 +29,72 @@ export function mountWalletLibrary({
   let lookupVersion = 0,
     lookupController = null;
   const resolvedNames = new Map();
+  const collectionSnapshots = new Map();
+  let snapshotRequest = null;
+  async function loadSnapshot(address, more = false) {
+    if (!normalizeWallet(address)) return;
+    const previous = collectionSnapshots.get(address);
+    if (previous?.loading || (!more && previous?.loaded)) return;
+    snapshotRequest?.abort();
+    const controller = new AbortController();
+    snapshotRequest = controller;
+    const entry = {
+      ...previous,
+      loading: true,
+      error: "",
+      items: previous?.items || [],
+    };
+    collectionSnapshots.set(address, entry);
+    patchResults();
+    try {
+      const response = await fetch(
+        `/api/collector/${address}/collection?source=spinamp${more && entry.nextCursor ? "&cursor=" + encodeURIComponent(entry.nextCursor) : ""}`,
+        {
+          signal: AbortSignal.any([
+            controller.signal,
+            AbortSignal.timeout(25000),
+          ]),
+        },
+      );
+      const result = await response.json();
+      if (controller.signal.aborted) return;
+      if (!response.ok || result.status !== "indexed")
+        throw Error(
+          result.message ||
+            "This collection snapshot could not be reached. Retry to continue.",
+        );
+      const items = new Map(
+        (more ? entry.items : []).map((item) => [item.recordId, item]),
+      );
+      for (const item of result.items || [])
+        if (item.recordId) items.set(item.recordId, item);
+      Object.assign(entry, {
+        items: [...items.values()],
+        loaded: true,
+        nextCursor: result.nextCursor || null,
+        checkedAt: result.checkedAt,
+        source: result.source,
+        loadedNfts:
+          (more ? entry.loadedNfts || 0 : 0) +
+          (Number.isInteger(result.loadedNfts) ? result.loadedNfts : 0),
+        totalIndexedNfts: Number.isInteger(result.totalIndexedNfts)
+          ? result.totalIndexedNfts
+          : null,
+      });
+    } catch (error) {
+      if (!controller.signal.aborted)
+        entry.error =
+          error.name === "TimeoutError"
+            ? "The collection snapshot took too long to respond. Retry to continue."
+            : error.message;
+    } finally {
+      entry.loading = false;
+      if (snapshotRequest === controller) snapshotRequest = null;
+      if (collectionSnapshots.size > 50)
+        collectionSnapshots.delete(collectionSnapshots.keys().next().value);
+      patchResults();
+    }
+  }
   const state = createWalletLibraryState({
     fetchPage: async (address, chain, cursor, signal) => {
       const response = await fetch(
@@ -56,6 +122,7 @@ export function mountWalletLibrary({
   };
   window.addEventListener("hashchange", () => {
     cancelLookup();
+    snapshotRequest?.abort();
     queueMicrotask(startVisible);
   });
   function lookupStatus(message = "", error = false, busy = false) {
@@ -106,7 +173,22 @@ export function mountWalletLibrary({
         .filter(Boolean),
     );
     const matched = catalog().filter((record) => ids.has(record.id));
+    const indexed = context.profile
+      ? collectionSnapshots.get(snapshot.address)
+      : null;
+    const snapshotIds = new Set(
+      (indexed?.items || []).map((item) => item.recordId),
+    );
+    const snapshotRecords = catalog().filter((record) =>
+      snapshotIds.has(record.id),
+    );
+    const available = [...matched, ...snapshotRecords];
     const filtered = filterCollectionRecords(matched, filters, platform);
+    const snapshotFiltered = filterCollectionRecords(
+      snapshotRecords,
+      filters,
+      platform,
+    );
     const select = (name, label, choices) =>
       collectionSelect(
         esc,
@@ -116,7 +198,7 @@ export function mountWalletLibrary({
         filters[name],
         "data-wallet-filter",
       );
-    const controls = `<label class="artist-search-label">Search collected music<input type="search" data-wallet-filter="query" value="${esc(filters.query)}" placeholder="Artist, song, or collection…"></label><div class="filter-toolbar">${select("platform", "Platform", [["", "All platforms"], ...[...new Set(matched.map(platform).filter(Boolean))].sort().map((name) => [name, name])])}${select("network", "Network", [["", "All networks"], ...Object.entries(walletChains)])}${select("collection", "Collection", [["", "All collections"], ...[...new Set(matched.map((r) => r.collection).filter(Boolean))].sort().map((name) => [name, name])])}${select(
+    const controls = `<label class="artist-search-label">Search collected music<input type="search" data-wallet-filter="query" value="${esc(filters.query)}" placeholder="Artist, song, or collection…"></label><div class="filter-toolbar">${select("platform", "Platform", [["", "All platforms"], ...[...new Set(available.map(platform).filter(Boolean))].sort().map((name) => [name, name])])}${select("network", "Network", [["", "All networks"], ...Object.entries(walletChains)])}${select("collection", "Collection", [["", "All collections"], ...[...new Set(available.map((r) => r.collection).filter(Boolean))].sort().map((name) => [name, name])])}${select(
       "media",
       "Media",
       [
@@ -131,7 +213,10 @@ export function mountWalletLibrary({
       ["newest", "Newest first"],
       ["oldest", "Oldest first"],
     ])}</div><div class="section-head"><p class="link-note">${filtered.length} of ${matched.length} recovered recordings matched in loaded wallet pages</p><button class="text-button" data-wallet-reset-filters>Reset filters</button></div><div class="cards library-grid" data-wallet-matches>${filtered.slice(0, visibleLimit).map(card).join("")}</div>${filtered.length > visibleLimit ? '<button class="outline-button more" data-wallet-more>Load more recordings</button>' : ""}`;
-    return `${controls}<p class="link-note">${snapshot.linked.includes(snapshot.address) ? "Showing your linked wallet. " : ""}The first page on each network is checked automatically. More pages are loaded only when you choose them. Matches use the recovered catalog; a zero here does not establish that a wallet has no music NFTs.</p>${Object.entries(
+    const snapshotMarkup = !context.profile
+      ? ""
+      : `<section class="section" data-wallet-snapshot><div class="section-head"><div><h2>Spinamp collection snapshot</h2><p>${snapshotFiltered.length} of ${snapshotRecords.length} recovered recordings match these filters</p></div></div><p class="link-note">Music indexed against this wallet by Spinamp. Ownership freshness is unknown; these are not verified current holdings. Only loaded pages are shown.${indexed?.loadedNfts ? ` ${indexed.loadedNfts} token entries checked${indexed.totalIndexedNfts !== null ? ` of ${indexed.totalIndexedNfts} indexed` : ""}; recordings and NFT counts differ.` : ""}${indexed?.nextCursor ? " More pages are available." : ""}</p>${indexed?.error ? `<p class="notice" role="alert">${esc(indexed.error)}</p>` : ""}<div class="cards library-grid">${snapshotFiltered.slice(0, visibleLimit).map(card).join("")}</div>${snapshotFiltered.length > visibleLimit ? '<button class="outline-button more" data-wallet-more>Show more loaded recordings</button>' : ""}${indexed?.loading ? '<p class="link-note" role="status">Loading the collection snapshot…</p>' : indexed?.error || !indexed?.loaded || indexed?.nextCursor ? `<button class="outline-button" data-wallet-snapshot-page>${indexed?.error ? "Retry snapshot" : indexed?.nextCursor ? "Load next snapshot page" : "Load collection snapshot"}</button>` : '<p class="link-note">All pages returned by this index have been read. Unmatched tokens and unindexed holdings may still exist.</p>'}</section>`;
+    return `${controls}<p class="link-note">${snapshot.linked.includes(snapshot.address) ? "Showing your linked wallet. " : ""}The first page on each network is checked automatically. More pages are loaded only when you choose them. Matches use the recovered catalog; a zero here does not establish that a wallet has no music NFTs.</p>${snapshotMarkup}${Object.entries(
       walletChains,
     )
       .map(([chain, name]) => {
@@ -159,6 +244,8 @@ export function mountWalletLibrary({
   function content() {
     const snapshot = state.snapshot(),
       address = snapshot.address || context.requested;
+    if (context.profile)
+      return `<section class="section"><div class="section-head"><div><h2>Collected music</h2><p>Explore recordings matched to this wallet’s indexed holdings.</p></div></div><p class="link-note">Current wallet checks are separate from the historical profile and observations below. Solana holdings are not supported yet.</p><div data-wallet-results>${results()}</div></section>`;
     return `<div class="intro"><div>${context.embedded ? "<h2>My collection</h2>" : "<h1>Your collected music</h1>"}<p>${snapshot.linked.includes(snapshot.address) ? "Explore your linked wallet’s music. No signature is needed to listen." : "Explore a public wallet’s music. No signature is needed to listen."}</p></div></div>${
       snapshot.linked.length > 1
         ? collectionSelect(
@@ -223,15 +310,16 @@ export function mountWalletLibrary({
     if (ownedRequested) state.startLinked();
   }
   document.addEventListener("mn:account-wallets", accountChanged);
-  function view(address = "", embedded = false) {
+  function view(address = "", embedded = false, { profile = false } = {}) {
     cancelLookup();
-    context = { requested: address.trim(), embedded };
+    context = { requested: address.trim(), embedded, profile };
     state.select(context.requested, embedded);
     queueMicrotask(() => {
       const target = host();
       if (!target) return;
       document.dispatchEvent(new Event("mn:request-account-wallets"));
       startVisible();
+      if (profile) loadSnapshot(state.snapshot().address);
     });
     return `<div data-wallet-library data-wallet-address="${esc(state.snapshot().address)}">${content()}</div>`;
   }
@@ -363,6 +451,11 @@ export function mountWalletLibrary({
     }
     const button = event.target.closest("[data-wallet-chain]");
     if (button) state.scan(button.dataset.walletChain);
+    if (event.target.closest("[data-wallet-snapshot-page]"))
+      loadSnapshot(
+        state.snapshot().address,
+        !!collectionSnapshots.get(state.snapshot().address)?.nextCursor,
+      );
   });
   return {
     view,

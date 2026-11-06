@@ -2,6 +2,18 @@
 
 Updated November 6, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
+## Collector discovery follow-up — release candidate
+
+Validation: 295 tests pass; syntax, formatting and production build pass. Desktop/mobile light/dark fixtures and unmocked Pete wallet checks pass. Forty indexed NFT entries matched 19 distinct recordings, with more pages remaining. See `data/collector-discovery-live-verification.json`, `data/collector-index-verification.json`, and `data/collector-account-suite-verification.json`.
+
+The `codex/collector-discovery` branch adds public collector profiles with the same collection search/platform/network/media/collection/date controls used elsewhere in the app. The main search accepts full EVM addresses, forward-resolved ENS names, and recovered Sound profile names. Historical display names remain explicit choices, never automatic wallet identity merges. Public lookups do not become linked account wallets or contaminate Explore's My collection filter.
+
+Collector pages load bounded current indexer checks and a separately labeled Spinamp wallet snapshot, with explicit pagination and retryable failures. Spinamp matches require positive wallet balances and exact asset or explicit track relations; a shared artist contract alone is insufficient. Historical profile/collection observations remain secondary. Index freshness is unknown, unindexed/unmatched tokens remain possible, and Solana wallet collections are still unsupported.
+
+The Lab iframe now presents a native new-tab sign-in link before importing Privy. Standalone authentication remains unchanged; no client origins or authentication policies were weakened. Real account OTP/signature and cross-device playlist persistence still require the user's own verification. Instagram Story MP4 export remains pending; `docs/social-clip-sharing-plan.md` specifies the renderer and actual-device acceptance work. No new listening transcodes are authorized.
+
+The older sections below are chronological release evidence, not a unified current backlog. In particular, the Planet X source diagnosis, Nina admission, queue ordering and preloading changed in later releases above those historical entries. Remaining recovery work includes the 169 upstream Spinamp failures, fuller chain/edition/collector coverage, and further metadata analysis; none is claimed complete.
+
 ## Playback preference and next-track continuity
 
 Pete explicitly rejected creating new listening/transcoded copies for playback optimization. The Consent AAC experiment under ignored `work/consent-streaming/` is not approved for integration or publication. Preserve original files and focus on buffering plus same-content gateway delivery. The earlier artist-approved Planet X correction remains a separate, specifically approved source repair.
