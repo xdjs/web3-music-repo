@@ -1,10 +1,10 @@
 # Planet X app playback investigation
 
-Pete reports the original recording sounds clean at 1:48 and the doubling occurs only in the application. This supersedes any suggestion that the source recording explains the problem. The application-side cause remains unresolved; no speculative source change or media alteration was made.
+Pete's latest direct comparison confirms that the doubling is present in the original IPFS audio itself. This supersedes the earlier report that it occurred only in the app. No application-side doubling defect has been established. Pete has a clean original master; its attachment is pending. No source media has been replaced. Any future artist-supplied master must retain the immutable original CID and be clearly labeled with its separate provenance. The investigation below preserves the evidence and earlier hypotheses chronologically.
 
 The bounded investigation used the local canonical app at `http://127.0.0.1:4191`, source revision `b29ccddfc2d5583c1597e5a43f349b58d6e41abc`, on 2026-11-06. This is a fresh headless Chromium session, not Pete's physical browser session or an auditory confirmation.
 
-The corrected transition run completed with no script/page errors: one tracked element, at most one playing element, zero AudioContexts; playback advanced from108.037 to119.764 seconds, paused at119.773, resumed to131.780, and paused at131.801 seconds. Chrome native events show the prior song pipeline paused and destroyed before the Planet X pipeline was created; no native player errors were recorded. The diagnostic browser closed and both test processes exited.
+The corrected transition run completed with no script/page errors: one tracked element, at most one playing element, zero AudioContexts; playback advanced from 108.037 to 119.764 seconds, paused at 119.773, resumed to 131.780, and paused at 131.801 seconds. Chrome native events show the prior song pipeline paused and destroyed before the Planet X pipeline was created; no native player errors were recorded. The diagnostic browser closed and both test processes exited.
 
 ## Evidence
 
@@ -15,3 +15,27 @@ The corrected transition run completed with no script/page errors: one tracked e
 The inspected standby preload implementation never calls play before adoption. Adoption pauses the old player, aborts its listeners, replaces it, clears its source and reloads it. Detected video cancels standby buffering. That review and the traces have not established a concrete defect. The absence of a second element in these fresh sessions does not invalidate Pete's report or prove the audible issue fixed. Confirmation in the refreshed physical browser remains pending.
 
 No application source was edited. Diagnostic scripts and source excerpts remain in ignored `work/planet-x-*`; no additional broad downloads or indefinite test loops are running after completion.
+
+## Physical Chrome native log follow-up
+
+Root inspected Pete's Chrome Media diagnostics through computer-use on 2026-11-06. The selected Planet X pipeline was created at 18:34:53 UTC: a 3000×3000 H.264 video decoded with hardware VideoToolbox, one FFmpeg audio decoder, 310 MB resource, and byte-range support reported. DEMUXER_UNDERFLOW events occurred at approximately 3.535, 5.973, 9.898, 19.069, 29.472, 43.241 and 65.440 seconds after creation. The selected video track became unset at 46.329 seconds and returned to track 1 at 128.243 seconds. Playback ended at 266.664 seconds; the pipeline was destroyed at 266.672. Root read the complete event history and reported no `kSeek` event during this run. These are native-log wall-time offsets, not track playhead positions. Root opened DevTools Media around the 2:47 playhead; the earlier track restoration preceded that diagnostic action, and the user also switched tabs.
+
+Chromium's [background-video implementation](https://chromium.googlesource.com/chromium/src/+/HEAD/third_party/blink/renderer/platform/media/web_media_player_impl.cc) (`ShouldDisableVideoWhenHidden`, `UpdateBackgroundVideoOptimizationState`, `EnableVideoTrackIfNeeded`, `DisableVideoTrackIfNeeded`) can deselect video after a ten-second page/frame-hidden delay, then restore it when shown. Its comments identify seek/network-delay and AV-sync risks around these transitions. This supports a browser-lifecycle hypothesis; it does **not** establish that closing our dialog triggers the same mechanism, that the reported doubling was caused by it, or that a second sound source existed. Page/frame visibility is distinct from an element's CSS visibility. Underflows establish buffering pressure, not duplicate audio.
+
+No speculative persistent-stage, reparenting, decoder, or media-source patch was made. The separate seeking-control defect is being handled by the player/UI agent and must not be represented as a confirmed fix for the doubling. Pete's clean-original/app-only-doubling report remains open pending reproduction in his refreshed browser or direct audible evidence.
+
+## Exact 1:43 boundary inspection
+
+Pete subsequently narrowed the repeatable onset to approximately **103 seconds**. `data/planet-x-boundary-inspection.json` records the following bounded checks:
+
+- Across 95.915–110.827 seconds, 700 AAC packets have unique presentation timestamps, strictly increasing decoding timestamps, and a constant 1,024-sample cadence (21.333 ms at 48 kHz). The 179 video packets have unique presentation timestamps and strictly increasing decoding timestamps at 12 fps; normal B-frame reordering is present. No discontinuity or overlapping timestamp was found at 103 seconds.
+- Each MP4 track has one full-duration edit-list entry. Audio begins at media time zero; video has an 83.333 ms initial offset. There is no edit-list splice at the reported boundary.
+- `work/planet-x-98-110-original.m4a` preserves the original AAC packets from approximately 98–110 seconds without re-encoding or effects. The reported boundary is **five seconds into this excerpt**. `work/planet-x-98-110-original.wav` is a 12-second PCM decoding. All 563 audio packet payloads in the interval were present; extraction and decoding reported zero errors. These local artifacts support a precise A/B audition; no new perceptual verdict is asserted.
+
+Both larger missing-range requests timed out after partial writes. Four small, exact HTTP206 requests filled the remaining AAC gaps (105,792 bytes). The conservative upper bound for source-range downloads, including the earlier extraction and gateway comparisons, is 62,753,919 bytes, below 64 MiB. The sparse MP4 still contains unfilled video regions and must not be treated as a complete source download.
+
+The attempted same-gateway app/direct decoded-audio comparison did **not** complete. In the app, startup failed to advance beyond 0.1 seconds within 45 seconds and the native logs show gateway fallback. The direct magic-gateway player reached its seek to 98 seconds but did not advance to 100 seconds within the next 30 seconds; native logs include demuxer underflow. `data/planet-x-boundary-capture.json` preserves both failed attempts. The proposed capture requires CORS and `captureStream`, which can alter browser capture optimizations; it would not have proved system-output equivalence even if completed. All diagnostic browsers and processes exited. No UI files changed.
+
+## Latest artist confirmation
+
+Pete rechecked the original IPFS audio and confirmed that it contains the doubling. Earlier app-only statements in the historical investigation are superseded. Further duplication diagnostics are stopped. A clean artist master is awaiting attachment; replacement work must wait for that file, preserve access to the original immutable CID, and identify the new playback source as an artist-supplied master with provenance. No replacement or audio repair has been performed.

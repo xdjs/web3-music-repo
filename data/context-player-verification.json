@@ -1,0 +1,152 @@
+{
+  "checkedAt": "2026-11-06T18:52:28.529Z",
+  "base": "http://127.0.0.1:4191",
+  "checks": [
+    "Desktop Chromium: Play stayed in context; compact and expanded song/artist links correct; explicit expand/back retained real playback",
+    "Touch WebKit: Play stayed in context; compact and expanded song/artist links correct; explicit expand/back retained real playback"
+  ],
+  "views": [
+    {
+      "w": 1440,
+      "h": 1000,
+      "theme": "light",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 64,
+      "artWidth": 520,
+      "artHeight": 520
+    },
+    {
+      "w": 1440,
+      "h": 1000,
+      "theme": "dark",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 64,
+      "artWidth": 520,
+      "artHeight": 520
+    },
+    {
+      "w": 320,
+      "h": 568,
+      "theme": "light",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 32,
+      "artWidth": 236.21875,
+      "artHeight": 236.21875
+    },
+    {
+      "w": 320,
+      "h": 568,
+      "theme": "dark",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 32,
+      "artWidth": 236.21875,
+      "artHeight": 236.21875
+    },
+    {
+      "w": 320,
+      "h": 844,
+      "theme": "light",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 32.015625,
+      "artWidth": 280,
+      "artHeight": 280
+    },
+    {
+      "w": 320,
+      "h": 844,
+      "theme": "dark",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 32.015625,
+      "artWidth": 280,
+      "artHeight": 280
+    },
+    {
+      "w": 390,
+      "h": 667,
+      "theme": "light",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 32,
+      "artWidth": 332.25,
+      "artHeight": 332.25
+    },
+    {
+      "w": 390,
+      "h": 667,
+      "theme": "dark",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 32,
+      "artWidth": 332.25,
+      "artHeight": 332.25
+    },
+    {
+      "w": 390,
+      "h": 844,
+      "theme": "light",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 32.015625,
+      "artWidth": 350,
+      "artHeight": 350
+    },
+    {
+      "w": 390,
+      "h": 844,
+      "theme": "dark",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 32.015625,
+      "artWidth": 350,
+      "artHeight": 350
+    },
+    {
+      "w": 430,
+      "h": 740,
+      "theme": "light",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 32,
+      "artWidth": 390,
+      "artHeight": 390
+    },
+    {
+      "w": 430,
+      "h": 740,
+      "theme": "dark",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 32,
+      "artWidth": 390,
+      "artHeight": 390
+    },
+    {
+      "w": 430,
+      "h": 932,
+      "theme": "light",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 32,
+      "artWidth": 390,
+      "artHeight": 390
+    },
+    {
+      "w": 430,
+      "h": 932,
+      "theme": "dark",
+      "overflowX": false,
+      "overflowY": false,
+      "bottom": 32,
+      "artWidth": 390,
+      "artHeight": 390
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

@@ -1,6 +1,6 @@
 {
-  "scope": "Manually checked artist roles from exact-release original metadata; descriptive mentions are not credits",
-  "checkedAt": "2026-11-06T07:58:26.082Z",
+  "scope": "Artist roles from exact-release original metadata or explicitly labeled artist attestations; descriptive mentions alone are not credits",
+  "checkedAt": "2026-11-06T18:58:41.229Z",
   "records": {
     "record-61048859": [
       {
@@ -40,6 +40,23 @@
         "role": "Co-production",
         "source": "https://arweave.net/oPJ_cHpuUKPgAXtEUzDfB3x9bAapUxhJmk5kj3lPvnE/1",
         "quote": "produced by Pete Rango and Matt Lee"
+      }
+    ],
+    "spinamp-1c68061e5fc9d737da8a": [
+      {
+        "personId": "pete-rango",
+        "creditedName": "Pete Rango",
+        "role": "Producer",
+        "sourceType": "artist-attestation",
+        "source": null,
+        "attestedBy": "Pete Rango",
+        "attestedAt": "2026-11-06",
+        "attestation": "Pete Rango confirmed that he produced this recording and that its original mint attribution is xueniversal.eth. This credit applies only to this recording, not to every release from the wallet.",
+        "recordIdentity": {
+          "chainId": 1,
+          "contract": "0x703f5f7da859841fc71463bb026e5f2b96d00f08",
+          "tokenId": "1"
+        }
       }
     ]
   }

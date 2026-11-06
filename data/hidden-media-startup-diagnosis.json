@@ -1,0 +1,40 @@
+{
+  "responses": [
+    {
+      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "status": 206
+    },
+    {
+      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "status": 206
+    },
+    {
+      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "status": 206
+    },
+    {
+      "url": "https://d2i9ybouka0ieh.cloudfront.net/user-uploads/a32916af-1193-40d5-823c-575b7724573b/AVATAR_IMAGE/6218159-setmefree.png",
+      "status": 200
+    },
+    {
+      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "status": 206
+    },
+    {
+      "url": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "status": 206
+    }
+  ],
+  "closed": {
+    "time": 0,
+    "paused": false,
+    "ready": 1,
+    "src": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a"
+  },
+  "open": {
+    "time": 0,
+    "paused": false,
+    "ready": 1,
+    "src": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a"
+  }
+}

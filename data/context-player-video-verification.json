@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-11-06T18:58:27.668Z",
+  "base": "http://127.0.0.1:4191",
+  "collapsed": {
+    "time": 0.3103920421563089,
+    "source": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+    "width": 1920,
+    "height": 1080,
+    "dialogOpen": false
+  },
+  "expanded": {
+    "time": 0.35324000008404255,
+    "count": 1,
+    "left": 20,
+    "top": 166.390625,
+    "width": 350,
+    "height": 350,
+    "slot": {
+      "left": 20,
+      "top": 166.390625,
+      "width": 350,
+      "height": 350
+    },
+    "workspaceInert": true,
+    "focus": "back"
+  },
+  "closed": {
+    "time": 0.8488284298606102,
+    "source": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+    "paused": false
+  },
+  "passed": true
+}

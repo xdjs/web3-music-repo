@@ -1,0 +1,191 @@
+{
+  "checkedAt": "2026-11-06T18:51:20.808398+00:00",
+  "recordId": "pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1",
+  "boundarySeconds": 103,
+  "result": "No packet-timestamp discontinuity or edit-list splice found. Latest artist listening confirmation identifies the doubling in the original IPFS audio; earlier app-only report is superseded. No application-side doubling defect established.",
+  "timeline": {
+    "0": {
+      "packets": 179,
+      "dtsRange": [
+        95.916667,
+        110.75
+      ],
+      "nonIncreasingDTS": 0,
+      "duplicatePTS": 0,
+      "minDTSStep": 0.0833329999999961,
+      "maxDTSStep": 0.08333400000000779,
+      "boundaryPackets": [
+        {
+          "stream_index": 0,
+          "pts_time": "103.000000",
+          "dts_time": "102.833333",
+          "duration_time": "0.083333",
+          "size": "55916",
+          "pos": "132787022",
+          "flags": "___"
+        }
+      ]
+    },
+    "1": {
+      "packets": 700,
+      "dtsRange": [
+        95.914667,
+        110.826667
+      ],
+      "nonIncreasingDTS": 0,
+      "duplicatePTS": 0,
+      "minDTSStep": 0.021332999999998492,
+      "maxDTSStep": 0.021334000000010178,
+      "boundaryPackets": [
+        {
+          "stream_index": 1,
+          "pts_time": "102.954667",
+          "dts_time": "102.954667",
+          "duration_time": "0.021333",
+          "size": "846",
+          "pos": "133324514",
+          "flags": "K__"
+        },
+        {
+          "stream_index": 1,
+          "pts_time": "102.976000",
+          "dts_time": "102.976000",
+          "duration_time": "0.021333",
+          "size": "847",
+          "pos": "133325360",
+          "flags": "K__"
+        },
+        {
+          "stream_index": 1,
+          "pts_time": "102.997333",
+          "dts_time": "102.997333",
+          "duration_time": "0.021333",
+          "size": "910",
+          "pos": "133326207",
+          "flags": "K__"
+        },
+        {
+          "stream_index": 1,
+          "pts_time": "103.018667",
+          "dts_time": "103.018667",
+          "duration_time": "0.021333",
+          "size": "833",
+          "pos": "133327117",
+          "flags": "K__"
+        },
+        {
+          "stream_index": 1,
+          "pts_time": "103.040000",
+          "dts_time": "103.040000",
+          "duration_time": "0.021333",
+          "size": "796",
+          "pos": "133327950",
+          "flags": "K__"
+        }
+      ]
+    }
+  },
+  "editLists": {
+    "movieTimescale": 90000,
+    "video": {
+      "entries": 1,
+      "segmentDuration": 21607500,
+      "mediaTime": 2000,
+      "rate": 1
+    },
+    "audio": {
+      "entries": 1,
+      "segmentDuration": 21607500,
+      "mediaTime": 0,
+      "rate": 1
+    },
+    "meaning": "Each edit spans the whole240.083333s recording; no splice at103s."
+  },
+  "excerpt": {
+    "startSeconds": 98,
+    "endSeconds": 110,
+    "boundaryOffsetSeconds": 5,
+    "audioPacketsChecked": 563,
+    "allZeroPayloads": [],
+    "copyErrorsBytes": 0,
+    "decodeErrorsBytes": 0,
+    "artifacts": [
+      {
+        "path": "work/planet-x-98-110-original.m4a",
+        "bytes": 483768,
+        "sha256": "0080a538331e7359a5eae7578db680df87d589469719918b925b2150fb8fbfdc"
+      },
+      {
+        "path": "work/planet-x-98-110-original.wav",
+        "bytes": 2304078,
+        "sha256": "4d2778fec7a3bb00d5aad443d09264dbce6f41bb06a52b39f7b0d2fb679da4a3"
+      }
+    ],
+    "processing": "AAC streamcopy and separate PCM decoding; no effects, normalization or remixing."
+  },
+  "retrieval": {
+    "originalSource": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+    "largeRangeAttempts": {
+      "count": 2,
+      "maximumBytesEach": 14081841,
+      "result": "Both timed out after writing partial ranges; exact transferred bytes were not retained. Do not call complete downloads."
+    },
+    "completedAACGapBytes": 105792,
+    "totalSourceDownloadUpperBoundIncludingOldHeadAndRangesAndGatewaySamples": 62753919,
+    "smallRangeReceipts": [
+      {
+        "source": "https://ipfs.filebase.io/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+        "receipt": [
+          {
+            "start": 134607385,
+            "end": 134640391,
+            "bytes": 33007,
+            "status": "filled",
+            "contentRange": "bytes 134607385-134640391/310039114"
+          },
+          {
+            "start": 135835459,
+            "end": 135868465,
+            "bytes": 33007,
+            "status": "filled",
+            "contentRange": "bytes 135835459-135868465/310039114"
+          },
+          {
+            "start": 136839640,
+            "end": 136872882,
+            "bytes": 33243,
+            "status": "filled",
+            "contentRange": "bytes 136839640-136872882/310039114"
+          }
+        ]
+      },
+      {
+        "source": "https://ipfs.filebase.io/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+        "receipt": [
+          {
+            "start": 137952760,
+            "end": 137959294,
+            "bytes": 6535,
+            "status": "filled",
+            "contentRange": "bytes 137952760-137959294/310039114"
+          }
+        ]
+      }
+    ]
+  },
+  "browserComparison": {
+    "report": "data/planet-x-boundary-capture.json",
+    "status": "unavailable",
+    "app": "Startup never advanced beyond0.1s within45s; native logs show originalgateway\u2192Filebase\u2192Pinata fallback.",
+    "direct": "Seek to98s completed; playback did not reach100s within30s. Native logs includeDEMUXER_UNDERFLOW.",
+    "limitations": "captureStream requirescrossorigin and changes capture optimization; no successful audio capture or perceptual comparison. Both diagnostic browser/pages closed."
+  },
+  "latestArtistFinding": {
+    "source": "Pete Rango direct listening confirmation relayed in this session",
+    "finding": "Original IPFS audio itself contains the doubling.",
+    "supersedes": "Earlier report that only application playback doubled.",
+    "cleanMasterStatus": "Artist has clean original master; attachment pending.",
+    "mediaReplacement": "Not performed; await master attachment, preserve immutable original CID and label artist-supplied master with separate provenance.",
+    "diagnostics": "Stopped; no further duplication diagnostics needed."
+  }
+}

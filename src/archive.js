@@ -3,7 +3,7 @@ import {
   recordingControlSelector,
   syncRecordingControls,
 } from "./playback-controls.mjs";
-import { mountNowPlaying } from "./now-playing.mjs";
+import { mountNowPlaying, bindSeekRange } from "./now-playing.mjs";
 import { renderLyrics } from "./lyrics-ui.mjs";
 import { mountQueueSortable } from "./queue-sortable.mjs";
 import {
@@ -826,6 +826,8 @@ async function play(id, list = null, index = null) {
   document.body.classList.add("has-player");
   $("#player").hidden = false;
   $("#player-title").textContent = cleanTitle(r.title);
+  $("#player-title").href = recordLink(r);
+  $("#player-artist").href = "#artist/" + encodeURIComponent(artistId(r));
   $("#player-artist").textContent = r.artist;
   $("#player-art").src = image(r);
   $("#player-source").textContent = "Loading…";
@@ -1207,7 +1209,7 @@ $("#shuffle").onclick = () => {
 $("#mobile-queue").onclick = showQueue;
 $("#show-queue").onclick = showQueue;
 $("#queue-now").onclick = showQueue;
-$("#player-title").onclick = () => nowPlaying.open();
+$("#expand-now-playing").onclick = () => nowPlaying.open();
 $("#open-now-playing").onclick = () => nowPlaying.open();
 $("#proof-now").onclick = () => {
   if (current) location.hash = recordLink(current) + "?tab=proof";
@@ -1263,15 +1265,9 @@ async function activateRecording(
   index = null,
   queueOccurrence = false,
 ) {
-  if (current?.id !== id || (queueOccurrence && index !== queueIndex)) {
-    const playing = play(id, list, index);
-    if (current?.id === id) nowPlaying.open();
-    return playing;
-  }
-  const action = recordingControlState({ ...playbackState(), id }).action;
-  const toggling = toggleCurrentPlayback();
-  if (action === "play") nowPlaying.open();
-  return toggling;
+  if (current?.id !== id || (queueOccurrence && index !== queueIndex))
+    return play(id, list, index);
+  return toggleCurrentPlayback();
 }
 async function toggleCurrentPlayback() {
   if (!current) return;
@@ -1342,10 +1338,22 @@ $("#previous").onclick = () => {
   if (audio.currentTime > 3) audio.currentTime = 0;
   else if (queueIndex > 0) play(queue[queueIndex - 1], queue, queueIndex - 1);
 };
-$("#seek").oninput = (e) => {
-  if (Number.isFinite(audio.duration))
-    audio.currentTime = (Number(e.target.value) / 1000) * audio.duration;
-};
+function seekToPosition(value) {
+  if (!Number.isFinite(audio.duration)) return;
+  audio.currentTime = Math.min(
+    audio.duration,
+    Math.max(0, (value / 1000) * audio.duration),
+  );
+  $("#elapsed").textContent = time(audio.currentTime);
+  nowPlaying.update();
+}
+const compactSeek = bindSeekRange($("#seek"), {
+  commit: seekToPosition,
+  preview: (value) => {
+    if (Number.isFinite(audio.duration))
+      $("#elapsed").textContent = time((value / 1000) * audio.duration);
+  },
+});
 $("#volume").oninput = (e) => (audio.volume = Number(e.target.value));
 $("#mute").onclick = () => {
   audio.muted = !audio.muted;
@@ -1375,6 +1383,7 @@ function bindPlayerEvents() {
       hasVideo || current.kind === "video",
     );
     if (hasVideo) nextTrackBuffer.cancel();
+    nowPlaying?.update();
   };
   bind("loadedmetadata", detectVideo);
   bind("loadeddata", detectVideo);
@@ -1389,12 +1398,16 @@ function bindPlayerEvents() {
   bind("timeupdate", () => {
     if (audio.currentTime > 0) clearTimeout(mediaTimer);
     warmNextTrack();
-    $("#elapsed").textContent = time(audio.currentTime);
+    const draft = compactSeek.sync(
+      Number.isFinite(audio.duration)
+        ? (audio.currentTime / audio.duration) * 1000
+        : 0,
+    );
+    $("#elapsed").textContent = time(
+      draft === null ? audio.currentTime : (draft / 1000) * audio.duration,
+    );
     $("#duration").textContent = time(audio.duration);
     nowPlaying.update();
-    $("#seek").value = Number.isFinite(audio.duration)
-      ? (audio.currentTime / audio.duration) * 1000
-      : 0;
   });
   bind("play", () => {
     wantsPlayback = true;
@@ -1425,13 +1438,20 @@ function bindPlayerEvents() {
 nowPlaying = mountNowPlaying({
   dialog: $("#now-playing-dialog"),
   icon: navIcon,
+  formatTime: time,
   getState: () => ({
     record: current && { ...current, title: cleanTitle(current.title) },
     image: current ? image(current) : "",
+    hasVideo: audio.classList.contains("video-visible"),
+    recordHref: current ? recordLink(current) : "#",
+    artistHref: current
+      ? "#artist/" + encodeURIComponent(artistId(current))
+      : "#",
     action: recordingControlState({ ...playbackState(), id: current?.id })
       .action,
     shuffle: queueState.enabled,
     liked: likes.has(current?.id),
+    durationSeconds: audio.duration,
     elapsed: time(audio.currentTime),
     duration: time(audio.duration),
     seek: Number.isFinite(audio.duration)
@@ -1441,7 +1461,8 @@ nowPlaying = mountNowPlaying({
     volume: audio.volume,
   }),
   onAction: (action, value) => {
-    if (action === "toggle") void toggleCurrentPlayback();
+    if (action === "navigate") location.hash = value;
+    else if (action === "toggle") void toggleCurrentPlayback();
     else if (action === "queue") showQueue();
     else if (action === "like") {
       // Updating a like from the overlay must not replace the page underneath.
@@ -1461,8 +1482,7 @@ nowPlaying = mountNowPlaying({
           );
         }
     } else if (action === "seek") {
-      if (Number.isFinite(audio.duration))
-        audio.currentTime = (value / 1000) * audio.duration;
+      seekToPosition(value);
     } else if (action === "volume") {
       audio.volume = value;
       $("#volume").value = value;
