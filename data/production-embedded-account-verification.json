@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-11-06T21:47:20.859Z",
+  "deploymentId": "dpl_8tQvc6RN2exVwzfTSD4yYdVRNzpN",
+  "sourceCommit": "2e614775e1526b7376bb26fb164409d36a531ab3",
+  "base": "https://web3-music-repo.vercel.app",
+  "scope": "Actual Lab embed plus genuine top-level Privy modal after native user-click escape. No OTP or signature; completed real-account login is not claimed.",
+  "status": "passed",
+  "errors": [],
+  "authResponses": [
+    {
+      "url": "https://auth.privy.io/api/v1/apps/cmlzjxfrh00ak0cjvlap9d3gm",
+      "status": 200
+    }
+  ],
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "emailVisible": true,
+      "capture": "captures/production-account-escape-login-1440-light.png"
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "emailVisible": true,
+      "capture": "captures/production-account-escape-login-390-dark.png"
+    }
+  ],
+  "embedded": {
+    "nestedFrames": 0,
+    "authResources": [],
+    "directSDKResources": []
+  },
+  "escape": {
+    "topLevel": true,
+    "openerNull": true
+  },
+  "config": {
+    "enabled": true,
+    "clientId": "client-WY6W53j4q1dvp15KJx1zc88MivQTj6NJ66S4CKzsxEAdJ",
+    "playlistStorage": "private-blob"
+  }
+}

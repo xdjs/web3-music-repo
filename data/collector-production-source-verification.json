@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-06T21:47:51.898290+00:00",
+  "sourceCommit": "2e614775e1526b7376bb26fb164409d36a531ab3",
+  "deploymentId": "dpl_8tQvc6RN2exVwzfTSD4yYdVRNzpN",
+  "url": "https://web3-music-repo.vercel.app",
+  "assets": [
+    {
+      "path": "src/collector-search.mjs",
+      "sha256": "7ba5e3964aa9e558ba674880b4a34f403344c89a2ab07c2051eca104c8935593",
+      "matchesSource": true
+    },
+    {
+      "path": "src/wallet-library-ui.mjs",
+      "sha256": "8641a041049889feca54df799d97312644b7658491cc0ef02c6cf53ed0c0fb5e",
+      "matchesSource": true
+    },
+    {
+      "path": "public/account/account-login.js",
+      "sha256": "58fa41248df698e3d1d7ac1c3e9c1d5802fb0924b86a30d22565f7137b6aee00",
+      "matchesSource": true
+    }
+  ],
+  "search": {
+    "query": "Pete",
+    "status": "ok",
+    "matches": 4,
+    "addressesDistinct": true
+  },
+  "status": "passed"
+}

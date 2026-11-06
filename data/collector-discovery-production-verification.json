@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-06T21:47:19.289Z",
+  "base": "https://web3-music-repo.vercel.app",
+  "wallet": "0x625307de45bd25ad6bf6cc7391a308fc84067cf7",
+  "cases": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "errors": [],
+      "nameMatches": 4,
+      "firstPageCards": 8,
+      "firstCoverage": "Music indexed against this wallet by Spinamp. Ownership freshness is unknown; these are not verified current holdings. Only loaded pages are shown. 20 token entries checked of 256 indexed; recordings and NFT counts differ. More pages are available.",
+      "loadedPageCards": 19,
+      "coverage": "Music indexed against this wallet by Spinamp. Ownership freshness is unknown; these are not verified current holdings. Only loaded pages are shown. 40 token entries checked of 256 indexed; recordings and NFT counts differ. More pages are available.",
+      "audioMatches": 19,
+      "ens": {
+        "httpStatus": 200,
+        "status": "resolved",
+        "address": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+        "navigationVerified": true
+      },
+      "passed": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "errors": [],
+      "nameMatches": 4,
+      "firstPageCards": 8,
+      "firstCoverage": "Music indexed against this wallet by Spinamp. Ownership freshness is unknown; these are not verified current holdings. Only loaded pages are shown. 20 token entries checked of 256 indexed; recordings and NFT counts differ. More pages are available.",
+      "loadedPageCards": 19,
+      "coverage": "Music indexed against this wallet by Spinamp. Ownership freshness is unknown; these are not verified current holdings. Only loaded pages are shown. 40 token entries checked of 256 indexed; recordings and NFT counts differ. More pages are available.",
+      "audioMatches": 19,
+      "passed": true
+    }
+  ],
+  "scope": "Actual public API and browser UI; indexed holdings are not independently verified current onchain ownership.",
+  "passed": true
+}

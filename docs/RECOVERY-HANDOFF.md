@@ -2,7 +2,9 @@
 
 Updated November 6, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
-## Collector discovery follow-up — release candidate
+## Latest production release — collector discovery and embedded sign-in
+
+PR #8 merged as `2e614775e1526b7376bb26fb164409d36a531ab3` and deployed from that clean commit. Production is READY at https://web3-music-repo.vercel.app/ (`dpl_8tQvc6RN2exVwzfTSD4yYdVRNzpN`). Served collector/search/account module hashes match source. Actual production wallet/name/ENS navigation, pagination and filters pass; the real Lab embed opens a standalone Privy email/wallet modal without nested auth requests or observed page errors. No OTP or signature was submitted. See `data/collector-production-source-verification.json`, `data/collector-discovery-production-verification.json`, and `data/production-embedded-account-verification.json`.
 
 Validation: 295 tests pass; syntax, formatting and production build pass. Desktop/mobile light/dark fixtures and unmocked Pete wallet checks pass. Forty indexed NFT entries matched 19 distinct recordings, with more pages remaining. See `data/collector-discovery-live-verification.json`, `data/collector-index-verification.json`, and `data/collector-account-suite-verification.json`.
 

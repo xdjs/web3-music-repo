@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-11-06T21:48:41.413879+00:00",
+  "status": "READY",
+  "sourceCommit": "2e614775e1526b7376bb26fb164409d36a531ab3",
+  "pullRequest": "https://github.com/xdjs/web3-music-repo/pull/8",
+  "deploymentId": "dpl_8tQvc6RN2exVwzfTSD4yYdVRNzpN",
+  "url": "https://web3-music-repo.vercel.app/",
+  "immutableURL": "https://web3-music-repo-2kx3s3jv1-musicnerd.vercel.app",
+  "tests": {
+    "passed": 295,
+    "failed": 0,
+    "syntax": "passed",
+    "format": "passed",
+    "productionBuild": "passed"
+  },
+  "receipts": [
+    "data/collector-production-source-verification.json",
+    "data/collector-discovery-production-verification.json",
+    "data/production-embedded-account-verification.json"
+  ],
+  "runtimeLogs": {
+    "deploymentScoped": true,
+    "level": [
+      "error",
+      "fatal"
+    ],
+    "from": "2026-11-06T21:38:07.857Z",
+    "to": "2026-11-06T21:48:07.856Z",
+    "matchingLogs": 0
+  },
+  "remaining": [
+    "Instagram Story MP4 export is planned, not implemented",
+    "Solana wallet collection lookup unsupported",
+    "169 upstream Spinamp track queries unresolved",
+    "Index snapshots are not a complete current owner census",
+    "Real account OTP, wallet linking and cross-device playlist persistence require personal user verification"
+  ]
+}
