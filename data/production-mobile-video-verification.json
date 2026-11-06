@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-11-06T18:27:49.800Z",
+  "base": "https://web3-music-repo.vercel.app",
+  "engine": "Touch WebKit",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "records": [
+    {
+      "name": "helmet-city",
+      "id": "spinamp-4bff201350e878d8dcfc",
+      "errors": [],
+      "before": {
+        "source": "https://ipfs.filebase.io/ipfs/bafybeidfyu5wkhhdvlpo35fnyskd6oqtqwyl4eklulfc7reu4lhf5skp6a",
+        "time": 0.3282420411705971,
+        "paused": false,
+        "width": 1536,
+        "height": 896,
+        "presented": true,
+        "dialogOpen": true,
+        "count": 1
+      },
+      "views": [
+        "light",
+        "dark"
+      ],
+      "after": {
+        "source": "https://ipfs.filebase.io/ipfs/bafybeidfyu5wkhhdvlpo35fnyskd6oqtqwyl4eklulfc7reu4lhf5skp6a",
+        "time": 0.6771287199874575,
+        "paused": false,
+        "count": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "base-day-two",
+      "id": "spinamp-073e25367a01a4e53532",
+      "errors": [],
+      "before": {
+        "source": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+        "time": 0.3273260002024472,
+        "paused": false,
+        "width": 1920,
+        "height": 1080,
+        "presented": true,
+        "dialogOpen": true,
+        "count": 1
+      },
+      "views": [
+        "light",
+        "dark"
+      ],
+      "after": {
+        "source": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+        "time": 0.6640908003330793,
+        "paused": false,
+        "count": 1
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

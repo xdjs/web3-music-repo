@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-11-06T18:31:21.020Z",
+  "source": "https://ipfs.filebase.io/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+  "comparisonSource": "magic.decentralized-content.com exact original byte ranges saved in sparse file",
+  "checks": [
+    {
+      "target": 108,
+      "time": 108.010667,
+      "start": 140218300,
+      "end": 140219176,
+      "status": 206,
+      "contentRange": "bytes 140218300-140219176/310039114",
+      "contentLength": "877",
+      "etag": "\"bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne\"",
+      "bytes": 877,
+      "originalSHA256": "465d05e8f7d0d25bb43f93ba98ea60434ee6cb04c949e493cab0b52fff9c92b2",
+      "gatewaySHA256": "465d05e8f7d0d25bb43f93ba98ea60434ee6cb04c949e493cab0b52fff9c92b2",
+      "identical": true
+    },
+    {
+      "target": 118,
+      "time": 118.016,
+      "start": 152776037,
+      "end": 152776912,
+      "status": 206,
+      "contentRange": "bytes 152776037-152776912/310039114",
+      "contentLength": "876",
+      "etag": "\"bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne\"",
+      "bytes": 876,
+      "originalSHA256": "c015dfd2fd22b8cba911c55091e4a072e275a574c3f34086ea5bf90347eac7d8",
+      "gatewaySHA256": "c015dfd2fd22b8cba911c55091e4a072e275a574c3f34086ea5bf90347eac7d8",
+      "identical": true
+    },
+    {
+      "target": 128,
+      "time": 128,
+      "start": 166058148,
+      "end": 166058962,
+      "status": 206,
+      "contentRange": "bytes 166058148-166058962/310039114",
+      "contentLength": "815",
+      "etag": "\"bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne\"",
+      "bytes": 815,
+      "originalSHA256": "9c263db41d375315ca2f711e3d70901fd53324f95776e915b055b47601d0afde",
+      "gatewaySHA256": "9c263db41d375315ca2f711e3d70901fd53324f95776e915b055b47601d0afde",
+      "identical": true
+    }
+  ]
+}

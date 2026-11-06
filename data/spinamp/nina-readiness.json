@@ -1,0 +1,160 @@
+{
+  "checkedAt": "2026-11-06T18:31:57.618Z",
+  "scope": "Read-only local cache audit; no API, RPC, media requests, adapter implementation or catalog import.",
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "sourceFiles": {
+    "inventory": {
+      "path": "data/spinamp/inventory.json.gz",
+      "sha256": "3533f9e04c900be705da17c10f84206154a831d96f9eb19ef0b03bfce5c1cf48"
+    },
+    "relations": {
+      "path": "data/spinamp/nft-references.json.gz",
+      "updatedAt": "2026-11-06T18:18:57.917Z",
+      "sha256": "41def84e8766e279e7e84b103bb7beb18d685a7459d88f2c232d087cbd0d89d7",
+      "note": "Ignored resumable checkpoint; hashes identify audited snapshot, not chain verification."
+    },
+    "artistAtlas": "data/spinamp/artists.json.gz",
+    "frozenAudit": "data/spinamp/import-audit.json.gz"
+  },
+  "importedNinaRecords": 0,
+  "counts": {
+    "inventory": 6206,
+    "artistIds": 1818,
+    "artistAtlasMatches": 1818,
+    "artistAtlasAvatarHashes": 0,
+    "relationsRead": 6206,
+    "linked": 6204,
+    "empty": 2,
+    "unresolved": 0,
+    "providerFailures": 0,
+    "uniqueMints": 6204,
+    "base58MintKeysDecodingTo32Bytes": 6204,
+    "matchingMintIdentityFields": 6204,
+    "metaplex": 6204,
+    "nullNumericTokenIds": 6204,
+    "originalMediaReferences": 6204,
+    "originalMediaAcceptedByCurrentStorageAdapter": 6204,
+    "originalWWWArweaveHosts": 6202,
+    "processedAudioURLs": 6206,
+    "processedAudioIpfsHashes": 6206,
+    "metadataReferences": 6204,
+    "releaseURLs": 6206,
+    "positiveInventoryDuration": 5094,
+    "linkedPositiveDuration": 5092,
+    "zeroOrUnknownDuration": 1112,
+    "nullNftMimeTypes": 6204,
+    "descriptions": 4821,
+    "extractedBpms": 0,
+    "extractedKeys": 0,
+    "extractedStructuredCredits": 0
+  },
+  "frozenExclusionReasons": {
+    "unsupported-or-invalid-nft-identity": 6204,
+    "no-indexed-nft": 2
+  },
+  "representatives": [
+    {
+      "processedTrackId": "solana/122gW5E6uqWKEsb1KdCjVhWtarbCTdN7hR1bjt9dgdaw",
+      "title": "Error Handling",
+      "artistName": "Igor Dyachenko",
+      "artistId": "8pDRnuwt5WALrU36vpgiYDpsqbyMQUUQ4dQdGh25WakD",
+      "platformInternalId": "122gW5E6uqWKEsb1KdCjVhWtarbCTdN7hR1bjt9dgdaw",
+      "releaseURL": "https://nina.market/CZ2wpojt6YHhPPaGJNUuyXPAFDwGjEK1tbJHipcMT1Wn",
+      "indexedChain": "solana",
+      "indexedMint": "122gW5E6uqWKEsb1KdCjVhWtarbCTdN7hR1bjt9dgdaw",
+      "indexedNftId": "122gW5E6uqWKEsb1KdCjVhWtarbCTdN7hR1bjt9dgdaw",
+      "indexedStandard": "metaplex",
+      "tokenId": null,
+      "metadataURI": "https://www.arweave.net/JlNrHJ5HW6KUKrWX7Sgd0Lh0U4j6h18k7Z4bZZ--w7k",
+      "originalMediaURI": "https://www.arweave.net/coo4iW7R26I1GmlCeimuWuRAY8_8M9wSym_XQFwYlc4?ext=mp3",
+      "processedAudioURL": "https://www.arweave.net/coo4iW7R26I1GmlCeimuWuRAY8_8M9wSym_XQFwYlc4?ext=mp3",
+      "processedAudioIpfsHash": "QmZfbQ5ZtkAMnZ2Zyc9WNgVxobKqLUZ1GYLEhMcHN8Y3wF",
+      "mimeType": null,
+      "indexedDurationSeconds": 246.79,
+      "indexedDate": "2022-02-07T11:38:14.795+00:00",
+      "indexedBlock": null,
+      "onchainVerified": false,
+      "playbackVerified": false
+    },
+    {
+      "processedTrackId": "solana/1278zxv5CugWLvq7SfV5822wkjtL5WKxMtDghiieg5Nd",
+      "title": "Hospital For Beasts One",
+      "artistName": "Ann Margaret Hogan and Regis",
+      "artistId": "GZNMgv6sFgYp5UbhHdY7CRdMtFSfgjXLoY2AYGrCLoj",
+      "platformInternalId": "1278zxv5CugWLvq7SfV5822wkjtL5WKxMtDghiieg5Nd",
+      "releaseURL": "https://ninaprotocol.com/e92QMPupHzWciiCZpWzSMzy9oTkk5gc2qWw5iFt9f11",
+      "indexedChain": "solana",
+      "indexedMint": "1278zxv5CugWLvq7SfV5822wkjtL5WKxMtDghiieg5Nd",
+      "indexedNftId": "1278zxv5CugWLvq7SfV5822wkjtL5WKxMtDghiieg5Nd",
+      "indexedStandard": "metaplex",
+      "tokenId": null,
+      "metadataURI": "https://arweave.net/uupXHx6EZ6mLCfXKVTDOQgl29TugRFZokgqPoVhT_yA",
+      "originalMediaURI": "https://www.arweave.net/wkKNXAATb6GbIgrt9o70PAjGwALHXwcakMYzahIm9xg?ext=mp3",
+      "processedAudioURL": "https://www.arweave.net/wkKNXAATb6GbIgrt9o70PAjGwALHXwcakMYzahIm9xg?ext=mp3",
+      "processedAudioIpfsHash": "QmVakmJt1TYwjXuQhK3QEPk1FAZVgyoHRZ52PTiC1dXhJB",
+      "mimeType": null,
+      "indexedDurationSeconds": 0,
+      "indexedDate": "2023-04-12T16:49:05.058+00:00",
+      "indexedBlock": null,
+      "onchainVerified": false,
+      "playbackVerified": false
+    },
+    {
+      "processedTrackId": "solana/127whZDXyW6W9AwMbDj4zupgYaoxsfb3Vb5LBuUWiCVb",
+      "title": "The Way You Get By",
+      "artistName": "Max B",
+      "artistId": "AFmXer1uvpTMhNaEdJVcDC4J3jMgGJ3Y71JN54rTvVbV",
+      "platformInternalId": "127whZDXyW6W9AwMbDj4zupgYaoxsfb3Vb5LBuUWiCVb",
+      "releaseURL": "https://ninaprotocol.com/Hv9MNXpzUp2icnUt2NXaPt7c6iwNx8d7aKmeRM1DkP23",
+      "indexedChain": "solana",
+      "indexedMint": "127whZDXyW6W9AwMbDj4zupgYaoxsfb3Vb5LBuUWiCVb",
+      "indexedNftId": "127whZDXyW6W9AwMbDj4zupgYaoxsfb3Vb5LBuUWiCVb",
+      "indexedStandard": "metaplex",
+      "tokenId": null,
+      "metadataURI": "https://arweave.net/XTLozn7CrckQ9X-Hx-I7EXi3TObVB_VVSef-Nl9wVpQ",
+      "originalMediaURI": "https://www.arweave.net/OB-74VIkfgiNx9epxYqxz4YSMOetH1PnH3Wxf3gMoXs?ext=mp3",
+      "processedAudioURL": "https://www.arweave.net/OB-74VIkfgiNx9epxYqxz4YSMOetH1PnH3Wxf3gMoXs?ext=mp3",
+      "processedAudioIpfsHash": "QmaTru5pb11CTb3iFaHbgknsLGQmLXhqSD7Zy3qFrVygq4",
+      "mimeType": null,
+      "indexedDurationSeconds": 125.07,
+      "indexedDate": "2023-07-14T14:10:54.369+00:00",
+      "indexedBlock": null,
+      "onchainVerified": false,
+      "playbackVerified": false
+    }
+  ],
+  "emptyRelations": [
+    {
+      "processedTrackId": "solana/3hAXChNB8cNqcrQ8UbcngTeaz4B5C18aENzSZyw4pV28",
+      "title": "Are You Good? ",
+      "artist": "Aliese",
+      "releaseURL": "https://ninaprotocol.com/72Rz4zuSwt7ThLbBtCBX7XvHtsAZGMoRHewAhg3EHVG5",
+      "processedAudioPresent": true,
+      "note": "Do not infer exact mint from processed-track ID without linked identity evidence."
+    },
+    {
+      "processedTrackId": "solana/BdsyMBoCrKNFUQdn6eMHHWMq1S1rR1aKNjGTyWbSCgvr",
+      "title": "God's Mom - S/T",
+      "artist": "God's Mom",
+      "releaseURL": "https://ninaprotocol.com/5nh1UMSNBjkAHG2LGB95N3YDDdo5TNtdWJfNC5mniJrk",
+      "processedAudioPresent": true,
+      "note": "Do not infer exact mint from processed-track ID without linked identity evidence."
+    }
+  ],
+  "missingBoundaries": [
+    "Case-sensitive Solana mint identity; no EVM lowercasing, fake numeric chain ID or token zero",
+    "Separate mint address from Nina release account/public URL",
+    "Solana-aware provenance labels, explorer links, filters and read-only metadata adapter",
+    "Native media startup/decode QA including videoWidth/videoHeight for every playback; all cached MIME values absent",
+    "SPL token-account holders and wallet ownership; current EVM collector adapter must not run on Solana",
+    "Separate original metadata date from independently verified mint/block timestamps",
+    "Source-attributed identity/profile handling; no name-only artist merge"
+  ],
+  "claims": {
+    "allNinaEverDiscovered": false,
+    "mediaPlaybackVerified": false,
+    "currentSolanaChainVerified": false,
+    "fullMintEditionCensus": false
+  },
+  "documentation": "docs/nina-recovery-readiness.md"
+}

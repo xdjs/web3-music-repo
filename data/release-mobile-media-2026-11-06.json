@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-11-06T18:30:25.849204+00:00",
+  "deploymentSourceCommit": "b29ccddfc2d5583c1597e5a43f349b58d6e41abc",
+  "mergedMainCommit": "b29ccddfc2d5583c1597e5a43f349b58d6e41abc",
+  "testedBranchCommit": "049b76e9d3948ce8f85d2eb6aa586498d241c89c",
+  "treesIdentical": true,
+  "pullRequest": "https://github.com/xdjs/web3-music-repo/pull/4",
+  "deploymentId": "dpl_HujJprUvd8DtaFVFojupFtHLmGNX",
+  "deployment": "https://web3-music-repo-p187dq3f2-musicnerd.vercel.app",
+  "production": "https://web3-music-repo.vercel.app/",
+  "state": "READY",
+  "catalogRecords": 31220,
+  "spinampRecords": 21395,
+  "unresolvedSpinampReferences": 169,
+  "validation": {
+    "unitTests": 220,
+    "syntax": true,
+    "format": true,
+    "productionBuild": true,
+    "nowPlayingDeployedModuleMatchesSource": true,
+    "liveIndexHTTP": 200,
+    "liveIndexBytes": 27943003,
+    "liveIndexRecords": 31220,
+    "liveCorrectedVideoRecords": 3,
+    "touchWebKitProductionPassed": true,
+    "physicalIOS": false
+  },
+  "changes": [
+    "Remove resting storage/network labels from both players; provenance remains on song pages",
+    "Remove full-screen footer and mobile volume/mute controls; retain seek and desktop volume",
+    "Use shared close chevron and suppress touch focus box while preserving keyboard focus",
+    "Detect decoded video dimensions and retain native media layout during startup",
+    "Preserve three exact, source-audited Spinamp video corrections across reimport"
+  ],
+  "remaining": [
+    "Planet X audible doubling occurs only inside app per user comparison; app-side investigation open",
+    "New contextual queue selected at fourth item should begin at row1; deferred by user",
+    "169 Spinamp provider reads remain unresolved; unsupported Solana/Nina records are not imported",
+    "Expanded-catalog mobile parse/heap performance",
+    "Personal cross-device playlist save/load and physical iOS playback",
+    "Newer BPM analysis cohort not started"
+  ],
+  "recoveryWorkersRunning": false,
+  "receipts": [
+    "data/production-mobile-video-verification.json",
+    "data/now-playing-mobile-verification.json",
+    "data/runtime-video-verification.json",
+    "data/spinamp/video-kind-verification.json",
+    "data/spinamp/bounded-retry-verification.json",
+    "data/playback-source-inspection.json",
+    "data/planet-x-app-transition-trace.json",
+    "data/planet-x-gateway-byte-comparison.json",
+    "data/spinamp/nina-readiness.json"
+  ],
+  "lab": "https://lab.musicnerd.net/peterango/music-nft-recovery",
+  "labLaunchUsesSameProductionURL": true,
+  "labContentLastUpdated": "2026-11-06T18:10:41.482441Z",
+  "ninaDiscovered": 6206,
+  "ninaLinkedCandidates": 6204,
+  "ninaImported": 0,
+  "diagnosticProcessesStopped": true
+}

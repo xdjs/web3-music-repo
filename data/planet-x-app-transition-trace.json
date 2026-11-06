@@ -1,0 +1,2479 @@
+{
+  "checkedAt": "2026-11-06T18:34:37.972Z",
+  "base": "http://127.0.0.1:4191",
+  "id": "pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1",
+  "scope": "Current local build prior audio to Planet X, Now Playing open/close, seek108, pause/resume. All HTMLMediaElements including detached and native Media pipelines; no perceptual verdict.",
+  "checkpoints": [
+    {
+      "label": "prior-audio",
+      "at": "2026-11-06T18:34:01.502Z",
+      "elements": [
+        {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+          "paused": false,
+          "ended": false,
+          "time": 2.005618,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 2,
+          "decoded": 446464,
+          "tracks": null
+        }
+      ],
+      "contexts": 0
+    },
+    {
+      "label": "planet-x-started",
+      "at": "2026-11-06T18:34:09.440Z",
+      "elements": [
+        {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 1.005924,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 3,
+          "network": 2,
+          "decoded": 61191,
+          "tracks": null
+        }
+      ],
+      "contexts": 0
+    },
+    {
+      "label": "dialog-open",
+      "at": "2026-11-06T18:34:10.448Z",
+      "elements": [
+        {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 2.018204,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 3,
+          "network": 2,
+          "decoded": 100714,
+          "tracks": null
+        }
+      ],
+      "contexts": 0
+    },
+    {
+      "label": "dialog-closed",
+      "at": "2026-11-06T18:34:10.959Z",
+      "elements": [
+        {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 2.531221,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 3,
+          "network": 2,
+          "decoded": 121026,
+          "tracks": null
+        }
+      ],
+      "contexts": 0
+    },
+    {
+      "label": "seek108",
+      "at": "2026-11-06T18:34:12.398Z",
+      "elements": [
+        {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 108.037499,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 3,
+          "network": 2,
+          "decoded": 136260,
+          "tracks": null
+        }
+      ],
+      "contexts": 0
+    },
+    {
+      "label": "after12seconds",
+      "at": "2026-11-06T18:34:24.406Z",
+      "elements": [
+        {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 119.764065,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 1,
+          "decoded": 612852,
+          "tracks": null
+        }
+      ],
+      "contexts": 0
+    },
+    {
+      "label": "paused",
+      "at": "2026-11-06T18:34:25.419Z",
+      "elements": [
+        {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": true,
+          "ended": false,
+          "time": 119.773104,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 1,
+          "decoded": 613640,
+          "tracks": null
+        }
+      ],
+      "contexts": 0
+    },
+    {
+      "label": "resumed",
+      "at": "2026-11-06T18:34:37.438Z",
+      "elements": [
+        {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 131.779523,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 2,
+          "decoded": 1089314,
+          "tracks": null
+        }
+      ],
+      "contexts": 0
+    },
+    {
+      "label": "final-paused",
+      "at": "2026-11-06T18:34:37.965Z",
+      "elements": [
+        {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": true,
+          "ended": false,
+          "time": 131.801313,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 2,
+          "decoded": 1091139,
+          "tracks": null
+        }
+      ],
+      "contexts": 0
+    }
+  ],
+  "trace": {
+    "events": [
+      {
+        "at": 12,
+        "type": "created-observed",
+        "why": "DOM descendant",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "",
+          "paused": true,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 1,
+          "rate": 1,
+          "ready": 0,
+          "network": 0,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 53,
+        "type": "set:volume",
+        "value": 0.8,
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "",
+          "paused": true,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 1,
+          "rate": 1,
+          "ready": 0,
+          "network": 0,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 84,
+        "type": "event:volumechange",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "",
+          "paused": true,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 0,
+          "network": 0,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 199,
+        "type": "call:pause",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "",
+          "paused": true,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 0,
+          "network": 0,
+          "decoded": 0,
+          "tracks": null
+        },
+        "stack": "    at HTMLMediaElement.<computed> [as pause] (<anonymous>:6:234)\n    at play (http://127.0.0.1:4191/src/archive.js:813:9)\n    at activateRecording (http://127.0.0.1:4191/src/archive.js:1267:21)\n    at HTMLDocument.<anonymous> (http://127.0.0.1:4191/src/archive.js:965:5)"
+      },
+      {
+        "at": 201,
+        "type": "set:src",
+        "value": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "",
+          "paused": true,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 0,
+          "network": 3,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 201,
+        "type": "call:play",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+          "paused": true,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 0,
+          "network": 3,
+          "decoded": 0,
+          "tracks": null
+        },
+        "stack": "    at HTMLMediaElement.<computed> [as play] (<anonymous>:6:234)\n    at play (http://127.0.0.1:4191/src/archive.js:897:17)\n    at activateRecording (http://127.0.0.1:4191/src/archive.js:1267:21)\n    at HTMLDocument.<anonymous> (http://127.0.0.1:4191/src/archive.js:965:5)"
+      },
+      {
+        "at": 221,
+        "type": "event:emptied",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+          "paused": false,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 0,
+          "network": 3,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 222,
+        "type": "event:play",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+          "paused": false,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 0,
+          "network": 2,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 222,
+        "type": "event:waiting",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+          "paused": false,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 0,
+          "network": 2,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 227,
+        "type": "event:loadstart",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+          "paused": false,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 0,
+          "network": 2,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 889,
+        "type": "event:loadedmetadata",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+          "paused": false,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 1,
+          "network": 2,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 1048,
+        "type": "event:playing",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+          "paused": false,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 1,
+          "decoded": 40960,
+          "tracks": null
+        }
+      },
+      {
+        "at": 3468,
+        "type": "call:pause",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+          "paused": false,
+          "ended": false,
+          "time": 2.047694,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 2,
+          "decoded": 454656,
+          "tracks": null
+        },
+        "stack": "    at HTMLMediaElement.<computed> [as pause] (<anonymous>:6:234)\n    at play (http://127.0.0.1:4191/src/archive.js:813:9)\n    at activateRecording (http://127.0.0.1:4191/src/archive.js:1267:21)\n    at HTMLDocument.<anonymous> (http://127.0.0.1:4191/src/archive.js:965:5)"
+      },
+      {
+        "at": 3469,
+        "type": "set:src",
+        "value": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+          "paused": true,
+          "ended": false,
+          "time": 2.047725,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 2,
+          "decoded": 454656,
+          "tracks": null
+        }
+      },
+      {
+        "at": 3470,
+        "type": "call:play",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+          "paused": true,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 0,
+          "network": 3,
+          "decoded": 0,
+          "tracks": null
+        },
+        "stack": "    at HTMLMediaElement.<computed> [as play] (<anonymous>:6:234)\n    at play (http://127.0.0.1:4191/src/archive.js:897:17)\n    at activateRecording (http://127.0.0.1:4191/src/archive.js:1267:21)\n    at HTMLDocument.<anonymous> (http://127.0.0.1:4191/src/archive.js:965:5)"
+      },
+      {
+        "at": 3476,
+        "type": "event:emptied",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+          "paused": false,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 0,
+          "network": 3,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 3476,
+        "type": "event:play",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 0,
+          "network": 2,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 3477,
+        "type": "event:waiting",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 0,
+          "network": 2,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 3477,
+        "type": "event:loadstart",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 0,
+          "network": 2,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 6977,
+        "type": "event:loadedmetadata",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 1,
+          "network": 2,
+          "decoded": 0,
+          "tracks": null
+        }
+      },
+      {
+        "at": 10078,
+        "type": "event:playing",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 0,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 3,
+          "network": 2,
+          "decoded": 9310,
+          "tracks": null
+        }
+      },
+      {
+        "at": 12901,
+        "type": "set:currentTime",
+        "value": 108.03749985,
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 2.547244,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 3,
+          "network": 2,
+          "decoded": 121872,
+          "tracks": null
+        }
+      },
+      {
+        "at": 12905,
+        "type": "event:seeking",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 108.037499,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 1,
+          "network": 2,
+          "decoded": 121872,
+          "tracks": null
+        }
+      },
+      {
+        "at": 12905,
+        "type": "event:waiting",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 108.037499,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 1,
+          "network": 2,
+          "decoded": 121872,
+          "tracks": null
+        }
+      },
+      {
+        "at": 14318,
+        "type": "event:seeked",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 108.037499,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 3,
+          "network": 2,
+          "decoded": 136260,
+          "tracks": null
+        }
+      },
+      {
+        "at": 14318,
+        "type": "event:playing",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 108.037499,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 3,
+          "network": 2,
+          "decoded": 136260,
+          "tracks": null
+        }
+      },
+      {
+        "at": 26339,
+        "type": "call:pause",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 119.77301,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 1,
+          "decoded": 613640,
+          "tracks": null
+        },
+        "stack": "    at HTMLMediaElement.<computed> [as pause] (<anonymous>:6:234)\n    at toggleCurrentPlayback (http://127.0.0.1:4191/src/archive.js:1285:11)\n    at onAction (http://127.0.0.1:4191/src/archive.js:1444:35)\n    at HTMLDialogElement.<anonymous> (http://127.0.0.1:4191/src/now-playing.mjs:103:10)"
+      },
+      {
+        "at": 26347,
+        "type": "event:pause",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": true,
+          "ended": false,
+          "time": 119.773104,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 1,
+          "decoded": 613640,
+          "tracks": null
+        }
+      },
+      {
+        "at": 27357,
+        "type": "call:play",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": true,
+          "ended": false,
+          "time": 119.773104,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 1,
+          "decoded": 613640,
+          "tracks": null
+        },
+        "stack": "    at HTMLMediaElement.<computed> [as play] (<anonymous>:6:234)\n    at toggleCurrentPlayback (http://127.0.0.1:4191/src/archive.js:1302:17)\n    at onAction (http://127.0.0.1:4191/src/archive.js:1444:35)\n    at HTMLDialogElement.<anonymous> (http://127.0.0.1:4191/src/now-playing.mjs:103:10)"
+      },
+      {
+        "at": 27363,
+        "type": "event:play",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 120.069499,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 1,
+          "decoded": 613640,
+          "tracks": null
+        }
+      },
+      {
+        "at": 27363,
+        "type": "event:playing",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 120.069499,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 1,
+          "decoded": 613640,
+          "tracks": null
+        }
+      },
+      {
+        "at": 39385,
+        "type": "call:pause",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": false,
+          "ended": false,
+          "time": 131.801272,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 2,
+          "decoded": 1091139,
+          "tracks": null
+        },
+        "stack": "    at HTMLMediaElement.<computed> [as pause] (<anonymous>:6:234)\n    at toggleCurrentPlayback (http://127.0.0.1:4191/src/archive.js:1285:11)\n    at onAction (http://127.0.0.1:4191/src/archive.js:1444:35)\n    at HTMLDialogElement.<anonymous> (http://127.0.0.1:4191/src/now-playing.mjs:103:10)"
+      },
+      {
+        "at": 39392,
+        "type": "event:pause",
+        "state": {
+          "number": 1,
+          "tag": "VIDEO",
+          "id": "audio",
+          "connected": true,
+          "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+          "paused": true,
+          "ended": false,
+          "time": 131.801313,
+          "muted": false,
+          "volume": 0.8,
+          "rate": 1,
+          "ready": 4,
+          "network": 2,
+          "decoded": 1091139,
+          "tracks": null
+        }
+      }
+    ],
+    "snapshots": [
+      {
+        "at": 1010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+            "paused": false,
+            "ended": false,
+            "time": 0,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 1,
+            "network": 2,
+            "decoded": 0,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 2010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+            "paused": false,
+            "ended": false,
+            "time": 0.589568,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 196608,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 3011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+            "paused": false,
+            "ended": false,
+            "time": 1.589919,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 372736,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 4011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 0,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 0,
+            "network": 2,
+            "decoded": 0,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 5011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 0,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 0,
+            "network": 2,
+            "decoded": 0,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 6011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 0,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 0,
+            "network": 2,
+            "decoded": 0,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 7011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 0,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 1,
+            "network": 2,
+            "decoded": 9310,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 8011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 0,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 1,
+            "network": 2,
+            "decoded": 9310,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 9010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 0,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 1,
+            "network": 2,
+            "decoded": 9310,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 10046,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 0,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 1,
+            "network": 2,
+            "decoded": 9310,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 11010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 0.650279,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 3,
+            "network": 2,
+            "decoded": 46549,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 12010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 1.653135,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 3,
+            "network": 2,
+            "decoded": 86326,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 13011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 108.037499,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 1,
+            "network": 2,
+            "decoded": 121872,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 14011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 108.037499,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 1,
+            "network": 2,
+            "decoded": 136260,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 15010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 108.446845,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 3,
+            "network": 2,
+            "decoded": 164189,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 16011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 109.441339,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 3,
+            "network": 2,
+            "decoded": 203967,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 17011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 110.445434,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 243744,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 18011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 111.449812,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 283522,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 19011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 112.443327,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 322453,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 20011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 113.447844,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 1,
+            "decoded": 362231,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 21010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 114.440837,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 1,
+            "decoded": 402009,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 22010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 115.444893,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 1,
+            "decoded": 441786,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 23011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 116.449227,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 1,
+            "decoded": 481564,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 24011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 117.443772,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 1,
+            "decoded": 520495,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 25011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 118.447048,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 1,
+            "decoded": 560273,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 26011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 119.449716,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 1,
+            "decoded": 600897,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 27011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": true,
+            "ended": false,
+            "time": 119.773104,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 1,
+            "decoded": 613640,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 28010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 120.423033,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 639828,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 29010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 121.426815,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 679820,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 30011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 122.431585,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 719384,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 31010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 123.42443,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 758435,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 32010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 124.428283,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 798253,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 33010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 125.422717,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 838103,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 34010,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 126.426259,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 877648,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 35011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 127.431283,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 917641,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 36011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 128.424755,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 956507,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 37011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 129.429145,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 996256,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 38011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 130.422526,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 1036115,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      },
+      {
+        "at": 39011,
+        "elements": [
+          {
+            "number": 1,
+            "tag": "VIDEO",
+            "id": "audio",
+            "connected": true,
+            "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+            "paused": false,
+            "ended": false,
+            "time": 131.427076,
+            "muted": false,
+            "volume": 0.8,
+            "rate": 1,
+            "ready": 4,
+            "network": 2,
+            "decoded": 1075690,
+            "tracks": null
+          }
+        ],
+        "contexts": []
+      }
+    ],
+    "final": [
+      {
+        "number": 1,
+        "tag": "VIDEO",
+        "id": "audio",
+        "connected": true,
+        "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+        "paused": true,
+        "ended": false,
+        "time": 131.801313,
+        "muted": false,
+        "volume": 0.8,
+        "rate": 1,
+        "ready": 4,
+        "network": 2,
+        "decoded": 1091139,
+        "tracks": null
+      }
+    ],
+    "contextCount": 0
+  },
+  "native": [
+    {
+      "at": 1793990039296,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "BA21B5B97AAEDFA485D1BF4B55451697",
+        "events": [
+          {
+            "timestamp": 3126583.442846,
+            "value": "{\"created\":\"2026-11-06 18:33:58.294720 UTC\",\"event\":\"kMediaLogCreated\"}"
+          },
+          {
+            "timestamp": 3126583.443133,
+            "value": "{\"event\":\"kWebMediaPlayerCreated\",\"origin_url\":\"http://127.0.0.1:4191/\"}"
+          },
+          {
+            "timestamp": 3126583.443266,
+            "value": "{\"event\":\"kLoad\",\"url\":\"https://magic.decentralized-content.com/ipfs/bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y\"}"
+          },
+          {
+            "timestamp": 3126583.627703,
+            "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kStarting\"}"
+          },
+          {
+            "timestamp": 3126584.269071,
+            "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kPlaying\"}"
+          },
+          {
+            "timestamp": 3126584.110784,
+            "value": "{\"duration\":141.090907,\"event\":\"kDurationChanged\"}"
+          },
+          {
+            "timestamp": 3126584.269276,
+            "value": "{\"audio_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"},\"event\":\"kBufferingStateChanged\"}"
+          },
+          {
+            "timestamp": 3126584.269302,
+            "value": "{\"event\":\"kBufferingStateChanged\",\"pipeline_buffering_state\":{\"for_suspended_start\":false,\"state\":\"BUFFERING_HAVE_ENOUGH\"}}"
+          },
+          {
+            "timestamp": 3126584.110955,
+            "value": "{\"event\":\"kPlay\"}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990039296,
+      "name": "playerPropertiesChanged",
+      "data": {
+        "playerId": "BA21B5B97AAEDFA485D1BF4B55451697",
+        "properties": [
+          {
+            "name": "kBitrate",
+            "value": "1411202"
+          },
+          {
+            "name": "kIsPlatformAudioDecoder",
+            "value": "false"
+          },
+          {
+            "name": "kAudioDecoderName",
+            "value": "FFmpegAudioDecoder"
+          },
+          {
+            "name": "kIsStreaming",
+            "value": "false"
+          },
+          {
+            "name": "kFrameUrl",
+            "value": "http://127.0.0.1:4191/#record/pete-zora-1-0e616dff8c4d9341ce7cebe3bfa829d76ddb410e-3"
+          },
+          {
+            "name": "kAudioTracks",
+            "value": "[{\"bytes per channel\":2,\"bytes per frame\":4,\"channel layout\":\"STEREO\",\"channels\":2,\"codec\":\"pcm\",\"codec delay\":0,\"discard decoder delay\":true,\"encryption scheme\":\"Unencrypted\",\"has extra data\":false,\"profile\":\"unknown\",\"sample format\":\"Signed 16-bit\",\"samples per second\":44100,\"seek preroll\":\"0us\"}]"
+          },
+          {
+            "name": "kIsRangeHeaderSupported",
+            "value": "true"
+          },
+          {
+            "name": "kStartTime",
+            "value": "0.0"
+          },
+          {
+            "name": "kRendererName",
+            "value": "RendererImpl"
+          },
+          {
+            "name": "kTotalBytes",
+            "value": "0x17bc4a0"
+          },
+          {
+            "name": "kMaxDuration",
+            "value": "141.090907"
+          },
+          {
+            "name": "kIsSingleOrigin",
+            "value": "true"
+          },
+          {
+            "name": "kFrameTitle",
+            "value": "Say it celly \u2014 Music Nerd"
+          },
+          {
+            "name": "kIsAudioDecryptingDemuxerStream",
+            "value": "false"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990039296,
+      "name": "playerMessagesLogged",
+      "data": {
+        "playerId": "BA21B5B97AAEDFA485D1BF4B55451697",
+        "messages": [
+          {
+            "level": "info",
+            "message": "FFmpegDemuxer: created audio stream, config codec: pcm, profile: unknown, bytes_per_channel: 2, channel_layout: STEREO, channels: 2, samples_per_second: 44100, sample_format: Signed 16-bit, bytes_per_frame: 4, seek_preroll: 0us, codec_delay: 0, has extra data: false, encryption scheme: Unencrypted, discard decoder delay: true, target_output_channel_layout: NONE, target_output_sample_format: Unknown sample format"
+          },
+          {
+            "level": "info",
+            "message": "Effective playback rate changed from 0 to 1"
+          },
+          {
+            "level": "info",
+            "message": "Cannot select SymphoniaAudioDecoder for audio decoding. status=DecoderStatus::Codes::kUnsupportedCodec"
+          },
+          {
+            "level": "info",
+            "message": "Selected FFmpegAudioDecoder for audio decoding, config: codec: pcm, profile: unknown, bytes_per_channel: 2, channel_layout: STEREO, channels: 2, samples_per_second: 44100, sample_format: Signed 16-bit, bytes_per_frame: 4, seek_preroll: 0us, codec_delay: 0, has extra data: false, encryption scheme: Unencrypted, discard decoder delay: true, target_output_channel_layout: STEREO, target_output_sample_format: Unknown sample format"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990041545,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "BA21B5B97AAEDFA485D1BF4B55451697",
+        "events": [
+          {
+            "timestamp": 3126586.690265,
+            "value": "{\"event\":\"kPause\"}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990041545,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "BA21B5B97AAEDFA485D1BF4B55451697",
+        "events": [
+          {
+            "timestamp": 3126586.691136,
+            "value": "{\"event\":\"kWebMediaPlayerDestroyed\"}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990042551,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "events": [
+          {
+            "timestamp": 3126586.697922,
+            "value": "{\"created\":\"2026-11-06 18:34:01.549724 UTC\",\"event\":\"kMediaLogCreated\"}"
+          },
+          {
+            "timestamp": 3126586.697967,
+            "value": "{\"event\":\"kWebMediaPlayerCreated\",\"origin_url\":\"http://127.0.0.1:4191/\"}"
+          },
+          {
+            "timestamp": 3126586.698005,
+            "value": "{\"event\":\"kLoad\",\"url\":\"https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1\"}"
+          },
+          {
+            "timestamp": 3126587.341532,
+            "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kStarting\"}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990042551,
+      "name": "playerPropertiesChanged",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "properties": [
+          {
+            "name": "kIsRangeHeaderSupported",
+            "value": "true"
+          },
+          {
+            "name": "kIsStreaming",
+            "value": "false"
+          },
+          {
+            "name": "kRendererName",
+            "value": "RendererImpl"
+          },
+          {
+            "name": "kTotalBytes",
+            "value": "0x127ad24a"
+          },
+          {
+            "name": "kFrameUrl",
+            "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+          },
+          {
+            "name": "kIsSingleOrigin",
+            "value": "true"
+          },
+          {
+            "name": "kFrameTitle",
+            "value": "Planet X \u2014 Music Nerd"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990045050,
+      "name": "playerMessagesLogged",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "messages": [
+          {
+            "level": "info",
+            "message": "FFmpegDemuxer: created video stream, config codec: h264, profile: h264 main, level: not available, alpha_mode: is_opaque, coded size: [3000,3000], visible rect: [0,0,3000,3000], natural size: [3000,3000], has extra data: true, encryption scheme: Unencrypted, rotation: 0\u00b0, flipped: 0, color space: {primaries:BT709, transfer:BT709, matrix:BT709, range:LIMITED}, spatial format: [projection_type: none, stereo_mode: mono]"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990046050,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "events": [
+          {
+            "timestamp": 3126590.199841,
+            "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kPlaying\"}"
+          },
+          {
+            "timestamp": 3126590.19813,
+            "value": "{\"duration\":240.083333,\"event\":\"kDurationChanged\"}"
+          },
+          {
+            "timestamp": 3126590.214684,
+            "value": "{\"audio_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"},\"event\":\"kBufferingStateChanged\"}"
+          },
+          {
+            "timestamp": 3126590.198364,
+            "value": "{\"event\":\"kPlay\"}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990046050,
+      "name": "playerPropertiesChanged",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "properties": [
+          {
+            "name": "kVideoDecoderName",
+            "value": "FFmpegVideoDecoder"
+          },
+          {
+            "name": "kIsStreaming",
+            "value": "false"
+          },
+          {
+            "name": "kFrameUrl",
+            "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+          },
+          {
+            "name": "kAudioTracks",
+            "value": "[{\"bytes per channel\":4,\"bytes per frame\":8,\"channel layout\":\"STEREO\",\"channels\":2,\"codec\":\"aac\",\"codec delay\":0,\"discard decoder delay\":true,\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"profile\":\"unknown\",\"sample format\":\"Float 32-bit planar\",\"samples per second\":48000,\"seek preroll\":\"0us\"}]"
+          },
+          {
+            "name": "kRendererName",
+            "value": "RendererImpl"
+          },
+          {
+            "name": "kTotalBytes",
+            "value": "0x127ad24a"
+          },
+          {
+            "name": "kMaxDuration",
+            "value": "240.083333"
+          },
+          {
+            "name": "kFrameTitle",
+            "value": "Planet X \u2014 Music Nerd"
+          },
+          {
+            "name": "kIsPlatformAudioDecoder",
+            "value": "false"
+          },
+          {
+            "name": "kAudioDecoderName",
+            "value": "FFmpegAudioDecoder"
+          },
+          {
+            "name": "kVideoTracks",
+            "value": "[{\"alpha mode\":\"is_opaque\",\"codec\":\"h264\",\"coded size\":\"3000x3000\",\"color space\":{\"matrix\":\"BT709\",\"primaries\":\"BT709\",\"range\":\"LIMITED\",\"transfer\":\"BT709\"},\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"hdr metadata\":{},\"natural size\":\"3000x3000\",\"orientation\":\"0\u00b0\",\"profile\":\"h264 main\",\"visible rect\":\"0,0 3000x3000\"}]"
+          },
+          {
+            "name": "kIsRangeHeaderSupported",
+            "value": "true"
+          },
+          {
+            "name": "kIsVideoDecryptingDemuxerStream",
+            "value": "false"
+          },
+          {
+            "name": "kStartTime",
+            "value": "0.0"
+          },
+          {
+            "name": "kBitrate",
+            "value": "10331049"
+          },
+          {
+            "name": "kIsPlatformVideoDecoder",
+            "value": "false"
+          },
+          {
+            "name": "kIsSingleOrigin",
+            "value": "true"
+          },
+          {
+            "name": "kIsAudioDecryptingDemuxerStream",
+            "value": "false"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990046050,
+      "name": "playerMessagesLogged",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "messages": [
+          {
+            "level": "info",
+            "message": "FFmpegDemuxer: created audio stream, config codec: aac, profile: unknown, bytes_per_channel: 4, channel_layout: STEREO, channels: 2, samples_per_second: 48000, sample_format: Float 32-bit planar, bytes_per_frame: 8, seek_preroll: 0us, codec_delay: 0, has extra data: true, encryption scheme: Unencrypted, discard decoder delay: true, target_output_channel_layout: NONE, target_output_sample_format: Unknown sample format"
+          },
+          {
+            "level": "info",
+            "message": "Effective playback rate changed from 0 to 1"
+          },
+          {
+            "level": "info",
+            "message": "Cannot select SymphoniaAudioDecoder for audio decoding. status=DecoderStatus::Codes::kUnsupportedCodec"
+          },
+          {
+            "level": "info",
+            "message": "Selected FFmpegAudioDecoder for audio decoding, config: codec: aac, profile: unknown, bytes_per_channel: 4, channel_layout: STEREO, channels: 2, samples_per_second: 48000, sample_format: Float 32-bit planar, bytes_per_frame: 8, seek_preroll: 0us, codec_delay: 0, has extra data: true, encryption scheme: Unencrypted, discard decoder delay: true, target_output_channel_layout: STEREO, target_output_sample_format: Unknown sample format"
+          },
+          {
+            "level": "info",
+            "message": "Cannot select DecryptingVideoDecoder for video decoding. status=DecoderStatus::Codes::kUnsupportedEncryptionMode"
+          },
+          {
+            "level": "info",
+            "message": "Cannot select VpxVideoDecoder for video decoding. status=DecoderStatus::Codes::kUnsupportedConfig"
+          },
+          {
+            "level": "info",
+            "message": "Cannot select Dav1dVideoDecoder for video decoding. status=DecoderStatus::Codes::kUnsupportedCodec"
+          },
+          {
+            "level": "info",
+            "message": "Selected FFmpegVideoDecoder for video decoding, config: codec: h264, profile: h264 main, level: not available, alpha_mode: is_opaque, coded size: [3000,3000], visible rect: [0,0,3000,3000], natural size: [3000,3000], has extra data: true, encryption scheme: Unencrypted, rotation: 0\u00b0, flipped: 0, color space: {primaries:BT709, transfer:BT709, matrix:BT709, range:LIMITED}, spatial format: [projection_type: none, stereo_mode: mono]"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990047051,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "events": [
+          {
+            "timestamp": 3126591.503388,
+            "value": "{\"dimensions\":\"3000x3000\",\"event\":\"kVideoSizeChanged\"}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990047051,
+      "name": "playerPropertiesChanged",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "properties": [
+          {
+            "name": "kVideoDecoderName",
+            "value": "FFmpegVideoDecoder"
+          },
+          {
+            "name": "kIsStreaming",
+            "value": "false"
+          },
+          {
+            "name": "kFrameUrl",
+            "value": "http://127.0.0.1:4191/#record/pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1"
+          },
+          {
+            "name": "kAudioTracks",
+            "value": "[{\"bytes per channel\":4,\"bytes per frame\":8,\"channel layout\":\"STEREO\",\"channels\":2,\"codec\":\"aac\",\"codec delay\":0,\"discard decoder delay\":true,\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"profile\":\"unknown\",\"sample format\":\"Float 32-bit planar\",\"samples per second\":48000,\"seek preroll\":\"0us\"}]"
+          },
+          {
+            "name": "kResolution",
+            "value": "3000x3000"
+          },
+          {
+            "name": "kRendererName",
+            "value": "RendererImpl"
+          },
+          {
+            "name": "kTotalBytes",
+            "value": "0x127ad24a"
+          },
+          {
+            "name": "kMaxDuration",
+            "value": "240.083333"
+          },
+          {
+            "name": "kFrameTitle",
+            "value": "Planet X \u2014 Music Nerd"
+          },
+          {
+            "name": "kIsPlatformAudioDecoder",
+            "value": "false"
+          },
+          {
+            "name": "kAudioDecoderName",
+            "value": "FFmpegAudioDecoder"
+          },
+          {
+            "name": "kVideoTracks",
+            "value": "[{\"alpha mode\":\"is_opaque\",\"codec\":\"h264\",\"coded size\":\"3000x3000\",\"color space\":{\"matrix\":\"BT709\",\"primaries\":\"BT709\",\"range\":\"LIMITED\",\"transfer\":\"BT709\"},\"encryption scheme\":\"Unencrypted\",\"has extra data\":true,\"hdr metadata\":{},\"natural size\":\"3000x3000\",\"orientation\":\"0\u00b0\",\"profile\":\"h264 main\",\"visible rect\":\"0,0 3000x3000\"}]"
+          },
+          {
+            "name": "kIsRangeHeaderSupported",
+            "value": "true"
+          },
+          {
+            "name": "kIsVideoDecryptingDemuxerStream",
+            "value": "false"
+          },
+          {
+            "name": "kStartTime",
+            "value": "0.0"
+          },
+          {
+            "name": "kBitrate",
+            "value": "10331049"
+          },
+          {
+            "name": "kIsPlatformVideoDecoder",
+            "value": "false"
+          },
+          {
+            "name": "kIsSingleOrigin",
+            "value": "true"
+          },
+          {
+            "name": "kIsAudioDecryptingDemuxerStream",
+            "value": "false"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990048151,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "events": [
+          {
+            "timestamp": 3126593.299486,
+            "value": "{\"event\":\"kBufferingStateChanged\",\"video_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"}}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990049152,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "events": [
+          {
+            "timestamp": 3126594.109266,
+            "value": "{\"event\":\"kBufferingStateChanged\",\"video_buffering_state\":{\"reason\":\"DEMUXER_UNDERFLOW\",\"state\":\"BUFFERING_HAVE_NOTHING\"}}"
+          },
+          {
+            "timestamp": 3126593.299573,
+            "value": "{\"event\":\"kBufferingStateChanged\",\"pipeline_buffering_state\":{\"for_suspended_start\":false,\"state\":\"BUFFERING_HAVE_ENOUGH\"}}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990050153,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "events": [
+          {
+            "timestamp": 3126595.24745,
+            "value": "{\"event\":\"kBufferingStateChanged\",\"video_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"}}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990051153,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "events": [
+          {
+            "timestamp": 3126596.123109,
+            "value": "{\"event\":\"kSeek\",\"seek_target\":108.037499}"
+          },
+          {
+            "timestamp": 3126596.123138,
+            "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kSeeking\"}"
+          },
+          {
+            "timestamp": 3126596.131214,
+            "value": "{\"event\":\"kPipelineStateChange\",\"pipeline_state\":\"kPlaying\"}"
+          },
+          {
+            "timestamp": 3126596.131162,
+            "value": "{\"event\":\"kBufferingStateChanged\",\"video_buffering_state\":{\"state\":\"BUFFERING_HAVE_NOTHING\"}}"
+          },
+          {
+            "timestamp": 3126596.123186,
+            "value": "{\"audio_buffering_state\":{\"state\":\"BUFFERING_HAVE_NOTHING\"},\"event\":\"kBufferingStateChanged\"}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990052153,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "events": [
+          {
+            "timestamp": 3126596.872151,
+            "value": "{\"audio_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"},\"event\":\"kBufferingStateChanged\"}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990053154,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "events": [
+          {
+            "timestamp": 3126597.53944,
+            "value": "{\"event\":\"kBufferingStateChanged\",\"video_buffering_state\":{\"state\":\"BUFFERING_HAVE_ENOUGH\"}}"
+          },
+          {
+            "timestamp": 3126597.539509,
+            "value": "{\"event\":\"kBufferingStateChanged\",\"pipeline_buffering_state\":{\"for_suspended_start\":false,\"state\":\"BUFFERING_HAVE_ENOUGH\"}}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990064413,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "events": [
+          {
+            "timestamp": 3126609.561145,
+            "value": "{\"event\":\"kPause\"}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990065430,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "events": [
+          {
+            "timestamp": 3126610.578489,
+            "value": "{\"event\":\"kPlay\"}"
+          }
+        ]
+      }
+    },
+    {
+      "at": 1793990077459,
+      "name": "playerEventsAdded",
+      "data": {
+        "playerId": "E405F2FE5EF26B21A714EFBB3ACEB3C3",
+        "events": [
+          {
+            "timestamp": 3126622.606965,
+            "value": "{\"event\":\"kPause\"}"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "sourceCommit": "b29ccddfc2d5583c1597e5a43f349b58d6e41abc",
+  "result": "No duplicate media element or AudioContext observed in this bounded local scenario; audible defect not reproduced or declared fixed."
+}
