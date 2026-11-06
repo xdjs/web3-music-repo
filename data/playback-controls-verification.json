@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-11-06T17:41:55.310Z",
+  "base": "http://127.0.0.1:4191",
+  "checks": [
+    "Song Play opens Now Playing; Back retains mounted page and scroll; Pause stays on page; Play resumes same source/time and opens player",
+    "Liked, artist and Explore/search cards synchronize through rerenders and both page/transport pause-resume",
+    "Personal playlist duplicate rows share recording state; bottom artwork/title open player; queue stacks and closes independently",
+    "Duplicate queue occurrences stay distinct; Next after Back stays closed; automatic ended advance updates the open player"
+  ],
+  "views": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "theme": "light",
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "noOverflow": true
+    }
+  ],
+  "errors": [],
+  "continuity": {
+    "before": {
+      "time": 0.653581,
+      "src": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "paused": false,
+      "events": []
+    },
+    "stopped": {
+      "time": 0.699692,
+      "src": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "paused": true,
+      "events": []
+    },
+    "resumed": {
+      "time": 1.018428,
+      "src": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "paused": false,
+      "events": []
+    }
+  },
+  "passed": true
+}

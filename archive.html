@@ -129,10 +129,21 @@
     </div>
     <section class="player" id="player" hidden aria-label="Music player">
       <div class="now-playing">
-        <img id="player-art" alt="" />
+        <button
+          id="open-now-playing"
+          aria-label="Open Now Playing"
+          aria-haspopup="dialog"
+          aria-controls="now-playing-dialog"
+        >
+          <img id="player-art" alt="" />
+        </button>
         <div>
-          <button id="player-title"></button><span id="player-artist"></span
-          ><small id="player-source"></small>
+          <button
+            id="player-title"
+            aria-haspopup="dialog"
+            aria-controls="now-playing-dialog"
+          ></button
+          ><span id="player-artist"></span><small id="player-source"></small>
         </div>
         <button
           class="icon"
@@ -194,8 +205,100 @@
           aria-label="Volume"
         />
       </div>
-      <video id="audio" playsinline preload="metadata"></video>
     </section>
+    <dialog id="now-playing-dialog" aria-labelledby="now-playing-title">
+      <div class="now-playing-bar">
+        <button class="text-button" data-now-action="back" autofocus>
+          ← Back</button
+        ><span class="eyebrow">NOW PLAYING</span
+        ><button
+          class="icon"
+          data-now="queue"
+          data-now-action="queue"
+          aria-label="Show queue"
+        ></button>
+      </div>
+      <div class="now-playing-content">
+        <div class="now-playing-media">
+          <img
+            class="now-playing-art"
+            data-now="art"
+            alt="Recording artwork"
+          /><video id="audio" playsinline preload="metadata"></video>
+        </div>
+        <div class="now-playing-heading">
+          <div>
+            <h1 id="now-playing-title" data-now="title"></h1>
+            <p data-now="artist"></p>
+          </div>
+          <button
+            class="icon heart"
+            data-now="like"
+            data-now-action="like"
+            aria-label="Like recording"
+          ></button>
+        </div>
+        <label class="seek"
+          ><span data-now="elapsed">0:00</span
+          ><input
+            data-now="seek"
+            type="range"
+            min="0"
+            max="1000"
+            value="0"
+            aria-label="Seek recording"
+          /><span data-now="duration">0:00</span></label
+        >
+        <div class="now-playing-transport">
+          <button
+            class="icon"
+            data-now="shuffle"
+            data-now-action="shuffle"
+            aria-label="Shuffle"
+            aria-pressed="false"
+          ></button
+          ><button
+            class="icon"
+            data-now="previous"
+            data-now-action="previous"
+            aria-label="Previous track"
+          ></button
+          ><button
+            class="play-toggle"
+            data-now="toggle"
+            data-now-action="toggle"
+            aria-label="Play"
+          ></button
+          ><button
+            class="icon"
+            data-now="next"
+            data-now-action="next"
+            aria-label="Next track"
+          ></button
+          ><button
+            class="icon"
+            data-now="mute"
+            data-now-action="mute"
+            aria-label="Mute audio"
+          ></button>
+        </div>
+        <div class="now-playing-volume">
+          <input
+            data-now="volume"
+            type="range"
+            min="0"
+            max="1"
+            step="0.05"
+            value="0.8"
+            aria-label="Volume"
+          />
+        </div>
+        <p class="now-playing-source" data-now="source"></p>
+        <button class="text-button" data-now-action="record">
+          Song details &amp; provenance ↗
+        </button>
+      </div>
+    </dialog>
     <dialog id="queue-dialog">
       <div class="dialog-title">
         <div>

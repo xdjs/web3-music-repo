@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-11-06T17:43:34.533Z",
+  "base": "http://127.0.0.1:4191",
+  "id": "pete-zora-1-0e616dff8c4d9341ce7cebe3bfa829d76ddb410e-3",
+  "scope": "Actual Say it celly media-matched index response and existing collector identity/PFP enrichment pipeline; no invented portraits or complete historical-minter claim.",
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "holders": 7,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "holders": 7,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "holders": 7,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "holders": 7,
+      "overflow": false
+    }
+  ],
+  "profileRequests": [
+    "http://127.0.0.1:4191/api/collector/0xe055721b972d58f0bcf6370c357879fb3a37d2f3",
+    "http://127.0.0.1:4191/api/collector/0x60ceb822f5fb39d837886ed17039811254337540",
+    "http://127.0.0.1:4191/api/collector/0x6fdf1430abfb5b66a04122c3bff7ef374764f815",
+    "http://127.0.0.1:4191/api/collector/0x13ef06797f095d5c62babf704d983cf1b4bde9e5",
+    "http://127.0.0.1:4191/api/collector/0x625307de45bd25ad6bf6cc7391a308fc84067cf7",
+    "http://127.0.0.1:4191/api/collector/0xcf2175eade4bd433c756554548688712067ddc6a",
+    "http://127.0.0.1:4191/api/collector/0xcfbf34d385ea2d5eb947063b67ea226dcda3dc38"
+  ],
+  "profileImages": 3,
+  "errors": []
+}

@@ -1,4 +1,10 @@
-import { readFileSync, writeFileSync, renameSync, existsSync } from "node:fs";
+import {
+  readFileSync,
+  writeFileSync,
+  renameSync,
+  existsSync,
+  mkdirSync,
+} from "node:fs";
 import { gunzipSync, gzipSync } from "node:zlib";
 import { createHash } from "node:crypto";
 import { pathToFileURL } from "node:url";
@@ -45,7 +51,8 @@ export function contentKey(uri) {
 }
 export function validURI(s) {
   if (typeof s !== "string" || s.length > 2048) return false;
-  if (/^(ipfs|ar):\/\/[A-Za-z0-9]/.test(s)) return !s.includes("..");
+  if (/^ipfs:\/\/[A-Za-z0-9]/.test(s) || /^ar:\/\/[A-Za-z0-9_-]/.test(s))
+    return !s.includes("..");
   try {
     const u = new URL(s);
     return (
@@ -62,7 +69,8 @@ export function validURI(s) {
 export function nftIdentity(n) {
   if (
     !n ||
-    !CHAINS[n.chainId] ||
+    !Object.hasOwn(CHAINS, n.chainId) ||
+    (typeof n.tokenId === "number" && !Number.isSafeInteger(n.tokenId)) ||
     !/^0x[0-9a-f]{40}$/i.test(n.contractAddress || "") ||
     !/^\d+$/.test(n.tokenId || "")
   )
@@ -86,21 +94,47 @@ const artistNorm = (s) =>
     .replace(/[^\p{L}\p{N}]+/gu, "")
     .trim();
 export function makeCandidate(t, n, platformNames, checkedAt) {
+  if (t.platformId === "pods")
+    return { reason: "podcast-platform-outside-music-scope" };
   const identity = nftIdentity(n);
   if (!identity)
     return {
       reason: n ? "unsupported-or-invalid-nft-identity" : "no-indexed-nft",
     };
-  const originalMedia = n.mediaURI,
-    fallback = storage(t.lossyAudioUrl)
-      ? t.lossyAudioUrl
-      : typeof t.lossyAudioIpfsHash === "string" &&
-          /^[A-Za-z0-9]+$/.test(t.lossyAudioIpfsHash)
-        ? "ipfs://" + t.lossyAudioIpfsHash
+  const cleanURI = (value) => (typeof value === "string" ? value.trim() : null);
+  const originalMedia = cleanURI(n.mediaURI),
+    image = cleanURI(n.imageURI) || cleanURI(t.lossyArtworkUrl),
+    availableFallbacks = [
+      cleanURI(t.lossyAudioUrl),
+      typeof t.lossyAudioIpfsHash === "string" &&
+      /^[A-Za-z0-9]+$/.test(t.lossyAudioIpfsHash.trim())
+        ? "ipfs://" + t.lossyAudioIpfsHash.trim()
         : null,
-    media = originalMedia || fallback,
-    image = n.imageURI || t.lossyArtworkUrl,
-    processedFallback = !originalMedia;
+    ],
+    fallback = availableFallbacks.find(
+      (value) => validURI(value) && storage(value),
+    ),
+    originalMediaUnavailableReason = !originalMedia
+      ? "missing-original-media"
+      : !validURI(originalMedia)
+        ? "invalid-original-media-uri"
+        : !storage(originalMedia)
+          ? "unsupported-original-storage"
+          : null,
+    processedFallback = !!originalMediaUnavailableReason,
+    media = processedFallback ? fallback : originalMedia;
+  if (
+    originalMedia &&
+    (contentKey(originalMedia) === contentKey(image) ||
+      /\.(png|jpe?g|gif|webp|svg)(?:[?#]|$)/i.test(originalMedia) ||
+      /^image\//.test(n.mimeType || ""))
+  )
+    return { reason: "missing-or-artwork-only-original-media" };
+  if (
+    !media &&
+    originalMediaUnavailableReason === "unsupported-original-storage"
+  )
+    return { reason: "unsupported-original-storage" };
   if (
     !validURI(media) ||
     contentKey(media) === contentKey(image) ||
@@ -109,32 +143,72 @@ export function makeCandidate(t, n, platformNames, checkedAt) {
     return { reason: "missing-or-artwork-only-original-media" };
   if (!storage(media)) return { reason: "unsupported-original-storage" };
   const name = t.artistByArtistId?.name;
-  if (!name || !t.title) return { reason: "missing-title-or-artist" };
+  if (
+    typeof name !== "string" ||
+    !name.trim() ||
+    typeof t.title !== "string" ||
+    !t.title.trim()
+  )
+    return { reason: "missing-title-or-artist" };
+  const knownPete =
+    String(t.artistId || "").toLowerCase() ===
+    "ethereum/0x625307de45bd25ad6bf6cc7391a308fc84067cf7";
+  const peteAlias =
+    knownPete &&
+    ["peterango", "p3t3rango"].includes(artistNorm(n.metadataArtist)) &&
+    ["peterango", "p3t3rango"].includes(artistNorm(name));
   if (
     typeof n.metadataArtist === "string" &&
     artistNorm(n.metadataArtist) &&
-    artistNorm(n.metadataArtist) !== artistNorm(name)
+    artistNorm(n.metadataArtist) !== artistNorm(name) &&
+    !peteAlias
   )
     return { reason: "artist-attribution-conflict" };
-  if (!(Number(t.duration) > 0) && !/^audio\/|^video\//.test(n.mimeType || ""))
+  if (
+    !(Number.isFinite(Number(t.duration)) && Number(t.duration) > 0) &&
+    !/^audio\/|^video\//.test(n.mimeType || "")
+  )
     return { reason: "no-indexed-audio-evidence" };
   const hash = createHash("sha256").update(t.id).digest("hex").slice(0, 20),
     id = "spinamp-" + hash,
-    artistId =
-      "spinamp-artist-" +
-      createHash("sha256")
-        .update(t.artistId || t.id)
-        .digest("hex")
-        .slice(0, 20);
+    artistId = knownPete
+      ? "pete-rango"
+      : "spinamp-artist-" +
+        createHash("sha256")
+          .update(t.artistId || t.id)
+          .digest("hex")
+          .slice(0, 20);
   const kind =
-    /^video\//.test(n.mimeType || "") ||
-    /\.(mp4|mov|webm)(?:[?#]|$)/i.test(media)
+    !processedFallback &&
+    (/^video\//.test(n.mimeType || "") ||
+      /\.(mp4|mov|webm)(?:[?#]|$)/i.test(media))
       ? "video"
       : "audio";
   const metadataURI = validURI(n.tokenUri)
     ? n.tokenUri
     : validURI(n.tokenMetadataUri)
       ? n.tokenMetadataUri
+      : null;
+  const createdAt =
+    typeof n.createdAtTime === "string" &&
+    /^\d{4}-\d{2}-\d{2}T/.test(n.createdAtTime)
+      ? Date.parse(n.createdAtTime)
+      : NaN;
+  const block = /^\d+$/.test(String(n.createdAtBlockNumber ?? ""))
+    ? Number(n.createdAtBlockNumber)
+    : NaN;
+  const indexedNftCreation =
+    Number.isFinite(createdAt) &&
+    createdAt >= Date.UTC(2009, 0, 1) &&
+    createdAt <= Date.now() + 86400000
+      ? {
+          date: new Date(createdAt).toISOString(),
+          ...(Number.isSafeInteger(block) && block >= 0
+            ? { blockNumber: block }
+            : {}),
+          source: "https://api.spinamp.xyz/v3/graphql",
+          onchainVerified: false,
+        }
       : null;
   return {
     record: {
@@ -151,9 +225,10 @@ export function makeCandidate(t, n, platformNames, checkedAt) {
       discovery: "Spinamp public index",
       spinampTrackId: t.id,
       spinampArtistId: t.artistId,
+      ...(indexedNftCreation ? { indexedNftCreation } : {}),
       musicMetadata: {
         status: "read",
-        schemaVersion: 3,
+        schemaVersion: n.musicMetadataSchemaVersion || 3,
         sourceType: "spinamp-indexed-metadata",
         source: "https://api.spinamp.xyz/v3/graphql",
         onchainVerified: false,
@@ -171,7 +246,8 @@ export function makeCandidate(t, n, platformNames, checkedAt) {
       mediaSourceType: processedFallback
         ? "spinamp-preserved-audio"
         : "indexed-nft-media",
-      originalMediaMissing: processedFallback,
+      originalMediaMissing: !originalMedia,
+      ...(processedFallback ? { originalMediaUnavailableReason } : {}),
       originalMediaURI: originalMedia || null,
       chainId: identity.chainId,
       contract: identity.contract,
@@ -184,7 +260,7 @@ export function makeCandidate(t, n, platformNames, checkedAt) {
       imageURI: validURI(image) ? image : null,
       metadataSha256: n.metadataSha256,
       metadataLocation: processedFallback
-        ? "NFT identity and metadata from Spinamp index; audio preserved separately by Spinamp; original metadata media empty. Independent chain and playback verification pending"
+        ? "NFT identity and metadata from Spinamp index; audio preserved separately by Spinamp; original media is absent or not usable through supported storage. Independent chain and playback verification pending"
         : "Spinamp indexed NFT metadata; independent chain and playback verification pending",
       onchainVerified: false,
       playbackVerified: false,
@@ -204,14 +280,23 @@ export function makeCandidate(t, n, platformNames, checkedAt) {
               src: storage("ipfs://" + t.artistByArtistId.avatarIpfsHash),
               alt: name,
               source: "https://api.spinamp.xyz/v3/graphql",
-              note: "Profile image attributed by the Spinamp index",
+              originalURI: "ipfs://" + t.artistByArtistId.avatarIpfsHash,
+              checkedAt,
+              note: "Public profile image attributed by the Spinamp artist index",
             },
           }
         : {}),
     },
   };
 }
-export function buildBundle(inv, refs, existing, platformNames) {
+export function buildBundle(
+  inv,
+  refs,
+  existing,
+  platformNames,
+  playbackObservations = [],
+) {
+  const observed = new Map(playbackObservations.map((row) => [row.id, row]));
   const byToken = new Map(
       existing.records.map((r) => [
         identityKey({ ...r, contract: r.contract.toLowerCase() }),
@@ -227,13 +312,25 @@ export function buildBundle(inv, refs, existing, platformNames) {
     evidence = {},
     people = new Map(),
     excluded = [],
-    duplicates = [];
+    duplicates = [],
+    unresolved = [];
   for (const t of inv.records) {
-    if (!Object.hasOwn(refs.references, t.id)) continue;
+    if (!Object.hasOwn(refs.references, t.id)) {
+      unresolved.push({
+        id: t.id,
+        reason: refs.failures?.[t.id] || "NFT relation not read",
+      });
+      continue;
+    }
     const n = refs.references[t.id],
       c = makeCandidate(t, n, platformNames, refs.updatedAt);
     if (c.reason) {
-      excluded.push({ id: t.id, reason: c.reason });
+      excluded.push({
+        id: t.id,
+        reason: c.reason,
+        platformId: t.platformId,
+        ...(n?.chainId ? { indexedChain: n.chainId } : {}),
+      });
       continue;
     }
     const r = c.record,
@@ -242,6 +339,18 @@ export function buildBundle(inv, refs, existing, platformNames) {
     if (match) {
       duplicates.push({ id: t.id, existingId: match });
       continue;
+    }
+    const observation = observed.get(r.id);
+    if (
+      observation?.status === "played" &&
+      observation.playback?.audioDecodedBytes > 0 &&
+      contentKey(observation.mediaURI) === contentKey(c.evidence.mediaURI)
+    ) {
+      r.kind = observation.playback.videoWidth > 0 ? "video" : "audio";
+      c.evidence.mediaKindSource =
+        "Observed native media startup decode for this exact content reference";
+      c.evidence.mediaKindEvidence =
+        "data/spinamp/expanded-sample-verification.json";
     }
     records.push(r);
     evidence[r.id] = c.evidence;
@@ -262,10 +371,25 @@ export function buildBundle(inv, refs, existing, platformNames) {
     audit: {
       inventoryCount: inv.records.length,
       relationsChecked: Object.keys(refs.references).length,
-      relationScanComplete: refs.complete,
+      relationCensusComplete: unresolved.length === 0,
+      relationScanComplete:
+        unresolved.length === 0 &&
+        Object.keys(refs.failures || {}).length === 0,
+      relationScope:
+        "One representative NFT relation per processed track; not a census of every NFT edition/mint",
+      unresolvedCount: unresolved.length,
+      metadataRetryFailures: Object.keys(refs.failures || {}).filter((id) =>
+        Object.hasOwn(refs.references, id),
+      ).length,
+      retryFailureCount: Object.keys(refs.failures || {}).length,
+      relationMultiplicityMeasured: Object.keys(refs.relationCounts || {})
+        .length,
+      multipleRelationTracksMeasured: Object.values(
+        refs.relationCounts || {},
+      ).filter((n) => n > 1).length,
       added: records.length,
       processedMediaFallbackCount: records.filter(
-        (r) => evidence[r.id].originalMediaMissing,
+        (r) => evidence[r.id].mediaSourceType === "spinamp-preserved-audio",
       ).length,
       duplicateCount: duplicates.length,
       excludedCount: excluded.length,
@@ -287,8 +411,45 @@ export function buildBundle(inv, refs, existing, platformNames) {
           records.filter((x) => x.platform === k).length,
         ]),
       ),
+      indexedCreationDates: records.filter((r) => r.indexedNftCreation?.date)
+        .length,
+      originalMediaUnavailableReasons: Object.fromEntries(
+        [
+          ...new Set(
+            records
+              .map((r) => evidence[r.id].originalMediaUnavailableReason)
+              .filter(Boolean),
+          ),
+        ].map((reason) => [
+          reason,
+          records.filter(
+            (r) => evidence[r.id].originalMediaUnavailableReason === reason,
+          ).length,
+        ]),
+      ),
+      unsupportedChainCounts: Object.fromEntries(
+        [
+          ...new Set(
+            excluded
+              .filter((x) => x.reason === "unsupported-or-invalid-nft-identity")
+              .map((x) => x.indexedChain || "unknown"),
+          ),
+        ].map((chain) => [
+          chain,
+          excluded.filter(
+            (x) =>
+              x.reason === "unsupported-or-invalid-nft-identity" &&
+              (x.indexedChain || "unknown") === chain,
+          ).length,
+        ]),
+      ),
+      portraits: [...people.values()].filter((p) => p.portrait?.src).length,
+      peteWalletMatchedRecords: records.filter(
+        (r) => r.artistId === "pete-rango",
+      ).length,
       duplicates,
       excluded,
+      unresolved,
     },
   };
 }
@@ -336,27 +497,35 @@ if (
       };
     })(),
     names,
+    existsSync("data/spinamp/expanded-sample-verification.json")
+      ? JSON.parse(
+          readFileSync("data/spinamp/expanded-sample-verification.json"),
+        ).results || []
+      : [],
   );
+  const outputDir = process.env.SPINAMP_OUTPUT_DIR || "data/spinamp";
+  mkdirSync(outputDir, { recursive: true });
   const text = JSON.stringify(bundle);
-  writeFileSync("data/spinamp/recovered-media.json.tmp", text + "\n");
+  writeFileSync(outputDir + "/recovered-media.json.tmp", text + "\n");
   renameSync(
-    "data/spinamp/recovered-media.json.tmp",
-    "data/spinamp/recovered-media.json",
+    outputDir + "/recovered-media.json.tmp",
+    outputDir + "/recovered-media.json",
   );
   writeFileSync(
-    "data/spinamp/import-audit.json.gz",
+    outputDir + "/import-audit.json.gz",
     gzipSync(JSON.stringify(audit)),
   );
   const summary = {
     ...audit,
     duplicates: undefined,
     excluded: undefined,
+    unresolved: undefined,
     bundleBytes: Buffer.byteLength(text),
     bundleGzipBytes: gzipSync(text).length,
     checkedAt: refs.updatedAt,
   };
   writeFileSync(
-    "data/spinamp/import-summary.json",
+    outputDir + "/import-summary.json",
     JSON.stringify(summary, null, 2) + "\n",
   );
   console.log(JSON.stringify(summary, null, 2));

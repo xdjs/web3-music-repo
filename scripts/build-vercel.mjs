@@ -26,6 +26,8 @@ const frontend = [
   "media-recovery.js",
   "media-preload.mjs",
   "next-track-buffer.mjs",
+  "playback-controls.mjs",
+  "now-playing.mjs",
   "personal-playlists.mjs",
   "playlist-share.mjs",
   "listening-queue.mjs",

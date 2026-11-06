@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-06T17:43:54.780Z",
+  "production": "https://web3-music-repo.vercel.app",
+  "observations": [
+    {
+      "id": "audio",
+      "connected": true,
+      "paused": false,
+      "ended": false,
+      "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+      "currentTime": 120.009295,
+      "volume": 0.8,
+      "muted": false,
+      "audioTracks": null
+    }
+  ],
+  "playCalls": [
+    {
+      "action": "play",
+      "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+      "time": 0
+    }
+  ],
+  "activeMedia": 1,
+  "afterPause": [
+    {
+      "paused": true,
+      "src": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1"
+    }
+  ],
+  "scope": "Headless Chromium production reproduction, seeking to 1:48 then playing through 2:00. This checks media-element concurrency; it does not establish what the user heard or exclude an effect in the source audio.",
+  "localMediaSession": {
+    "title": "Planet X",
+    "artist": "Xmane & Pete Rango",
+    "pageTitle": "Planet X — Music Nerd"
+  },
+  "metadataRemainsCurrentAcrossNavigation": true,
+  "passed": true
+}

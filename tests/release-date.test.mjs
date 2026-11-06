@@ -111,3 +111,54 @@ test("oldest and newest ordering keep unknown dates last with deterministic ties
     ["late", "early", "unknown"],
   );
 });
+
+test("indexed NFT creation remains attributed and cannot replace stronger historical dates", () => {
+  const indexed = {
+    ...record,
+    indexedNftCreation: {
+      date: "2023-10-15T18:17:35.000000Z",
+      source: "https://api.spinamp.xyz/v3/graphql",
+      onchainVerified: false,
+    },
+  };
+  const date = releaseDateForRecord(indexed);
+  assert.equal(date.kind, "indexed-token-created");
+  assert.equal(date.date, "2023-10-15T18:17:35.000Z");
+  assert.equal(date.onchainVerified, false);
+  assert.match(date.label, /Spinamp index/);
+  assert.equal(
+    releaseDateForRecord({
+      ...indexed,
+      musicMetadata: { details: { "Release date": ["2022-01-01"] } },
+    }).kind,
+    "release-metadata",
+  );
+  assert.equal(
+    releaseDateForRecord(indexed, {
+      tokens: {
+        "1:0xabc:9007199254740993123": {
+          date: "2021-01-01",
+          kind: "token-created",
+        },
+      },
+    }).kind,
+    "token-created",
+  );
+  assert.equal(
+    releaseDateForRecord({
+      ...indexed,
+      indexedNftCreation: { ...indexed.indexedNftCreation, date: "2023-02-30" },
+    }),
+    null,
+  );
+  assert.equal(
+    releaseDateForRecord({
+      ...indexed,
+      indexedNftCreation: {
+        ...indexed.indexedNftCreation,
+        source: "https://example.com",
+      },
+    }),
+    null,
+  );
+});

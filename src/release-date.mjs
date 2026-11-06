@@ -66,6 +66,21 @@ export function releaseDateForRecord(record, index = {}) {
           null,
       };
   }
+  const indexed = record.indexedNftCreation;
+  if (
+    indexed?.source === "https://api.spinamp.xyz/v3/graphql" &&
+    indexed.onchainVerified === false
+  ) {
+    const parsed = parseHistoricalDate(indexed.date);
+    if (parsed)
+      return {
+        ...parsed,
+        kind: "indexed-token-created",
+        label: "Token created · date from Spinamp index",
+        source: indexed.source,
+        onchainVerified: false,
+      };
+  }
   return null;
 }
 export function compareReleaseDates(a, b, direction = "newest") {

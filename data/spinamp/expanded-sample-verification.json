@@ -1,0 +1,517 @@
+{
+  "checkedAt": "2026-11-06T17:39:30.136Z",
+  "scope": "Ten newly imported, source-indexed samples across five EVM chains and distinct platforms/media paths. Browser advancing playback and decoded audio only; no full-track audition, complete media availability or independent chain verification claim. Maximum two gateway attempts per sample; no bulk media downloads.",
+  "bundleSha256": "4dcc26c43fa48d6d6578f1bb3d58b38e0bb681b1e6a4c1f5090d598802ae40cd",
+  "candidateRecords": 21329,
+  "newCandidateRecords": 17514,
+  "results": [
+    {
+      "coverage": "Zora chain",
+      "id": "spinamp-83494b3659f85d6fb31b",
+      "title": "SyntheticForest",
+      "artist": "eduardopolitzer.eth",
+      "platform": "Zora",
+      "chainId": 7777777,
+      "kind": "audio",
+      "contract": "0x00f84b94aaa06136241fa20233e4eafccfbcdeea",
+      "tokenId": "2",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-index",
+      "mediaSourceType": "indexed-nft-media",
+      "mediaURI": "ipfs://bafybeic7vxf5pkl3saugra5isvts5ucj72mucp3cvzi6ckvlrypec57lku",
+      "originalMediaURI": "ipfs://bafybeic7vxf5pkl3saugra5isvts5ucj72mucp3cvzi6ckvlrypec57lku",
+      "originalMediaUnavailableReason": null,
+      "onchainVerified": false,
+      "metadataSourceType": "spinamp-indexed-metadata",
+      "musicFacts": {
+        "bpmCount": 0,
+        "keyCount": 0,
+        "creditCount": 0
+      },
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeic7vxf5pkl3saugra5isvts5ucj72mucp3cvzi6ckvlrypec57lku",
+          "status": "played",
+          "currentTime": 0.504079,
+          "duration": 594.70365,
+          "readyState": 4,
+          "audioDecodedBytes": 32391,
+          "videoWidth": 0,
+          "videoHeight": 0
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 0.504079,
+        "duration": 594.70365,
+        "readyState": 4,
+        "audioDecodedBytes": 32391,
+        "videoWidth": 0,
+        "videoHeight": 0
+      }
+    },
+    {
+      "coverage": "Polygon Lens",
+      "id": "spinamp-d88347a5ad97cd516132",
+      "title": "Love You II",
+      "artist": "Bob Peace",
+      "platform": "Lens",
+      "chainId": 137,
+      "kind": "audio",
+      "contract": "0x0111aa59b0774ebf9deceaf1269fecb1d9577a93",
+      "tokenId": "1",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-processed-media",
+      "mediaSourceType": "spinamp-preserved-audio",
+      "mediaURI": "https://web3-music-pipeline.mypinata.cloud/ipfs/bafybeibmzmrydo24esflz745khcby62eocsthomv77tdbbza6iokvtjfta",
+      "originalMediaURI": null,
+      "originalMediaUnavailableReason": "missing-original-media",
+      "onchainVerified": false,
+      "metadataSourceType": "spinamp-indexed-metadata",
+      "musicFacts": {
+        "bpmCount": 0,
+        "keyCount": 0,
+        "creditCount": 0
+      },
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeibmzmrydo24esflz745khcby62eocsthomv77tdbbza6iokvtjfta",
+          "status": "played",
+          "currentTime": 0.5054,
+          "duration": 30,
+          "readyState": 4,
+          "audioDecodedBytes": 139264,
+          "videoWidth": 0,
+          "videoHeight": 0
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 0.5054,
+        "duration": 30,
+        "readyState": 4,
+        "audioDecodedBytes": 139264,
+        "videoWidth": 0,
+        "videoHeight": 0
+      }
+    },
+    {
+      "coverage": "Base Sound",
+      "id": "spinamp-4701f0bd39dc4d067677",
+      "title": "Body Language (身体语言）",
+      "artist": "Fifi Rong",
+      "platform": "Sound",
+      "chainId": 8453,
+      "kind": "audio",
+      "contract": "0x00187ef10d026fbd266e907bea5060f5c16975e0",
+      "tokenId": "1",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-processed-media",
+      "mediaSourceType": "spinamp-preserved-audio",
+      "mediaURI": "https://arweave.net/-eFn_-ha1Rt14BFaupETq85vnWtjDrlNDbflPTYrusA",
+      "originalMediaURI": "ar://-eFn_-ha1Rt14BFaupETq85vnWtjDrlNDbflPTYrusA",
+      "originalMediaUnavailableReason": "invalid-original-media-uri",
+      "onchainVerified": false,
+      "metadataSourceType": "spinamp-indexed-metadata",
+      "musicFacts": {
+        "bpmCount": 1,
+        "keyCount": 1,
+        "creditCount": 0
+      },
+      "attempts": [
+        {
+          "url": "https://arweave.net/-eFn_-ha1Rt14BFaupETq85vnWtjDrlNDbflPTYrusA",
+          "status": "played",
+          "currentTime": 0.501956,
+          "duration": 199.200021,
+          "readyState": 4,
+          "audioDecodedBytes": 225060,
+          "videoWidth": 0,
+          "videoHeight": 0
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 0.501956,
+        "duration": 199.200021,
+        "readyState": 4,
+        "audioDecodedBytes": 225060,
+        "videoWidth": 0,
+        "videoHeight": 0
+      }
+    },
+    {
+      "coverage": "Optimism Supercollector",
+      "id": "spinamp-a933da73256ceef1dd97",
+      "title": "Party Song",
+      "artist": "Dub Proof ",
+      "platform": "Supercollector",
+      "chainId": 10,
+      "kind": "audio",
+      "contract": "0x04986f7edc5a95ee55be5d5d18886c6680201fb4",
+      "tokenId": "1",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-index",
+      "mediaSourceType": "indexed-nft-media",
+      "mediaURI": "ipfs://bafybeieo5x6lv2ew7vhfflsyetilkzpa4uday72crgpqmduw3smwxmxmym",
+      "originalMediaURI": "ipfs://bafybeieo5x6lv2ew7vhfflsyetilkzpa4uday72crgpqmduw3smwxmxmym",
+      "originalMediaUnavailableReason": null,
+      "onchainVerified": false,
+      "metadataSourceType": "spinamp-indexed-metadata",
+      "musicFacts": {
+        "bpmCount": 0,
+        "keyCount": 0,
+        "creditCount": 0
+      },
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeieo5x6lv2ew7vhfflsyetilkzpa4uday72crgpqmduw3smwxmxmym",
+          "status": "played",
+          "currentTime": 0.502234,
+          "duration": 186.886553,
+          "readyState": 4,
+          "audioDecodedBytes": 26412,
+          "videoWidth": 0,
+          "videoHeight": 0
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 0.502234,
+        "duration": 186.886553,
+        "readyState": 4,
+        "audioDecodedBytes": 26412,
+        "videoWidth": 0,
+        "videoHeight": 0
+      }
+    },
+    {
+      "coverage": "omgkirby video",
+      "id": "spinamp-8e82b9fda0603fb777e6",
+      "title": "omgkirby x Channel Tres #1",
+      "artist": "omgkirby",
+      "platform": "omgkirby",
+      "chainId": 1,
+      "kind": "video",
+      "contract": "0x6e6650fd4949fddf0bacc45c06ae3437f61acb1b",
+      "tokenId": "1",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-index",
+      "mediaSourceType": "indexed-nft-media",
+      "mediaURI": "ipfs://QmXjJvREYHcRzvEUWn7jHi99EVaeyx5wqwDXJThUdjkq7h/1.mp4",
+      "originalMediaURI": "ipfs://QmXjJvREYHcRzvEUWn7jHi99EVaeyx5wqwDXJThUdjkq7h/1.mp4",
+      "originalMediaUnavailableReason": null,
+      "onchainVerified": false,
+      "metadataSourceType": "spinamp-indexed-metadata",
+      "musicFacts": {
+        "bpmCount": 0,
+        "keyCount": 0,
+        "creditCount": 0
+      },
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmXjJvREYHcRzvEUWn7jHi99EVaeyx5wqwDXJThUdjkq7h/1.mp4",
+          "status": "played",
+          "currentTime": 0.502263,
+          "duration": 109.708333,
+          "readyState": 4,
+          "audioDecodedBytes": 12603,
+          "videoWidth": 1000,
+          "videoHeight": 1000
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 0.502263,
+        "duration": 109.708333,
+        "readyState": 4,
+        "audioDecodedBytes": 12603,
+        "videoWidth": 1000,
+        "videoHeight": 1000
+      }
+    },
+    {
+      "coverage": "omgkirby preserved",
+      "id": "spinamp-a735c438db9975a7484c",
+      "title": "omgkirby GENESIS #1",
+      "artist": "omgkirby",
+      "platform": "omgkirby",
+      "chainId": 1,
+      "kind": "audio",
+      "contract": "0xafef885027a59603dff7837c280dad772c476b82",
+      "tokenId": "1",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-processed-media",
+      "mediaSourceType": "spinamp-preserved-audio",
+      "mediaURI": "ipfs://QmcV6CrryUCbygKmxv7UCsrswARGFWTQ8tMGNGwwRaxiiU",
+      "originalMediaURI": "https://quandefi-public-asset-data.s3.amazonaws.com/0xafef885027a59603dff7837c280dad772c476b82/videos/1.mp4",
+      "originalMediaUnavailableReason": "unsupported-original-storage",
+      "onchainVerified": false,
+      "metadataSourceType": "spinamp-indexed-metadata",
+      "musicFacts": {
+        "bpmCount": 0,
+        "keyCount": 0,
+        "creditCount": 0
+      },
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmcV6CrryUCbygKmxv7UCsrswARGFWTQ8tMGNGwwRaxiiU",
+          "status": "played",
+          "currentTime": 0.506372,
+          "duration": 127.4,
+          "readyState": 4,
+          "audioDecodedBytes": 12307,
+          "videoWidth": 1000,
+          "videoHeight": 1000
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 0.506372,
+        "duration": 127.4,
+        "readyState": 4,
+        "audioDecodedBytes": 12307,
+        "videoWidth": 1000,
+        "videoHeight": 1000
+      }
+    },
+    {
+      "coverage": "Deafbeef preserved",
+      "id": "spinamp-5f0ea4f14d2cff0f231c",
+      "title": "DEAFBEEF Vol. 2, Series 1: Noumenon - Token 10",
+      "artist": "0xDEAFBEEF",
+      "platform": "0xDEAFBEEF",
+      "chainId": 1,
+      "kind": "audio",
+      "contract": "0xd7483426ea2edc69cc446859e20d61de1bae4d22",
+      "tokenId": "10",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-processed-media",
+      "mediaSourceType": "spinamp-preserved-audio",
+      "mediaURI": "ipfs://QmeJUcvydx35iWwtt5DAefYJRAfkNSgvhsLEfuwfhmip8Z",
+      "originalMediaURI": "https://deafbeef.com/v2/media/10/audiovisual.mp4?a=609",
+      "originalMediaUnavailableReason": "unsupported-original-storage",
+      "onchainVerified": false,
+      "metadataSourceType": "spinamp-indexed-metadata",
+      "musicFacts": {
+        "bpmCount": 0,
+        "keyCount": 0,
+        "creditCount": 0
+      },
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmeJUcvydx35iWwtt5DAefYJRAfkNSgvhsLEfuwfhmip8Z",
+          "status": "played",
+          "currentTime": 0.504373,
+          "duration": 60.041667,
+          "readyState": 4,
+          "audioDecodedBytes": 19362,
+          "videoWidth": 320,
+          "videoHeight": 320
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 0.504373,
+        "duration": 60.041667,
+        "readyState": 4,
+        "audioDecodedBytes": 19362,
+        "videoWidth": 320,
+        "videoHeight": 320
+      }
+    },
+    {
+      "coverage": "Song a Day",
+      "id": "spinamp-01d25d4973e7997210f7",
+      "title": "100,000,000 Songs",
+      "artist": "Jonathan Mann",
+      "platform": "songaday.world",
+      "chainId": 1,
+      "kind": "audio",
+      "contract": "0x19b703f65aa7e1e775bd06c2aa0d0d08c80f1c45",
+      "tokenId": "2216",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-index",
+      "mediaSourceType": "indexed-nft-media",
+      "mediaURI": "ipfs://QmVHjFbGEqXfYuoPpJR4vmRacGM29KR5UenqbidJex8muB/2216",
+      "originalMediaURI": "ipfs://QmVHjFbGEqXfYuoPpJR4vmRacGM29KR5UenqbidJex8muB/2216",
+      "originalMediaUnavailableReason": null,
+      "onchainVerified": false,
+      "metadataSourceType": "spinamp-indexed-metadata",
+      "musicFacts": {
+        "bpmCount": 1,
+        "keyCount": 1,
+        "creditCount": 0
+      },
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmVHjFbGEqXfYuoPpJR4vmRacGM29KR5UenqbidJex8muB/2216",
+          "status": "played",
+          "currentTime": 0.50095,
+          "duration": 105.256054,
+          "readyState": 4,
+          "audioDecodedBytes": 9321,
+          "videoWidth": 1280,
+          "videoHeight": 720
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 0.50095,
+        "duration": 105.256054,
+        "readyState": 4,
+        "audioDecodedBytes": 9321,
+        "videoWidth": 1280,
+        "videoHeight": 720
+      }
+    },
+    {
+      "coverage": "NOIZD preserved",
+      "id": "spinamp-4dc5fd81df9fba064967",
+      "title": "#DopeVocalsNeeded",
+      "artist": "BlvckBoiBeats",
+      "platform": "NOIZD",
+      "chainId": 1,
+      "kind": "audio",
+      "contract": "0xf5819e27b9bad9f97c177bf007c1f96f26d91ca6",
+      "tokenId": "33",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-processed-media",
+      "mediaSourceType": "spinamp-preserved-audio",
+      "mediaURI": "ipfs://QmRTPdQV7qAnntJBmpPPrGHFXmBT9xBMLBSEsH5xBqRJ6h",
+      "originalMediaURI": "https://cf-prod.noizd.com/341d3284-ab65-417b-b338-c1620f9c3b7d/a0b7fa6a-9281-422c-ad85-02586f4bdc3e.mp3",
+      "originalMediaUnavailableReason": "unsupported-original-storage",
+      "onchainVerified": false,
+      "metadataSourceType": "spinamp-indexed-metadata",
+      "musicFacts": {
+        "bpmCount": 0,
+        "keyCount": 0,
+        "creditCount": 0
+      },
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmRTPdQV7qAnntJBmpPPrGHFXmBT9xBMLBSEsH5xBqRJ6h",
+          "status": "played",
+          "currentTime": 0.504673,
+          "duration": 191.47755,
+          "readyState": 4,
+          "audioDecodedBytes": 32391,
+          "videoWidth": 0,
+          "videoHeight": 0
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 0.504673,
+        "duration": 191.47755,
+        "readyState": 4,
+        "audioDecodedBytes": 32391,
+        "videoWidth": 0,
+        "videoHeight": 0
+      }
+    },
+    {
+      "coverage": "Holly Plus original WAV",
+      "id": "spinamp-b329d359e62383f5b337",
+      "title": "0xDEAFBEEF: Holly + Angular",
+      "artist": "hollyplus",
+      "platform": "hollyplus",
+      "chainId": 1,
+      "kind": "audio",
+      "contract": "0x6688ee4e6e17a9cf88a13da833b011e64c2b4203",
+      "tokenId": "86",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-index",
+      "mediaSourceType": "indexed-nft-media",
+      "mediaURI": "ipfs://bafybeibvfeur2qsmwiofpldmyt7to74vuisd46vwda4ouz4fvy7vmnjphm/Deafbeefaudio.wav",
+      "originalMediaURI": "ipfs://bafybeibvfeur2qsmwiofpldmyt7to74vuisd46vwda4ouz4fvy7vmnjphm/Deafbeefaudio.wav",
+      "originalMediaUnavailableReason": null,
+      "onchainVerified": false,
+      "metadataSourceType": "spinamp-indexed-metadata",
+      "musicFacts": {
+        "bpmCount": 0,
+        "keyCount": 0,
+        "creditCount": 0
+      },
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeibvfeur2qsmwiofpldmyt7to74vuisd46vwda4ouz4fvy7vmnjphm/Deafbeefaudio.wav",
+          "status": "played",
+          "currentTime": 0.507309,
+          "duration": 53.054694,
+          "readyState": 4,
+          "audioDecodedBytes": 139264,
+          "videoWidth": 0,
+          "videoHeight": 0
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 0.507309,
+        "duration": 53.054694,
+        "readyState": 4,
+        "audioDecodedBytes": 139264,
+        "videoWidth": 0,
+        "videoHeight": 0
+      }
+    }
+  ],
+  "finalCandidateReconciliation": {
+    "checkedAt": "2026-11-06T17:43:22.313Z",
+    "bundleSha256": "70ec9f4f6cecf92f304e3845443ac3826e4cc4e405713b44a2036713caf300cb",
+    "records": 21395,
+    "matches": [
+      {
+        "id": "spinamp-83494b3659f85d6fb31b",
+        "sameMedia": true,
+        "sameToken": true
+      },
+      {
+        "id": "spinamp-d88347a5ad97cd516132",
+        "sameMedia": true,
+        "sameToken": true
+      },
+      {
+        "id": "spinamp-4701f0bd39dc4d067677",
+        "sameMedia": true,
+        "sameToken": true
+      },
+      {
+        "id": "spinamp-a933da73256ceef1dd97",
+        "sameMedia": true,
+        "sameToken": true
+      },
+      {
+        "id": "spinamp-8e82b9fda0603fb777e6",
+        "sameMedia": true,
+        "sameToken": true
+      },
+      {
+        "id": "spinamp-a735c438db9975a7484c",
+        "sameMedia": true,
+        "sameToken": true
+      },
+      {
+        "id": "spinamp-5f0ea4f14d2cff0f231c",
+        "sameMedia": true,
+        "sameToken": true
+      },
+      {
+        "id": "spinamp-01d25d4973e7997210f7",
+        "sameMedia": true,
+        "sameToken": true
+      },
+      {
+        "id": "spinamp-4dc5fd81df9fba064967",
+        "sameMedia": true,
+        "sameToken": true
+      },
+      {
+        "id": "spinamp-b329d359e62383f5b337",
+        "sameMedia": true,
+        "sameToken": true
+      }
+    ],
+    "note": "All tested content references and token identities persist in final candidate. The Base Sound Arweave URL is now correctly labeled original indexed media after fixing valid base64url ID handling; observed video dimensions classify exact opaque fallback media."
+  }
+}
