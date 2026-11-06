@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-06T09:55:52.352Z",
+  "scope": "Three public source-media start checks, not full-track auditions or production app integration",
+  "results": [
+    {
+      "id": "supercollector-10-0b0abf42c6cd9eb5803e39988850df4756a07956-1",
+      "title": "OFF THE LEASH",
+      "status": "started",
+      "currentTime": 0.521407,
+      "duration": 182.160979,
+      "source": "https://supercollector.s3.us-east-2.amazonaws.com/86cd0b02-0e7e-4daa-96b2-443db45447eb/ab4000e7-ce4f-40f8-ac27-47f9e780dfcf/encoded/LIL-LIL-PETE-RANGO---OFF-THE-LEASH_MASTER.mp3"
+    },
+    {
+      "id": "supercollector-10-daf442a4cca2951f9cc81a840910f3d7e6db8bbc-1",
+      "title": "Misplaced",
+      "status": "started",
+      "currentTime": 0.511963,
+      "duration": 92.860917,
+      "source": "https://supercollector.s3.us-east-2.amazonaws.com/e830268b-a95c-44f6-9a8a-deac29bc474d/a2a81e92-e2e9-41f5-b285-c3f003303d3a/encoded/9-12-25---2-(MASTER-6).mp3"
+    },
+    {
+      "id": "supercollector-10-56c43822c9f043e89c33db4778ec710a8aafadd7-16",
+      "title": "Thin Mints",
+      "status": "started",
+      "currentTime": 0.508632,
+      "duration": 108.260884,
+      "source": "https://supercollector.s3.us-east-2.amazonaws.com/993fb38b-e740-4ac6-8600-b152b6624e05/2abff164-c616-4c46-b465-e345fcdc7013/encoded/Thin-Mints.mp3"
+    }
+  ]
+}

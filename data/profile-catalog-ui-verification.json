@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-06T07:35:12.447Z",
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "profileTabsStable": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "profileTabsStable": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "profileTabsStable": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "profileTabsStable": true
+    }
+  ],
+  "localPlaylistPersists": true,
+  "catalogPurchaseRecipients": true,
+  "releaseNoteFacts": true,
+  "newZoraComments": true,
+  "realSignedIn": false,
+  "errors": []
+}

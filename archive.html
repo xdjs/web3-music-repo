@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Rediscover the music NFT era. Listen across Sound, Catalog, Zora and more, with lyrics, collectors and playlists. A Music Nerd project created by Pete Rango."
+    />
+    <title>Music NFT Recovery — Music Nerd</title>
+    <link rel="canonical" href="https://web3-music-repo.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Music Nerd" />
+    <meta property="og:title" content="Music NFT Recovery — Music Nerd" />
+    <meta
+      property="og:description"
+      content="Explore the songs, collectors and memories of the music NFT era. Created by Pete Rango."
+    />
+    <meta property="og:url" content="https://web3-music-repo.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://web3-music-repo.vercel.app/social/music-nft-recovery-v1.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta
+      property="og:image:alt"
+      content="Music NFT Recovery by Music Nerd. A pink record sleeve with the Music Nerd lenses logo, beside a black vinyl record. Created by Pete Rango."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Music NFT Recovery — Music Nerd" />
+    <meta
+      name="twitter:description"
+      content="Explore the songs, collectors and memories of the music NFT era. Created by Pete Rango."
+    />
+    <meta
+      name="twitter:image"
+      content="https://web3-music-repo.vercel.app/social/music-nft-recovery-v1.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Music NFT Recovery by Music Nerd, with a pink record sleeve and lenses logo."
+    />
+    <link rel="icon" href="/musicnerd-lenses.png" />
+    <link rel="stylesheet" href="/src/archive.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to music</a>
+    <aside class="sidebar">
+      <a class="brand" href="#home"
+        ><img src="/musicnerd-lenses.png" alt="Music Nerd" /><span
+          >MUSIC NERD<small>THE MUSIC NFT ARCHIVE</small></span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#home" data-nav="home"
+          ><span data-nav-icon="home" aria-hidden="true"></span>
+          <span>Home</span></a
+        ><a href="#explore" data-nav="explore"
+          ><span data-nav-icon="explore" aria-hidden="true"></span>
+          <span>Explore music</span></a
+        ><a href="#artists" data-nav="artists"
+          ><span data-nav-icon="artists" aria-hidden="true"></span>
+          <span>Artists</span></a
+        ><a href="#playlists" data-nav="playlists"
+          ><span data-nav-icon="playlists" aria-hidden="true"></span>
+          <span>Playlists</span></a
+        >
+      </nav>
+      <div class="side-label">YOUR LIBRARY</div>
+      <nav aria-label="Your library">
+        <a href="#me" data-nav="me"
+          ><span data-nav-icon="me" aria-hidden="true"></span>
+          <span>My profile</span></a
+        >
+        <a href="#wallet" data-nav="wallet"
+          ><span data-nav-icon="wallet" aria-hidden="true"></span>
+          <span>Collected music</span></a
+        >
+        <a href="#liked" data-nav="liked"
+          ><span data-nav-icon="liked" aria-hidden="true"></span>
+          <span>Liked sounds</span><b id="liked-count">0</b></a
+        ><button id="show-queue">
+          <span data-nav-icon="queue" aria-hidden="true"></span>
+          <span>Listening queue</span>
+        </button>
+      </nav>
+      <div class="side-label">PRESERVING THE ERA</div>
+      <nav aria-label="Archive information">
+        <a href="#recovery" data-nav="recovery"
+          ><span data-nav-icon="recovery" aria-hidden="true"></span>
+          <span>Recovery ledger</span></a
+        >
+      </nav>
+      <div class="sidebar-bottom">
+        <span class="status-dot"></span> An independent living archive
+        <p>Sound first. An entire era to recover.</p>
+        <a href="#recovery">About this archive ↗</a>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <a class="mobile-brand" href="#home"
+          ><img src="/musicnerd-lenses.png" alt="Music Nerd" /></a
+        ><label class="search"
+          ><span>⌕</span
+          ><input
+            id="search"
+            type="search"
+            placeholder="Search songs, artists, collaborators…"
+            aria-label="Search the archive"
+          /><kbd>/</kbd></label
+        >
+        <div class="top-actions">
+          <button id="theme" class="icon" aria-label="Switch color theme">
+            ◐</button
+          ><span id="account-root"></span>
+        </div>
+      </header>
+      <main id="main" tabindex="-1">
+        <div class="loading">Following the records…</div>
+      </main>
+      <footer class="page-footer">
+        <span>A Music Nerd preservation project.</span
+        ><a href="#recovery">About this archive ↗</a>
+      </footer>
+    </div>
+    <section class="player" id="player" hidden aria-label="Music player">
+      <div class="now-playing">
+        <img id="player-art" alt="" />
+        <div>
+          <button id="player-title"></button><span id="player-artist"></span
+          ><small id="player-source"></small>
+        </div>
+        <button
+          class="icon"
+          id="player-like"
+          aria-label="Like current recording"
+        >
+          ♡
+        </button>
+      </div>
+      <div class="transport">
+        <div>
+          <button
+            id="mobile-queue"
+            class="icon"
+            aria-label="Show listening queue"
+          >
+            <span data-nav-icon="queue" aria-hidden="true"></span></button
+          ><button class="icon" id="previous" aria-label="Previous track">
+            <span data-nav-icon="previous" aria-hidden="true"></span></button
+          ><button class="play-toggle" id="toggle" aria-label="Pause">
+            <span data-nav-icon="pause" aria-hidden="true"></span></button
+          ><button class="icon" id="next" aria-label="Next track">
+            <span data-nav-icon="next" aria-hidden="true"></span>
+          </button>
+        </div>
+        <label class="seek"
+          ><span id="elapsed">0:00</span
+          ><input
+            id="seek"
+            type="range"
+            min="0"
+            max="1000"
+            value="0"
+            aria-label="Seek recording"
+          /><span id="duration">0:00</span></label
+        >
+      </div>
+      <div class="player-tools">
+        <button id="proof-now" class="text-button">View provenance ↗</button
+        ><button id="queue-now" class="icon" aria-label="Show queue">
+          <span data-nav-icon="queue" aria-hidden="true"></span></button
+        ><button id="mute" class="icon" aria-label="Mute audio">
+          <span data-nav-icon="volume" aria-hidden="true"></span></button
+        ><input
+          id="volume"
+          type="range"
+          min="0"
+          max="1"
+          value="0.8"
+          step="0.05"
+          aria-label="Volume"
+        />
+      </div>
+      <video id="audio" playsinline preload="metadata"></video>
+    </section>
+    <dialog id="queue-dialog">
+      <div class="dialog-title">
+        <div>
+          <span class="eyebrow">YOUR LISTENING SESSION</span>
+          <h2>Up next</h2>
+        </div>
+        <button class="icon" data-close aria-label="Close queue">×</button>
+      </div>
+      <div class="queue-toolbar">
+        <p class="link-note" id="queue-context"></p>
+        <button class="text-button" id="clear-queue">Clear queue</button>
+      </div>
+      <div id="queue-list"></div>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/archive.js"></script>
+    <script type="module" src="/account/account-login.js"></script>
+  </body>
+</html>

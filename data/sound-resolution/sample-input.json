@@ -1,0 +1,332 @@
+{
+  "scope": "Twelve unresolved contracts spaced across ordered ETH/OP lists, plus three unminted controls. Not a random or exhaustive sample.",
+  "records": [
+    {
+      "key": "1:0x9e169e244ea1a52470ba0e7a82ce3119767b0c5d",
+      "contract": "0x9e169e244ea1a52470ba0e7a82ce3119767b0c5d",
+      "unit": "release-contract",
+      "createdBlock": 17536591,
+      "blockHash": "0x447069c2934aa81345b5c02dfdd50c70f8eb550cc049e40579c11f6797c23405",
+      "transaction": "0x8061263b2b3c61726b2c35028f46814d54f1aaa2cf0cbfbca11c728fb6ca353f",
+      "createdAt": "2023-06-22T17:18:11.000000Z",
+      "creator": "0x86958A1219AB83c92779285eFeB0D9Dc186E24C0",
+      "implementation": null,
+      "chainId": 1,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "factoryVersion": 1,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:20.439Z",
+        "blockNumber": 26353107,
+        "totalMinted": "26",
+        "status": "unavailable",
+        "tokenId": "26",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      }
+    },
+    {
+      "key": "1:0x4c2e2b6ee663e75af9a896606805d8e5a628df12",
+      "contract": "0x4c2e2b6ee663e75af9a896606805d8e5a628df12",
+      "unit": "release-contract",
+      "createdBlock": 16972478,
+      "blockHash": "0xae6d46696be7fe06e458c8d9c106185dc91a98ec91d6d897c4f2fb82249c80d3",
+      "transaction": "0xfdec03ff254ce6f2c5f958c33cdc5fe5e7bd88bf0465d3904babc676fdcd3a50",
+      "createdAt": "2023-04-04T02:01:35.000000Z",
+      "creator": "0xbCefc4906b443e4DB64E2b00b9af2C39e76c785c",
+      "implementation": null,
+      "chainId": 1,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "factoryVersion": 1,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:20.440Z",
+        "blockNumber": 26353107,
+        "totalMinted": "577",
+        "status": "unavailable",
+        "tokenId": "577",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      }
+    },
+    {
+      "key": "1:0xd5f9886a6a8120d111c094b39082d978677668db",
+      "contract": "0xd5f9886a6a8120d111c094b39082d978677668db",
+      "unit": "release-contract",
+      "createdBlock": 15928362,
+      "blockHash": "0xa93fa66aa9b213eeaefe9ae745642b1c28dba6a61d2baaa1916cbf002771e5a8",
+      "transaction": "0xc8f74f817f1ca148a42261df5234fe1dfb10d74f43bbd56e27388b120a1764b3",
+      "createdAt": "2022-11-08T22:41:35.000000Z",
+      "creator": "0x82cE5258Aa5925Bb5c9DA07fA7996e73687a440e",
+      "implementation": null,
+      "chainId": 1,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "factoryVersion": 1,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:21.360Z",
+        "blockNumber": 26353107,
+        "totalMinted": "50",
+        "status": "unavailable",
+        "tokenId": "50",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      }
+    },
+    {
+      "key": "1:0xfb302c8d9f642e3fb159b477a83be3ca8177123f",
+      "contract": "0xfb302c8d9f642e3fb159b477a83be3ca8177123f",
+      "unit": "release-contract",
+      "createdBlock": 20452377,
+      "blockHash": "0x57c700059f6a4ba3ceb71567dc19bf610d2c50d1dfee4667ab7c201811654b50",
+      "transaction": "0x49c3eddff4e30e83053d1187a7439e2c98a396ec2f82ecef62704d20f2429400",
+      "createdAt": "2024-08-04T03:04:23.000000Z",
+      "creator": "0x2AE57eCC52240FF0dF36C979799BB2bCf957fb15",
+      "implementation": "0x000000000053C8B49473BDa4b8d1DC47CAb411CC",
+      "chainId": 1,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:22.104Z",
+        "blockNumber": 26353107,
+        "totalMinted": "10",
+        "status": "unavailable",
+        "tokenId": "10",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      }
+    },
+    {
+      "key": "1:0x47cc98b2a627ed154d16c0ef852f4bb4357f9e4b",
+      "contract": "0x47cc98b2a627ed154d16c0ef852f4bb4357f9e4b",
+      "unit": "release-contract",
+      "createdBlock": 19100974,
+      "blockHash": "0x13e338234cbdea90ab657d37357db17b22f9a29776d932a9250d2918ee233323",
+      "transaction": "0x61b0651ea322a24aa65744daa93c90871caff8440a0b4e1d508ef312ab50aed5",
+      "createdAt": "2024-01-27T22:47:23.000000Z",
+      "creator": "0x7955e3E0eAcC79a7b4F380B1cA52aE489039651e",
+      "implementation": "0x000000000053C8B49473BDa4b8d1DC47CAb411CC",
+      "chainId": 1,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:23.241Z",
+        "blockNumber": 26353107,
+        "totalMinted": "20",
+        "status": "unavailable",
+        "tokenId": "20",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      }
+    },
+    {
+      "key": "1:0xe63af0a10a14ba2a1526f7296955e3ff00bb16d6",
+      "contract": "0xe63af0a10a14ba2a1526f7296955e3ff00bb16d6",
+      "unit": "release-contract",
+      "createdBlock": 18458575,
+      "blockHash": "0x9c7bb898cc9a75000251f5c28d7308ecb5b9e459e1251ac1757385cb19086d36",
+      "transaction": "0x234f3c9410b7674c5155996ab210d91be147e9079cf75a7411a8ce89aa8af3cc",
+      "createdAt": "2023-10-29T21:39:59.000000Z",
+      "creator": "0x9CE620Ce25c1b3bAd6153813C3B949367323041F",
+      "implementation": "0x0000000000c78FEE168002D89D141517b8E6E0FE",
+      "chainId": 1,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:24.799Z",
+        "blockNumber": 26353107,
+        "totalMinted": "1",
+        "status": "unavailable",
+        "tokenId": "1",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      }
+    },
+    {
+      "key": "10:0xd2f2c5cabbacd8a8f201ffaae9f2373e03f74e26",
+      "contract": "0xd2f2c5cabbacd8a8f201ffaae9f2373e03f74e26",
+      "unit": "release-contract",
+      "createdBlock": 109520525,
+      "blockHash": "0x39c0960fc30b68f60fb6fbf562f52f2b7510633e58a82c1b964f4628d0ece94f",
+      "transaction": "0xe1ac56b5ad7c947dde2605f667cfc02a3cba5e1fb8ccec6a48c025d7cdced449",
+      "createdAt": "2023-09-13T21:17:07.000000Z",
+      "creator": "0x3c10FAED26a6bb341322d1BAaf2c6ecf5B957D61",
+      "implementation": null,
+      "chainId": 10,
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "factoryVersion": 1,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:24.851Z",
+        "blockNumber": 159168403,
+        "totalMinted": "2",
+        "status": "unavailable",
+        "tokenId": "2",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      }
+    },
+    {
+      "key": "10:0x155d1f27fbfeaeca3a0f63cc3883ba14ffb60159",
+      "contract": "0x155d1f27fbfeaeca3a0f63cc3883ba14ffb60159",
+      "unit": "release-contract",
+      "createdBlock": 116433891,
+      "blockHash": "0x89230f2981ce27ddc68cc3723950f771e6dad41d7151cf9babab584b47e35e7e",
+      "transaction": "0x7655e1f78ff4603e7ade40d89088bfed5f8124b933ff8d6571a9b7aa99af0c6d",
+      "createdAt": "2024-02-20T22:02:39.000000Z",
+      "creator": "0xE102a0549C00DAC4EE6eBBe197f9dD4cFC272458",
+      "implementation": "0x000000000053C8B49473BDa4b8d1DC47CAb411CC",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:27:27.234Z",
+        "blockNumber": 159168435,
+        "totalMinted": "28",
+        "status": "unavailable",
+        "tokenId": "28",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      }
+    },
+    {
+      "key": "10:0x3adc72e4e159da2f4a4f42190f0f7fae4bc5e592",
+      "contract": "0x3adc72e4e159da2f4a4f42190f0f7fae4bc5e592",
+      "unit": "release-contract",
+      "createdBlock": 114958284,
+      "blockHash": "0xabd0f93db5136a10f2dfd0a0c187bb6d89af6bc52ebfd9cbbabfc5693b985128",
+      "transaction": "0xfa2f3709e20e171d2385bdf3a70077c9fff95158a8589774226e158938fe695b",
+      "createdAt": "2024-01-17T18:15:45.000000Z",
+      "creator": "0x499d1A76692908aBDAf39D0AFAa4D944cc66Eb80",
+      "implementation": "0x000000000053C8B49473BDa4b8d1DC47CAb411CC",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:29:42.144Z",
+        "blockNumber": 159168502,
+        "totalMinted": "1",
+        "status": "unavailable",
+        "tokenId": "1",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      }
+    },
+    {
+      "key": "10:0x04a508f86ebcf3942a390ae959c6578b9efe2f38",
+      "contract": "0x04a508f86ebcf3942a390ae959c6578b9efe2f38",
+      "unit": "release-contract",
+      "createdBlock": 113794270,
+      "blockHash": "0x84cbb17e85f677a7ce87b250eba5dde5ef521ee3583dad7c1d57128055ac5b43",
+      "transaction": "0xfaaf4c08d8c9a9c6436122a9e77fe0d8227fb88f05b5b62579d1e037379cd20e",
+      "createdAt": "2023-12-21T19:35:17.000000Z",
+      "creator": "0x50fd881bd599cC5750Bb615a6EC2e0F52567f383",
+      "implementation": "0x0000000000c78FEE168002D89D141517b8E6E0FE",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:31:56.249Z",
+        "blockNumber": 159168569,
+        "totalMinted": "2",
+        "status": "unavailable",
+        "tokenId": "2",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      }
+    },
+    {
+      "key": "10:0x755586809d7153ecf18931e8ca5560a3ba0fc135",
+      "contract": "0x755586809d7153ecf18931e8ca5560a3ba0fc135",
+      "unit": "release-contract",
+      "createdBlock": 112545652,
+      "blockHash": "0x7ceeebd21c6249c21aa5a38f3e372992a83f15b6f6951f4b60378cad5c24a9f5",
+      "transaction": "0xf462f7ec44236f5fc89ed27799fd477ae5c45daacaa29ffba58318133dbdaa13",
+      "createdAt": "2023-11-22T21:54:41.000000Z",
+      "creator": "0xd9c0f7408550FfFa543a4c725b7EbE05883fE434",
+      "implementation": "0x0000000000c78FEE168002D89D141517b8E6E0FE",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:34:08.383Z",
+        "blockNumber": 159168635,
+        "totalMinted": "4",
+        "status": "unavailable",
+        "tokenId": "4",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      }
+    },
+    {
+      "key": "10:0x1bfc0624b52e870cc00d4e39995c75c7da8763d3",
+      "contract": "0x1bfc0624b52e870cc00d4e39995c75c7da8763d3",
+      "unit": "release-contract",
+      "createdBlock": 110659660,
+      "blockHash": "0x4a9c0fef99637b178f1ebb9229eab10960b869e3f02a46b1cb193ceab9bec62f",
+      "transaction": "0x9c44fc22f3b2714ce4e43ec5859d851976a392d2708bbf3212ce57b3656dbe4c",
+      "createdAt": "2023-10-10T06:08:17.000000Z",
+      "creator": "0xE4c80780CC7fc7047bCcB30e2CbcB67400752a88",
+      "implementation": "0x0000000000c78FEE168002D89D141517b8E6E0FE",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:35:58.934Z",
+        "blockNumber": 159168690,
+        "totalMinted": "91",
+        "status": "unavailable",
+        "tokenId": "91",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      }
+    },
+    {
+      "key": "1:0x5254cbc0e342e228872e5aedc34624c7c556e63e",
+      "contract": "0x5254cbc0e342e228872e5aedc34624c7c556e63e",
+      "unit": "release-contract",
+      "createdBlock": 18342099,
+      "blockHash": "0x943985dbdcc029499aeae071f77626726da1a595936eed539d8cb32dc226a5c8",
+      "transaction": "0xa6a5fccff36acfa7c25ab1b47e66164bf78721a8994c4a61db2814ae37ad9a7d",
+      "createdAt": "2023-10-13T14:34:47.000000Z",
+      "creator": "0x1f35E74d2bB0A43fE79cA376eaD63dA7c926e455",
+      "implementation": null,
+      "chainId": 1,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "factoryVersion": 1,
+      "prior": {
+        "checkedAt": "2026-11-06T03:19:31.508Z",
+        "blockNumber": 26353073,
+        "totalMinted": "0",
+        "status": "unminted",
+        "reason": "totalMinted() is zero at the recorded block; no minted token can be recovered."
+      }
+    },
+    {
+      "key": "10:0x4afd9b01fa95d2c4dec83af8435082c6de9f7a03",
+      "contract": "0x4afd9b01fa95d2c4dec83af8435082c6de9f7a03",
+      "unit": "release-contract",
+      "createdBlock": 118289310,
+      "blockHash": "0xc418e7b0a6aedf599d4b0b9af9e9e6a4f230f34f5ea5a3971736e39257d23a00",
+      "transaction": "0x2a0176ef5695875662149cd1ad4d877f81dcd2bec203b2d4e994a19ae983bb1c",
+      "createdAt": "2024-04-03T20:49:57.000000Z",
+      "creator": "0x625c2295BCf8D74aa22F0d1AfAC7267c37806D2e",
+      "implementation": "0x000000000053C8B49473BDa4b8d1DC47CAb411CC",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:21:43.690Z",
+        "blockNumber": 159168263,
+        "totalMinted": "0",
+        "status": "unminted",
+        "reason": "totalMinted() is zero at the recorded block; no minted token can be recovered."
+      }
+    },
+    {
+      "key": "10:0x36a564b9449df71714c528364fae4ca768c09361",
+      "contract": "0x36a564b9449df71714c528364fae4ca768c09361",
+      "unit": "release-contract",
+      "createdBlock": 114697276,
+      "blockHash": "0x21faef4d7c761dab47075daf94dc828427469c72ce494f9fdc3cc3929a85741a",
+      "transaction": "0xe4722bdf1d41fd54cc171f3c4996b00cd284160c6a958cc936090e38a8b54942",
+      "createdAt": "2024-01-11T17:15:29.000000Z",
+      "creator": "0xeE59A331BD2195d4619c1C46B438e94B16b7dC3B",
+      "implementation": "0x000000000053C8B49473BDa4b8d1DC47CAb411CC",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:30:09.299Z",
+        "blockNumber": 159168516,
+        "totalMinted": "0",
+        "status": "unminted",
+        "reason": "totalMinted() is zero at the recorded block; no minted token can be recovered."
+      }
+    }
+  ]
+}

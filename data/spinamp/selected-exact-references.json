@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-11-06T09:54:36.643Z",
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "query": "query ExactReferences($ids: [String!]) { allProcessedTracks(filter:{id:{in:$ids}},first:1) { nodes { id title platformId websiteUrl description duration lossyAudioUrl lossyAudioIpfsHash artistByArtistId { id name slug avatarIpfsHash artistProfilesByArtistId {nodes {name platformId websiteUrl avatarUrl}} } nftsProcessedTracksByProcessedTrackId(first:1) { totalCount nodes { nftByNftId { id chainId contractAddress tokenId createdAtTime createdAtBlockNumber metadata } } } nftFactoriesProcessedTracksByProcessedTrackId(first:1) {totalCount} } } }",
+  "body": {
+    "data": {
+      "allProcessedTracks": {
+        "nodes": [
+          {
+            "id": "base/0x65B62eFd85e8Ec56E44A682861d4639947Cf5FD6/0x8e74386a15fdf98e22f699e78d344fdee5b911978fd33a5717837da82256e800",
+            "title": "HOOTY HOO",
+            "platformId": "sound",
+            "websiteUrl": "https://www.sound.xyz/cherele/hooty-hoo",
+            "duration": "156.01",
+            "lossyAudioUrl": "https://arweave.net/1pJ0aoMuuIaYSEh9NUrq1l0874D6rTW8c8CQf8uhNPQ",
+            "lossyAudioIpfsHash": "QmcUfrdn7oSQrQe9W1XExpsbXkjjx6zq5hhH2BSpjMqNo1",
+            "artistByArtistId": {
+              "id": "ethereum/0x5856b43309CBF33c6f64783F0634A887A4FBc454",
+              "name": "Cherele",
+              "slug": "cherele-1722825670227",
+              "avatarIpfsHash": "QmNcpSovpr7vPWQyy6MfDhGWYVE6gvXTBbq2nCEJ59SHQL",
+              "artistProfilesByArtistId": {
+                "nodes": [
+                  {
+                    "name": "Cherele",
+                    "platformId": "sound",
+                    "websiteUrl": "https://www.sound.xyz/cherele",
+                    "avatarUrl": "https://arweave.net/87OkcoVsD8GLUP5QjhB2oUTkjr5NYPgrW_Yz75b7XMs"
+                  }
+                ]
+              }
+            },
+            "nftsProcessedTracksByProcessedTrackId": {
+              "totalCount": 22,
+              "nodes": [
+                {
+                  "nftByNftId": {
+                    "id": "base/0x65B62eFd85e8Ec56E44A682861d4639947Cf5FD6/1",
+                    "chainId": "base",
+                    "contractAddress": "0x65B62eFd85e8Ec56E44A682861d4639947Cf5FD6",
+                    "tokenId": "1",
+                    "createdAtTime": "2024-08-15T11:00:09+00:00",
+                    "createdAtBlockNumber": "18465131",
+                    "metadata": {
+                      "name": "HOOTY HOO - Free #1",
+                      "title": "HOOTY HOO",
+                      "artist": "Cherele",
+                      "bpm": 160,
+                      "key": "C_MAJOR",
+                      "genre": "Hip-hop & Rap",
+                      "image": "ar://fiBVNyL7wZXKUUiblVEC6wdujiYRTrYHTUjxlARknSs",
+                      "animation_url": "",
+                      "external_url": "https://www.sound.xyz/cherele/hooty-hoo"
+                    },
+                    "metadataSha256": "2ee603d712415a0cf6905e2b2c298dfd892e7300e637fefebb950b6dd8cb9f1c"
+                  }
+                }
+              ]
+            },
+            "nftFactoriesProcessedTracksByProcessedTrackId": {
+              "totalCount": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

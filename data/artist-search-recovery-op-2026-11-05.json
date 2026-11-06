@@ -1,0 +1,24 @@
+{
+  "records": [],
+  "evidence": [],
+  "gaps": [
+    {
+      "artist": "Mavi Taylor",
+      "contract": "0x78aeFcD2d3B088dF6309D184e2F2B3718365Befe",
+      "title": "MAVI TAYLORED",
+      "reason": "No indexed media metadata"
+    },
+    {
+      "artist": "Jamee Cornelia",
+      "contract": "0xa6C0fbEBcc1E2B04C6CA17f5261bB2f43b8FBb22",
+      "title": "Cabin Fever Ft. Jamee Cornelia & Jazii",
+      "reason": "Live token metadata unavailable"
+    },
+    {
+      "artist": "Jamee Cornelia",
+      "contract": "0xEEE2F6d89263A8d09c0621dA0B975b816D18945C",
+      "title": "HIGH FREQUENCY Vol. 1: \"Flavors\" by Matthew Chaim feat. Jamee Cornelia",
+      "reason": "No indexed media metadata"
+    }
+  ]
+}

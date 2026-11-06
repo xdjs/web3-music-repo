@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-11-06T08:49:24.680229+00:00",
+  "slowSource": {
+    "script": "scripts/verify-slow-playback.mjs",
+    "result": "passed",
+    "evidence": "data/slow-playback-verification.json",
+    "scope": "Actual original request deliberately delayed 15 seconds; no fabricated media response; original 40-second total deadline maintained."
+  },
+  "personalPlaylists": {
+    "script": "scripts/verify-personal-playlists.mjs",
+    "result": "passed",
+    "checks": [
+      "create",
+      "add",
+      "reorder",
+      "reload",
+      "rename",
+      "play NOT4ME",
+      "next MIAMI FREESTYLE",
+      "mobile queue",
+      "remove",
+      "delete",
+      "artist links"
+    ]
+  },
+  "collectors": {
+    "script": "scripts/verify-collectors.mjs",
+    "result": "passed-on-rerun",
+    "walletsLoaded": 64,
+    "profile": "cooprecords.eth",
+    "ensForwardVerification": true,
+    "playbackAfterNavigation": true,
+    "initialFailure": "Initial run timed out waiting for the second collector page after 25 seconds; exact cause unverified. Separate API read returned 14 additional items, then the unchanged browser test passed."
+  },
+  "archivedSound": {
+    "script": "scripts/verify-archived-sound.mjs",
+    "result": "passed",
+    "evidence": "data/sound-resolution/mija-app-verification.json"
+  },
+  "focusedUnitTests": {
+    "passed": 29,
+    "files": [
+      "tests/media-recovery.test.mjs",
+      "tests/nft-reader.test.mjs",
+      "tests/pete-recovery.test.mjs",
+      "tests/sound-resolution.test.mjs"
+    ]
+  },
+  "scope": "Selected real flows and controlled latency regression, not all-track or real-account validation."
+}

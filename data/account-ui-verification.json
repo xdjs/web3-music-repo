@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-11-06T04:03:40.808Z",
+  "errors": [],
+  "emailStepVisible": 1,
+  "signedInSessionVerified": false,
+  "userLoginAttempt": "failed",
+  "confirmedFailure": {
+    "httpStatus": 403,
+    "code": "invalid_origin",
+    "origin": "http://127.0.0.1:4190"
+  }
+}

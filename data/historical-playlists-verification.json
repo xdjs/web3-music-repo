@@ -1,0 +1,77 @@
+{
+  "checkedAt": "2026-11-06T09:44:00.561Z",
+  "base": "http://127.0.0.1:4191",
+  "status": "passed",
+  "results": [
+    {
+      "id": "04150d7a-d471-48de-a144-54b00474e59f",
+      "name": "Chill n Work",
+      "preservedIDs": 23,
+      "recoveredDetails": 23,
+      "catalogMatches": 23,
+      "directLinkReload": true,
+      "savedCopyOrdered": true,
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "viewports": [
+        1440,
+        390
+      ]
+    },
+    {
+      "id": "0804aa96-c6fc-41fb-bbea-c8dc427cf034",
+      "name": "STØNED & STÅRVING #5",
+      "preservedIDs": 22,
+      "recoveredDetails": 16,
+      "catalogMatches": 15,
+      "directLinkReload": true,
+      "savedCopyOrdered": true,
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "viewports": [
+        1440,
+        390
+      ]
+    },
+    {
+      "id": "0a8bbf77-54ce-48b2-b1c8-34c982ffeb85",
+      "name": "MOMINTS VOL-IV",
+      "preservedIDs": 14,
+      "recoveredDetails": 14,
+      "catalogMatches": 13,
+      "directLinkReload": true,
+      "savedCopyOrdered": true,
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "viewports": [
+        1440,
+        390
+      ]
+    },
+    {
+      "id": "10fc9482-05a4-498a-bf5c-457d6a17dede",
+      "name": "Lofi Chill",
+      "preservedIDs": 10,
+      "recoveredDetails": 10,
+      "catalogMatches": 10,
+      "directLinkReload": true,
+      "savedCopyOrdered": true,
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "viewports": [
+        1440,
+        390
+      ]
+    }
+  ],
+  "errors": [],
+  "note": "No media playback repeated. Prior original-media playback checks recorded separately in playlist-sharing-verification.json."
+}

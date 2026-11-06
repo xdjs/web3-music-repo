@@ -1,0 +1,46 @@
+{
+  "scope": "Manually checked artist roles from exact-release original metadata; descriptive mentions are not credits",
+  "checkedAt": "2026-11-06T07:58:26.082Z",
+  "records": {
+    "record-61048859": [
+      {
+        "personId": "pete-rango",
+        "role": "Production & mixing",
+        "source": "https://arweave.net/8I5biHmaBmMTJAG2_sTHYQcnZFK6AY9AVSASzgVKhG4/49",
+        "quote": "Produced & Mixed by Pete Rango"
+      }
+    ],
+    "recovered-sound-1-9723896ab0e5d0bded8310a7b73a31645cd263d0": [
+      {
+        "personId": "pete-rango",
+        "role": "Instrumental arrangement, percussion, mixing & mastering",
+        "source": "https://arweave.net/IlWjck2_ntsaub9cqM2cLPq_t2aPIYtprLBlAOsWmn8/1",
+        "quote": "Instrumental Arrangement & Percussion elements by Pete Rango"
+      }
+    ],
+    "recovered-sound-10-26497c0928c175f7d1c51a5bd345734d0db57f69": [
+      {
+        "personId": "pete-rango",
+        "role": "Co-production, mixing & mastering",
+        "source": "https://arweave.net/N9GrR1jwYJLZRQiDjj0DeHoBXYFth3OapqOq7ObeXMk/1",
+        "quote": "Produced by Tyler Saki & Pete Rango."
+      }
+    ],
+    "recovered-sound-10-090be8db9d5d26f7b09dab1902d1b02bb866954c": [
+      {
+        "personId": "pete-rango",
+        "role": "Production & mixing",
+        "source": "https://arweave.net/65UUTlk9qO_LOZKXdErK09GsIi4RQS3gBY2JCepQyXA/1",
+        "quote": "Produced and Mixed by Pete Rango."
+      }
+    ],
+    "recovered-sound-10-f50bae91a46e308ef720f4e67c9790fb954ced81": [
+      {
+        "personId": "pete-rango",
+        "role": "Co-production",
+        "source": "https://arweave.net/oPJ_cHpuUKPgAXtEUzDfB3x9bAapUxhJmk5kj3lPvnE/1",
+        "quote": "produced by Pete Rango and Matt Lee"
+      }
+    ]
+  }
+}

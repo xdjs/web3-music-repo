@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-11-06T10:12:28.216Z",
+  "base": "http://127.0.0.1:4191",
+  "match": "supercollector-10-daf442a4cca2951f9cc81a840910f3d7e6db8bbc-1",
+  "mismatch": "supercollector-10-014ba16c0371bf17bc5a9646db6da63f52f7cb9f-1",
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "platformFilter": true,
+      "publicReleaseMetadataLabel": true,
+      "templateMatch": true,
+      "mismatchVisible": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "platformFilter": true,
+      "publicReleaseMetadataLabel": true,
+      "templateMatch": true,
+      "mismatchVisible": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "platformFilter": true,
+      "publicReleaseMetadataLabel": true,
+      "templateMatch": true,
+      "mismatchVisible": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "platformFilter": true,
+      "publicReleaseMetadataLabel": true,
+      "templateMatch": true,
+      "mismatchVisible": true,
+      "noOverflow": true
+    }
+  ],
+  "errors": []
+}

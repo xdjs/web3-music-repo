@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-11-06T09:55:42.222Z",
+  "base": "https://web3-music-repo.vercel.app",
+  "deployment": "dpl_EvGcZJyofBcXUXehfhyNQXZxGckt",
+  "sourceCommit": "4a21953",
+  "passed": true,
+  "checks": [
+    "Live navigation SVG icons, Artists label, four visible filters",
+    "Shared snapshot opens read-only, plays original Breakdown and next Driving in order",
+    "Shared snapshot saves independent local copy",
+    "Four historical playlists surface; Chill n Work has 23 rows and 23 playable token matches"
+  ],
+  "playback": {
+    "time": 1.012534,
+    "duration": 180.675875,
+    "readyState": 4,
+    "source": "https://arweave.net/ShNsHOnksot-5oxBYrFpAz0Ec-pxa7E0YDkweXLPbf0"
+  },
+  "errors": []
+}

@@ -1,0 +1,95 @@
+{
+  "scope": "Three indexed-original or explicitly preserved-media samples; advancing playback and decoded audio, not full-catalog verification.",
+  "results": [
+    {
+      "id": "spinamp-94ba38fe64af02a6ebd6",
+      "title": "HOOTY HOO",
+      "artist": "Cherele",
+      "chainId": 8453,
+      "contract": "0x65b62efd85e8ec56e44a682861d4639947cf5fd6",
+      "tokenId": "1",
+      "mediaURI": "https://arweave.net/1pJ0aoMuuIaYSEh9NUrq1l0874D6rTW8c8CQf8uhNPQ",
+      "sourceType": "spinamp-processed-media",
+      "originalMediaMissing": true,
+      "checkedAt": "2026-11-06T10:13:39.296Z",
+      "attempts": [
+        {
+          "url": "https://arweave.net/1pJ0aoMuuIaYSEh9NUrq1l0874D6rTW8c8CQf8uhNPQ",
+          "status": "played",
+          "currentTime": 0.508186,
+          "duration": 156.009333,
+          "videoWidth": 0,
+          "audioDecodedBytes": 151552
+        }
+      ],
+      "chainRead": {
+        "status": "unavailable"
+      },
+      "status": "played",
+      "currentTime": 0.508186,
+      "duration": 156.009333,
+      "videoWidth": 0,
+      "audioDecodedBytes": 151552
+    },
+    {
+      "id": "spinamp-467e9fe595bd5c353d25",
+      "title": "DIGITAL DAYDREAM (alt ver.)",
+      "artist": "Alastair",
+      "chainId": 8453,
+      "contract": "0x000b6547ef1194806354073fa27775c4e3d6acc4",
+      "tokenId": "1",
+      "mediaURI": "https://arweave.net/2a3HamwDVS_nYxnREZKdU4vJR_HmAC8aA-tmiQpB_3Y",
+      "sourceType": "spinamp-processed-media",
+      "originalMediaMissing": true,
+      "checkedAt": "2026-11-06T10:13:46.605Z",
+      "attempts": [
+        {
+          "url": "https://arweave.net/2a3HamwDVS_nYxnREZKdU4vJR_HmAC8aA-tmiQpB_3Y",
+          "status": "played",
+          "currentTime": 0.501114,
+          "duration": 143.172417,
+          "videoWidth": 0,
+          "audioDecodedBytes": 225060
+        }
+      ],
+      "chainRead": {
+        "status": "unavailable"
+      },
+      "status": "played",
+      "currentTime": 0.501114,
+      "duration": 143.172417,
+      "videoWidth": 0,
+      "audioDecodedBytes": 225060
+    },
+    {
+      "id": "spinamp-c4fbf6953ce75fd2a410",
+      "title": "dont c\u2206re wh\u2206t they s\u2206y",
+      "artist": "Pete Rango",
+      "chainId": 137,
+      "contract": "0x4e8edd5ed83a73e73932b2787224886f206e1d88",
+      "tokenId": "1",
+      "mediaURI": "ipfs://bafybeicv6abc66dwf2nkgdrblqydcbuczgelsgq6a6wes4dunegi6rvnvi",
+      "sourceType": "spinamp-index",
+      "originalMediaMissing": false,
+      "checkedAt": "2026-11-06T10:13:54.204Z",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeicv6abc66dwf2nkgdrblqydcbuczgelsgq6a6wes4dunegi6rvnvi",
+          "status": "played",
+          "currentTime": 0.503225,
+          "duration": 147.672,
+          "videoWidth": 0,
+          "audioDecodedBytes": 31680
+        }
+      ],
+      "chainRead": {
+        "status": "unavailable"
+      },
+      "status": "played",
+      "currentTime": 0.503225,
+      "duration": 147.672,
+      "videoWidth": 0,
+      "audioDecodedBytes": 31680
+    }
+  ]
+}

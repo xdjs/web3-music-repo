@@ -1,0 +1,103 @@
+{
+  "checkedAt": "2026-11-06T08:43:42.539Z",
+  "network": [
+    {
+      "ms": 1782,
+      "url": "https://arweave.net/a4b8Spd5rcouKzttmYQnToH_d6nW6Sc-dMY2bHvpTW4",
+      "status": 302,
+      "headers": {
+        "location": "https://nodpysuxpgw4ulrlhnwztbbhj2a7655j23usoptuyy3gy67jjvxa.arweave.net/a4b8Spd5rcouKzttmYQnToH_d6nW6Sc-dMY2bHvpTW4",
+        "content-type": "text/html"
+      }
+    },
+    {
+      "ms": 2033,
+      "url": "https://nodpysuxpgw4ulrlhnwztbbhj2a7655j23usoptuyy3gy67jjvxa.arweave.net/a4b8Spd5rcouKzttmYQnToH_d6nW6Sc-dMY2bHvpTW4",
+      "status": 206,
+      "headers": {
+        "content-type": "audio/wave",
+        "content-range": "bytes 0-46066111/46066112",
+        "content-length": "46066112"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "ms": 3726,
+      "time": 0.362409,
+      "paused": false,
+      "readyState": 4,
+      "networkState": 1,
+      "error": null,
+      "status": "Ethereum \u2192 Arweave \u00b7 Original media"
+    },
+    {
+      "ms": 5735,
+      "time": 2.37068,
+      "paused": false,
+      "readyState": 4,
+      "networkState": 1,
+      "error": null,
+      "status": "Ethereum \u2192 Arweave \u00b7 Original media"
+    }
+  ],
+  "events": [
+    {
+      "type": "waiting",
+      "ms": 1709.5,
+      "time": 0,
+      "paused": false,
+      "readyState": 0,
+      "error": null
+    },
+    {
+      "type": "loadstart",
+      "ms": 1710.5999999046326,
+      "time": 0,
+      "paused": false,
+      "readyState": 0,
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "ms": 2151.9000000953674,
+      "time": 0,
+      "paused": false,
+      "readyState": 1,
+      "error": null
+    },
+    {
+      "type": "loadedmetadata",
+      "ms": 2152,
+      "time": 0,
+      "paused": false,
+      "readyState": 1,
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "ms": 3010.4000000953674,
+      "time": 0,
+      "paused": false,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "type": "playing",
+      "ms": 3010.5,
+      "time": 0,
+      "paused": false,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "ms": 3011.9000000953674,
+      "time": 0,
+      "paused": false,
+      "readyState": 4,
+      "error": null
+    }
+  ],
+  "scope": "Live retry before timeout fix; fast playback succeeded, so the earlier intermittent timeout was not reproduced in this run."
+}

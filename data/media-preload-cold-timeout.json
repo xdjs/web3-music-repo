@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-06T09:25:02.594Z",
+  "scope": "Actual original NOT4ME audio, isolated native player warm then adoption; no mocked media response.",
+  "url": "https://arweave.net/a4b8Spd5rcouKzttmYQnToH_d6nW6Sc-dMY2bHvpTW4",
+  "requests": [
+    {
+      "url": "https://arweave.net/a4b8Spd5rcouKzttmYQnToH_d6nW6Sc-dMY2bHvpTW4",
+      "range": "bytes=0-",
+      "time": 1793957103309
+    },
+    {
+      "url": "https://nodpysuxpgw4ulrlhnwztbbhj2a7655j23usoptuyy3gy67jjvxa.arweave.net/a4b8Spd5rcouKzttmYQnToH_d6nW6Sc-dMY2bHvpTW4",
+      "range": "bytes=0-",
+      "time": 1793957103889
+    }
+  ],
+  "passed": false,
+  "error": "page.waitForFunction: Timeout 6000ms exceeded."
+}

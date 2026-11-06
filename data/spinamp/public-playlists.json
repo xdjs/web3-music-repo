@@ -1,0 +1,154 @@
+{
+  "checkedAt": "2026-11-06T09:54:33.080Z",
+  "source": "https://us-central1-spinamp-prod-re.cloudfunctions.net/playlist?verified=true",
+  "scope": "Public featured Spinamp playlists. Offchain lists, not historical Sound playlists or blockchain records.",
+  "playlists": [
+    {
+      "id": "nqs1bLURf6nN7w32nfX0",
+      "title": "bzzzzzzzzzz",
+      "collector": "0xeF42cF85bE6aDf3081aDA73aF87e27996046fE63",
+      "trackIds": [
+        "ethereum/0x0bC2A24ce568DAd89691116d5B34DEB6C203F342/118",
+        "ethereum/0xeaCa6dc08AFf2694366c4405724973e2Ac7E49E9/1",
+        "noizd/2cc5d5b4-f0d2-4b92-8458-b6476bc9021e",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/2601",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/5593",
+        "ethereum/0x617C0C8712313fD39b78d6C71e466D745413Ef21/1",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/7119",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9712",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9971",
+        "ethereum/0x0bC2A24ce568DAd89691116d5B34DEB6C203F342/10",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9373",
+        "ethereum/0x0bC2A24ce568DAd89691116d5B34DEB6C203F342/100",
+        "noizd/022a86e9-b990-4908-89c0-6ffb884a65c3",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/8758",
+        "ethereum/0x2B5426A5B98a3E366230ebA9f95a24f09Ae4a584/119",
+        "ethereum/0x0bC2A24ce568DAd89691116d5B34DEB6C203F342/211"
+      ],
+      "updatedAtTime": 1658434604265,
+      "type": "custom",
+      "verifiedBySpinamp": true,
+      "isPermanent": false
+    },
+    {
+      "id": "5bmxo8QG2TzO4nqgNCnO",
+      "title": "Shimokita Cafe",
+      "collector": "0xeF42cF85bE6aDf3081aDA73aF87e27996046fE63",
+      "trackIds": [
+        "noizd/26da42ce-214f-4fb6-9bcc-836da52c815c",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/6780",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/1678",
+        "ethereum/0x83E05CB1D9CA7e1a6d8180274B4504B2c5414C60/1",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9611",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9620",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/10022",
+        "ethereum/0xd64734bd9c93755F7F14123D9629505D1F9f6DC6/1",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/6431",
+        "noizd/d3da64b6-563e-4e45-af08-ae352f1b6939",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9496",
+        "ethereum/0x0bC2A24ce568DAd89691116d5B34DEB6C203F342/33"
+      ],
+      "updatedAtTime": 1763989764395,
+      "type": "custom",
+      "verifiedBySpinamp": true,
+      "isPermanent": false
+    },
+    {
+      "id": "696s8JTnrXdAInjlcIz5",
+      "title": "Glass House Drops",
+      "collector": "0xeF42cF85bE6aDf3081aDA73aF87e27996046fE63",
+      "trackIds": [
+        "ethereum/0x719C6d392fc659f4fe9b0576cBC46E18939687a7/Chasing Paradise",
+        "ethereum/0x719C6d392fc659f4fe9b0576cBC46E18939687a7/Glass House",
+        "ethereum/0x719C6d392fc659f4fe9b0576cBC46E18939687a7/Gorgeous",
+        "ethereum/0x719C6d392fc659f4fe9b0576cBC46E18939687a7/Cool Water"
+      ],
+      "updatedAtTime": 1659089048145,
+      "type": "custom",
+      "verifiedBySpinamp": true
+    },
+    {
+      "id": "hUxT1DC6kC4VmShnVDvG",
+      "title": "MdCL Mashi Mix",
+      "collector": "0xeF42cF85bE6aDf3081aDA73aF87e27996046fE63",
+      "trackIds": [
+        "ethereum/0x0bC2A24ce568DAd89691116d5B34DEB6C203F342/226",
+        "ethereum/0x0bC2A24ce568DAd89691116d5B34DEB6C203F342/227",
+        "ethereum/0x0bC2A24ce568DAd89691116d5B34DEB6C203F342/228",
+        "ethereum/0x0bC2A24ce568DAd89691116d5B34DEB6C203F342/229"
+      ],
+      "updatedAtTime": 1658999272256,
+      "type": "custom",
+      "verifiedBySpinamp": true
+    },
+    {
+      "id": "vw3X6NZppMZlbTluctJG",
+      "title": "Tadpoles Coming of Age",
+      "collector": "0xeF42cF85bE6aDf3081aDA73aF87e27996046fE63",
+      "trackIds": [
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/7195",
+        "optimism/0x3385B5D9b9acD07acb776741BD366ea2C4a0EE13/0x47a6583994e950d28f1f525236f52a951965e252d5a0206d955091892bffbb70",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/8925",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9010",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/6704",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/4681",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/6000",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9028",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/8888",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9353",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/5906",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9544",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9510"
+      ],
+      "updatedAtTime": 1763989755871,
+      "type": "custom",
+      "verifiedBySpinamp": true,
+      "isPermanent": false
+    },
+    {
+      "id": "0bTg3SKdrDGKA8NSE4N5",
+      "title": "~^○ bounce ○^~",
+      "collector": "0xeF42cF85bE6aDf3081aDA73aF87e27996046fE63",
+      "trackIds": [
+        "ethereum/0x1D806F9d279344698e14924C3E31151B08Cc2D8d/1",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9588",
+        "noizd/7995a032-a744-4982-b916-c407b9076efc",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/8138",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9010",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/5909",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/7431",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/5653",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/8931",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/7274",
+        "ethereum/0x436f4EB356ee5b368e06D9284BE6A1dAFb693efA/3",
+        "ethereum/0x83E05CB1D9CA7e1a6d8180274B4504B2c5414C60/1",
+        "ethereum/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/9538",
+        "noizd/9375cbb6-24c8-4c37-a307-e4c35f9af6dc"
+      ],
+      "updatedAtTime": 1659970252599,
+      "type": "custom",
+      "verifiedBySpinamp": true,
+      "isPermanent": false
+    },
+    {
+      "id": "nDdVh0JFjZgs152uo0Wc",
+      "title": "African Sun",
+      "collector": "0xeF42cF85bE6aDf3081aDA73aF87e27996046fE63",
+      "trackIds": [
+        "noizd/b2336dea-0d38-4b74-8494-0e4fcf978de3",
+        "noizd/26da42ce-214f-4fb6-9bcc-836da52c815c",
+        "noizd/905dda80-da29-4a28-a2b5-4b9919fa6723",
+        "noizd/6cd3b88c-2c73-4cd0-acab-29ec4a3561d5",
+        "noizd/aeb2c942-f297-41e1-aed1-cdd6240ff8ff",
+        "noizd/e5e4952a-bb0c-416c-b501-077194b071db",
+        "noizd/f6647ad8-197b-48c3-aa17-6bcb37da3eb2",
+        "noizd/41759bc2-0413-47e3-baea-5de08874311e",
+        "noizd/6bd13679-cf7a-46c6-b473-d11a8f9c2c43"
+      ],
+      "updatedAtTime": 1763989750950,
+      "type": "custom",
+      "verifiedBySpinamp": true,
+      "isPermanent": false
+    }
+  ]
+}

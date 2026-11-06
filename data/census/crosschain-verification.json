@@ -1,0 +1,50 @@
+{
+  "source": "https://eth.blockscout.com/api/v2/smart-contracts/0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+  "compiler": "0.8.19+commit.7dd6d404.Emscripten.clang",
+  "verifiedName": "SoundCreatorV2",
+  "immutableReferences": [
+    {
+      "length": 32,
+      "start": 4616
+    },
+    {
+      "length": 32,
+      "start": 4581
+    },
+    {
+      "length": 32,
+      "start": 4483
+    },
+    {
+      "length": 32,
+      "start": 4521
+    },
+    {
+      "length": 32,
+      "start": 3906
+    },
+    {
+      "length": 32,
+      "start": 4001
+    }
+  ],
+  "ethereumMatches": true,
+  "chains": [
+    {
+      "chainId": 10,
+      "sourceMatchesIgnoringDeclaredImmutables": true,
+      "byteLength": 6710
+    },
+    {
+      "chainId": 8453,
+      "sourceMatchesIgnoringDeclaredImmutables": true,
+      "byteLength": 6710
+    },
+    {
+      "chainId": 137,
+      "sourceMatchesIgnoringDeclaredImmutables": true,
+      "byteLength": 6710
+    }
+  ],
+  "checkedAt": "2026-11-06T03:00:02.287Z"
+}

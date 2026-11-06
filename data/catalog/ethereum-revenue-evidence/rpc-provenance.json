@@ -1,0 +1,760 @@
+{
+  "checkedAt": "2026-11-06T08:36:46.207392+00:00",
+  "rpc": "https://eth.drpc.org",
+  "chainId": "0x1",
+  "cohort": "All144 exact Catalog royalty candidates from official snapshot",
+  "contractSource": "https://github.com/ourzora/v3/blob/963da6e97e940ced0f4eb1a3062840a39eae232f/addresses/1.json",
+  "deployedAbiSource": "https://eth.blockscout.com/api/v2/smart-contracts/0x6170B3C3A54C3d8c854934cBC314eD479b2B29A3",
+  "runtimeCodeMatchesVerifiedSource": true,
+  "runtimeCodeHash": "0xd0bcedfa5b7397642949ee6330bb41cd4519a24200227d80a2bcaff0c550883d",
+  "runtimeCodeCheckScope": "Current runtime matches verified deployment; historical receipt logs independently scoped to official immutable module address",
+  "lastReceiptFetchAt": "2026-11-06T08:43:39.344289+00:00",
+  "fetchHistory": [
+    {
+      "transactionHash": "0x9520b5a0ff81b3b427b2b3a4543bff03e76a97a274a3bd72d3fa323c08dd4017",
+      "checkedAt": "2026-11-06T08:43:39.319850+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x88f7fee2d0a1deae8f401506e0f9f8080b9c1b7b00ed764d5f81a019a3850884",
+      "checkedAt": "2026-11-06T08:43:39.320263+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x429ad5b82e15c411c50bb62b3192f7a6dc7c074e286f4909fb0e5e4c1df56523",
+      "checkedAt": "2026-11-06T08:43:39.320520+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xdd37421bdcb57daa47bc6d396153a07d29608dcd5380b3e5ebb37a61231481ec",
+      "checkedAt": "2026-11-06T08:43:39.320824+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xaadfdbb4d6ce3998b94a949d17f000e33971b025bf5864c6d542d8354a930689",
+      "checkedAt": "2026-11-06T08:43:39.321125+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xeddd321863ea9d4b8b2eb4ef4de49f8dd3810b2db754e834a1cfb15e6332c49e",
+      "checkedAt": "2026-11-06T08:43:39.321261+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x74fb6d7b3dda4c044cb39c2ce860541a228d567c836815da0458771efe3d2240",
+      "checkedAt": "2026-11-06T08:43:39.321399+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x3287d91fdeda012a3439d7946b45516478dc3d68933d8476b29c1da6e8d3fdbf",
+      "checkedAt": "2026-11-06T08:43:39.321532+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x22257a8e365efee34d6a92837938f4530b4c3c89134b627894766580bb4aff81",
+      "checkedAt": "2026-11-06T08:43:39.321681+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x23b06c53f5b86bf9be6b3a8e5f3b0a5d28a609251bbc8585056a6171012a650f",
+      "checkedAt": "2026-11-06T08:43:39.321810+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x05ea77e184ebd24d1d650d3ada6217d2db5f3f1924bc1383b4306f4d42cc1d54",
+      "checkedAt": "2026-11-06T08:43:39.321931+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x7f0a74d408e44222113b5c981b932fa094768169fa3912a8f31f6ff72c1306c8",
+      "checkedAt": "2026-11-06T08:43:39.322068+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xbb09716797c7f97d5022c5d0e69750f18c9f8890b644406624d9c8bd7b47b4a6",
+      "checkedAt": "2026-11-06T08:43:39.322293+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x3c0d5622be8f20c0617d20e9c709f498d6d761a8cb98b4c25c2230718cbc602b",
+      "checkedAt": "2026-11-06T08:43:39.322771+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xbc988ebcf4c9face71e7becdd76c7a71ecd46c238276d9aedbdfd23cab91d7f6",
+      "checkedAt": "2026-11-06T08:43:39.323161+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x39d40a3685fe6a301a362406fa4c5e983dd0bc41187a9a5b05d45a97c9c5c0de",
+      "checkedAt": "2026-11-06T08:43:39.323331+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x72d821d2889f82bb07c3e7d8f491106cf22995b2f073c2bc0aabec897173d6d3",
+      "checkedAt": "2026-11-06T08:43:39.323512+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x11ab0f8815bced0dca37fad5fc6c4155c3fd648ab9a93aabeda9e7f81f7bff0e",
+      "checkedAt": "2026-11-06T08:43:39.323671+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x42e2d0cbaa51799d0ad6e81624f079019a37ca64b8f43d438538f0eac6ebee68",
+      "checkedAt": "2026-11-06T08:43:39.323819+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xdceb7f926547a2ccaf8963952da9c3ecb428c329fc1353422bfc9471513968a5",
+      "checkedAt": "2026-11-06T08:43:39.323970+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xc138ed249aa2b4c416d3884f9120a33132cd0f46fc05a10cec3dc23a70e2c633",
+      "checkedAt": "2026-11-06T08:43:39.324157+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x36b72d7a9c90c30d337d2f484dc7c12603a99208dded1ac5a556f5e8611862cd",
+      "checkedAt": "2026-11-06T08:43:39.324312+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xeb9c8309614739b98c99dd5e875076002edb519d127f0087f7a78351c630d33a",
+      "checkedAt": "2026-11-06T08:43:39.324462+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xe0edd20c80ce04cc463085a6c822dd379ca15470748db19c0b4d68d204ebf679",
+      "checkedAt": "2026-11-06T08:43:39.324600+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x409af2953b07edc3d1dba514114fa618747c3696c16979a011d98a6555eef95c",
+      "checkedAt": "2026-11-06T08:43:39.324750+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xc93f84baa1fe8d6b929627b98b04ea4836fba35cf9db8f889526e0d10a81fa53",
+      "checkedAt": "2026-11-06T08:43:39.324959+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xaba3a7221a22d4bde007ede9e3e5de8a5fb8bee78ccf410c43ed249e99f4178b",
+      "checkedAt": "2026-11-06T08:43:39.325192+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xad08059122b213d508eec6c975ae62561df38af32689b4b90dd215eca0d71067",
+      "checkedAt": "2026-11-06T08:43:39.325604+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x75f74cedc045fb67f8e1194a4766178f4c0c85c8640d043d52c9552bd389457b",
+      "checkedAt": "2026-11-06T08:43:39.325768+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x4ae68795bd5cb181a93ea044f3caa60f46a6fe432b33800050c5aca68a88da42",
+      "checkedAt": "2026-11-06T08:43:39.325911+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xd30bd9dffaeeed80d227a3bbfaa4fa1cf1e5def11cd3fbf4b3bd328388cbe8c0",
+      "checkedAt": "2026-11-06T08:43:39.326045+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x7d7c62f9daeaee59a1195701be2cf7cbe586f4756a16304785127c509c343620",
+      "checkedAt": "2026-11-06T08:43:39.326213+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xeb3771542e23a4f4cfedd3426f1c3aa4066756f249b34723a827e0f81a995390",
+      "checkedAt": "2026-11-06T08:43:39.326447+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x1478084bfd1242ff3337f61709383db34bfdb708fd9f81c667f6709f2d6168d0",
+      "checkedAt": "2026-11-06T08:43:39.326584+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xb31664394c64ff76e253e9b4872d7c5cfc6c009df5eff6f222cae512213c726a",
+      "checkedAt": "2026-11-06T08:43:39.326715+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x95e3ff53bf5766893c95459823c400954869e086459013854b0366df6b939851",
+      "checkedAt": "2026-11-06T08:43:39.326869+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xb94833d2ec0c221dda461c57b9101d449f33b615bcf259c8a200cb71b1fa2389",
+      "checkedAt": "2026-11-06T08:43:39.327002+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xba6705ebdc2be814b86b4818e5f94d0cc40fd9f8ee2fef0334ffb24cba4bf7ad",
+      "checkedAt": "2026-11-06T08:43:39.327126+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x8699841b567e12255669b206206def33997901307de590202420d903b6dc73cc",
+      "checkedAt": "2026-11-06T08:43:39.327255+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x3dd8ce7dcfea56d41f39d1b3067381eca06d090581c69c346731f0f4a58cd4cf",
+      "checkedAt": "2026-11-06T08:43:39.327382+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x45aea36a93f2c59c8cb5c621626d06886959d3128b4f550466ea6775660cf22c",
+      "checkedAt": "2026-11-06T08:43:39.327589+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x67f4372327c416554327952e3652e01f56a7e7c4cdfb164b46ff0869de92532d",
+      "checkedAt": "2026-11-06T08:43:39.327800+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x2cc5b8a1e1b05da4178ef4d3c76559876bc37a7cfbda36f8fc40c90666e4bf85",
+      "checkedAt": "2026-11-06T08:43:39.328003+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xdb6bbe978bbbda2f0918bf223a40a56a8671b0e03e728d8005e1d7e7eea61d56",
+      "checkedAt": "2026-11-06T08:43:39.328198+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xda507efe91d025a388e234ade2ab41e7e08c0beaf42b20092837d76f8a9c1092",
+      "checkedAt": "2026-11-06T08:43:39.328401+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x9ffbf586b6580647567797ec1072dac5a4c76537a85bf54012d67cf4ffe61a76",
+      "checkedAt": "2026-11-06T08:43:39.328626+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x6493c19b91fab67b4bd84232ae3433656766b6aac777ec770376c935160b125a",
+      "checkedAt": "2026-11-06T08:43:39.328838+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xd1304feae85ff1622a91d6024d16e0bb528b61f2062bfc91a862a98a8b7f3adf",
+      "checkedAt": "2026-11-06T08:43:39.329027+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xef8d941214f134512a0b0f4abde16f31aa3af9b8adfe9c1a4794d87d9c6f8ecc",
+      "checkedAt": "2026-11-06T08:43:39.329204+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x3d70cd09b2120e40facec37500a6cfcc18b1ff05353e1dfa37c5583788ea14ee",
+      "checkedAt": "2026-11-06T08:43:39.329351+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x671582b3247fa57cd84af00389c7ef571865dd0f73f7b2f5a86603c690970cfb",
+      "checkedAt": "2026-11-06T08:43:39.329609+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xb9a8ec038e80b6767d9cc77507184bd5be93cc35b8a37a4dc47186f5bbdc1398",
+      "checkedAt": "2026-11-06T08:43:39.329769+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xbe02dbfb45bfe2f2819714e81e366902ae0a31c964146504c8ed19285f6b9625",
+      "checkedAt": "2026-11-06T08:43:39.329907+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x97af371c2a558cb8fcafccebaac3eaacbcabb4273201e78bb9ef59296bfee8a3",
+      "checkedAt": "2026-11-06T08:43:39.330046+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x3fe7dc6b1179039785f1b124e9662311c7487a4b113a0f2424d339975d63a463",
+      "checkedAt": "2026-11-06T08:43:39.330187+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x2cbbd392875a4a13a14774b78486aca823026aa007f12b2a0149942da0161d71",
+      "checkedAt": "2026-11-06T08:43:39.330318+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x83299a54e57b408569338b8ba01c7ef63f5d121b99d125faf7fd4ed2e1d993ff",
+      "checkedAt": "2026-11-06T08:43:39.330447+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x2b5155745986dfe9d2f396fc2a5def43a92ee286743c07c807ba38d911c4048e",
+      "checkedAt": "2026-11-06T08:43:39.330582+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x2253b8b2e6cc94eafc9d07ff6e57e63e232e675f4e0b5ddd3734013609e98784",
+      "checkedAt": "2026-11-06T08:43:39.330732+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xbe7a34c44416bf9fde2dedc58e861bc2aa2b06a48ed9b90d62f2fcd819d86186",
+      "checkedAt": "2026-11-06T08:43:39.330874+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xcc6ad84043a61896f4e568c2d29996fc84fd2dd390adbda4f3ad872a4c2f9231",
+      "checkedAt": "2026-11-06T08:43:39.331005+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xfadc5147a7f9f89f624ea9e941cb753e50aff1d5df01dfbe2ce4b95fde837ef9",
+      "checkedAt": "2026-11-06T08:43:39.331178+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x8bd2b44f1df11df84f5c71e4a5b2c95738b5a20883dcf2f86f761fe4e713c295",
+      "checkedAt": "2026-11-06T08:43:39.331312+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x680e13b0d097717a4205c291b84afc4741209af14c4c2cee0dd1c49dec3944cf",
+      "checkedAt": "2026-11-06T08:43:39.331540+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x218be4503d22edc39c90e181c36ec145e3f02aa6e4af2563744c3a915ce1b475",
+      "checkedAt": "2026-11-06T08:43:39.331731+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x3c00855afcb7fd9e7be2e374c6eb17474688464f6a2c7f7ae389766135e2c5b0",
+      "checkedAt": "2026-11-06T08:43:39.331948+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x774ef7d3413fc04be8e38c17b02399f2993ff90992cab15a688c058eaab10e30",
+      "checkedAt": "2026-11-06T08:43:39.332344+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x8b087d5f1f6c6eeb5a3ccc6d55d89ae37c739f7c668ed125e670af96b693712d",
+      "checkedAt": "2026-11-06T08:43:39.332494+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x0aec249241af3e5bf9852dcfac9fbda73b711f1428f0baf3c0c411b83484c9c0",
+      "checkedAt": "2026-11-06T08:43:39.332642+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xfce3f1d87810d247a0478981b1e2d4a192cc6f96966dfeaf6023b2b5780d3192",
+      "checkedAt": "2026-11-06T08:43:39.332793+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xf6e3385e5609d380641c990574a6bd670730937879d86a3ff4719193b0881679",
+      "checkedAt": "2026-11-06T08:43:39.332920+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xbd9fccdb89528c12324859d273019680154c715e013f4245214e551700b6cbfb",
+      "checkedAt": "2026-11-06T08:43:39.333042+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x75ceda078802915826b4e2cb3869dd87fc23615b8d9dfdc7f9817c03a3ed2a2c",
+      "checkedAt": "2026-11-06T08:43:39.333168+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x38714f1292352d3e9c3ad53ca311c8a42c99707d082f129ddf1954997dbc9566",
+      "checkedAt": "2026-11-06T08:43:39.333303+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x6889d8aeae0badfecb7f225e9957a3f8558fbe0c394e3fd279f52d9d502a209b",
+      "checkedAt": "2026-11-06T08:43:39.333430+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x79c16a57157abb4f29673c7dcb5064c20a82f20b919a224f9c7aafee3e908c29",
+      "checkedAt": "2026-11-06T08:43:39.333577+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xae9c1a418bf708781148f67ce878328ed8f4b0b6e7fd64289476c0e58b8885da",
+      "checkedAt": "2026-11-06T08:43:39.333766+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xac22e9802d1d0d2adcf25faa35a4f30a10ce0db88ed0437e1288a84d59f8652a",
+      "checkedAt": "2026-11-06T08:43:39.333922+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x16fc2620fa0ab17863885281c915490c74f8fd2dd75a8e7d560fb3744a3c3373",
+      "checkedAt": "2026-11-06T08:43:39.334069+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x54a620bbade4802208c139e938bb705be3d861346b1cd009fcac43eedddb727e",
+      "checkedAt": "2026-11-06T08:43:39.334223+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x06baf646bdb8e888853071846720b688fd6928142d06dcdf11d4f732d0f834df",
+      "checkedAt": "2026-11-06T08:43:39.334442+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x3317986a33302fbe0fc0cd3715eec1625f7d80f7e8fc1af0bdabbc36fd10a740",
+      "checkedAt": "2026-11-06T08:43:39.334748+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x464b824a85551538789468fccb4ce7fe600e7a8bcab1e4e1068947f601721d66",
+      "checkedAt": "2026-11-06T08:43:39.334985+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xc5402ae14c1505a644288edf54d9434484a8da00840a4d79d6cd27de20c16dc4",
+      "checkedAt": "2026-11-06T08:43:39.335150+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x02a461b1f7ac4b34b9d19479779699501ae139cb0cd71ec6185d4d52e8c19289",
+      "checkedAt": "2026-11-06T08:43:39.335355+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x853e1c5c8622ab598041198796274f9939a7df734f30675c862816a7a480947a",
+      "checkedAt": "2026-11-06T08:43:39.335581+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x25383084481940132257f281575638b120206d4a800dc5f024be5707072843e4",
+      "checkedAt": "2026-11-06T08:43:39.335790+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x6334a22a6d393b7006c757d08f8aaaca47a957a3f135858f0849e65e2622f94a",
+      "checkedAt": "2026-11-06T08:43:39.335996+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x0a2824c8c3bb9482e9b334a75423f3766e9ceafa41f44ea2e4c0be783b89e8f1",
+      "checkedAt": "2026-11-06T08:43:39.336256+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x113a904fc7e4dfb04ca5670411e49c640abee2ea148999447135e9dacdcc9167",
+      "checkedAt": "2026-11-06T08:43:39.336489+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xf727e796871a9fdfb9ef4b303d2bf15fa528e63f87712d6050517e6298b6f98c",
+      "checkedAt": "2026-11-06T08:43:39.336709+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xb1199297f400cdffbef7641b87541e70cd0023a7a78c111091bb276b3f6f455a",
+      "checkedAt": "2026-11-06T08:43:39.336940+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x276abb0309fdffb3f88d4f266b5738b75a16407e09e1e53f4ac3a52892e709af",
+      "checkedAt": "2026-11-06T08:43:39.337150+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x987858d42cbf8e3ca50fda32ded3cb181aefbab91d0ce27f542f0e7c9d10dd69",
+      "checkedAt": "2026-11-06T08:43:39.337364+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xa8c6f56dfd1bed86e4b02de248bd24038987d17858b74e7f84c1b67ccdb272d8",
+      "checkedAt": "2026-11-06T08:43:39.337566+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xbd1c75d6ade0d5efcdf90b9b5de9d769806f85aa5cab070ac9e30f8b53253c7b",
+      "checkedAt": "2026-11-06T08:43:39.337767+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x710750d4073acf1f78bc0f22791b8824d42c0a15d2915a57b000d87a9e77ddaf",
+      "checkedAt": "2026-11-06T08:43:39.337971+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x996eea47f75a28357b4830eaae265f3a9379e7dc1f70c4b524de9d77b1f1a3e6",
+      "checkedAt": "2026-11-06T08:43:39.338209+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x89fa8a1acd20d7e455e4731ec0a4426c9c6d0a325109b0ec0bba1487bc9f7450",
+      "checkedAt": "2026-11-06T08:43:39.338410+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xe01b94367afc940b5961b1b5a98fb6a5fe47a8824c475221c7fc590f53b66f81",
+      "checkedAt": "2026-11-06T08:43:39.338612+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x63a5d42d07b3aa8feb674fb5651ddc06803c09973a14b2d1797c89fe26b29b6c",
+      "checkedAt": "2026-11-06T08:43:39.338849+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x3d2009d19b711bf99bb004e762ee816f494d3d06b01a6ec5e11aa2f63dfefc43",
+      "checkedAt": "2026-11-06T08:43:39.339145+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x9adea5c184124b50f24b5110ef4326ae7819c751c655516635f708d425210e78",
+      "checkedAt": "2026-11-06T08:43:39.339305+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x306f7480a871d08486a078dee4535e42548ad389186b3a6e48cce6c6c06590c9",
+      "checkedAt": "2026-11-06T08:43:39.339467+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xfcf2664fffc8fd0c569195f14af5b09dee430bd49e8a905738a543925709fa69",
+      "checkedAt": "2026-11-06T08:43:39.339600+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x53d68269aaa9e1eb4d29f7efbafabfc32102f2e3cc46a4c7e8e528333a413bc4",
+      "checkedAt": "2026-11-06T08:43:39.339731+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xa0d0deb3295e30a35f2c386b0bc7530c581b4745633972e6e101b22a4d3b2246",
+      "checkedAt": "2026-11-06T08:43:39.339872+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x8a8a5e67ee813ae530b0e2ef73b70957fe68aca322de7aae7625045ec5481b94",
+      "checkedAt": "2026-11-06T08:43:39.340014+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x99557a4dd19fd8d5f47135e27f64915d52d26d94e75f05bb284efdbe34160888",
+      "checkedAt": "2026-11-06T08:43:39.340227+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x389788631c0849d423a6e283e608ec772793ef057fc7d14ad98d23e7837e1fd7",
+      "checkedAt": "2026-11-06T08:43:39.340466+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xbd80281eaacc828b5d91434b154f5a4824489ee81d4d0b5e6a8a50f3d9529b82",
+      "checkedAt": "2026-11-06T08:43:39.340691+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x30f88f390c77e3a644a19e0291cea9bdb30613be1327654347411a99174a4e20",
+      "checkedAt": "2026-11-06T08:43:39.341012+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x8ff8d96e7b9b85d8990bb8c907c6cb0ec4fdac88cc1e6fc62a054de7ad1ed3d5",
+      "checkedAt": "2026-11-06T08:43:39.341301+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x16e1cc1230c5be6efd4bd48aacf41219f71e69f18b1dbe1a1b436c72d044627d",
+      "checkedAt": "2026-11-06T08:43:39.341629+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xa566afd6b97c00c413d2b51a6d7a49f52e1def0421bf99e98bd6abe61ea74fc7",
+      "checkedAt": "2026-11-06T08:43:39.341940+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x294b24c9939f4525780d3479101b5d8ace4dc905bd8e3056b673f5323217b0f2",
+      "checkedAt": "2026-11-06T08:43:39.342194+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xadf718fbcd6b2a9c7dc830991531801793b2913e0f39f864d74c6e8780c399c0",
+      "checkedAt": "2026-11-06T08:43:39.342366+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x75754f3c2cd2aa522d152751da3166ab3ccadf2e9547c4f3decef310fb2aa5e3",
+      "checkedAt": "2026-11-06T08:43:39.342589+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x923cdda95ec5c08492aac5c25ac44d257e5f296049a577cf7229bb1aa2cbfc93",
+      "checkedAt": "2026-11-06T08:43:39.342746+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xf78fca2ba8303e2d1b84c854e5add8a22d39dfc71bcca9ea00f41215525351c3",
+      "checkedAt": "2026-11-06T08:43:39.343118+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x71384fd5880ab4542a441642d25f8e4977bff16a5f8680918a53150e03b4df9c",
+      "checkedAt": "2026-11-06T08:43:39.343333+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xfaf63d54dec4c28c9a51d98cf54feba07e7ae8812aa5e3cac95c55dcdeead911",
+      "checkedAt": "2026-11-06T08:43:39.343564+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0x9370b4d0dcab6e714ada59689f874e516d436088f890936cbef65b75f40c1615",
+      "checkedAt": "2026-11-06T08:43:39.343784+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    },
+    {
+      "transactionHash": "0xe47985fee0097a2a11b684feb164eef4cad4a1107b0aecb2bd258fee0d9c2165",
+      "checkedAt": "2026-11-06T08:43:39.344060+00:00",
+      "transport": "curl",
+      "status": "recovered"
+    }
+  ],
+  "failures": [],
+  "networkTransportNote": "Node fetch DNS unavailable in this environment; equivalent public read-only RPC requests were made with curl at <=2requests/sec"
+}

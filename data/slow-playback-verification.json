@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-11-06T08:45:55.371Z",
+  "scope": "Controlled15-second delay of the actual original media request, followed by live source playback. No media response was fabricated.",
+  "url": "https://arweave.net/a4b8Spd5rcouKzttmYQnToH_d6nW6Sc-dMY2bHvpTW4",
+  "afterDeadline": {
+    "time": 0,
+    "paused": false,
+    "readyState": 0,
+    "error": null,
+    "status": "Original media is taking longer to load…"
+  },
+  "completed": {
+    "time": 1.009673,
+    "paused": false,
+    "duration": 174.097007,
+    "readyState": 4,
+    "source": "https://arweave.net/a4b8Spd5rcouKzttmYQnToH_d6nW6Sc-dMY2bHvpTW4",
+    "status": "Ethereum → Arweave · Original media"
+  },
+  "passed": true
+}

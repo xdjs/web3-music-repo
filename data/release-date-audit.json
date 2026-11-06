@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-06T09:21:35.332Z",
+  "total": 9203,
+  "dated": 8675,
+  "unknown": 528,
+  "byPlatform": {
+    "Sound": {
+      "records": 4915,
+      "dated": 4639,
+      "unknown": 276
+    },
+    "Unconfirmed": {
+      "records": 10,
+      "dated": 0,
+      "unknown": 10
+    },
+    "Arpeggi": {
+      "records": 2,
+      "dated": 0,
+      "unknown": 2
+    },
+    "Songcamp": {
+      "records": 43,
+      "dated": 0,
+      "unknown": 43
+    },
+    "Catalog": {
+      "records": 4036,
+      "dated": 4036,
+      "unknown": 0
+    },
+    "Zora": {
+      "records": 29,
+      "dated": 0,
+      "unknown": 29
+    },
+    "Other": {
+      "records": 6,
+      "dated": 0,
+      "unknown": 6
+    },
+    "Mint Songs": {
+      "records": 162,
+      "dated": 0,
+      "unknown": 162
+    }
+  },
+  "kinds": {
+    "release-contract-created": 4639,
+    "token-created": 4036
+  }
+}

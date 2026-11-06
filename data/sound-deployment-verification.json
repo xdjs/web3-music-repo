@@ -1,0 +1,14 @@
+[
+  {
+    "deployment": "Legacy ArtistCreatorV2",
+    "verifiedName": "ArtistCreatorV2",
+    "normalizedSourceMatch": true,
+    "sourceSha256": "84920953de657085f925f59ccdbbb075aac916f88dba855e28092d065fa4323f"
+  },
+  {
+    "deployment": "Optimism SoundCreatorV1",
+    "verifiedName": "SoundCreatorV1",
+    "normalizedSourceMatch": true,
+    "sourceSha256": "90ecd7cdbebf01ea20db7b1b5ae286652490d0bb5f5d6299298834b858fbe32b"
+  }
+]

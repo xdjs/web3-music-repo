@@ -1,0 +1,69 @@
+{
+  "scope": "One exact contract release recovered through archived Sound page audio, not a completed contract census",
+  "records": [
+    {
+      "id": "recovered-sound-10-1bfc0624b52e870cc00d4e39995c75c7da8763d3",
+      "chainId": 10,
+      "contract": "0x1bfc0624b52e870cc00d4e39995c75c7da8763d3",
+      "tokenId": "2",
+      "standard": "ERC721",
+      "platform": "Sound",
+      "artist": "Mija",
+      "title": "Groove (Jacob Grosse Remix)",
+      "kind": "audio",
+      "imageURI": "ar://kqCoMGIS87kzbj6pgGneLVqVr20ZyNdWWfy8dh3v454",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "creator": "0xe4c80780cc7fc7047bccb30e2cbcb67400752a88",
+      "originalRelease": "https://www.sound.xyz/mija/groove-jacob-grosse-remix",
+      "note": "Official remix of my song \"Groove\"  and genesis mint by Jacob Grosse\n\nFollow @jacobgrosse \nhttps://www.instagram.com/jacobgrosse/\n\nOut everywhere 10/20/23\n\nJoin the group chat: \nhttps://guild.xyz/mija-collectors\n",
+      "discovery": "Factory event plus exact chain/contract match in archived Sound page",
+      "musicMetadata": {
+        "status": "read",
+        "schemaVersion": 3,
+        "sourceType": "archived-sound-page",
+        "source": "https://web.archive.org/web/20240520194441/https://www.sound.xyz/mija/groove-jacob-grosse-remix",
+        "recoveredAt": "2026-11-06T08:35:50.723Z",
+        "credits": [],
+        "bpms": [],
+        "keys": [],
+        "collaborators": [],
+        "details": {
+          "Duration": [
+            "266"
+          ]
+        }
+      },
+      "archivedCredits": [
+        "Jacob Grosse \u2014 REMIXER",
+        "Mija \u2014 ARTIST"
+      ],
+      "archivedCreditsSource": "https://web.archive.org/web/20240520194441/https://www.sound.xyz/mija/groove-jacob-grosse-remix"
+    }
+  ],
+  "evidence": {
+    "recovered-sound-10-1bfc0624b52e870cc00d4e39995c75c7da8763d3": {
+      "status": "indexed",
+      "chainId": 10,
+      "contract": "0x1bfc0624b52e870cc00d4e39995c75c7da8763d3",
+      "tokenId": "2",
+      "checkedAt": "2026-11-06T08:35:50.723Z",
+      "referenceBlock": 159177581,
+      "title": "Groove (Jacob Grosse Remix)",
+      "artist": "Mija",
+      "imageURI": "ar://kqCoMGIS87kzbj6pgGneLVqVr20ZyNdWWfy8dh3v454",
+      "imageURL": "https://arweave.net/kqCoMGIS87kzbj6pgGneLVqVr20ZyNdWWfy8dh3v454",
+      "metadataURI": "ar://fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/2",
+      "metadataURL": "https://arweave.net/fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/2",
+      "mediaURI": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "mediaURL": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "kind": "audio",
+      "sourceName": "Archived Sound release page",
+      "sourceURL": "https://web.archive.org/web/20240520194441/https://www.sound.xyz/mija/groove-jacob-grosse-remix",
+      "mediaSourceType": "archived-sound-cdn",
+      "chainMetadataHasMedia": false,
+      "metadataLocation": "Current contract metadata is readable but has empty audio fields. Playback URL was recovered separately from archived Sound HTML.",
+      "note": "Sound CDN transcode recovered from its archived official release page; not an audio URL recovered from current onchain-linked metadata."
+    }
+  }
+}

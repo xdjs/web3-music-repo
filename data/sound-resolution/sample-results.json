@@ -1,0 +1,1695 @@
+{
+  "samples": [
+    {
+      "key": "1:0x9e169e244ea1a52470ba0e7a82ce3119767b0c5d",
+      "contract": "0x9e169e244ea1a52470ba0e7a82ce3119767b0c5d",
+      "unit": "release-contract",
+      "createdBlock": 17536591,
+      "blockHash": "0x447069c2934aa81345b5c02dfdd50c70f8eb550cc049e40579c11f6797c23405",
+      "transaction": "0x8061263b2b3c61726b2c35028f46814d54f1aaa2cf0cbfbca11c728fb6ca353f",
+      "createdAt": "2023-06-22T17:18:11.000000Z",
+      "creator": "0x86958A1219AB83c92779285eFeB0D9Dc186E24C0",
+      "implementation": null,
+      "chainId": 1,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "factoryVersion": 1,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:20.439Z",
+        "blockNumber": 26353107,
+        "totalMinted": "26",
+        "status": "unavailable",
+        "tokenId": "26",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      },
+      "checkedAt": "2026-11-06T08:32:05.491Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x000000000000000000000000000000000000000000000000000000000000001a"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x000000000000000000000000000000000000000000000000000000000000001a"
+        },
+        {
+          "name": "tokenURI:1",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f394d357350395334333446334f2d5044744a31384b534b615a316a37454f6a734343694643434c4d7478512f310000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:26",
+          "data": "0xc87b56dd000000000000000000000000000000000000000000000000000000000000001a",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003361723a2f2f394d357350395334333446334f2d5044744a31384b534b615a316a37454f6a734343694643434c4d7478512f323600000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:2",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000002",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f394d357350395334333446334f2d5044744a31384b534b615a316a37454f6a734343694643434c4d7478512f320000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:13",
+          "data": "0xc87b56dd000000000000000000000000000000000000000000000000000000000000000d",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003a61723a2f2f394d357350395334333446334f2d5044744a31384b534b615a316a37454f6a734343694643434c4d7478512f676f6c64656e456767000000000000"
+        }
+      ],
+      "metadataAttempts": [
+        {
+          "tokenId": "1",
+          "uri": "ar://9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/1",
+          "requests": [
+            {
+              "url": "https://arweave.net/9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/1",
+              "status": 302,
+              "redirect": "https://6thgyp6uxdpyc5z34pb3jhl4ferjuz2y7mior3aifccqqiwmw4ka.arweave.net/9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/1"
+            },
+            {
+              "url": "https://6thgyp6uxdpyc5z34pb3jhl4ferjuz2y7mior3aifccqqiwmw4ka.arweave.net/9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/1",
+              "status": 404
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "26",
+          "uri": "ar://9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/26",
+          "requests": [
+            {
+              "url": "https://arweave.net/9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/26",
+              "status": 302,
+              "redirect": "https://6thgyp6uxdpyc5z34pb3jhl4ferjuz2y7mior3aifccqqiwmw4ka.arweave.net/9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/26"
+            },
+            {
+              "url": "https://6thgyp6uxdpyc5z34pb3jhl4ferjuz2y7mior3aifccqqiwmw4ka.arweave.net/9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/26",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "2",
+          "uri": "ar://9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/2",
+          "requests": [
+            {
+              "url": "https://arweave.net/9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/2",
+              "status": 302,
+              "redirect": "https://6thgyp6uxdpyc5z34pb3jhl4ferjuz2y7mior3aifccqqiwmw4ka.arweave.net/9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/2"
+            },
+            {
+              "url": "https://6thgyp6uxdpyc5z34pb3jhl4ferjuz2y7mior3aifccqqiwmw4ka.arweave.net/9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/2",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "13",
+          "uri": "ar://9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/goldenEgg",
+          "requests": [
+            {
+              "url": "https://arweave.net/9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/goldenEgg",
+              "status": 302,
+              "redirect": "https://6thgyp6uxdpyc5z34pb3jhl4ferjuz2y7mior3aifccqqiwmw4ka.arweave.net/9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/goldenEgg"
+            },
+            {
+              "url": "https://6thgyp6uxdpyc5z34pb3jhl4ferjuz2y7mior3aifccqqiwmw4ka.arweave.net/9M5sP9S434F3O-PDtJ18KSKaZ1j7EOjsCCiFCCLMtxQ/goldenEgg",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        }
+      ],
+      "block": "0x19223c9",
+      "blockNumber": 26354633,
+      "totalMinted": "26",
+      "totalSupply": "26",
+      "classification": "storage-unavailable"
+    },
+    {
+      "key": "1:0x4c2e2b6ee663e75af9a896606805d8e5a628df12",
+      "contract": "0x4c2e2b6ee663e75af9a896606805d8e5a628df12",
+      "unit": "release-contract",
+      "createdBlock": 16972478,
+      "blockHash": "0xae6d46696be7fe06e458c8d9c106185dc91a98ec91d6d897c4f2fb82249c80d3",
+      "transaction": "0xfdec03ff254ce6f2c5f958c33cdc5fe5e7bd88bf0465d3904babc676fdcd3a50",
+      "createdAt": "2023-04-04T02:01:35.000000Z",
+      "creator": "0xbCefc4906b443e4DB64E2b00b9af2C39e76c785c",
+      "implementation": null,
+      "chainId": 1,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "factoryVersion": 1,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:20.440Z",
+        "blockNumber": 26353107,
+        "totalMinted": "577",
+        "status": "unavailable",
+        "tokenId": "577",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      },
+      "checkedAt": "2026-11-06T08:32:10.271Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000241"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x00000000000000000000000000000000000000000000000000000000000001dd"
+        },
+        {
+          "name": "tokenURI:1",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001",
+          "error": "execution reverted"
+        },
+        {
+          "name": "tokenURI:577",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000241",
+          "error": "execution reverted"
+        },
+        {
+          "name": "tokenURI:2",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000002",
+          "error": "execution reverted"
+        },
+        {
+          "name": "tokenURI:288",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000120",
+          "error": "execution reverted"
+        }
+      ],
+      "metadataAttempts": [],
+      "block": "0x19223c9",
+      "blockNumber": 26354633,
+      "totalMinted": "577",
+      "totalSupply": "477",
+      "classification": "token-uri-unavailable"
+    },
+    {
+      "key": "1:0xd5f9886a6a8120d111c094b39082d978677668db",
+      "contract": "0xd5f9886a6a8120d111c094b39082d978677668db",
+      "unit": "release-contract",
+      "createdBlock": 15928362,
+      "blockHash": "0xa93fa66aa9b213eeaefe9ae745642b1c28dba6a61d2baaa1916cbf002771e5a8",
+      "transaction": "0xc8f74f817f1ca148a42261df5234fe1dfb10d74f43bbd56e27388b120a1764b3",
+      "createdAt": "2022-11-08T22:41:35.000000Z",
+      "creator": "0x82cE5258Aa5925Bb5c9DA07fA7996e73687a440e",
+      "implementation": null,
+      "chainId": 1,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "factoryVersion": 1,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:21.360Z",
+        "blockNumber": 26353107,
+        "totalMinted": "50",
+        "status": "unavailable",
+        "tokenId": "50",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      },
+      "checkedAt": "2026-11-06T08:32:11.423Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000032"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000032"
+        },
+        {
+          "name": "tokenURI:1",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f455a726b3739616967646c483371674b5a724a6b633956436c5a333963773961415a644156476e723064412f310000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:50",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000032",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003361723a2f2f455a726b3739616967646c483371674b5a724a6b633956436c5a333963773961415a644156476e723064412f353000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:2",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000002",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f455a726b3739616967646c483371674b5a724a6b633956436c5a333963773961415a644156476e723064412f320000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:25",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000019",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003361723a2f2f455a726b3739616967646c483371674b5a724a6b633956436c5a333963773961415a644156476e723064412f323500000000000000000000000000"
+        }
+      ],
+      "metadataAttempts": [
+        {
+          "tokenId": "1",
+          "uri": "ar://EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/1",
+          "requests": [
+            {
+              "url": "https://arweave.net/EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/1",
+              "status": 302,
+              "redirect": "https://cgnoj36wuka5sr66vafgnmteopkuffm57vzq6wqbs5afi2pl2hia.arweave.net/EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/1"
+            },
+            {
+              "url": "https://cgnoj36wuka5sr66vafgnmteopkuffm57vzq6wqbs5afi2pl2hia.arweave.net/EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/1",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "50",
+          "uri": "ar://EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/50",
+          "requests": [
+            {
+              "url": "https://arweave.net/EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/50",
+              "status": 302,
+              "redirect": "https://cgnoj36wuka5sr66vafgnmteopkuffm57vzq6wqbs5afi2pl2hia.arweave.net/EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/50"
+            },
+            {
+              "url": "https://cgnoj36wuka5sr66vafgnmteopkuffm57vzq6wqbs5afi2pl2hia.arweave.net/EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/50",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "2",
+          "uri": "ar://EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/2",
+          "requests": [
+            {
+              "url": "https://arweave.net/EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/2",
+              "status": 302,
+              "redirect": "https://cgnoj36wuka5sr66vafgnmteopkuffm57vzq6wqbs5afi2pl2hia.arweave.net/EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/2"
+            },
+            {
+              "url": "https://cgnoj36wuka5sr66vafgnmteopkuffm57vzq6wqbs5afi2pl2hia.arweave.net/EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/2",
+              "status": 404
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "25",
+          "uri": "ar://EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/25",
+          "requests": [
+            {
+              "url": "https://arweave.net/EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/25",
+              "status": 302,
+              "redirect": "https://cgnoj36wuka5sr66vafgnmteopkuffm57vzq6wqbs5afi2pl2hia.arweave.net/EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/25"
+            },
+            {
+              "url": "https://cgnoj36wuka5sr66vafgnmteopkuffm57vzq6wqbs5afi2pl2hia.arweave.net/EZrk79aigdlH3qgKZrJkc9VClZ39cw9aAZdAVGnr0dA/25",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        }
+      ],
+      "block": "0x19223c9",
+      "blockNumber": 26354633,
+      "totalMinted": "50",
+      "totalSupply": "50",
+      "classification": "storage-unavailable"
+    },
+    {
+      "key": "1:0xfb302c8d9f642e3fb159b477a83be3ca8177123f",
+      "contract": "0xfb302c8d9f642e3fb159b477a83be3ca8177123f",
+      "unit": "release-contract",
+      "createdBlock": 20452377,
+      "blockHash": "0x57c700059f6a4ba3ceb71567dc19bf610d2c50d1dfee4667ab7c201811654b50",
+      "transaction": "0x49c3eddff4e30e83053d1187a7439e2c98a396ec2f82ecef62704d20f2429400",
+      "createdAt": "2024-08-04T03:04:23.000000Z",
+      "creator": "0x2AE57eCC52240FF0dF36C979799BB2bCf957fb15",
+      "implementation": "0x000000000053C8B49473BDa4b8d1DC47CAb411CC",
+      "chainId": 1,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:22.104Z",
+        "blockNumber": 26353107,
+        "totalMinted": "10",
+        "status": "unavailable",
+        "tokenId": "10",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      },
+      "checkedAt": "2026-11-06T08:32:13.380Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x000000000000000000000000000000000000000000000000000000000000000a"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x000000000000000000000000000000000000000000000000000000000000000a"
+        },
+        {
+          "name": "tokenURI:1",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f414544416d47677a6b67647a62646b58722d6d7a41655671515535316250305461586c534f716d6c5972452f310000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:10",
+          "data": "0xc87b56dd000000000000000000000000000000000000000000000000000000000000000a",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f414544416d47677a6b67647a62646b58722d6d7a41655671515535316250305461586c534f716d6c5972452f380000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:2",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000002",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f414544416d47677a6b67647a62646b58722d6d7a41655671515535316250305461586c534f716d6c5972452f320000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:5",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000005",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f45416a4b75694c4e39476c7239365f5f726a5f4170343545304a67424f794735696b333770466a776659512f310000000000000000000000000000"
+        }
+      ],
+      "metadataAttempts": [
+        {
+          "tokenId": "1",
+          "uri": "ar://AEDAmGgzkgdzbdkXr-mzAeVqQU51bP0TaXlSOqmlYrE/1",
+          "metadata": {
+            "animation_url": "",
+            "artist": "Calven J",
+            "artwork": {
+              "mimeType": "image/png",
+              "uri": "ar://arPburvEXnDJhCYUKivF24ci5dnj8SDAzCk_0Pu-mSc",
+              "nft": null
+            },
+            "attributes": [
+              {
+                "trait_type": "Clutchman [Prod. By Flip-Trill]",
+                "value": "Song Edition"
+              },
+              {
+                "trait_type": "Tier",
+                "value": "Free"
+              }
+            ],
+            "bpm": null,
+            "credits": null,
+            "description": "GAME TIME!! The pathway to success is full of obstacles but always shoot your shot! There is a chance you might not make it but you miss 100% of the shots you do not take! These words have always helped me & I hope they come in the clutch for you as well. \n\n* BMI Composer # : 00827339616\n* BMI Work # : 023625494",
+            "duration": 235,
+            "external_url": "https://www.sound.xyz/calvenj/clutchman-prod-by-fliptrill",
+            "genre": "Hip-hop & Rap",
+            "image": "ar://arPburvEXnDJhCYUKivF24ci5dnj8SDAzCk_0Pu-mSc",
+            "isrc": null,
+            "key": null,
+            "license": "ALL_RIGHTS_RESERVED",
+            "locationCreated": "us",
+            "losslessAudio": "",
+            "lyrics": null,
+            "mimeType": "audio/mpeg",
+            "nftSerialNumber": 1,
+            "name": "Clutchman [Prod. By Flip-Trill] - Free #1",
+            "originalReleaseDate": null,
+            "project": null,
+            "publisher": null,
+            "recordLabel": null,
+            "tags": null,
+            "title": "Clutchman [Prod. By Flip-Trill]",
+            "trackNumber": 1,
+            "version": "sound-edition-20220930",
+            "visualizer": null
+          },
+          "requests": [
+            {
+              "url": "https://arweave.net/AEDAmGgzkgdzbdkXr-mzAeVqQU51bP0TaXlSOqmlYrE/1",
+              "status": 302,
+              "redirect": "https://abambgdigojao43n3el272ntahswuqkoovwp2e3jpfjdvknfmkyq.arweave.net/AEDAmGgzkgdzbdkXr-mzAeVqQU51bP0TaXlSOqmlYrE/1"
+            },
+            {
+              "url": "https://abambgdigojao43n3el272ntahswuqkoovwp2e3jpfjdvknfmkyq.arweave.net/AEDAmGgzkgdzbdkXr-mzAeVqQU51bP0TaXlSOqmlYrE/1",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "tokenId": "10",
+          "uri": "ar://AEDAmGgzkgdzbdkXr-mzAeVqQU51bP0TaXlSOqmlYrE/8",
+          "requests": [
+            {
+              "url": "https://arweave.net/AEDAmGgzkgdzbdkXr-mzAeVqQU51bP0TaXlSOqmlYrE/8",
+              "status": 302,
+              "redirect": "https://abambgdigojao43n3el272ntahswuqkoovwp2e3jpfjdvknfmkyq.arweave.net/AEDAmGgzkgdzbdkXr-mzAeVqQU51bP0TaXlSOqmlYrE/8"
+            },
+            {
+              "url": "https://abambgdigojao43n3el272ntahswuqkoovwp2e3jpfjdvknfmkyq.arweave.net/AEDAmGgzkgdzbdkXr-mzAeVqQU51bP0TaXlSOqmlYrE/8",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "2",
+          "uri": "ar://AEDAmGgzkgdzbdkXr-mzAeVqQU51bP0TaXlSOqmlYrE/2",
+          "metadata": {
+            "animation_url": "",
+            "artist": "Calven J",
+            "artwork": {
+              "mimeType": "image/png",
+              "uri": "ar://arPburvEXnDJhCYUKivF24ci5dnj8SDAzCk_0Pu-mSc",
+              "nft": null
+            },
+            "attributes": [
+              {
+                "trait_type": "Clutchman [Prod. By Flip-Trill]",
+                "value": "Song Edition"
+              },
+              {
+                "trait_type": "Tier",
+                "value": "Free"
+              }
+            ],
+            "bpm": null,
+            "credits": null,
+            "description": "GAME TIME!! The pathway to success is full of obstacles but always shoot your shot! There is a chance you might not make it but you miss 100% of the shots you do not take! These words have always helped me & I hope they come in the clutch for you as well. \n\n* BMI Composer # : 00827339616\n* BMI Work # : 023625494",
+            "duration": 235,
+            "external_url": "https://www.sound.xyz/calvenj/clutchman-prod-by-fliptrill",
+            "genre": "Hip-hop & Rap",
+            "image": "ar://arPburvEXnDJhCYUKivF24ci5dnj8SDAzCk_0Pu-mSc",
+            "isrc": null,
+            "key": null,
+            "license": "ALL_RIGHTS_RESERVED",
+            "locationCreated": "us",
+            "losslessAudio": "",
+            "lyrics": null,
+            "mimeType": "audio/mpeg",
+            "nftSerialNumber": 2,
+            "name": "Clutchman [Prod. By Flip-Trill] - Free #2",
+            "originalReleaseDate": null,
+            "project": null,
+            "publisher": null,
+            "recordLabel": null,
+            "tags": null,
+            "title": "Clutchman [Prod. By Flip-Trill]",
+            "trackNumber": 1,
+            "version": "sound-edition-20220930",
+            "visualizer": null
+          },
+          "requests": [
+            {
+              "url": "https://arweave.net/AEDAmGgzkgdzbdkXr-mzAeVqQU51bP0TaXlSOqmlYrE/2",
+              "status": 302,
+              "redirect": "https://abambgdigojao43n3el272ntahswuqkoovwp2e3jpfjdvknfmkyq.arweave.net/AEDAmGgzkgdzbdkXr-mzAeVqQU51bP0TaXlSOqmlYrE/2"
+            },
+            {
+              "url": "https://abambgdigojao43n3el272ntahswuqkoovwp2e3jpfjdvknfmkyq.arweave.net/AEDAmGgzkgdzbdkXr-mzAeVqQU51bP0TaXlSOqmlYrE/2",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "tokenId": "5",
+          "uri": "ar://EAjKuiLN9Glr96__rj_Ap45E0JgBOyG5ik37pFjwfYQ/1",
+          "requests": [
+            {
+              "url": "https://arweave.net/EAjKuiLN9Glr96__rj_Ap45E0JgBOyG5ik37pFjwfYQ/1",
+              "status": 302,
+              "redirect": "https://caemvorczx2gs27xv7724p6au6hejueyae5sdomkjx52iwhqpwca.arweave.net/EAjKuiLN9Glr96__rj_Ap45E0JgBOyG5ik37pFjwfYQ/1"
+            },
+            {
+              "url": "https://caemvorczx2gs27xv7724p6au6hejueyae5sdomkjx52iwhqpwca.arweave.net/EAjKuiLN9Glr96__rj_Ap45E0JgBOyG5ik37pFjwfYQ/1",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        }
+      ],
+      "block": "0x19223c9",
+      "blockNumber": 26354633,
+      "totalMinted": "10",
+      "totalSupply": "10",
+      "classification": "metadata-without-supported-media"
+    },
+    {
+      "key": "1:0x47cc98b2a627ed154d16c0ef852f4bb4357f9e4b",
+      "contract": "0x47cc98b2a627ed154d16c0ef852f4bb4357f9e4b",
+      "unit": "release-contract",
+      "createdBlock": 19100974,
+      "blockHash": "0x13e338234cbdea90ab657d37357db17b22f9a29776d932a9250d2918ee233323",
+      "transaction": "0x61b0651ea322a24aa65744daa93c90871caff8440a0b4e1d508ef312ab50aed5",
+      "createdAt": "2024-01-27T22:47:23.000000Z",
+      "creator": "0x7955e3E0eAcC79a7b4F380B1cA52aE489039651e",
+      "implementation": "0x000000000053C8B49473BDa4b8d1DC47CAb411CC",
+      "chainId": 1,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:23.241Z",
+        "blockNumber": 26353107,
+        "totalMinted": "20",
+        "status": "unavailable",
+        "tokenId": "20",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      },
+      "checkedAt": "2026-11-06T08:32:15.889Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000014"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000014"
+        },
+        {
+          "name": "tokenURI:1",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f4f346579504265594e694f4c41357649677172416c5a623244646d67326e5030336e4d5f4d434f3073786b2f310000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:20",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000014",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003361723a2f2f4f346579504265594e694f4c41357649677172416c5a623244646d67326e5030336e4d5f4d434f3073786b2f313900000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:2",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000002",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f4f346579504265594e694f4c41357649677172416c5a623244646d67326e5030336e4d5f4d434f3073786b2f320000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:10",
+          "data": "0xc87b56dd000000000000000000000000000000000000000000000000000000000000000a",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003361723a2f2f4f346579504265594e694f4c41357649677172416c5a623244646d67326e5030336e4d5f4d434f3073786b2f313000000000000000000000000000"
+        }
+      ],
+      "metadataAttempts": [
+        {
+          "tokenId": "1",
+          "uri": "ar://O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/1",
+          "requests": [
+            {
+              "url": "https://arweave.net/O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/1",
+              "status": 302,
+              "redirect": "https://hod3epaxta3chcydtpeifkwaswlpmdozudnhh5g6om7tai5uwmmq.arweave.net/O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/1"
+            },
+            {
+              "url": "https://hod3epaxta3chcydtpeifkwaswlpmdozudnhh5g6om7tai5uwmmq.arweave.net/O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/1",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "20",
+          "uri": "ar://O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/19",
+          "metadata": {
+            "animation_url": "",
+            "artist": "4KR4H",
+            "artwork": {
+              "mimeType": "image/png",
+              "uri": "ar://lnZvggy2qFHWrQ8j6VnaDiQI8doaqLiSVuYJbtdlNtA",
+              "nft": null
+            },
+            "attributes": [
+              {
+                "trait_type": "NewTech",
+                "value": "Song Edition"
+              },
+              {
+                "trait_type": "Tier",
+                "value": "Free"
+              },
+              {
+                "value": "Genesis"
+              }
+            ],
+            "bpm": null,
+            "credits": null,
+            "description": "\"NewTech\" is about new and emerging technologies its challenges and frustrations along its untapped potential. ",
+            "duration": 153,
+            "external_url": "https://www.sound.xyz/4kr4h/newtech",
+            "genre": "Soundtrack",
+            "image": "ar://lnZvggy2qFHWrQ8j6VnaDiQI8doaqLiSVuYJbtdlNtA",
+            "isrc": null,
+            "key": null,
+            "license": null,
+            "locationCreated": null,
+            "losslessAudio": "",
+            "lyrics": null,
+            "mimeType": "audio/wave",
+            "nftSerialNumber": 19,
+            "name": "NewTech - Free #19",
+            "originalReleaseDate": null,
+            "project": null,
+            "publisher": null,
+            "recordLabel": null,
+            "tags": null,
+            "title": "NewTech",
+            "trackNumber": 1,
+            "version": "sound-edition-20220930",
+            "visualizer": null
+          },
+          "requests": [
+            {
+              "url": "https://arweave.net/O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/19",
+              "status": 302,
+              "redirect": "https://hod3epaxta3chcydtpeifkwaswlpmdozudnhh5g6om7tai5uwmmq.arweave.net/O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/19"
+            },
+            {
+              "url": "https://hod3epaxta3chcydtpeifkwaswlpmdozudnhh5g6om7tai5uwmmq.arweave.net/O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/19",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "tokenId": "2",
+          "uri": "ar://O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/2",
+          "metadata": {
+            "animation_url": "",
+            "artist": "4KR4H",
+            "artwork": {
+              "mimeType": "image/png",
+              "uri": "ar://lnZvggy2qFHWrQ8j6VnaDiQI8doaqLiSVuYJbtdlNtA",
+              "nft": null
+            },
+            "attributes": [
+              {
+                "trait_type": "NewTech",
+                "value": "Song Edition"
+              },
+              {
+                "trait_type": "Tier",
+                "value": "Free"
+              },
+              {
+                "value": "Genesis"
+              }
+            ],
+            "bpm": null,
+            "credits": null,
+            "description": "\"NewTech\" is about new and emerging technologies its challenges and frustrations along its untapped potential. ",
+            "duration": 153,
+            "external_url": "https://www.sound.xyz/4kr4h/newtech",
+            "genre": "Soundtrack",
+            "image": "ar://lnZvggy2qFHWrQ8j6VnaDiQI8doaqLiSVuYJbtdlNtA",
+            "isrc": null,
+            "key": null,
+            "license": null,
+            "locationCreated": null,
+            "losslessAudio": "",
+            "lyrics": null,
+            "mimeType": "audio/wave",
+            "nftSerialNumber": 2,
+            "name": "NewTech - Free #2",
+            "originalReleaseDate": null,
+            "project": null,
+            "publisher": null,
+            "recordLabel": null,
+            "tags": null,
+            "title": "NewTech",
+            "trackNumber": 1,
+            "version": "sound-edition-20220930",
+            "visualizer": null
+          },
+          "requests": [
+            {
+              "url": "https://arweave.net/O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/2",
+              "status": 302,
+              "redirect": "https://hod3epaxta3chcydtpeifkwaswlpmdozudnhh5g6om7tai5uwmmq.arweave.net/O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/2"
+            },
+            {
+              "url": "https://hod3epaxta3chcydtpeifkwaswlpmdozudnhh5g6om7tai5uwmmq.arweave.net/O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/2",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "tokenId": "10",
+          "uri": "ar://O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/10",
+          "requests": [
+            {
+              "url": "https://arweave.net/O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/10",
+              "status": 302,
+              "redirect": "https://hod3epaxta3chcydtpeifkwaswlpmdozudnhh5g6om7tai5uwmmq.arweave.net/O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/10"
+            },
+            {
+              "url": "https://hod3epaxta3chcydtpeifkwaswlpmdozudnhh5g6om7tai5uwmmq.arweave.net/O4eyPBeYNiOLA5vIgqrAlZb2Ddmg2nP03nM_MCO0sxk/10",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        }
+      ],
+      "block": "0x19223c9",
+      "blockNumber": 26354633,
+      "totalMinted": "20",
+      "totalSupply": "20",
+      "classification": "metadata-without-supported-media"
+    },
+    {
+      "key": "1:0xe63af0a10a14ba2a1526f7296955e3ff00bb16d6",
+      "contract": "0xe63af0a10a14ba2a1526f7296955e3ff00bb16d6",
+      "unit": "release-contract",
+      "createdBlock": 18458575,
+      "blockHash": "0x9c7bb898cc9a75000251f5c28d7308ecb5b9e459e1251ac1757385cb19086d36",
+      "transaction": "0x234f3c9410b7674c5155996ab210d91be147e9079cf75a7411a8ce89aa8af3cc",
+      "createdAt": "2023-10-29T21:39:59.000000Z",
+      "creator": "0x9CE620Ce25c1b3bAd6153813C3B949367323041F",
+      "implementation": "0x0000000000c78FEE168002D89D141517b8E6E0FE",
+      "chainId": 1,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:24.799Z",
+        "blockNumber": 26353107,
+        "totalMinted": "1",
+        "status": "unavailable",
+        "tokenId": "1",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      },
+      "checkedAt": "2026-11-06T08:32:18.183Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+        },
+        {
+          "name": "tokenURI:1",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f306139765a6e47647939754f484f5673533972364a416636475f62454f38437471667934356766795679452f310000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:2",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000002",
+          "error": "execution reverted"
+        }
+      ],
+      "metadataAttempts": [
+        {
+          "tokenId": "1",
+          "uri": "ar://0a9vZnGdy9uOHOVsS9r6JAf6G_bEO8Ctqfy45gfyVyE/1",
+          "requests": [
+            {
+              "url": "https://arweave.net/0a9vZnGdy9uOHOVsS9r6JAf6G_bEO8Ctqfy45gfyVyE/1",
+              "status": 302,
+              "redirect": "https://2gxw6ztrtxf5xdq44vwexwx2eqd7ug7wyq54blnj7s4omb7sk4qq.arweave.net/0a9vZnGdy9uOHOVsS9r6JAf6G_bEO8Ctqfy45gfyVyE/1"
+            },
+            {
+              "url": "https://2gxw6ztrtxf5xdq44vwexwx2eqd7ug7wyq54blnj7s4omb7sk4qq.arweave.net/0a9vZnGdy9uOHOVsS9r6JAf6G_bEO8Ctqfy45gfyVyE/1",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        }
+      ],
+      "block": "0x19223c9",
+      "blockNumber": 26354633,
+      "totalMinted": "1",
+      "totalSupply": "1",
+      "classification": "storage-unavailable"
+    },
+    {
+      "key": "10:0xd2f2c5cabbacd8a8f201ffaae9f2373e03f74e26",
+      "contract": "0xd2f2c5cabbacd8a8f201ffaae9f2373e03f74e26",
+      "unit": "release-contract",
+      "createdBlock": 109520525,
+      "blockHash": "0x39c0960fc30b68f60fb6fbf562f52f2b7510633e58a82c1b964f4628d0ece94f",
+      "transaction": "0xe1ac56b5ad7c947dde2605f667cfc02a3cba5e1fb8ccec6a48c025d7cdced449",
+      "createdAt": "2023-09-13T21:17:07.000000Z",
+      "creator": "0x3c10FAED26a6bb341322d1BAaf2c6ecf5B957D61",
+      "implementation": null,
+      "chainId": 10,
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "factoryVersion": 1,
+      "prior": {
+        "checkedAt": "2026-11-06T03:26:24.851Z",
+        "blockNumber": 159168403,
+        "totalMinted": "2",
+        "status": "unavailable",
+        "tokenId": "2",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      },
+      "checkedAt": "2026-11-06T08:32:19.290Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000002"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000002"
+        },
+        {
+          "name": "tokenURI:1",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000007668747470733a2f2f77793563767a6877797478347371756c6f726a733464726f6a747172377834327a6c346e6f6e3568343267336a357262683269712e617277656176652e6e65742f746a6f713550624537386c43693352544c673475544f45663335724b2d4e6333702d614e745059685070453f3100000000000000000000"
+        },
+        {
+          "name": "tokenURI:2",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000002",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000007668747470733a2f2f77793563767a6877797478347371756c6f726a733464726f6a747172377834327a6c346e6f6e3568343267336a357262683269712e617277656176652e6e65742f746a6f713550624537386c43693352544c673475544f45663335724b2d4e6333702d614e745059685070453f3200000000000000000000"
+        }
+      ],
+      "metadataAttempts": [
+        {
+          "tokenId": "1",
+          "uri": "https://wy5cvzhwytx4squlorjs4drojtqr7x42zl4non5h42g3j5rbh2iq.arweave.net/tjoq5PbE78lCi3RTLg4uTOEf35rK-Nc3p-aNtPYhPpE?1",
+          "requests": [
+            {
+              "url": "https://wy5cvzhwytx4squlorjs4drojtqr7x42zl4non5h42g3j5rbh2iq.arweave.net/tjoq5PbE78lCi3RTLg4uTOEf35rK-Nc3p-aNtPYhPpE?1",
+              "status": 404
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "2",
+          "uri": "https://wy5cvzhwytx4squlorjs4drojtqr7x42zl4non5h42g3j5rbh2iq.arweave.net/tjoq5PbE78lCi3RTLg4uTOEf35rK-Nc3p-aNtPYhPpE?2",
+          "requests": [
+            {
+              "url": "https://wy5cvzhwytx4squlorjs4drojtqr7x42zl4non5h42g3j5rbh2iq.arweave.net/tjoq5PbE78lCi3RTLg4uTOEf35rK-Nc3p-aNtPYhPpE?2",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        }
+      ],
+      "block": "0x97cdb6d",
+      "blockNumber": 159177581,
+      "totalMinted": "2",
+      "totalSupply": "2",
+      "classification": "storage-unavailable"
+    },
+    {
+      "key": "10:0x155d1f27fbfeaeca3a0f63cc3883ba14ffb60159",
+      "contract": "0x155d1f27fbfeaeca3a0f63cc3883ba14ffb60159",
+      "unit": "release-contract",
+      "createdBlock": 116433891,
+      "blockHash": "0x89230f2981ce27ddc68cc3723950f771e6dad41d7151cf9babab584b47e35e7e",
+      "transaction": "0x7655e1f78ff4603e7ade40d89088bfed5f8124b933ff8d6571a9b7aa99af0c6d",
+      "createdAt": "2024-02-20T22:02:39.000000Z",
+      "creator": "0xE102a0549C00DAC4EE6eBBe197f9dD4cFC272458",
+      "implementation": "0x000000000053C8B49473BDa4b8d1DC47CAb411CC",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:27:27.234Z",
+        "blockNumber": 159168435,
+        "totalMinted": "28",
+        "status": "unavailable",
+        "tokenId": "28",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      },
+      "checkedAt": "2026-11-06T08:32:20.833Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x000000000000000000000000000000000000000000000000000000000000001c"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x000000000000000000000000000000000000000000000000000000000000001c"
+        },
+        {
+          "name": "tokenURI:1",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f3553414778724c555f474e5a4a7a6f4e4467774c4e6d6c684c4e316e514f594c496c374a756236307454672f310000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:28",
+          "data": "0xc87b56dd000000000000000000000000000000000000000000000000000000000000001c",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003361723a2f2f3553414778724c555f474e5a4a7a6f4e4467774c4e6d6c684c4e316e514f594c496c374a756236307454672f323700000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:2",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000002",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f3553414778724c555f474e5a4a7a6f4e4467774c4e6d6c684c4e316e514f594c496c374a756236307454672f320000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:14",
+          "data": "0xc87b56dd000000000000000000000000000000000000000000000000000000000000000e",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003361723a2f2f3553414778724c555f474e5a4a7a6f4e4467774c4e6d6c684c4e316e514f594c496c374a756236307454672f313400000000000000000000000000"
+        }
+      ],
+      "metadataAttempts": [
+        {
+          "tokenId": "1",
+          "uri": "ar://5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/1",
+          "requests": [
+            {
+              "url": "https://arweave.net/5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/1",
+              "status": 302,
+              "redirect": "https://4uqanrvs2t6ggwjhhigq4dalgzuwclg5m5aomczcl3e3tpvuwu4a.arweave.net/5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/1"
+            },
+            {
+              "url": "https://4uqanrvs2t6ggwjhhigq4dalgzuwclg5m5aomczcl3e3tpvuwu4a.arweave.net/5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/1",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "28",
+          "uri": "ar://5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/27",
+          "requests": [
+            {
+              "url": "https://arweave.net/5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/27",
+              "status": 302,
+              "redirect": "https://4uqanrvs2t6ggwjhhigq4dalgzuwclg5m5aomczcl3e3tpvuwu4a.arweave.net/5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/27"
+            },
+            {
+              "url": "https://4uqanrvs2t6ggwjhhigq4dalgzuwclg5m5aomczcl3e3tpvuwu4a.arweave.net/5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/27",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "2",
+          "uri": "ar://5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/2",
+          "requests": [
+            {
+              "url": "https://arweave.net/5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/2",
+              "status": 302,
+              "redirect": "https://4uqanrvs2t6ggwjhhigq4dalgzuwclg5m5aomczcl3e3tpvuwu4a.arweave.net/5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/2"
+            },
+            {
+              "url": "https://4uqanrvs2t6ggwjhhigq4dalgzuwclg5m5aomczcl3e3tpvuwu4a.arweave.net/5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/2",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "14",
+          "uri": "ar://5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/14",
+          "metadata": {
+            "animation_url": "",
+            "artist": "Krazy Kimberlin",
+            "artwork": {
+              "mimeType": "image/png",
+              "uri": "ar://57GaZm1CeTFRHni50Oo2MkyuEVhjY_egn8EdftmNoKU",
+              "nft": null
+            },
+            "attributes": [
+              {
+                "trait_type": "No Rugs",
+                "value": "Song Edition"
+              },
+              {
+                "trait_type": "Tier",
+                "value": "Free"
+              },
+              {
+                "value": "Genesis"
+              }
+            ],
+            "bpm": null,
+            "credits": null,
+            "description": "Many of us can relate.   ",
+            "duration": 190,
+            "external_url": "https://www.sound.xyz/krazykimberlin/no-rugs",
+            "genre": "Hip-hop & Rap",
+            "image": "ar://57GaZm1CeTFRHni50Oo2MkyuEVhjY_egn8EdftmNoKU",
+            "isrc": null,
+            "key": null,
+            "license": null,
+            "locationCreated": null,
+            "losslessAudio": "",
+            "lyrics": null,
+            "mimeType": "audio/mpeg",
+            "nftSerialNumber": 14,
+            "name": "No Rugs - Free #14",
+            "originalReleaseDate": null,
+            "project": null,
+            "publisher": null,
+            "recordLabel": null,
+            "tags": null,
+            "title": "No Rugs",
+            "trackNumber": 1,
+            "version": "sound-edition-20220930",
+            "visualizer": null
+          },
+          "requests": [
+            {
+              "url": "https://arweave.net/5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/14",
+              "status": 302,
+              "redirect": "https://4uqanrvs2t6ggwjhhigq4dalgzuwclg5m5aomczcl3e3tpvuwu4a.arweave.net/5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/14"
+            },
+            {
+              "url": "https://4uqanrvs2t6ggwjhhigq4dalgzuwclg5m5aomczcl3e3tpvuwu4a.arweave.net/5SAGxrLU_GNZJzoNDgwLNmlhLN1nQOYLIl7Jub60tTg/14",
+              "status": 200
+            }
+          ]
+        }
+      ],
+      "block": "0x97cdb6d",
+      "blockNumber": 159177581,
+      "totalMinted": "28",
+      "totalSupply": "28",
+      "classification": "metadata-without-supported-media"
+    },
+    {
+      "key": "10:0x3adc72e4e159da2f4a4f42190f0f7fae4bc5e592",
+      "contract": "0x3adc72e4e159da2f4a4f42190f0f7fae4bc5e592",
+      "unit": "release-contract",
+      "createdBlock": 114958284,
+      "blockHash": "0xabd0f93db5136a10f2dfd0a0c187bb6d89af6bc52ebfd9cbbabfc5693b985128",
+      "transaction": "0xfa2f3709e20e171d2385bdf3a70077c9fff95158a8589774226e158938fe695b",
+      "createdAt": "2024-01-17T18:15:45.000000Z",
+      "creator": "0x499d1A76692908aBDAf39D0AFAa4D944cc66Eb80",
+      "implementation": "0x000000000053C8B49473BDa4b8d1DC47CAb411CC",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:29:42.144Z",
+        "blockNumber": 159168502,
+        "totalMinted": "1",
+        "status": "unavailable",
+        "tokenId": "1",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      },
+      "checkedAt": "2026-11-06T08:32:23.135Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+        },
+        {
+          "name": "tokenURI:1",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f2d51424c6f664e496531685478563242536d573133615573536e564b46726356784c6850703437416977772f310000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:2",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000002",
+          "error": "execution reverted"
+        }
+      ],
+      "metadataAttempts": [
+        {
+          "tokenId": "1",
+          "uri": "ar://-QBLofNIe1hTxV2BSmW13aUsSnVKFrcVxLhPp47Aiww/1",
+          "requests": [
+            {
+              "url": "https://arweave.net/-QBLofNIe1hTxV2BSmW13aUsSnVKFrcVxLhPp47Aiww/1",
+              "status": 302,
+              "redirect": "https://7eaexiptjb5vqu6flwauuznv3wssystvjillofoexbh2pdwarmga.arweave.net/-QBLofNIe1hTxV2BSmW13aUsSnVKFrcVxLhPp47Aiww/1"
+            },
+            {
+              "url": "https://7eaexiptjb5vqu6flwauuznv3wssystvjillofoexbh2pdwarmga.arweave.net/-QBLofNIe1hTxV2BSmW13aUsSnVKFrcVxLhPp47Aiww/1",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        }
+      ],
+      "block": "0x97cdb6d",
+      "blockNumber": 159177581,
+      "totalMinted": "1",
+      "totalSupply": "1",
+      "classification": "storage-unavailable"
+    },
+    {
+      "key": "10:0x04a508f86ebcf3942a390ae959c6578b9efe2f38",
+      "contract": "0x04a508f86ebcf3942a390ae959c6578b9efe2f38",
+      "unit": "release-contract",
+      "createdBlock": 113794270,
+      "blockHash": "0x84cbb17e85f677a7ce87b250eba5dde5ef521ee3583dad7c1d57128055ac5b43",
+      "transaction": "0xfaaf4c08d8c9a9c6436122a9e77fe0d8227fb88f05b5b62579d1e037379cd20e",
+      "createdAt": "2023-12-21T19:35:17.000000Z",
+      "creator": "0x50fd881bd599cC5750Bb615a6EC2e0F52567f383",
+      "implementation": "0x0000000000c78FEE168002D89D141517b8E6E0FE",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:31:56.249Z",
+        "blockNumber": 159168569,
+        "totalMinted": "2",
+        "status": "unavailable",
+        "tokenId": "2",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      },
+      "checkedAt": "2026-11-06T08:32:24.063Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000002"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000002"
+        },
+        {
+          "name": "tokenURI:1",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f457a6d5a4a666a5351316d44377978522d4c57495742346c376a385a66334d6b44516d41325676486d756f2f310000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:2",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000002",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f457a6d5a4a666a5351316d44377978522d4c57495742346c376a385a66334d6b44516d41325676486d756f2f320000000000000000000000000000"
+        }
+      ],
+      "metadataAttempts": [
+        {
+          "tokenId": "1",
+          "uri": "ar://EzmZJfjSQ1mD7yxR-LWIWB4l7j8Zf3MkDQmA2VvHmuo/1",
+          "requests": [
+            {
+              "url": "https://arweave.net/EzmZJfjSQ1mD7yxR-LWIWB4l7j8Zf3MkDQmA2VvHmuo/1",
+              "status": 302,
+              "redirect": "https://cm4zsjpy2jbvta7pfri7rnmilapcl3r7df7xgjanbgansw6htlva.arweave.net/EzmZJfjSQ1mD7yxR-LWIWB4l7j8Zf3MkDQmA2VvHmuo/1"
+            },
+            {
+              "url": "https://cm4zsjpy2jbvta7pfri7rnmilapcl3r7df7xgjanbgansw6htlva.arweave.net/EzmZJfjSQ1mD7yxR-LWIWB4l7j8Zf3MkDQmA2VvHmuo/1",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "2",
+          "uri": "ar://EzmZJfjSQ1mD7yxR-LWIWB4l7j8Zf3MkDQmA2VvHmuo/2",
+          "metadata": {
+            "animation_url": "",
+            "artist": "Pack Records",
+            "artwork": {
+              "mimeType": "image/png",
+              "uri": "ar://k6Nu6jYRle9ZWh7kKQOzI0DYAlnoYu_AJhUcOzqUoIY",
+              "nft": null
+            },
+            "attributes": [
+              {
+                "trait_type": "Blood Cultures - \"Information\"",
+                "value": "Song Edition"
+              },
+              {
+                "trait_type": "Tier",
+                "value": "Forever"
+              }
+            ],
+            "bpm": null,
+            "credits": null,
+            "description": "Originally released on Blood Cultures' 2nd LP - Oh Uncertainty! A Universe Despairs (2019)",
+            "duration": 70,
+            "external_url": "https://www.sound.xyz/packrecs/blood-cultures-information",
+            "genre": "Experimental",
+            "image": "ar://k6Nu6jYRle9ZWh7kKQOzI0DYAlnoYu_AJhUcOzqUoIY",
+            "isrc": null,
+            "key": null,
+            "license": null,
+            "locationCreated": null,
+            "losslessAudio": "",
+            "lyrics": null,
+            "mimeType": "audio/wave",
+            "nftSerialNumber": 2,
+            "name": "Blood Cultures - \"Information\" - Forever #2",
+            "originalReleaseDate": null,
+            "project": null,
+            "publisher": null,
+            "recordLabel": null,
+            "tags": null,
+            "title": "Blood Cultures - \"Information\"",
+            "trackNumber": 1,
+            "version": "sound-edition-20220930",
+            "visualizer": null
+          },
+          "requests": [
+            {
+              "url": "https://arweave.net/EzmZJfjSQ1mD7yxR-LWIWB4l7j8Zf3MkDQmA2VvHmuo/2",
+              "status": 302,
+              "redirect": "https://cm4zsjpy2jbvta7pfri7rnmilapcl3r7df7xgjanbgansw6htlva.arweave.net/EzmZJfjSQ1mD7yxR-LWIWB4l7j8Zf3MkDQmA2VvHmuo/2"
+            },
+            {
+              "url": "https://cm4zsjpy2jbvta7pfri7rnmilapcl3r7df7xgjanbgansw6htlva.arweave.net/EzmZJfjSQ1mD7yxR-LWIWB4l7j8Zf3MkDQmA2VvHmuo/2",
+              "status": 200
+            }
+          ]
+        }
+      ],
+      "block": "0x97cdb6d",
+      "blockNumber": 159177581,
+      "totalMinted": "2",
+      "totalSupply": "2",
+      "classification": "metadata-without-supported-media"
+    },
+    {
+      "key": "10:0x755586809d7153ecf18931e8ca5560a3ba0fc135",
+      "contract": "0x755586809d7153ecf18931e8ca5560a3ba0fc135",
+      "unit": "release-contract",
+      "createdBlock": 112545652,
+      "blockHash": "0x7ceeebd21c6249c21aa5a38f3e372992a83f15b6f6951f4b60378cad5c24a9f5",
+      "transaction": "0xf462f7ec44236f5fc89ed27799fd477ae5c45daacaa29ffba58318133dbdaa13",
+      "createdAt": "2023-11-22T21:54:41.000000Z",
+      "creator": "0xd9c0f7408550FfFa543a4c725b7EbE05883fE434",
+      "implementation": "0x0000000000c78FEE168002D89D141517b8E6E0FE",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:34:08.383Z",
+        "blockNumber": 159168635,
+        "totalMinted": "4",
+        "status": "unavailable",
+        "tokenId": "4",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      },
+      "checkedAt": "2026-11-06T08:32:25.676Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000004"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000004"
+        },
+        {
+          "name": "tokenURI:1",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f4464676b44727870384d6c754742464e597133436b6c4d6a7472476d5067394b344f72456f303049702d772f310000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:4",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000004",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f4464676b44727870384d6c754742464e597133436b6c4d6a7472476d5067394b344f72456f303049702d772f330000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:2",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000002",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f5a4e334345326a71376c57625f61486742457a43394f32596f6b697a4d45694b4356616b506f5432756d412f310000000000000000000000000000"
+        }
+      ],
+      "metadataAttempts": [
+        {
+          "tokenId": "1",
+          "uri": "ar://DdgkDrxp8MluGBFNYq3CklMjtrGmPg9K4OrEo00Ip-w/1",
+          "metadata": {
+            "animation_url": "",
+            "artist": "Dabow",
+            "artwork": {
+              "mimeType": "image/png",
+              "uri": "ar://1_aMYapl2TXVyzts1nCEcefA19dAu2uXAVFK_wDSRQI",
+              "nft": null
+            },
+            "attributes": [
+              {
+                "trait_type": "EMERGENCY",
+                "value": "Song Edition"
+              },
+              {
+                "trait_type": "Tier",
+                "value": "Forever"
+              }
+            ],
+            "bpm": null,
+            "credits": null,
+            "description": "this is an\n\nemer\ngen\ncy\n\nare you there?",
+            "duration": 123,
+            "external_url": "https://www.sound.xyz/dabowmusic/emergency",
+            "genre": "Electronic",
+            "image": "ar://1_aMYapl2TXVyzts1nCEcefA19dAu2uXAVFK_wDSRQI",
+            "isrc": null,
+            "key": null,
+            "license": null,
+            "locationCreated": null,
+            "losslessAudio": "",
+            "lyrics": null,
+            "mimeType": "audio/wave",
+            "nftSerialNumber": 1,
+            "name": "EMERGENCY - Forever #1",
+            "originalReleaseDate": null,
+            "project": null,
+            "publisher": null,
+            "recordLabel": null,
+            "tags": null,
+            "title": "EMERGENCY",
+            "trackNumber": 1,
+            "version": "sound-edition-20220930",
+            "visualizer": null
+          },
+          "requests": [
+            {
+              "url": "https://arweave.net/DdgkDrxp8MluGBFNYq3CklMjtrGmPg9K4OrEo00Ip-w/1",
+              "status": 302,
+              "redirect": "https://bxmcidv4nhyms3qycfgwflocsjjshnvruy7a6sxa5lckgtiiu7wa.arweave.net/DdgkDrxp8MluGBFNYq3CklMjtrGmPg9K4OrEo00Ip-w/1"
+            },
+            {
+              "url": "https://bxmcidv4nhyms3qycfgwflocsjjshnvruy7a6sxa5lckgtiiu7wa.arweave.net/DdgkDrxp8MluGBFNYq3CklMjtrGmPg9K4OrEo00Ip-w/1",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "tokenId": "4",
+          "uri": "ar://DdgkDrxp8MluGBFNYq3CklMjtrGmPg9K4OrEo00Ip-w/3",
+          "requests": [
+            {
+              "url": "https://arweave.net/DdgkDrxp8MluGBFNYq3CklMjtrGmPg9K4OrEo00Ip-w/3",
+              "status": 302,
+              "redirect": "https://bxmcidv4nhyms3qycfgwflocsjjshnvruy7a6sxa5lckgtiiu7wa.arweave.net/DdgkDrxp8MluGBFNYq3CklMjtrGmPg9K4OrEo00Ip-w/3"
+            },
+            {
+              "url": "https://bxmcidv4nhyms3qycfgwflocsjjshnvruy7a6sxa5lckgtiiu7wa.arweave.net/DdgkDrxp8MluGBFNYq3CklMjtrGmPg9K4OrEo00Ip-w/3",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "2",
+          "uri": "ar://ZN3CE2jq7lWb_aHgBEzC9O2YokizMEiKCVakPoT2umA/1",
+          "requests": [
+            {
+              "url": "https://arweave.net/ZN3CE2jq7lWb_aHgBEzC9O2YokizMEiKCVakPoT2umA/1",
+              "status": 302,
+              "redirect": "https://mto4ee3i5lxflg75uhqaitgc6twzrisiwmyercqjk2sd5bhwxjqa.arweave.net/ZN3CE2jq7lWb_aHgBEzC9O2YokizMEiKCVakPoT2umA/1"
+            },
+            {
+              "url": "https://mto4ee3i5lxflg75uhqaitgc6twzrisiwmyercqjk2sd5bhwxjqa.arweave.net/ZN3CE2jq7lWb_aHgBEzC9O2YokizMEiKCVakPoT2umA/1",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        }
+      ],
+      "block": "0x97cdb6d",
+      "blockNumber": 159177581,
+      "totalMinted": "4",
+      "totalSupply": "4",
+      "classification": "metadata-without-supported-media"
+    },
+    {
+      "key": "10:0x1bfc0624b52e870cc00d4e39995c75c7da8763d3",
+      "contract": "0x1bfc0624b52e870cc00d4e39995c75c7da8763d3",
+      "unit": "release-contract",
+      "createdBlock": 110659660,
+      "blockHash": "0x4a9c0fef99637b178f1ebb9229eab10960b869e3f02a46b1cb193ceab9bec62f",
+      "transaction": "0x9c44fc22f3b2714ce4e43ec5859d851976a392d2708bbf3212ce57b3656dbe4c",
+      "createdAt": "2023-10-10T06:08:17.000000Z",
+      "creator": "0xE4c80780CC7fc7047bCcB30e2CbcB67400752a88",
+      "implementation": "0x0000000000c78FEE168002D89D141517b8E6E0FE",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:35:58.934Z",
+        "blockNumber": 159168690,
+        "totalMinted": "91",
+        "status": "unavailable",
+        "tokenId": "91",
+        "reason": "Last minted token metadata unavailable; token may have burned or storage is unavailable."
+      },
+      "checkedAt": "2026-11-06T08:32:27.514Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x000000000000000000000000000000000000000000000000000000000000005b"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x000000000000000000000000000000000000000000000000000000000000005b"
+        },
+        {
+          "name": "tokenURI:1",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f664f45364a33667677367555436b62396670515f673167375635613970544a56326676376a4672567853512f310000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:91",
+          "data": "0xc87b56dd000000000000000000000000000000000000000000000000000000000000005b",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003361723a2f2f664f45364a33667677367555436b62396670515f673167375635613970544a56326676376a4672567853512f383700000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:2",
+          "data": "0xc87b56dd0000000000000000000000000000000000000000000000000000000000000002",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003261723a2f2f664f45364a33667677367555436b62396670515f673167375635613970544a56326676376a4672567853512f320000000000000000000000000000"
+        },
+        {
+          "name": "tokenURI:45",
+          "data": "0xc87b56dd000000000000000000000000000000000000000000000000000000000000002d",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003361723a2f2f664f45364a33667677367555436b62396670515f673167375635613970544a56326676376a4672567853512f343300000000000000000000000000"
+        }
+      ],
+      "metadataAttempts": [
+        {
+          "tokenId": "1",
+          "uri": "ar://fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/1",
+          "requests": [
+            {
+              "url": "https://arweave.net/fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/1",
+              "status": 302,
+              "redirect": "https://ptqtuj3x57b2xfaki36x5fb7qnmdwv4wxwstevoz7p5yywwvyusa.arweave.net/fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/1"
+            },
+            {
+              "url": "https://ptqtuj3x57b2xfaki36x5fb7qnmdwv4wxwstevoz7p5yywwvyusa.arweave.net/fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/1",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "91",
+          "uri": "ar://fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/87",
+          "requests": [
+            {
+              "url": "https://arweave.net/fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/87",
+              "status": 302,
+              "redirect": "https://ptqtuj3x57b2xfaki36x5fb7qnmdwv4wxwstevoz7p5yywwvyusa.arweave.net/fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/87"
+            },
+            {
+              "url": "https://ptqtuj3x57b2xfaki36x5fb7qnmdwv4wxwstevoz7p5yywwvyusa.arweave.net/fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/87",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        },
+        {
+          "tokenId": "2",
+          "uri": "ar://fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/2",
+          "metadata": {
+            "animation_url": "",
+            "artist": "Mija",
+            "artwork": {
+              "mimeType": "image/png",
+              "uri": "ar://kqCoMGIS87kzbj6pgGneLVqVr20ZyNdWWfy8dh3v454",
+              "nft": null
+            },
+            "attributes": [
+              {
+                "trait_type": "Groove (Jacob Grosse Remix)",
+                "value": "Song Edition"
+              },
+              {
+                "trait_type": "Tier",
+                "value": "Forever"
+              }
+            ],
+            "bpm": null,
+            "credits": null,
+            "description": "Official remix of my song \"Groove\"  and genesis mint by Jacob Grosse\n\nFollow @jacobgrosse \nhttps://www.instagram.com/jacobgrosse/\n\nOut everywhere 10/20/23\n\nJoin the group chat: \nhttps://guild.xyz/mija-collectors\n",
+            "duration": 266,
+            "external_url": "https://www.sound.xyz/mija/groove-jacob-grosse-remix",
+            "genre": "Techno",
+            "image": "ar://kqCoMGIS87kzbj6pgGneLVqVr20ZyNdWWfy8dh3v454",
+            "isrc": null,
+            "key": null,
+            "license": null,
+            "locationCreated": null,
+            "losslessAudio": "",
+            "lyrics": null,
+            "mimeType": "audio/wave",
+            "nftSerialNumber": 2,
+            "name": "Groove (Jacob Grosse Remix) - Forever #2",
+            "originalReleaseDate": null,
+            "project": null,
+            "publisher": null,
+            "recordLabel": null,
+            "tags": null,
+            "title": "Groove (Jacob Grosse Remix)",
+            "trackNumber": 1,
+            "version": "sound-edition-20220930",
+            "visualizer": null
+          },
+          "requests": [
+            {
+              "url": "https://arweave.net/fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/2",
+              "status": 302,
+              "redirect": "https://ptqtuj3x57b2xfaki36x5fb7qnmdwv4wxwstevoz7p5yywwvyusa.arweave.net/fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/2"
+            },
+            {
+              "url": "https://ptqtuj3x57b2xfaki36x5fb7qnmdwv4wxwstevoz7p5yywwvyusa.arweave.net/fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/2",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "tokenId": "45",
+          "uri": "ar://fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/43",
+          "requests": [
+            {
+              "url": "https://arweave.net/fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/43",
+              "status": 302,
+              "redirect": "https://ptqtuj3x57b2xfaki36x5fb7qnmdwv4wxwstevoz7p5yywwvyusa.arweave.net/fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/43"
+            },
+            {
+              "url": "https://ptqtuj3x57b2xfaki36x5fb7qnmdwv4wxwstevoz7p5yywwvyusa.arweave.net/fOE6J3fvw6uUCkb9fpQ_g1g7V5a9pTJV2fv7jFrVxSQ/43",
+              "status": 429
+            }
+          ],
+          "error": "All tested storage routes unavailable"
+        }
+      ],
+      "block": "0x97cdb6d",
+      "blockNumber": 159177581,
+      "totalMinted": "91",
+      "totalSupply": "91",
+      "classification": "metadata-without-supported-media"
+    },
+    {
+      "key": "1:0x5254cbc0e342e228872e5aedc34624c7c556e63e",
+      "contract": "0x5254cbc0e342e228872e5aedc34624c7c556e63e",
+      "unit": "release-contract",
+      "createdBlock": 18342099,
+      "blockHash": "0x943985dbdcc029499aeae071f77626726da1a595936eed539d8cb32dc226a5c8",
+      "transaction": "0xa6a5fccff36acfa7c25ab1b47e66164bf78721a8994c4a61db2814ae37ad9a7d",
+      "createdAt": "2023-10-13T14:34:47.000000Z",
+      "creator": "0x1f35E74d2bB0A43fE79cA376eaD63dA7c926e455",
+      "implementation": null,
+      "chainId": 1,
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "factoryVersion": 1,
+      "prior": {
+        "checkedAt": "2026-11-06T03:19:31.508Z",
+        "blockNumber": 26353073,
+        "totalMinted": "0",
+        "status": "unminted",
+        "reason": "totalMinted() is zero at the recorded block; no minted token can be recovered."
+      },
+      "checkedAt": "2026-11-06T08:32:29.383Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "metadataAttempts": [],
+      "block": "0x19223c9",
+      "blockNumber": 26354633,
+      "totalMinted": "0",
+      "totalSupply": "0",
+      "classification": "unminted"
+    },
+    {
+      "key": "10:0x4afd9b01fa95d2c4dec83af8435082c6de9f7a03",
+      "contract": "0x4afd9b01fa95d2c4dec83af8435082c6de9f7a03",
+      "unit": "release-contract",
+      "createdBlock": 118289310,
+      "blockHash": "0xc418e7b0a6aedf599d4b0b9af9e9e6a4f230f34f5ea5a3971736e39257d23a00",
+      "transaction": "0x2a0176ef5695875662149cd1ad4d877f81dcd2bec203b2d4e994a19ae983bb1c",
+      "createdAt": "2024-04-03T20:49:57.000000Z",
+      "creator": "0x625c2295BCf8D74aa22F0d1AfAC7267c37806D2e",
+      "implementation": "0x000000000053C8B49473BDa4b8d1DC47CAb411CC",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:21:43.690Z",
+        "blockNumber": 159168263,
+        "totalMinted": "0",
+        "status": "unminted",
+        "reason": "totalMinted() is zero at the recorded block; no minted token can be recovered."
+      },
+      "checkedAt": "2026-11-06T08:32:30.042Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "metadataAttempts": [],
+      "block": "0x97cdb6d",
+      "blockNumber": 159177581,
+      "totalMinted": "0",
+      "totalSupply": "0",
+      "classification": "unminted"
+    },
+    {
+      "key": "10:0x36a564b9449df71714c528364fae4ca768c09361",
+      "contract": "0x36a564b9449df71714c528364fae4ca768c09361",
+      "unit": "release-contract",
+      "createdBlock": 114697276,
+      "blockHash": "0x21faef4d7c761dab47075daf94dc828427469c72ce494f9fdc3cc3929a85741a",
+      "transaction": "0xe4722bdf1d41fd54cc171f3c4996b00cd284160c6a958cc936090e38a8b54942",
+      "createdAt": "2024-01-11T17:15:29.000000Z",
+      "creator": "0xeE59A331BD2195d4619c1C46B438e94B16b7dC3B",
+      "implementation": "0x000000000053C8B49473BDa4b8d1DC47CAb411CC",
+      "chainId": 10,
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "factoryVersion": 2,
+      "prior": {
+        "checkedAt": "2026-11-06T03:30:09.299Z",
+        "blockNumber": 159168516,
+        "totalMinted": "0",
+        "status": "unminted",
+        "reason": "totalMinted() is zero at the recorded block; no minted token can be recovered."
+      },
+      "checkedAt": "2026-11-06T08:32:30.698Z",
+      "calls": [
+        {
+          "name": "totalMinted",
+          "data": "0xa2309ff8",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "name": "totalSupply",
+          "data": "0x18160ddd",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "metadataAttempts": [],
+      "block": "0x97cdb6d",
+      "blockNumber": 159177581,
+      "totalMinted": "0",
+      "totalSupply": "0",
+      "classification": "unminted"
+    }
+  ],
+  "scope": "Twelve unresolved contracts spaced across ordered ETH/OP lists, plus three unminted controls. Not a random or exhaustive sample.",
+  "updatedAt": "2026-11-06T08:32:31.034Z"
+}

@@ -1,0 +1,71 @@
+{
+  "scope": "Original token metadata media playback beyond 0.5s; not whole-track listening.",
+  "results": [
+    {
+      "contract": "0xbd87f4da73ff92a7bea31e2de20e14f9829f42fe",
+      "title": "Keepers of Wisdom_02",
+      "status": "no_animation_in_token1",
+      "note": "Collection preview video does not establish audio attachment for this token."
+    },
+    {
+      "contract": "0x4ac251da6af98d7018cb8a722b3b5ab602f75fcf",
+      "title": "Dreamvibe  1",
+      "mediaURI": "ipfs://bafybeih3varhgsitblrzi36i67tykzlp4tegv5yizwhvdlizv62jjh257q",
+      "url": "https://magic.decentralized-content.com/ipfs/bafybeih3varhgsitblrzi36i67tykzlp4tegv5yizwhvdlizv62jjh257q",
+      "checkedAt": "2026-11-06T09:30:52.531Z",
+      "status": "played",
+      "currentTime": 0.5069,
+      "duration": 116.5,
+      "readyState": 4,
+      "videoWidth": 0,
+      "videoHeight": 0,
+      "audioDecodedBytes": 225060,
+      "videoDecodedBytes": 0
+    },
+    {
+      "contract": "0x10d32bf55f5cbe66b068f2109ecf7475f0631d53",
+      "title": "Planet X 1/25",
+      "mediaURI": "ipfs://bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+      "url": "https://magic.decentralized-content.com/ipfs/bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+      "checkedAt": "2026-11-06T09:30:59.775Z",
+      "status": "played",
+      "currentTime": 0.506357,
+      "duration": 240.083333,
+      "readyState": 4,
+      "videoWidth": 3000,
+      "videoHeight": 3000,
+      "audioDecodedBytes": 31315,
+      "videoDecodedBytes": 2608532
+    },
+    {
+      "contract": "0x1baf95bab135ea5817606dc8ec27e64dabe17101",
+      "title": "Tragg Park 1/25",
+      "mediaURI": "ipfs://bafybeifdmnnbetd42ympa33t5ncwl3ynalvvirmd3lgypcp3iomenwnhvi?id=1",
+      "url": "https://magic.decentralized-content.com/ipfs/bafybeifdmnnbetd42ympa33t5ncwl3ynalvvirmd3lgypcp3iomenwnhvi?id=1",
+      "checkedAt": "2026-11-06T09:31:06.803Z",
+      "status": "played",
+      "currentTime": 0.503763,
+      "duration": 136.2,
+      "readyState": 3,
+      "videoWidth": 3000,
+      "videoHeight": 3000,
+      "audioDecodedBytes": 31649,
+      "videoDecodedBytes": 1802442
+    },
+    {
+      "contract": "0x2db9c2070d4cc57345d34e526e998d3fb6c71548",
+      "title": "Oms at Play 1/25",
+      "mediaURI": "ipfs://bafybeiab45b67pci3pthibi6je4nxzyskand6xyc734nt5b2r3zlk26pca?id=1",
+      "url": "https://magic.decentralized-content.com/ipfs/bafybeiab45b67pci3pthibi6je4nxzyskand6xyc734nt5b2r3zlk26pca?id=1",
+      "checkedAt": "2026-11-06T09:31:14.041Z",
+      "status": "played",
+      "currentTime": 0.504275,
+      "duration": 186.266667,
+      "readyState": 3,
+      "videoWidth": 3000,
+      "videoHeight": 3000,
+      "audioDecodedBytes": 32052,
+      "videoDecodedBytes": 3765788
+    }
+  ]
+}

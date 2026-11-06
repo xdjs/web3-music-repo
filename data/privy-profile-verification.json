@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-06T08:31:11.331Z",
+  "scope": "Real app components with mocked Privy SDK and account HTTP responses; verifies UI state and browser playlist flow, not real authentication.",
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "linkedWallets": 2,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "linkedWallets": 2,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "linkedWallets": 2,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "linkedWallets": 2,
+      "overflow": false
+    }
+  ],
+  "saveLoad": true,
+  "linkWallet": true,
+  "onboardingRetry": true,
+  "logoutClearsWallets": true,
+  "errors": []
+}

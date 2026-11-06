@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-11-06T09:31:20.292Z",
+  "base": "http://127.0.0.1:4191",
+  "passed": true,
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "sort": "oldest+newest",
+      "artwork": 0,
+      "icons": "svg",
+      "mute": "pass",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "sort": "oldest+newest",
+      "artwork": 0,
+      "icons": "svg",
+      "mute": "pass",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "sort": "oldest+newest",
+      "artwork": 0,
+      "icons": "svg",
+      "mute": "hidden-mobile",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "sort": "oldest+newest",
+      "artwork": 0,
+      "icons": "svg",
+      "mute": "hidden-mobile",
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

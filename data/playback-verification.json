@@ -1,0 +1,102 @@
+{
+  "checkedAt": "2026-11-06T02:19:25.448Z",
+  "method": "Chromium actual playback beyond 0.2 seconds; not full-track audition",
+  "results": [
+    {
+      "id": "record-00396a23",
+      "title": "Sara Phillips - i don't feel like dancing anymore",
+      "chainId": 1,
+      "url": "https://arweave.net/Urs1Qmf1JdtxuXue13xRCzOMPPOyPXyyZXtxv81WNJM",
+      "status": "played",
+      "duration": 82.181225,
+      "currentTime": 0.213792,
+      "readyState": 4
+    },
+    {
+      "id": "sound-v2-10-328e63fd31dc236b6ac63027d50a3d32f8e8eee1",
+      "title": "Paper Planes - Golden Egg",
+      "chainId": 10,
+      "url": "https://arweave.net/oSLRbdpqUX55PIZ24vLxAkqxOSEuorxT6xBC8tB3d68",
+      "status": "played",
+      "duration": 199.919977,
+      "currentTime": 0.211992,
+      "readyState": 4
+    },
+    {
+      "id": "park-zora-happy-friday-v2",
+      "title": "happy friday v2",
+      "chainId": 8453,
+      "url": "https://ipfs.filebase.io/ipfs/bafybeihksahxcntj5fbcpoa5davkrkycvdvgnw5md7ql2nnkqkqum4p6hu",
+      "status": "played",
+      "duration": 176.6192,
+      "currentTime": 0.211181,
+      "readyState": 4
+    },
+    {
+      "id": "park-s001-do-it-2",
+      "title": "DO IT",
+      "chainId": 7777777,
+      "url": "https://ipfs.filebase.io/ipfs/bafybeif46gpt7vkldut46cbk4kdpkjtktkolbdtrnahsz46yky52q45zci",
+      "status": "unavailable",
+      "error": "Playback timeout"
+    },
+    {
+      "id": "record-not4me",
+      "title": "NOT4ME",
+      "chainId": 1,
+      "url": "https://arweave.net/a4b8Spd5rcouKzttmYQnToH_d6nW6Sc-dMY2bHvpTW4",
+      "status": "played",
+      "duration": 174.097007,
+      "currentTime": 0.211694,
+      "readyState": 4
+    },
+    {
+      "id": "record-e6516778",
+      "title": "New Paths",
+      "chainId": 1,
+      "url": "https://arweave.net/9DjN99Zte5y0crJnN85W79vrIWWuLdT9JV_0803S5nM",
+      "status": "played",
+      "duration": 238.110249,
+      "currentTime": 0.212972,
+      "readyState": 4
+    },
+    {
+      "id": "record-28b708ee",
+      "title": "stay solid.",
+      "chainId": 1,
+      "url": "https://arweave.net/TI_HNj3lJejaTqug_is9Px5ac2zKDLIWCy5WrngKkQo",
+      "status": "played",
+      "duration": 211.612925,
+      "currentTime": 0.213222,
+      "readyState": 4
+    },
+    {
+      "id": "record-b31b7bac",
+      "title": "CULTURE",
+      "chainId": 1,
+      "url": "https://arweave.net/NB1qJroaeffWvA9QaLJRPS1WFTvKcEI-MbMCgh79E2U",
+      "status": "played",
+      "duration": 97.636372,
+      "currentTime": 0.213315,
+      "readyState": 4
+    },
+    {
+      "id": "park-sound-rainwater",
+      "title": "Rainwater",
+      "chainId": 1,
+      "url": "https://arweave.net/BxjiCEmJ2waBSjjyy5dCJ9ffvLEDlqCQasFEsge3PLk",
+      "status": "played",
+      "duration": 216.405333,
+      "currentTime": 0.210119,
+      "readyState": 4
+    },
+    {
+      "id": "record-462bf6be",
+      "title": "Part Three: Escapism (In The Meantime Short Film)",
+      "chainId": 1,
+      "url": "https://ipfs.filebase.io/ipfs/bafybeidpi2naqwwj437zo4bsnbdqt7cotutrpdv32ackapseezk7joes5i",
+      "status": "unavailable",
+      "error": "Playback timeout"
+    }
+  ]
+}

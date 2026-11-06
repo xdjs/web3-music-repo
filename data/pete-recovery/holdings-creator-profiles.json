@@ -1,0 +1,108 @@
+[
+  {
+    "address": "0x6fe5948A5a162580e4F35c915C08346393977a19",
+    "url": "https://gql.opensea.io/graphql?app_id=os2-web&operationName=AccountPanelQuery&variables=%7B%22addresses%22%3A%5B%220x6fe5948a5a162580e4f35c915c08346393977a19%22%5D%2C%22includeWallets%22%3Afalse%7D&extensions=%7B%22persistedQuery%22%3A%7B%22sha256Hash%22%3A%2262c10353ff1d7bca1d4f5c6d28d4687cd21b1ce698102152a16469ff5784541e%22%2C%22version%22%3A1%7D%7D",
+    "status": 200,
+    "body": {
+      "data": {
+        "walletProfilesByAddresses": [
+          {
+            "__typename": "Profile",
+            "address": "0x6fe5948a5a162580e4f35c915c08346393977a19",
+            "colorId": null,
+            "displayName": null,
+            "imageUrl": "https://i2c.seadn.io/profiles/0x6fe5948a5a162580e4f35c915c08346393977a19/avatar/89c5c8acdf202fd51c8762f20de86d/0589c5c8acdf202fd51c8762f20de86d.jpeg",
+            "kind": "WALLET",
+            "externalIdentity": null,
+            "profileIsVerified": false,
+            "isCompromised": false,
+            "nftPfp": null,
+            "username": null
+          }
+        ]
+      },
+      "extensions": {
+        "debugInfo": {
+          "additionalInformation": {
+            "x-trace-id": "38ed6dfeb324a5f0fe5ba62b51378a11",
+            "x-cache": {
+              "graphqlapi": {
+                "control": "private, max-age=2, stale-while-revalidate=3",
+                "status": "MISS"
+              },
+              "lc-353af61d7ef3": {
+                "REMOTE_HIT_STALE": 1
+              },
+              "lc-814195803ebd": {
+                "REMOTE_HIT_STALE": 1
+              }
+            },
+            "x-ratelimit-remaining": 399,
+            "cache-control": "no-store",
+            "x-duration-ms": {
+              "federation": 42.3,
+              "graphqlapi": 41.3
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "address": "0xEdDd437F511f63e465302D7aaD4DC0Bc41260001",
+    "url": "https://gql.opensea.io/graphql?app_id=os2-web&operationName=AccountPanelQuery&variables=%7B%22addresses%22%3A%5B%220xeddd437f511f63e465302d7aad4dc0bc41260001%22%5D%2C%22includeWallets%22%3Afalse%7D&extensions=%7B%22persistedQuery%22%3A%7B%22sha256Hash%22%3A%2262c10353ff1d7bca1d4f5c6d28d4687cd21b1ce698102152a16469ff5784541e%22%2C%22version%22%3A1%7D%7D",
+    "status": 200,
+    "body": {
+      "data": {
+        "walletProfilesByAddresses": [
+          {
+            "__typename": "Profile",
+            "address": "0xeddd437f511f63e465302d7aad4dc0bc41260001",
+            "colorId": null,
+            "displayName": "mavitaylor",
+            "imageUrl": "https://i2c.seadn.io/profiles/0xeddd437f511f63e465302d7aad4dc0bc41260001/avatar/6fab890ccb8ad34848452ebeea541e/1b6fab890ccb8ad34848452ebeea541e.jpeg",
+            "kind": "EXTERNAL",
+            "externalIdentity": {
+              "handle": "mavitaylor",
+              "provider": {
+                "key": "farcaster",
+                "__typename": "ExternalIdentityProvider"
+              },
+              "__typename": "ExternalIdentity",
+              "badgeKey": "farcaster"
+            },
+            "profileIsVerified": false,
+            "isCompromised": false,
+            "nftPfp": null,
+            "username": "mavitaylor"
+          }
+        ]
+      },
+      "extensions": {
+        "debugInfo": {
+          "additionalInformation": {
+            "x-duration-ms": {
+              "federation": 32,
+              "graphqlapi": 31.1
+            },
+            "cache-control": "no-store",
+            "x-ratelimit-remaining": 399,
+            "x-cache": {
+              "lc-814195803ebd": {
+                "MISS": 1
+              },
+              "graphqlapi": {
+                "control": "private, max-age=2, stale-while-revalidate=3",
+                "status": "MISS"
+              },
+              "lc-353af61d7ef3": {
+                "MISS": 1
+              }
+            },
+            "x-trace-id": "49f835e392f6b3e1601580030bdda11a"
+          }
+        }
+      }
+    }
+  }
+]

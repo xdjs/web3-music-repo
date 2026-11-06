@@ -1,0 +1,19 @@
+{
+  "appId": "cmlzjxfrh00ak0cjvlap9d3gm",
+  "name": "Music Nerd",
+  "allowedDomains": [
+    "https://musicnerd.xyz",
+    "https://www.musicnerd.net",
+    "https://www.musicnerd.xyz",
+    "https://lab.musicnerd.net",
+    "https://musicnerd.net"
+  ],
+  "emailAuth": true,
+  "verificationKey": "-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEV1O0RR/SAKgZhGiPGB210h2ulCa2KsEsuTe6O6PjuepUdi295Q2Vjcexy4Kj2I2sXmcId1buUYDYDbdVkMWEUg==-----END PUBLIC KEY-----",
+  "clientId": "client-WY6W53j4q1dvp15KJx1zc88MivQTj6NJ66TZHLhFYf3X5",
+  "clientName": "Music NFT Recovery \u2014 local",
+  "clientOrigins": [
+    "http://127.0.0.1:4190",
+    "http://localhost:4190"
+  ]
+}

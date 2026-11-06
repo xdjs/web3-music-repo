@@ -1,0 +1,36 @@
+{
+  "chainId": 137,
+  "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+  "fromBlock": 51327653,
+  "toBlock": 51327752,
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+        "topics": [
+          "0xe94db3a31c09b7894f023c1f9114859672be916ffa8282215d7d43595bdcb3e7"
+        ],
+        "fromBlock": "0x30f32a5",
+        "toBlock": "0x30f3308"
+      }
+    ]
+  },
+  "scope": "Bounded provider capability probe, not a factory census. An empty result only covers this exact range.",
+  "providers": {
+    "drpc": {
+      "url": "https://polygon.drpc.org",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-06T08:37:35.550Z",
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": []
+      },
+      "status": "range-read",
+      "logCount": 0
+    }
+  }
+}

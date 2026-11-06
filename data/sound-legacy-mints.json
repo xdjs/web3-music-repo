@@ -1,0 +1,385 @@
+{
+  "source": "https://github.com/soundxyz/protocol/blob/master/contracts/ArtistCreatorV2.sol",
+  "factory": "0x78e3adc0e811e4f93bd9f1f9389b923c9a3355c2",
+  "chainId": 1,
+  "toBlock": 26346664,
+  "startedAt": "2026-11-05T05:53:41.553Z",
+  "artists": [
+    {
+      "contract": "0xffcf0f0ce6c72ae208a2002f286d37b26e4275de",
+      "name": "Charm Taylor",
+      "fromBlock": 15509833,
+      "toBlock": 26346664,
+      "status": "indexed",
+      "mintedTokenCount": 25,
+      "mintedTokens": [
+        {
+          "tokenId": "340282366920938463463374607431768211457",
+          "blockNumber": 15541646,
+          "transaction": "0xbbc35cd7c11832f6d7bdfae3e5344caf817b337bedd07e413dc51560114464b7"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211458",
+          "blockNumber": 15541647,
+          "transaction": "0x409ddc113a42fa0f338afadf1eec09b4b4473765b9c84bdb6b04eb54b9a1619a"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211459",
+          "blockNumber": 15541647,
+          "transaction": "0xadd60a6ce96b7b4e80754c2a2d64b49c00e30609d6f4ac36c30ec95c0c7e9079"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211460",
+          "blockNumber": 15541647,
+          "transaction": "0x1df13073d65926541653e5bb45fd6c7c0044a7a63250dc37c277d86cb4df55dd"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211461",
+          "blockNumber": 15541647,
+          "transaction": "0x4a06457c5437fa47825ef122d3437a639e9f25a4551457b1be8accdb57ac5d20"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211462",
+          "blockNumber": 15541647,
+          "transaction": "0x8e2cfffc09f79ed0381a0cc047a0c96c140c29bc3d7ce62b1784dfa848ced424"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211463",
+          "blockNumber": 15541647,
+          "transaction": "0xc24e422e3cc5689b423296aa538fd8224a6dfbb19e42a66e0145a43dce7017cd"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211464",
+          "blockNumber": 15541647,
+          "transaction": "0xa5c8db93222d70ebd95e4fbb0c1c848b406eb0e831ef8de62355b99d291c8944"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211465",
+          "blockNumber": 15541650,
+          "transaction": "0x613159de85cfa65e2347a10c33ec1d54e3dd594366f1dbce19037c105c8d1b70"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211466",
+          "blockNumber": 15541651,
+          "transaction": "0x8411a2b72254db57118b364c445e6433ac3bca449934bd22311515f1ad2908c2"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211467",
+          "blockNumber": 15541651,
+          "transaction": "0x28c0154526b479a25b291b255a81598ee7f6c3ddc84b30478200da1002d1d7a0"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211468",
+          "blockNumber": 15541651,
+          "transaction": "0xcf7677af1bf379f5c8f2d539dc947dfa135fcbaa52495aa064a31636f9ccbf06"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211469",
+          "blockNumber": 15541652,
+          "transaction": "0xd8d4caf3e97b2e52fce34d65678a6785317858d28a6db8280d4795bf4ca041d4"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211470",
+          "blockNumber": 15541654,
+          "transaction": "0xda96999b494761b78608ca3a1ce993faa359b2db6c5a86513a6b2f34e5e5cd85"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211471",
+          "blockNumber": 15541659,
+          "transaction": "0x09c1398e84033e0f4e476dd29029992c7221e684add02a9a0e20b48f0dc1df4f"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211472",
+          "blockNumber": 15541660,
+          "transaction": "0x35d54551c2c5e02f136f806114176aaf436b67c8710959aca2c936d235cfbd68"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211473",
+          "blockNumber": 15541667,
+          "transaction": "0x1c0ced6345a4fa6b0ca7f05a08b0754f781d9102ae4bbf6662412fdb5cb6f021"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211474",
+          "blockNumber": 15541667,
+          "transaction": "0x0b6a53d2a8152e73ee6a3c13c5283d67359eea7df6d1c2cc73e4b531a88d2937"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211475",
+          "blockNumber": 15541673,
+          "transaction": "0x0b7675c7685805029f16350704f90b52dcafce9450bf5d622638d4501992a792"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211476",
+          "blockNumber": 15541679,
+          "transaction": "0xa15f679319132ac952fabdeafb5a90e7094646ae80bad25dccba3433da0ddaeb"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211477",
+          "blockNumber": 15541688,
+          "transaction": "0x43b2a6da333a97f9849ee98e70d5a2b2ef07c10271e542e116e7ce75aa9db184"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211478",
+          "blockNumber": 15541690,
+          "transaction": "0x8af577045ae6ae88d85c4ca6c036713db1cd687e15c697d5b57c457634f1fb64"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211479",
+          "blockNumber": 15541695,
+          "transaction": "0x8fec59f4b3e39d6789a6984923fd6163cb22dd9676e2d3ec23b9dd6a1e2f8f24"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211480",
+          "blockNumber": 15541697,
+          "transaction": "0x6fe15294a98860d0b84865a2c3256d3698328e627a42749c644e846f7c4d77e2"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211481",
+          "blockNumber": 15541739,
+          "transaction": "0xd1038fa267550cbed9170be049228caada548df46d08bb11baffdee5ba7aef28"
+        }
+      ],
+      "releases": [
+        {
+          "editionId": "1",
+          "mintedPurchaseTokenCount": 25,
+          "status": "resolved",
+          "recordId": "sound-legacy-ffcf0f0ce6c72ae208a2002f286d37b26e4275de-1"
+        }
+      ]
+    },
+    {
+      "contract": "0xfa947daea2b941da51ed42147cb9e8cdcf6445fc",
+      "name": "Sound of Fractures",
+      "fromBlock": 15442894,
+      "toBlock": 26346664,
+      "status": "indexed",
+      "mintedTokenCount": 25,
+      "mintedTokens": [
+        {
+          "tokenId": "340282366920938463463374607431768211457",
+          "blockNumber": 15492538,
+          "transaction": "0xd650ee0408c454849cc18be654990bf732dad96d44c15ded08f63accc90723a9"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211458",
+          "blockNumber": 15492538,
+          "transaction": "0x91502fdff08820f46ec03d27eee41224fb5b329eeb3a09a9c7cfebe4671704ad"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211459",
+          "blockNumber": 15492538,
+          "transaction": "0xa6d2d020ab6c5a50ba7933be4fdfcf347c0a661c53373a1270fc810d40787a95"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211460",
+          "blockNumber": 15492538,
+          "transaction": "0xf40fd34c4b1a5b0cbda88df0f74e1e7aa97b054beeb3981b830c75bb41ab8e76"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211461",
+          "blockNumber": 15492538,
+          "transaction": "0xf1606e4e163146390b29151bf7051498835584b424bc97b128354fea9a7d2ed2"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211462",
+          "blockNumber": 15492538,
+          "transaction": "0x217f35ee585cfbbe1161b7c15b0b9857cdb05a2aee2fd58610fa0b94499ecde2"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211463",
+          "blockNumber": 15492538,
+          "transaction": "0x455fc41e8cf49787eca1df0b0b4be8921adca72931cdd2dbccc706244e34ec33"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211464",
+          "blockNumber": 15492538,
+          "transaction": "0xf6ea7aabae793880d3a30dd10bcae43f0e61ae9d014bf506d4dfec397fe6fa69"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211465",
+          "blockNumber": 15492538,
+          "transaction": "0x1c6c6ff3e14be47729932106ac3fbf404a21ffaa41c67eab1526b4f5f2335f35"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211466",
+          "blockNumber": 15492538,
+          "transaction": "0xc12673c5f0be5b7e19a0977be27858f7bcd53591dbeb5407bcc9369204cf1328"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211467",
+          "blockNumber": 15492538,
+          "transaction": "0x9f4e5499f97311c2110226022ed50bf3163bfaf80555f1efaa9ca0cb033c11fe"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211468",
+          "blockNumber": 15492540,
+          "transaction": "0x207d419a0861548ae1b8d2993502c82fe65867c1b9a38a8355031c0d87a8fd9c"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211469",
+          "blockNumber": 15492541,
+          "transaction": "0xe885268cbf132d5c9d3fdf2371b81c0569e322aad01f935eec84b87fe042371c"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211470",
+          "blockNumber": 15492543,
+          "transaction": "0x990f76b69c7a881e58648fe2dd0a97274691ea407db3543942ff5c8950f4dd62"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211471",
+          "blockNumber": 15492544,
+          "transaction": "0xd1e091d0dca23a46f54163024f5dd1fca51ed49f12c906f1473970de30a1c0e8"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211472",
+          "blockNumber": 15492546,
+          "transaction": "0xc6329edc37298de0e8a5d2d7ab9b8df1fbf39228644618d2d709640fbbdecfda"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211473",
+          "blockNumber": 15492549,
+          "transaction": "0x9ead204a4a769507a13864ab23567f7dcae911451e7bb15984e4fcb30d4526cb"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211474",
+          "blockNumber": 15492551,
+          "transaction": "0x29f2813e9923d75c770615e9baec39373f20e71e51c1812fc80d38c19d624508"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211475",
+          "blockNumber": 15492552,
+          "transaction": "0xca543967fc09505d929048cb4317977388e7199499e64df74183bdeb422e4d4e"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211476",
+          "blockNumber": 15492555,
+          "transaction": "0xb57337c968f8230b59a4c5ca945e4dde7dc3215ae93b03eaff7b429f4260145d"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211477",
+          "blockNumber": 15492557,
+          "transaction": "0x97f915075502204a84021d16a61bfaf5ebf1b481b9a2d551852fa4b581c47dc5"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211478",
+          "blockNumber": 15492568,
+          "transaction": "0x39bbd8588203942cfcc6adaad97f12e7618a619057c376cac2bf272f8f4d0822"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211479",
+          "blockNumber": 15492572,
+          "transaction": "0x501f5ef136e2d5203736576c2fc673de6d7d5a911daf0ff2d935628f0680c459"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211480",
+          "blockNumber": 15492583,
+          "transaction": "0xb3796b0bd60b23dc7d5506fe6ad4d23e33567d25e36fd04199b2ea38727abf69"
+        },
+        {
+          "tokenId": "340282366920938463463374607431768211481",
+          "blockNumber": 15492584,
+          "transaction": "0x294f9ef92a63e1d670a6e4d0ed39dc92975d906a641b042b7c73c267227726b5"
+        }
+      ],
+      "releases": [
+        {
+          "editionId": "1",
+          "mintedPurchaseTokenCount": 25,
+          "status": "resolved",
+          "recordId": "sound-legacy-fa947daea2b941da51ed42147cb9e8cdcf6445fc-1"
+        }
+      ]
+    },
+    {
+      "contract": "0x9ab9a36423e7cdf5f32b5663a475327d2bfb4d09",
+      "name": "Healy",
+      "status": "unavailable",
+      "error": "Log index HTTP 429"
+    },
+    {
+      "contract": "0xb16a1f57c6e6017b0b604b6e05b5b3ae40bdbff3",
+      "name": "TAROT",
+      "status": "unavailable",
+      "error": "Log index rate limit; checkpoint retained for a later retry"
+    },
+    {
+      "contract": "0x311a0220397457b5b0f8f7569d87b1b5d79da629",
+      "name": "Lackhoney",
+      "status": "unavailable",
+      "error": "Log index rate limit; checkpoint retained for a later retry"
+    },
+    {
+      "contract": "0x08056544987f28d3134fe4ce48a8002ec1bfc277",
+      "name": "Xcelencia",
+      "status": "unavailable",
+      "error": "Log index rate limit; checkpoint retained for a later retry"
+    },
+    {
+      "contract": "0x8b64bbf8e0b14aa3d7f5f6ddcb7553706c9c6ef3",
+      "name": "Jamee Cornelia",
+      "status": "unavailable",
+      "error": "Log index rate limit; checkpoint retained for a later retry"
+    },
+    {
+      "contract": "0xab80184b3bba02e975b6494d570232fb6c6973f1",
+      "name": "Black Dave",
+      "status": "unavailable",
+      "error": "Log index rate limit; checkpoint retained for a later retry"
+    },
+    {
+      "contract": "0x21f53279d74f019b4452237851ce14f37eddc3b9",
+      "name": "the park",
+      "status": "unavailable",
+      "error": "Log index rate limit; checkpoint retained for a later retry"
+    },
+    {
+      "contract": "0x28b708ee88e608f3307a7d41b930312fc9c9e632",
+      "name": "Iman Europe",
+      "status": "unavailable",
+      "error": "Log index rate limit; checkpoint retained for a later retry"
+    },
+    {
+      "contract": "0x6961d139da937ce5227eafe0aefe77b979b12181",
+      "name": "sober rob",
+      "status": "unavailable",
+      "error": "Log index rate limit; checkpoint retained for a later retry"
+    }
+  ],
+  "records": [
+    {
+      "id": "sound-legacy-ffcf0f0ce6c72ae208a2002f286d37b26e4275de-1",
+      "artist": "Charm Taylor",
+      "title": "infinite",
+      "chainId": 1,
+      "contract": "0xffcf0f0ce6c72ae208a2002f286d37b26e4275de",
+      "tokenId": "340282366920938463463374607431768211481",
+      "kind": "audio",
+      "imageURI": "ar://2wid3B3kqP4mg0tGxjTA1lWz465THDEmQco6n-KZK8U",
+      "platform": "Sound",
+      "collection": "infinite",
+      "note": "Original Sound artist-contract release. Edition grouping follows purchase events, with a matching mint event for this token.",
+      "discovery": "https://github.com/soundxyz/protocol/blob/master/contracts/ArtistCreatorV2.sol",
+      "checkedBlock": 26346664,
+      "checkedAt": "2026-11-05T05:53:43.280Z"
+    },
+    {
+      "id": "sound-legacy-fa947daea2b941da51ed42147cb9e8cdcf6445fc-1",
+      "artist": "Sound of Fractures",
+      "title": "No One Knows Me Like You ft. Scott Quinn",
+      "chainId": 1,
+      "contract": "0xfa947daea2b941da51ed42147cb9e8cdcf6445fc",
+      "tokenId": "340282366920938463463374607431768211481",
+      "kind": "audio",
+      "imageURI": "ar://uXz_JgUC31ZpUW37WvKUG7TGkbU9ROwWK9taFH5LMWw",
+      "platform": "Sound",
+      "collection": "No One Knows Me Like You ft. Scott Quinn",
+      "note": "Original Sound artist-contract release. Edition grouping follows purchase events, with a matching mint event for this token.",
+      "discovery": "https://github.com/soundxyz/protocol/blob/master/contracts/ArtistCreatorV2.sol",
+      "checkedBlock": 26346664,
+      "checkedAt": "2026-11-05T05:53:45.270Z"
+    }
+  ],
+  "retryable": true,
+  "stoppedReason": "Public log index HTTP 429; unresolved artists retained for later retry."
+}

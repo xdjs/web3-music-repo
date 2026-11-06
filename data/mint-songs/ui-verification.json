@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-11-06T08:37:52.898Z",
+  "records": 162,
+  "polygon": 20,
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "filters": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "filters": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "filters": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "filters": true,
+      "overflow": false
+    }
+  ],
+  "playback": {
+    "time": 1.009998,
+    "duration": 195.5,
+    "readyState": 4,
+    "source": "https://ipfs.filebase.io/ipfs/QmQVPTbUxaMFtzqvYwpdRVCmVcb66PzyxGDxFBicNnsBE3"
+  },
+  "errors": []
+}

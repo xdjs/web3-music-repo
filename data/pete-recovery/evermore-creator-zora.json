@@ -1,0 +1,43 @@
+{
+  "status": 200,
+  "body": {
+    "data": {
+      "profile": {
+        "__typename": "GraphQLWalletProfile",
+        "__isIGraphQLProfile": "GraphQLWalletProfile",
+        "profilePinnedPosts": [],
+        "profileZoraPosts": {
+          "edges": [
+            {
+              "node": {
+                "__typename": "GraphQLZora721Collection",
+                "id": "R3JhcGhRTFpvcmE3MjFDb2xsZWN0aW9uOkVUSEVSRVVNLU1BSU5ORVQuMHgxYzhjOWRjODQ2NzA1ZTFiN2EwYTEzNzM2NmQ0ZGUyYzUwM2EyZDFk",
+                "__isIGraphQLPostBase": "GraphQLZora721Collection",
+                "address": "0x1c8c9dc846705e1b7a0a137366d4de2c503a2d1d",
+                "chainId": 1,
+                "mediaContent": null,
+                "creatorProfile": {
+                  "__typename": "GraphQLWalletProfile",
+                  "id": "R3JhcGhRTFdhbGxldFByb2ZpbGU6MHg2ZmU1OTQ4YTVhMTYyNTgwZTRmMzVjOTE1YzA4MzQ2MzkzOTc3YTE5",
+                  "profileId": "rein.eth",
+                  "profilePinnedPosts": []
+                }
+              },
+              "cursor": "eyJfaWQiOiB7IiRvaWQiOiAiNjMwYTU0OGUyNWMwMzlhY2MzYzFiNDdmIn0sICJwZXJfY29sbGVjdGlvbiI6IHsiRW50Q29sbGVjdGlvbiI6IHsiX2lkIjogeyIkb2lkIjogIjYzMGE1NDhlMjVjMDM5YWNjM2MxYjQ3ZiJ9fX19"
+            }
+          ],
+          "pageInfo": {
+            "endCursor": "eyJfaWQiOiB7IiRvaWQiOiAiNjMwYTU0OGUyNWMwMzlhY2MzYzFiNDdmIn0sICJwZXJfY29sbGVjdGlvbiI6IHsiRW50Q29sbGVjdGlvbiI6IHsiX2lkIjogeyIkb2lkIjogIjYzMGE1NDhlMjVjMDM5YWNjM2MxYjQ3ZiJ9fX19",
+            "hasNextPage": false
+          }
+        },
+        "vcFollowingStatus": "UNKNOWN",
+        "handle": "rein.eth",
+        "profileId": "rein.eth",
+        "creatorCoin": null,
+        "walletAddress": "0x6fe5948a5a162580e4f35c915c08346393977a19",
+        "id": "R3JhcGhRTFdhbGxldFByb2ZpbGU6MHg2ZmU1OTQ4YTVhMTYyNTgwZTRmMzVjOTE1YzA4MzQ2MzkzOTc3YTE5"
+      }
+    }
+  }
+}

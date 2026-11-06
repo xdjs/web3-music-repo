@@ -1,0 +1,23 @@
+{
+  "verifiedAt": "2026-11-06T09:26:08.868Z",
+  "appId": "cmlzjxfrh00ak0cjvlap9d3gm",
+  "clientId": "client-WY6W53j4q1dvp15KJx1zc88MivQTj6NJ66S4CKzsxEAdJ",
+  "clientName": "Music NFT Recovery — production",
+  "allowedOrigins": [
+    "https://web3-music-repo.vercel.app"
+  ],
+  "emailAuth": true,
+  "walletAuth": true,
+  "httpStatus": 200,
+  "saveToast": "App client was updated successfully",
+  "defaultClientOriginsPreserved": [
+    "https://musicnerd.xyz",
+    "https://musicnerd.net",
+    "https://www.musicnerd.net"
+  ],
+  "localClientOriginsPreserved": [
+    "http://127.0.0.1:4190",
+    "http://localhost:4190"
+  ],
+  "personalLoginTested": false
+}

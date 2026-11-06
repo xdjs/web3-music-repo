@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-11-06T09:54:29.899Z",
+  "scope": "Real Privy SDK and configured recovery client, guest login modal only. No OTP sent; no wallet signed; real account completion not verified.",
+  "config": {
+    "enabled": true,
+    "appId": "cmlzjxfrh00ak0cjvlap9d3gm",
+    "clientId": "client-WY6W53j4q1dvp15KJx1zc88MivQTj6NJ66S4CKzsxEAdJ",
+    "mode": "Music Nerd production identity; private account playlist storage",
+    "playlistStorage": "private-blob"
+  },
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "emailFormVisible": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "emailFormVisible": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "emailFormVisible": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "emailFormVisible": true
+    }
+  ],
+  "authResponses": [
+    {
+      "url": "https://auth.privy.io/api/v1/apps/cmlzjxfrh00ak0cjvlap9d3gm",
+      "status": 200
+    }
+  ],
+  "errors": []
+}

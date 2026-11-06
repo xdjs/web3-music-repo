@@ -1,0 +1,20 @@
+{
+  "renderedAt": "2026-11-06T10:23:45.583Z",
+  "dimensions": {
+    "width": 1200,
+    "height": 630
+  },
+  "reference": "https://musicnerd.net/social/music-nerd-record-sleeve-v1.png",
+  "brandReference": "https://musicnerd.net/",
+  "logoSource": "https://musicnerd.net/musicNerdLogo.png",
+  "fontStack": "ui-sans-serif, system-ui, sans-serif",
+  "platformFonts": [
+    {
+      "familyName": ".SF NS",
+      "postScriptName": ".SFNS-Bold",
+      "isCustomFont": false,
+      "glyphCount": 17
+    }
+  ],
+  "notes": "Current live Music Nerd loads no custom fonts. CDP confirms SF NS Bold on macOS. Existing KoHo CSS declarations are not the active website font. Raster output is fixed and self-contained; source assets are local."
+}

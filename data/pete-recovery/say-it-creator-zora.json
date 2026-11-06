@@ -1,0 +1,239 @@
+{
+  "status": 200,
+  "body": {
+    "data": {
+      "profile": {
+        "__typename": "GraphQLAccountProfile",
+        "__isIGraphQLProfile": "GraphQLAccountProfile",
+        "profilePinnedPosts": [],
+        "profileZoraPosts": {
+          "edges": [
+            {
+              "node": {
+                "__typename": "GraphQLZora1155Token",
+                "id": "R3JhcGhRTFpvcmExMTU1VG9rZW46Wk9SQS1NQUlOTkVULjB4ODk4N2U0MWUxZDUxMDIyYWFhY2VhNTExM2NjNzE0MzA3NWIwZGU3NS41",
+                "__isIGraphQLPostBase": "GraphQLZora1155Token",
+                "address": "0x8987e41e1d51022aaacea5113cc7143075b0de75",
+                "chainId": 7777777,
+                "__isIGraphQLToken": "GraphQLZora1155Token",
+                "tokenId": "5",
+                "mediaContent": {
+                  "__typename": "GraphQLMediaVideo",
+                  "__isIGraphQLMedia": "GraphQLMediaVideo",
+                  "mimeType": "video/mp4",
+                  "originalUri": "ipfs://bafybeigqzupkk4ap2m2dzsog5wnasneppemgp7lizg6c7msoriufkxeswe",
+                  "previewImage": {
+                    "__typename": "GraphQLMediaImage",
+                    "mimeType": "image/png",
+                    "downloadableUri": "https://magic.decentralized-content.com/ipfs/bafybeih7iojrwuuz5unhoi5jkh7eani4scvmr7nuy7v25k434utvmfkqpq",
+                    "height": 800,
+                    "width": 800,
+                    "blurhash": "eDIF6]9zE0rDVYs5E0bsTLNgNFvy?FI[Iq^-E9pI$dZ~q@$+9$kq%0"
+                  }
+                },
+                "totalTokenMints": "0",
+                "zoraComments": {
+                  "count": 0
+                },
+                "creatorProfile": {
+                  "__typename": "GraphQLAccountProfile",
+                  "id": "R3JhcGhRTEFjY291bnRQcm9maWxlOjY1NTZlMjE3MDBjMGQxNTRlNzYxNTgzZg==",
+                  "profileId": "mavi_taylor",
+                  "profilePinnedPosts": []
+                }
+              },
+              "cursor": "eyJfaWQiOiB7IiRvaWQiOiAiNjVjZjk4NDc0ZDUyYTBiNGU1ZGU4NjBjIn0sICJwZXJfY29sbGVjdGlvbiI6IHsiRW50TWludGFibGUiOiB7Il9pZCI6IHsiJG9pZCI6ICI2NWNmOTg0NzRkNTJhMGI0ZTVkZTg2MGMifX19fQ=="
+            },
+            {
+              "node": {
+                "__typename": "GraphQLZora1155Token",
+                "id": "R3JhcGhRTFpvcmExMTU1VG9rZW46Wk9SQS1NQUlOTkVULjB4ODk4N2U0MWUxZDUxMDIyYWFhY2VhNTExM2NjNzE0MzA3NWIwZGU3NS40",
+                "__isIGraphQLPostBase": "GraphQLZora1155Token",
+                "address": "0x8987e41e1d51022aaacea5113cc7143075b0de75",
+                "chainId": 7777777,
+                "__isIGraphQLToken": "GraphQLZora1155Token",
+                "tokenId": "4",
+                "mediaContent": {
+                  "__typename": "GraphQLMediaVideo",
+                  "__isIGraphQLMedia": "GraphQLMediaVideo",
+                  "mimeType": "video/mp4",
+                  "originalUri": "ipfs://bafybeicfvgoldtmddxxa7fydz4mi4jjgm2hpxictk53coq2loo2vtil5uu",
+                  "previewImage": {
+                    "__typename": "GraphQLMediaImage",
+                    "mimeType": "image/png",
+                    "downloadableUri": "https://magic.decentralized-content.com/ipfs/bafybeifbb6jhog2wosdb5jcjhdukeuwtbqcnpf2kkmlxna26xnaselid2y",
+                    "height": 1538,
+                    "width": 1570,
+                    "blurhash": "eOJkAkD;Mdxp^*EBoixDjYNF02E2t8ocn}xpNF%Ls,WDyD%1R%RkM|"
+                  }
+                },
+                "totalTokenMints": "0",
+                "zoraComments": {
+                  "count": 0
+                },
+                "creatorProfile": {
+                  "__typename": "GraphQLAccountProfile",
+                  "id": "R3JhcGhRTEFjY291bnRQcm9maWxlOjY1NTZlMjE3MDBjMGQxNTRlNzYxNTgzZg==",
+                  "profileId": "mavi_taylor",
+                  "profilePinnedPosts": []
+                }
+              },
+              "cursor": "eyJfaWQiOiB7IiRvaWQiOiAiNjU3YmMxZjMxOWRkNjk5ODk0ZTgyZDhmIn0sICJwZXJfY29sbGVjdGlvbiI6IHsiRW50TWludGFibGUiOiB7Il9pZCI6IHsiJG9pZCI6ICI2NTdiYzFmMzE5ZGQ2OTk4OTRlODJkOGYifX19fQ=="
+            },
+            {
+              "node": {
+                "__typename": "GraphQLZora1155Token",
+                "id": "R3JhcGhRTFpvcmExMTU1VG9rZW46Wk9SQS1NQUlOTkVULjB4ODk4N2U0MWUxZDUxMDIyYWFhY2VhNTExM2NjNzE0MzA3NWIwZGU3NS4z",
+                "__isIGraphQLPostBase": "GraphQLZora1155Token",
+                "address": "0x8987e41e1d51022aaacea5113cc7143075b0de75",
+                "chainId": 7777777,
+                "__isIGraphQLToken": "GraphQLZora1155Token",
+                "tokenId": "3",
+                "mediaContent": {
+                  "__typename": "GraphQLMediaVideo",
+                  "__isIGraphQLMedia": "GraphQLMediaVideo",
+                  "mimeType": "video/quicktime",
+                  "originalUri": "ipfs://bafybeibcvmatqu4cycjcmhrckcbinoexjwwdkl7gnlozoaonjssnhjpojq",
+                  "previewImage": {
+                    "__typename": "GraphQLMediaImage",
+                    "mimeType": "image/png",
+                    "downloadableUri": "https://magic.decentralized-content.com/ipfs/bafybeic2fvgdq4b3c7v44ohjbgnztcsgty2ctuox22kxtqacygpnfjq7o4",
+                    "height": 836,
+                    "width": 950,
+                    "blurhash": "edKJuis.IBSfRko#W.aea#WB0Lt6xuR*j[E2WVofR*oe%2WXR*soay"
+                  }
+                },
+                "totalTokenMints": "0",
+                "zoraComments": {
+                  "count": 0
+                },
+                "creatorProfile": {
+                  "__typename": "GraphQLAccountProfile",
+                  "id": "R3JhcGhRTEFjY291bnRQcm9maWxlOjY1NTZlMjE3MDBjMGQxNTRlNzYxNTgzZg==",
+                  "profileId": "mavi_taylor",
+                  "profilePinnedPosts": []
+                }
+              },
+              "cursor": "eyJfaWQiOiB7IiRvaWQiOiAiNjU2YTE1YTNlYzMyNDI5NDE0NmQzZmVmIn0sICJwZXJfY29sbGVjdGlvbiI6IHsiRW50TWludGFibGUiOiB7Il9pZCI6IHsiJG9pZCI6ICI2NTZhMTVhM2VjMzI0Mjk0MTQ2ZDNmZWYifX19fQ=="
+            },
+            {
+              "node": {
+                "__typename": "GraphQLZora1155Token",
+                "id": "R3JhcGhRTFpvcmExMTU1VG9rZW46Wk9SQS1NQUlOTkVULjB4ODk4N2U0MWUxZDUxMDIyYWFhY2VhNTExM2NjNzE0MzA3NWIwZGU3NS4y",
+                "__isIGraphQLPostBase": "GraphQLZora1155Token",
+                "address": "0x8987e41e1d51022aaacea5113cc7143075b0de75",
+                "chainId": 7777777,
+                "__isIGraphQLToken": "GraphQLZora1155Token",
+                "tokenId": "2",
+                "mediaContent": {
+                  "__typename": "GraphQLMediaVideo",
+                  "__isIGraphQLMedia": "GraphQLMediaVideo",
+                  "mimeType": "video/mp4",
+                  "originalUri": "ipfs://bafybeigqzupkk4ap2m2dzsog5wnasneppemgp7lizg6c7msoriufkxeswe",
+                  "previewImage": {
+                    "__typename": "GraphQLMediaImage",
+                    "mimeType": "image/png",
+                    "downloadableUri": "https://magic.decentralized-content.com/ipfs/bafybeihznwb3azry7kiykiz75tp4idamq7ca5m4zdbbus4bpobcnqospru",
+                    "height": 974,
+                    "width": 960,
+                    "blurhash": "eCI}|-9bM]R5VYoZ9so_T1NMNErp-:IpIW~X9ctlw[aJn1xb9htl$%"
+                  }
+                },
+                "totalTokenMints": "0",
+                "zoraComments": {
+                  "count": 0
+                },
+                "creatorProfile": {
+                  "__typename": "GraphQLAccountProfile",
+                  "id": "R3JhcGhRTEFjY291bnRQcm9maWxlOjY1NTZlMjE3MDBjMGQxNTRlNzYxNTgzZg==",
+                  "profileId": "mavi_taylor",
+                  "profilePinnedPosts": []
+                }
+              },
+              "cursor": "eyJfaWQiOiB7IiRvaWQiOiAiNjU2M2QwYzhjMTk1YzdlZmZiOGM2ZTU3In0sICJwZXJfY29sbGVjdGlvbiI6IHsiRW50TWludGFibGUiOiB7Il9pZCI6IHsiJG9pZCI6ICI2NTYzZDBjOGMxOTVjN2VmZmI4YzZlNTcifX19fQ=="
+            },
+            {
+              "node": {
+                "__typename": "GraphQLZora1155Token",
+                "id": "R3JhcGhRTFpvcmExMTU1VG9rZW46Wk9SQS1NQUlOTkVULjB4ODk4N2U0MWUxZDUxMDIyYWFhY2VhNTExM2NjNzE0MzA3NWIwZGU3NS4x",
+                "__isIGraphQLPostBase": "GraphQLZora1155Token",
+                "address": "0x8987e41e1d51022aaacea5113cc7143075b0de75",
+                "chainId": 7777777,
+                "__isIGraphQLToken": "GraphQLZora1155Token",
+                "tokenId": "1",
+                "mediaContent": {
+                  "__typename": "GraphQLMediaVideo",
+                  "__isIGraphQLMedia": "GraphQLMediaVideo",
+                  "mimeType": "video/mp4",
+                  "originalUri": "ipfs://bafybeichloh4xl6b6xn6jjb745a52urgnddsmcalu6i7eiv4lq2tox6wiq",
+                  "previewImage": {
+                    "__typename": "GraphQLMediaImage",
+                    "mimeType": "image/png",
+                    "downloadableUri": "https://magic.decentralized-content.com/ipfs/bafybeialsjfjqcnixfrqr66biuc26pvcuv2vz4witkksweu3sdqrevyqzy",
+                    "height": 3000,
+                    "width": 3000,
+                    "blurhash": "eMJ*k[wP~CAn5lXz$%xbxbS#5kM|ELr@s8ryJUV@M{r?5jO9jI$*xa"
+                  }
+                },
+                "totalTokenMints": "0",
+                "zoraComments": {
+                  "count": 0
+                },
+                "creatorProfile": {
+                  "__typename": "GraphQLAccountProfile",
+                  "id": "R3JhcGhRTEFjY291bnRQcm9maWxlOjY1NTZlMjE3MDBjMGQxNTRlNzYxNTgzZg==",
+                  "profileId": "mavi_taylor",
+                  "profilePinnedPosts": []
+                }
+              },
+              "cursor": "eyJfaWQiOiB7IiRvaWQiOiAiNjU1N2Y1ODk4NjUxOTFhZmU1MjI2YzQ1In0sICJwZXJfY29sbGVjdGlvbiI6IHsiRW50TWludGFibGUiOiB7Il9pZCI6IHsiJG9pZCI6ICI2NTU3ZjU4OTg2NTE5MWFmZTUyMjZjNDUifX19fQ=="
+            },
+            {
+              "node": {
+                "__typename": "GraphQLZora721Collection",
+                "id": "R3JhcGhRTFpvcmE3MjFDb2xsZWN0aW9uOkVUSEVSRVVNLU1BSU5ORVQuMHgwZTYxNmRmZjhjNGQ5MzQxY2U3Y2ViZTNiZmE4MjlkNzZkZGI0MTBl",
+                "__isIGraphQLPostBase": "GraphQLZora721Collection",
+                "address": "0x0e616dff8c4d9341ce7cebe3bfa829d76ddb410e",
+                "chainId": 1,
+                "mediaContent": {
+                  "__typename": "GraphQLMediaUnknown",
+                  "__isIGraphQLMedia": "GraphQLMediaUnknown",
+                  "mimeType": "audio/wav",
+                  "originalUri": "ipfs://bafybeigcszzt2mrbfqavveii2jc6joa6sgnbcwokoupyafl2mmr5psw66y",
+                  "previewImage": {
+                    "__typename": "GraphQLMediaImage",
+                    "mimeType": "image/png",
+                    "downloadableUri": "https://magic.decentralized-content.com/ipfs/bafybeiebhpnwn35qtpmv6lw4kkefqdgvlgdzynkd7xm6dufl4oo4ssyide",
+                    "height": 3000,
+                    "width": 3000,
+                    "blurhash": "eISXBeer}eo{E0x[s;M{NExb=Qfi9=ai%3D%R$-q$,InjwkVoLVtR$"
+                  }
+                },
+                "creatorProfile": {
+                  "__typename": "GraphQLAccountProfile",
+                  "id": "R3JhcGhRTEFjY291bnRQcm9maWxlOjY1NTZlMjE3MDBjMGQxNTRlNzYxNTgzZg==",
+                  "profileId": "mavi_taylor",
+                  "profilePinnedPosts": []
+                }
+              },
+              "cursor": "eyJfaWQiOiB7IiRvaWQiOiAiNjM4NGQ0NTdhYjBiMmY1NTVkNmMxZDE1In0sICJwZXJfY29sbGVjdGlvbiI6IHsiRW50TWludGFibGUiOiB7Il9pZCI6IHsiJG9pZCI6ICI2NTU3ZjU4OTg2NTE5MWFmZTUyMjZjNDUifX0sICJFbnRDb2xsZWN0aW9uIjogeyJfaWQiOiB7IiRvaWQiOiAiNjM4NGQ0NTdhYjBiMmY1NTVkNmMxZDE1In19fX0="
+            }
+          ],
+          "pageInfo": {
+            "endCursor": "eyJfaWQiOiB7IiRvaWQiOiAiNjM4NGQ0NTdhYjBiMmY1NTVkNmMxZDE1In0sICJwZXJfY29sbGVjdGlvbiI6IHsiRW50TWludGFibGUiOiB7Il9pZCI6IHsiJG9pZCI6ICI2NTU3ZjU4OTg2NTE5MWFmZTUyMjZjNDUifX0sICJFbnRDb2xsZWN0aW9uIjogeyJfaWQiOiB7IiRvaWQiOiAiNjM4NGQ0NTdhYjBiMmY1NTVkNmMxZDE1In19fX0=",
+            "hasNextPage": false
+          }
+        },
+        "vcFollowingStatus": "UNKNOWN",
+        "handle": "mavi_taylor",
+        "profileId": "mavi_taylor",
+        "creatorCoin": null,
+        "publicWallet": {
+          "walletAddress": "0xeddd437f511f63e465302d7aad4dc0bc41260001",
+          "id": "R3JhcGhRTExpbmtlZFdhbGxldFByb2ZpbGU6MHhlZGRkNDM3ZjUxMWY2M2U0NjUzMDJkN2FhZDRkYzBiYzQxMjYwMDAx"
+        },
+        "id": "R3JhcGhRTEFjY291bnRQcm9maWxlOjY1NTZlMjE3MDBjMGQxNTRlNzYxNTgzZg=="
+      }
+    }
+  }
+}

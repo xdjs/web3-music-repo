@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-06T09:35:29.369Z",
+  "base": "http://127.0.0.1:4191",
+  "status": "passed",
+  "checks": [
+    "Create/add/like persists, manual share fallback exposes snapshot link",
+    "Fresh recipient opens escaped read-only snapshot and starts actual original MIAMI media",
+    "Shared playlist Next selects second track in preserved order",
+    "Recipient saves and edits independent copy; original shared snapshot unchanged",
+    "Unknown tracks remain visible without play; repeated IDs selectable; invalid links handled",
+    "Historical playlist starts actual media (for you I bought a ticket to Paris), likes and saves 16 matched tracks in order"
+  ],
+  "errors": [],
+  "historicalLayoutRecheck": {
+    "status": "passed",
+    "viewports": [
+      390
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "note": "Existing personal-track and playlist-track-actions classes reused; all23 historical rows checked, no horizontal overflow, screenshots visually reviewed. No audio test repeated."
+  }
+}
