@@ -1153,7 +1153,14 @@ main {
   height: 3px;
 }
 #audio {
-  display: none;
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: black;
+  border-radius: 8px;
 }
 #audio.video-visible {
   display: block;
@@ -2658,12 +2665,7 @@ body.now-playing-open {
   accent-color: var(--pink);
   height: 3px;
 }
-.now-playing-source {
-  color: var(--muted);
-  font-size: 10px;
-  line-height: 1.5;
-  margin: 20px 0 12px;
-}
+
 @media (max-width: 500px) {
   #now-playing-dialog {
     padding: 12px 20px max(24px, env(safe-area-inset-bottom));
@@ -2693,10 +2695,14 @@ body.now-playing-open {
 }
 
 .now-playing-media {
+  position: relative;
+  aspect-ratio: 1;
   width: min(100%, 46dvh);
   margin: auto;
 }
 .now-playing-media .now-playing-art {
+  position: relative;
+  z-index: 1;
   width: 100%;
   display: block;
 }
@@ -2706,5 +2712,30 @@ body.now-playing-open {
 @media (max-width: 500px) {
   .now-playing-media {
     width: min(100%, 40dvh);
+  }
+}
+
+/* Touch opening still receives accessible focus, without a keyboard-only ring. */
+#now-playing-dialog[data-input-method="pointer"] button:focus-visible,
+[data-now-pointer-focus]:focus-visible {
+  outline: none;
+}
+@media (max-width: 600px), (pointer: coarse) {
+  .now-playing-volume {
+    display: none;
+  }
+}
+
+#player-source:empty {
+  display: none;
+}
+@media (max-width: 600px), (pointer: coarse) {
+  .now-playing-transport [data-now="mute"] {
+    display: none;
+  }
+  .now-playing-transport {
+    display: grid;
+    grid-template-columns: 44px 44px 56px 44px 44px;
+    justify-content: center;
   }
 }

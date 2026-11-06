@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   nftIdentity,
+  applyMediaObservation,
   contentKey,
   makeCandidate,
   buildBundle,
@@ -276,7 +277,12 @@ test("observed selected-media type overrides opaque preserved-audio default only
     id: base.records[0].id,
     status: "played",
     mediaURI: "ar://preserved",
-    playback: { audioDecodedBytes: 100, videoWidth: 320 },
+    playback: {
+      currentTime: 0.5,
+      audioDecodedBytes: 100,
+      videoWidth: 320,
+      videoHeight: 180,
+    },
   };
   assert.equal(base.records[0].kind, "audio");
   const actual = buildBundle(inv, refs, existing, {}, [row]).bundle;
@@ -288,4 +294,47 @@ test("observed selected-media type overrides opaque preserved-audio default only
     ]).bundle.records[0].kind,
     "audio",
   );
+});
+test("native video override requires exact identity, content and decoded advancing media", () => {
+  const r = {
+      id: "verified",
+      chainId: 8453,
+      contract: "0x" + "a".repeat(40),
+      tokenId: "1",
+      kind: "audio",
+    },
+    e = { mediaURI: "ipfs://QmVideo", onchainVerified: false };
+  const observation = {
+    id: r.id,
+    chainId: r.chainId,
+    contract: r.contract,
+    tokenId: r.tokenId,
+    status: "played",
+    mediaURI: "https://ipfs.io/ipfs/QmVideo",
+    evidenceFile: "data/spinamp/video-kind-verification.json",
+    checkedAt: "2026-11-06T18:00:00Z",
+    playback: {
+      currentTime: 0.5,
+      audioDecodedBytes: 0,
+      videoDecodedBytes: 120,
+      videoWidth: 1920,
+      videoHeight: 1080,
+    },
+  };
+  for (const changed of [
+    { mediaURI: "ipfs://QmDifferent" },
+    { id: "other" },
+    { tokenId: "2" },
+    { chainId: 1 },
+    { status: "unavailable" },
+    { playback: { ...observation.playback, currentTime: 0 } },
+  ])
+    assert.equal(
+      applyMediaObservation({ ...r }, { ...e }, { ...observation, ...changed }),
+      false,
+    );
+  assert.equal(applyMediaObservation(r, e, observation), true);
+  assert.equal(r.kind, "video");
+  assert.equal(e.mediaKindEvidence, observation.evidenceFile);
+  assert.equal(e.onchainVerified, false);
 });

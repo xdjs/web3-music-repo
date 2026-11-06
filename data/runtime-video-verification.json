@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-11-06T18:16:58.973Z",
+  "base": "http://127.0.0.1:4191",
+  "engine": "Touch WebKit",
+  "records": [
+    {
+      "name": "Helmet City",
+      "id": "spinamp-4bff201350e878d8dcfc",
+      "responses": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeiflu5sbztdrylwzw7ztiegvn2amgkfqv5ajozx47fuwxozbbscyny",
+          "status": 200
+        },
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeidfyu5wkhhdvlpo35fnyskd6oqtqwyl4eklulfc7reu4lhf5skp6a",
+          "status": 206
+        },
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeidfyu5wkhhdvlpo35fnyskd6oqtqwyl4eklulfc7reu4lhf5skp6a",
+          "status": 206
+        }
+      ],
+      "errors": [],
+      "playing": {
+        "source": "https://ipfs.filebase.io/ipfs/bafybeidfyu5wkhhdvlpo35fnyskd6oqtqwyl4eklulfc7reu4lhf5skp6a",
+        "time": 0.3198554175467236,
+        "paused": false,
+        "width": 1536,
+        "height": 896,
+        "presented": true,
+        "css": "block",
+        "duration": 61.833333333333336,
+        "count": 1,
+        "dialogOpen": true,
+        "artVisible": false
+      },
+      "afterBack": {
+        "time": 0.6988955836039186,
+        "paused": false,
+        "source": "https://ipfs.filebase.io/ipfs/bafybeidfyu5wkhhdvlpo35fnyskd6oqtqwyl4eklulfc7reu4lhf5skp6a"
+      },
+      "passed": true
+    },
+    {
+      "name": "Base Day Two",
+      "id": "spinamp-073e25367a01a4e53532",
+      "responses": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafkreigqhx2t6a2fwcdub62acnnmtrtav54evm6lgkb3v75jgaf74okbia",
+          "status": 200
+        },
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+          "status": 206
+        },
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+          "status": 206
+        },
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+          "status": 206
+        },
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+          "status": 206
+        }
+      ],
+      "errors": [],
+      "playing": {
+        "source": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm",
+        "time": 0.3146665929241574,
+        "paused": false,
+        "width": 1920,
+        "height": 1080,
+        "presented": true,
+        "css": "block",
+        "duration": 44.067,
+        "count": 1,
+        "dialogOpen": true,
+        "artVisible": false
+      },
+      "afterBack": {
+        "time": 0.6682568426673167,
+        "paused": false,
+        "source": "https://ipfs.filebase.io/ipfs/bafybeie7ele6tyjfnjwqxvufnuxadsmpeo3n2rkhhdtv26227ioxekqdfm"
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

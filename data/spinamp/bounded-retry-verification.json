@@ -1,0 +1,96 @@
+{
+  "checkedAt": "2026-11-06T18:18:57.917Z",
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "scope": "One authorized bounded retry of 20 previously unresolved processed-track relations, ten sequential requests of two aliases. No new inventory scan or bundle regeneration.",
+  "batches": 10,
+  "batchSize": 2,
+  "attempted": [
+    {
+      "id": "base/0x66674eA8aE30D399aB34c567c688a7a8be278E8E/0x0eeede68ab658f9b810a31df598d12af693e1983333cc806c866a969118c2371",
+      "error": "canceling statement due to statement timeout"
+    },
+    {
+      "id": "base/0x67288d13898B7ec4a3Cc5F08aBc877f354eaCaA4/0x29fa5e0c071c7f194d84ee131d1bad3221bc0c376988c9c48bb475347e4c2cea",
+      "error": "current transaction is aborted, commands ignored until end of transaction block"
+    },
+    {
+      "id": "base/0x68733a0fc8dEa32535A249cbFccd6Ae0329ce998/0x0100f120e1c4024b5c6f60230cdbef6674dca55aad474153e9abbf6a8dcf011b",
+      "error": "canceling statement due to statement timeout"
+    },
+    {
+      "id": "base/0x68767C3350c0512e1EDf096E33dd90c129667D29/0xe5885a881dc0d7974a16670c6f5c84bec2111b5210ae0019a6209fd9ceedc371",
+      "error": "current transaction is aborted, commands ignored until end of transaction block"
+    },
+    {
+      "id": "base/0x6ff2f9c5a59Adc4618617590A9DC77e5c9e4c68e/0x0208ea3d67c5e874035a83f4fd8172977481184276ad4849820d3bdc51d07629",
+      "error": "canceling statement due to statement timeout"
+    },
+    {
+      "id": "base/0x6fF5a5CbDC51f4e28510CCAf2CC69b6eB5941d73/0x9b0e2e037846264b55ca37fba6cfd8d6b7f513f472470bc15f90ae4d9cf7d510",
+      "error": "current transaction is aborted, commands ignored until end of transaction block"
+    },
+    {
+      "id": "base/0x7177342817802580c33b72a0eEEc27A74D6DB88f/0xfd1808447a881daf6c0c2b5119aba744e8fe32fe7b555b7ab2bc14a55ca83920",
+      "error": "canceling statement due to statement timeout"
+    },
+    {
+      "id": "base/0x71861B43Ed63451036c443766Cb5A50De38bEFD2/0x83aaba2fbcd30c6b7d149643ec93b3b8b06498371165aec5f24e9baa532171e6",
+      "error": "current transaction is aborted, commands ignored until end of transaction block"
+    },
+    {
+      "id": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xffcce90d67702d6c4db055c29387e2f50ce78af71e7f3edd64d8f9b67f131e3e",
+      "error": "canceling statement due to statement timeout"
+    },
+    {
+      "id": "base/0x746efD91eA3499a3959E54e4AEDc309E7158e4DD/0xc04bc1a1f7467155b14129d6cc6da0a497b940b2a3d2c3fc7419cdfbd8684179",
+      "error": "current transaction is aborted, commands ignored until end of transaction block"
+    },
+    {
+      "id": "base/0x76aff22F2c521Ee3B50De8c132DB93BDb3C656c6/0x8b0ed21a338d88395423ee6d9fdb18d520eb763408041c056910f9e4c7773c0a",
+      "error": "canceling statement due to statement timeout"
+    },
+    {
+      "id": "base/0x76c22D9c87E5EC00B422acDee67a1cBf727A3aC7/0x6c98e50195d475e0c3d7f849f2fcbc2dac5650d4a7581fa35ef6f3d98e0555d8",
+      "error": "current transaction is aborted, commands ignored until end of transaction block"
+    },
+    {
+      "id": "base/0x77BAC2909036C2e9A65593b7b369f731117f6378/0x5c8483c55f484f408db9d4d3a1c6dec65ff28b3ce52769d46243cd55a2b75275",
+      "error": "canceling statement due to statement timeout"
+    },
+    {
+      "id": "base/0x78b9d4E1AcccCF0e079F59782fA481fd320F6Bc0/0xbd695c5b5aff1254a67f566851f7f954ec08dec39ed2f2523e79f00d9015bc8d",
+      "error": "current transaction is aborted, commands ignored until end of transaction block"
+    },
+    {
+      "id": "base/0x78ba07F56aAaB3D7380aE554Efe7AC4e7b533063/0xc7c3196fb1b9eb305976e9c49de4939f2700146c047e45a0f4d893e05b359bc4",
+      "error": "canceling statement due to statement timeout"
+    },
+    {
+      "id": "base/0x7B57C6e0CCb160fe3eAB66E23F3E833DB539494B/0x8a1931ccb676eb5d9aa892ebf4d9ddfd81fb6d80e4f4aa35bfb60ed546b5cdfa",
+      "error": "current transaction is aborted, commands ignored until end of transaction block"
+    },
+    {
+      "id": "base/0x7B5FA5CB7Ab9EdCe2AED9aeC2511296E692f800e/0x6898bb3cc5d39d4a800ef6c40b6339000d88dce9b85b397ce0b1b5056d3981ba",
+      "error": "canceling statement due to statement timeout"
+    },
+    {
+      "id": "base/0x7c0a822087611a91C77A5fd825ebf8FEFB0BCbB3/0xcd92bc24848565927fd3aaa4475ad0054d5681f0bd86394d4678e0805776e8cf",
+      "error": "current transaction is aborted, commands ignored until end of transaction block"
+    },
+    {
+      "id": "base/0x7c0bdB0Cf876332258C66Bd04ae80e45F84eF473/0x1e240f02f41da3cb92e535cedfb3c124dad14c52421fc6ae230687efe2f13947",
+      "error": "canceling statement due to statement timeout"
+    },
+    {
+      "id": "base/0x7F41591aAaA6666B88509914078FfF6D5dEc7426/0x14af402be0b01fc6ce8cc6d5b4f287a557db7da354fc98e0ba9a2731f4ffa105",
+      "error": "current transaction is aborted, commands ignored until end of transaction block"
+    }
+  ],
+  "previousResolved": 52818,
+  "currentResolved": 52818,
+  "newlyResolved": 0,
+  "pending": 169,
+  "complete": false,
+  "writerStopped": true,
+  "lockRemains": false
+}

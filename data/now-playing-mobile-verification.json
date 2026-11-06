@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-11-06T18:16:12.068Z",
+  "base": "http://127.0.0.1:4191",
+  "checks": [
+    "Desktop Chromium: no touch/pointer close focus ring; clean chevron; correct volume visibility; Back preserves real playback",
+    "Chromium: keyboard focus ring, Shift+Tab/Tab wrap, Escape and original focus return verified",
+    "Touch WebKit: no touch/pointer close focus ring; clean chevron; correct volume visibility; Back preserves real playback",
+    "WebKit: keyboard focus ring, Shift+Tab/Tab wrap, Escape and original focus return verified"
+  ],
+  "views": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "theme": "light",
+      "volumeVisible": true,
+      "noOverflow": true
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "theme": "dark",
+      "volumeVisible": true,
+      "noOverflow": true
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "theme": "light",
+      "volumeVisible": false,
+      "noOverflow": true
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "theme": "dark",
+      "volumeVisible": false,
+      "noOverflow": true
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "theme": "light",
+      "volumeVisible": false,
+      "noOverflow": true
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "theme": "dark",
+      "volumeVisible": false,
+      "noOverflow": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

@@ -88,11 +88,28 @@
   },
   "portraits": 2382,
   "peteWalletMatchedRecords": 1,
-  "bundleBytes": 59944866,
-  "bundleGzipBytes": 7527947,
+  "bundleBytes": 59945472,
+  "bundleGzipBytes": 7528246,
   "checkedAt": "2026-11-06T17:42:38.972Z",
   "previousPublishedRecords": 3815,
   "previousPublishedIdsRetained": 3815,
   "newSincePreviousPublished": 17580,
-  "bundleSha256": "70ec9f4f6cecf92f304e3845443ac3826e4cc4e405713b44a2036713caf300cb"
+  "bundleSha256": "6aae93f6054e56cb898338941ff3e2b7f935c283ab68027d8eaccf56f1820178",
+  "mediaKindCorrection": {
+    "checkedAt": "2026-11-06T18:16:58.839Z",
+    "evidenceFile": "data/spinamp/video-kind-verification.json",
+    "recordIds": [
+      "spinamp-4bff201350e878d8dcfc",
+      "spinamp-073e25367a01a4e53532",
+      "spinamp-5b4c2c956adbbf20e7f9"
+    ],
+    "previousBundleSha256": "70ec9f4f6cecf92f304e3845443ac3826e4cc4e405713b44a2036713caf300cb"
+  },
+  "lastBoundedRetry": {
+    "checkedAt": "2026-11-06T18:18:57.917Z",
+    "attempted": 20,
+    "newlyResolved": 0,
+    "pending": 169,
+    "evidenceFile": "data/spinamp/bounded-retry-verification.json"
+  }
 }
