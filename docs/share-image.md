@@ -15,3 +15,9 @@ The original lenses logo was downloaded unchanged from **https://musicnerd.net/m
 The actual rendered 1200×630 image and 400×210 thumbnail were visually inspected against the approved live OG. The project title and lenses mark remain legible in the small version. The full image uses the live system font, has no clipped title, no missing logo and no external runtime dependencies. The PNG is self-contained and does not depend on a recipient having the font. Re-rendering checks the local system-font environment so another OS cannot silently substitute its default font.
 
 `public/social/share-image-provenance.json` records reference URLs, rendering dimensions, actual platform font and render time. The existing generic OG/meta and Lab listing integration are owned by the release orchestrator; this task did not modify archive HTML, server routes or the external Lab listing.
+
+## Archive thumbnail correction — November 6, 2026
+
+The archive now uses `public/social/web3-music-archive-v2.png` (1731×909 PNG) for Open Graph and Twitter previews. Compared with MusicNerd.net's reference thumbnail, the previous archive image had an oversized pink label below the vinyl's center. The replacement aligns the smaller label and spindle hole with the concentric grooves while retaining the archive sleeve, lenses identity, title, description and credit.
+
+This asset was corrected with image generation using the previous archive PNG and the live Music Nerd thumbnail as visual references. It is a self-contained raster asset, not an output of the older macOS rendering script above. The previous v1 image and HTML source remain as historical assets. Both share-image URLs in `archive.html` use the new v2 filename to avoid reusing cached image bytes; existing message previews may still retain a cached page card.
