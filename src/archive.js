@@ -765,12 +765,7 @@ let preloader = createMediaPreloader(audio, {
   isBusy: () => !!current || wantsPlayback,
 });
 const nextTrackBuffer = createNextTrackBuffer({
-  canWarm: () =>
-    !!current &&
-    wantsPlayback &&
-    hasPlaybackHeadroom(audio) &&
-    current.kind !== "video" &&
-    !audio.classList.contains("video-visible"),
+  canWarm: () => !!current && wantsPlayback && hasPlaybackHeadroom(audio, 15),
 });
 function warmNextTrack() {
   const id = queue[queueIndex + 1];
@@ -920,8 +915,8 @@ async function play(id, list = null, index = null) {
   if (version !== playVersion) return;
   const mediaURL = r.playback?.workingURL || v.mediaURL;
   audio.preload = "auto";
-  if ((!warmed || audio.src !== mediaURL) && !preloader.take(id, mediaURL))
-    audio.src = mediaURL;
+  // take() already verifies the normalized URL, including local artist media.
+  if (!warmed && !preloader.take(id, mediaURL)) audio.src = mediaURL;
   const exhausted = () => {
     if (version !== playVersion) return;
     clearTimeout(mediaTimer);
@@ -933,7 +928,7 @@ async function play(id, list = null, index = null) {
     notify("This recording’s media could not be played. You can retry.");
   };
   mediaRecovery = createMediaRecovery(audio, {
-    originalURL: r.playback?.workingURL || v.mediaURL,
+    originalURL: warmed ? audio.src : mediaURL,
     shouldPlay: () => wantsPlayback && version === playVersion,
     onSwitch: () => {
       $("#player-source").textContent = "Retrying media…";
@@ -1474,7 +1469,6 @@ function bindPlayerEvents() {
       "video-visible",
       hasVideo || current.kind === "video",
     );
-    if (hasVideo) nextTrackBuffer.cancel();
     nowPlaying?.update();
   };
   bind("loadedmetadata", detectVideo);
