@@ -10,17 +10,20 @@ import {
   useConnectWallet,
 } from "@privy-io/react-auth";
 import { AccountProfile } from "./account-profile.jsx";
+import { createPlaylistSync } from "./playlist-sync.mjs";
 import {
   accountRequest,
   loginErrorMessage,
   linkedWallets,
 } from "./account-client.mjs";
-function Account() {
+function Account({ syncEnabled }) {
   const { ready, authenticated, user, logout, getAccessToken } = usePrivy();
   const [account, setAccount] = useState(null),
     [error, setError] = useState(""),
-    [revision, setRevision] = useState(null),
-    [busy, setBusy] = useState(false),
+    [syncStatus, setSyncStatus] = useState({
+      state: "guest",
+      message: "Saved on this device. Sign in to sync playlists.",
+    }),
     [retry, setRetry] = useState(0),
     [needsMusicNerdAccount, setNeedsMusicNerdAccount] = useState(false);
   const walletAddresses = linkedWallets(user?.linkedAccounts || [])
@@ -102,90 +105,101 @@ function Account() {
       return token;
     });
   };
+  const syncRef = useRef(null);
+  const requestRef = useRef(request);
+  requestRef.current = request;
+  useEffect(() => {
+    const publishLibrary = (detail) =>
+      document.dispatchEvent(
+        new CustomEvent("mn:playlist-library", { detail }),
+      );
+    let currentLibrary = { accountId: null, key: "mn-archive-playlists-v1" };
+    let currentStatus;
+    let sync;
+    try {
+      sync = createPlaylistSync({
+        storage: localStorage,
+        request: (...args) => requestRef.current(...args),
+        isOnline: () => navigator.onLine !== false,
+        isVisible: () => document.visibilityState !== "hidden",
+        onLibrary: (detail) => {
+          currentLibrary = detail;
+          publishLibrary(detail);
+        },
+        onStatus: (detail) => {
+          currentStatus = detail;
+          setSyncStatus(detail);
+          document.dispatchEvent(
+            new CustomEvent("mn:playlist-sync-status", { detail }),
+          );
+        },
+      });
+    } catch {
+      setSyncStatus({
+        state: "retry",
+        message:
+          "Browser storage is unavailable. Playlist sync could not start.",
+      });
+      return;
+    }
+    syncRef.current = sync;
+    const changed = (event) => sync.changed(event.detail?.key);
+    const refresh = () => sync.refresh();
+    const storageChanged = (event) => {
+      if (event.key === currentLibrary.key) {
+        publishLibrary(currentLibrary);
+        sync.changed(event.key);
+      }
+    };
+    const publish = () => {
+      publishLibrary(currentLibrary);
+      if (currentStatus)
+        document.dispatchEvent(
+          new CustomEvent("mn:playlist-sync-status", { detail: currentStatus }),
+        );
+    };
+    document.addEventListener("mn:playlists-changed", changed);
+    document.addEventListener("mn:request-playlist-sync", publish);
+    document.addEventListener("visibilitychange", refresh);
+    window.addEventListener("online", refresh);
+    window.addEventListener("focus", refresh);
+    window.addEventListener("storage", storageChanged);
+    sync.setAccount(ready && authenticated ? user?.id : null, { syncEnabled });
+    return () => {
+      sync.dispose();
+      syncRef.current = null;
+      document.removeEventListener("mn:playlists-changed", changed);
+      document.removeEventListener("mn:request-playlist-sync", publish);
+      document.removeEventListener("visibilitychange", refresh);
+      window.removeEventListener("online", refresh);
+      window.removeEventListener("focus", refresh);
+      window.removeEventListener("storage", storageChanged);
+    };
+  }, [ready, authenticated, user?.id, syncEnabled]);
   useEffect(() => {
     let cancelled = false;
     const controller = new AbortController();
     setAccount(null);
-    setRevision(null);
     setError("");
     setWalletStatus("");
     setNeedsMusicNerdAccount(false);
-    setBusy(false);
     if (ready && authenticated) {
-      (async () => {
-        try {
-          const a = await request("/api/account", {
-            signal: controller.signal,
-          });
-          const library = await request("/api/account/playlists", {
-            signal: controller.signal,
-          });
+      request("/api/account", { signal: controller.signal })
+        .then((value) => {
+          if (!cancelled) setAccount(value);
+        })
+        .catch((error) => {
           if (!cancelled) {
-            setAccount(a);
-            setRevision(library.revision);
+            setError(error.message);
+            setNeedsMusicNerdAccount(error.needsMusicNerdAccount === true);
           }
-        } catch (e) {
-          if (!cancelled) {
-            setError(e.message);
-            setNeedsMusicNerdAccount(e.needsMusicNerdAccount === true);
-          }
-        }
-      })();
+        });
     }
     return () => {
       cancelled = true;
       controller.abort();
     };
   }, [ready, authenticated, user?.id, retry]);
-  async function save() {
-    const startedFor = identity.current;
-    if (!startedFor || !account || revision === null) return;
-    setBusy(true);
-    setError("");
-    try {
-      const playlists = JSON.parse(
-        localStorage.getItem("mn-archive-playlists-v1") || "[]",
-      );
-      const d = await request("/api/account/playlists", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ revision, playlists }),
-      });
-      if (identity.current !== startedFor) return;
-      setRevision(d.revision);
-      setError("Playlists saved to your Music Nerd account.");
-    } catch (e) {
-      if (identity.current === startedFor) setError(e.message);
-    } finally {
-      if (identity.current === startedFor) setBusy(false);
-    }
-  }
-  async function load() {
-    const startedFor = identity.current;
-    if (!startedFor || !account) return;
-    if (
-      !confirm(
-        "Replace this browser’s playlists with your saved account library? Export your local playlists first if you want to keep both.",
-      )
-    )
-      return;
-    setBusy(true);
-    try {
-      const d = await request("/api/account/playlists");
-      if (identity.current !== startedFor) return;
-      localStorage.setItem(
-        "mn-archive-playlists-v1",
-        JSON.stringify(d.playlists),
-      );
-      location.hash = "me?tab=playlists";
-      location.reload();
-    } catch (e) {
-      if (identity.current === startedFor) {
-        setError(e.message);
-        setBusy(false);
-      }
-    }
-  }
   return (
     <div className="account-control">
       {authenticated ? (
@@ -224,16 +238,14 @@ function Account() {
                 }),
               );
               setAccount(null);
-              setRevision(null);
+              syncRef.current?.setAccount(null);
               logout();
             }}
             onRetry={() => setRetry((value) => value + 1)}
             needsMusicNerdAccount={needsMusicNerdAccount}
             showRetry={authenticated && !account && !!error}
-            onSave={save}
-            onLoad={load}
-            canSync={!!account && revision !== null}
-            busy={busy}
+            syncStatus={syncStatus}
+            onSyncRetry={() => syncRef.current?.retry()}
             status={
               error ||
               (authenticated && !account
@@ -288,7 +300,12 @@ function ConfiguredAccount({ config }) {
         embeddedWallets: { ethereum: { createOnLogin: "off" } },
       }}
     >
-      <Account />
+      <Account
+        syncEnabled={
+          config.playlistStorage === "private-blob" ||
+          config.playlistStorage === "archive-server"
+        }
+      />
     </PrivyProvider>
   );
 }

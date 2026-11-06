@@ -11,10 +11,8 @@ export function AccountProfile({
   onLink,
   onConnect,
   onLogout,
-  onSave,
-  onLoad,
-  canSync,
-  busy,
+  syncStatus,
+  onSyncRetry,
   status,
   walletStatus,
   onRetry,
@@ -55,26 +53,14 @@ export function AccountProfile({
             onConnect={onConnect}
             status={walletStatus}
           />
-          <div className="actions">
-            <button
-              className="outline-button"
-              disabled={!canSync || busy}
-              onClick={onSave}
-            >
-              Save playlists to account
-            </button>
-            <button
-              className="outline-button"
-              disabled={!canSync || busy}
-              onClick={onLoad}
-            >
-              Load account playlists
-            </button>
-          </div>
-          <p className="link-note">
-            Playlists below are saved in this browser. Save or load to copy them
-            to or from your Music Nerd account.
+          <p className="link-note" role="status" data-account-playlist-status>
+            {syncStatus?.message || "Connecting playlist sync…"}
           </p>
+          {syncStatus?.canRetry && (
+            <button className="outline-button" onClick={onSyncRetry}>
+              Retry playlist sync
+            </button>
+          )}
         </>
       )}
       {needsMusicNerdAccount && (

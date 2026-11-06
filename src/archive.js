@@ -1,3 +1,4 @@
+import { createHomeSelection } from "./home-selection.mjs";
 import {
   createCollectorSearch,
   collectorSearchMarkup,
@@ -152,15 +153,11 @@ const preferred = [
   "park-sound-rainwater",
   "record-00396a23",
 ];
-const featuredArtists = [
-  "pete-rango",
-  "daniel-allan",
-  "latasha",
-  "iman-europe",
-  "jamee-cornelia",
-  "sound-of-fractures",
-  "the-park",
-];
+let homeStorage;
+try {
+  homeStorage = localStorage;
+} catch {}
+const selectHome = createHomeSelection(homeStorage);
 const artistId = (r) => r.artistId || slug(r.artist);
 const sound = (r) =>
   r.platform === "Sound" || r.originalRelease?.includes("sound.xyz");
@@ -234,12 +231,29 @@ function artistCard(id) {
   return `<a class="artist-card" href="#artist/${esc(id)}">${portraitMarkup(id, true)}<strong>${esc(p.name)}</strong><small>${n} ${id === "pete-rango" ? "credited recordings" : "in the archive"}</small></a>`;
 }
 function home() {
-  const hero = catalogById.get(preferred[0]),
-    picks = preferred
-      .slice(1, 6)
-      .map((id) => catalogById.get(id))
-      .filter(Boolean);
-  return `<div class="intro"><div><h1>The music remains.</h1><p>A living archive of the music NFT era. Follow the records. Press play.</p></div><span class="live-note"><i class="status-dot"></i> Recovery in progress</span></div><section class="hero" aria-label="Featured recording"><img class="hero-bg" src="${esc(image(hero))}" alt=""><div class="hero-copy"><span class="eyebrow"><i class="status-dot"></i> RECOVERED FROM ETHEREUM + ARWEAVE</span><h2>MIAMI<br>FREESTYLE</h2><p class="artist">CAMPFIRE · Aly, Tarot, Elle Symone, Early & TK</p><div class="hero-actions"><button class="primary" data-play="${hero.id}">▶ &nbsp; Listen now</button><a class="hero-proof" href="${recordLink(hero)}?tab=proof">Follow the onchain record ↗</a></div></div><div class="hero-credit"><span>PEOPLE BEHIND THE RECORD</span><a href="#artist/pete-rango"><div>Pete Rango<small>Mixing & mastering</small></div><img src="/people/pete-rango-160.webp" alt=""></a><a href="#artist/abjo"><div>AbJo<small>Production</small></div>${portrait("abjo") ? `<img src="${esc(portrait("abjo"))}" alt="">` : '<span class="credit-initial" aria-hidden="true">A</span>'}</a></div><img class="hero-waveform" src="/recovered/miami-waveform.svg" alt="Waveform derived from the recovered MIAMI FREESTYLE audio"><div class="hero-bottom"><span>◈ Ethereum &nbsp; → &nbsp; Arweave metadata &nbsp; → &nbsp; Original audio</span><span>The platform went offline.<br>The record is still here.</span></div></section><div class="proof-strip"><span><b>${summary.catalogued}</b> records catalogued &nbsp; · &nbsp; <b>${summary.readable}</b> metadata reads recovered</span><span>${summary.chains.join(" · ")}</span><a href="#recovery">Explore the evidence ↗</a></div><section class="section"><div class="section-head"><div><h2>Back in rotation</h2><p>Original music, recovered through its tokens.</p></div><a class="text-button" href="#explore">Explore all ↗</a></div><div class="cards home-cards">${picks.map(card).join("")}</div></section><section class="section"><div class="section-head"><div><h2>The people who made the era</h2><p>Artists, collaborators, and the work that connects them.</p></div><a class="text-button" href="#artists">Meet everyone ↗</a></div><div class="artist-grid">${featuredArtists.map(artistCard).join("")}</div></section><div class="archive-callout"><div class="archive-symbol">◈</div><div><h3>A platform can disappear. A record can survive.</h3><p>We read the original contracts and follow their metadata to the music. Every recording has a trail you can inspect. Web-archived memories are labeled separately.</p></div><a class="outline-button" href="#recovery">How recovery works ↗</a></div>`;
+  const selection = selectHome(
+    preferred.filter((id) => catalogById.get(id)?.playback?.workingURL),
+    people
+      .filter(
+        (p) => p.portrait?.src?.startsWith("/") && artistRecords(p.id).length,
+      )
+      .map((p) => p.id),
+  );
+  const hero = catalogById.get(selection.heroId) || catalog[0];
+  const picks = preferred
+    .filter((id) => id !== hero.id)
+    .map((id) => catalogById.get(id))
+    .filter(Boolean)
+    .slice(0, 5);
+  const featuredArtists = selection.artistIds;
+  const miami = hero.id === "record-69c77ef0";
+  const storage = sourceKind(
+    hero.recovery?.mediaURI || hero.recovery?.mediaURL,
+  );
+  const featureCredits = miami
+    ? `<span>PEOPLE BEHIND THE RECORD</span><a href="#artist/pete-rango"><div>Pete Rango<small>Mixing & mastering</small></div><img src="/people/pete-rango-160.webp" alt=""></a><a href="#artist/abjo"><div>AbJo<small>Production</small></div>${portrait("abjo") ? `<img src="${esc(portrait("abjo"))}" alt="">` : '<span class="credit-initial" aria-hidden="true">A</span>'}</a>`
+    : `<span>FEATURED ARTIST</span><a href="#artist/${esc(artistId(hero))}"><div>${esc(hero.artist)}<small>Explore their music ↗</small></div>${portraitMarkup(artistId(hero))}</a>`;
+  return `<div class="intro"><div><h1>The music remains.</h1><p>A living archive of the music NFT era. Follow the records. Press play.</p></div><span class="live-note"><i class="status-dot"></i> Recovery in progress</span></div><section class="hero" aria-label="Featured recording"><img class="hero-bg" src="${esc(image(hero))}" alt=""><div class="hero-copy"><span class="eyebrow"><i class="status-dot"></i> ${esc(chainNames[hero.chainId])} · ${esc(storage)}</span><h2>${miami ? "MIAMI<br>FREESTYLE" : esc(cleanTitle(hero.title))}</h2><p class="artist">${esc(miami ? "CAMPFIRE · Aly, Tarot, Elle Symone, Early & TK" : hero.artist)}</p><div class="hero-actions"><button class="primary" data-play="${hero.id}">▶ &nbsp; Listen now</button><a class="hero-proof" href="${recordLink(hero)}?tab=proof">Follow the onchain record ↗</a></div></div><div class="hero-credit">${featureCredits}</div>${miami ? '<img class="hero-waveform" src="/recovered/miami-waveform.svg" alt="Waveform derived from the recovered MIAMI FREESTYLE audio">' : ""}<div class="hero-bottom"><span>◈ ${esc(chainNames[hero.chainId])} &nbsp; → &nbsp; ${esc(storage)} &nbsp; → &nbsp; Recording</span><span>The platform went offline.<br>The record is still here.</span></div></section><div class="proof-strip"><span><b>${summary.catalogued}</b> records catalogued &nbsp; · &nbsp; <b>${summary.readable}</b> metadata reads recovered</span><span>${summary.chains.join(" · ")}</span><a href="#recovery">Explore the evidence ↗</a></div><section class="section"><div class="section-head"><div><h2>Back in rotation</h2><p>Original music, recovered through its tokens.</p></div><a class="text-button" href="#explore">Explore all ↗</a></div><div class="cards home-cards">${picks.map(card).join("")}</div></section><section class="section"><div class="section-head"><div><h2>The people who made the era</h2><p>Artists, collaborators, and the work that connects them.</p></div><a class="text-button" href="#artists">Meet everyone ↗</a></div><div class="artist-grid">${featuredArtists.map(artistCard).join("")}</div></section><div class="archive-callout"><div class="archive-symbol">◈</div><div><h3>A platform can disappear. A record can survive.</h3><p>We read the original contracts and follow their metadata to the music. Every recording has a trail you can inspect. Web-archived memories are labeled separately.</p></div><a class="outline-button" href="#recovery">How recovery works ↗</a></div>`;
 }
 const collectorSearch = createCollectorSearch({
   fetchResults: async (value, signal) => {
@@ -745,7 +759,7 @@ function route() {
   document.title =
     (view === "record"
       ? cleanTitle(catalogById.get(id)?.title || "Recording")
-      : "The music remains.") + " — Music Nerd";
+      : "web3-music-archive") + " — Music Nerd";
 }
 async function loadCatalog() {
   const res = await fetch("/api/catalog?view=index");

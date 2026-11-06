@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>web3-music-archive — Music Nerd</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+      }
+      body {
+        background: #000;
+        color: #fff;
+        font-family:
+          ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        -webkit-font-smoothing: antialiased;
+      }
+      .scene {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        background: #000;
+      }
+      .disc {
+        position: absolute;
+        width: 446px;
+        height: 446px;
+        left: 220px;
+        top: 98px;
+        border-radius: 50%;
+        background: repeating-radial-gradient(
+          circle at center,
+          #131313 0px,
+          #131313 1px,
+          #030303 2px,
+          #030303 5px
+        );
+        border: 1px solid #5b5b5b;
+        box-shadow: 0 9px 30px #000;
+      }
+      .disc:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        background: conic-gradient(
+          from -35deg,
+          transparent 0deg,
+          #ffffff16 30deg,
+          transparent 65deg,
+          transparent 165deg,
+          #ffffff12 205deg,
+          transparent 235deg,
+          transparent
+        );
+      }
+      .disc:after {
+        content: "";
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        left: 157px;
+        top: 157px;
+        border-radius: 50%;
+        background: #fb57c0;
+        border: 43px solid #fb57c0;
+        box-shadow: inset 0 0 0 1px #6e1d50;
+      }
+      .sleeve {
+        position: absolute;
+        left: 51px;
+        top: 80px;
+        width: 437px;
+        height: 477px;
+        transform: rotate(-7deg);
+        background: #fb57c0;
+        box-shadow:
+          1px 1px 0 #ff86d2,
+          15px 15px 40px #0008;
+      }
+      .sleeve img {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        left: 44px;
+        top: 15px;
+        object-fit: contain;
+      }
+      .brand {
+        position: absolute;
+        left: 40px;
+        bottom: 39px;
+        font-size: 55px;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: -3.3px;
+        color: #000;
+      }
+      .copy {
+        position: absolute;
+        left: 697px;
+        top: 157px;
+        width: 458px;
+      }
+      h1 {
+        font-size: 70px;
+        line-height: 0.99;
+        font-weight: 700;
+        letter-spacing: -3.5px;
+        margin: 0 0 35px;
+      }
+      p {
+        font-size: 28px;
+        line-height: 1.3;
+        letter-spacing: -0.65px;
+        color: #bebebe;
+        margin: 0;
+        max-width: 440px;
+      }
+      .credit {
+        position: absolute;
+        left: 697px;
+        bottom: 61px;
+        font-size: 19px;
+        line-height: 1.4;
+        letter-spacing: -0.2px;
+        color: #8f8f8f;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      class="scene"
+      aria-label="web3-music-archive by Music Nerd. Explore the songs, collectors and memories. Created by Pete Rango."
+    >
+      <div class="disc" aria-hidden="true"></div>
+      <div class="sleeve">
+        <img src="music-nerd-lenses-original.png" alt="Music Nerd lenses" />
+        <div class="brand">music nerd</div>
+      </div>
+      <div class="copy">
+        <h1>web3-music-<br />archive</h1>
+        <p>Explore the songs,<br />collectors and memories.</p>
+      </div>
+      <div class="credit">A Music Nerd project<br />Created by Pete Rango</div>
+    </main>
+  </body>
+</html>

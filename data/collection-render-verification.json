@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-06T22:05:29.125Z",
+  "base": "http://127.0.0.1:4191",
+  "scope": "Actual collection DOM and native image with delayed wallet-index fixture; no current ownership claim.",
+  "cases": [
+    {
+      "width": 1440,
+      "errors": [],
+      "before": {
+        "top": 202.78125,
+        "imageWidth": 1500,
+        "src": "http://127.0.0.1:4191/media/record-69c77ef0-1500.webp",
+        "artworkRequests": 1
+      },
+      "after": {
+        "sameCard": true,
+        "liked": true,
+        "samePlayButton": true,
+        "playAction": "pause",
+        "sameImage": true,
+        "top": 202.78125,
+        "imageWidth": 1500,
+        "extraLoads": 0,
+        "artworkRequests": 1
+      },
+      "passed": true
+    },
+    {
+      "width": 390,
+      "errors": [],
+      "before": {
+        "top": 245.5,
+        "imageWidth": 1500,
+        "src": "http://127.0.0.1:4191/media/record-69c77ef0-1500.webp",
+        "artworkRequests": 1
+      },
+      "after": {
+        "sameCard": true,
+        "liked": true,
+        "samePlayButton": true,
+        "playAction": "pause",
+        "sameImage": true,
+        "top": 245.5,
+        "imageWidth": 1500,
+        "extraLoads": 0,
+        "artworkRequests": 1
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

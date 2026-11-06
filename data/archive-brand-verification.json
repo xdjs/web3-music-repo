@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-06T22:07:34.050Z",
+  "base": "http://127.0.0.1:4191",
+  "cases": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "title": "web3-music-archive — Music Nerd",
+      "brand": "MUSIC NERD\nweb3-music-archive",
+      "mobileAlt": "Music Nerd",
+      "overflow": false,
+      "canonical": "https://web3-music-archive.vercel.app/",
+      "ogImage": "https://web3-music-archive.vercel.app/social/web3-music-archive-v1.png",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "title": "web3-music-archive — Music Nerd",
+      "brand": "MUSIC NERD\nweb3-music-archive",
+      "mobileAlt": "Music Nerd",
+      "overflow": false,
+      "canonical": "https://web3-music-archive.vercel.app/",
+      "ogImage": "https://web3-music-archive.vercel.app/social/web3-music-archive-v1.png",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "title": "web3-music-archive — Music Nerd",
+      "brand": "MUSIC NERDweb3-music-archive",
+      "mobileAlt": "Music Nerd",
+      "overflow": false,
+      "canonical": "https://web3-music-archive.vercel.app/",
+      "ogImage": "https://web3-music-archive.vercel.app/social/web3-music-archive-v1.png",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "title": "web3-music-archive — Music Nerd",
+      "brand": "MUSIC NERDweb3-music-archive",
+      "mobileAlt": "Music Nerd",
+      "overflow": false,
+      "canonical": "https://web3-music-archive.vercel.app/",
+      "ogImage": "https://web3-music-archive.vercel.app/social/web3-music-archive-v1.png",
+      "passed": true
+    }
+  ],
+  "socialImage": "public/social/web3-music-archive-v1.png",
+  "passed": true
+}

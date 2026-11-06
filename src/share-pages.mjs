@@ -3,8 +3,8 @@ import {
   PLAYLIST_SHARE_LIMITS,
 } from "./playlist-share.mjs";
 import { storageURL } from "./nft-reader.mjs";
-const DEFAULT_ORIGIN = "https://web3-music-repo.vercel.app";
-const FALLBACK_IMAGE = "/social/music-nft-recovery-v1.png";
+const DEFAULT_ORIGIN = "https://web3-music-archive.vercel.app";
+const FALLBACK_IMAGE = "/social/web3-music-archive-v1.png";
 const esc = (value) =>
   String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -113,7 +113,7 @@ function htmlPage(entity, origin, { mix = false } = {}) {
     .replaceAll("<", "\\u003c")
     .replaceAll("\u2028", "\\u2028")
     .replaceAll("\u2029", "\\u2029");
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(title)} — Music Nerd</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${esc(canonical)}">${mix ? '<meta name="robots" content="noindex, nofollow">' : ""}<meta property="og:type" content="${esc(entity.type)}"><meta property="og:site_name" content="Music Nerd"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(canonical)}"><meta property="og:image" content="${esc(image)}"><meta property="og:image:alt" content="${esc(entity.imageAlt || title)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(description)}"><meta name="twitter:image" content="${esc(image)}"><meta name="twitter:image:alt" content="${esc(entity.imageAlt || title)}"><link rel="stylesheet" href="/src/archive.css"></head><body><main><section class="record-head"><div class="cover"><img src="${esc(image)}" alt="${esc(entity.imageAlt || title)}"></div><div><span class="eyebrow">MUSIC NFT RECOVERY · MUSIC NERD</span><h1>${esc(title)}</h1><p>${esc(description)}</p><div class="actions"><a class="primary" href="${esc(destination)}">Open in Music Nerd ↗</a></div></div></section><noscript><p>This share opens in the app using the link above.</p></noscript></main><script>location.replace(${script});</script></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(title)} — Music Nerd</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${esc(canonical)}">${mix ? '<meta name="robots" content="noindex, nofollow">' : ""}<meta property="og:type" content="${esc(entity.type)}"><meta property="og:site_name" content="Music Nerd"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(canonical)}"><meta property="og:image" content="${esc(image)}"><meta property="og:image:alt" content="${esc(entity.imageAlt || title)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(description)}"><meta name="twitter:image" content="${esc(image)}"><meta name="twitter:image:alt" content="${esc(entity.imageAlt || title)}"><link rel="stylesheet" href="/src/archive.css"></head><body><main><section class="record-head"><div class="cover"><img src="${esc(image)}" alt="${esc(entity.imageAlt || title)}"></div><div><span class="eyebrow">web3-music-archive · MUSIC NERD</span><h1>${esc(title)}</h1><p>${esc(description)}</p><div class="actions"><a class="primary" href="${esc(destination)}">Open in Music Nerd ↗</a></div></div></section><noscript><p>This share opens in the app using the link above.</p></noscript></main><script>location.replace(${script});</script></body></html>`;
 }
 function notFound() {
   return {

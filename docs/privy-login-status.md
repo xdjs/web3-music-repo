@@ -1,5 +1,13 @@
 # Music Nerd account and wallet connection — November 6, 2026
 
+Latest playlist behavior: manual Save/Load has been replaced by automatic, account-isolated sync. See [playlist-automatic-sync.md](playlist-automatic-sync.md) for merge rules, offline recovery and verification. Earlier save/load notes below describe historical checkpoints.
+
+## Site rename: both production origins retained
+
+The existing recovery production client now permits both `https://web3-music-archive.vercel.app` and `https://web3-music-repo.vercel.app`. The exact new origin was added in the authenticated Privy dashboard and persisted through a full reload. The client ID, session/token durations and cookie setting were unchanged; no other client was edited. See `data/privy-archive-origin-verification.json`. The real new-origin login modal will be checked after the release; no OTP or signature was submitted during configuration.
+
+Signed-in playlists use the same Music Nerd identity and cloud storage across both URLs. Device-only playlists remain in the browser storage of the URL where they were created. After automatic synchronization is deployed, someone with old device-only playlists can sign in at the old URL once, wait for **Saved**, then sign in at the new URL. The old URL remains available; no redirect or automatic cross-origin local-storage transfer is used.
+
 ## Configured and verified
 
 After Pete explicitly approved creating the recovery client, created **Music NFT Recovery — local** inside the existing Music Nerd Privy app. It shares the same Music Nerd users and linked wallets. It is not a separate user database.
@@ -22,13 +30,13 @@ See `data/privy-client-config-verification.json`, `data/privy-login-verification
 - Failed canonical account lookup has a retry button. A missing Music Nerd account includes an explicit Music Nerd setup link. The recovery app does not automatically create or merge canonical accounts.
 - Existing linked wallets display from Privy's `user.linkedAccounts`, including wallets linked on other devices. Duplicate Ethereum addresses collapse without lowercasing Solana identities.
 - Add wallet uses Privy's ownership-signature link flow. Browser connection is labeled separately from account linkage. No wallet transaction, delegated signer, or embedded-wallet creation is requested by this UI.
-- Save/load retains optimistic revision conflict checks and the existing explicit overwrite confirmation. An account switch during a request cannot overwrite browser playlists with the previous account's response.
+- Automatic playlist sync uses optimistic revisions and a three-way merge, keeps conflicting edits for review, and isolates device-only playlists from each signed-in account. Logout/account switching aborts stale work.
 - Account UI follows the existing shared surfaces/buttons. Privy's theme now follows the page theme.
 - Account builds write new chunks before replacing the entry, then remove obsolete generated JavaScript. A failed compile leaves previous assets intact.
 
 ## Validation and remaining personal check
 
-Seven account/client unit tests pass. A separate full-app browser fixture with a mocked Privy SDK and mocked account HTTP responses passes linked-wallet display/add/connect, account setup retry, save/load of browser playlists, clearing wallet state after logout, and 1440/390px light/dark layouts. See `data/privy-profile-verification.json`. This fixture is not evidence of a real user's authentication or production account persistence.
+Seven account/client unit tests pass. A separate full-app browser fixture with a mocked Privy SDK and mocked account HTTP responses passes linked-wallet display/add/connect, account setup retry, automatic playlist synchronization, clearing wallet state after logout, and 1440/390px light/dark layouts. See `data/privy-profile-verification.json`. This fixture is not evidence of a real user's authentication or production account persistence.
 
 No email OTP was sent and no wallet signature was requested by the agent. Pete’s later signed-in profile screenshot confirms that Privy exposes his real linked wallet. The collection issue was missing UI wiring, not a need to repeat sign-in. A new wallet-link signature and personal authenticated playlist save/load remain separate, unverified actions.
 

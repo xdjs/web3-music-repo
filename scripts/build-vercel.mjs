@@ -13,6 +13,7 @@ await cp("public", "dist", {
 await copyFile("archive.html", "dist/index.html");
 const frontend = [
   "archive.js",
+  "home-selection.mjs",
   "nav-icons.mjs",
   "release-date.mjs",
   "catalog-royalty-ui.mjs",
@@ -30,9 +31,11 @@ const frontend = [
   "playback-controls.mjs",
   "now-playing.mjs",
   "personal-playlists.mjs",
+  "playlist-library.mjs",
   "playlist-share.mjs",
   "entity-share.mjs",
   "collection-filters.mjs",
+  "collection-render.mjs",
   "listening-queue.mjs",
   "queue-shuffle.mjs",
   "queue-sortable.mjs",

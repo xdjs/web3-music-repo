@@ -18,7 +18,7 @@ export function standaloneAccountURL(href) {
       throw Error("Unsupported account origin");
     return new URL("/#me", url.origin).href;
   } catch {
-    return "https://web3-music-repo.vercel.app/#me";
+    return "https://web3-music-archive.vercel.app/#me";
   }
 }
 

@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-11-06T22:09:15.972572+00:00",
+  "method": "Authenticated Privy dashboard save and full reload read-back",
+  "appId": "cmlzjxfrh00ak0cjvlap9d3gm",
+  "dashboardClientId": "bra9hpb2yt9ukr757ezcvbe0u",
+  "clientId": "client-WY6W53j4q1dvp15KJx1zc88MivQTj6NJ66S4CKzsxEAdJ",
+  "allowedOrigins": [
+    "https://web3-music-archive.vercel.app",
+    "https://web3-music-repo.vercel.app"
+  ],
+  "clientIdUnchanged": true,
+  "authenticationSessionDays": 30,
+  "accessTokenHours": 1,
+  "refreshTokenDays": 30,
+  "idTokenHours": 10,
+  "httpOnlyCookieSettingChanged": false,
+  "otherClientsEdited": false,
+  "personalLoginTested": false,
+  "newOriginModalTested": false
+}

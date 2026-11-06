@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-06T21:38:38.600Z",
+  "checkedAt": "2026-11-06T22:04:19.630Z",
   "base": "http://127.0.0.1:4191",
   "scope": "Actual app UI with deterministic public identity/wallet API fixtures; not real-account or current ownership verification.",
   "cases": [
@@ -80,26 +80,6 @@
         },
         {
           "address": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-          "chain": "7777777"
-        },
-        {
-          "address": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-          "chain": "1"
-        },
-        {
-          "address": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-          "chain": "10"
-        },
-        {
-          "address": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-          "chain": "137"
-        },
-        {
-          "address": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-          "chain": "8453"
-        },
-        {
-          "address": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
           "chain": "7777777"
         }
       ],
