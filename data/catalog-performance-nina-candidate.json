@@ -1,0 +1,123 @@
+{
+  "checkedAt": "2026-11-06T19:15:38.201Z",
+  "base": "http://127.0.0.1:4191",
+  "label": "nina-candidate",
+  "scope": "Fresh Chromium contexts on the same host; desktop/mobile viewports only, no device CPU or network emulation. Instrumented index response.text + JSON.parse measures body decoding and parsing separately. One sample per viewport is a diagnostic snapshot, not a benchmark or field INP.",
+  "cases": [
+    {
+      "viewport": "1440x1000",
+      "errors": [],
+      "ready": {
+        "observedReadyAtMs": 233,
+        "cards": 40,
+        "liveElements": 5526,
+        "collectionOptions": 4717,
+        "index": {
+          "url": "http://127.0.0.1:4191/api/catalog?view=index",
+          "records": 37274,
+          "people": 6169,
+          "characters": 33437337,
+          "bodyReadAndDecodeMs": 53.09999990463257,
+          "parseMs": 40.09999990463257,
+          "resolvedAtMs": 178.09999990463257
+        },
+        "resource": {
+          "startTime": 54.59999990463257,
+          "responseStart": 55.299999713897705,
+          "responseEnd": 122.5,
+          "transferSize": 5605696,
+          "encodedBodySize": 5605396,
+          "decodedBodySize": 33448877
+        },
+        "navigation": [
+          {
+            "domContentLoadedMs": 83.19999980926514,
+            "responseEndMs": 5.299999713897705
+          }
+        ]
+      },
+      "search": {
+        "query": "pete rango",
+        "dispatchToTwoFramesMs": 61.5,
+        "cards": 29,
+        "liveElements": 5384,
+        "collectionOptions": 4717,
+        "matchingText": true
+      },
+      "longTasks": [
+        {
+          "start": 131.59999990463257,
+          "duration": 81
+        }
+      ],
+      "cpuAndHeap": {
+        "JSHeapUsedSize": 44825628,
+        "JSHeapTotalSize": 98811904,
+        "ScriptDuration": 0.071838,
+        "TaskDuration": 0.296127,
+        "LayoutDuration": 0.02351,
+        "RecalcStyleDuration": 0.021576,
+        "Nodes": 58793
+      },
+      "passed": true
+    },
+    {
+      "viewport": "390x844",
+      "errors": [],
+      "ready": {
+        "observedReadyAtMs": 234.09999990463257,
+        "cards": 40,
+        "liveElements": 5526,
+        "collectionOptions": 4717,
+        "index": {
+          "url": "http://127.0.0.1:4191/api/catalog?view=index",
+          "records": 37274,
+          "people": 6169,
+          "characters": 33437337,
+          "bodyReadAndDecodeMs": 51.09999990463257,
+          "parseMs": 40.09999990463257,
+          "resolvedAtMs": 179
+        },
+        "resource": {
+          "startTime": 57.5,
+          "responseStart": 58.09999990463257,
+          "responseEnd": 126.40000009536743,
+          "transferSize": 5605696,
+          "encodedBodySize": 5605396,
+          "decodedBodySize": 33448877
+        },
+        "navigation": [
+          {
+            "domContentLoadedMs": 86.59999990463257,
+            "responseEndMs": 12.300000190734863
+          }
+        ]
+      },
+      "search": {
+        "query": "pete rango",
+        "dispatchToTwoFramesMs": 52.40000009536743,
+        "cards": 29,
+        "liveElements": 5384,
+        "collectionOptions": 4717,
+        "matchingText": true
+      },
+      "longTasks": [
+        {
+          "start": 134.5,
+          "duration": 80
+        }
+      ],
+      "cpuAndHeap": {
+        "JSHeapUsedSize": 57519408,
+        "JSHeapTotalSize": 93159424,
+        "ScriptDuration": 0.06825,
+        "TaskDuration": 0.274856,
+        "LayoutDuration": 0.022534,
+        "RecalcStyleDuration": 0.022804,
+        "Nodes": 58962
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

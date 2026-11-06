@@ -77,3 +77,44 @@ test("confirmed aliases unite profiles while preserving original release attribu
   assert.equal(out.records[0].artist, "p3t3rango");
   assert.deepEqual(out.records[0].personIds, ["pete-rango"]);
 });
+
+test("Solana mint identity preserves separate releases and survives compact presentation", async () => {
+  const { indexRecord } = await import("../src/catalog-presentation.mjs");
+  const mint = "122gW5E6uqWKEsb1KdCjVhWtarbCTdN7hR1bjt9dgdaw";
+  const secondMint = "1278zxv5CugWLvq7SfV5822wkjtL5WKxMtDghiieg5Nd";
+  const record = {
+    id: "nina-a",
+    chainId: "solana",
+    mint,
+    standard: "METAPLEX",
+    artist: "Nina artist",
+    artistId: "nina-artist",
+    kind: "audio",
+  };
+  const other = { ...record, id: "nina-b", mint: secondMint };
+  const duplicate = { ...record, id: "same-mint" };
+  const evidence = Object.fromEntries(
+    [record, other, duplicate].map((r) => [
+      r.id,
+      {
+        status: "indexed",
+        mediaURI: "ar://same-recording",
+        mediaURL: "https://arweave.net/same-recording",
+      },
+    ]),
+  );
+  const merged = mergeCatalog(
+    [],
+    {},
+    [{ records: [record, other, duplicate], evidence }],
+    [{ id: "nina-artist", name: "Nina artist" }],
+  );
+  assert.deepEqual(
+    merged.records.map((r) => r.id),
+    ["nina-a", "nina-b"],
+  );
+  assert.equal(merged.records[0].mint, mint);
+  assert.equal(merged.records[0].contract, undefined);
+  assert.equal(merged.records[0].tokenId, undefined);
+  assert.equal(indexRecord(merged.records[0], evidence[record.id]).mint, mint);
+});

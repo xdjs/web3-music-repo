@@ -1,4 +1,4 @@
-// Same IPFS content address and path through fixed public gateways.
+// Same IPFS content address or Arweave transaction and path through fixed gateways.
 // These hosts are deliberately finite; user-supplied gateway hosts never join them.
 const gateways = [
   "ipfs.filebase.io",
@@ -13,10 +13,30 @@ export function alternateMediaURLs(url) {
       parsed.username ||
       parsed.password ||
       parsed.port ||
-      !gateways.includes(parsed.hostname) ||
-      !/^\/ipfs\/[A-Za-z0-9]+(?:\/|$)/.test(parsed.pathname) ||
       /(?:^|\/)\.\.(?:\/|$)/.test(decodeURIComponent(url.split("?")[0])) ||
       /%2f|%5c|\\/i.test(parsed.pathname)
+    )
+      return [];
+    // A transaction ID identifies the same Arweave data across these fixed
+    // gateways. Do not rewrite ArNS names, API endpoints, or arbitrary hosts.
+    const arweaveHost =
+      /^(?:www\.|[a-z2-7]{52}\.)?arweave\.net$/.test(parsed.hostname) ||
+      /^(?:[a-z2-7]{52}\.)?turbo-gateway\.com$/.test(parsed.hostname);
+    if (
+      arweaveHost &&
+      /^\/[A-Za-z0-9_-]{43}(?:\/[^\s]*)?$/.test(parsed.pathname)
+    ) {
+      return ["turbo-gateway.com", "arweave.net"]
+        .filter((host) => host !== parsed.hostname)
+        .map((host) => {
+          const alternate = new URL(parsed);
+          alternate.hostname = host;
+          return alternate.href;
+        });
+    }
+    if (
+      !gateways.includes(parsed.hostname) ||
+      !/^\/ipfs\/[A-Za-z0-9]+(?:\/|$)/.test(parsed.pathname)
     )
       return [];
     return gateways

@@ -125,3 +125,63 @@ test("late responses from a previous account are discarded and aborted requests 
   assert.equal(s.snapshot().address, "");
   assert.ok([...s.snapshot().states.values()].every((v) => !v));
 });
+test("owned Explore scope unions linked indexed matches, excludes public lookups and drops unlinked accounts", async () => {
+  const s = createWalletLibraryState({
+    fetchPage: async (address) =>
+      page([
+        {
+          contract: a,
+          tokenId: "1",
+          recordId:
+            address === a
+              ? "owned-a"
+              : address === b
+                ? "owned-b"
+                : "public-only",
+        },
+      ]),
+  });
+  s.setAccount(account("one", [a, b]));
+  s.select(publicWallet);
+  s.start();
+  await tick();
+  assert.deepEqual([...s.ownedSnapshot().recordIds], []);
+  s.startLinked();
+  await tick();
+  assert.deepEqual([...s.ownedSnapshot().recordIds].sort(), [
+    "owned-a",
+    "owned-b",
+  ]);
+  assert.equal(s.snapshot().address, publicWallet);
+  s.setAccount(account("one", [b]));
+  assert.deepEqual([...s.ownedSnapshot().recordIds], ["owned-b"]);
+  s.setAccount(account(null, []));
+  assert.equal(s.ownedSnapshot().recordIds.size, 0);
+});
+test("owned auto scan is capped at five wallets and first pages; incomplete/error coverage remains explicit", async () => {
+  const addresses = Array.from(
+    { length: 7 },
+    (_, i) => "0x" + String(i + 1).repeat(40),
+  );
+  const calls = [];
+  const s = createWalletLibraryState({
+    fetchPage: async (address, chain, cursor) => {
+      calls.push({ address, chain, cursor });
+      return chain === "137"
+        ? { status: "unavailable", message: "Unavailable" }
+        : page([], chain === "1" ? "more" : null);
+    },
+  });
+  s.setAccount(account("one", addresses));
+  s.startLinked();
+  await tick();
+  s.startLinked();
+  await tick();
+  assert.equal(calls.length, 25);
+  assert.ok(calls.every((c) => c.cursor === null));
+  assert.equal(new Set(calls.map((c) => c.address)).size, 5);
+  const snap = s.ownedSnapshot();
+  assert.equal(snap.errors, 5);
+  assert.equal(snap.unchecked, 10);
+  assert.equal(snap.more, 5);
+});

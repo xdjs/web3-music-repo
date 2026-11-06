@@ -1,0 +1,15 @@
+# Nina listening and identity boundaries
+
+Nina records use `chainId: "solana"`, a case-sensitive `mint`, and `standard: "METAPLEX"`. They do not invent an EVM contract or token ID. The public Nina release account remains a separate reference. The compact catalog and evidence export retain the mint so navigation and provenance do not lose that identity.
+
+The listening UI reuses the established recording, artist, filter, provenance and collector components. Nina has a platform filter and Solana has a network label. Provenance identifies the Spinamp index as the source, links the mint to the Solana explorer, and links the separate Nina release. Preserved metadata/media references are not described as independently verified current mint data. For a bounded original startup timeout, the proof names the reason, labels the separately preserved Spinamp copy as potentially transcoded, and keeps the original indexed media URI/link visible. The normal player still detects decoded video dimensions for extensionless media.
+
+Current Solana mint reads, owner reads, collector enumeration and wallet-owned Nina collection recovery are **unsupported**. Backend entry points return that capability status before any EVM adapter executes. Frontend collectors explain the limitation immediately and do not start EVM collector/profile requests. EVM owner/holder buttons are absent for Solana. Wallet search explicitly remains Ethereum-compatible addresses and ENS; a direct Solana wallet API request also returns unsupported, rather than a successful empty collection. Listening and playlist creation remain available from indexed media.
+
+`tests/solana-boundaries.test.mjs` covers all reader guards with forbidden network adapters, Solana wallet rejection, compact mint preservation without invented fields, safe mint/release links and escaped metadata, no automatic collector fetch, and accurate original-startup-timeout fallback labeling. Six Nina-specific tests pass; the existing holder, recovery, loader and wallet regression groups also pass. These tests establish adapter and presentation boundaries, not live Solana ownership or successful playback of every indexed track. Actual Nina browser rendering and bounded playback samples are recorded separately by the UI and indexing agents.
+
+The Vercel static frontend includes `solana-identity.mjs`, `asset-capabilities.mjs` and `solana-provenance.mjs`; omitting these would break browser imports. No account keys, private data, paid service or chain-wide ownership scan was added.
+
+## Remaining Spinamp relations
+
+The authorized bounded retry acquired the existing exclusive checkpoint lock, attempted two single-entry public GraphQL requests, and stopped after consecutive provider SQL statement timeouts. The pending count stayed **169**, with **zero** new resolved identities. Existing successful references remain intact. The atomic checkpoint retains retryable failures, and the lock was released. See `data/spinamp/bounded-retry-2026-11-06.json`. No failed response was converted into an empty successful mint list.

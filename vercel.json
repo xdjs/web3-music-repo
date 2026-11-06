@@ -12,19 +12,41 @@
   },
   "rewrites": [
     {
+      "source": "/share/:path*",
+      "destination": "/api/index"
+    },
+    {
       "source": "/api/catalog",
-      "has": [{ "type": "query", "key": "view", "value": "index" }],
+      "has": [
+        {
+          "type": "query",
+          "key": "view",
+          "value": "index"
+        }
+      ],
       "destination": "/catalog/index.json"
     },
-    { "source": "/api/catalog", "destination": "/catalog/full.json" },
-    { "source": "/api/:path*", "destination": "/api/index" }
+    {
+      "source": "/api/catalog",
+      "destination": "/catalog/full.json"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api/index"
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
   ]

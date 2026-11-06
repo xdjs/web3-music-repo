@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-06T19:36:06.483Z",
+  "base": "http://127.0.0.1:4191",
+  "recordId": "spinamp-c4fbf6953ce75fd2a410",
+  "cases": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "wallets": 13,
+      "editions": 16,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "wallets": 13,
+      "editions": 16,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "wallets": 13,
+      "editions": 16,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "wallets": 13,
+      "editions": 16,
+      "overflow": false
+    }
+  ]
+}

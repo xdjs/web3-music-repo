@@ -122,7 +122,13 @@ export async function createPlaylistShareURL(value, baseURL) {
   )
     throw Error("A valid app address is required to share.");
   url.search = "";
-  url.hash = "shared-playlist/" + (await encodePlaylistShare(value));
+  url.hash = "";
+  const token = await encodePlaylistShare(value);
+  if (token.length > 7000)
+    throw Error(
+      "This playlist is too large to share as a link. Export it instead.",
+    );
+  url.pathname = "/share/mix/" + token;
   return url.href;
 }
 export async function shareOrCopyPlaylist(

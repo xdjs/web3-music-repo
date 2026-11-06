@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-11-06T19:12:31.052Z",
+  "base": "https://web3-music-repo.vercel.app",
+  "scope": "Fresh unsigned-in Chromium; initial page and Privy login modal, no email submission, OTP or wallet signature. Hooks unload/beforeunload registrations in all frames without changing policy.",
+  "modalOpened": true,
+  "registrations": [],
+  "warnings": [],
+  "frames": [
+    "https://web3-music-repo.vercel.app/#me",
+    "https://auth.privy.io/apps/cmlzjxfrh00ak0cjvlap9d3gm/embedded-wallets?[redacted-query]",
+    "about:blank"
+  ],
+  "laterLiveChromeEvidence": {
+    "source": "Native Chrome accessibility diagnostics observed by root agent",
+    "attribution": "chrome-extension://cbhilkcodigmigfbnphipnnmamjfkipp/frame.js:22640",
+    "extensionName": "Not established",
+    "relationshipToPlayback": "No causal relationship established",
+    "separateMessages": "Two Arweave ERR_CONNECTION_RESET errors, unrelated by current evidence"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "startedAt": "2026-11-06T19:09:06.930Z",
+  "endpoint": "https://api.spinamp.xyz/v3/graphql",
+  "maxRequests": 20,
+  "batchSize": 1,
+  "attempts": [
+    {
+      "id": "base/0x66674eA8aE30D399aB34c567c688a7a8be278E8E/0x0eeede68ab658f9b810a31df598d12af693e1983333cc806c866a969118c2371",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "canceling statement due to statement timeout"
+    },
+    {
+      "id": "base/0x67288d13898B7ec4a3Cc5F08aBc877f354eaCaA4/0x29fa5e0c071c7f194d84ee131d1bad3221bc0c376988c9c48bb475347e4c2cea",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "canceling statement due to statement timeout"
+    }
+  ],
+  "pendingBefore": 169,
+  "stopReason": "Persistent SQL failure in two consecutive single-entry requests",
+  "pendingAfter": 169,
+  "resolvedThisRun": 0,
+  "finishedAt": "2026-11-06T19:09:16.050Z"
+}

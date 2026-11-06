@@ -198,11 +198,11 @@ export function mountPlaylists({
       notify(error.message || "Could not create a playlist link.");
     }
   };
-  const actionsForSnapshot = (key, value) => {
+  const actionsForSnapshot = (key, value, entityShare = null) => {
     const snapshot = playlistSnapshot(value);
     snapshots.set(key, snapshot);
     const available = idsFor(snapshot).length;
-    return `<div class="actions playlist-actions"><button class="primary" data-play-record="${esc(idsFor(snapshot)[0] || "")}" data-play-snapshot="${esc(key)}" ${available ? "" : "disabled"}>▶ Play recovered tracks</button><button class="outline-button" data-save-snapshot="${esc(key)}" ${snapshot.recordIds.length ? "" : "disabled"}>＋ Save a copy</button><button class="outline-button" data-share-snapshot="${esc(key)}">Share</button></div>`;
+    return `<div class="actions playlist-actions"><button class="primary" data-play-record="${esc(idsFor(snapshot)[0] || "")}" data-play-snapshot="${esc(key)}" ${available ? "" : "disabled"}>▶ Play recovered tracks</button><button class="outline-button" data-save-snapshot="${esc(key)}" ${snapshot.recordIds.length ? "" : "disabled"}>＋ Save a copy</button>${entityShare ? `<button class="outline-button" data-share-entity="${esc(entityShare.kind)}" data-share-id="${esc(entityShare.id)}" data-share-title="${esc(entityShare.title)}" aria-label="Share ${esc(entityShare.title)}">Share</button>` : `<button class="outline-button" data-share-snapshot="${esc(key)}">Share</button>`}</div>`;
   };
   const sharedView = (token) => {
     if (shared.token !== token) {

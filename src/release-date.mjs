@@ -66,6 +66,23 @@ export function releaseDateForRecord(record, index = {}) {
           null,
       };
   }
+  const suppliedIndexDate = record.indexedSourceDate;
+  if (
+    record.chainId === "solana" &&
+    suppliedIndexDate?.kind === "indexed-metadata-date" &&
+    suppliedIndexDate.source === "https://api.spinamp.xyz/v3/graphql" &&
+    suppliedIndexDate.onchainVerified === false
+  ) {
+    const parsed = parseHistoricalDate(suppliedIndexDate.date);
+    if (parsed)
+      return {
+        ...parsed,
+        kind: "indexed-metadata-date",
+        label: "Metadata date · from Spinamp index",
+        source: suppliedIndexDate.source,
+        onchainVerified: false,
+      };
+  }
   const indexed = record.indexedNftCreation;
   if (
     indexed?.source === "https://api.spinamp.xyz/v3/graphql" &&

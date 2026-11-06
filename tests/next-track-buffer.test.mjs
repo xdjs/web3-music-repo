@@ -244,3 +244,20 @@ test("current playback requires contiguous ten-second headroom or fully buffered
   media.readyState = 2;
   assert.equal(hasPlaybackHeadroom(media), false);
 });
+
+test("interrupted and failed preload can retry after recovery, with a strict attempt cap", () => {
+  const s = setup();
+  for (let attempt = 0; attempt < 3; attempt++) {
+    s.time(attempt * 6000);
+    assert.equal(s.buffer.schedule(a), true);
+    s.tick(700);
+    s.warming(false);
+    s.buffer.suspend();
+    s.warming(true);
+    assert.equal(s.buffer.schedule(a), false);
+  }
+  s.time(61000);
+  assert.equal(s.buffer.schedule(a), false);
+  assert.equal(s.media.length, 3);
+  assert.equal(s.media.filter((m) => m.src).length, 0);
+});

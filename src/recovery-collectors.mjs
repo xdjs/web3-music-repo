@@ -1,3 +1,22 @@
+import { isSolanaAsset, unsupportedSolanaRead } from "./asset-capabilities.mjs";
+import { readFileSync } from "node:fs";
+import { readSpinampCollectorSnapshot } from "./spinamp-collectors.mjs";
+let spinampSnapshots;
+function spinampSnapshot(record) {
+  try {
+    spinampSnapshots ??= JSON.parse(
+      readFileSync(
+        new URL("../data/spinamp/collector-snapshots.json", import.meta.url),
+        "utf8",
+      ),
+    );
+    return readSpinampCollectorSnapshot(record, spinampSnapshots, {
+      metadataURI: record.collectorMetadataURI,
+    });
+  } catch {
+    return null;
+  }
+}
 import { readLegacyCollectors } from "./legacy-collectors.mjs";
 import {
   readHolders,
@@ -45,6 +64,9 @@ export async function readCollectors(
     readMediaHolders,
   },
 ) {
+  if (isSolanaAsset(record)) return unsupportedSolanaRead("collectors");
+  const indexedSnapshot = spinampSnapshot(record);
+  if (indexedSnapshot) return indexedSnapshot;
   if (record.standard === "ERC20")
     return {
       status: "unsupported",

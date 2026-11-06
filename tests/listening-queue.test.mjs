@@ -1,10 +1,10 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { selectQueueTrack, removeQueueTrack } from "../src/listening-queue.mjs";
-test("plain play builds context queue while keeping clicked position", () => {
+test("plain play rotates browsing context to begin with the clicked recording", () => {
   assert.deepEqual(
     selectQueueTrack({ ids: [], index: -1, mode: null }, "b", ["a", "b", "c"]),
-    { ids: ["a", "b", "c"], index: 1, mode: "auto" },
+    { ids: ["b", "c", "a"], index: 0, mode: "auto" },
   );
 });
 test("explicit queue is preserved when playing another record", () => {

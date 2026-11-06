@@ -1,3 +1,4 @@
+import { isSolanaAsset, unsupportedSolanaRead } from "./asset-capabilities.mjs";
 const rpcs = {
   1: "https://ethereum-rpc.publicnode.com",
   10: "https://optimism-rpc.publicnode.com",
@@ -6,6 +7,7 @@ const rpcs = {
   7777777: "https://rpc.zora.energy",
 };
 export async function readOwner(record, fetcher = fetch) {
+  if (isSolanaAsset(record)) return unsupportedSolanaRead("ownership");
   if (record.standard === "ERC20")
     return {
       status: "unsupported",

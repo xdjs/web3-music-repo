@@ -1,0 +1,179 @@
+{
+  "checkedAt": "2026-11-06T19:32:12.096Z",
+  "base": "http://127.0.0.1:4191",
+  "scope": "Three user-reported tracks, real player startup/advancement after finite same-transaction Arweave fallback; no whole-track playback claim.",
+  "records": [
+    {
+      "id": "recovered-sound-10-145ac4d1ad5817b28997a479a980ea1d5d53e3e9",
+      "title": "Endless",
+      "artist": "Sound of Fractures",
+      "original": "https://arweave.net/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8",
+      "elapsedMs": 29127,
+      "status": "unavailable",
+      "error": "Playhead did not continue advancing",
+      "state": {
+        "src": "https://turbo-gateway.com/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8",
+        "time": 0.695822,
+        "duration": 293.686009,
+        "paused": false,
+        "readyState": 2,
+        "error": null
+      },
+      "responses": [
+        {
+          "url": "https://arweave.net/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8",
+          "status": 302,
+          "length": "158"
+        },
+        {
+          "url": "https://arweave.net/MJMx4iB2GoBw0MxHFSEO19LCzPDROmH13l4nJPKolyM",
+          "status": 302,
+          "length": "158"
+        },
+        {
+          "url": "https://gcjtdyraoynia4gqzrdrkiio27jmfthq2e5gd5o6lytsj4vis4rq.arweave.net/MJMx4iB2GoBw0MxHFSEO19LCzPDROmH13l4nJPKolyM",
+          "status": 200,
+          "mime": "image/png",
+          "length": "119474"
+        },
+        {
+          "url": "https://turbo-gateway.com/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8",
+          "status": 302,
+          "mime": "text/plain; charset=utf-8",
+          "length": "145"
+        },
+        {
+          "url": "https://hx6zamw63j3qbvpqxchyohyt5kblfqmmflarwcnlysaxxb3u2lpq.turbo-gateway.com/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8?",
+          "status": 206,
+          "mime": "audio/wave",
+          "contentRange": "bytes 0-77709361/77709362",
+          "length": "77709362"
+        },
+        {
+          "url": "https://arweave.net/MJMx4iB2GoBw0MxHFSEO19LCzPDROmH13l4nJPKolyM",
+          "status": 302,
+          "length": "158"
+        },
+        {
+          "url": "https://gcjtdyraoynia4gqzrdrkiio27jmfthq2e5gd5o6lytsj4vis4rq.arweave.net/MJMx4iB2GoBw0MxHFSEO19LCzPDROmH13l4nJPKolyM",
+          "status": 200,
+          "mime": "image/png",
+          "length": "119474"
+        }
+      ],
+      "failures": [
+        {
+          "url": "https://hx6zamw63j3qbvpqxchyohyt5kblfqmmflarwcnlysaxxb3u2lpq.arweave.net/Pf2QMt7adwDV8LiPhx8T6oKywYwqwRsJq8SBe4d00t8",
+          "error": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "id": "record-61048859",
+      "title": "Por Tu Barrio",
+      "artist": "AL3C & HeyBela",
+      "original": "https://arweave.net/YStvDur7I86UT_qwjo2NGC4ccu5GiMybEN8VavqGTdw",
+      "elapsedMs": 21266,
+      "status": "played",
+      "src": "https://turbo-gateway.com/YStvDur7I86UT_qwjo2NGC4ccu5GiMybEN8VavqGTdw",
+      "time": 0.814097,
+      "duration": 178.407574,
+      "paused": false,
+      "readyState": 2,
+      "decodedAudioBytes": 360096,
+      "videoWidth": 0,
+      "sameTransaction": true,
+      "responses": [
+        {
+          "url": "https://arweave.net/YStvDur7I86UT_qwjo2NGC4ccu5GiMybEN8VavqGTdw",
+          "status": 302,
+          "length": "158"
+        },
+        {
+          "url": "https://mevw6dxk7mr45fcp7kyi5dmndaxby4xoi2emzgyq34kwv6ugjxoa.arweave.net/YStvDur7I86UT_qwjo2NGC4ccu5GiMybEN8VavqGTdw",
+          "status": 200,
+          "mime": "audio/wave",
+          "length": "47206688"
+        },
+        {
+          "url": "https://turbo-gateway.com/YStvDur7I86UT_qwjo2NGC4ccu5GiMybEN8VavqGTdw",
+          "status": 302,
+          "mime": "text/plain; charset=utf-8",
+          "length": "145"
+        },
+        {
+          "url": "https://mevw6dxk7mr45fcp7kyi5dmndaxby4xoi2emzgyq34kwv6ugjxoa.turbo-gateway.com/YStvDur7I86UT_qwjo2NGC4ccu5GiMybEN8VavqGTdw?",
+          "status": 206,
+          "mime": "audio/wave",
+          "contentRange": "bytes 0-47206687/47206688",
+          "length": "47206688"
+        }
+      ],
+      "failures": [
+        {
+          "url": "https://mevw6dxk7mr45fcp7kyi5dmndaxby4xoi2emzgyq34kwv6ugjxoa.arweave.net/YStvDur7I86UT_qwjo2NGC4ccu5GiMybEN8VavqGTdw",
+          "error": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "id": "recovered-sound-10-191fc84c0dd16a5f7aa333c39021227a91cc44a3",
+      "title": "Army of Love",
+      "artist": "TK",
+      "original": "https://arweave.net/rimQeZ9Q-Y2QKtAmSVF2hKoTf3HpWObjhMh0nsY_mP4",
+      "elapsedMs": 54183,
+      "status": "played",
+      "src": "https://turbo-gateway.com/rimQeZ9Q-Y2QKtAmSVF2hKoTf3HpWObjhMh0nsY_mP4",
+      "time": 1.711678,
+      "duration": 236.788934,
+      "paused": false,
+      "readyState": 4,
+      "decodedAudioBytes": 59289,
+      "videoWidth": 0,
+      "sameTransaction": true,
+      "responses": [
+        {
+          "url": "https://arweave.net/rimQeZ9Q-Y2QKtAmSVF2hKoTf3HpWObjhMh0nsY_mP4",
+          "status": 302,
+          "length": "158"
+        },
+        {
+          "url": "https://arweave.net/5MqeACUohirHns-x2JhI9IZwetfpBJepX6fF03UuRUE",
+          "status": 302,
+          "length": "158"
+        },
+        {
+          "url": "https://vyuza6m7kd4y3ebk2atesulwqsvbg73r5fmony4ezb2j5rr7td7a.arweave.net/rimQeZ9Q-Y2QKtAmSVF2hKoTf3HpWObjhMh0nsY_mP4",
+          "status": 200,
+          "mime": "audio/mpeg",
+          "length": "7828863"
+        },
+        {
+          "url": "https://turbo-gateway.com/rimQeZ9Q-Y2QKtAmSVF2hKoTf3HpWObjhMh0nsY_mP4",
+          "status": 302,
+          "mime": "text/plain; charset=utf-8",
+          "length": "145"
+        },
+        {
+          "url": "https://vyuza6m7kd4y3ebk2atesulwqsvbg73r5fmony4ezb2j5rr7td7a.turbo-gateway.com/rimQeZ9Q-Y2QKtAmSVF2hKoTf3HpWObjhMh0nsY_mP4?",
+          "status": 206,
+          "mime": "audio/mpeg",
+          "contentRange": "bytes 0-7828862/7828863",
+          "length": "7828863"
+        },
+        {
+          "url": "https://4tfj4abffcdcvr46z6y5rgci6sdha6wx5ecjpkk7u7c5g5joivaq.arweave.net/5MqeACUohirHns-x2JhI9IZwetfpBJepX6fF03UuRUE",
+          "status": 200,
+          "mime": "image/gif",
+          "length": "42256343"
+        }
+      ],
+      "failures": [
+        {
+          "url": "https://vyuza6m7kd4y3ebk2atesulwqsvbg73r5fmony4ezb2j5rr7td7a.arweave.net/rimQeZ9Q-Y2QKtAmSVF2hKoTf3HpWObjhMh0nsY_mP4",
+          "error": "net::ERR_ABORTED"
+        }
+      ]
+    }
+  ]
+}

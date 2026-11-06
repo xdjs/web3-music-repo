@@ -1,3 +1,6 @@
+import { buildSharePage, sharePageOrigin } from "./src/share-pages.mjs";
+import { serveStaticVideo } from "./src/static-video.mjs";
+import { unsupportedSolanaRead } from "./src/asset-capabilities.mjs";
 import { createHash } from "node:crypto";
 import { indexRecord, presentRecord } from "./src/catalog-presentation.mjs";
 import { catalogHolders } from "./src/catalog-holders.mjs";
@@ -263,6 +266,7 @@ const types = {
   ".json": "application/json",
   ".mp3": "audio/mpeg",
   ".m4a": "audio/mp4",
+  ".mp4": "video/mp4",
   ".wav": "audio/wav",
 };
 export async function handler(req, res) {
@@ -278,6 +282,20 @@ export async function handler(req, res) {
       res.writeHead(405);
       return res.end();
     }
+    if (url.pathname.startsWith("/share/")) {
+      const result = await buildSharePage({
+        pathname: url.pathname,
+        origin: sharePageOrigin(process.env.ARCHIVE_ORIGIN, req.headers.host),
+        bundle,
+        playlists: historicalPlaylists,
+        artistImage: (person, records) =>
+          artistPortrait(person.id) ||
+          archivedArtistPortrait(person, records) ||
+          person.portrait,
+      });
+      res.writeHead(result.status, result.headers);
+      return res.end(req.method === "HEAD" ? undefined : result.body);
+    }
     if (url.pathname === "/api/wallet/resolve") {
       const result = await resolveWalletName(url.searchParams.get("name"));
       const status = {
@@ -289,6 +307,8 @@ export async function handler(req, res) {
       return json(res, result, status[result.status]);
     }
     if (url.pathname.startsWith("/api/wallet/")) {
+      if (url.searchParams.get("chainId") === "solana")
+        return json(res, unsupportedSolanaRead("wallet"));
       const value = await readWalletPage(
         url.pathname.slice(12),
         Number(url.searchParams.get("chainId")),
@@ -446,6 +466,7 @@ export async function handler(req, res) {
         (await readCollectors(
           {
             ...record,
+            collectorMetadataURI: bundle.evidence[record.id]?.metadataURI,
             collectorMediaURI:
               bundle.evidence[record.id]?.sourceType ===
               "spinamp-processed-media"
@@ -511,6 +532,7 @@ export async function handler(req, res) {
           artist: r.artist,
           title: r.title,
           chainId: r.chainId,
+          ...(r.mint ? { mint: r.mint, standard: r.standard } : {}),
           contract: r.contract,
           tokenId: r.tokenId,
           evidence: snapshot[r.id] || null,
@@ -528,6 +550,8 @@ export async function handler(req, res) {
       res.writeHead(404);
       return res.end();
     }
+    if (file.startsWith("public/") && path.extname(file) === ".mp4")
+      return serveStaticVideo(req, res, absolute);
     let body;
     try {
       body = await readFile(absolute);

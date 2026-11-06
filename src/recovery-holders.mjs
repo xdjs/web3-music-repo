@@ -1,3 +1,4 @@
+import { isSolanaAsset, unsupportedSolanaRead } from "./asset-capabilities.mjs";
 const hosts = {
   1: "eth.blockscout.com",
   10: "optimism.blockscout.com",
@@ -5,6 +6,7 @@ const hosts = {
   7777777: "explorer.zora.energy",
 };
 export async function readHolders(record, cursor, fetcher = fetch) {
+  if (isSolanaAsset(record)) return unsupportedSolanaRead("collectors");
   if (record.standard === "ERC20")
     return {
       status: "unsupported",
@@ -161,6 +163,7 @@ async function instancePage(record, cursor, tokenScoped, fetcher) {
   return { data, source: url.href, nextCursor };
 }
 export async function readTokenHolders(record, cursor, fetcher = fetch) {
+  if (isSolanaAsset(record)) return unsupportedSolanaRead("collectors");
   if (record.standard !== "ERC1155")
     return {
       status: "unsupported",
@@ -212,6 +215,7 @@ export async function readTokenHolders(record, cursor, fetcher = fetch) {
   }
 }
 export async function readMediaHolders(record, cursor, fetcher = fetch) {
+  if (isSolanaAsset(record)) return unsupportedSolanaRead("collectors");
   const mediaKey = holderMediaKey(record.collectorMediaURI);
   if (
     !mediaKey ||

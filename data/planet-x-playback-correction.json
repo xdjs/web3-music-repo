@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-11-06T19:23:12.098Z",
+  "recordId": "pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1",
+  "artistApproval": {
+    "approvedBy": "Pete Rango",
+    "approvedAt": "2026-11-06",
+    "statement": "yup that planet x video is ready",
+    "scope": "User approved the corrected video for playback; this does not amend the onchain NFT metadata."
+  },
+  "original": {
+    "identity": {
+      "chainId": 1,
+      "contract": "0x10d32bf55f5cbe66b068f2109ecf7475f0631d53",
+      "tokenId": "1"
+    },
+    "mediaURI": "ipfs://bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+    "metadataSha256": "82b82bbab57e33c9b67edcf532278e5ee56826013cdf416994cb43fff85d06ce",
+    "metadataHashScope": "SHA-256 of the exact UTF-8 metadataURI string, not a hash of fetched media bytes",
+    "sourceDataset": "data/pete-recovery/zora-recovered-media.json",
+    "unchanged": true
+  },
+  "approvedInput": {
+    "path": "work/planet-x-restoration/planet-x-corrected-web-720.mp4",
+    "sha256": "b5ff5dcfb38203a1e066b603908f9a879abee36ee21d7cc3dbcb9a33c9c85a23",
+    "bytes": 29304810
+  },
+  "publishedAsset": {
+    "path": "public/media/planet-x-artist-corrected-720.mp4",
+    "url": "/media/planet-x-artist-corrected-720.mp4",
+    "sha256": "b5ff5dcfb38203a1e066b603908f9a879abee36ee21d7cc3dbcb9a33c9c85a23",
+    "bytes": 29304810,
+    "container": "mp4",
+    "durationSeconds": 240.083333,
+    "video": {
+      "codec": "h264",
+      "width": 720,
+      "height": 720,
+      "streams": 1
+    },
+    "audio": {
+      "codec": "aac",
+      "sampleRate": 48000,
+      "channels": 2,
+      "streams": 1
+    }
+  },
+  "priorTechnicalChecks": {
+    "alignment": {
+      "lagSamples": 0,
+      "sampleRate": 16000,
+      "lagSeconds": 0,
+      "normalizedCorrelation": 0.9980904893017014,
+      "scope": "First30seconds, mono16k crosscorrelation; not perceptual QA"
+    },
+    "correction": {
+      "scope": "98-112seconds across103second boundary, decoded mono16k",
+      "correlation": 0.9993939535282457,
+      "sameVideoStreamSHA256": "23ed3cfe7c8916c8610106b1b7836fe3e2395f8e5e3a41998a21064782087ea5",
+      "webBytes": 29304810,
+      "duration": 240.083333,
+      "audioStreams": 1,
+      "videoStreams": 1,
+      "artistReview": "superseded by explicit approval above"
+    },
+    "scope": "Copied earlier restoration measurements; not a new perceptual review of the full file."
+  },
+  "deploymentStatus": "not deployed by this change",
+  "browserPlaybackQA": "pending integration"
+}

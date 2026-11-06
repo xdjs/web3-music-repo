@@ -1,3 +1,4 @@
+import { isSolanaAsset, unsupportedSolanaRead } from "./asset-capabilities.mjs";
 import { alternateMediaURLs } from "./media-recovery.js";
 // Only known collection/token pairs can reach this read-only adapter.
 const RPCS = {
@@ -110,6 +111,7 @@ async function storageJSON(url, fetcher) {
   throw Error("Too many storage redirects");
 }
 export async function readNFT(record, fetcher = fetch) {
+  if (isSolanaAsset(record)) return unsupportedSolanaRead("metadata");
   // Older ERC-721 records omit this field. Never treat an unknown explicit
   // standard as ERC-721, and never synthesize an NFT token ID for a coin.
   const standard = record.standard === undefined ? "ERC721" : record.standard;

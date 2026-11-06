@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "scope": "Artist-approved playback copies; never replacements for the original NFT metadata or onchain provenance.",
+  "records": {
+    "pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1": {
+      "recordId": "pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1",
+      "status": "artist-approved",
+      "sourceType": "artist-supplied-correction",
+      "approvedBy": "Pete Rango",
+      "approvedAt": "2026-11-06",
+      "expectedIdentity": {
+        "chainId": 1,
+        "contract": "0x10d32bf55f5cbe66b068f2109ecf7475f0631d53",
+        "tokenId": "1"
+      },
+      "originalMediaURI": "ipfs://bafybeidiwm2sgde6t4pbccgcraah6g5qt6m2jo73o6rhdwszhy7szxoxne?id=1",
+      "playbackURL": "/media/planet-x-artist-corrected-720.mp4",
+      "mediaType": "video/mp4",
+      "sha256": "b5ff5dcfb38203a1e066b603908f9a879abee36ee21d7cc3dbcb9a33c9c85a23",
+      "byteLength": 29304810,
+      "note": "Artist-supplied corrected playback approved by Pete Rango. The original NFT metadata and IPFS media reference are preserved separately.",
+      "receipt": "data/planet-x-playback-correction.json"
+    }
+  }
+}

@@ -162,3 +162,27 @@ test("indexed NFT creation remains attributed and cannot replace stronger histor
     null,
   );
 });
+
+test("Nina indexed metadata date is usable without claiming a mint timestamp", () => {
+  const record = {
+    chainId: "solana",
+    mint: "122gW5E6uqWKEsb1KdCjVhWtarbCTdN7hR1bjt9dgdaw",
+    indexedSourceDate: {
+      kind: "indexed-metadata-date",
+      date: "2022-02-07T11:38:14.795+00:00",
+      source: "https://api.spinamp.xyz/v3/graphql",
+      onchainVerified: false,
+    },
+  };
+  const result = releaseDateForRecord(record);
+  assert.equal(result.kind, "indexed-metadata-date");
+  assert.equal(result.onchainVerified, false);
+  assert.equal(result.label, "Metadata date · from Spinamp index");
+  assert.equal(
+    releaseDateForRecord({
+      ...record,
+      indexedSourceDate: { ...record.indexedSourceDate, date: "not a date" },
+    }),
+    null,
+  );
+});

@@ -1,0 +1,599 @@
+{
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "records": {
+    "spinamp-c4fbf6953ce75fd2a410": {
+      "recordId": "spinamp-c4fbf6953ce75fd2a410",
+      "trackId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/dont-cdeltare-whdeltat-they-sdeltay",
+      "chainId": 137,
+      "contract": "0x4e8edd5ed83a73e73932b2787224886f206e1d88",
+      "metadataURI": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+      "relations": {
+        "checkedAt": "2026-11-06T19:25:31.037Z",
+        "source": "https://api.spinamp.xyz/v3/graphql",
+        "query": "{ nftType:__type(name:\"Nft\"){fields{name type{kind name ofType{kind name}}}} relations:allNftsProcessedTracks(condition:{processedTrackId:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/dont-cdeltare-whdeltat-they-sdeltay\"},first:100,orderBy:PRIMARY_KEY_ASC){totalCount pageInfo{hasNextPage endCursor}nodes{nftByNftId{id chainId contractAddress tokenId tokenUri nftFactoryByNftFactoryId{standard}}}}}",
+        "body": {
+          "data": {
+            "relations": {
+              "totalCount": 16,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvOSIsInBvbHlnb24vMHg0ZThlZEQ1ZWQ4M2E3M0U3MzkzMkIyNzg3MjI0ODg2RjIwNkUxZDg4L2RvbnQtY2RlbHRhcmUtd2hkZWx0YXQtdGhleS1zZGVsdGF5Il1d"
+              },
+              "nodes": [
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/1",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "1",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/10",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "10",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/11",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "11",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/12",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "12",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/13",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "13",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/14",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "14",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/15",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "15",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/16",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "16",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/2",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "2",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/3",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "3",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/4",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "4",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/5",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "5",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/6",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "6",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/7",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "7",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/8",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "8",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                },
+                {
+                  "nftByNftId": {
+                    "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/9",
+                    "chainId": "polygon",
+                    "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                    "tokenId": "9",
+                    "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                    "nftFactoryByNftFactoryId": {
+                      "standard": "erc721"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "owners": {
+        "source": "https://api.spinamp.xyz/v3/graphql",
+        "responses": [
+          {
+            "checkedAt": "2026-11-06T19:27:06.913Z",
+            "source": "https://api.spinamp.xyz/v3/graphql",
+            "query": "{n0:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/1\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}\nn1:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/10\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}\nn2:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/11\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}\nn3:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/12\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}}",
+            "body": {
+              "data": {
+                "n0": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/1",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "1",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHg1NjA2MWI0MzEyM2JjQTFmZDk0MEI4N0U1NmJlN0UxNTlmMjQ4NGJkIiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvMSJdXQ=="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/1",
+                        "addressId": "0x56061b43123bcA1fd940B87E56be7E159f2484bd",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                },
+                "n1": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/10",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "10",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHgwODk0Yzg2OTE0YzMyQTc0MDk2MzRlNGY4RDFCMTE3ZTI2QjI4NzJjIiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvMTAiXV0="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/10",
+                        "addressId": "0x0894c86914c32A7409634e4f8D1B117e26B2872c",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                },
+                "n2": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/11",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "11",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHhjZkJmMzRkMzg1RUEyZDVFYjk0NzA2M2I2N2VBMjI2ZGNEQTNEQzM4IiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvMTEiXV0="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/11",
+                        "addressId": "0xcfBf34d385EA2d5Eb947063b67eA226dcDA3DC38",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                },
+                "n3": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/12",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "12",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHhjZkJmMzRkMzg1RUEyZDVFYjk0NzA2M2I2N2VBMjI2ZGNEQTNEQzM4IiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvMTIiXV0="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/12",
+                        "addressId": "0xcfBf34d385EA2d5Eb947063b67eA226dcDA3DC38",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "checkedAt": "2026-11-06T19:27:07.982Z",
+            "source": "https://api.spinamp.xyz/v3/graphql",
+            "query": "{n0:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/13\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}\nn1:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/14\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}\nn2:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/15\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}\nn3:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/16\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}}",
+            "body": {
+              "data": {
+                "n0": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/13",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "13",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHg5NDczNEUxMWI3ODY4MGEzNWIwQTg2YmEzY2U2MzRkMzM0ZDZkMkE3IiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvMTMiXV0="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/13",
+                        "addressId": "0x94734E11b78680a35b0A86ba3ce634d334d6d2A7",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                },
+                "n1": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/14",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "14",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHg0RGEyZDY1OGVDNzk4QWY3ZTcyMzA2OWRlZEVFQTI3QkM3RjhCYTUyIiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvMTQiXV0="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/14",
+                        "addressId": "0x4Da2d658eC798Af7e723069dedEEA27BC7F8Ba52",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                },
+                "n2": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/15",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "15",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHg0MURhMzc0MDFBZDEyZDk3RjIwNzkyN2YxNjU2ZmE3ZUU1M0Y3OTE4IiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvMTUiXV0="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/15",
+                        "addressId": "0x41Da37401Ad12d97F207927f1656fa7eE53F7918",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                },
+                "n3": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/16",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "16",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHg5NzI0QTYzOTc4NWEyNzEyOTdjRjg5ZDJmMDk1ODY2NjI0NTIzY2IxIiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvMTYiXV0="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/16",
+                        "addressId": "0x9724A639785a271297cF89d2f095866624523cb1",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "checkedAt": "2026-11-06T19:27:08.714Z",
+            "source": "https://api.spinamp.xyz/v3/graphql",
+            "query": "{n0:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/2\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}\nn1:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/3\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}\nn2:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/4\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}\nn3:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/5\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}}",
+            "body": {
+              "data": {
+                "n0": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/2",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "2",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHg4NTEyQjhmNDFhNkQxZjJBYTBEMDlhZTcxMGI3MDU0OTg3MzVGMjY1IiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvMiJdXQ=="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/2",
+                        "addressId": "0x8512B8f41a6D1f2Aa0D09ae710b705498735F265",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                },
+                "n1": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/3",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "3",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHgwN2ZDMDc4OTk2NTQ4OGM5YkEzRDgxMEZDMkMyZjE2ZmZGM2ZlZjMyIiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvMyJdXQ=="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/3",
+                        "addressId": "0x07fC0789965488c9bA3D810FC2C2f16ffF3fef32",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                },
+                "n2": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/4",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "4",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHg1ZEVjM0Q2ODEwZkQ5NmFjMDM1OTNiODYyNjM5RkYzMkQ3RDFDNzhFIiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvNCJdXQ=="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/4",
+                        "addressId": "0x5dEc3D6810fD96ac03593b862639FF32D7D1C78E",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                },
+                "n3": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/5",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "5",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHg1ZEVjM0Q2ODEwZkQ5NmFjMDM1OTNiODYyNjM5RkYzMkQ3RDFDNzhFIiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvNSJdXQ=="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/5",
+                        "addressId": "0x5dEc3D6810fD96ac03593b862639FF32D7D1C78E",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "checkedAt": "2026-11-06T19:27:09.352Z",
+            "source": "https://api.spinamp.xyz/v3/graphql",
+            "query": "{n0:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/6\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}\nn1:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/7\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}\nn2:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/8\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}\nn3:nftById(id:\"polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/9\"){id chainId contractAddress tokenId tokenUri nftsCollectorsByNftId(first:100){totalCount pageInfo{hasNextPage endCursor}nodes{nftId addressId amount}}}}",
+            "body": {
+              "data": {
+                "n0": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/6",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "6",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHg1OTI1RjcwQkI0QWEyZjgzMDQ1N0IxNzU0OUU5Q0Q5MjYzZWFkZDMxIiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvNiJdXQ=="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/6",
+                        "addressId": "0x5925F70BB4Aa2f830457B17549E9CD9263eadd31",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                },
+                "n1": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/7",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "7",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHg5Yzc3MzUwN2I2Qjc4MDA0MzVDNjI5YkMzYjg4ZGViZkQyOUIxZDQwIiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvNyJdXQ=="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/7",
+                        "addressId": "0x9c773507b6B7800435C629bC3b88debfD29B1d40",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                },
+                "n2": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/8",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "8",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHg4NTEyQjhmNDFhNkQxZjJBYTBEMDlhZTcxMGI3MDU0OTg3MzVGMjY1IiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvOCJdXQ=="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/8",
+                        "addressId": "0x8512B8f41a6D1f2Aa0D09ae710b705498735F265",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                },
+                "n3": {
+                  "id": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/9",
+                  "chainId": "polygon",
+                  "contractAddress": "0x4e8edD5ed83a73E73932B2787224886F206E1d88",
+                  "tokenId": "9",
+                  "tokenUri": "ipfs://bafybeih6f7qrhkp5yeiau7oljmq5abkpjkgtgr75e7inkiopjh4td6r2qe",
+                  "nftsCollectorsByNftId": {
+                    "totalCount": 1,
+                    "pageInfo": {
+                      "hasNextPage": false,
+                      "endCursor": "WyJwcmltYXJ5X2tleV9hc2MiLFsiMHgxNTZBQzc4NEJhRTMyOGY2YUZiNjQwMzQ2MDE0NUJBOEIwMjlkM2I1IiwicG9seWdvbi8weDRlOGVkRDVlZDgzYTczRTczOTMyQjI3ODcyMjQ4ODZGMjA2RTFkODgvOSJdXQ=="
+                    },
+                    "nodes": [
+                      {
+                        "nftId": "polygon/0x4e8edD5ed83a73E73932B2787224886F206E1d88/9",
+                        "addressId": "0x156AC784BaE328f6aFb6403460145BA8B029d3b5",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

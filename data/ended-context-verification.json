@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-06T19:26:47.660Z",
+  "base": "http://127.0.0.1:4191",
+  "id": "spinamp-c4fbf6953ce75fd2a410",
+  "queue": [
+    "spinamp-c4fbf6953ce75fd2a410",
+    "record-61048859",
+    "record-69c77ef0",
+    "record-not4me",
+    "recovered-sound-1-b2cb781aa0b35aec7acef3f9751b61505fd5715a",
+    "recovered-sound-1-9723896ab0e5d0bded8310a7b73a31645cd263d0",
+    "recovered-sound-10-26497c0928c175f7d1c51a5bd345734d0db57f69",
+    "recovered-sound-10-090be8db9d5d26f7b09dab1902d1b02bb866954c",
+    "recovered-sound-10-f50bae91a46e308ef720f4e67c9790fb954ced81",
+    "recovered-sound-10-9f3303e2c04e79387c3b5089b8a73e0b466e9076",
+    "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-52",
+    "pete-zora-coin-base-c01f464c55f5b1bec05db5205d2fae9e6a835a5e",
+    "pete-zora-1-4ac251da6af98d7018cb8a722b3b5ab602f75fcf-1",
+    "pete-zora-1-10d32bf55f5cbe66b068f2109ecf7475f0631d53-1",
+    "pete-zora-1-1baf95bab135ea5817606dc8ec27e64dabe17101-1",
+    "pete-zora-1-2db9c2070d4cc57345d34e526e998d3fb6c71548-1",
+    "pete-zora-1-de1553b02fd9f80cc9154b49a3d4fe659b426aa6-2",
+    "pete-zora-1-0e616dff8c4d9341ce7cebe3bfa829d76ddb410e-3",
+    "supercollector-10-0b0abf42c6cd9eb5803e39988850df4756a07956-1",
+    "supercollector-10-0b0abf42c6cd9eb5803e39988850df4756a07956-2",
+    "supercollector-10-0b0abf42c6cd9eb5803e39988850df4756a07956-3",
+    "spinamp-1c68061e5fc9d737da8a"
+  ],
+  "currentIndex": "0",
+  "before": {
+    "t": 0.309409,
+    "duration": 147.672,
+    "source": "https://ipfs.filebase.io/ipfs/bafybeicv6abc66dwf2nkgdrblqydcbuczgelsgq6a6wes4dunegi6rvnvi"
+  },
+  "after": {
+    "t": 0,
+    "duration": null,
+    "source": "https://arweave.net/YStvDur7I86UT_qwjo2NGC4ccu5GiMybEN8VavqGTdw",
+    "endedEvents": 1,
+    "paused": false,
+    "title": "Por Tu Barrio",
+    "link": "#record/record-61048859"
+  },
+  "passed": false,
+  "error": "page.waitForFunction: Timeout 35000ms exceeded.",
+  "state": {
+    "t": 0,
+    "duration": null,
+    "src": "https://arweave.net/YStvDur7I86UT_qwjo2NGC4ccu5GiMybEN8VavqGTdw",
+    "ready": 0,
+    "ended": false,
+    "paused": false
+  }
+}
