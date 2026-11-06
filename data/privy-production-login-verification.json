@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-06T10:36:00.235Z",
+  "checkedAt": "2026-11-06T17:26:50.721Z",
   "scope": "Real Privy SDK and configured recovery client, guest login modal only. No OTP sent; no wallet signed; real account completion not verified.",
   "config": {
     "enabled": true,
@@ -40,5 +40,7 @@
       "status": 200
     }
   ],
-  "errors": []
+  "errors": [],
+  "sourceCommit": "c79de1908a597fcb47dbde4afd4cba4c488044b3",
+  "deployment": "dpl_ghLKKmV9ieeXNpJNPydkRJXmqvtK"
 }

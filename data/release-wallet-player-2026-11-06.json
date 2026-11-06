@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-06T17:29:42.883278+00:00",
+  "appCommit": "c79de1908a597fcb47dbde4afd4cba4c488044b3",
+  "pullRequest": "https://github.com/xdjs/web3-music-repo/pull/2",
+  "deploymentId": "dpl_ghLKKmV9ieeXNpJNPydkRJXmqvtK",
+  "deployment": "https://web3-music-repo-lejms9qod-musicnerd.vercel.app",
+  "production": "https://web3-music-repo.vercel.app/",
+  "state": "READY",
+  "lab": "https://lab.musicnerd.net/peterango/music-nft-recovery",
+  "labUpdatedAndVerified": true,
+  "creator": "Pete Rango",
+  "records": 13640,
+  "spinampAdditions": 3815,
+  "bpmEstimates": 5666,
+  "validation": {
+    "javascriptTests": 196,
+    "catalogExportPythonTests": 5,
+    "syntax": true,
+    "format": true,
+    "productionBuild": true,
+    "productionAssetHashes": true,
+    "publicStaticCatalogParity": true,
+    "realENS": true,
+    "realPublicWalletAutoload": true,
+    "realPrivyModal": true,
+    "liveQueueAndShuffle": true,
+    "liveNativeBufferReuse": true,
+    "labPersistenceAndRenderedPage": true
+  },
+  "receipts": [
+    "data/wallet-player-production-verification.json",
+    "data/wallet-production-ui-verification.json",
+    "data/wallet-ens-production-ui-verification.json",
+    "data/privy-production-login-verification.json",
+    "data/production-queue-reorder-verification.json",
+    "data/next-track-buffer-production-chromium-next-verification.json",
+    "data/lab-update-persistence.json",
+    "data/lab-submission-verification.json"
+  ],
+  "remaining": [
+    "Base/Polygon/Zora wallet indexer failures",
+    "Personal cross-device playlist save/load and new-wallet linking",
+    "Physical iOS Safari buffer handoff",
+    "Spinamp inventory expansion and newer BPM cohort",
+    "All-track playback and complete platform census"
+  ]
+}

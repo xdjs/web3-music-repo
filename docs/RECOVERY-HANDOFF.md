@@ -2,21 +2,17 @@
 
 Updated November 6, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
-## Wallet and player release candidate
-
-The next release adds automatic linked-wallet collections, ENS lookup, shuffle, drag/keyboard queue ordering, and reuse of the next recording’s native media buffer. Implementation and browser checks are complete; production publication will be recorded below after deployment. The existing live release below remains the baseline until then.
-
 ## Current publication
 
-- Repository: https://github.com/xdjs/web3-music-repo — PR #1 merged to `main`, app commit `e3458a1e29ff581dded2a90c0c6b19e454fa5548`.
-- Live app: https://web3-music-repo.vercel.app/ . Production deployment `dpl_EzRjTGwjs26ny3bDyrUvDJnF1uEr`, built from a clean worktree at that exact merged commit.
-- Immutable deployment: https://web3-music-repo-ql7ogjao5-musicnerd.vercel.app .
-- Existing Lab listing: https://lab.musicnerd.net/peterango/music-nft-recovery . The Lab entry launches the Vercel app; it is not a separate application build. Its new cover, main source link, cookbook and Pete Rango credit were published and verified by API read-back and desktop/mobile rendering. See `docs/lab-submission-plan.md` and `data/lab-update-persistence.json`.
-- Verification-only files committed after the app deployment do not change the deployed application code. `data/release-2026-11-06.json` and `data/production-final-verification.json` identify the tested release. Older failed/network-interrupted reports remain historical evidence, not the latest release result.
+- Repository: https://github.com/xdjs/web3-music-repo — PR #2 merged to `main`, app commit `c79de1908a597fcb47dbde4afd4cba4c488044b3`.
+- Live app: https://web3-music-repo.vercel.app/ . Production deployment `dpl_ghLKKmV9ieeXNpJNPydkRJXmqvtK`, built from a clean worktree at that exact merged commit.
+- Immutable deployment: https://web3-music-repo-lejms9qod-musicnerd.vercel.app .
+- Existing Lab listing: https://lab.musicnerd.net/peterango/music-nft-recovery . It launches the Vercel app, not a separate build. Cookbook updated for linked collections, ENS and playback controls; saved data and desktop/mobile rendering independently verified. Cover, source link, description and Pete Rango originator credit preserved.
+- `data/release-wallet-player-2026-11-06.json` and `data/wallet-player-production-verification.json` identify the latest release. Verification/docs commits after deployment do not change the deployed app. Older receipts are historical.
 
 ## Workspaces and active work
 
-- Canonical checkout: `/Users/peterarango/Documents/Music Nerd/Apps/web3-music-repo`, release branch `codex/wallet-shuffle-preload` (will return to `main` after merge).
+- Canonical checkout: `/Users/peterarango/Documents/Music Nerd/Apps/web3-music-repo`, on `main`.
 - Clean deployed worktree: `../web3-music-release-main`, detached at the deployed app commit. Do not modify it while tracing this release.
 - Preserved preview: `../music-nft-recovery`, http://127.0.0.1:4190. The latest app files were synchronized there, preserving `.env.local`, private playlists, raw metadata cache and its newer audio-analysis output. It has no Git repository.
 - The documentary `/Users/peterarango/Documents/Music Nerd/Music NFT Era` is a different dirty repository. Do not reset, stage, move or overwrite it.
@@ -49,7 +45,7 @@ One upcoming audio recording also buffers during playback once the current track
 
 Personal playlists, likes, and bounded shared snapshot links work without login. Recipients can play and save independent copies. Four recovered Sound playlists have play/save/share/like controls: Chill n Work 23/23 matched, STØNED & STÅRVING #5 15/22, MOMINTS VOL-IV 13/14, Lofi Chill 10/10. Recovered historical positions and currently matched recordings are separate counts. Seven additional public Spinamp playlists are preserved as research; they are not mislabeled historical Sound playlists or claimed integrated.
 
-Browsing requests a compact index; full details load only when a recording opens, with retry and stale-response protection. Vercel serves shared build-time catalog snapshots statically to avoid the Function response limit. Local API remains dynamic. Live index delivery measured 2,285,031 Brotli bytes /11,935,505 decoded, 480 ms in one cached browser run; latency is not guaranteed. Full static export 49,264,634 bytes returned HTTP 200. See `docs/catalog-delivery.md`.
+Browsing requests a compact index; full details load only when a recording opens, with retry and stale-response protection. Vercel serves shared build-time catalog snapshots statically to avoid the Function response limit. Local API remains dynamic. The current index is 12,672,763 decoded bytes; the full build snapshot is 51,503,690 bytes. Earlier latency measurements are historical, not a guarantee for this deployment. See `docs/catalog-delivery.md`.
 
 ## Account and payment boundaries
 
@@ -63,7 +59,7 @@ Catalog financial views validate 186 Base purchases and 144 Ethereum royalty eve
 
 ## Verification, branding and next steps
 
-The baseline release passed 167 JavaScript tests and 5 Catalog-export Python checks. This candidate adds wallet/ENS, shuffle/queue and buffer tests; the final release receipt records the complete test and build result. Focused browser checks cover wallet auto-load/races with mocked authentication, real ENS resolution, mouse/keyboard/native-touch queue changes, and real audio buffer reuse. New controls were reviewed at 1440/390 in light/dark, with the compact player also checked at 320px. Lyrics, source/provenance panels, filters, profiles, queues and playlists were reviewed at 1440/390 px in light/dark. Production checks passed static catalog parity, inline lyrics, actual attributed Spinamp PFP loading, selected audio startup, ordered playlist Next, save-copy, and real SDK login modal. No all-track/full-listen claim is made.
+The release passed 196 JavaScript tests, 5 Catalog-export Python checks, syntax/format, frontend module closure and the production build. Live asset hashes and the 13,640-record static index match merged main. Real ENS lookup, actual Privy modal, public wallet auto-loading, shuffle/queue interactions, and native next-buffer reuse passed on production. A production buffer handoff reused 10.36 seconds of audio with one request before/after and 23.9ms Next-to-playing in one run. Focused browser checks cover wallet auto-load/races with mocked authentication, real ENS resolution, mouse/keyboard/native-touch queue changes, and real audio buffer reuse. New controls were reviewed at 1440/390 in light/dark, with the compact player also checked at 320px. Lyrics, source/provenance panels, filters, profiles, queues and playlists were reviewed at 1440/390 px in light/dark. Production checks passed static catalog parity, inline lyrics, actual attributed Spinamp PFP loading, selected audio startup, ordered playlist Next, save-copy, and real SDK login modal. No all-track/full-listen claim is made.
 
 The share image matches the current live Music Nerd black/pink record-sleeve styling, original lenses logo and verified SF NS system type. OG/Twitter and Lab use the new 1200×630 image; see `docs/share-image.md`. Social networks may retain older cached previews. Instagram audio/video clip export remains a proposal, not implemented functionality.
 

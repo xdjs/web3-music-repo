@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-06T10:38:27.098Z",
+  "checkedAt": "2026-11-06T17:27:37.606Z",
   "url": "https://lab.musicnerd.net/peterango/music-nft-recovery",
   "status": "published",
   "httpStatus": 200,
@@ -10,7 +10,7 @@
   "originatorCredit": true,
   "cookbookRendered": true,
   "starterRecipeRendered": true,
-  "persistedReadback": "data/lab-update-persistence.json; read-only SELECT exact fields and text hashes match; documentary unchanged",
+  "persistedReadback": "data/lab-update-persistence.json; independent read-only database SELECT with matching content hashes",
   "viewports": [
     1440,
     390
@@ -19,9 +19,7 @@
     "viewport": 390,
     "document": 392
   },
-  "coverURL": "https://web3-music-repo.vercel.app/lab-cover-v2.png",
-  "sourceURL": "https://github.com/xdjs/web3-music-repo/tree/main",
-  "deployment": "dpl_EzRjTGwjs26ny3bDyrUvDJnF1uEr",
-  "sourceCommit": "e3458a1e29ff581dded2a90c0c6b19e454fa5548",
-  "updatedExistingListing": true
+  "ensCookbookRendered": true,
+  "listeningCookbookRendered": true,
+  "publishedUpdateAt": "2026-11-06T17:27:18.794205+00:00"
 }

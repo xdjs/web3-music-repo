@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-11-06T17:26:45.577Z",
+  "base": "https://web3-music-repo.vercel.app",
+  "sourceCommit": "c79de1908a597fcb47dbde4afd4cba4c488044b3",
+  "scope": "Actual public wallet query on My collection, real provider results; guest browser, no OTP or signature. Signed-in automatic selection separately covered by explicit mocked-auth QA.",
+  "wallet": "0x625307de45bd25ad6bf6cc7391a308fc84067cf7",
+  "requestCount": 5,
+  "networks": [
+    {
+      "chain": "1",
+      "heading": "Ethereum",
+      "status": "50 token entries checked \u00b7 20 archive matches \u00b7 more pages available",
+      "records": 20,
+      "error": null
+    },
+    {
+      "chain": "10",
+      "heading": "Optimism",
+      "status": "50 token entries checked \u00b7 18 archive matches \u00b7 more pages available",
+      "records": 18,
+      "error": null
+    },
+    {
+      "chain": "137",
+      "heading": "Polygon",
+      "status": "This network could not be checked",
+      "records": 0,
+      "error": "Wallet holdings could not be retrieved. Retry this network; no empty-wallet conclusion is drawn."
+    },
+    {
+      "chain": "8453",
+      "heading": "Base",
+      "status": "This network could not be checked",
+      "records": 0,
+      "error": "Wallet holdings could not be retrieved. Retry this network; no empty-wallet conclusion is drawn."
+    },
+    {
+      "chain": "7777777",
+      "heading": "Zora",
+      "status": "This network could not be checked",
+      "records": 0,
+      "error": "Wallet holdings could not be retrieved. Retry this network; no empty-wallet conclusion is drawn."
+    }
+  ],
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "deployment": "dpl_ghLKKmV9ieeXNpJNPydkRJXmqvtK"
+}

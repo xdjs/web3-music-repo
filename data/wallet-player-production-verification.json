@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-11-06T17:27:51.523406+00:00",
+  "base": "https://web3-music-repo.vercel.app",
+  "appCommit": "c79de1908a597fcb47dbde4afd4cba4c488044b3",
+  "deploymentId": "dpl_ghLKKmV9ieeXNpJNPydkRJXmqvtK",
+  "productionAssets": [
+    {
+      "path": "/src/archive.js",
+      "sha256": "5e5c34992dc989459b872b957ddbb05775690f52c8657f19f748018b8e6ab70f",
+      "matchesMergedMain": true
+    },
+    {
+      "path": "/src/archive.css",
+      "sha256": "dc859b478c1528a072d3792ec7fa65a391f56fc7794f0beca4f61a35c7340efc",
+      "matchesMergedMain": true
+    },
+    {
+      "path": "/src/wallet-library-ui.mjs",
+      "sha256": "267ce18522d9286d6697a57204465937272e9319a2e5e4df51ec4de4dbe280f0",
+      "matchesMergedMain": true
+    },
+    {
+      "path": "/src/wallet-library-state.mjs",
+      "sha256": "111fecc41fdb2de7b5366ffb59646b5a390bae0e70e5b9774c55e32deaac6aa1",
+      "matchesMergedMain": true
+    },
+    {
+      "path": "/src/next-track-buffer.mjs",
+      "sha256": "030f83bc2365350937098ba8bfb1e00155da9693316f9430b304b808986d8857",
+      "matchesMergedMain": true
+    },
+    {
+      "path": "/src/queue-shuffle.mjs",
+      "sha256": "d57290186583251153ad71ee93a4e6549043926486109d43ef2e67a39390f46f",
+      "matchesMergedMain": true
+    },
+    {
+      "path": "/src/queue-sortable.mjs",
+      "sha256": "a79e218906289bf40077951cae560a3a5322e79e5e97b1330a1839278bca7efa",
+      "matchesMergedMain": true
+    }
+  ],
+  "records": 13640,
+  "people": 3280,
+  "indexBytes": 12672763,
+  "staticCatalogMatchesLocalBuild": true,
+  "playlistStorage": "private-blob"
+}

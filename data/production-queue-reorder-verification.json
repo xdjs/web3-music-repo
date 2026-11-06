@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-11-06T17:26:54.246Z",
+  "base": "https://web3-music-repo.vercel.app",
+  "checks": [
+    "Explicit drag survives disabling shuffle; handle tap does not play",
+    "Mouse and keyboard moving current duplicate preserve exact occurrence and real audio",
+    "Next follows manually reordered occurrence",
+    "Native touch drag reorders duplicate occurrences without switching playback",
+    "Touch scrolling outside handle remains native",
+    "Real ended advance refreshes open queue and cancels active drag/autoscroll without committing it"
+  ],
+  "views": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "noOverflow": true
+    }
+  ],
+  "errors": [],
+  "playhead": {
+    "before": {
+      "src": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "time": 1.381818,
+      "paused": false,
+      "events": []
+    },
+    "after": {
+      "src": "https://d2i9ybouka0ieh.cloudfront.net/audio-transcoded/fac4de0e-0b0c-4692-be2b-d22b76c3e276/AUDIO_128K/5149079-15939-Mija_-_Groove__Jacob_Grosse_Remix__24_Bit_MASTER.m4a",
+      "time": 1.920807,
+      "paused": false,
+      "events": []
+    }
+  },
+  "mobileImages": [
+    {
+      "src": "https://arweave.net/kqCoMGIS87kzbj6pgGneLVqVr20ZyNdWWfy8dh3v454",
+      "width": 1000,
+      "display": "block"
+    },
+    {
+      "src": "https://arweave.net/kqCoMGIS87kzbj6pgGneLVqVr20ZyNdWWfy8dh3v454",
+      "width": 1000,
+      "display": "block"
+    }
+  ],
+  "passed": true
+}
