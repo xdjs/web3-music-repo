@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-11-07T00:02:13.736340+00:00",
+  "scope": "Read-only production account configuration and existing Chrome profile, plus local origin/token/storage/sync regression tests",
+  "publicConfig": {
+    "enabled": true,
+    "playlistStorage": "private-blob"
+  },
+  "unauthenticatedPlaylistRead": 401,
+  "existingSession": {
+    "origin": "https://web3-music-repo.vercel.app",
+    "profileNameVisible": true,
+    "linkedWalletVisible": true,
+    "playlistVisible": true,
+    "syncStatus": "Changes are saved on this device. Account sync is unavailable; retry to reconnect."
+  },
+  "finding": "Old browser origin was absent from PUT allowlist after ARCHIVE_ORIGIN changed to the renamed site; exact old and new public origins are now retained in code. Live fix verification pending deployment.",
+  "focusedTests": {
+    "passed": 24,
+    "failed": 0
+  },
+  "limitations": [
+    "No new credentials or wallet signatures submitted",
+    "Real second-device retest remains required after the save-origin fix is deployed",
+    "Existing automated account browser fixture rerun could not launch Chromium due local sandbox MachPort permission; previous fixture receipts remain historical"
+  ],
+  "userSecondDeviceCheck": "User signed into another device and could not see their playlists before the origin fix was deployed."
+}

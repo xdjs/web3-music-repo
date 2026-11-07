@@ -1,0 +1,118 @@
+{
+  "startedAt": "2026-11-06T23:56:47.372Z",
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "scope": "Exact Lens release relations and indexed ownership; index freshness unknown, not fresh chain balances",
+  "maximumRequests": 100,
+  "maximumTokensPerRelease": 200,
+  "beforeSnapshots": 1,
+  "results": [
+    {
+      "recordId": "spinamp-c51ed235413858f6cad3",
+      "title": "Future Surf Radio - JumpRope (Snippet)",
+      "artist": "Scolla",
+      "status": "indexed",
+      "mappedTokens": 6,
+      "wallets": 6,
+      "checkedAt": "2026-11-06T23:56:48.521Z"
+    },
+    {
+      "recordId": "spinamp-aa0fe0a2c10e2631bcfd",
+      "title": "The Stern Mystic",
+      "artist": "Jadyn Violet",
+      "status": "indexed",
+      "mappedTokens": 23,
+      "wallets": 17,
+      "checkedAt": "2026-11-06T23:56:51.119Z"
+    },
+    {
+      "recordId": "spinamp-baa40232b7c8dfcf8c58",
+      "title": "it would be nice to have somebody",
+      "artist": "valentina cy",
+      "status": "indexed",
+      "mappedTokens": 13,
+      "wallets": 13,
+      "checkedAt": "2026-11-06T23:56:52.979Z"
+    },
+    {
+      "recordId": "spinamp-257e94565ad496224826",
+      "title": "L.O.V.E. - SOZI",
+      "artist": "SOZI",
+      "status": "unresolved",
+      "error": "Incomplete or out-of-budget release relation census"
+    },
+    {
+      "recordId": "spinamp-b77e9b0a6a9fcbab1f03",
+      "title": "Kim",
+      "artist": "valentina cy",
+      "status": "indexed",
+      "mappedTokens": 18,
+      "wallets": 9,
+      "checkedAt": "2026-11-06T23:56:55.551Z"
+    },
+    {
+      "recordId": "spinamp-0baefa8fc69541706c71",
+      "title": "Day 14",
+      "artist": "Heno.",
+      "status": "indexed",
+      "mappedTokens": 48,
+      "wallets": 46,
+      "checkedAt": "2026-11-06T23:56:59.407Z"
+    },
+    {
+      "recordId": "spinamp-e5cfeca947b225e8dc62",
+      "title": "turns out he's married",
+      "artist": "valentina cy",
+      "status": "indexed",
+      "mappedTokens": 58,
+      "wallets": 38,
+      "checkedAt": "2026-11-06T23:57:03.801Z"
+    },
+    {
+      "recordId": "spinamp-85ecbbcb838073f61584",
+      "title": "Day 11",
+      "artist": "Heno.",
+      "status": "indexed",
+      "mappedTokens": 179,
+      "wallets": 177,
+      "checkedAt": "2026-11-06T23:57:16.480Z"
+    },
+    {
+      "recordId": "spinamp-41fb2b0f83cca1f44294",
+      "title": "Day 6",
+      "artist": "Heno.",
+      "status": "indexed",
+      "mappedTokens": 197,
+      "wallets": 195,
+      "checkedAt": "2026-11-06T23:57:29.706Z"
+    },
+    {
+      "recordId": "spinamp-3f78523ccbbc24dc2974",
+      "title": "Night Skies (Demo)",
+      "artist": "Scolla",
+      "status": "indexed",
+      "mappedTokens": 13,
+      "wallets": 10,
+      "checkedAt": "2026-11-06T23:57:31.672Z"
+    }
+  ],
+  "finishedAt": "2026-11-06T23:57:32.178Z",
+  "requests": 70,
+  "afterSnapshots": 10,
+  "stopReason": "Explicit selected cohort completed",
+  "boundVerification": {
+    "checkedAt": "2026-11-07T00:04:33.769Z",
+    "source": "https://api.spinamp.xyz/v3/graphql",
+    "recordId": "spinamp-257e94565ad496224826",
+    "query": "{relations:allNftsProcessedTracks(condition:{processedTrackId:\"polygon/0x085C284651E26f8BaAF11AbdCbF56ff06B15D65F/love-sozi\"},first:1){totalCount pageInfo{hasNextPage}}}",
+    "body": {
+      "data": {
+        "relations": {
+          "totalCount": 236,
+          "pageInfo": {
+            "hasNextPage": true
+          }
+        }
+      }
+    }
+  }
+}

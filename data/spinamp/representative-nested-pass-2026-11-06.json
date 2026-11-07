@@ -1,0 +1,37 @@
+{
+  "startedAt": "2026-11-06T23:58:26.432Z",
+  "endpoint": "https://api.spinamp.xyz/v3/graphql",
+  "maxTracks": 169,
+  "maximumRequests": 338,
+  "requests": 3,
+  "queryScope": "Count-free nested exact-track first page, then separately identity-bound NFT metadata; total editions unknown when more pages exist",
+  "attempts": [
+    {
+      "id": "base/0x66674eA8aE30D399aB34c567c688a7a8be278E8E/0x0eeede68ab658f9b810a31df598d12af693e1983333cc806c866a969118c2371",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "canceling statement due to statement timeout",
+      "ms": 3910
+    },
+    {
+      "id": "base/0x67288d13898B7ec4a3Cc5F08aBc877f354eaCaA4/0x29fa5e0c071c7f194d84ee131d1bad3221bc0c376988c9c48bb475347e4c2cea",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "canceling statement due to statement timeout",
+      "ms": 3626
+    },
+    {
+      "id": "base/0x68733a0fc8dEa32535A249cbFccd6Ae0329ce998/0x0100f120e1c4024b5c6f60230cdbef6674dca55aad474153e9abbf6a8dcf011b",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "canceling statement due to statement timeout",
+      "ms": 3608
+    }
+  ],
+  "pendingBefore": 169,
+  "pendingAfter": 169,
+  "stopReason": "Three consecutive provider/validation failures",
+  "resolvedThisRun": 0,
+  "emptyThisRun": 0,
+  "finishedAt": "2026-11-06T23:58:41.762Z"
+}

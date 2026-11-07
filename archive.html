@@ -333,8 +333,17 @@
       </div>
       <div class="queue-toolbar">
         <p class="link-note" id="queue-context"></p>
-        <button class="text-button" id="clear-queue">Clear queue</button>
+        <div class="queue-toolbar-actions">
+          <button
+            class="outline-button"
+            id="autoplay-queue"
+            aria-pressed="true"
+          >
+            Autoplay on</button
+          ><button class="text-button" id="clear-queue">Clear queue</button>
+        </div>
       </div>
+      <p class="link-note queue-autoplay-note" id="queue-autoplay-note"></p>
       <div id="queue-list"></div>
     </dialog>
     <div id="toast" role="status" aria-live="polite"></div>

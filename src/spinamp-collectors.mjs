@@ -55,7 +55,7 @@ export function normalizeSpinampCollectorSnapshot(evidence) {
   requireThat(
     complete(connection) &&
       connection.totalCount > 0 &&
-      connection.totalCount <= 200,
+      connection.totalCount <= 300,
     "incomplete/bounded relation census",
   );
   const nfts = new Map(),

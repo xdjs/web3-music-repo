@@ -1,0 +1,1199 @@
+{
+  "startedAt": "2026-11-07T00:00:02.775Z",
+  "endpoint": "https://api.spinamp.xyz/v3/graphql",
+  "maxTracks": 169,
+  "maximumRequests": 338,
+  "requests": 169,
+  "queryScope": "Exact processed-track AND candidate-NFT relation lookup; candidate IDs never accepted without confirmed relation, total editions unknown",
+  "attempts": [
+    {
+      "id": "base/0x66674eA8aE30D399aB34c567c688a7a8be278E8E/0x0eeede68ab658f9b810a31df598d12af693e1983333cc806c866a969118c2371",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 916
+    },
+    {
+      "id": "base/0x67288d13898B7ec4a3Cc5F08aBc877f354eaCaA4/0x29fa5e0c071c7f194d84ee131d1bad3221bc0c376988c9c48bb475347e4c2cea",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 639
+    },
+    {
+      "id": "base/0x68733a0fc8dEa32535A249cbFccd6Ae0329ce998/0x0100f120e1c4024b5c6f60230cdbef6674dca55aad474153e9abbf6a8dcf011b",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 605
+    },
+    {
+      "id": "base/0x68767C3350c0512e1EDf096E33dd90c129667D29/0xe5885a881dc0d7974a16670c6f5c84bec2111b5210ae0019a6209fd9ceedc371",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 620
+    },
+    {
+      "id": "base/0x6ff2f9c5a59Adc4618617590A9DC77e5c9e4c68e/0x0208ea3d67c5e874035a83f4fd8172977481184276ad4849820d3bdc51d07629",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 629
+    },
+    {
+      "id": "base/0x6fF5a5CbDC51f4e28510CCAf2CC69b6eB5941d73/0x9b0e2e037846264b55ca37fba6cfd8d6b7f513f472470bc15f90ae4d9cf7d510",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 608
+    },
+    {
+      "id": "base/0x7177342817802580c33b72a0eEEc27A74D6DB88f/0xfd1808447a881daf6c0c2b5119aba744e8fe32fe7b555b7ab2bc14a55ca83920",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 612
+    },
+    {
+      "id": "base/0x71861B43Ed63451036c443766Cb5A50De38bEFD2/0x83aaba2fbcd30c6b7d149643ec93b3b8b06498371165aec5f24e9baa532171e6",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 627
+    },
+    {
+      "id": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xffcce90d67702d6c4db055c29387e2f50ce78af71e7f3edd64d8f9b67f131e3e",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 610
+    },
+    {
+      "id": "base/0x746efD91eA3499a3959E54e4AEDc309E7158e4DD/0xc04bc1a1f7467155b14129d6cc6da0a497b940b2a3d2c3fc7419cdfbd8684179",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 634
+    },
+    {
+      "id": "base/0x76aff22F2c521Ee3B50De8c132DB93BDb3C656c6/0x8b0ed21a338d88395423ee6d9fdb18d520eb763408041c056910f9e4c7773c0a",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 610
+    },
+    {
+      "id": "base/0x76c22D9c87E5EC00B422acDee67a1cBf727A3aC7/0x6c98e50195d475e0c3d7f849f2fcbc2dac5650d4a7581fa35ef6f3d98e0555d8",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 691
+    },
+    {
+      "id": "base/0x77BAC2909036C2e9A65593b7b369f731117f6378/0x5c8483c55f484f408db9d4d3a1c6dec65ff28b3ce52769d46243cd55a2b75275",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 688
+    },
+    {
+      "id": "base/0x78b9d4E1AcccCF0e079F59782fA481fd320F6Bc0/0xbd695c5b5aff1254a67f566851f7f954ec08dec39ed2f2523e79f00d9015bc8d",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 602
+    },
+    {
+      "id": "base/0x78ba07F56aAaB3D7380aE554Efe7AC4e7b533063/0xc7c3196fb1b9eb305976e9c49de4939f2700146c047e45a0f4d893e05b359bc4",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 608
+    },
+    {
+      "id": "base/0x7B57C6e0CCb160fe3eAB66E23F3E833DB539494B/0x8a1931ccb676eb5d9aa892ebf4d9ddfd81fb6d80e4f4aa35bfb60ed546b5cdfa",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 700
+    },
+    {
+      "id": "base/0x7B5FA5CB7Ab9EdCe2AED9aeC2511296E692f800e/0x6898bb3cc5d39d4a800ef6c40b6339000d88dce9b85b397ce0b1b5056d3981ba",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 589
+    },
+    {
+      "id": "base/0x7c0a822087611a91C77A5fd825ebf8FEFB0BCbB3/0xcd92bc24848565927fd3aaa4475ad0054d5681f0bd86394d4678e0805776e8cf",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 599
+    },
+    {
+      "id": "base/0x7c0bdB0Cf876332258C66Bd04ae80e45F84eF473/0x1e240f02f41da3cb92e535cedfb3c124dad14c52421fc6ae230687efe2f13947",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 612
+    },
+    {
+      "id": "base/0x7F41591aAaA6666B88509914078FfF6D5dEc7426/0x14af402be0b01fc6ce8cc6d5b4f287a557db7da354fc98e0ba9a2731f4ffa105",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 619
+    },
+    {
+      "id": "base/0x83365d25DB92A0b0da0403CC79459d0A83c511aA/0x7ac98274949e57832b313abb7996ceea7cc64d3dfb8f89ef288370abd30f3e57",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 692
+    },
+    {
+      "id": "base/0x833f21246FC62cf45fb54Bd62e2bD36680Acd406/0x21541856efa99ce6dd9eded3aab5de074be49c67d6d14cc6509f3ea8c1404352",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 652
+    },
+    {
+      "id": "base/0x867542b9f4a38A39ab239a8F301968aad1E231D3/0x41f77fc34a2aa455de9cfc795b946c614db96cfc7bf8129f1515f8501304a93e",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 620
+    },
+    {
+      "id": "base/0x899c5e9fFEAe95C0Dbe5132Fa3d81f16CDffe4D8/0x72070a0027bcad89219c3e59d9770b19f0274e6543cbcc19beefd6733ad472cf",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 627
+    },
+    {
+      "id": "base/0x8b2937eAD425CCC91Fc0ad884638Dc2129c51CB2/ich-r-u",
+      "platform": "anotherblock",
+      "status": "resolved",
+      "error": null,
+      "ms": 695
+    },
+    {
+      "id": "base/0x8C6385f79200Afed5946Abb1Fa6dEC62cf656153/0xbeb21a7bddfd1d377a317d2427c50d149cfedbbe7997055242e3c589d80afc08",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 733
+    },
+    {
+      "id": "base/0x8c657d9E88FF3185f1EaCD5B75ee4da4ec9730Df/0x55651dfaaae10008c9dcfc9f18fdd7b7030cf8ca058572652047a3616878fb98",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 711
+    },
+    {
+      "id": "base/0x8e076069a5ffD5A67DCc12b730ee2591907115Bd/smile",
+      "platform": "anotherblock",
+      "status": "resolved",
+      "error": null,
+      "ms": 618
+    },
+    {
+      "id": "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/art-in-the-infinite-garden",
+      "platform": "pods",
+      "status": "resolved",
+      "error": null,
+      "ms": 613
+    },
+    {
+      "id": "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/the-luminarys-path-a-journey-of-ai-community-and-creativity",
+      "platform": "pods",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 597
+    },
+    {
+      "id": "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/41-remi-religion-community-and-culture",
+      "platform": "pods",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 592
+    },
+    {
+      "id": "base/0x945A7731ac788Df4579eb0B3b336ad98E85f18c6/0x29077f4f5c9527eb38bbf786fb9207aaf2d7833463f4a75c0f04c5fee9545717",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 611
+    },
+    {
+      "id": "base/0x9463f00B4e9f934774E89c96110aCc7434a524E1/0x436b76ac43a896da792269e93675e905ec04edd132723521640e2b2adb08adcb",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 614
+    },
+    {
+      "id": "base/0xA08Af2e571DC0eD62B7D551B18C847F8F9f3fCd0/0xf9af9ea0a2e60b34fb7daaa4d01ac809d4a0754effa8630d8ca6a09438c6ce86",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 604
+    },
+    {
+      "id": "base/0xa08F32B955aa55d263586921479DDa8025842145/0x2c3a55c266fe6f68120ccb760df64e298217340d1a16197ae4331ce3527a5ffb",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 606
+    },
+    {
+      "id": "base/0xA3d2157e034c7a0B98f873837Ae1Bce9fb64486c/0x4a2bf8981d84842e8e2feac1b7c40b53995f598666f54d956fac581ea2b02be1",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 656
+    },
+    {
+      "id": "base/0xA3D25362AEDD9b59Ebe6b5892A11003496d1653C/0xd57f6bab68b675e6eb51ca214545e413625c5c21201989ac0ee8bbd6d57720de",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 676
+    },
+    {
+      "id": "base/0xA4E45e585da374Ce7Af0052F5ABD04827be43a37/0xd69d7564fc628eb945f9d58196b615e5461f1220496d0e858a2156fb35e45ab8",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 637
+    },
+    {
+      "id": "base/0xA9e30C4449422933D436A9f3371f037EDF89682e/0xb27380905002d4e3594c444b96e2312299b371db6db58e2318bae983e5f80145",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 618
+    },
+    {
+      "id": "base/0xaB4d845880BfCa8016FEA84a6F645D2369292514/0x7c8663969414a6564d176c7b60b31ffeda39f77e90a8cc518c8660b7dabae88d",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 675
+    },
+    {
+      "id": "base/0xB9e9714fA2d25Fa79d570c45495372aAe1226EBb/0xf81b04367fc2ff04e6bf19e0882ef9930e813d315dffbf6c73583a019a41156a",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 949
+    },
+    {
+      "id": "base/0xba913c9f731374b077028A99f29Ce349d9e6CFe6/0xbdb63c07cf9cda186c971144c2e3957833fb094b0397024ca4f11b99e830e63e",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 622
+    },
+    {
+      "id": "base/0xBA924e9A66a064Fc632dc218e0476b980364E172/0xe586cc67b2ec80ef897c868a3684ef96ae83b98796556e21852b70cdf7991191",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 675
+    },
+    {
+      "id": "base/0xbc63AC1358DEb6caf58Bf830e534cAfcb8b4fEa5/0xeaf957dc2edf69df7e4666d7e48b35f12313c2621357c8144b3ab3d093ca02e8",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 622
+    },
+    {
+      "id": "base/0xbF0CC7e73b5CD52a2267D98f4ABCC71881070404/0xba658406c66bef189869722cae40e57c39733a64721462b5747bad5527b1a929",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 620
+    },
+    {
+      "id": "base/0xBf0e4d762De65ae6bf3c376172B0654973453383/0x370d19c146d435ef535837462f9df25092306cdc601b87f43279b626abec8ee2",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 606
+    },
+    {
+      "id": "base/0xC85f505B43FcbFFBF7808A55bC4E8ceCAC18D85B",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 605
+    },
+    {
+      "id": "base/0xc8FEe5263C066EdD826118D64678B89d283fDaB4",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 618
+    },
+    {
+      "id": "base/0xc9bCcE2311397C98d6e483642f44E2df1Cd50A6B",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 625
+    },
+    {
+      "id": "base/0xCb6D0473ab3E3434Bc766Ca19B984F99D1a18348",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 603
+    },
+    {
+      "id": "base/0xCbE44884E99fE4C339c8BC3761bAB75bEc582252",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 966
+    },
+    {
+      "id": "base/0xCCbE8e9Cec32299F2f571e9DBAbfC209e02DCD27",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 649
+    },
+    {
+      "id": "base/0xD26a764d04f5509dcB314Df5056a9a1eaE420199/0xeb0dd545f51eb9100dd8d4bb7fed0dbb5f3299a031522adcb03aa6f8ee1c7869",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 606
+    },
+    {
+      "id": "base/0xD26bB642DD1e15382f8344641503d67044D6de66/0xf9333cae09aa8fc3a70e85259e7bebafa43fc43e65a9eb0b5e0262050d4fec3f",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 615
+    },
+    {
+      "id": "base/0xd2C8921B89902cFaf9922989882Fa9e28A6aeB93/0x4ae4436c4810623903d153e043a984ee89fa17405a3d44ffe586b12643407ceb",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 610
+    },
+    {
+      "id": "base/0xd7893B50AB6CBD2Cfe4073A0F5Cd65637dfCebC4/0x4c28c33b83fb69f6aa774f69f01b7ccaffbf69ac7326690b858b0f9261ddc899",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 644
+    },
+    {
+      "id": "base/0xDa7E196E3401b385d9E7a3394B5C38751121CB5A/0x4001806ee0a6b200c3241090d0c22e05055adc171eef6d4a4d983e084e01fb18",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 695
+    },
+    {
+      "id": "base/0xe2B7Fff1E04113E6d0344D52BCf290562A6BFc76/0xddc50f9d95eebe6a26d58f6da8f7a3f19c9f41bf7178369f7baf2c178e30572a",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 609
+    },
+    {
+      "id": "base/0xE2c5f3A5da0dA5704CbCC1597E7854E426d3c68f/0xeba6216cd565eb9245e7bd0e7ef15e2e6d0f370f84c9ab70bb293b4823fb24b3",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 601
+    },
+    {
+      "id": "base/0xE39Df1AD806e84de47D0F6ddf56a0007C678597c/0x80e871085eda5dcda0bfdf7e4b73410af5dcd4412b3e8af5a450afc96b9ae05f",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 608
+    },
+    {
+      "id": "base/0xf211561Db462746f13fA437684F317B879246b32/0x53194665b7952f6db5b7cf4abe3abd8192beaec3141466703dc68d310337cf1e",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 622
+    },
+    {
+      "id": "base/0xF4b536f27B12b25E80907B4Ebf5834e530F15F9A/0xab2305199921abae742beec8f3bd22f6806fc127d33bc31d735768932ff1c90c",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 613
+    },
+    {
+      "id": "base/0xF4B6C3f05E6F0bBbf06ae865715CD225266e789e/0x1dcab46c6eb87f6db484550a89095889240ff276248766b3f0c0f3012422730f",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 602
+    },
+    {
+      "id": "base/0xf57FdEf4cBf30F7d47F578d313a181141C91c1E9/0x6b3111b799d628b9f1748655c64292691400e5186a65a9f5bebd75d2cae511d2",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 610
+    },
+    {
+      "id": "base/0xF58736656839Ac549C80c37ffdF9Ddb31f9176E1/0x4a3b861d24dab00be6a3e1a482f48a920e88c0164be590a638a868fd3347389a",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 603
+    },
+    {
+      "id": "base/0xf99AC60186d2638cA97Cc236814a2ee22eD8D36D/0xb30fed49a772a4c6dfba415e13cb20ca86b927ebbfc93f286b2802eaea5724d4",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 640
+    },
+    {
+      "id": "optimism/0x04dB718b776D996996CD30DFC7BD891Bc94a7694/0x64657700feda2349f7df2e91ca9a4f257b4ba3d1f7747a17a9829c80734a9415",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 608
+    },
+    {
+      "id": "optimism/0x1460E9C2eE9ACbE06f4F2a6b03cD2dCfdBDafa01/0x0bf88827841fe0d20057fc81b82708e33186c6757c5603f5caa558cda1e70023",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 622
+    },
+    {
+      "id": "optimism/0x1460f67a92B794Df43406e1E40574fcf25d055EA/0xb4c966bb33e7c7a14a6a8eb462cd9d6d5631ed1c1eaec0eed8910e7a9c272666",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 627
+    },
+    {
+      "id": "optimism/0x160d2EcEf8161C20595f6B21732C6e23bD9BEC75/0x4886f2aa79f74a962328b94629f0b38c334eb1a3ea57dc4922e03e4791bdadde",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 620
+    },
+    {
+      "id": "optimism/0x16102599A06B25387A539d5e22DcE5BECE56d489/0x82ee05c12ee8bdbf91638f230d828e43da6b4ee3aa2e76e97ed356c7fa06b349",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 659
+    },
+    {
+      "id": "optimism/0x235f8cF04311B2a1b6Df6B900eE2c1a1f63eb589/0x1421c64dbaaaf5c5909ef383265b9c7b1e0e403f32322fae9c9cd75429bc6d4c",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 618
+    },
+    {
+      "id": "optimism/0x23685A6eE959D8ccF2cF494d2c4Fa8fCEbD326Ff/0x126b83d1a2a2a0b81e01184fbdf7a75d818a562efedd96e1d77bc6c356178f67",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 625
+    },
+    {
+      "id": "optimism/0x31eB3dD0e75dac10d07e8C6cFA54BcB7Ae1774Ce",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 625
+    },
+    {
+      "id": "optimism/0x476274AC3e1d367835Cc08e060F2c32D38caDBBb/0xb414ee6d468eab4777bf71b4bd0bae57e2b5a09e55b71adab3d3e63db189a0be",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 603
+    },
+    {
+      "id": "optimism/0x47629bD68bEA950B8e24F2a557EA963cAEDF7379/0x5ad25aeb38c5696284d463b68de470054fb86ae612edd3a25e0e20204b61d7a6",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 706
+    },
+    {
+      "id": "optimism/0x478785Aa6460A34bF6024a7A686CFf27e84Ef237/0xa3793b9077f3fa66fa2aac2ebf44a58c41e772d0e846163a19139227245ba271",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 692
+    },
+    {
+      "id": "optimism/0x5031f26FCC8AF88788d5000B73142c4a9f93F8b8/0xf41fc900beab71db6f49930f9a3a3c04cafe34c681a5cf96708de6c240b9fc1f",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 696
+    },
+    {
+      "id": "optimism/0x5039ea4Db6BC8fdf1475CeC0e281933986340E1a/0x63e86d324c93375a25eb49db35d56143476748b13e089d5ad5956e2c273ffe74",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 690
+    },
+    {
+      "id": "optimism/0x50682051316590ff511a80A70708Ca467B2539A1/0xc69ab59b9e6a08c668e7b6b76242c4e88aefe92d4f69601713bf69748e65bbd4",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 618
+    },
+    {
+      "id": "optimism/0x50747E4fed4375F11f00cFe855319CDA76Ef0c1E/0x5a091ca969ecfa15d61fffbec8b05cbefcdaabc3ddf4cb69251710d3ae6f808c",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 615
+    },
+    {
+      "id": "optimism/0x507a2B804A98AbcE0cF694526EF3275D5B348a35/0xea7f31ab0a5eb21c2552714a6b50ddacd58b359f49d8aadcbf674a06d4c9242a",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 600
+    },
+    {
+      "id": "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/0x91c575504229894a900706824d7bf86f8b37c567ea477172c45f71e0c28e60b6",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 604
+    },
+    {
+      "id": "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/0xf0fe3e706b97b3ae887c8acbb49580d3d1c662a5c25f0ac50aa7c46c6915a74c",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 629
+    },
+    {
+      "id": "optimism/0x50A7044D9c7DB27758FEb581476968E47968127F/0x90490140a5ba56e13ad488ca9a585526d6de2b6b9c04c2658fd95b680ef6dc43",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 697
+    },
+    {
+      "id": "optimism/0x50Ab6DD86B8D899869965ab51b6F364BE2c2d99B/0x945f7fed3e9e9a84363722d30b4783ce01c5681a3fff34c149ba7ab122083624",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 612
+    },
+    {
+      "id": "optimism/0x51DBbB807A8EE7841c30646de6da4CB6f1141fb2/0x3e80ba30fe5cae157c2045cf441eec3a4c8662cc34801a27d4fdbc3b45268cbe",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 720
+    },
+    {
+      "id": "optimism/0x60dcb74e687357308A54e905118c21F0199ceadA/0x33b1f6bbc242ef6184b107d346059961d84a4f2cc593af317f6a95ccc797fe22",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 606
+    },
+    {
+      "id": "optimism/0x60E0955c7b1a3cA20e9fc241324e9f63ABCa6C0d/0x5f2e7b13c8c9fb2b732dceb259de0572c29817ec218c25182bbeb5e6d4f3a4ca",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 611
+    },
+    {
+      "id": "optimism/0x60F37590Ae6e9FFe87880d780fbC1c3D3B4E1fD1/0x1f4b61274b46ccf243993cbc643c81e706c181e66e3326a5eb44d1e8635a2155",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 592
+    },
+    {
+      "id": "optimism/0x77570069EF75035b9d0A433C1627F7372b08939E/0x4ecc419fad8c52b3dde17ff31dc74397d082650b70a2cf33f92387426ade1343",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 661
+    },
+    {
+      "id": "optimism/0x7757125255E322c9d60E7aba89ff244d05ED55FE/0x4eb3d641174d57a8841e7010a198b383d18c264c1dc6281bb562839ac21ef048",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 619
+    },
+    {
+      "id": "optimism/0x775965FcFD4bfD2B7f8BB9867AF624432CE95e03/0x2ae16287234878c536e0da0a8a8680dc86d84fa4891303d10d2a5996715bc41e",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 595
+    },
+    {
+      "id": "optimism/0x775bF9fD114B61862Ad8E2dEBef7F32fa822a2bb/0x4fb3c7223b771e6e93e1c7dbd715d56f1be0eee50564bc0a7cf9f02fca37e994",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 600
+    },
+    {
+      "id": "optimism/0x775F3e66E6AcCddccbe209bE08E79A3Fb87d7514/0xa4a138ad2c85f9f728d9b3b0eea171459824937af8f0b47d6a267414feaaefc1",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 596
+    },
+    {
+      "id": "optimism/0x881c8326bF283cd046280a6A4eA42A5c0d4E1658",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 668
+    },
+    {
+      "id": "optimism/0x8a3B8E104c927cD58fE088B0DF01bdD7e49CB678",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 631
+    },
+    {
+      "id": "optimism/0x8dF7cB8493cB9414B206d7F2A36D2223DB6a2d71",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 613
+    },
+    {
+      "id": "optimism/0x8e4415277848B413eDA7b2a1E41b935011004F0c",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 605
+    },
+    {
+      "id": "optimism/0x8Ea8a652FD7E2A3F3550E8cF1A11032f61CA77ED/1",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 607
+    },
+    {
+      "id": "optimism/0x8Ea8a652FD7E2A3F3550E8cF1A11032f61CA77ED/2",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 596
+    },
+    {
+      "id": "optimism/0x8F8116F9fDfF09Baedfa170bc3A053f963681DD0",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 623
+    },
+    {
+      "id": "optimism/0x9014d1fBbD8aEE70Be3210747861b1E63BEAB705",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 646
+    },
+    {
+      "id": "optimism/0x93abf5435eCE1dD8c1A5A0bED7582E4f8E618401/1",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 600
+    },
+    {
+      "id": "optimism/0x93b3e78B88f416660Db71731123caf9D4e7C9d23",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 599
+    },
+    {
+      "id": "optimism/0x96f67F2DB9F8349c67cAfb8Bda03722093d96ac9/0x6f020eaf6e42ccb37e632527704115866d8a437893dad5d63bf1b2c9e2f24b06",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 603
+    },
+    {
+      "id": "optimism/0x96fB0eAD090bA288afb45ea640F83dccB68a7E3D/0x2d2031155c72b41aaf397ee6c120b20465c55e6d56a72cbf44a4d1879b7103e4",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 641
+    },
+    {
+      "id": "optimism/0x9a0326fAa583EC2Cd8e1d795C5C7940491d4A1b4/0x2767f62a0dab3ea5e88af676ab07c8739a5abfb35e339791282c22793ac160e8",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 701
+    },
+    {
+      "id": "optimism/0x9A046492ebf6e0AB335e295b1817B42daAd01CaC/0x756afe2267adf703c2ba92bc674ade5d6f49cb7cd71e3b65bea23828108e380d",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 686
+    },
+    {
+      "id": "optimism/0x9a05F4c3B39fF90354f2d667e1c84313e96D9727/0xcffe40d27105250c9f44a7b27b1db4abd06fb367d5283804936c332d604dd120",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 637
+    },
+    {
+      "id": "optimism/0x9a0Af44201fff597Ac26e67aA093d509ecb91847/0xab92ff85d6ca9a351ca18e8b155e223fdbea042e2ee19defcb558a91a5aca058",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 597
+    },
+    {
+      "id": "optimism/0x9A1C2f4FF1CbF3F8Ff93aa69d90DB06B5e433c11/0x6bb7a2a4b07c867dd60c28d37f50ab0ee286ecde5314b67d93b50ac1d8545265",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 607
+    },
+    {
+      "id": "optimism/0x9a20845edBf396C4d95dcB395c40eD309f829DCb/0x9f1e960b97b85ce91a48b17641a0ac84173127fb0b2d7c1467c1b1d2ad6d97ed",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 600
+    },
+    {
+      "id": "optimism/0x9A234f0b11F8374F7d39024eec835B91B006aFCc/0x7bccc82fea2011a2c78cab92e3797f73351ebcb2426a4dceb03dcfe64978dd6e",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 676
+    },
+    {
+      "id": "optimism/0x9a2f1b7A9c07615821408CfCF0C51c67E5c56d10/0x99cb6ef6339e5140e218a2cd11287fb1799801c25222dadef4fb7b3f3a9c575c",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 623
+    },
+    {
+      "id": "optimism/0xa2E0C7ba9C242d6041a82F1F709C4A729732eaFB/0x04815a4a3d971d68a8b2fb7335fa4363b2f5f484ac9ad5e53605bbfcc4194024",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 615
+    },
+    {
+      "id": "optimism/0xA3dFfe601E086D0854C94487FD481312C374151e/0x15f741b384d87b5e6ba7533278f502ece73607752488115a2bc78c9462f3f3f4",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 613
+    },
+    {
+      "id": "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/0x5d598c4e3cc7eabf6f2d3dddf3ae99f28a0177c69c45e08437421efc7962e88a",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 596
+    },
+    {
+      "id": "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/0x88eb647127de7627b444ac416d42e867e2d85df23e2c7f646c3f71f3eb1d2e7f",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 608
+    },
+    {
+      "id": "optimism/0xa3ecD0cdeA02Ea252d6051a6805116918f6A4E26/0x209771afb82f34c85ed60e95674508389a8f8c5bbc87db7427d44696b426c70d",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 607
+    },
+    {
+      "id": "optimism/0xafc9769fBA3c4FB8722eD41C1C6e3F235E20F347/0x16f6d430578d15bfcf2529000a0e9667f9fd44cf6c2b0d8ba13aa380529d350d",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 608
+    },
+    {
+      "id": "optimism/0xbeBEd7039DBCE2ef39E9048d0F92290c62b95414",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 604
+    },
+    {
+      "id": "optimism/0xbeF75bfD5cE660E2C16453af368A7785C710Eda0/0xd68b80cfa090a0ff0303df527d93036c5dc0df37f107f7012235283ae1e1fc73",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 596
+    },
+    {
+      "id": "optimism/0xBEf89E283177f7FBC8D0A1c60308d5cB3670acea/0x68837d897bf3c4355e90fbeef5cec46745de80bab8b04233f5a1d96d934fc149",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 662
+    },
+    {
+      "id": "optimism/0xbF001A93df793782F3DD59C550E9E52B72a8290e/0xe3b8f023bac4c0bbdec8b91c9f01b8662becd8c35d3460c1a10c37e00f96f6b7",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 627
+    },
+    {
+      "id": "optimism/0xBf033088694266e91e996Dd15f5Af1E3bdeC1c7A/0x6bdda842da711b41dfcb3032cfa572e9f708f116c8fa81aa56b137ddeaae04cc",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 612
+    },
+    {
+      "id": "optimism/0xBf17442503ec7F63b8F1573883bC15EAC9E2A762/0x01e5f77dc32e3fe1d52684ec3f55347d48243909da1e3dced9db82729ad36aa4",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 602
+    },
+    {
+      "id": "optimism/0xBf1a47a48cF122a7ede8a0EA92Bef6649CAaa859/0x1ab019e9302e736174dc3bb9ea4947834dd9c6354a4d6d3599cb5803ad699ee5",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 601
+    },
+    {
+      "id": "optimism/0xbF1D63758497938EEe8376AA3fc86BcF92534996/0x0e271c84e677ee8028c5ba73b11a13d5e734ad4c0f6b0c0fcdf5ead945713ae2",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 685
+    },
+    {
+      "id": "optimism/0xBf2E10Bb783f24ce3fE2F596Fc6F96F7Ed9B37C0/0x9ee89fe5b3b62239ac33d8ee8507dfc927705d54d42554b82174b8cd813de936",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 631
+    },
+    {
+      "id": "optimism/0xbf979d7836a7ce66325Cb0DCe8936f88822A8f92",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 614
+    },
+    {
+      "id": "optimism/0xbfAD59589AAe859cc2b91C7e0BfB56150c2D3054",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 606
+    },
+    {
+      "id": "optimism/0xc283B6551cb051D28c225501b2E54a0568909ba5/0xd54239d40c1f13274ea77e9912f80cc12c9fcf7e1a86f56bb799fd78a929407a",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 600
+    },
+    {
+      "id": "optimism/0xc283dC2D3BC8080595fa5B3E7Dd3E73F54a1ecCB/0xf6412ea52499af285d937a8d1e8f6f097f717b9284df621701f6b3f2a1ba6b93",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 651
+    },
+    {
+      "id": "optimism/0xC2917e8Df7f721a06679D6ca65328a407E266638/0x77d632234c6927db3cd87ad08dea8b27c77c20da6fd3107ff9dd3f9877880c3f",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 601
+    },
+    {
+      "id": "optimism/0xc29307bed873326Ca5d0d15866f02C78b6B3b9a8/0x78060f2fa3c5bc4aa3b0848eb88f5f67c6f03344bbb3eaa3f2c2714a7e4038a5",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 616
+    },
+    {
+      "id": "optimism/0xc294A98E7ea2663c44F8B57247461dB2dAbe525A/0x0aa54f19c0cec97f2a4c416b5b078e078be42d0c1ffbdcf286a575e153224e41",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 608
+    },
+    {
+      "id": "optimism/0xC2983416437989687a4437a8f4C018006c8b5fcD/0x3642f950bcd57a5c900bcf6b72743292d457de2bdf17acded231b41b5abe8cef",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 618
+    },
+    {
+      "id": "optimism/0xC2994638FfFa1D96d89C84cEF0Fbe66fa1699925/0x10da40a8ef1b2561c4a215a1e5a0742ff87f51915cc248384bf643de29e58a1c",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 653
+    },
+    {
+      "id": "optimism/0xC375FB001C0414369cA1b84757f68002ba47D062",
+      "platform": "zora",
+      "status": "resolved",
+      "error": null,
+      "ms": 638
+    },
+    {
+      "id": "optimism/0xC8D5b8D3818ba4bc419A4ed129B6a6D452d038d0/0x13d5058088c4b9e21900f1e835fd6e715c9622ea16a31e0aaedf20cf58196b21",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 616
+    },
+    {
+      "id": "optimism/0xc8D8d5f7c5463578B6A546f668a23c7fc8e731Fe/0x78b4636ad6c2578fa238fa22287244b1cd7f056faa35a90847919cd20c720b85",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 596
+    },
+    {
+      "id": "optimism/0xc8E1Bc7D2e47030f5661Dc78A39F5DDBd01621ee/0x271c1e630c8b9682fa6b8c5c4915abddbb3ab17cc09a929c09c3d9b402b1207d",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 613
+    },
+    {
+      "id": "optimism/0xC8F50fce2cf2071B763a5826112b13403213E81a/0x87e1f76a65510e55a0a0256f73b3d7aeb26b256c7d44412aa65fcf495bdc6fca",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 716
+    },
+    {
+      "id": "optimism/0xC90aD796C289f24624877398A2d35Bf67511CA99/0xb756b59aff7cfda373023866a758bb1b7950f08586b7d8d4afd1c7b7abeefa2f",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 662
+    },
+    {
+      "id": "optimism/0xc90BA08CFb17774512CCF449BAEa6D0Aae50C2e9/0xea225a7f433a91c25cff7e8665520bbf9306f8ca794803730bc043e727b70be6",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 645
+    },
+    {
+      "id": "optimism/0xC91079145D3435CBbBE54113EBa5782750feeB19/0xbd6aee4eba003cd15f203a1d779bad49dd9fcdc9a845743dfe1794662a54101a",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 722
+    },
+    {
+      "id": "optimism/0xC917468397717D62B0E685dc7062eE2AC9f2cF1C/0xebb3418e404ccdd5acf233618d0328e3a21035c571372b97aed41471150bc0f6",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 601
+    },
+    {
+      "id": "optimism/0xc91Aa0775E53D3906cC613B0cd30e7F95B81ddd2/0xfac7e1c6571488509a13398dc6a9e5c48b54b8bee962e295c2e43a0f2819aa09",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 598
+    },
+    {
+      "id": "optimism/0xc929B57456Cf7C15D7abdEC87E7c21A1b6D18933/0x4f36120aa28f97c3a84f0fd68ad865618573974d4f78e73088090149f8eadf91",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 621
+    },
+    {
+      "id": "optimism/0xc9Cf604D578fbe4752246ce0EFCA2646A6af87A0",
+      "platform": "ziggy-ziggy-music",
+      "status": "resolved",
+      "error": null,
+      "ms": 690
+    },
+    {
+      "id": "optimism/0xCA016Fa52c97F3f8De13c48D3316646603e5c8c7/1",
+      "platform": "spinamp",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 611
+    },
+    {
+      "id": "optimism/0xCA13f393c2e82d1337BfFa40aAEb87D7dd78291e/hirosima",
+      "platform": "opensea",
+      "status": "resolved",
+      "error": null,
+      "ms": 597
+    },
+    {
+      "id": "optimism/0xD179a77eCF429e2D9F7e65d8B055AC1a40394706/0x44b9d993445555d06c1016dbe64c454b89346b0e635bd86f13cfae99d0087741",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 607
+    },
+    {
+      "id": "optimism/0xd17D639C98Df7dc5CeD8242954Ed239E77f039FD/0x570808dcbf534209b1936dffc4d7ce2ad683ff5be4932e9408afba5ca5561cdc",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 613
+    },
+    {
+      "id": "optimism/0xD1846a6f34585F41089ae8eA04D5dAf865598574/0x0fc38a75a096075507a46cfb034e8142668522a283d5aa1300ad8c222893a22c",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 633
+    },
+    {
+      "id": "optimism/0xD19B8CC26fCD09182207745cEf4976dDfCb463De/0x8e19edc467f3983dd4f37c1db48b6c2ee31907b28be7b67f1a81bc950724fb2f",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 636
+    },
+    {
+      "id": "optimism/0xD19dcb22Cb7B0Ea5a025f6519b554DcD144D79Ea/0xd560813ad17f9f23fbb92252c67103a05c3d997ac82006d8a0ceefc0b61375f8",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 599
+    },
+    {
+      "id": "optimism/0xd1AD49cb7A2F5B1c4d508E14E7776E0a703eCE9e/0x10c49caf2fc7d74d93898c4fb220944ed780520d6ad1a375061a4f940ffb4984",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 590
+    },
+    {
+      "id": "optimism/0xD1aDd2cACD5Db984Cb785c84C8ca4a80109A7a00/0x0850d5704900ca9e60ffb02bfeddb7927d26d68f3caa62f57e646aa73e7f2d45",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 592
+    },
+    {
+      "id": "optimism/0xD1b47a56d9FA7B3984B466c35F84573341AA8085/0x85465da1350e3d32999fa01fdff0d70d90ace1ed14aa6b2485e1d7efcfa7a4ad",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 602
+    },
+    {
+      "id": "optimism/0xd1e31904865c9d38040Cef595677dC127537B296/0x4785604a1bcbb630fa7219c574c86aeaa8d0d52726aa8fd4895f4fde19071514",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 686
+    },
+    {
+      "id": "optimism/0xD1Ee5cbE1253c9fDaFF56e683809D66f0BE9851B/0x10316704b5c4230b293efa26f8aa553400fd3f227c49631af1297d3798160175",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 668
+    },
+    {
+      "id": "optimism/0xd1F7A2f8258738d32a15CbF294E0202b7dEC7b95/0x100462a94f6b916e6b5871c7910dd12b1c4eebdde1369a72ec9f5ef9ca25047a",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 595
+    },
+    {
+      "id": "optimism/0xD1FB3D4F7d62cf95d646306AF96042F13b51EaE4/0x93ba9ebad629eb3897a3e2ef2f22ca1c29927847d1206047bfe8439e356afb05",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 600
+    },
+    {
+      "id": "optimism/0xd2252F756A26876E2d09bAa62d15A5C236cD6833/0x31aaa5d75126974282500bf057896d6aaa7bfe2da118ac7d2cbcd27b98243c17",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 601
+    },
+    {
+      "id": "optimism/0xD22Bfe7920c794cF3493d47b5B09707EE909527F/0xce69dea302064c52edbc7ba2a15969b9a6d3f2127b48fce495f3337a3eaebf07",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 626
+    },
+    {
+      "id": "optimism/0xEE675B4283B83DDe8303E5a98389124448683845/0x83e9ab0fa739b4874695a414acb6023df5b3b0bef0296939748b2e8cf4fb9a9a",
+      "platform": "sound",
+      "status": "resolved",
+      "error": null,
+      "ms": 630
+    },
+    {
+      "id": "optimism/0xEe69Ce5E90b484912cD1923a1714C5DCE7e0bD96/0x7b604bd0f32bcf9a6d11ae5c14a4964724070fee217f506926978f86e773975a",
+      "platform": "sound",
+      "status": "unresolved",
+      "error": "Candidate NFT has no confirmed exact-track relation; other editions remain unsearched",
+      "ms": 605
+    }
+  ],
+  "pendingBefore": 169,
+  "pendingAfter": 44,
+  "resolvedThisRun": 125,
+  "emptyThisRun": 0,
+  "stopReason": "Bounded selected cohort completed",
+  "finishedAt": "2026-11-07T00:05:45.909Z"
+}

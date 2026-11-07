@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-11-07T00:05:56.081Z",
+  "base": "http://127.0.0.1:4191",
+  "scope": "Actual catalog/UI and local anonymous playlist writes in isolated browser contexts. Media requests use the approved local MP4 fixture for deterministic queue and pause-race checks. Export play/error events injected specifically for race test; actual export encoding is verified separately.",
+  "cases": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "errors": [],
+      "cardSavedWithoutNavigation": true,
+      "artistPicker": true,
+      "queuePicker": true,
+      "lateErrorAfterExportPauseDoesNotAdvance": true,
+      "explicitResumeWorks": true,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "errors": [],
+      "cardSavedWithoutNavigation": true,
+      "artistPicker": true,
+      "queuePicker": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "errors": [],
+      "cardSavedWithoutNavigation": true,
+      "artistPicker": true,
+      "queuePicker": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "errors": [],
+      "cardSavedWithoutNavigation": true,
+      "artistPicker": true,
+      "queuePicker": true,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

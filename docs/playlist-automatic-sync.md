@@ -27,3 +27,7 @@ Ten focused unit tests cover guest isolation, remote and local deletions, offlin
 ## Renamed public URL
 
 The new URL is `https://web3-music-archive.vercel.app`; the previous `https://web3-music-repo.vercel.app` remains available. Both use the same Music Nerd account and account playlist storage. Browser-local guest playlists do not automatically cross origins. Once this release is live, sign in at the old URL and wait for **Saved** to bring those guest playlists into the account, then sign in at the new URL. No redirect or destructive browser-storage migration is performed.
+
+## Original-address save regression
+
+The rename set `ARCHIVE_ORIGIN` to the new public address, but the playlist PUT allowlist retained only that configured address and the immutable deployment host. This blocked signed-in saves from the old address, undermining the intended guest-playlist migration. `account-origin.mjs` now explicitly retains both public archive origins while rejecting unrelated hosts, suffix lookalikes, paths, insecure public origins and malformed header values. Bearer-token verification and canonical account lookup still precede writes. The existing Chrome account showed its linked wallet and playlist but reported sync unavailable before this fix; live and second-device confirmation are recorded separately.

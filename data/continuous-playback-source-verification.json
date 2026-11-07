@@ -1,0 +1,156 @@
+{
+  "checkedAt": "2026-11-06T23:56:33.769Z",
+  "base": "http://127.0.0.1:4191",
+  "scope": "Actual existing playback sources, native startup plus two seconds of advancing playhead. No new transcodes or source overrides; not full-song audition.",
+  "records": [
+    {
+      "id": "record-1956ba25",
+      "events": [
+        {
+          "event": "waiting",
+          "time": 0,
+          "readyState": 0,
+          "at": 504.1000003814697
+        },
+        {
+          "event": "stalled",
+          "time": 0,
+          "readyState": 0,
+          "at": 3734.2000002861023
+        },
+        {
+          "event": "playing",
+          "time": 0,
+          "readyState": 4,
+          "at": 11492.10000038147
+        }
+      ],
+      "requests": [
+        {
+          "url": "https://arweave.net/OPL5CLCE6LHG-J9Stl4C8DQIjxS6dFgo_2KPB94RFzQ",
+          "status": 302
+        },
+        {
+          "url": "https://hdzpscfqqtuldrxyt5jlmxqc6a2ardyuxj2fqkh7mkhqpxqrc42a.arweave.net/OPL5CLCE6LHG-J9Stl4C8DQIjxS6dFgo_2KPB94RFzQ",
+          "status": 206
+        },
+        {
+          "url": "https://hdzpscfqqtuldrxyt5jlmxqc6a2ardyuxj2fqkh7mkhqpxqrc42a.arweave.net/OPL5CLCE6LHG-J9Stl4C8DQIjxS6dFgo_2KPB94RFzQ",
+          "status": 206
+        },
+        {
+          "url": "https://hdzpscfqqtuldrxyt5jlmxqc6a2ardyuxj2fqkh7mkhqpxqrc42a.arweave.net/OPL5CLCE6LHG-J9Stl4C8DQIjxS6dFgo_2KPB94RFzQ",
+          "status": 206
+        }
+      ],
+      "errors": [],
+      "title": "Consent",
+      "startupMs": 11673,
+      "played": true,
+      "state": {
+        "src": "https://arweave.net/OPL5CLCE6LHG-J9Stl4C8DQIjxS6dFgo_2KPB94RFzQ",
+        "time": 2.522591,
+        "duration": 226.031474,
+        "readyState": 4,
+        "paused": false,
+        "error": null,
+        "buffered": [
+          [
+            0,
+            15.286
+          ]
+        ]
+      }
+    },
+    {
+      "id": "recovered-sound-10-145ac4d1ad5817b28997a479a980ea1d5d53e3e9",
+      "events": [
+        {
+          "event": "waiting",
+          "time": 0,
+          "readyState": 0,
+          "at": 340.7000002861023
+        },
+        {
+          "event": "playing",
+          "time": 0.000766,
+          "readyState": 4,
+          "at": 603.5
+        }
+      ],
+      "requests": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmR9U9mrJUvJh4sJwEzSSdGVfNNa6QgNQ1kYhCXaH5KupH",
+          "status": 206
+        },
+        {
+          "url": "https://arweave.net/nm8u-j9is_dDgtBgc8V6DOmsVuO768TuxNtiBr995EI",
+          "status": 302
+        }
+      ],
+      "errors": [],
+      "title": "Endless",
+      "startupMs": 903,
+      "played": true,
+      "state": {
+        "src": "https://ipfs.filebase.io/ipfs/QmR9U9mrJUvJh4sJwEzSSdGVfNNa6QgNQ1kYhCXaH5KupH",
+        "time": 2.51512,
+        "duration": 293.686009,
+        "readyState": 4,
+        "paused": false,
+        "error": null,
+        "buffered": [
+          [
+            0,
+            16.991
+          ]
+        ]
+      }
+    },
+    {
+      "id": "recovered-sound-10-191fc84c0dd16a5f7aa333c39021227a91cc44a3",
+      "events": [
+        {
+          "event": "waiting",
+          "time": 0,
+          "readyState": 0,
+          "at": 314.80000019073486
+        },
+        {
+          "event": "playing",
+          "time": 0.001554,
+          "readyState": 4,
+          "at": 892.9000000953674
+        }
+      ],
+      "requests": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmWKSC4HYcVHfjpRDW2JXrSCU96rZwhA513mhpJCKWi7nA",
+          "status": 206
+        },
+        {
+          "url": "https://arweave.net/nIBK303dj1swl6YuG3vZTQmDpiBbKVYMS2dd1ddveg4",
+          "status": 302
+        }
+      ],
+      "errors": [],
+      "title": "Army of Love",
+      "startupMs": 1211,
+      "played": true,
+      "state": {
+        "src": "https://ipfs.filebase.io/ipfs/QmWKSC4HYcVHfjpRDW2JXrSCU96rZwhA513mhpJCKWi7nA",
+        "time": 2.515974,
+        "duration": 236.788934,
+        "readyState": 4,
+        "paused": false,
+        "error": null,
+        "buffered": [
+          [
+            0,
+            163.858
+          ]
+        ]
+      }
+    }
+  ]
+}

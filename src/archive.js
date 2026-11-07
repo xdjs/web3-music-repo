@@ -1,3 +1,14 @@
+import { mountStoryExport } from "./story-export.mjs";
+import {
+  createAutoplaySession,
+  startAutoplayContext,
+  noteQueueAttempt,
+  excludeQueueRecording,
+  replenishAutoplay,
+  removeAutoplayTail,
+  shouldSkipUnavailable,
+} from "./autoplay-queue.mjs";
+import { automaticQueueStartingWith } from "./listening-queue.mjs";
 import { createHomeSelection } from "./home-selection.mjs";
 import { createFilterPreferences } from "./filter-preferences.mjs";
 import {
@@ -21,6 +32,7 @@ import { renderLyrics } from "./lyrics-ui.mjs";
 import { mountQueueSortable } from "./queue-sortable.mjs";
 import {
   createShuffleQueue,
+  replaceShuffleQueue,
   selectShuffledTrack,
   toggleQueueShuffle,
   appendShuffleQueue,
@@ -119,7 +131,54 @@ const explorePreferences = createFilterPreferences("explore", {
     collection: [...new Set(catalog.map((r) => r.collection).filter(Boolean))],
   }),
 });
+let failureStreak = 0,
+  unavailableTimer;
+let renderedQueueContext = null;
 let queueState = createShuffleQueue();
+let autoplaySession = createAutoplaySession();
+let autoplayDiscovery = [];
+try {
+  autoplaySession.enabled =
+    localStorage.getItem("mn-archive-autoplay") !== "false";
+} catch {}
+function saveAutoplayPreference() {
+  try {
+    localStorage.setItem(
+      "mn-archive-autoplay",
+      String(autoplaySession.enabled),
+    );
+  } catch {}
+}
+function refillQueue(next) {
+  if (!autoplayDiscovery.length && catalog.length) {
+    autoplayDiscovery = catalog
+      .filter(
+        (r) =>
+          r.kind !== "artwork" &&
+          ["live", "indexed"].includes(r.recovery?.status),
+      )
+      .map((r) => r.id);
+    for (let i = autoplayDiscovery.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [autoplayDiscovery[i], autoplayDiscovery[j]] = [
+        autoplayDiscovery[j],
+        autoplayDiscovery[i],
+      ];
+    }
+  }
+  const filled = replenishAutoplay(next, autoplaySession, autoplayDiscovery, {
+    playable: (id) => {
+      const r = catalogById.get(id);
+      return (
+        r &&
+        r.kind !== "artwork" &&
+        ["live", "indexed"].includes(r.recovery?.status)
+      );
+    },
+  });
+  autoplaySession = filled.session;
+  return filled.queue;
+}
 try {
   queueState = createShuffleQueue(
     localStorage.getItem("mn-archive-shuffle") === "true",
@@ -132,6 +191,13 @@ function applyQueueState(next) {
   queueMode = next.mode;
   $("#shuffle").setAttribute("aria-pressed", String(next.enabled));
   $("#shuffle").title = next.enabled ? "Shuffle on" : "Shuffle off";
+  $("#autoplay-queue").setAttribute(
+    "aria-pressed",
+    String(autoplaySession.enabled),
+  );
+  $("#autoplay-queue").textContent = autoplaySession.enabled
+    ? "Autoplay on"
+    : "Autoplay off";
   warmNextTrack();
 }
 let likes = new Set();
@@ -229,8 +295,11 @@ function img(r, cls = "") {
     ? `<img class="${cls}" src="${esc(image(r))}" alt="${esc(cleanTitle(r.title))} artwork" loading="lazy">`
     : `<span class="cover-fallback">♫</span>`;
 }
+function addToPlaylistButton(r) {
+  return `<button class="icon playlist-add" data-add-playlist="${esc(r.id)}" aria-label="Add ${esc(cleanTitle(r.title))} to playlist" title="Add to playlist">${navIcon("playlist-add")}</button>`;
+}
 function card(r) {
-  return `<article class="record-card"><div class="cover"><a href="${recordLink(r)}" aria-label="Open ${esc(r.title)}">${img(r)}</a><span class="cover-badge">${esc(platform(r))}${r.mediaScope === "clip" ? " · Clip" : ""}</span>${r.kind !== "artwork" ? `<button class="cover-play" data-play="${esc(r.id)}" aria-label="Play ${esc(r.title)}">▶</button>` : ""}</div><h3><a href="${recordLink(r)}">${esc(cleanTitle(r.title))}</a></h3><div class="card-meta"><a href="#artist/${esc(artistId(r))}">${esc(r.artist)}</a><button class="icon heart ${likes.has(r.id) ? "active" : ""}" data-like="${esc(r.id)}" aria-label="${likes.has(r.id) ? "Unlike" : "Like"} ${esc(r.title)}">${likes.has(r.id) ? "♥" : "♡"}</button></div></article>`;
+  return `<article class="record-card"><div class="cover"><a href="${recordLink(r)}" aria-label="Open ${esc(r.title)}">${img(r)}</a><span class="cover-badge">${esc(platform(r))}${r.mediaScope === "clip" ? " · Clip" : ""}</span>${r.kind !== "artwork" ? `<button class="cover-play" data-play="${esc(r.id)}" aria-label="Play ${esc(r.title)}">▶</button>` : ""}</div><h3><a href="${recordLink(r)}">${esc(cleanTitle(r.title))}</a></h3><div class="card-meta"><a href="#artist/${esc(artistId(r))}">${esc(r.artist)}</a><div class="card-actions">${r.kind !== "artwork" ? addToPlaylistButton(r) : ""}<button class="icon heart ${likes.has(r.id) ? "active" : ""}" data-like="${esc(r.id)}" aria-label="${likes.has(r.id) ? "Unlike" : "Like"} ${esc(r.title)}">${likes.has(r.id) ? "♥" : "♡"}</button></div></div></article>`;
 }
 function artistRecords(id) {
   return recordsByPerson.get(id) || [];
@@ -339,6 +408,7 @@ function explore(onlyLikes = false) {
           : cleanTitle(a.title).localeCompare(cleanTitle(b.title))) ||
         a.id.localeCompare(b.id),
     );
+  renderedQueueContext = list.map((r) => r.id);
   const select = (name, label, choices) =>
     collectionSelect(esc, name, label, choices, facets[name]);
   const ownedNotice = !owned
@@ -394,6 +464,7 @@ function artistPage(id) {
   const p = person(id),
     list = artistRecords(id),
     shown = artistRecordLimits.get(id) || 40;
+  renderedQueueContext = list.map((r) => r.id);
   return `<a class="back" href="#artists">← All artists</a><section class="artist-identity ${p.banner ? "has-banner" : ""}">${p.banner ? `<img class="artist-banner" src="${esc(p.banner.src)}" alt="${esc(p.name)} historical profile banner">` : ""}<div class="artist-identity-row"><div class="artist-identity-avatar">${portraitMarkup(id)}</div><div class="artist-identity-name"><span class="eyebrow">${id === "pete-rango" ? "PRODUCER · MIXING · MASTERING" : esc(p.kind || "Artist")}</span><h1>${esc(p.name)}</h1></div><div class="artist-stat"><strong>${list.length}</strong><span>Recovered recordings</span></div></div><div class="artist-identity-bio"><p>${esc(p.bio || "Artist attribution preserved from the recovered recordings.")}</p>${p.banner ? `<a class="link-note" href="${esc(p.banner.source)}" target="_blank" rel="noopener noreferrer">Profile banner · ${esc(p.banner.capturedAt)} capture ↗</a>` : ""}${artistLinks(p, id)}</div></section><div class="section-head"><h2>${id === "pete-rango" ? "On the credits" : "In the archive"}</h2><span class="tag">${list.length} recordings</span></div><div class="cards library-grid">${list.slice(0, shown).map(card).join("")}</div>${list.length > shown ? `<button class="outline-button more" data-more-artist-records="${esc(id)}">Load more recordings</button>` : ""}${artistComments(list)}`;
 }
 function mediaLabel(r) {
@@ -601,7 +672,7 @@ function recordPage(id) {
   const r = catalogById.get(id);
   if (!r)
     return '<div class="empty">Recording not found. <a href="#explore">Browse the archive.</a></div>';
-  return `<a class="back" href="#explore">← Explore the archive</a><section class="record-head"><div class="cover">${img(r)}</div><div><span class="eyebrow">${esc(platform(r))} · ${chainNames[r.chainId]} · ${r.kind === "artwork" ? "ARTWORK COLLECTIBLE" : r.mediaScope === "clip" ? "VIDEO CLIP" : r.kind === "video" ? "VIDEO" : "RECORDING"}</span><h1>${esc(cleanTitle(r.title))}</h1><p><a href="#artist/${artistId(r)}">${esc(r.artist)}</a></p><div class="actions">${r.kind === "artwork" ? `<p class="notice">This token points to artwork. No separate audio was identified in its metadata.</p>` : `<button class="primary" data-play="${r.id}">▶ &nbsp; Listen now</button><button class="outline-button" data-queue="${r.id}">＋ Add to queue</button><button class="outline-button" data-add-playlist="${r.id}">＋ Add to playlist</button>`}${shareButton("record", r.id, cleanTitle(r.title))}<button class="icon heart ${likes.has(r.id) ? "active" : ""}" data-like="${r.id}" aria-label="Like recording">${likes.has(r.id) ? "♥" : "♡"}</button></div></div></section><div class="tabs" role="tablist" aria-label="Recording details">${[
+  return `<a class="back" href="#explore">← Explore the archive</a><section class="record-head"><div class="cover">${img(r)}</div><div><span class="eyebrow">${esc(platform(r))} · ${chainNames[r.chainId]} · ${r.kind === "artwork" ? "ARTWORK COLLECTIBLE" : r.mediaScope === "clip" ? "VIDEO CLIP" : r.kind === "video" ? "VIDEO" : "RECORDING"}</span><h1>${esc(cleanTitle(r.title))}</h1><p><a href="#artist/${artistId(r)}">${esc(r.artist)}</a></p><div class="actions">${r.kind === "artwork" ? `<p class="notice">This token points to artwork. No separate audio was identified in its metadata.</p>` : `<button class="primary" data-play="${r.id}">▶ &nbsp; Listen now</button><button class="outline-button" data-play-next="${r.id}">Play next</button><button class="outline-button" data-queue="${r.id}">＋ Add to queue</button><button class="outline-button" data-add-playlist="${r.id}">＋ Add to playlist</button>`}${r.kind !== "artwork" ? `<button class="outline-button" data-story-export="${esc(r.id)}">Create Story clip</button>` : ""}${shareButton("record", r.id, cleanTitle(r.title))}<button class="icon heart ${likes.has(r.id) ? "active" : ""}" data-like="${r.id}" aria-label="Like recording">${likes.has(r.id) ? "♥" : "♡"}</button></div></div></section><div class="tabs" role="tablist" aria-label="Recording details">${[
     ["about", "Details"],
     ["collectors", "Collectors"],
     ["proof", "Provenance"],
@@ -724,6 +795,7 @@ document.addEventListener("click", (e) => {
   location.hash = "me?" + args;
 });
 function route() {
+  renderedQueueContext = null;
   renderVersion++;
   const [base, args] = location.hash.slice(1).split("?");
   const [view = "home", id] = base.split("/");
@@ -888,6 +960,7 @@ for (const event of ["pointerover", "focusin"])
     if (button) warmTrack(button.dataset.play);
   });
 function automaticQueueFor(record) {
+  if (renderedQueueContext?.includes(record.id)) return renderedQueueContext;
   let ids = [
     ...new Set(
       [...main.querySelectorAll("[data-play]")].map(
@@ -906,13 +979,17 @@ function automaticQueueFor(record) {
         .map((r) => r.id),
     ];
   return [...new Set(ids)]
-    .filter((id) => catalog.some((r) => r.id === id && r.kind !== "artwork"))
+    .filter(
+      (id) => catalogById.has(id) && catalogById.get(id).kind !== "artwork",
+    )
     .slice(0, 200);
 }
 async function play(id, list = null, index = null) {
   const r = catalogById.get(id);
   if (!r || r.kind === "artwork") return;
   const version = ++playVersion;
+  clearTimeout(unavailableTimer);
+  if (list !== queue) failureStreak = 0;
   startingPlayback = true;
   mediaRecovery?.dispose();
   clearTimeout(mediaTimer);
@@ -923,15 +1000,26 @@ async function play(id, list = null, index = null) {
   );
   audio.pause();
   if (warmed) adoptBufferedMedia(warmed);
-  const nextQueue = selectShuffledTrack(
+  let nextQueue = selectShuffledTrack(
     queueState,
     id,
     automaticQueueFor(r),
     list,
     index,
   );
-  applyQueueState(nextQueue);
+  const newContext =
+    list !== queue && (list || !queue.length || queueState.mode !== "manual");
+  if (newContext) {
+    const context = list
+      ? []
+      : automaticQueueStartingWith(id, automaticQueueFor(r));
+    autoplaySession = startAutoplayContext(autoplaySession, context);
+    if (!list && autoplaySession.enabled)
+      nextQueue = replaceShuffleQueue(queueState, [id], 0, "auto");
+  }
+  autoplaySession = noteQueueAttempt(autoplaySession, id);
   current = r;
+  applyQueueState(refillQueue(nextQueue));
   syncPlaybackControls();
   if ($("#queue-dialog").open) showQueue();
   document.body.classList.add("has-player");
@@ -976,12 +1064,37 @@ async function play(id, list = null, index = null) {
   const exhausted = () => {
     if (version !== playVersion) return;
     clearTimeout(mediaTimer);
+    const requestedAtFailure = wantsPlayback;
     wantsPlayback = false;
     startingPlayback = false;
     audio.pause();
     syncPlaybackControls();
     $("#player-source").textContent = "Media unavailable — press play to retry";
-    notify("This recording’s media could not be played. You can retry.");
+    const entry = queueState.entries[queueIndex];
+    const skip = shouldSkipUnavailable({
+      enabled: autoplaySession.enabled,
+      requested: requestedAtFailure,
+      generated: entry?.generated,
+      mode: queueMode,
+      hardFailure: true,
+      failures: ++failureStreak,
+    });
+    if (skip) {
+      notify(
+        "Media unavailable. Autoplay will try the next recording in 3 seconds.",
+      );
+      unavailableTimer = setTimeout(() => {
+        if (
+          version === playVersion &&
+          autoplaySession.enabled &&
+          !wantsPlayback
+        )
+          advanceQueue();
+      }, 3000);
+    } else
+      notify(
+        "This recording’s media could not be played. Press play to retry or choose Next.",
+      );
   };
   mediaRecovery = createMediaRecovery(audio, {
     originalURL: warmed ? audio.src : mediaURL,
@@ -995,9 +1108,19 @@ async function play(id, list = null, index = null) {
       }, 18000);
     },
     onExhausted: exhausted,
-    onSlow: () => {
-      if (version === playVersion)
-        $("#player-source").textContent = "Taking longer to load…";
+    onSlow: ({ recheck = false } = {}) => {
+      if (version !== playVersion) return;
+      $("#player-source").textContent = "Taking longer to load…";
+      clearTimeout(mediaTimer);
+      if (recheck && wantsPlayback && audio.currentTime === 0)
+        mediaTimer = setTimeout(() => {
+          if (
+            version === playVersion &&
+            wantsPlayback &&
+            audio.currentTime === 0
+          )
+            mediaRecovery.recoverSlow();
+        }, 18000);
     },
   });
   mediaTimer = setTimeout(() => {
@@ -1042,12 +1165,15 @@ function showQueue() {
       : "Your listening order · Drag handles to reorder"
     : "Choose a recording to start a new queue.";
   $("#clear-queue").disabled = !queue.length;
+  $("#queue-autoplay-note").textContent = autoplaySession.enabled
+    ? "Your choices play first. When this selection ends, Autoplay continues with more from the archive."
+    : "Autoplay is off. Playback stops at the end of your queue.";
   list.innerHTML = queue.length
     ? queue
         .map((id, i) => {
           const r = catalogById.get(id);
           if (!r) return "";
-          return `<div class="queue-item ${i === queueIndex && current?.id === id ? "current" : ""}" data-queue-key="${queueState.entries[i].key}"><button class="icon queue-drag-handle" type="button" data-queue-drag aria-label="Move ${esc(cleanTitle(r.title))}, position ${i + 1} of ${queue.length}. Use Arrow Up or Arrow Down to reorder." aria-keyshortcuts="ArrowUp ArrowDown" title="Drag to reorder">${navIcon("grip")}</button><span class="queue-position">${i + 1}</span><img src="${esc(image(r))}" alt=""><div>${esc(cleanTitle(r.title))}<small>${esc(r.artist)}</small></div><button class="icon" data-queue-play="${i}" data-play-record="${esc(id)}" aria-label="Play ${esc(r.title)}">${navIcon("play")}</button><button class="icon" data-queue-remove="${i}" aria-label="Remove ${esc(r.title)} from queue">×</button></div>`;
+          return `<div class="queue-item ${i === queueIndex && current?.id === id ? "current" : ""}" data-queue-key="${queueState.entries[i].key}"><button class="icon queue-drag-handle" type="button" data-queue-drag aria-label="Move ${esc(cleanTitle(r.title))}, position ${i + 1} of ${queue.length}. Use Arrow Up or Arrow Down to reorder." aria-keyshortcuts="ArrowUp ArrowDown" title="Drag to reorder">${navIcon("grip")}</button><span class="queue-position">${i + 1}</span><img src="${esc(image(r))}" alt=""><div>${esc(cleanTitle(r.title))}<small>${esc(r.artist)}${queueState.entries[i].origin === "autoplay" ? ' · <span class="queue-origin">Autoplay</span>' : ""}</small></div><button class="icon" data-queue-play="${i}" data-play-record="${esc(id)}" aria-label="Play ${esc(r.title)}">${navIcon("play")}</button>${addToPlaylistButton(r)}<button class="icon" data-queue-remove="${i}" aria-label="Remove ${esc(r.title)} from queue">×</button></div>`;
         })
         .join("")
     : '<div class="empty">Your queue is clear. The current recording will keep playing.</div>';
@@ -1104,21 +1230,47 @@ document.addEventListener("click", async (e) => {
     toggleLike(el.dataset.like);
     return;
   }
+  if (el.id === "autoplay-queue") {
+    autoplaySession = { ...autoplaySession, enabled: !autoplaySession.enabled };
+    saveAutoplayPreference();
+    let next = autoplaySession.enabled
+      ? queueState
+      : removeAutoplayTail(queueState);
+    if (autoplaySession.enabled && !next.ids.length && current)
+      next = replaceShuffleQueue(next, [current.id], 0, "auto");
+    applyQueueState(refillQueue(next));
+    showQueue();
+    return;
+  }
+  if (el.dataset.playNext) {
+    applyQueueState(
+      appendShuffleQueue(queueState, el.dataset.playNext, { playNext: true }),
+    );
+    notify("Playing next in your queue");
+    return;
+  }
   if (el.dataset.queue) {
     applyQueueState(appendShuffleQueue(queueState, el.dataset.queue));
     notify("Added to your listening queue");
     return;
   }
   if (el.dataset.queueRemove !== undefined) {
+    const removing = queue[Number(el.dataset.queueRemove)];
+    autoplaySession = excludeQueueRecording(autoplaySession, removing);
     const next = removeShuffleQueue(queueState, Number(el.dataset.queueRemove));
-    applyQueueState(next);
+    applyQueueState(refillQueue(next));
     showQueue();
     return;
   }
   if (el.id === "clear-queue") {
+    clearTimeout(unavailableTimer);
+    autoplaySession = { ...autoplaySession, enabled: false };
+    saveAutoplayPreference();
     applyQueueState(clearShuffleQueue(queueState));
     showQueue();
-    notify("Queue cleared. Your current recording keeps playing.");
+    notify(
+      "Queue cleared and Autoplay off. Your current recording keeps playing.",
+    );
     return;
   }
   if (el.dataset.queuePlay !== undefined) {
@@ -1508,11 +1660,14 @@ if ("mediaSession" in navigator) {
   }
 }
 
-$("#next").onclick = () => {
+function advanceQueue(announceEnd = false) {
+  applyQueueState(refillQueue(queueState));
   if (queueIndex + 1 < queue.length)
     play(queue[queueIndex + 1], queue, queueIndex + 1);
-  else notify("End of queue. Add another recording to keep listening.");
-};
+  else if (announceEnd)
+    notify("End of queue. Add another recording to keep listening.");
+}
+$("#next").onclick = () => advanceQueue(true);
 $("#previous").onclick = () => {
   if (audio.currentTime > 3) audio.currentTime = 0;
   else if (queueIndex > 0) play(queue[queueIndex - 1], queue, queueIndex - 1);
@@ -1575,6 +1730,7 @@ function bindPlayerEvents() {
   });
   bind("timeupdate", () => {
     if (audio.currentTime > 0) clearTimeout(mediaTimer);
+    if (audio.currentTime >= 2) failureStreak = 0;
     warmNextTrack();
     const draft = compactSeek.sync(
       Number.isFinite(audio.duration)
@@ -1599,8 +1755,7 @@ function bindPlayerEvents() {
   bind("ended", () => {
     wantsPlayback = false;
     syncPlaybackControls();
-    if (queueIndex + 1 < queue.length)
-      play(queue[queueIndex + 1], queue, queueIndex + 1);
+    advanceQueue();
   });
   bind("error", syncPlaybackControls);
   bind("loadstart", syncPlaybackControls);
@@ -1673,6 +1828,23 @@ nowPlaying = mountNowPlaying({
   },
 });
 bindPlayerEvents();
+mountStoryExport({
+  getRecord: async (id) => {
+    const response = await fetch("/api/record/" + encodeURIComponent(id));
+    if (!response.ok) throw Error("Recording unavailable");
+    return (await response.json()).record;
+  },
+  artworkURL: image,
+  title: (r) => cleanTitle(r.title),
+  onBeginPlayback: () => {
+    wantsPlayback = false;
+    clearTimeout(mediaTimer);
+    clearTimeout(unavailableTimer);
+    audio.pause();
+    nextTrackBuffer.suspend();
+    syncPlaybackControls();
+  },
+});
 const playbackControlObserver = new MutationObserver((mutations) => {
   if (
     mutations.some((mutation) =>

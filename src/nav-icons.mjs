@@ -1,4 +1,5 @@
 const shapes = {
+  "playlist-add": '<path d="M4 5h16M4 10h12M4 15h7M17 14v8m-4-4h8"/>',
   expand: '<path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/>',
   collapse: '<path d="m6 9 6 6 6-6"/>',
   grip: '<g fill="currentColor" stroke="none"><circle cx="9" cy="5" r="1.4"/><circle cx="15" cy="5" r="1.4"/><circle cx="9" cy="12" r="1.4"/><circle cx="15" cy="12" r="1.4"/><circle cx="9" cy="19" r="1.4"/><circle cx="15" cy="19" r="1.4"/></g>',

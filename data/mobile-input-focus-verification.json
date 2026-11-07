@@ -1,0 +1,97 @@
+{
+  "checkedAt": "2026-11-07T00:10:34.964Z",
+  "scope": "Actual app in Chromium and WebKit mobile viewport/touch emulation. Computed type size, focus/typing/blur and layout verified; physical iOS keyboard autozoom is not established by this test.",
+  "checks": [
+    {
+      "engine": "chromium",
+      "theme": "light",
+      "searchFontPx": 16,
+      "focused": {
+        "scale": 1,
+        "viewportWidth": 390,
+        "overflow": false
+      },
+      "blurred": {
+        "scale": 1,
+        "viewportWidth": 390,
+        "overflow": false
+      },
+      "viewport": "width=device-width, initial-scale=1"
+    },
+    {
+      "engine": "chromium",
+      "theme": "dark",
+      "searchFontPx": 16,
+      "focused": {
+        "scale": 1,
+        "viewportWidth": 390,
+        "overflow": false
+      },
+      "blurred": {
+        "scale": 1,
+        "viewportWidth": 390,
+        "overflow": false
+      },
+      "viewport": "width=device-width, initial-scale=1"
+    },
+    {
+      "engine": "chromium",
+      "theme": "light",
+      "storyInputFontPx": 16,
+      "overflow": false
+    },
+    {
+      "engine": "chromium",
+      "theme": "dark",
+      "storyInputFontPx": 16,
+      "overflow": false
+    },
+    {
+      "engine": "webkit",
+      "theme": "light",
+      "searchFontPx": 16,
+      "focused": {
+        "scale": 1,
+        "viewportWidth": 390,
+        "overflow": false
+      },
+      "blurred": {
+        "scale": 1,
+        "viewportWidth": 390,
+        "overflow": false
+      },
+      "viewport": "width=device-width, initial-scale=1"
+    },
+    {
+      "engine": "webkit",
+      "theme": "dark",
+      "searchFontPx": 16,
+      "focused": {
+        "scale": 1,
+        "viewportWidth": 390,
+        "overflow": false
+      },
+      "blurred": {
+        "scale": 1,
+        "viewportWidth": 390,
+        "overflow": false
+      },
+      "viewport": "width=device-width, initial-scale=1"
+    },
+    {
+      "engine": "webkit",
+      "theme": "light",
+      "storyInputFontPx": 16,
+      "overflow": false
+    },
+    {
+      "engine": "webkit",
+      "theme": "dark",
+      "storyInputFontPx": 16,
+      "overflow": false
+    }
+  ],
+  "physicalIOSAutoZoomVerified": false,
+  "status": "passed",
+  "visualReview": "All eight search and Story screenshots inspected. Dialog artwork remains visible after a250ms theme-paint settle; no app patch was needed for immediate-capture compositor artifact."
+}

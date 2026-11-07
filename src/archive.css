@@ -1390,7 +1390,7 @@ dialog::backdrop {
     padding: 6px 10px;
   }
   .search input {
-    font-size: 11px;
+    font-size: 16px;
   }
   kbd {
     display: none;
@@ -2206,6 +2206,18 @@ dialog::backdrop {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
+
+/* Keep editable text readable without iOS focus magnification. Preserve the
+   unrestricted viewport so listeners can still pinch to zoom intentionally. */
+@media (max-width: 800px), (pointer: coarse) {
+  .search input,
+  .form-label input,
+  .form-label select,
+  .artist-search-label input,
+  .filter-control select {
+    font-size: 16px;
+  }
+}
 .filter-reset {
   margin: -16px 0 20px;
   text-align: right;
@@ -2885,4 +2897,46 @@ body.now-playing-open {
   [data-playback-busy="true"] .playback-glyph::after {
     animation: none;
   }
+}
+
+.queue-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.queue-toolbar-actions [aria-pressed="true"] {
+  border-color: var(--pink);
+}
+.queue-autoplay-note {
+  margin: -4px 0 18px;
+  line-height: 1.5;
+}
+.queue-origin {
+  color: var(--muted);
+}
+@media (max-width: 500px) {
+  .queue-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.record-card .card-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: none;
+}
+.record-card .card-actions .icon {
+  width: 30px;
+  height: 30px;
+}
+.record-card .card-meta > a {
+  min-width: 0;
+}
+.playlist-add .nav-icon {
+  width: 18px;
+  height: 18px;
+  margin: auto;
 }

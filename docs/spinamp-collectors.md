@@ -10,8 +10,31 @@ The [official SDK track-NFT query](https://github.com/spinamp/spinamp-sdk/blob/a
 
 ## Honest boundaries
 
-The snapshot is complete for the relations returned for this one indexed track. **It is not an independently verified current chain census, mint history, or a list of original minters.** The underlying index freshness is unknown. “Checked” is when the API was queried, not the last block indexed. No other Spinamp tracks gain broader holder coverage from this evidence, and no Solana holder support is implied.
+The snapshot is complete for the relations returned for this one indexed track. **It is not an independently verified current chain census, mint history, or a list of original minters.** The underlying index freshness is unknown. “Checked” is when the API was queried, not the last block indexed. Each stored snapshot is bound separately to its exact recording; it cannot grant collector coverage to another song. No Solana holder support is implied.
 
 `src/spinamp-collectors.mjs` checks source, exact query track, chain/contract/metadata identity, unique editions, complete pagination, corresponding owner queries, safe integer balances, and ERC721 conflicts. Its runtime reader requires the actual record ID, Spinamp track ID, chain, contract and original metadata URI. Invalid evidence fails closed to normal recovery. Zero addresses and zero balances are excluded.
 
 The existing collector cards and profile enrichment are reused. The UI says “Indexed collectors” and explains the freshness limitation; no new PFP identity inference is added. Focused tests cover the 13/16 result, unrelated data, incomplete/error responses, contradictory ownership, and scoped backend selection. `scripts/verify-spinamp-collectors.mjs` checks the real endpoint/UI at 1440 and 390 pixels in light and dark themes; the browser receipt is saved only after all checks pass.
+
+## Bounded expansion, November 6, 2026
+
+A ten-release Lens cohort added **ten validated snapshots covering 791 indexed ERC721 editions**. The archive now has eleven exact-release snapshots including Pete Rango’s existing 16-edition record: **807 mapped editions and 594 distinct positive-balance wallet addresses across those snapshots**. Summed per-song collector counts are not unique people and must not be presented as such. These remain indexed snapshots with unknown chain synchronization freshness.
+
+| Artist       | Recording                              | Indexed editions | Indexed wallets |
+| ------------ | -------------------------------------- | ---------------: | --------------: |
+| Scolla       | Future Surf Radio - JumpRope (Snippet) |                6 |               6 |
+| Jadyn Violet | The Stern Mystic                       |               23 |              17 |
+| valentina cy | it would be nice to have somebody      |               13 |              13 |
+| valentina cy | Kim                                    |               18 |               9 |
+| Heno.        | Day 14                                 |               48 |              46 |
+| valentina cy | turns out he's married                 |               58 |              38 |
+| Heno.        | Day 11                                 |              179 |             177 |
+| Heno.        | Day 6                                  |              197 |             195 |
+| Scolla       | Night Skies (Demo)                     |               13 |              10 |
+| SOZI         | L.O.V.E. - SOZI                        |              236 |             206 |
+
+SOZI’s “L.O.V.E.” initially exceeded the complete 200-token bound. A separate exact count confirmed 236 editions. The scoped follow-up raised the per-release cap to 300 and recovered all 236 ownership responses, preserving the earlier failure receipt rather than rewriting it as a first-pass success. The combined collector work used 95 public API requests, within the 100-request cohort budget. Receipts: `data/spinamp/collector-expansion-2026-11-06.json` and `data/spinamp/collector-sozi-completion-2026-11-06.json`.
+
+`scripts/spinamp-recover-collectors.mjs` takes 1–20 explicit catalog record IDs and validates the Lens/ERC721/IPFS scope before querying. It defaults to 200 related NFTs per release; `SPINAMP_MAX_TOKENS` can raise that bound to at most 300. Each run allows at most 100 API requests and uses an exclusive writer lock. Every exact track relation and owner page must be complete before a snapshot is atomically saved. This does not scan all tokens in a shared contract or infer ownership from artwork or a title.
+
+Regression tests validate all eleven stored snapshots against the actual catalog and reject unrelated record IDs and over-budget censuses. The browser verification script `scripts/verify-spinamp-gap-recovery.mjs` checks actual endpoints and reuses the established collector UI without mocked holder responses.

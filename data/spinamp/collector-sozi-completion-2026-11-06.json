@@ -1,0 +1,23 @@
+{
+  "startedAt": "2026-11-07T00:05:20.267Z",
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "scope": "Exact Lens release relations and indexed ownership; index freshness unknown, not fresh chain balances",
+  "maximumRequests": 100,
+  "maximumTokensPerRelease": 300,
+  "beforeSnapshots": 10,
+  "results": [
+    {
+      "recordId": "spinamp-257e94565ad496224826",
+      "title": "L.O.V.E. - SOZI",
+      "artist": "SOZI",
+      "status": "indexed",
+      "mappedTokens": 236,
+      "wallets": 206,
+      "checkedAt": "2026-11-07T00:05:35.688Z"
+    }
+  ],
+  "finishedAt": "2026-11-07T00:05:36.202Z",
+  "requests": 25,
+  "afterSnapshots": 11,
+  "stopReason": "Explicit selected cohort completed"
+}

@@ -59,15 +59,47 @@ export function createMediaRecovery(
   { originalURL, shouldPlay, onSwitch, onExhausted, onSlow = () => {} },
 ) {
   let activeURL = originalURL,
-    ended = false;
+    ended = false,
+    lastBufferedEnd = 0,
+    partialGraceChecks = 0;
   const fallbacks = alternateMediaURLs(originalURL);
   const seekListeners = new Set();
   function recover(failedURL = activeURL, { softTimeout = false } = {}) {
     if (ended || failedURL !== activeURL) return;
     if (softTimeout && !shouldPlay()) return;
+    if (softTimeout && !media.error) {
+      // A useful native buffer (including an adopted standby) is evidence of
+      // progress. A timer must not throw it away and restart another gateway.
+      try {
+        const position = Number.isFinite(media.currentTime)
+          ? media.currentTime
+          : 0;
+        for (let i = 0; i < (media.buffered?.length || 0); i++) {
+          if (
+            media.buffered.start(i) <= position + 0.05 &&
+            media.buffered.end(i) > position + 0.1
+          ) {
+            const end = media.buffered.end(i);
+            const progressing = end > lastBufferedEnd + 0.1;
+            lastBufferedEnd = end;
+            if (
+              media.readyState >= 3 ||
+              (progressing && partialGraceChecks < 3)
+            ) {
+              partialGraceChecks++;
+              onSlow({ recheck: fallbacks.length > 0 });
+              return "waiting";
+            }
+            break;
+          }
+        }
+      } catch {}
+    }
     const fallback = fallbacks.shift();
     if (fallback) {
       activeURL = fallback;
+      lastBufferedEnd = 0;
+      partialGraceChecks = 0;
       const resumeAt = Number.isFinite(media.currentTime)
         ? media.currentTime
         : 0;
@@ -91,7 +123,7 @@ export function createMediaRecovery(
       // A loading deadline is not a network/decoder error. With no alternate
       // source, keep the current request alive so delayed audio can still start.
       if (softTimeout && !media.error) {
-        onSlow();
+        onSlow({ recheck: false });
         return "waiting";
       }
       ended = true;

@@ -2,6 +2,20 @@
 
 Updated November 6, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
+## Continuous listening, Story clips and recovery expansion
+
+This release adds an explicit Autoplay toggle with approximately 20 generated upcoming tracks, continuing through the captured browsing context before broader discovery. Manual additions/Play Next/reordering take priority; explicit playlist duplicates survive. Clear disables automatic refills. Only the next media source is preloaded. Hard source failures in automatic continuation have a visible, bounded skip policy; manual selections and slow loads are not silently skipped. Native slow-network handoff retained the same buffered media element. See `docs/continuous-playback.md` and its browser/source receipts.
+
+Shared recording cards and queue rows now open the existing Add to playlist picker directly. Mobile search and shared form inputs use 16px text while retaining pinch zoom. Chromium/WebKit mobile focus and layout checks passed; physical iPhone keyboard zoom still needs a device check.
+
+Create Story clip on a record page exports a selected 15-second music excerpt with branded cover artwork as genuine 1080×1920 H.264/AAC MP4. Native Chromium and WebKit artifacts were decoded/previewed and compared with the selected source audio. The first version requires browser MP4 support and CORS-readable media/artwork, with a 32 MiB media cap. Some large WAVs cannot export yet. Download and optional OS file sharing are available; Instagram upload is manual and has not been tested on a physical phone. No listening copies or media replacements were created. See `docs/social-clip-sharing-plan.md`.
+
+The Spinamp gap pass recovered 125 of 169 missing exact track/NFT links and added 71 eligible recordings while retaining every previous ID. The integrated catalog is 37,345 records; 44 references remain unresolved. Ten additional Lens release snapshots add 791 indexed editions; eleven snapshots total 807 editions and 594 distinct wallets. These are explicitly labeled index snapshots with unknown freshness, not fresh chain balances. New media was not individually playback-tested. See `docs/spinamp-gap-recovery.md`.
+
+The real signed-in old-origin session showed the linked wallet and playlist but failed account sync; Pete also reported that a second device did not show his playlists. The renamed `ARCHIVE_ORIGIN` had excluded the old public address from the playlist PUT allowlist. The server now explicitly retains both exact archive origins without changing authentication or account-storage identity. Real authenticated save/readback and the second-device retest must be recorded after production deployment; do not claim this user test has passed based on fixture tests. See `data/account-origin-verification.json`.
+
+Validation before publication: 339 tests, syntax/format checks and production build pass; focused desktop/mobile/light/dark browser receipts cover queues, direct playlist actions, Story export/races, mobile inputs and collector expansion. Release commit/deployment and live results will be recorded in the production receipt.
+
 ## Buffering feedback and remembered filters
 
 The player now distinguishes initial loading, buffering after playback starts, and seeking. The existing Pause control stays actionable, with a loading ring shared by song cards, the compact player and expanded Now Playing. Native readiness controls the indicator: a stalled download with playable data does not falsely show buffering. Pausing, playback recovery, ending and errors clear the busy indicator. Existing gateway retries and the next-track buffer remain unchanged; no new listening copies were created.
