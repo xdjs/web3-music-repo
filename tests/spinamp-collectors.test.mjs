@@ -102,3 +102,43 @@ test("snapshot reader binds exact recording and metadata; it cannot spread to ad
   assert.equal(r.items.length, 13);
   assert.equal(r.scope, "spinamp-release-snapshot");
 });
+
+test("every expanded snapshot binds its own loaded recording and has unique edition ownership", () => {
+  const bundle = JSON.parse(
+    readFileSync(
+      new URL("../data/spinamp/recovered-media.json", import.meta.url),
+    ),
+  );
+  const records = new Map(bundle.records.map((r) => [r.id, r]));
+  for (const [id, evidence] of Object.entries(snapshots.records)) {
+    const record = records.get(id);
+    assert.ok(record, id);
+    const snapshot = readSpinampCollectorSnapshot(
+      record,
+      snapshots,
+      bundle.evidence[id],
+    );
+    assert.ok(snapshot, id);
+    assert.equal(snapshot.onchainVerified, false);
+    assert.equal(snapshot.indexFreshness, "unknown");
+    const tokenIds = snapshot.items.flatMap((h) => h.tokenIds);
+    assert.equal(new Set(tokenIds).size, tokenIds.length, id);
+    assert.ok(tokenIds.length <= snapshot.mappedTokenCount, id);
+    const other = { ...record, id: id + "-other" };
+    assert.equal(
+      readSpinampCollectorSnapshot(other, snapshots, bundle.evidence[id]),
+      null,
+    );
+  }
+});
+
+test("collector release census remains capped even when all rows are supplied", () => {
+  const e = structuredClone(fixture),
+    c = e.relations.body.data.relations;
+  c.totalCount = 301;
+  c.nodes = Array.from({ length: 301 }, () => structuredClone(c.nodes[0]));
+  assert.throws(
+    () => normalizeSpinampCollectorSnapshot(e),
+    /incomplete\/bounded relation census/,
+  );
+});

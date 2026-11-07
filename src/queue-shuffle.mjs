@@ -45,6 +45,8 @@ export function toggleQueueShuffle(
     );
     upcoming.sort((a, b) => positions.get(a.key) - positions.get(b.key));
   }
+  const priority = (e) => (!e.generated ? 0 : e.origin === "autoplay" ? 2 : 1);
+  upcoming.sort((a, b) => priority(a) - priority(b));
   return finish({ ...state, enabled, pendingShuffle: false }, [
     ...past,
     ...upcoming,
@@ -123,17 +125,36 @@ export function selectShuffledTrack(
     "manual",
   );
 }
-export function appendShuffleQueue(state, id) {
+export function appendShuffleQueue(state, id, { playNext = false } = {}) {
   const entry = { id, key: state.nextKey };
+  const firstGenerated = state.entries.findIndex(
+    (e, i) => i > state.index && e.generated,
+  );
+  const at = playNext
+    ? Math.max(0, state.index + 1)
+    : firstGenerated < 0
+      ? state.entries.length
+      : firstGenerated;
+  const entries = [...state.entries];
+  entries.splice(at, 0, entry);
+  const originalOrder = [...state.originalOrder];
+  const followingKey = state.entries[at]?.key;
+  originalOrder.splice(
+    followingKey === undefined
+      ? originalOrder.length
+      : originalOrder.indexOf(followingKey),
+    0,
+    entry.key,
+  );
   return finish(
     {
       ...state,
       nextKey: state.nextKey + 1,
-      originalOrder: [...state.originalOrder, entry.key],
+      originalOrder,
       pendingShuffle:
         state.pendingShuffle || (state.enabled && !state.entries.length),
     },
-    [...state.entries, entry],
+    entries,
     state.index,
     "manual",
   );
@@ -167,7 +188,10 @@ export function moveShuffleQueue(state, from, to) {
   )
     return state;
   const currentKey = state.entries[state.index]?.key;
-  const entries = [...state.entries];
+  const entries = state.entries.map((entry) => ({
+    ...entry,
+    generated: false,
+  }));
   const [entry] = entries.splice(from, 1);
   entries.splice(to, 0, entry);
   return finish(

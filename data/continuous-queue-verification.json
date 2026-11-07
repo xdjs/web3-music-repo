@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-11-07T00:02:20.681Z",
+  "base": "http://127.0.0.1:4191",
+  "scope": "Actual app/catalog/queue UI. Media responses use the existing approved local Planet X MP4 as an explicit deterministic fixture; this suite verifies queue semantics and native continuity, not source attribution/playability.",
+  "cases": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "errors": [],
+      "contextFirst": true,
+      "manualPriority": true,
+      "reorderKeepsCurrent": true,
+      "clearStopsRefill": true,
+      "playlistContinuationLabeled": true,
+      "offRetainsExplicitDuplicates": true,
+      "addAfterClearStartsFirstUpcoming": true,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "errors": [],
+      "contextFirst": true,
+      "manualPriority": true,
+      "reorderKeepsCurrent": true,
+      "clearStopsRefill": true,
+      "playlistContinuationLabeled": true,
+      "offRetainsExplicitDuplicates": true,
+      "addAfterClearStartsFirstUpcoming": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "errors": [],
+      "contextFirst": true,
+      "manualPriority": true,
+      "reorderKeepsCurrent": true,
+      "clearStopsRefill": true,
+      "playlistContinuationLabeled": true,
+      "offRetainsExplicitDuplicates": true,
+      "addAfterClearStartsFirstUpcoming": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "errors": [],
+      "contextFirst": true,
+      "manualPriority": true,
+      "reorderKeepsCurrent": true,
+      "clearStopsRefill": true,
+      "playlistContinuationLabeled": true,
+      "offRetainsExplicitDuplicates": true,
+      "addAfterClearStartsFirstUpcoming": true,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

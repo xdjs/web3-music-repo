@@ -4,6 +4,7 @@ import postgres from "postgres";
 import { verifyAccountToken } from "./verify-account-token.mjs";
 import { createAccountPlaylistStore } from "./account-playlist-store.mjs";
 import { createDurableAccountPlaylistStore } from "./account-durable-store.mjs";
+import { isAccountWriteOriginAllowed } from "./account-origin.mjs";
 let env = {};
 try {
   env = parseEnv(readFileSync(".env.local", "utf8"));
@@ -130,15 +131,10 @@ export async function accountAPI(req, res, url, json) {
     if (req.method === "GET")
       return (json(res, await store.read(account.id)), true);
     if (
-      req.headers.origin &&
-      ![
-        "http://127.0.0.1:4190",
-        "http://localhost:4190",
-        process.env.ARCHIVE_ORIGIN || env.ARCHIVE_ORIGIN,
-        process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null,
-      ]
-        .filter(Boolean)
-        .includes(req.headers.origin)
+      !isAccountWriteOriginAllowed(req.headers.origin, {
+        archiveOrigin: process.env.ARCHIVE_ORIGIN || env.ARCHIVE_ORIGIN,
+        deploymentHostname: process.env.VERCEL_URL,
+      })
     )
       return (json(res, { error: "Invalid request origin" }, 403), true);
     const chunks = [];

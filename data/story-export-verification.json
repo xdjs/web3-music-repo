@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-11-07T00:01:34.780Z",
+  "scope": "Actual local app, original Planet X cover and artist-approved corrected playback source; explicit Story export only, no listening transcodes or social upload.",
+  "checks": [
+    {
+      "engine": "chromium",
+      "passed": true,
+      "file": "work/story-export/chromium-planet-x.mp4",
+      "video": {
+        "codec": "h264",
+        "width": 1080,
+        "height": 1920
+      },
+      "audio": {
+        "codec": "aac",
+        "channels": 2
+      },
+      "duration": 15.016771,
+      "bytes": 667606,
+      "previewAdvances": true,
+      "cancelPassed": true,
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "passed": true,
+      "file": "work/story-export/webkit-planet-x.mp4",
+      "video": {
+        "codec": "h264",
+        "width": 1080,
+        "height": 1920
+      },
+      "audio": {
+        "codec": "aac",
+        "channels": 2
+      },
+      "duration": 15.456666,
+      "bytes": 5951507,
+      "previewAdvances": true,
+      "cancelPassed": true,
+      "errors": []
+    }
+  ],
+  "status": "passed",
+  "failureChecks": {
+    "oversizeVisible": true,
+    "corsFailureVisible": true,
+    "retryAvailable": true
+  },
+  "audioComparison": [
+    {
+      "engine": "chromium",
+      "sourceExcerptStart": 100,
+      "alignmentSeconds": 0.050625,
+      "correlation": 0.9955325917788611,
+      "rmsDb": -11.882383606339204
+    },
+    {
+      "engine": "webkit",
+      "sourceExcerptStart": 100,
+      "alignmentSeconds": 0.134625,
+      "correlation": 0.9955314417209882,
+      "rmsDb": -11.994603988463574
+    }
+  ],
+  "visualReview": {
+    "views": [
+      "1440-light",
+      "1440-dark",
+      "390-light",
+      "390-dark"
+    ],
+    "actualMP4FrameInspected": true
+  },
+  "physicalPhoneUploadVerified": false
+}

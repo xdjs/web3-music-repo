@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-11-07T00:05:28.367Z",
+  "scope": "Story dialog race fixture with real module/native export and real Planet X playback, delayed older metadata response only is mocked.",
+  "checks": [
+    "Late previous record metadata cannot overwrite the current export manifest or title",
+    "Closing an active export aborts it; its completion does not replace newly opened dialog status"
+  ],
+  "status": "passed",
+  "errors": []
+}

@@ -1,6 +1,22 @@
 # Stories video export — next implementation
 
-Status: **planned, not implemented**. The collector/account checkpoint takes priority. The already shipped song/artist/playlist links remain available. No listening sources or playback copies should be generated or replaced for this feature.
+Status: **browser-native export implemented; production deployment and physical-phone upload remain unverified**. The record page has Create Story clip, start selection, excerpt preview, genuine MP4 generation, download and OS file sharing when supported. No listening sources or playback copies are generated or replaced by this feature.
+
+## Implemented browser path
+
+`src/story-export.mjs` owns a dialog using existing account/playlist dialog surfaces and controls, with dedicated responsive CSS. `src/story-clip.mjs` accepts only an explicitly supported H.264/AAC MP4 MediaRecorder configuration. It loads the selected record’s approved playback URL and original artwork with CORS, time limits and streaming byte caps (32 MiB media, 6 MiB artwork). Unsupported browsers, oversized sources and blocked/unavailable CORS sources receive visible errors; source failures can be retried. No WebM is relabeled as MP4.
+
+A native media decoder reads a bounded Blob; the app does not decode the full recording into a JavaScript PCM buffer. A fresh decoder and isolated Web Audio destination feed only the selected excerpt into canvas capture. The main player pauses on explicit excerpt preview/export/output preview. Export does not connect its audio source to speakers. The resulting MP4 can be previewed before download. Cancel, close, route change, hidden-tab interruption and timeout stop capture and release the media, stream, AudioContext and object URLs. A downloadable JSON manifest records source type, original URI, selected playback URL, start time and record identity. Artist corrections and separately preserved copies remain labeled accordingly.
+
+The first version deliberately excludes source files above 32 MiB; that includes some large WAV files even when ordinary listening works. It does not request a paid renderer or install a server-side transcoder. Native streamed CORS export or a dedicated bounded renderer could extend this later. Both are follow-up work, not current coverage.
+
+Actual Chromium and WebKit tests generated 1080×1920 H.264/AAC stereo MP4 files from Planet X’s approved corrected playback at 100–115 seconds. `ffprobe` validated the codecs, dimensions and approximately 15-second durations; exported-video playback advanced. The native recorder adds small container/encoder padding (the initial runs measured 15.03 seconds and 15.48 seconds). Cancellation worked. Four existing-theme/viewport dialog captures were produced. See `data/story-export-verification.json` and `scripts/verify-story-export.mjs`. Numeric decoded-audio comparison against the exact selected source excerpt exceeded 0.995 correlation in both engines, confirming matching non-silent source audio; physical listening/upload remains a separate user check.
+
+A separate race fixture verifies that a delayed previous record response cannot overwrite the current export metadata, and closing/reopening during rendering prevents stale completion from changing the new dialog. See `data/story-race-verification.json` and `scripts/verify-story-races.mjs`.
+
+Primary codec support references: [WebKit MediaRecorder](https://webkit.org/blog/11353/) explicitly supports MP4 with H.264/AAC and generated Canvas/WebAudio tracks; [Chromium MP4 MediaRecorder intent](https://groups.google.com/a/chromium.org/g/blink-dev/c/p1OMVj1FrMI) describes H.264/AAC MP4 muxing. Runtime feature detection and actual artifact tests are used rather than assuming support from browser names.
+
+The sections below preserve the broader dedicated-renderer proposal and remaining device acceptance checks.
 
 ## First usable result
 

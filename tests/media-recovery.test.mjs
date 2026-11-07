@@ -244,3 +244,105 @@ test("Arweave fallback preserves exact transaction, manifest path and query thro
   ])
     assert.deepEqual(alternateMediaURLs(value), [], value);
 });
+
+test("slow deadline preserves a useful native buffer but hard errors still recover", () => {
+  const media = new EventTarget();
+  let loads = 0,
+    switches = 0,
+    slow = 0;
+  Object.assign(media, {
+    src: original,
+    currentTime: 0,
+    error: null,
+    buffered: { length: 1, start: () => 0, end: () => 3.7 },
+    load() {
+      loads++;
+    },
+    play: async () => {},
+  });
+  const recovery = createMediaRecovery(media, {
+    originalURL: original,
+    shouldPlay: () => true,
+    onSwitch: () => switches++,
+    onExhausted() {},
+    onSlow: () => slow++,
+  });
+  assert.equal(recovery.recoverSlow(), "waiting");
+  assert.equal(media.src, original);
+  assert.equal(loads, 0);
+  assert.equal(switches, 0);
+  assert.equal(slow, 1);
+  media.error = { code: 2 };
+  media.dispatchEvent(new Event("error"));
+  assert.equal(switches, 1);
+  assert.equal(loads, 1);
+  recovery.dispose();
+});
+
+test("a stale partial buffer gets one grace recheck then uses the remaining same-CID fallback", () => {
+  const media = new EventTarget();
+  let end = 0.25,
+    requested = true,
+    switches = 0;
+  const notices = [];
+  Object.assign(media, {
+    src: original,
+    currentTime: 0,
+    readyState: 2,
+    error: null,
+    buffered: { length: 1, start: () => 0, end: () => end },
+    load() {},
+    play: async () => {},
+  });
+  const recovery = createMediaRecovery(media, {
+    originalURL: original,
+    shouldPlay: () => requested,
+    onSwitch: () => switches++,
+    onExhausted() {},
+    onSlow: (notice) => notices.push(notice),
+  });
+  recovery.recoverSlow();
+  assert.deepEqual(notices, [{ recheck: true }]);
+  assert.equal(switches, 0);
+  requested = false;
+  recovery.recoverSlow();
+  assert.equal(switches, 0);
+  assert.equal(notices.length, 1);
+  requested = true;
+  recovery.recoverSlow();
+  assert.equal(switches, 1);
+  assert.notEqual(media.src, original);
+  recovery.dispose();
+});
+test("growing partial buffer receives bounded grace and playable readiness retains native source", () => {
+  const media = new EventTarget();
+  let end = 0.25,
+    switches = 0;
+  Object.assign(media, {
+    src: original,
+    currentTime: 0,
+    readyState: 2,
+    error: null,
+    buffered: { length: 1, start: () => 0, end: () => end },
+    load() {},
+    play: async () => {},
+  });
+  const recovery = createMediaRecovery(media, {
+    originalURL: original,
+    shouldPlay: () => true,
+    onSwitch: () => switches++,
+    onExhausted() {},
+  });
+  for (let i = 0; i < 3; i++) {
+    end += 0.2;
+    recovery.recoverSlow();
+    assert.equal(switches, 0);
+  }
+  end += 0.2;
+  recovery.recoverSlow();
+  assert.equal(switches, 1);
+  media.readyState = 3;
+  for (let i = 0; i < 5; i++) recovery.recoverSlow();
+  assert.equal(switches, 1);
+  recovery.dispose();
+});
