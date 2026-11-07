@@ -1,0 +1,130 @@
+{
+  "checkedAt": "2026-11-07T00:40:00.517Z",
+  "base": "http://127.0.0.1:4298",
+  "scope": "Actual local API and rendered collector UI. Indexed snapshots are not fresh onchain balances. No mocked holder responses, account writes or media playback.",
+  "endpoints": [
+    {
+      "recordId": "spinamp-c4fbf6953ce75fd2a410",
+      "wallets": 13,
+      "editions": 16
+    },
+    {
+      "recordId": "spinamp-c51ed235413858f6cad3",
+      "wallets": 6,
+      "editions": 6
+    },
+    {
+      "recordId": "spinamp-aa0fe0a2c10e2631bcfd",
+      "wallets": 17,
+      "editions": 23
+    },
+    {
+      "recordId": "spinamp-baa40232b7c8dfcf8c58",
+      "wallets": 13,
+      "editions": 13
+    },
+    {
+      "recordId": "spinamp-b77e9b0a6a9fcbab1f03",
+      "wallets": 9,
+      "editions": 18
+    },
+    {
+      "recordId": "spinamp-0baefa8fc69541706c71",
+      "wallets": 46,
+      "editions": 48
+    },
+    {
+      "recordId": "spinamp-e5cfeca947b225e8dc62",
+      "wallets": 38,
+      "editions": 58
+    },
+    {
+      "recordId": "spinamp-85ecbbcb838073f61584",
+      "wallets": 177,
+      "editions": 179
+    },
+    {
+      "recordId": "spinamp-41fb2b0f83cca1f44294",
+      "wallets": 195,
+      "editions": 197
+    },
+    {
+      "recordId": "spinamp-3f78523ccbbc24dc2974",
+      "wallets": 10,
+      "editions": 13
+    },
+    {
+      "recordId": "spinamp-257e94565ad496224826",
+      "wallets": 206,
+      "editions": 236
+    },
+    {
+      "recordId": "spinamp-d88347a5ad97cd516132",
+      "wallets": 1,
+      "editions": 1
+    },
+    {
+      "recordId": "spinamp-6e32616a17ccde885856",
+      "wallets": 1,
+      "editions": 1
+    },
+    {
+      "recordId": "spinamp-f2d6669ec566943d0146",
+      "wallets": 18,
+      "editions": 19
+    },
+    {
+      "recordId": "spinamp-bb1b599c0cb8d977b6df",
+      "wallets": 6,
+      "editions": 16
+    },
+    {
+      "recordId": "spinamp-6ca7e2c25dfaa65a8c74",
+      "wallets": 19,
+      "editions": 26
+    },
+    {
+      "recordId": "spinamp-190043d7d84773c0b064",
+      "wallets": 29,
+      "editions": 29
+    },
+    {
+      "recordId": "spinamp-1ab81d3b76633c325247",
+      "wallets": 3,
+      "editions": 3
+    },
+    {
+      "recordId": "spinamp-50312a8e391909af5760",
+      "wallets": 31,
+      "editions": 33
+    },
+    {
+      "recordId": "spinamp-a99ca9b2ffaa2063b6c5",
+      "wallets": 126,
+      "editions": 139
+    },
+    {
+      "recordId": "spinamp-cb176244aa8587a6791c",
+      "wallets": 24,
+      "editions": 25
+    }
+  ],
+  "views": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "recordId": "spinamp-f2d6669ec566943d0146",
+      "walletCards": 18,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "recordId": "spinamp-cb176244aa8587a6791c",
+      "walletCards": 24,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

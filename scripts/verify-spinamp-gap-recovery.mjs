@@ -35,8 +35,16 @@ try {
     });
   }
   for (const [width, theme, id] of [
-    [1440, "dark", "spinamp-c51ed235413858f6cad3"],
-    [390, "light", "spinamp-257e94565ad496224826"],
+    [
+      1440,
+      "dark",
+      process.env.VERIFY_DESKTOP_RECORD || "spinamp-c51ed235413858f6cad3",
+    ],
+    [
+      390,
+      "light",
+      process.env.VERIFY_MOBILE_RECORD || "spinamp-257e94565ad496224826",
+    ],
   ]) {
     const page = await browser.newPage({ viewport: { width, height: 1000 } }),
       errors = [];
@@ -68,7 +76,7 @@ try {
       ),
     );
     await page.screenshot({
-      path: `captures/spinamp-expanded-collectors-${width}-${theme}.png`,
+      path: `${process.env.VERIFY_CAPTURE_PREFIX || "captures/spinamp-expanded-collectors"}-${width}-${theme}.png`,
     });
     assert.deepEqual(errors, []);
     report.views.push({
@@ -82,7 +90,8 @@ try {
     await page.close();
   }
   writeFileSync(
-    "data/spinamp/gap-collectors-ui-verification.json",
+    process.env.VERIFY_RECEIPT_PATH ||
+      "data/spinamp/gap-collectors-ui-verification.json",
     JSON.stringify(report, null, 2) + "\n",
   );
   console.log(JSON.stringify(report));

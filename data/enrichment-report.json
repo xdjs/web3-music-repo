@@ -1,23 +1,23 @@
 {
-  "checkedAt": "2026-11-06T17:44:06.411Z",
-  "totalRecords": 31220,
+  "checkedAt": "2026-11-07T00:41:33.758Z",
+  "totalRecords": 37345,
   "scope": "Supplied metadata includes original documents, publisher snapshots, official release pages and explicitly attributed indexer data. Metadata read is not independent chain or playback verification.",
-  "suppliedBpm": 7942,
-  "suppliedKey": 7519,
-  "lyricsTracks": 1311,
+  "suppliedBpm": 7955,
+  "suppliedKey": 7525,
+  "lyricsTracks": 1329,
   "metadataSources": {
     "original-document-or-publisher-snapshot": 9209,
     "official-public-release-page": 616,
-    "spinamp-indexed-metadata": 21395
+    "spinamp-indexed-metadata": 27520
   },
-  "credits": 486,
+  "credits": 594,
   "details": {
-    "Description": 29532,
-    "Duration": 14721,
-    "Genre": 15647,
-    "License": 5006,
-    "Track number": 12417,
-    "Recorded in": 4088,
+    "Description": 34303,
+    "Duration": 14775,
+    "Genre": 15701,
+    "License": 5022,
+    "Track number": 12471,
+    "Recorded in": 4100,
     "Project": 1728,
     "Album": 70,
     "Release date": 51,
@@ -26,16 +26,21 @@
     "Record label": 841,
     "ISRC": 296,
     "Instruments": 5060,
-    "Publisher": 8
+    "Publisher": 8,
+    "Drums layer": 4,
+    "Chords layer": 2,
+    "Effects layer": 2,
+    "Lead layer": 2,
+    "Vocals layer": 2
   },
-  "metadataRead": 31220,
+  "metadataRead": 37345,
   "metadataUnresolved": 0,
   "bpmAnalysis": {
     "metadata-bpm": 1571,
-    "needs-review": 193,
-    "estimated": 5666,
+    "needs-review": 194,
+    "estimated": 5675,
     "unavailable": 1773,
-    "not-queued": 22017
+    "not-queued": 28132
   },
   "payments": {
     "verifiedPurchases": 186,
@@ -44,14 +49,14 @@
   },
   "byPlatform": {
     "Sound": {
-      "records": 9779,
-      "suppliedBpm": 2672,
-      "suppliedKey": 2325,
+      "records": 9833,
+      "suppliedBpm": 2680,
+      "suppliedKey": 2330,
       "credits": 0,
-      "metadataRead": 9779,
+      "metadataRead": 9833,
       "metadataUnresolved": 0,
       "metadataStates": {
-        "read": 9779
+        "read": 9833
       },
       "attributedCredits": 7
     },
@@ -104,16 +109,16 @@
       "attributedCredits": 0
     },
     "Zora": {
-      "records": 1240,
-      "suppliedBpm": 4,
-      "suppliedKey": 2,
+      "records": 1255,
+      "suppliedBpm": 5,
+      "suppliedKey": 3,
       "credits": 0,
-      "metadataRead": 1240,
+      "metadataRead": 1255,
       "metadataUnresolved": 0,
       "metadataStates": {
-        "read": 1240
+        "read": 1255
       },
-      "attributedCredits": 4
+      "attributedCredits": 5
     },
     "Other": {
       "records": 7,
@@ -152,14 +157,14 @@
       "attributedCredits": 3
     },
     "anotherblock": {
-      "records": 13,
+      "records": 15,
       "suppliedBpm": 0,
       "suppliedKey": 0,
       "credits": 0,
-      "metadataRead": 13,
+      "metadataRead": 15,
       "metadataUnresolved": 0,
       "metadataStates": {
-        "read": 13
+        "read": 15
       },
       "attributedCredits": 0
     },
@@ -275,7 +280,7 @@
       "records": 142,
       "suppliedBpm": 0,
       "suppliedKey": 0,
-      "credits": 0,
+      "credits": 108,
       "metadataRead": 142,
       "metadataUnresolved": 0,
       "metadataStates": {
@@ -643,6 +648,18 @@
       },
       "attributedCredits": 0
     },
+    "Nina": {
+      "records": 6054,
+      "suppliedBpm": 4,
+      "suppliedKey": 0,
+      "credits": 0,
+      "metadataRead": 6054,
+      "metadataUnresolved": 0,
+      "metadataStates": {
+        "read": 6054
+      },
+      "attributedCredits": 0
+    },
     "C4": {
       "records": 5,
       "suppliedBpm": 0,
@@ -658,17 +675,17 @@
   },
   "jobs": {
     "metadata": {
-      "startedAt": "2026-11-06T09:48:57.954Z",
-      "updatedAt": "2026-11-06T10:22:17.026Z",
-      "finishedAt": "2026-11-06T09:48:58.018Z",
+      "startedAt": "2026-11-07T00:36:15.117Z",
+      "updatedAt": "2026-11-07T00:38:34.954Z",
+      "finishedAt": "2026-11-07T00:36:16.241Z",
       "interruptedAt": null,
       "completion": "pass-finished",
       "note": "A checkpoint is not proof that a process is alive; failed items remain unresolved even after a pass finishes."
     },
     "bpm": {
-      "startedAt": "2026-11-06T09:28:46.835Z",
-      "updatedAt": "2026-11-06T16:17:23.834Z",
-      "finishedAt": "2026-11-06T16:17:23.834Z",
+      "startedAt": "2026-11-07T00:39:57.311Z",
+      "updatedAt": "2026-11-07T00:41:05.181Z",
+      "finishedAt": "2026-11-07T00:41:05.181Z",
       "interruptedAt": null,
       "completion": "pass-finished",
       "note": "A checkpoint is not proof that a process is alive; failed items remain unresolved even after a pass finishes."

@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-11-07T00:41:51.699Z",
+  "scope": "Actual local app, original Planet X cover and artist-approved corrected playback source; explicit Story export only, no listening transcodes or social upload.",
+  "checks": [
+    {
+      "engine": "chromium",
+      "passed": true,
+      "file": "work/story-timeline/chromium-planet-x.mp4",
+      "video": {
+        "codec": "h264",
+        "width": 1080,
+        "height": 1920
+      },
+      "audio": {
+        "codec": "aac",
+        "channels": 2
+      },
+      "duration": 15.023667,
+      "bytes": 671564,
+      "previewAdvances": true,
+      "cancelPassed": true,
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "passed": true,
+      "file": "work/story-timeline/webkit-planet-x.mp4",
+      "video": {
+        "codec": "h264",
+        "width": 1080,
+        "height": 1920
+      },
+      "audio": {
+        "codec": "aac",
+        "channels": 2
+      },
+      "duration": 15.456666,
+      "bytes": 5938917,
+      "previewAdvances": true,
+      "cancelPassed": true,
+      "errors": []
+    }
+  ],
+  "status": "passed",
+  "failureChecks": {
+    "oversizeVisible": true,
+    "corsFailureVisible": true,
+    "retryAvailable": true
+  }
+}

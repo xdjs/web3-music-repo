@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-11-07T00:40:33.580Z",
+  "before": {
+    "pixel": [
+      251,
+      87,
+      192,
+      255
+    ],
+    "hidden": false,
+    "display": "block",
+    "rect": {
+      "x": 120,
+      "y": 185.078125,
+      "width": 150,
+      "height": 266.65625,
+      "top": 185.078125,
+      "right": 270,
+      "bottom": 451.734375,
+      "left": 120
+    }
+  },
+  "after": {
+    "pixel": [
+      251,
+      87,
+      192,
+      255
+    ],
+    "hidden": false,
+    "display": "block",
+    "rect": {
+      "x": 120,
+      "y": 185.078125,
+      "width": 150,
+      "height": 266.65625,
+      "top": 185.078125,
+      "right": 270,
+      "bottom": 451.734375,
+      "left": 120
+    }
+  },
+  "priorObservation": "Before targeted repaint, repeated viewport/theme changes produced a visibly black canvas despite intact backing pixels; fresh dark-mobile load rendered correctly.",
+  "fix": "One coalesced animation-frame preview repaint on ResizeObserver or data-theme mutation; disconnected/cancelled on close and skipped during export. No continuous loop or arbitrary app delay.",
+  "result": "The exact fresh390dark\u21921440light/dark\u2192390light/dark sequence now visibly retains artwork. Post-fix screenshot independently reviewed.",
+  "capture": "captures/story-timeline-webkit-resize-fixed.png",
+  "limitation": "Physical Safari orientation/theme behavior remains a user-device check."
+}

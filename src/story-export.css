@@ -62,3 +62,126 @@
     justify-content: center;
   }
 }
+.story-selection-heading,
+.story-timeline-labels,
+.story-audition label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.story-selection-heading {
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.story-selection-heading span,
+.story-timeline-labels,
+.story-audition output {
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  font-size: 12px;
+}
+.story-timeline {
+  position: relative;
+  height: 52px;
+  margin-top: 16px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  touch-action: none;
+  cursor: pointer;
+}
+.story-timeline::before {
+  content: "";
+  position: absolute;
+  inset: 16px 0;
+  background: repeating-linear-gradient(
+    to right,
+    var(--muted) 0 1px,
+    transparent 1px 5%
+  );
+  opacity: 0.3;
+  pointer-events: none;
+}
+.story-selection {
+  position: absolute;
+  inset-block: -1px;
+  left: 0;
+  width: 6.25%;
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--accent);
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+.story-selection:active {
+  cursor: grabbing;
+}
+.story-selection:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.story-selection[aria-disabled="true"] {
+  opacity: 0.4;
+  cursor: default;
+}
+.story-selection span {
+  font-size: 12px;
+  pointer-events: none;
+}
+.story-timeline-labels {
+  margin-top: 8px;
+}
+.story-audition {
+  margin-top: 24px;
+}
+.story-audition label {
+  font-size: 12px;
+  color: var(--muted);
+}
+.story-audition input[type="range"] {
+  height: 44px;
+  padding: 0;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+.story-exact {
+  margin: 16px 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+.story-exact summary {
+  cursor: pointer;
+  min-height: 32px;
+  display: list-item;
+}
+.story-exact .artist-search-label {
+  margin: 8px 0 16px;
+}
+@media (max-width: 600px) {
+  .story-export-visual {
+    width: min(150px, 100%);
+  }
+  .story-selection-heading {
+    font-size: 13px;
+  }
+  .story-audition {
+    margin-top: 16px;
+  }
+}
+
+/* The hit target can extend beyond the truthful, proportional 15-second window. */
+.story-selection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max(100%, 44px);
+}

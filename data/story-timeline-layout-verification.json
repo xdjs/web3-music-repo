@@ -1,0 +1,145 @@
+{
+  "checkedAt": "2026-11-07T00:43:15.296Z",
+  "checks": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "theme": "light",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "theme": "dark",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "theme": "light",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "theme": "dark",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "chromium",
+      "rapidPlaySelectPausePassed": true
+    },
+    {
+      "engine": "chromium",
+      "previewPaintOnlyOnChanges": true,
+      "closeReleasesObservers": true
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "theme": "light",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "theme": "dark",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "theme": "light",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "theme": "dark",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "webkit",
+      "rapidPlaySelectPausePassed": true
+    },
+    {
+      "engine": "webkit",
+      "previewPaintOnlyOnChanges": true,
+      "closeReleasesObservers": true
+    }
+  ],
+  "status": "passed",
+  "ledgerViewsPassed": 4
+}

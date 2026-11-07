@@ -1,4 +1,5 @@
 export const LYRICS_BYTE_LIMIT = 100 * 1024;
+export const MUSIC_METADATA_SCHEMA_VERSION = 6;
 export function extractLyrics(metadata) {
   const roots = [
     [metadata, "lyrics"],
@@ -31,7 +32,7 @@ export function extractLyrics(metadata) {
     }
     if (
       /^(?:n\/?a|none|null|undefined|false|true|no lyrics(?: available)?|lyrics (?:unavailable|not available)|not available|instrumental|\[instrumental\]|tba|tbd)$/i.test(
-        text,
+        text.replace(/[.!]+$/, ""),
       )
     )
       continue;
@@ -60,6 +61,12 @@ export function extractMusicMetadata(metadata) {
     credits = [],
     details = {};
   const add = (key, value) => {
+    // Named scalar lists are common in NFT metadata; never flatten arbitrary
+    // objects (wallet royalty recipients are not musician credits).
+    if (Array.isArray(value)) {
+      for (const item of value) add(key, item);
+      return;
+    }
     if (typeof value !== "string" && typeof value !== "number") return;
     const text = String(value).trim();
     if (!text || text.length > 10000) return;
@@ -85,6 +92,11 @@ export function extractMusicMetadata(metadata) {
       notes: "Description",
       duration: "Duration",
       tracknumber: "Track number",
+      chords: "Chords layer",
+      drums: "Drums layer",
+      fx: "Effects layer",
+      lead: "Lead layer",
+      vocals: "Vocals layer",
     };
     if (labels[key]) {
       if (
@@ -118,10 +130,49 @@ export function extractMusicMetadata(metadata) {
   };
   for (const root of roots) {
     for (const [key, value] of Object.entries(root)) add(key, value);
+    // Only standalone, explicitly labelled musical facts in original notes.
+    // Narrative numbers, dates and incidental mentions never become BPM/key.
+    for (const notes of [root.description, root.notes].filter(
+      (v) => typeof v === "string",
+    )) {
+      for (const match of notes.matchAll(
+        /^\s*(?:bpm\s*:?\s*(\d{2,3}(?:\.\d+)?)|(\d{2,3}(?:\.\d+)?)\s*bpm)\s*[.!]?\s*$/gim,
+      ))
+        add("bpm", match[1] || match[2]);
+      for (const match of notes.matchAll(
+        /^\s*key\s*:\s*([A-G](?:#|b)?)\s*(major|minor|maj|min)\s*[.!]?\s*$/gim,
+      ))
+        add("key", `${match[1]} ${match[2]}`);
+    }
     if (typeof root.project?.title === "string")
       add("project", root.project.title);
     for (const trait of Array.isArray(root.attributes) ? root.attributes : [])
       add(trait.trait_type || trait.name || "", trait.value);
+    if (root.attributes && !Array.isArray(root.attributes))
+      for (const [key, value] of Object.entries(root.attributes))
+        add(key, value);
+    // TokenTraxx preserves role -> named contributor maps. Only explicit
+    // music/artwork roles qualify; share/recipient/address maps do not.
+    if (
+      root.credits &&
+      !Array.isArray(root.credits) &&
+      typeof root.credits === "object"
+    )
+      for (const [role, value] of Object.entries(root.credits)) {
+        if (
+          !/^(?:(?:(?:music|lyrics|music\s*(?:&|and)\s*lyrics)\s+)?written|produced|mixed(?:\s*(?:&|and)\s*mastered)?|mastered|recorded|performed|composed|arranged|(?:music )?published|music|visuals|art|artwork|vocals(?:\/backing vocals)?|guitar|drums|bass|piano|synths|keyboards|trumpet|trombone)(?:\s+(?:by|at))?$/i.test(
+            role.trim(),
+          )
+        )
+          continue;
+        for (const name of Array.isArray(value) ? value : [value])
+          if (
+            typeof name === "string" &&
+            name.trim() &&
+            !/^0x[0-9a-f]{40}$/i.test(name.trim())
+          )
+            add("credits", `${name.trim()} — ${role.trim()}`);
+      }
     for (const key of ["collaborators", "credits"]) {
       if (Array.isArray(root[key]))
         for (const item of root[key]) {

@@ -7,7 +7,10 @@ import {
   closeSync,
   unlinkSync,
 } from "node:fs";
-import { normalizeSpinampCollectorSnapshot } from "../src/spinamp-collectors.mjs";
+import {
+  normalizeSpinampCollectorSnapshot,
+  isImmutableSnapshotMetadata,
+} from "../src/spinamp-collectors.mjs";
 const source = "https://api.spinamp.xyz/v3/graphql",
   path = "data/spinamp/collector-snapshots.json";
 const maxTokens = Number(process.env.SPINAMP_MAX_TOKENS || 200);
@@ -28,10 +31,10 @@ const selected = ids.map((id) => {
     r.platform !== "Lens" ||
     r.standard !== "ERC721" ||
     r.chainId !== 137 ||
-    !bundle.evidence[id]?.metadataURI?.startsWith("ipfs://")
+    !isImmutableSnapshotMetadata(bundle.evidence[id]?.metadataURI)
   )
     throw Error(
-      "Only explicit Lens ERC721/IPFS release records supported in this bounded cohort: " +
+      "Only explicit Lens ERC721/immutable-metadata release records supported in this bounded cohort: " +
         id,
     );
   return r;

@@ -345,6 +345,11 @@ export async function handler(req, res) {
         ? publicIndex(req, res, bundle, () => buildCatalogPayload(bundle, true))
         : json(res, buildCatalogPayload(bundle));
     }
+    if (url.pathname === "/api/coverage/sound-reconciliation")
+      return json(
+        res,
+        await load("data/sound-resolution/catalog-reconciliation.json", {}),
+      );
     if (url.pathname === "/api/coverage")
       return json(res, {
         additionalChains: await Promise.all(
@@ -373,6 +378,10 @@ export async function handler(req, res) {
             }, {}),
         ),
         manifest: await load("data/census/manifest.json", {}),
+        soundReconciliation: await load(
+          "data/sound-resolution/catalog-reconciliation.json",
+          {},
+        ).then(({ unresolvedContracts, ...summary }) => summary),
         legacy: await load("data/legacy-expanded.json", {}).then((d) => ({
           artists: Object.values(d.artists || {}).map((a) => ({
             name: a.name,

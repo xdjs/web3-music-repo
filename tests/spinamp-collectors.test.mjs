@@ -142,3 +142,21 @@ test("collector release census remains capped even when all rows are supplied", 
     /incomplete\/bounded relation census/,
   );
 });
+
+test("immutable Arweave metadata is allowed while mutable or arbitrary hosts remain unsupported", async () => {
+  const { isImmutableSnapshotMetadata } =
+    await import("../src/spinamp-collectors.mjs");
+  for (const uri of [
+    "https://arweave.net/" + "A".repeat(43),
+    "ar://" + "B".repeat(43),
+    "ipfs://bafyexample",
+  ])
+    assert.equal(isImmutableSnapshotMetadata(uri), true);
+  for (const uri of [
+    "https://example.com/metadata.json",
+    "https://arweave.net/short",
+    "https://arweave.net/" + "A".repeat(43) + "?mutable=1",
+    "https://evil.example/" + "A".repeat(43),
+  ])
+    assert.equal(isImmutableSnapshotMetadata(uri), false);
+});

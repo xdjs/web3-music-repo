@@ -2,6 +2,16 @@
 
 Updated November 6, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
+## Story excerpt editor and targeted enrichment follow-up
+
+The Story dialog now has a fixed 15-second draggable selection, accessible keyboard controls, a 44px touch target, Play/Pause audition and a within-excerpt scrubber. Exact numeric entry is optional. Preview repaint after resize/theme changes repairs a reproduced WebKit black-canvas case without continuous animation or interfering with export. Browser MP4 generation remains bounded to supported codecs and CORS-readable sources up to 32 MiB. Physical Instagram upload remains unverified.
+
+Recovery reduced unresolved Spinamp references from 44 to 42 through two exact links: an already-covered Sound release and an excluded podcast. No new songs were admitted; 37,345 recordings remain. Ten additional collector snapshots add 292 editions; 21 snapshots now cover 1,099 indexed editions and 757 distinct positive-balance wallets, with unknown freshness. Raw reverse-query responses are retained. See `docs/spinamp-recovery-pass2.md`.
+
+The old Sound read pass's 1,256 unresolved contracts are now reconciled against exact indexed identities: 1,194 have matching media in the catalog and 62 do not. Historical RPC results remain unchanged. This specific known-factory cohort is not complete Sound coverage, and is separate from the remaining 42 Spinamp references. The recovery ledger now explains that distinction and links downloadable evidence. See `docs/sound-catalog-reconciliation.md`.
+
+Targeted metadata recovery read 300 exact indexed NFT documents, improving 120 records, including credits on 108 recordings and lyrics on eight. Preserved original notes additionally supply five newly visible tempos and one key. Ten bounded Open BPM analyses yielded nine estimates and one needs-review result, with no keys inferred. Source facts and estimates remain separate. The current cohort has 7,955 supplied BPM values, 7,525 supplied keys, 594 recordings with credits and 1,329 with lyrics. See `data/metadata-enrichment-summary.json`; these source figures exclude tempo estimates. Final release verification accompanies this checkpoint.
+
 ## Continuous listening, Story clips and recovery expansion
 
 PR #11 merged at `60263732a0e3962cf9dd7dce3b73b261c3bf9d2c` and deployed as `dpl_BVPeEaag2g8PMgcZSyRmyEFneEeu`. Both public aliases serve this release. Seven published player/UI assets match the tested source exactly. Production desktop/mobile checks passed for native playback, automatic queue refill, Clear preserving playback, and direct card/queue playlist actions. All 71 added record IDs and all 11 collector snapshots matched the frozen evidence through production endpoints. See `data/continuous-production-source-verification.json`, `data/production-continuous-queue-card-verification.json`, and `data/spinamp/production-gap-verification-6026373.json`.

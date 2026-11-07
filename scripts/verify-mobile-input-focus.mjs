@@ -90,6 +90,7 @@ try {
           (theme) => (document.documentElement.dataset.theme = theme),
           theme,
         );
+        await page.locator(".story-exact summary").click();
         const input = page.locator("[data-story-start]");
         const font = await input.evaluate((e) =>
           parseFloat(getComputedStyle(e).fontSize),

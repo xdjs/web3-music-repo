@@ -1,0 +1,1804 @@
+{
+  "records": {
+    "spinamp-467e9fe595bd5c353d25": {
+      "schemaVersion": 6,
+      "nftId": "base/0x000b6547ef1194806354073FA27775c4e3D6ACc4/1",
+      "checkedAt": "2026-11-07T00:36:31.706Z",
+      "metadataSha256": "f26590e4c728727203c1ae249910eddad5fb2789db285eaad6159616fed1fdf0"
+    },
+    "spinamp-4701f0bd39dc4d067677": {
+      "schemaVersion": 6,
+      "nftId": "base/0x00187eF10D026Fbd266E907Bea5060F5c16975e0/1",
+      "checkedAt": "2026-11-07T00:36:31.707Z",
+      "metadataSha256": "d0484824cd240dc24318abb7d85d3cd4336409e6025aefe0b197a660e2538bd7"
+    },
+    "spinamp-1f6fe0254dd8c45a5bb3": {
+      "schemaVersion": 6,
+      "nftId": "base/0x0102CA970a96717EdE648D5d200b7ec9Aa54bCe4/1",
+      "checkedAt": "2026-11-07T00:36:31.708Z",
+      "metadataSha256": "98c12dc4fd3a9d871f040d890f110b32ac166dc4976977f5513f506d1e29a0e4"
+    },
+    "spinamp-f2cbf586d15e87c3cb43": {
+      "schemaVersion": 6,
+      "nftId": "base/0x015C6AC9cC120B35A0519861e6F8D62317Ec1324/1",
+      "checkedAt": "2026-11-07T00:36:31.708Z",
+      "metadataSha256": "df210de24efec088ae29055ce391dafda38c442d3bfbef7ef0ab052b7c18d28b"
+    },
+    "spinamp-a57ee93b60f15ab56e54": {
+      "schemaVersion": 6,
+      "nftId": "base/0x0affeE09f95399Ec05d405d1633eF0dA072FbA0f/1",
+      "checkedAt": "2026-11-07T00:36:31.708Z",
+      "metadataSha256": "1697f1c1e93c2a8ca18dad33a2d64dd6c2cd76f354c82cd77ee5920238083be7"
+    },
+    "spinamp-2616594db3986c0b3e69": {
+      "schemaVersion": 6,
+      "nftId": "base/0x0c664A85521d5721bca047d29238d9E2a9E9e861/1",
+      "checkedAt": "2026-11-07T00:36:31.708Z",
+      "metadataSha256": "9fc7c993c58c6a4363a07625849687c2ba34759037e1e71025f6bd6076bf34be"
+    },
+    "spinamp-bf0f87f7d45e06856dcb": {
+      "schemaVersion": 6,
+      "nftId": "base/0x2B7ce78956C63bd57987D18240b03aD1EEd20A6B/1",
+      "checkedAt": "2026-11-07T00:36:31.708Z",
+      "metadataSha256": "3cd06c8e6116054254454df8db85b50eca0490a50ebab04414c673fa574ab84f"
+    },
+    "spinamp-36931e062c78ac50f94f": {
+      "schemaVersion": 6,
+      "nftId": "base/0x416F73eB067B7cF93d06b0a88FCdb10252e546F6/1",
+      "checkedAt": "2026-11-07T00:36:31.708Z",
+      "metadataSha256": "4ac241e998699d6c3e90503b1c35adf79c76c039de8f996aba580d8f79dd01aa"
+    },
+    "spinamp-4cc6d55b74c7f5bbf99e": {
+      "schemaVersion": 6,
+      "nftId": "0x006e8a904cE37d0DF9d5A9F19f2f13E7514eB92C/0",
+      "checkedAt": "2026-11-07T00:36:31.709Z",
+      "metadataSha256": "030b7ecfa776c5cdda8e7b55845e36e1d0b342022e0faee97c07e428c3fd1177"
+    },
+    "spinamp-c91dcd7e616f6643f2c6": {
+      "schemaVersion": 6,
+      "nftId": "0x03816Bb232a3C14D47632eb1728dd9B8e99e5028/0",
+      "checkedAt": "2026-11-07T00:36:31.709Z",
+      "metadataSha256": "cae74a8f4641ca701f708862d0429d38ef81173d5f9b65798ee859d8ddd68a33"
+    },
+    "spinamp-3b496fd7ecde8cba944d": {
+      "schemaVersion": 6,
+      "nftId": "0x0301E208Ec282EC38934606EF53dBD5876ED7eB0/1",
+      "checkedAt": "2026-11-07T00:36:31.709Z",
+      "metadataSha256": "e4b797a4207a390e31ccb99c729defe641f07e51cf45a6fabb52e9cac62a81d3"
+    },
+    "spinamp-6e3258fdd98f96d2df80": {
+      "schemaVersion": 6,
+      "nftId": "0x09d6e0f30cFdf2f62c1179516B1F980c5D96571E/1",
+      "checkedAt": "2026-11-07T00:36:31.709Z",
+      "metadataSha256": "13a90e42308cd2cd73c219b0c19b430f4917134e68e874e5bc4a11b0e5da38a7"
+    },
+    "spinamp-fdfc31d1e8188f68a52a": {
+      "schemaVersion": 6,
+      "nftId": "0x10E27501D70fa361e2B18bAe0C28704C0ACb92d7/7",
+      "checkedAt": "2026-11-07T00:36:31.709Z",
+      "metadataSha256": "d68a0c9e2bddccc09970f0626fbd670ecd89bb19330dde811b0993fd23747336"
+    },
+    "spinamp-bce1190a57e80c8c0da1": {
+      "schemaVersion": 6,
+      "nftId": "0x10E27501D70fa361e2B18bAe0C28704C0ACb92d7/3",
+      "checkedAt": "2026-11-07T00:36:31.710Z",
+      "metadataSha256": "7227855a3ec0cb3f67b7f853d2be6c251247e7117a07aeb8eb51ea550310700d"
+    },
+    "spinamp-01d25d4973e7997210f7": {
+      "schemaVersion": 6,
+      "nftId": "0x19b703f65aA7E1E775BD06c2aa0D0d08c80f1C45/2216",
+      "checkedAt": "2026-11-07T00:36:31.710Z",
+      "metadataSha256": "d564338e18229325311b1d2761837606deaab57531494313acd67ee218aafa80"
+    },
+    "spinamp-151561e67741d5f18032": {
+      "schemaVersion": 6,
+      "nftId": "0x19b703f65aA7E1E775BD06c2aa0D0d08c80f1C45/1017",
+      "checkedAt": "2026-11-07T00:36:31.710Z",
+      "metadataSha256": "1bb1e6f8c9d7d3cbf361306817e71273b8a43c47fd574db5d039ca62788a1c54"
+    },
+    "spinamp-3c8f037424d33580bca4": {
+      "schemaVersion": 6,
+      "nftId": "0x317394c6dFB5606c2917E1a0DAD4f1B70EDDC921/1",
+      "checkedAt": "2026-11-07T00:36:31.710Z",
+      "metadataSha256": "cac95c839272d1400a7a560e9c7367e4b3e9423d27719ab2d4089acb458b17aa"
+    },
+    "spinamp-2b8d9d042c842ed6cebb": {
+      "schemaVersion": 6,
+      "nftId": "0xe8e7Eb47dD7eaFeC80c1EF7f0aE39beE6Dbce469/1",
+      "checkedAt": "2026-11-07T00:36:31.710Z",
+      "metadataSha256": "1c0e842b4a7ba77e73e3c181827450de34a472e393f711f8be08407de9e1c1ed"
+    },
+    "spinamp-54e10ee56d69a718ed99": {
+      "schemaVersion": 6,
+      "nftId": "0x3f1798f5E2e217A21c0c666140A07D926461d3ac/1",
+      "checkedAt": "2026-11-07T00:36:31.711Z",
+      "metadataSha256": "93158f34a802dae741796a210400a7872731dcc77cb955ae718bd9cf98563254"
+    },
+    "spinamp-4db3faf9fa37033754ad": {
+      "schemaVersion": 6,
+      "nftId": "0x3f1798f5E2e217A21c0c666140A07D926461d3ac/2",
+      "checkedAt": "2026-11-07T00:36:31.711Z",
+      "metadataSha256": "01b44d4d2b6ca6449044a0ecd3f95b2be3c950180a5836eb927eb5eb913f36e0"
+    },
+    "spinamp-7aa8b5ff3de0d8fd6be7": {
+      "schemaVersion": 6,
+      "nftId": "0x3F2fff6c115645d6fF0A3D4ec9D35c37A4C41339/101",
+      "checkedAt": "2026-11-07T00:36:32.460Z",
+      "metadataSha256": "2786e323299a6f916e2150cfc4aec66f39e99daa77858b7dca79cf28500bf2eb"
+    },
+    "spinamp-d61abbda0c4078d72a95": {
+      "schemaVersion": 6,
+      "nftId": "0x3F2fff6c115645d6fF0A3D4ec9D35c37A4C41339/110",
+      "checkedAt": "2026-11-07T00:36:32.460Z",
+      "metadataSha256": "10d49d259bcbef1c7a1d877359c3a186ec75f7808cd7f9e8c69e8557ab28f7af"
+    },
+    "spinamp-517057983ed2aed288d2": {
+      "schemaVersion": 6,
+      "nftId": "0x441C1266E6fb13C38c2752eab0D11A99905FFef4/200700002",
+      "checkedAt": "2026-11-07T00:36:32.460Z",
+      "metadataSha256": "cdefc97e022ac8a9e1010868bda7e7073a972e8e2193848c5109a4000a9714aa"
+    },
+    "spinamp-32cc4d1b00506b78513a": {
+      "schemaVersion": 6,
+      "nftId": "0x441C1266E6fb13C38c2752eab0D11A99905FFef4/102400001",
+      "checkedAt": "2026-11-07T00:36:32.460Z",
+      "metadataSha256": "3856453d154ae6716814c9ca4bede312b300f1541e3c75928140ab19191a6dae"
+    },
+    "spinamp-58573508153867c4ac70": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/17",
+      "checkedAt": "2026-11-07T00:36:32.460Z",
+      "metadataSha256": "02df81379d1d315722ef9914b3a7a5f3a4d8a20152511c99313077b7f0913f42"
+    },
+    "spinamp-19ac279180cfa0bc95ae": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/10",
+      "checkedAt": "2026-11-07T00:36:32.461Z",
+      "metadataSha256": "7d73bfd477cbce805d14f15c5b390bdd5fbf0dc1fca9495f8ddcda8c16f847c1"
+    },
+    "spinamp-68a69a6e6016cb5f9c35": {
+      "schemaVersion": 6,
+      "nftId": "0x58B8345Ec9e216fA2b7697dd0b18d446AD219558/3",
+      "checkedAt": "2026-11-07T00:36:32.461Z",
+      "metadataSha256": "d9a9abe9061fcb6d0a8441a38c996c0653415c0a0b6e00da9120fa4f89cf02be"
+    },
+    "spinamp-c05b721e9fb76e5b6c7b": {
+      "schemaVersion": 6,
+      "nftId": "0x58B8345Ec9e216fA2b7697dd0b18d446AD219558/4",
+      "checkedAt": "2026-11-07T00:36:32.461Z",
+      "metadataSha256": "cf1f547263ad8393b2f76eae60344fcb83d65948aca381082a22e0bce3e1fcb4"
+    },
+    "spinamp-b92d5086f5192b8b0eda": {
+      "schemaVersion": 6,
+      "nftId": "0x605B0E6b2Ec949235ff5Ac05bD452E22d21c702d/1",
+      "checkedAt": "2026-11-07T00:36:32.461Z",
+      "metadataSha256": "7268ca7625e24ef7136a8e1405e842db002b5a235fbe681fc7aae53f4feaba4d"
+    },
+    "spinamp-4f0114aa2e9789fd984d": {
+      "schemaVersion": 6,
+      "nftId": "0xF85c1f4aC0040e4f2369cFcbAbfccfa2F3E6899E/117",
+      "checkedAt": "2026-11-07T00:36:32.461Z",
+      "metadataSha256": "313a0bee60cb542936c8f63d5aadc00625c21cfd5e51a390fe01c730ee6f3dce"
+    },
+    "spinamp-a1320a7f498993be365f": {
+      "schemaVersion": 6,
+      "nftId": "0x605E28A5888FEc153937e223f1A867ff8571E72D/1072",
+      "checkedAt": "2026-11-07T00:36:32.461Z",
+      "metadataSha256": "f24c2e3b65762284825b22b12bf4143dc0243333d92cd11fa30080e3df892a64"
+    },
+    "spinamp-7f40229d71aadfd8fe6c": {
+      "schemaVersion": 6,
+      "nftId": "0x605E28A5888FEc153937e223f1A867ff8571E72D/2394",
+      "checkedAt": "2026-11-07T00:36:32.462Z",
+      "metadataSha256": "975f0b66da98eb69b942297aa9370a1d8dc14577c19a6cd4fdc0b4dda7cbf013"
+    },
+    "spinamp-b329d359e62383f5b337": {
+      "schemaVersion": 6,
+      "nftId": "0x6688Ee4E6e17a9cF88A13Da833b011E64C2B4203/86",
+      "checkedAt": "2026-11-07T00:36:32.462Z",
+      "metadataSha256": "dd96c2ca6d24c1fb998a11cf4d003cb0638da801132ece5836111742179561d2"
+    },
+    "spinamp-abae2e378b3ab7cae42f": {
+      "schemaVersion": 6,
+      "nftId": "0x6688Ee4E6e17a9cF88A13Da833b011E64C2B4203/45",
+      "checkedAt": "2026-11-07T00:36:32.462Z",
+      "metadataSha256": "2dd8038d644b4e70434725ca07a247953d4905e688e1f9bd91fdba749c33baf1"
+    },
+    "spinamp-2060d156d9bb8a24d37e": {
+      "schemaVersion": 6,
+      "nftId": "0x683a52f53D830ff9DA2DE821c4E5399F53a5fF03/1",
+      "checkedAt": "2026-11-07T00:36:32.462Z",
+      "metadataSha256": "c4b2082a6856b4d029826aad3cb76f95b1abe94d122590d05f9cc7e20ca8a011"
+    },
+    "spinamp-77ed088ee2af532bb931": {
+      "schemaVersion": 6,
+      "nftId": "0x6e49B489A6a51dd855749d711D75A580039eafDA/6",
+      "checkedAt": "2026-11-07T00:36:32.462Z",
+      "metadataSha256": "acacba51d1d5127dac8875f86f23162b5d5709970abdfd783d6886924e384467"
+    },
+    "spinamp-90c08e7ccaa165c14c85": {
+      "schemaVersion": 6,
+      "nftId": "0x6e49B489A6a51dd855749d711D75A580039eafDA/7",
+      "checkedAt": "2026-11-07T00:36:32.462Z",
+      "metadataSha256": "2efaf6aafe54d7ff30568a37f88f0020e4fcca95554e400c82f60f68d898c43b"
+    },
+    "spinamp-8e82b9fda0603fb777e6": {
+      "schemaVersion": 6,
+      "nftId": "0x6E6650fD4949fddF0BACC45c06ae3437f61acb1b/1",
+      "checkedAt": "2026-11-07T00:36:32.462Z",
+      "metadataSha256": "6682fe99cfafc68759fd4c8b0abb4ee5edf2e8e89be193afd96e36892d475a7c"
+    },
+    "spinamp-4fea9da901222737c04f": {
+      "schemaVersion": 6,
+      "nftId": "0x6E6650fD4949fddF0BACC45c06ae3437f61acb1b/10",
+      "checkedAt": "2026-11-07T00:36:32.463Z",
+      "metadataSha256": "7cf6305739fe2a25db689ee71dc4839f1d0fa70135f8a926a0dd8e8f01955acf"
+    },
+    "spinamp-3c04da93c1172bcd1c8a": {
+      "schemaVersion": 6,
+      "nftId": "0x6eB95f70730DDECe8539fe2aed9D1864Bab85145/1",
+      "checkedAt": "2026-11-07T00:36:32.463Z",
+      "metadataSha256": "98a161354a49f70917b64ddc271461d2623a33bfc59d1c206cfc8acd526774e1"
+    },
+    "spinamp-8c99303d72e763328635": {
+      "schemaVersion": 6,
+      "nftId": "0x719C6d392fc659f4fe9b0576cBC46E18939687a7/1",
+      "checkedAt": "2026-11-07T00:36:33.171Z",
+      "metadataSha256": "efd71346c8eda217713036c80e5738ae0dc7e97ebd98b42c6fca9b12a52f4e65"
+    },
+    "spinamp-cdc342a0ae58e21bda81": {
+      "schemaVersion": 6,
+      "nftId": "0x719C6d392fc659f4fe9b0576cBC46E18939687a7/14",
+      "checkedAt": "2026-11-07T00:36:33.172Z",
+      "metadataSha256": "6925462aa296a3b6ac32e0f5439510164c313e8c85f3a4ab168315347509e585"
+    },
+    "spinamp-7bf1f2c822cfdfc95249": {
+      "schemaVersion": 6,
+      "nftId": "0x7d5Bbd40663d81F506aaE6c430a13F1E298E703e/18",
+      "checkedAt": "2026-11-07T00:36:33.172Z",
+      "metadataSha256": "80b0644145065e14ae3822c1029f2c10d8a6f5ace69b3b8a3d8068df368e7f48"
+    },
+    "spinamp-576467bba6747e132fc1": {
+      "schemaVersion": 6,
+      "nftId": "0x7d5Bbd40663d81F506aaE6c430a13F1E298E703e/1",
+      "checkedAt": "2026-11-07T00:36:33.172Z",
+      "metadataSha256": "13706992a375f73d7594f745d113dd328bde9cd2b407109b950c8b269dba8c3a"
+    },
+    "spinamp-113b18e3d868f7e13ada": {
+      "schemaVersion": 6,
+      "nftId": "0x8390b5D7e3Be0b166d97f49E3faC40A7548DfC33/1003",
+      "checkedAt": "2026-11-07T00:36:33.172Z",
+      "metadataSha256": "fabc93681738de6c11140d9442dac3ca9441b3b6edbf28d955fef578fb668b5c"
+    },
+    "spinamp-267dcf3e1a0f9577d93b": {
+      "schemaVersion": 6,
+      "nftId": "0x8390b5D7e3Be0b166d97f49E3faC40A7548DfC33/1",
+      "checkedAt": "2026-11-07T00:36:33.173Z",
+      "metadataSha256": "e5b5f2f3a537a8ddb43081b7ea03704a5f976d39ef96ed7cb06bffeaab0a3327"
+    },
+    "spinamp-5ef4c14cb98436441bb3": {
+      "schemaVersion": 6,
+      "nftId": "0x8427e46826a520b1264B55f31fCB5DDFDc31E349/1097",
+      "checkedAt": "2026-11-07T00:36:33.173Z",
+      "metadataSha256": "3de7bd5d39b2b3adb114168891ea8a726bd987a9bc3f23037b626edb64cab800"
+    },
+    "spinamp-b23c50acca61187846cc": {
+      "schemaVersion": 6,
+      "nftId": "0x8427e46826a520b1264B55f31fCB5DDFDc31E349/1694",
+      "checkedAt": "2026-11-07T00:36:33.173Z",
+      "metadataSha256": "6262e4ab989e7d1178c16ecec13df67b428a0ca04af50de791328b8b9030c5d0"
+    },
+    "spinamp-488e99c6396d559d1763": {
+      "schemaVersion": 6,
+      "nftId": "0x96E09fCE4fd7e2d883608e6F0D4390F52Bc66025/10",
+      "checkedAt": "2026-11-07T00:36:33.173Z",
+      "metadataSha256": "1589d7964e2fcad92b20c28e8d959f1677c607d8fb0ac2b5369e9379465460cd"
+    },
+    "spinamp-d7ae43f6b2a1c36c78df": {
+      "schemaVersion": 6,
+      "nftId": "0x96E09fCE4fd7e2d883608e6F0D4390F52Bc66025/16",
+      "checkedAt": "2026-11-07T00:36:33.173Z",
+      "metadataSha256": "12011e7c0e83c2f20b6cface905fb8e4e34641f2b7eea4600cbf4151f79b3cfa"
+    },
+    "spinamp-b30dca6e0dd0386117e1": {
+      "schemaVersion": 6,
+      "nftId": "0x97b9f21B41041e344F5bd71E3E86B69E79dcc0A6/31",
+      "checkedAt": "2026-11-07T00:36:33.173Z",
+      "metadataSha256": "d8d7629ae134c6d1e3399b298da60857deb6f08a677655f2e7495727694c8d25"
+    },
+    "spinamp-7954ce12c4346333b51a": {
+      "schemaVersion": 6,
+      "nftId": "0x97b9f21B41041e344F5bd71E3E86B69E79dcc0A6/21",
+      "checkedAt": "2026-11-07T00:36:33.173Z",
+      "metadataSha256": "287c0b882bb4cd68bfcca77f3a0c0e9b5ef9a7510650fb81197df4fd8dba9913"
+    },
+    "spinamp-a08a9718445e799a94e0": {
+      "schemaVersion": 6,
+      "nftId": "0xafF62578069B222F5DFc74cd6bc3f037B4450864/1",
+      "checkedAt": "2026-11-07T00:36:33.174Z",
+      "metadataSha256": "861ea4bbd7a6ec47545e3f1d83aeb03a929814de2d5b44b323c28d0e5abfba39"
+    },
+    "spinamp-a2323f13215751be1bd4": {
+      "schemaVersion": 6,
+      "nftId": "0xafF62578069B222F5DFc74cd6bc3f037B4450864/2",
+      "checkedAt": "2026-11-07T00:36:33.174Z",
+      "metadataSha256": "c94f0ead759b4db79c1178d800b69276a45d2df807457a7f11575ad7795b421d"
+    },
+    "spinamp-26242d7b1c5865f9161d": {
+      "schemaVersion": 6,
+      "nftId": "0xB1CCFf7d2775a2CAaa5a44FD4813B08E37fAaE0C/901",
+      "checkedAt": "2026-11-07T00:36:33.174Z",
+      "metadataSha256": "e7882dd4ada7f8cae64bf893fadeec1def435bfb432bd4b7f4faaa955bb5f34c"
+    },
+    "spinamp-be03d2035ee564c96db5": {
+      "schemaVersion": 6,
+      "nftId": "0xB1CCFf7d2775a2CAaa5a44FD4813B08E37fAaE0C/1001",
+      "checkedAt": "2026-11-07T00:36:33.174Z",
+      "metadataSha256": "6c643bb2b936a40f5f6b89882a2288bd0e79260642509cb1ec486a9c0f615510"
+    },
+    "spinamp-a8b45e2581fcfef57196": {
+      "schemaVersion": 6,
+      "nftId": "0xb982B4166B905322e9d7040BB2ad3C10D7c06DaD/18",
+      "checkedAt": "2026-11-07T00:36:33.174Z",
+      "metadataSha256": "deac9798e04d76ffcbbc709a16d45a4f7ff7de50131c202b68e71601c4b5ad09"
+    },
+    "spinamp-274d67dd7255a1233de3": {
+      "schemaVersion": 6,
+      "nftId": "0xbeFf7DD438D3079F146b249552512baf7a1f8E75/5",
+      "checkedAt": "2026-11-07T00:36:33.174Z",
+      "metadataSha256": "90e16ef1d23145ee6ff7e22f997e6640e6d9b37f75f334a87a76419f8a3555d8"
+    },
+    "spinamp-8be0a389841ab46643aa": {
+      "schemaVersion": 6,
+      "nftId": "0xbeFf7DD438D3079F146b249552512baf7a1f8E75/11",
+      "checkedAt": "2026-11-07T00:36:33.175Z",
+      "metadataSha256": "5cfdfc08a41eec5254602eacd9ec4ccda6e511eeb50eb6422b9bb9f37321a54d"
+    },
+    "spinamp-7d78d3bac44d325dcd53": {
+      "schemaVersion": 6,
+      "nftId": "0xd2e3efCac7a408d46FE3463678d0a71EEb803dE2/112",
+      "checkedAt": "2026-11-07T00:36:33.175Z",
+      "metadataSha256": "03e973cd608b303502d3fb04785562c997c1833495a3fee9655361f84c7ff4e3"
+    },
+    "spinamp-4a041362654e09646a45": {
+      "schemaVersion": 6,
+      "nftId": "0xd2e3efCac7a408d46FE3463678d0a71EEb803dE2/105",
+      "checkedAt": "2026-11-07T00:36:33.904Z",
+      "metadataSha256": "22d96d35c0014f44d48a0b035a7a54df65747b6ecc27e49a5967070bbcadf12d"
+    },
+    "spinamp-5f0ea4f14d2cff0f231c": {
+      "schemaVersion": 6,
+      "nftId": "0xD7483426ea2eDC69Cc446859E20d61De1bAe4D22/10",
+      "checkedAt": "2026-11-07T00:36:33.904Z",
+      "metadataSha256": "cbfaf15562953e7b73407951e2243b4961b6267a88d1148d8290d106b8af25a5"
+    },
+    "spinamp-ac2acf015fc2fa97516b": {
+      "schemaVersion": 6,
+      "nftId": "0xD7483426ea2eDC69Cc446859E20d61De1bAe4D22/11",
+      "checkedAt": "2026-11-07T00:36:33.904Z",
+      "metadataSha256": "5da7ec6dd21672116614c656f578d5cf3dcbec0a641e8d339d0f0f612f9c8548"
+    },
+    "spinamp-cd2513cdbbba83bbe1e6": {
+      "schemaVersion": 6,
+      "nftId": "0xd80e33B9a9276458BF3B115E3D7924Ea3663BB84/102",
+      "checkedAt": "2026-11-07T00:36:33.904Z",
+      "metadataSha256": "b9130bb694821d356aaf66e52b964985621840746f3f099dd59b60d71c3eb900"
+    },
+    "spinamp-1367eba88ea2087f9239": {
+      "schemaVersion": 6,
+      "nftId": "0xd80e33B9a9276458BF3B115E3D7924Ea3663BB84/110",
+      "checkedAt": "2026-11-07T00:36:33.904Z",
+      "metadataSha256": "c6bf5223425fb4ce9eacbd4ead9d199d1520873e271913198cc1bbaf2d48eb15"
+    },
+    "spinamp-40eff70008452c4f7282": {
+      "schemaVersion": 6,
+      "nftId": "0xEeB431Caa15B526f48Ee4DB3697FE57EC8223A8e/1",
+      "checkedAt": "2026-11-07T00:36:33.904Z",
+      "metadataSha256": "0f5ec4773fe9481e7b72f1533b503ebd2d7634ad1fbfb96b64a1c23290d02045"
+    },
+    "spinamp-34eb5afe760c2cf9ac3b": {
+      "schemaVersion": 6,
+      "nftId": "0xEeB431Caa15B526f48Ee4DB3697FE57EC8223A8e/14",
+      "checkedAt": "2026-11-07T00:36:33.904Z",
+      "metadataSha256": "f9687c9e5c9475e29c0ef655eb645d8e808acae557cddc97b0c5cc8833ccb284"
+    },
+    "spinamp-4dc5fd81df9fba064967": {
+      "schemaVersion": 6,
+      "nftId": "0xF5819E27B9bAD9F97c177Bf007c1F96F26D91CA6/33",
+      "checkedAt": "2026-11-07T00:36:33.904Z",
+      "metadataSha256": "efd20788a9d8c871184468f76dfb3b5815402abaf08b23a272e5fe2af18637a8"
+    },
+    "spinamp-c2c1def79db62701bb7c": {
+      "schemaVersion": 6,
+      "nftId": "0xF5819E27B9bAD9F97c177Bf007c1F96F26D91CA6/16",
+      "checkedAt": "2026-11-07T00:36:33.905Z",
+      "metadataSha256": "38a054b55ba886f1b7a9c8dc2aa36c5a8e4c2ab9b51d9d65971886f7770eefd5"
+    },
+    "spinamp-a933da73256ceef1dd97": {
+      "schemaVersion": 6,
+      "nftId": "optimism/0x04986F7EdC5a95EE55bE5d5d18886C6680201fB4/1",
+      "checkedAt": "2026-11-07T00:36:33.905Z",
+      "metadataSha256": "6bafb8c10e1e1e1537fab589dc68357063b45863ebb76601c90fbd5727c88f91"
+    },
+    "spinamp-0c4a770423ea8ce6c860": {
+      "schemaVersion": 6,
+      "nftId": "optimism/0x1709e519866EdF5eb1aE94fB2ef935fCF4306BBa/1",
+      "checkedAt": "2026-11-07T00:36:33.905Z",
+      "metadataSha256": "258acd43cd36b6e6257c26e40b64718fa21f8a2b329c7e06c19f7307fc8c1fce"
+    },
+    "spinamp-44b776941f4e6468db60": {
+      "schemaVersion": 6,
+      "nftId": "optimism/0x0a7695F65733cC8a3531babfD9e1E60cbE23f178/3",
+      "checkedAt": "2026-11-07T00:36:33.905Z",
+      "metadataSha256": "860b1dbb412ef784627aab0b5e99c54b27cef04dd30a2686fffcdfcc3ec13395"
+    },
+    "spinamp-c6a3c155f967fff548fd": {
+      "schemaVersion": 6,
+      "nftId": "optimism/0x1ecF1473F0BC142B95bE86d63c1b044C335967f6/10",
+      "checkedAt": "2026-11-07T00:36:33.905Z",
+      "metadataSha256": "be99685942c723e7afcbecc06fbee64d41d9824c0e48b148bc3d55abdd7b3534"
+    },
+    "spinamp-24d23b03027edce8aa2a": {
+      "schemaVersion": 6,
+      "nftId": "optimism/0x15344952786C2cd8CffBAF6f1fb258D5aE23c34F/1",
+      "checkedAt": "2026-11-07T00:36:33.905Z",
+      "metadataSha256": "4d7e49aede673782e000d61abb2702651a521c719d55726fdfe448eeed983933"
+    },
+    "spinamp-d4b7acdc41b45c35130e": {
+      "schemaVersion": 6,
+      "nftId": "optimism/0x3f55DAe6fAB84ED791a9e18FE8A3C58f18B965C7/1",
+      "checkedAt": "2026-11-07T00:36:33.905Z",
+      "metadataSha256": "74a3547c6e62f2d4538bcf7bf252b5ba0a306b08017c3bec500cc7c9cee325dd"
+    },
+    "spinamp-bf577bd842ddbb748497": {
+      "schemaVersion": 6,
+      "nftId": "optimism/0x26b7685B5F5CBe23FC79e2d105e5a201918Bb1B9/1",
+      "checkedAt": "2026-11-07T00:36:33.905Z",
+      "metadataSha256": "f25cebb2a56e57dc7adbaea95a68d7804a7685bcf6c563415a2e4250415fcebb"
+    },
+    "spinamp-0af5d99c2eb66ee383b4": {
+      "schemaVersion": 6,
+      "nftId": "optimism/0x2dFEf3ffef29BC16e4932112A454E0AFa0517355/1",
+      "checkedAt": "2026-11-07T00:36:33.905Z",
+      "metadataSha256": "2676a87f065e6afdf5fc427cd1358a8acdd587e48ae496c1983a18b59d0f6992"
+    },
+    "spinamp-b98be82329ee9b758f19": {
+      "schemaVersion": 6,
+      "nftId": "optimism/0xe34f54338c272fB0d8bd939E76Ce3E002b056367/1",
+      "checkedAt": "2026-11-07T00:36:33.905Z",
+      "metadataSha256": "7d1159f8ee424c70a372dfe959b2fa01900e3079ed364d20834778985f935b3b"
+    },
+    "spinamp-d88347a5ad97cd516132": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x0111AA59B0774eBf9dEcEaF1269fEcb1D9577a93/1",
+      "checkedAt": "2026-11-07T00:36:33.906Z",
+      "metadataSha256": "6119b9deb6cc908a6338ac597007961b3943c3dd7f6531ec53e7497f0d1dd70c"
+    },
+    "spinamp-6e32616a17ccde885856": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x01190a75084e5CB3CC8E5039176cAE8d9B9775d5/1",
+      "checkedAt": "2026-11-07T00:36:33.906Z",
+      "metadataSha256": "a1f39875975c17605c70772f5f73b39792709a5839d8ec936a13a2cb2c2b019a"
+    },
+    "spinamp-de0a7333d705e4930b59": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x4e9af056da9b7234C43D47b366B3f8976915d170/0",
+      "checkedAt": "2026-11-07T00:36:34.588Z",
+      "metadataSha256": "855a1f9965a4e976bf8cfa60ffd3471d098db01912468288d0a07b0db3840e87"
+    },
+    "spinamp-91571c7c3dc0f179e27c": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x84c95EA93856663607851842D58f039f9d4dcd9F/0",
+      "checkedAt": "2026-11-07T00:36:34.589Z",
+      "metadataSha256": "a1df869ca6cb7cca5206a5655e25a8da8fb5c8d2708f9079a07a661d8109dae6"
+    },
+    "spinamp-1d2552884508006c2bd3": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x5428DFf180837Ce215c8abe2054E048Da311B751/4153",
+      "checkedAt": "2026-11-07T00:36:34.589Z",
+      "metadataSha256": "de3446cf65e93072c920ebe58ff4bdf8f9c168c5e510ffec2d565bf5bb54bf21"
+    },
+    "spinamp-40188cd1d8ec558c5bf8": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x5428DFf180837Ce215c8abe2054E048Da311B751/3227",
+      "checkedAt": "2026-11-07T00:36:34.590Z",
+      "metadataSha256": "4c015e7e32a363d31e54d440fbe0612dbe54b64d84364cf52adfb5cd4d3b093e"
+    },
+    "spinamp-4f5f3c70502d26901d38": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xE427025d688df63d9FCE8994a8fb52af6026274C/601",
+      "checkedAt": "2026-11-07T00:36:34.590Z",
+      "metadataSha256": "88bbd56a48f6d9611952847b8820e008e77009418c4b8508b15f215d4cc5003a"
+    },
+    "spinamp-64d1e68fd8b6eadfc1b1": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xE427025d688df63d9FCE8994a8fb52af6026274C/602",
+      "checkedAt": "2026-11-07T00:36:34.590Z",
+      "metadataSha256": "d58b584f08ce79f155749df357815ae3e9d3c0721357bbe7d885903e035fb260"
+    },
+    "spinamp-52652b7e8c0c93fdc260": {
+      "schemaVersion": 6,
+      "nftId": "122gW5E6uqWKEsb1KdCjVhWtarbCTdN7hR1bjt9dgdaw",
+      "checkedAt": "2026-11-07T00:36:34.590Z",
+      "metadataSha256": "4ae5b2aad5470a233f14eeee2b56dbc2ff6847efada8b6f536b50541ccd7504a"
+    },
+    "spinamp-651156bdbb4a7ef993a0": {
+      "schemaVersion": 6,
+      "nftId": "1278zxv5CugWLvq7SfV5822wkjtL5WKxMtDghiieg5Nd",
+      "checkedAt": "2026-11-07T00:36:34.590Z",
+      "metadataSha256": "1c66c7278e51e3ef3c35c4da24eca49f8ca8f59a9f20964019d32e9d16809ae5"
+    },
+    "spinamp-0a99674b9843685ded7d": {
+      "schemaVersion": 6,
+      "nftId": "zora/0x38898cAdB5241121620A81e7BcA47eaB8a87402A/1002",
+      "checkedAt": "2026-11-07T00:36:34.590Z",
+      "metadataSha256": "a85a2ee67c158637f9ebf4c485ef60d2e787d1e710a9c9749c924f30008d2776"
+    },
+    "spinamp-576d2c7baee9c8496387": {
+      "schemaVersion": 6,
+      "nftId": "zora/0x38898cAdB5241121620A81e7BcA47eaB8a87402A/1003",
+      "checkedAt": "2026-11-07T00:36:34.590Z",
+      "metadataSha256": "bb5a0c74250ce8859f96181fd3f664e67a3cc2cd58028f5e026a7d626423ae19"
+    },
+    "spinamp-256b0fcb502ca7c63b6a": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/18",
+      "checkedAt": "2026-11-07T00:36:34.591Z",
+      "metadataSha256": "c1f475b0c09b7c0a5d897a5eefe0e24ac812ec7530dd4a88c77079154349e97c"
+    },
+    "spinamp-61ead626041bb9cefa28": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/5",
+      "checkedAt": "2026-11-07T00:36:34.591Z",
+      "metadataSha256": "9053272a5b1c06c318bdce0a26a6281b91d2302a2387ce4b78c62bbdbbc02fe6"
+    },
+    "spinamp-ea6c3d958b77261d556b": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/16",
+      "checkedAt": "2026-11-07T00:36:34.591Z",
+      "metadataSha256": "2f700678527b04374681bec43dbe58e94f84ae410c251db3eb8d67ec5ae6dfb5"
+    },
+    "spinamp-e7e0eec2285c8cce15d2": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/6",
+      "checkedAt": "2026-11-07T00:36:34.591Z",
+      "metadataSha256": "a9b3813f2f886a8c5c19f2a5e4b0ab2b966a207accae8377db71c3ba853f61d7"
+    },
+    "spinamp-fbbb3ccbf8721cd8ce03": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/4",
+      "checkedAt": "2026-11-07T00:36:34.591Z",
+      "metadataSha256": "b342c81bddb03b17234ef673b4997906c676c8c3febac8957f02469584cfab2b"
+    },
+    "spinamp-848677070b98602b9c31": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/20",
+      "checkedAt": "2026-11-07T00:36:34.591Z",
+      "metadataSha256": "bd1e3352f5549c500c71577507d7b7e1bdcefeda436b048c8d078142a9e1b97d"
+    },
+    "spinamp-19a82d5571ff48abc720": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/21",
+      "checkedAt": "2026-11-07T00:36:34.591Z",
+      "metadataSha256": "333ff68251d6d0744654b43dafdfc514daf5a949067ce8b91ab646d9dfa1e570"
+    },
+    "spinamp-1150c626de9d0c906171": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/2",
+      "checkedAt": "2026-11-07T00:36:34.592Z",
+      "metadataSha256": "86775b67a39736b63996d87dff93d90972cc035aeaeb185375edfb8b60c60109"
+    },
+    "spinamp-2a500a7107800a1424f2": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/19",
+      "checkedAt": "2026-11-07T00:36:34.592Z",
+      "metadataSha256": "f8c4bcd0b21167322ecf90db3df66bf514ab9f3c3b8ab3b6f392de430d381fc1"
+    },
+    "spinamp-ac498ace2bee6bc10299": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/8",
+      "checkedAt": "2026-11-07T00:36:34.592Z",
+      "metadataSha256": "52cbf1ca9f1c915bae15854f3992b8382200a49b5ff6005560d94ef3beed8d60"
+    },
+    "spinamp-a296ed2bb4ccc240a03d": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/0",
+      "checkedAt": "2026-11-07T00:36:35.267Z",
+      "metadataSha256": "81e2bf25285a41601d3891212e53188eeffb88aefbc3c98f9609916baaca4449"
+    },
+    "spinamp-1d56e37e1b70e3b5695e": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/9",
+      "checkedAt": "2026-11-07T00:36:35.267Z",
+      "metadataSha256": "fb6aae140a01eb98138cf892945f36380f618b4cc79d1ecab6280a3768d0a81c"
+    },
+    "spinamp-95a0cde1b4561bf98864": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/12",
+      "checkedAt": "2026-11-07T00:36:35.267Z",
+      "metadataSha256": "b2487a7e022dcd3252df568b2f2923057cfc4f3d1586444c3a68b5bab1fa6c85"
+    },
+    "spinamp-04c0c862855997d14c55": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/13",
+      "checkedAt": "2026-11-07T00:36:35.267Z",
+      "metadataSha256": "349237f3a9b7d1d9afacbf43e11e3c192893271b16a6edc0ea42839bce808266"
+    },
+    "spinamp-314296e3385d1b6a94f0": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/7",
+      "checkedAt": "2026-11-07T00:36:35.267Z",
+      "metadataSha256": "2fc45f9836425177803c5b2f4bb7e46ce4b256052c858154d42ae04a6d2c0e90"
+    },
+    "spinamp-f7ad38c28fe8b605f336": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/15",
+      "checkedAt": "2026-11-07T00:36:35.267Z",
+      "metadataSha256": "aacc874f32d10e9e58170a3097aeffd685bd718c6fb4f129518a37d9ec91bab5"
+    },
+    "spinamp-4819703a03ba51044cb1": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/1",
+      "checkedAt": "2026-11-07T00:36:35.268Z",
+      "metadataSha256": "148f59518066c1a3745fab2025d4893a8840dced4209f2a8ebe41d8767a294c0"
+    },
+    "spinamp-15425c2e25c0a2774aa3": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/11",
+      "checkedAt": "2026-11-07T00:36:35.268Z",
+      "metadataSha256": "24ebce09b31ab5f98b5f03085c6f21dfde929c54a40dd424019798bcd140beb6"
+    },
+    "spinamp-60f312d50673a55b88e9": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/14",
+      "checkedAt": "2026-11-07T00:36:35.268Z",
+      "metadataSha256": "d99fd130300cc9e197ee5ac518bddbaa32f1581095cdb1db4efe6b7b5d4100f5"
+    },
+    "spinamp-8ab93679a136f57cd20a": {
+      "schemaVersion": 6,
+      "nftId": "0x4f2cAe4Fa122994b9f285BDc219B79F64c494f25/3",
+      "checkedAt": "2026-11-07T00:36:35.268Z",
+      "metadataSha256": "339b1ce800005c3c31dcbfa842cfe546f47dc29d0b2d572eb89116736ceebfd3"
+    },
+    "spinamp-b8edf8675d611abe95d2": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/14",
+      "checkedAt": "2026-11-07T00:36:35.268Z",
+      "metadataSha256": "47bd6e393cb78156bb01075bc19a5ba4c38552e4aeb19bf8ae60905ebf8332cc"
+    },
+    "spinamp-2bb13cffe505730a463b": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/1",
+      "checkedAt": "2026-11-07T00:36:35.268Z",
+      "metadataSha256": "e89c63e7aa94f02c7dd8788fbe92ed1c07b20045891c4a7564c7fd81f915f73e"
+    },
+    "spinamp-5d2b1f2af8f728a84e9c": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/2",
+      "checkedAt": "2026-11-07T00:36:35.268Z",
+      "metadataSha256": "80b933dacf475e9ad70aa3ea75efafc3c3ef794bf933162827497aeaff4e503c"
+    },
+    "spinamp-30d17e7fef5dfa982bd6": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/11",
+      "checkedAt": "2026-11-07T00:36:35.268Z",
+      "metadataSha256": "3f953979b90ce12b378256c10841023e88a498dfea487601092d4c3b58b51806"
+    },
+    "spinamp-48a049140f9cf3658074": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/10",
+      "checkedAt": "2026-11-07T00:36:35.268Z",
+      "metadataSha256": "87a50787c3436cb8ad8b7ea5706354d51783fbdadde02d7120b1d1a6660604ed"
+    },
+    "spinamp-30aa4c162f962e9224e8": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/36",
+      "checkedAt": "2026-11-07T00:36:35.268Z",
+      "metadataSha256": "e47e134ab4c7bb075a7e944be0079a3f22ceda943633decb0e376a391451877b"
+    },
+    "spinamp-78c1997a91ef95a1300a": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/30",
+      "checkedAt": "2026-11-07T00:36:35.269Z",
+      "metadataSha256": "e9a80ee721b23852c24f7a7fbed9c081b844d17664378fd844e3a332dd4e3f27"
+    },
+    "spinamp-c391fed8e0fd0e624bc5": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/13",
+      "checkedAt": "2026-11-07T00:36:35.269Z",
+      "metadataSha256": "699fbacaafa4aa9afa051a648330161a0adbe54ea9c9ac0399fdf1d34e0c0c7e"
+    },
+    "spinamp-8e6793bb1c47653e1387": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/35",
+      "checkedAt": "2026-11-07T00:36:35.269Z",
+      "metadataSha256": "b1db128fb784c861e947ddc80701098b72d7413d068a9c8213869304e3081438"
+    },
+    "spinamp-73cfd844ee50aac242f6": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/3",
+      "checkedAt": "2026-11-07T00:36:35.269Z",
+      "metadataSha256": "8c7badda070a22bd410b90ef07edf4c880653b4d5400fa3380b87e793b42ee05"
+    },
+    "spinamp-539ccb4115ce2d6b0188": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/6",
+      "checkedAt": "2026-11-07T00:36:36.000Z",
+      "metadataSha256": "997ebc381a4ade381c3f545c9cf2965a4b072db0c34b06ff58c023250d750232"
+    },
+    "spinamp-50ca3acbf5737082dda6": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/15",
+      "checkedAt": "2026-11-07T00:36:36.001Z",
+      "metadataSha256": "3182c68138d4569bab2d8a5abcac57bf71674c031a370145fc4c9ba4a278b8fc"
+    },
+    "spinamp-0c1bbc46a290c4143871": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/33",
+      "checkedAt": "2026-11-07T00:36:36.001Z",
+      "metadataSha256": "a0aa2ad62520b9c800df64fd57407f4889ad31f553688c2eef160ad54e4f5587"
+    },
+    "spinamp-5a30262f75ab962c6943": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/32",
+      "checkedAt": "2026-11-07T00:36:36.001Z",
+      "metadataSha256": "f09acf65d98c03099cb30644d246215b5e2f2e1490128dfbb633a003ef72fb8b"
+    },
+    "spinamp-2e047144266150f0a3a6": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/31",
+      "checkedAt": "2026-11-07T00:36:36.001Z",
+      "metadataSha256": "1f8142c673c3ea1216e2c306e2304fa0991312664b65f3015d18e38d386d6511"
+    },
+    "spinamp-adfc933c24c6895030ed": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/4",
+      "checkedAt": "2026-11-07T00:36:36.001Z",
+      "metadataSha256": "4434fc0d57eb6c18d0b558191087dcb61a1b296b6aeb4d613c368b92d1613d79"
+    },
+    "spinamp-b94306ac0abd68a38e3a": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/12",
+      "checkedAt": "2026-11-07T00:36:36.001Z",
+      "metadataSha256": "74b864b8aefe873af024e3a50336adf5117de42043ad91e62efbe6531bd23855"
+    },
+    "spinamp-0e32c8334dce131a1f2c": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/16",
+      "checkedAt": "2026-11-07T00:36:36.002Z",
+      "metadataSha256": "41fd11150dfefccb14e4e96310f00aff52b80afcf4121b2252490d2cdf993767"
+    },
+    "spinamp-2eeb3d05906cd98a69ad": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/0",
+      "checkedAt": "2026-11-07T00:36:36.002Z",
+      "metadataSha256": "e60940728960d2198e7c92b9bb6ccdd9b041fbe4d0c8866caa4e967e9c8a667a"
+    },
+    "spinamp-0cbc3cd831b51ac81a0c": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0x7Db448FF56ca849A74A9Dbce5e5F653834005B3E/34",
+      "checkedAt": "2026-11-07T00:36:36.002Z",
+      "metadataSha256": "0c0bed402bea61ea7c59f924d426c19e28c4547618028a487e3ebe3e6c0e5553"
+    },
+    "spinamp-49f025e7e2d8fa620084": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/27",
+      "checkedAt": "2026-11-07T00:36:36.002Z",
+      "metadataSha256": "b66bf79ea5fe9121a0e8a3b2521a28a2bc54e2bfbe1f14621deb3b504f4daf7a"
+    },
+    "spinamp-9c0e15975ae9d51a973f": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/32",
+      "checkedAt": "2026-11-07T00:36:36.002Z",
+      "metadataSha256": "d48ac5dc2c53697131c1149ec546617d6d123393556db0e85f80a4ad6662bb9f"
+    },
+    "spinamp-7a19a32cd01f2c18f8fa": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/17",
+      "checkedAt": "2026-11-07T00:36:36.002Z",
+      "metadataSha256": "3231875051651accd89105d04df14e4d8d447e0d1064e87c0ced843086342b35"
+    },
+    "spinamp-6d85b0da872b9e705f6c": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/108",
+      "checkedAt": "2026-11-07T00:36:36.002Z",
+      "metadataSha256": "42f4390de404b149978a34a6b2ee4ebae04b0cc934f503e1b21b7a848d94e6f9"
+    },
+    "spinamp-d7570bb1d82cb9e8ba2a": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/28",
+      "checkedAt": "2026-11-07T00:36:36.003Z",
+      "metadataSha256": "44823e1750d84fd063066de004c27477d56ba49b550f8366d7bde8297463f734"
+    },
+    "spinamp-0ba32e4b4fbb48545eef": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/20",
+      "checkedAt": "2026-11-07T00:36:36.003Z",
+      "metadataSha256": "a2864f916404ff1fe819e2ce0b9f60bedbd86e8b70fc085e3e1357a15ff0c834"
+    },
+    "spinamp-cd67dfa499631aac497f": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/0",
+      "checkedAt": "2026-11-07T00:36:36.003Z",
+      "metadataSha256": "7e93b6f51f06640e97f33f469d02c303cbe4965fbe002034428073cceb0ba11e"
+    },
+    "spinamp-c4eac43ca9866d1e0adf": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/25",
+      "checkedAt": "2026-11-07T00:36:36.003Z",
+      "metadataSha256": "898b603052f4439a32139b05da997fadd9d05f9dee49b5725de491c709696937"
+    },
+    "spinamp-3a21bbd290f9ccafc6cb": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/68",
+      "checkedAt": "2026-11-07T00:36:36.003Z",
+      "metadataSha256": "e0f175c267025333851690f6f69f3cfdbf6096bb21744dd16d77cb1b43b574ca"
+    },
+    "spinamp-410df99124dab5ce11b8": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/30",
+      "checkedAt": "2026-11-07T00:36:36.003Z",
+      "metadataSha256": "cf301c1e8afd4573f0c4f743c718f3b9f180ddfffb7486eb3a39e77f32962da5"
+    },
+    "spinamp-1101c71ee592158f9165": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/21",
+      "checkedAt": "2026-11-07T00:36:36.664Z",
+      "metadataSha256": "fb37559da69c04052f4fcac3fe63f61f5428988f2f270e62d2dd2c77c5cf51e4"
+    },
+    "spinamp-143d76c15e957b440755": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/31",
+      "checkedAt": "2026-11-07T00:36:36.664Z",
+      "metadataSha256": "c6bf7c0e20c1d0ae3c2fa07e9ecc25f91c7e35530258e540b0ac4d0cb9ae801c"
+    },
+    "spinamp-1359825d34676c1d8c5e": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/47",
+      "checkedAt": "2026-11-07T00:36:36.665Z",
+      "metadataSha256": "d5d8857ad770073614340e82ce9f1e0989209b87292320f2e0bd021f35e5c9c0"
+    },
+    "spinamp-40dd4d6fde1a22c82790": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/60",
+      "checkedAt": "2026-11-07T00:36:36.665Z",
+      "metadataSha256": "492dc09ab671e3bf283fd7e483d6bbdd046c53db7c7719dd6ba3d96e6f76a191"
+    },
+    "spinamp-0d10eddb5fe5f2a3960f": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/103",
+      "checkedAt": "2026-11-07T00:36:36.665Z",
+      "metadataSha256": "6545fab5ce31de72434e55b7e9128ac95010df8acdd1f769046e3b7a4e3a1a86"
+    },
+    "spinamp-c166f97b99431869047f": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/104",
+      "checkedAt": "2026-11-07T00:36:36.665Z",
+      "metadataSha256": "9c16bbd6c85e90a9fa8e353f991917e78d4bc26c004a5dbb522c369cf9a50cd1"
+    },
+    "spinamp-8b2922f0792dd26e0d77": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/58",
+      "checkedAt": "2026-11-07T00:36:36.665Z",
+      "metadataSha256": "4b6f8e11bccc22aa8246fee6bb84c086ce220a84f305696528cbad606ec68c7b"
+    },
+    "spinamp-cc2d86632b409ffa7267": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/67",
+      "checkedAt": "2026-11-07T00:36:36.665Z",
+      "metadataSha256": "235a6c6c50e8b816f48e8fce8dee0a627bd65d20ec0076841f0b0d1eade889f6"
+    },
+    "spinamp-af82dede5d754c6c8c23": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/55",
+      "checkedAt": "2026-11-07T00:36:36.665Z",
+      "metadataSha256": "f16b3ef525fc445085269e8b260873215ff82ea87fc42e33588d412cfc8a32bb"
+    },
+    "spinamp-89fb33c22c5998e4dc54": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/10",
+      "checkedAt": "2026-11-07T00:36:36.665Z",
+      "metadataSha256": "4a75d8fecc698c8f3286fd8e325e7f264f0ea3742b35804be17d15f85b7847b9"
+    },
+    "spinamp-9c3d58f199a7abc95aa2": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/82",
+      "checkedAt": "2026-11-07T00:36:36.665Z",
+      "metadataSha256": "bf0e9bdeb9839aff3017a618aadcb5052b50006414de19d3d4a6e8430a40afb3"
+    },
+    "spinamp-8ab3c5d89485f61da945": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/1",
+      "checkedAt": "2026-11-07T00:36:36.665Z",
+      "metadataSha256": "095d85a7d00a3fc52d3f093ea8840bbcb7d85c000e861211a6ae3b8b30e5e518"
+    },
+    "spinamp-73d90776ebe5673eb5a0": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/41",
+      "checkedAt": "2026-11-07T00:36:36.665Z",
+      "metadataSha256": "35cceab30975aeb9f905eff7bd415fd685277338e8065c5509283766b630a481"
+    },
+    "spinamp-126d072acf631db082c2": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/35",
+      "checkedAt": "2026-11-07T00:36:36.665Z",
+      "metadataSha256": "0846d7504069366834a2052df628e5ea0f91c123ded3175c65332e77ea7b22d7"
+    },
+    "spinamp-741ad40e29bfece1fcce": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/97",
+      "checkedAt": "2026-11-07T00:36:36.666Z",
+      "metadataSha256": "af8a62ddb5445990952bbcc9269354091e1ccbf8cacb73b197f439e3bff8d44f"
+    },
+    "spinamp-57099ce3b6d1af2c6552": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/2",
+      "checkedAt": "2026-11-07T00:36:36.666Z",
+      "metadataSha256": "3b1eb4efefd6a4ecfd551f2152344937cc9e089bddd4e28af8af0a6d68f723b3"
+    },
+    "spinamp-f7127d0c1b560599e3c3": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/128",
+      "checkedAt": "2026-11-07T00:36:36.666Z",
+      "metadataSha256": "a4a369965285a60ada61ea09302b7b011390ecd5a884bdbd77acd7d776b4c6f1"
+    },
+    "spinamp-e3f2fd81393429732931": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/88",
+      "checkedAt": "2026-11-07T00:36:36.666Z",
+      "metadataSha256": "6fc137593e7b821f3e3e35d366c2cb5413c9b10e4f5d4675eeb3326678d1339a"
+    },
+    "spinamp-7df0980596eb5c5261b7": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/19",
+      "checkedAt": "2026-11-07T00:36:36.666Z",
+      "metadataSha256": "872de565fcf3c32c1001079c074e513d219e046efa58bc737202e06712b6fbd0"
+    },
+    "spinamp-c89f838647f1d170aa56": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/72",
+      "checkedAt": "2026-11-07T00:36:36.666Z",
+      "metadataSha256": "b9838ddd46047af6e9e985bb9f44ade866d372412382e21fad22952141e3f095"
+    },
+    "spinamp-a707e2c0995e64fea027": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/50",
+      "checkedAt": "2026-11-07T00:36:37.347Z",
+      "metadataSha256": "904edd59d540bc6c735d19ad033065e32a8a32663dfafeba2d53f769c0e795cd"
+    },
+    "spinamp-e441c00f044419290b32": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/34",
+      "checkedAt": "2026-11-07T00:36:37.347Z",
+      "metadataSha256": "a5526b4b627e88f3689e252934d9df373594ce839a7298365720e6356650f0ef"
+    },
+    "spinamp-ebd194c903b4e932d1df": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/15",
+      "checkedAt": "2026-11-07T00:36:37.347Z",
+      "metadataSha256": "7c4ed5254030fcc3feb3985024a33899f6a1d86644a6929704baf25fd08e0c71"
+    },
+    "spinamp-b4e81c5421d9d33f3b1e": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/42",
+      "checkedAt": "2026-11-07T00:36:37.347Z",
+      "metadataSha256": "424abf5d7238352340030e03423a351eae4a4349c504c4ef2c02f844bf4b5b25"
+    },
+    "spinamp-4d880981fc3c1cbf8e30": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/119",
+      "checkedAt": "2026-11-07T00:36:37.347Z",
+      "metadataSha256": "0e6d6f0be4fe2941d18b40fde356171a04d3385e7336dd493a7fb19557e4b499"
+    },
+    "spinamp-ab1e1cba0e99d60fee8f": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/120",
+      "checkedAt": "2026-11-07T00:36:37.348Z",
+      "metadataSha256": "dee6237067a72e4491f616e099b94f41fbfc1bc1564963facbbad7033fdc479d"
+    },
+    "spinamp-d224347eab56f6883e02": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/121",
+      "checkedAt": "2026-11-07T00:36:37.348Z",
+      "metadataSha256": "ae514fd957c9b14ecbd01b344a968a14b17a491dbe2b5cb00ad2dd9fad9fdceb"
+    },
+    "spinamp-b0d293ce003f90156c06": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/44",
+      "checkedAt": "2026-11-07T00:36:37.348Z",
+      "metadataSha256": "18f1249f9f8dcfc678ba1b9b9a195d2e8c84213b57bcb9d33fcb34e213479fca"
+    },
+    "spinamp-a6803e52b8d726f35692": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/45",
+      "checkedAt": "2026-11-07T00:36:37.348Z",
+      "metadataSha256": "13534f05aa0d1d852ff26ed4f140779a60e9d05540359a4368c51676ee63c277"
+    },
+    "spinamp-c150d6d3b1557e884374": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/37",
+      "checkedAt": "2026-11-07T00:36:37.348Z",
+      "metadataSha256": "9e4392f78283513967df1b1b3d47ef8acfe2526ab12c96f375a964cb6fb6f23e"
+    },
+    "spinamp-113212cf9d9ee87dfe5d": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/9",
+      "checkedAt": "2026-11-07T00:36:37.348Z",
+      "metadataSha256": "60efaf950179a15feb6867758be0eec30ea514938c247cdd57b39c37f13461b6"
+    },
+    "spinamp-13f8d66f094d258b296a": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/70",
+      "checkedAt": "2026-11-07T00:36:37.348Z",
+      "metadataSha256": "49eebd75b989716ccb642912c8d9a363c7c9ec4abdb6a43cebeb8d4984775f2f"
+    },
+    "spinamp-fc01e76eaefeca537e3f": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/102",
+      "checkedAt": "2026-11-07T00:36:37.348Z",
+      "metadataSha256": "4eb957546b26b3d1809459590769b2949d1e941e2134bc46662c8f5994bec36a"
+    },
+    "spinamp-51ad66b1156af7caf4e0": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/62",
+      "checkedAt": "2026-11-07T00:36:37.348Z",
+      "metadataSha256": "815ef20c0929da7696d5816c15db9e7ce6f34d0d3a92479fd9ffa6b0ee535cab"
+    },
+    "spinamp-535ee8d5aa693b19f4b0": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/11",
+      "checkedAt": "2026-11-07T00:36:37.348Z",
+      "metadataSha256": "30e631078429780f944b770bc6cd0f8ac9186b70b67c437daae87c3b71197278"
+    },
+    "spinamp-72872553ba5a94813f93": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/5",
+      "checkedAt": "2026-11-07T00:36:37.348Z",
+      "metadataSha256": "35bbae1dff4238fbaabd5762cb4b52c0ef59f57194e7f44f534cad1a2b5dda7c"
+    },
+    "spinamp-2c73d6a7428d0a545aa0": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/16",
+      "checkedAt": "2026-11-07T00:36:37.348Z",
+      "metadataSha256": "02fbee185656f3a7439d3bbd452e79bf5441136875582354e18b2a8b01dca023"
+    },
+    "spinamp-38ef177b4add569168b7": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/111",
+      "checkedAt": "2026-11-07T00:36:37.349Z",
+      "metadataSha256": "9ba4ba2328f1ac1ba9287352f4206984c378042c6a042cd9729b3ea790313e51"
+    },
+    "spinamp-85be9de0478468a47732": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/75",
+      "checkedAt": "2026-11-07T00:36:37.349Z",
+      "metadataSha256": "497746c532a526d5c601ea4bd83eb0b04eec0548d01871ae1def77e9a7528db8"
+    },
+    "spinamp-0b077456713094112f23": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/118",
+      "checkedAt": "2026-11-07T00:36:37.349Z",
+      "metadataSha256": "47b3109795c408f927ab0809b26ae80718354e023be0dc766ebc166895ade068"
+    },
+    "spinamp-21e309e6a7e39ac72f48": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/23",
+      "checkedAt": "2026-11-07T00:36:38.100Z",
+      "metadataSha256": "d0668c78393917ece06ffc6e560797fa655e5b944ac4f531f881b6567443dea6"
+    },
+    "spinamp-03b402fe47d87e0e1b4e": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/4",
+      "checkedAt": "2026-11-07T00:36:38.101Z",
+      "metadataSha256": "ab9208fedb50c678d2abf5c0ca9c881d85886a4136cd6e395a21d883da4a7d99"
+    },
+    "spinamp-27f22b62f128751308f4": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/69",
+      "checkedAt": "2026-11-07T00:36:38.101Z",
+      "metadataSha256": "82a3ff1b89b3ee276bf1c27d7fdded82feaed05c9d72f94829dd69f6c81e850d"
+    },
+    "spinamp-15c37353df060bbace8f": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/26",
+      "checkedAt": "2026-11-07T00:36:38.101Z",
+      "metadataSha256": "e998ea19dd702ab6acb6527ae47dce6d0e69260da4df5644c773ad837996ce2d"
+    },
+    "spinamp-119041a94dd1258426f2": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/24",
+      "checkedAt": "2026-11-07T00:36:38.101Z",
+      "metadataSha256": "9ae6bcc226315ade1b2cbeb58906892de4ab63bbaeca81909d5bec93d9835543"
+    },
+    "spinamp-736aef462446bd503bb2": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/33",
+      "checkedAt": "2026-11-07T00:36:38.101Z",
+      "metadataSha256": "18bb41bff57d7d2bf76b4f9fb0a54d4f295a7e2e2955558f17e001c7de44dfc7"
+    },
+    "spinamp-b6942d0622b7f91cdaca": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/3",
+      "checkedAt": "2026-11-07T00:36:38.102Z",
+      "metadataSha256": "8090c07056a76e70784585cb9fc64e8ce655861a22575ef7ca850272e68690d4"
+    },
+    "spinamp-1380fb1e8eb08a153466": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/107",
+      "checkedAt": "2026-11-07T00:36:38.102Z",
+      "metadataSha256": "29351b85402693bc5c072d0893acaf6c41fbb56c3517f0327f587b45dca8aadc"
+    },
+    "spinamp-88f5727600bf674b81ae": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/13",
+      "checkedAt": "2026-11-07T00:36:38.102Z",
+      "metadataSha256": "bb3ab06df18999bcda72dbe48108183a3b0a512edd9e2c239cfbf7b52ffc354d"
+    },
+    "spinamp-d4848035da6ffe46db0f": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/112",
+      "checkedAt": "2026-11-07T00:36:38.102Z",
+      "metadataSha256": "333ff68251d6d0744654b43dafdfc514daf5a949067ce8b91ab646d9dfa1e570"
+    },
+    "spinamp-c6e62256281497b9dc79": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/51",
+      "checkedAt": "2026-11-07T00:36:38.102Z",
+      "metadataSha256": "e4992e2cb1daf76823db07a5145b9f67cd6ead2656197928710ccf1c446b69dd"
+    },
+    "spinamp-520212fca36678d65ef9": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/109",
+      "checkedAt": "2026-11-07T00:36:38.102Z",
+      "metadataSha256": "b60d5a5c70c91c248bd9fc189adbb3dcb64069efd2b81f1668c2ae955b6512bf"
+    },
+    "spinamp-8d59dd84e04bb08bcdc0": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/43",
+      "checkedAt": "2026-11-07T00:36:38.103Z",
+      "metadataSha256": "5a2080942ec24888fa1b346841e9359717064904b5cd97e34fadbee9e9ab2cd4"
+    },
+    "spinamp-0ef7e60cf5d760caeec2": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/100",
+      "checkedAt": "2026-11-07T00:36:38.103Z",
+      "metadataSha256": "f41b703717703455831cde69d960d8c53ec3818289cbd28806a8c427209d14c3"
+    },
+    "spinamp-41ba64ded5e0b3c3e6c5": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/53",
+      "checkedAt": "2026-11-07T00:36:38.103Z",
+      "metadataSha256": "43dfd30422c520ac5b52fd6e5658d92e934ee38b12fc0e08cee99f48920695db"
+    },
+    "spinamp-4cdac08a18809a7561e3": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/59",
+      "checkedAt": "2026-11-07T00:36:38.103Z",
+      "metadataSha256": "0e2112fb6ab2681a0a0f4ba2374f732fac19a2c53971cc68b4f9584fa1f6c0fa"
+    },
+    "spinamp-ead2ff6b03397ce726e5": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/73",
+      "checkedAt": "2026-11-07T00:36:38.103Z",
+      "metadataSha256": "9c297bb37b5ba04291af17c686474250d49c3481d5c683554f6d34ce44d13487"
+    },
+    "spinamp-e36d57054be4e9c073de": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/77",
+      "checkedAt": "2026-11-07T00:36:38.103Z",
+      "metadataSha256": "678ca35197d61e5552644f7b59ea0004a820f31686db9dc8d13f03b31a2b58eb"
+    },
+    "spinamp-c8a7ffa7a15a6073f26a": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/116",
+      "checkedAt": "2026-11-07T00:36:38.103Z",
+      "metadataSha256": "fab1eb4e908acc2edcff0e757c1b349a652716cfae1e197579bcb4286cb4eb83"
+    },
+    "spinamp-6155ba3ec058496b726f": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/114",
+      "checkedAt": "2026-11-07T00:36:38.104Z",
+      "metadataSha256": "ea66b352b60fdfceb0b08d65f8a15a79f30ceb634a690333a8bd76bba9aa7f0f"
+    },
+    "spinamp-18207b3f03beebcb2009": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/122",
+      "checkedAt": "2026-11-07T00:36:38.782Z",
+      "metadataSha256": "17588f92c482763b24471402bbf5c13990e7a615d98e7aff444942c0285adc94"
+    },
+    "spinamp-0db8444913c83113274b": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/48",
+      "checkedAt": "2026-11-07T00:36:38.782Z",
+      "metadataSha256": "5b170b4e3edfbb4f04e210347b04833331fece9ef3edb07994d234cf9d273171"
+    },
+    "spinamp-a0d442865462dca91839": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/49",
+      "checkedAt": "2026-11-07T00:36:38.782Z",
+      "metadataSha256": "53378223d0104ac7320f5999b8605906a8021f5805416a8e69358758bb7377a6"
+    },
+    "spinamp-293044d1422264aead08": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/74",
+      "checkedAt": "2026-11-07T00:36:38.783Z",
+      "metadataSha256": "0059727875c879c1ac68bb602a7c45afea5287df849a3b94c58b21565e1fa7d5"
+    },
+    "spinamp-0ef7ad43c32a6dfb7bbc": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/57",
+      "checkedAt": "2026-11-07T00:36:38.783Z",
+      "metadataSha256": "0a24f91814628e52f4ca8bb3db2091dd356b96036f05081e86a3e83c9b418c84"
+    },
+    "spinamp-2c94b14b993349bbc9af": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/8",
+      "checkedAt": "2026-11-07T00:36:38.783Z",
+      "metadataSha256": "f7b274ac8f5f67cd79699dd33e97df78bde0611cdb7988121ee26c3fa2a78c02"
+    },
+    "spinamp-df57a9a3762b4a32c5c7": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/54",
+      "checkedAt": "2026-11-07T00:36:38.783Z",
+      "metadataSha256": "9a51ac8b5f6ddbbee2773b6d09844a8f2887d509215e240b616a4247acac0a4f"
+    },
+    "spinamp-c24f54fcb98cda83f87c": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/61",
+      "checkedAt": "2026-11-07T00:36:38.783Z",
+      "metadataSha256": "6062ca60321c1888cee3bf43f3ca07257a28d3c8dc988b6928f05a23e9060681"
+    },
+    "spinamp-f9adc023727fbb0d8c87": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/98",
+      "checkedAt": "2026-11-07T00:36:38.783Z",
+      "metadataSha256": "d2b3f50ff02c92713eca18d7e1ead25a663676a1f906ee741eb6d83b91ad07c3"
+    },
+    "spinamp-1f949892d12820c4dffd": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/38",
+      "checkedAt": "2026-11-07T00:36:38.784Z",
+      "metadataSha256": "f90f427ee54ac06f57811b860144b1c71424af2d083cd397474a0354c09b407f"
+    },
+    "spinamp-f73f5402c15bfc60c6ca": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/64",
+      "checkedAt": "2026-11-07T00:36:38.784Z",
+      "metadataSha256": "6cb4d02620c956b1df4107c1aba20f55efdc67db3b046aea0fb93eee28b00bb8"
+    },
+    "spinamp-ff492a46d31d9d8d6a94": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/66",
+      "checkedAt": "2026-11-07T00:36:38.784Z",
+      "metadataSha256": "ae840540e31ea7316fbfde9e1ce3e1c95f69b9516298b258745ceaafb58412fb"
+    },
+    "spinamp-fb47fa87ff665eabbae2": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/14",
+      "checkedAt": "2026-11-07T00:36:38.784Z",
+      "metadataSha256": "33d1b30d79a656291e34b09689eca84dd835f344538c45885eef8aa41faa7653"
+    },
+    "spinamp-44838566b0d18a817eb2": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/36",
+      "checkedAt": "2026-11-07T00:36:38.784Z",
+      "metadataSha256": "09e404a68be04699bee528fa644b4955cf1f9958969a2e8f4f909831da287495"
+    },
+    "spinamp-b313f5946e509f1ac16e": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/105",
+      "checkedAt": "2026-11-07T00:36:38.784Z",
+      "metadataSha256": "bb5f03d53db9bd2792bf0eb6ee8965f312c3a66c71899f328f10c63c9acfe1d0"
+    },
+    "spinamp-25c5c01d9b084346f6aa": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/63",
+      "checkedAt": "2026-11-07T00:36:38.784Z",
+      "metadataSha256": "1f774b66dea4a9f60db61b4f8d8ac565b984c191fb4a833f95fceca33091875c"
+    },
+    "spinamp-ae667a8a093913e1ee1b": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/65",
+      "checkedAt": "2026-11-07T00:36:38.784Z",
+      "metadataSha256": "9e50bf236438f78e6816d726d169033cb51a0cd1dd07dd83505999b6e39bedd0"
+    },
+    "spinamp-8b37ceb01ff710c04de8": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/56",
+      "checkedAt": "2026-11-07T00:36:38.785Z",
+      "metadataSha256": "00c66ceddb7b123d708548329ca1ebc24188cbf1f461dc961a5f3162043bdb23"
+    },
+    "spinamp-83abd8aae172a45c0ee2": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/117",
+      "checkedAt": "2026-11-07T00:36:38.785Z",
+      "metadataSha256": "0509e3b661d046fdae1d34e86d5e7194fd38a9ff880d903f8f172b248c1e3e20"
+    },
+    "spinamp-31e1b8f30cbc059d4908": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/131",
+      "checkedAt": "2026-11-07T00:36:38.785Z",
+      "metadataSha256": "6f8666b5361490a7cf6ba2e8974da86f27923c814cb04c6fe0502669f89df451"
+    },
+    "spinamp-9c5ea6b21dee0937a1de": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/129",
+      "checkedAt": "2026-11-07T00:36:39.675Z",
+      "metadataSha256": "1cf4408a0fcddc1e1cff80913c7ccfbc0ba3efa9de930ba1e1cbccfcbdb1f759"
+    },
+    "spinamp-7c995b1dcb7e864ba101": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/132",
+      "checkedAt": "2026-11-07T00:36:39.675Z",
+      "metadataSha256": "2c7862f6625859b1807e95ff6f4fdb704d07aa3f1ab72821d2d79f459258c59c"
+    },
+    "spinamp-eb576988ed5ac1b52bdc": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/133",
+      "checkedAt": "2026-11-07T00:36:39.675Z",
+      "metadataSha256": "6abda31b3179a3e5b3dbd478f340aaa3226f9c8eb0278a3ee6c8a73cee7d7e6e"
+    },
+    "spinamp-74e958c1af60e6890b1d": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/130",
+      "checkedAt": "2026-11-07T00:36:39.675Z",
+      "metadataSha256": "22af7a2e08ff303e0e0083f1ed3e679faba8b23afc799106eb69abfa7c700581"
+    },
+    "spinamp-5a1fd6e192b19d4bf1d1": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/52",
+      "checkedAt": "2026-11-07T00:36:39.675Z",
+      "metadataSha256": "4d0355871a5bb7bbb524702fe5346a5f16532beea1b9f8db4fee12f92afdfa53"
+    },
+    "spinamp-35a593e2df052e0abfd5": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/40",
+      "checkedAt": "2026-11-07T00:36:39.676Z",
+      "metadataSha256": "19c3940169b2b9c4fcefbce803fad4ad9db4ddacf20f16c6afcbeeab1b56e424"
+    },
+    "spinamp-a372202409d5171b42e5": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/76",
+      "checkedAt": "2026-11-07T00:36:39.676Z",
+      "metadataSha256": "3fe08cc422a80abf4e32b0e36c8fa7f01743b7968791037d1704a2b2265baeeb"
+    },
+    "spinamp-55179f44a81b18d2ceff": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/29",
+      "checkedAt": "2026-11-07T00:36:39.676Z",
+      "metadataSha256": "6c5e202ce81c486793cac57095fc8d4b39f59306f6c4619ffafd09b46b476992"
+    },
+    "spinamp-4c00bf6fc55274dc015d": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/22",
+      "checkedAt": "2026-11-07T00:36:39.676Z",
+      "metadataSha256": "8a0ec779939308a92ad3ab2471e076ae895aa507f9571e371d3822f87fb1c596"
+    },
+    "spinamp-c0fe5d89c38097fe073f": {
+      "schemaVersion": 6,
+      "nftId": "polygon/0xBD69d69DA553Cb30F7222b89399cff0D74dc398A/46",
+      "checkedAt": "2026-11-07T00:36:39.676Z",
+      "metadataSha256": "ba53c14116867235356510e2dc8b3e75a6f697843d5e2d4bb2bad6460c9897f4"
+    },
+    "spinamp-aeb2d353eb371f5d54d4": {
+      "schemaVersion": 6,
+      "nftId": "127whZDXyW6W9AwMbDj4zupgYaoxsfb3Vb5LBuUWiCVb",
+      "checkedAt": "2026-11-07T00:36:39.676Z",
+      "metadataSha256": "75b5d78bde8758fee1613155746dccc48b438f9b23790210d358b7c2c04d8d65"
+    },
+    "spinamp-09c1f29c786e6f15a7a6": {
+      "schemaVersion": 6,
+      "nftId": "12AZJXNziW2YrMXUqrjUR3RHFYa3pwbGD7xeFhvc5c4y",
+      "checkedAt": "2026-11-07T00:36:39.676Z",
+      "metadataSha256": "70daee6c00f05f6cd3d96138735858003ae68c3d4b798d93403019cb77ebed22"
+    },
+    "spinamp-a64b29939d764a0a89a2": {
+      "schemaVersion": 6,
+      "nftId": "12b8ozBSKrhRRG2tRvSk9hYzoiLBd62bKaf4DiEV8fW7",
+      "checkedAt": "2026-11-07T00:36:39.676Z",
+      "metadataSha256": "e5dc366009fd257d86742f0ce5a897e10c66e98d5c24087dd25fa92193d068a8"
+    },
+    "spinamp-4dd41f23c9187d84331e": {
+      "schemaVersion": 6,
+      "nftId": "12MHTLwJUdBFoyxP3S3qNQvNkhWgqjsQtCCdG53JNFtm",
+      "checkedAt": "2026-11-07T00:36:39.677Z",
+      "metadataSha256": "8a4f66661791510bff6630e451063745d2b7b055651c6a2ce1d36322a79045e2"
+    },
+    "spinamp-f7b7a0b5f3c0a0f564c0": {
+      "schemaVersion": 6,
+      "nftId": "12qz9E1Wcc4womkU8PEp1Ykk5wXvL8r6fYWRmPt3XJHJ",
+      "checkedAt": "2026-11-07T00:36:39.677Z",
+      "metadataSha256": "b34bb1f201dbfbddfade41349e55b85fc71bf9033cd22f37b5480f2467a934ce"
+    },
+    "spinamp-2bb571128cd1544fb094": {
+      "schemaVersion": 6,
+      "nftId": "12x97Kp4VbVEod8N9kZV5Q9HWbR7QDm5fQ3bi8q8N5yr",
+      "checkedAt": "2026-11-07T00:36:39.677Z",
+      "metadataSha256": "33c7d50b38780d153084110d5838f9c7b683a823e6d8afb4858edf210521b74d"
+    },
+    "spinamp-1f0b1fa05772815bf3b6": {
+      "schemaVersion": 6,
+      "nftId": "132gCK67ajVvZwwLzv9eeQVo4RqtTA8fbrW476XZpyPH",
+      "checkedAt": "2026-11-07T00:36:39.677Z",
+      "metadataSha256": "5473daf2d3629c1be736e14690e2f04d02c5f4ba1a5aca38bfa1bb64dc19d2bc"
+    },
+    "spinamp-c599acb77845511e9d2a": {
+      "schemaVersion": 6,
+      "nftId": "13CPYvT2qwQTF2NgnGhtcZs6pZCw1tB64N41HPQDi5oc",
+      "checkedAt": "2026-11-07T00:36:39.677Z",
+      "metadataSha256": "f429cca49f4afa4b49e6b37485903b46ed41bacd0c1b2c345a9e7e81832eac47"
+    },
+    "spinamp-afaade9257b2c5b4c21d": {
+      "schemaVersion": 6,
+      "nftId": "13gTv994b2dz8Jcq1hRkcFwW4fz3jagJYxuYqrS2nP6h",
+      "checkedAt": "2026-11-07T00:36:39.677Z",
+      "metadataSha256": "6b324c2023868f820204d873b2b223240b1f1a5dca5e4095de3e998ea367264b"
+    },
+    "spinamp-26618e7d833954ef2e2a": {
+      "schemaVersion": 6,
+      "nftId": "13kiByZ1pwo6iTGMBJBQN7ZFniqUatGLK4dpfKNMLGZu",
+      "checkedAt": "2026-11-07T00:36:39.677Z",
+      "metadataSha256": "45f70c5e2aa1941e5bc328daed8c086879898dd6c79db107185457b1f0c6c363"
+    },
+    "spinamp-424932e9723ae3883dd7": {
+      "schemaVersion": 6,
+      "nftId": "13nSYMsN5JxaxKXYyqgF2y6433zfU4L8GZrXAbCi4u9v",
+      "checkedAt": "2026-11-07T00:36:40.356Z",
+      "metadataSha256": "86a429f2e7bf7b67fda27c95e29beb8207245754098a274b8ad6d2cb634d780a"
+    },
+    "spinamp-9a03e48f74745c78fa4f": {
+      "schemaVersion": 6,
+      "nftId": "13pFbtGhrJLd3d82spoCkv4kJeS7KdEJLqiNyDEutyjx",
+      "checkedAt": "2026-11-07T00:36:40.357Z",
+      "metadataSha256": "45dd0f7ad885a93ca7498c1be62c25343946c3cfe2a62d876ac83dd1665a77f3"
+    },
+    "spinamp-3466044ae0a3f7a05dc2": {
+      "schemaVersion": 6,
+      "nftId": "13PQsaUje28cchwef6Btpft1bCSVcKyBRRGqamA4B8Mr",
+      "checkedAt": "2026-11-07T00:36:40.357Z",
+      "metadataSha256": "ef89a642b4f2089e15d104bc55c67d7f01ed2feddbc4c10058ae564c8af319b8"
+    },
+    "spinamp-0f7e6fc935d1ba034464": {
+      "schemaVersion": 6,
+      "nftId": "13W4eiVL13VUkG99Kno2HyV6L1oFKBBT7K3yBz4ZUv5s",
+      "checkedAt": "2026-11-07T00:36:40.357Z",
+      "metadataSha256": "a4b0ef15c679571ef26cbb13a79e38976db258a4355474feb941935c085273e2"
+    },
+    "spinamp-b2b6311d1498b9a889c0": {
+      "schemaVersion": 6,
+      "nftId": "14E6mQDiAxVGRtCBSgRcv1SWPB18EspefnQBP3MkaZMz",
+      "checkedAt": "2026-11-07T00:36:40.357Z",
+      "metadataSha256": "213e7970d4f3cc825341cecf51b20b0082fb6b529947117c68d7f68c4d4bc101"
+    },
+    "spinamp-c80aa04d92839ac1b832": {
+      "schemaVersion": 6,
+      "nftId": "14emE2f64T5avedGDMpQHowFYifU6xgvtRNDZZ7SVQQk",
+      "checkedAt": "2026-11-07T00:36:40.357Z",
+      "metadataSha256": "1bf74cd271104e1ab70ae73dc739b4ab57c300dcc3eba0a1024e4ea7a98bb312"
+    },
+    "spinamp-1608f954b88dab7c5cb3": {
+      "schemaVersion": 6,
+      "nftId": "14fbNnreTXzapB87zexJCBPFi9p2LwQ5nGbxcKDWde7W",
+      "checkedAt": "2026-11-07T00:36:40.357Z",
+      "metadataSha256": "567b0d70b3d8ff775ab2146115d9432fd5569a1c424d5857307685d717ceb81b"
+    },
+    "spinamp-14ebd0dab2267c6fec67": {
+      "schemaVersion": 6,
+      "nftId": "14Qy2Q9HUrGSfPU6XhhSUzbe6JNRkcn2i5T2CN9jsQ9Q",
+      "checkedAt": "2026-11-07T00:36:40.357Z",
+      "metadataSha256": "0ec9fbbcc0ca63a3b9419eb88dd4c70e20d894f966590f57df73f0bf7a691ace"
+    },
+    "spinamp-54c446027f390b7626a1": {
+      "schemaVersion": 6,
+      "nftId": "14sHKfCxLiSoA9CZQ1dNdJM5FBGht1dTjhDaLUoWdVHg",
+      "checkedAt": "2026-11-07T00:36:40.357Z",
+      "metadataSha256": "af65bd57e5f20292322a8ef7db3e9b396b783b2e4db5a36bad6eac1c1242ccb2"
+    },
+    "spinamp-020da895b6cee5ce7176": {
+      "schemaVersion": 6,
+      "nftId": "14VQusMWR1r52EXFPry8JQx53H3gJrTEp7LoD9yDJ8Cv",
+      "checkedAt": "2026-11-07T00:36:40.358Z",
+      "metadataSha256": "9feb9b469e65adfe65be103e46a45bac793b363ba701777724a5e59538d7fce6"
+    },
+    "spinamp-10c14bb7a8174e0ac57d": {
+      "schemaVersion": 6,
+      "nftId": "15px5StVEGfTaJtLtAgbsQdv3tNj4LzEA3Qw7NiSReN",
+      "checkedAt": "2026-11-07T00:36:40.358Z",
+      "metadataSha256": "28e54e351d010aceb8baa3cb233b25f9c33143f5e86f1618a559d07f19e65ac0"
+    },
+    "spinamp-47a28d2dfcaec2285a85": {
+      "schemaVersion": 6,
+      "nftId": "1G9cJvW8ip4XSaEcd8gjFLjmeGu9QTY4xioCVvSYCLt",
+      "checkedAt": "2026-11-07T00:36:40.358Z",
+      "metadataSha256": "64aab8bb89b0f315acedadbea52a7b7321ddf5c8cc266b753845abfc7d6455a4"
+    },
+    "spinamp-18b41ae31069cae30085": {
+      "schemaVersion": 6,
+      "nftId": "1gRpLD87ttvnDTGECVrMqe3Jf6B6PME7CRLHkzZiueB",
+      "checkedAt": "2026-11-07T00:36:40.358Z",
+      "metadataSha256": "f178af5a49607bcfc899ab0cebe3f7e7d469dd6011c22cec2a1ba362221aabb2"
+    },
+    "spinamp-ac8db0dea3f905de5388": {
+      "schemaVersion": 6,
+      "nftId": "base/0x0024BCa81f0073288CDeb2fc65C9336A8b7319d0/1",
+      "checkedAt": "2026-11-07T00:36:40.358Z",
+      "metadataSha256": "9ae8fb4c1a8c06fb99426b386ea64e0e4f480ea081901d33fec644fe52cabec6"
+    },
+    "spinamp-ae652793d26717cab59b": {
+      "schemaVersion": 6,
+      "nftId": "base/0x00257A7854e2a12Eb60E9d82636916e78F0E23DD/1",
+      "checkedAt": "2026-11-07T00:36:40.359Z",
+      "metadataSha256": "e739f2106f2b7c46ddbdc38ffdff963a459150595c87b882a0e365480c974393"
+    },
+    "spinamp-c5bb30e65b00d336c490": {
+      "schemaVersion": 6,
+      "nftId": "base/0x0027c2029132c5bD123AE2e300bd9Bb30926d4fe/1",
+      "checkedAt": "2026-11-07T00:36:40.359Z",
+      "metadataSha256": "a6631969eba4c00d4af0ea54955240b91ca2f03b57e0690b9687fa32ad00840a"
+    },
+    "spinamp-2b8d12e63e4763f9a0a7": {
+      "schemaVersion": 6,
+      "nftId": "base/0x0043a2C44336f4Af576df0B16bB0799E08C78088/1",
+      "checkedAt": "2026-11-07T00:36:40.359Z",
+      "metadataSha256": "b8abeab7dbd611c63c3dc23cf059bd7f09d14dd5ef810b5dc630ae41fc744b4d"
+    },
+    "spinamp-b8bcd9361c4c8becb4a8": {
+      "schemaVersion": 6,
+      "nftId": "base/0x0045efD0c297956424cFD77613175c0EDA75b2B7/1",
+      "checkedAt": "2026-11-07T00:36:40.359Z",
+      "metadataSha256": "0dbd7ce495ecafe2f842c602266a9cba446d172560155de91e68272ebc21bbc9"
+    },
+    "spinamp-4f31ac4fccd188d1b8f0": {
+      "schemaVersion": 6,
+      "nftId": "base/0x004Cd7593e2A7Ad742d2DDCAE00fC5AAcB7e32c7/1",
+      "checkedAt": "2026-11-07T00:36:40.360Z",
+      "metadataSha256": "d932a51d4378bd17aeac5088c7e930067271eb6af705df35935f343dadaaa029"
+    },
+    "spinamp-129e5b0bda51d4ac446b": {
+      "schemaVersion": 6,
+      "nftId": "base/0x00694daE7617B7079a85B683DAb54e88D57e8c27/1",
+      "checkedAt": "2026-11-07T00:36:40.360Z",
+      "metadataSha256": "89fbd2aedb1b1fc667b40124b5e676b62ab86cef420589586f89bf782c718080"
+    },
+    "spinamp-302ce7a5f087569ec149": {
+      "schemaVersion": 6,
+      "nftId": "base/0x008797cA84546b12f76fd7DB6F6D032c9739a7CE/1",
+      "checkedAt": "2026-11-07T00:36:41.244Z",
+      "metadataSha256": "a6bc79c2bd2dd55fb2e2e8bacc00c4dcbcb1b194a57f8e672292ffdc9e3051d8"
+    },
+    "spinamp-7b9ea3684d83961798ee": {
+      "schemaVersion": 6,
+      "nftId": "base/0x00936F3C77Fa445899eA3ef087b8be6bD95286C7/1",
+      "checkedAt": "2026-11-07T00:36:41.244Z",
+      "metadataSha256": "ec5bdfa8df636d3ef9c49cece1a192b7ca84448f331bee79e7ab0d40fbc5e1f9"
+    },
+    "spinamp-968326d2993ed0a847f1": {
+      "schemaVersion": 6,
+      "nftId": "base/0x009D48cDb3Ff1a3a6A05cC305BA5683848E83756/1",
+      "checkedAt": "2026-11-07T00:36:41.244Z",
+      "metadataSha256": "6e1f9121a4ffe751ffbbfaae981f70b8c2088e17e973a18b7261a8ba01fbc1be"
+    },
+    "spinamp-dce6d73d4a59810e8bca": {
+      "schemaVersion": 6,
+      "nftId": "base/0x00a57b5af54587613743156504049ea62D8C1ed5/1",
+      "checkedAt": "2026-11-07T00:36:41.244Z",
+      "metadataSha256": "84a2b53f275d654b13be60292a6732f6bf034f41fb1e8c8a8b111af9a9f323c9"
+    },
+    "spinamp-2f16e97b8980785a885e": {
+      "schemaVersion": 6,
+      "nftId": "base/0x00B64FC6A7ff97434444C32E0e4bf9C09192a8c8/1",
+      "checkedAt": "2026-11-07T00:36:41.244Z",
+      "metadataSha256": "dbeb9768204da63ac6c66527e1c089a56db3366ed54788f072d56c0c6556ab7e"
+    },
+    "spinamp-5b84b527d0098ee31fb1": {
+      "schemaVersion": 6,
+      "nftId": "base/0x00d9Cf9b8f9d6067D1c86Cf937e5514677ba203d/1",
+      "checkedAt": "2026-11-07T00:36:41.244Z",
+      "metadataSha256": "61b5fddab132181c0706bceccf22fd00ccbb494d7f56f32d32d998c3c9ecc038"
+    },
+    "spinamp-b1db544f813013e1a8b4": {
+      "schemaVersion": 6,
+      "nftId": "base/0x0126A157d376B9264dcf1CD47c2C424CC9cE1D14/1",
+      "checkedAt": "2026-11-07T00:36:41.244Z",
+      "metadataSha256": "8c59b25a7838c1bf109b7904d62f541cc692c7e4a38d3cce3085b309400857df"
+    },
+    "spinamp-1b1ebdf07331f9c7c3a9": {
+      "schemaVersion": 6,
+      "nftId": "base/0x012c668Ea6714870cAb8902DA75cCD726A10d43F/1",
+      "checkedAt": "2026-11-07T00:36:41.244Z",
+      "metadataSha256": "62387576660c27669785b9aad0ca49034e3e3782c6cd1ae4e84f30c6eb880c78"
+    },
+    "spinamp-0d16d9cc5e490a015133": {
+      "schemaVersion": 6,
+      "nftId": "base/0x012E1d9e78157db19EBdc3B40a4161Be98150722/1",
+      "checkedAt": "2026-11-07T00:36:41.245Z",
+      "metadataSha256": "6e0e8ed83b3a6d65e51b8c90b480cfb550c0cc734568aca5b9b82e43feab9e56"
+    },
+    "spinamp-58143d340918bdeff9e4": {
+      "schemaVersion": 6,
+      "nftId": "base/0x0182eE4c901df2B29A989869687bd3071737B177/1",
+      "checkedAt": "2026-11-07T00:36:41.245Z",
+      "metadataSha256": "db39182c7b68ef3ba3d5678403220eb6706561f56b089af039d3bda9ac6d9239"
+    },
+    "spinamp-50601db75bb853eeb3a7": {
+      "schemaVersion": 6,
+      "nftId": "base/0x01907bAB6A1458C245c4B6d4Baf2ad03F88af16f/1",
+      "checkedAt": "2026-11-07T00:36:41.245Z",
+      "metadataSha256": "7ce93e0b60c72a5c905e4aa2586cf1b4b0377133b81ea86605ee8cdf05770836"
+    },
+    "spinamp-4f6e3480f881da62c107": {
+      "schemaVersion": 6,
+      "nftId": "base/0x019D9f2727Ed15e3C59e1d9f5903fb110f95dD79/1",
+      "checkedAt": "2026-11-07T00:36:41.245Z",
+      "metadataSha256": "9940e6acaf5b5fd95cb054c2a94c8bb1dac562c9ebbe07f12b9d94339e6edf2b"
+    },
+    "spinamp-66d232e71ddd5632e53a": {
+      "schemaVersion": 6,
+      "nftId": "base/0x01ce77BfC4Ac91662679dcc34D242E7A7FaA0085/1",
+      "checkedAt": "2026-11-07T00:36:41.246Z",
+      "metadataSha256": "910c0c6a85cbfb1305b656d3cbaf8f21782cc5944be45e4456c074dc8568a6bf"
+    },
+    "spinamp-62939f79b1d4e21b4766": {
+      "schemaVersion": 6,
+      "nftId": "base/0x01d4842F0FdeF044C7596bE221064B754A50ea74/1",
+      "checkedAt": "2026-11-07T00:36:41.246Z",
+      "metadataSha256": "0f2373d49914ccffa8349cd7deadbd8b48fe008ade3ec77aff82dd31aed034ef"
+    },
+    "spinamp-2b8c3e9b2429dc00fd56": {
+      "schemaVersion": 6,
+      "nftId": "base/0x01EF5f33Ad32e4A1f6ee3185c838852732c1327e/1",
+      "checkedAt": "2026-11-07T00:36:41.246Z",
+      "metadataSha256": "fe2b2f70d3a9fbe5eed6c6ce270ec4c11cda302d303032f697c9903b897650ab"
+    },
+    "spinamp-4bce928dea810c378fb6": {
+      "schemaVersion": 6,
+      "nftId": "base/0x01f4ac684C2C9e3d8b4eAA7d9b4062901c734535/1",
+      "checkedAt": "2026-11-07T00:36:41.246Z",
+      "metadataSha256": "32910b1cef3ff62e9623a7936193405520117a06b522ebc637a3b49040680a62"
+    },
+    "spinamp-39c6a9f69e25f54b52b6": {
+      "schemaVersion": 6,
+      "nftId": "base/0x01f5445825854CA71575D97C10853C778A9770aa/1",
+      "checkedAt": "2026-11-07T00:36:41.246Z",
+      "metadataSha256": "803d6d3c97455810706d4d225eddf736cd7d0e818c3c581a6b935940589c2b92"
+    },
+    "spinamp-4a74c1bbb9f0528bd167": {
+      "schemaVersion": 6,
+      "nftId": "base/0x01Fd1B2884cFC7d3331107F7E7d9369C48f39fad/1",
+      "checkedAt": "2026-11-07T00:36:41.247Z",
+      "metadataSha256": "e7acc89bbe6b90ab62d7f737c46e8b95d12932e362941793e3b01018fce1a5ef"
+    },
+    "spinamp-073e25367a01a4e53532": {
+      "schemaVersion": 6,
+      "nftId": "base/0x01fD53723c4f2EfE53780Dd40dAC41a60bdc2d6E/1",
+      "checkedAt": "2026-11-07T00:36:41.247Z",
+      "metadataSha256": "7078029788a7733810e4deb55bff5ecc4b4149b974584f606b34ce455c82e40a"
+    },
+    "spinamp-666e3bde7e50a58787ca": {
+      "schemaVersion": 6,
+      "nftId": "base/0x020E6438CDB1b40A6D61CCdB8DbA41fAfae9bc0D/1",
+      "checkedAt": "2026-11-07T00:36:41.247Z",
+      "metadataSha256": "20a9d3f6e70205e12a7f9a53e706deb61b52f4a8d7141e334dcb94a6f889e088"
+    },
+    "spinamp-da1759abd8ecf282d358": {
+      "schemaVersion": 6,
+      "nftId": "base/0x02134F663eFC1C65090a6FD7c21eFeDA355982ab/1",
+      "checkedAt": "2026-11-07T00:36:41.961Z",
+      "metadataSha256": "1df628ac49c247f695d5ac5a204d88279e49054aa13abce1d0a2b85b700c9cba"
+    },
+    "spinamp-872f2c29800a8347c056": {
+      "schemaVersion": 6,
+      "nftId": "base/0x023679C5E95919EB4BBCbc9AfCF6a1429cA3efFe/1",
+      "checkedAt": "2026-11-07T00:36:41.962Z",
+      "metadataSha256": "1081ad8f4ad11ceca8abcb3d7249696921712c66b43d676c0b1083b8f8ea5c63"
+    },
+    "spinamp-a45c7095b3aa7fc9b0e6": {
+      "schemaVersion": 6,
+      "nftId": "base/0x023892240Ae6133Fcb0e1e829268Cf292124b8Aa/1",
+      "checkedAt": "2026-11-07T00:36:41.962Z",
+      "metadataSha256": "e7412958dbd892fcf3d629477c975464d725f4bb70103535589e5cf3b6ca5de3"
+    },
+    "spinamp-62ae42a7136223b5c6df": {
+      "schemaVersion": 6,
+      "nftId": "base/0x023DAa8e08A98DF72f051A9E9a3925d415F63132/1",
+      "checkedAt": "2026-11-07T00:36:41.963Z",
+      "metadataSha256": "07050a064d66010bf76baed434281ff1440108970df05e5975c2b1160540137e"
+    },
+    "spinamp-52b5eaec2fff31d70920": {
+      "schemaVersion": 6,
+      "nftId": "base/0x024829B7F275B228185eA33463FDA1F0787F263D/1",
+      "checkedAt": "2026-11-07T00:36:41.963Z",
+      "metadataSha256": "b4ceab3105048c8003e8d57e62bd8747dab70dfc9b8fcfb0407508bc43e38a84"
+    },
+    "spinamp-7afd0d2e9919e48f5bed": {
+      "schemaVersion": 6,
+      "nftId": "base/0x024CcA94E97c903Ee44aA52448ea6980402fF345/1",
+      "checkedAt": "2026-11-07T00:36:41.963Z",
+      "metadataSha256": "5b14ca73b931d6571a432bcb3d188f3f9d0d5e8cf9e989b7dce14fd23ea37e6e"
+    },
+    "spinamp-fbd1ad1fc8a78ca1f83e": {
+      "schemaVersion": 6,
+      "nftId": "base/0x028e2E4BDF57f04DdFB467Bb1ceD5819bd0B8EcA/1",
+      "checkedAt": "2026-11-07T00:36:41.963Z",
+      "metadataSha256": "6933961e5422550d91efe2ef708ada806ccbd09b911a2c22b7b03b59d756a123"
+    },
+    "spinamp-4e61f6077e0776604bf2": {
+      "schemaVersion": 6,
+      "nftId": "base/0x028fD3B4bf24C525916b7E47896F93CC0d02C9bF/1",
+      "checkedAt": "2026-11-07T00:36:41.963Z",
+      "metadataSha256": "9136cb6aec1c5a8398a0556fd10440a3af70f85d92479056f3b5779f439f3468"
+    },
+    "spinamp-6e2be5da9887427434e9": {
+      "schemaVersion": 6,
+      "nftId": "base/0x02A111139740AFC6675bD6CA75135D4D797221E7/1",
+      "checkedAt": "2026-11-07T00:36:41.964Z",
+      "metadataSha256": "93f530dba164fc01755bfb56c875b0f73b55b17fbd8c895a26e7ba96df7fd54b"
+    },
+    "spinamp-3afd37820c658c720c24": {
+      "schemaVersion": 6,
+      "nftId": "base/0x02abe9EA50f94D564961d81b589B74cb53642A6B/1",
+      "checkedAt": "2026-11-07T00:36:41.964Z",
+      "metadataSha256": "a2d26b457bf7b3c4ede48fdd8372456fdbf6ef9fcde2513906bc952bc8dd7823"
+    },
+    "spinamp-557900af83e89e2a026f": {
+      "schemaVersion": 6,
+      "nftId": "base/0x02bCF308A0351C8A09bc56aAb93e868856F593C4/1",
+      "checkedAt": "2026-11-07T00:36:41.964Z",
+      "metadataSha256": "bf4e2e6b63ea3526370b42b924d8d1a760439e8612f8b8e91e87887bde025a52"
+    },
+    "spinamp-f18a1673c0dc7dcf7ab7": {
+      "schemaVersion": 6,
+      "nftId": "base/0x02d5A367f88157f67A282AFD3dafaeAfA941e730/1",
+      "checkedAt": "2026-11-07T00:36:41.964Z",
+      "metadataSha256": "6a7d4780debd5a8b8287bcfc7b07bd1d5d8ba82af1a119a02b3f27099e57c28d"
+    },
+    "spinamp-67c755576bb3a8c2dc97": {
+      "schemaVersion": 6,
+      "nftId": "base/0x02F3e7C4faeDac5dCda916B42EE6F16e794E1861/1",
+      "checkedAt": "2026-11-07T00:36:41.965Z",
+      "metadataSha256": "f72f4b604740c0b5e02f0becfe58808102d3a423b26ca598d1d58caa4a080a87"
+    },
+    "spinamp-fad39d5fef5edf712f9d": {
+      "schemaVersion": 6,
+      "nftId": "base/0x02fB352ECe5f18b6502EBBAfFE51A5A8E748cA4b/1",
+      "checkedAt": "2026-11-07T00:36:41.966Z",
+      "metadataSha256": "5453e2c2576f53a5c2d3a32d7d8177d3872f8f919c137ea7134bd99e8715ab75"
+    },
+    "spinamp-b25d87fb43c2a4cccdd9": {
+      "schemaVersion": 6,
+      "nftId": "base/0x030b363E8D31eE87E682304DdCB330129a4C436A/1",
+      "checkedAt": "2026-11-07T00:36:41.966Z",
+      "metadataSha256": "f9bc52125470f391ebce725ea5aa446a2521a3ccbf0d9ea7b7b106e975e281ec"
+    },
+    "spinamp-eb00820b2afa72bd2310": {
+      "schemaVersion": 6,
+      "nftId": "base/0x031C1457aEfd617De9682afB4C394b99Cefc42C2/1",
+      "checkedAt": "2026-11-07T00:36:41.966Z",
+      "metadataSha256": "95649e9601c9b5d0c3a134412455f3c20247950c944eebd01d3d3f74f956026a"
+    },
+    "spinamp-c05f9ed7284b4bca94a9": {
+      "schemaVersion": 6,
+      "nftId": "base/0x0321e0F4DfAf5024660a5Fb4CC4D6a77E6A8Bb04/1",
+      "checkedAt": "2026-11-07T00:36:41.966Z",
+      "metadataSha256": "30e89d6203233984e6ac37ccb7ca718520cf62df6ba3afc945ace290c0b1571f"
+    },
+    "spinamp-2dad1969f34e4998f1f4": {
+      "schemaVersion": 6,
+      "nftId": "base/0x032402C26c7AC0062458532C875995c25417b259/1",
+      "checkedAt": "2026-11-07T00:36:41.966Z",
+      "metadataSha256": "c33cf9fb714345ba18785098553c16c4b00a75530fc40d65ec3e3e72160b1f04"
+    },
+    "spinamp-df3589088ecec5c0c981": {
+      "schemaVersion": 6,
+      "nftId": "base/0x033f1bbC3383501E11125Df5f2E1dDcD4C672Bc1/1",
+      "checkedAt": "2026-11-07T00:36:41.967Z",
+      "metadataSha256": "9df91e6984d543dac3431b3601bddbd156650b188c33424431f0256d79b9490c"
+    },
+    "spinamp-35f10812e73798d46c86": {
+      "schemaVersion": 6,
+      "nftId": "base/0x03432bce6CBb37DEc3493E3B00DB54c5d36d0118/1",
+      "checkedAt": "2026-11-07T00:36:41.967Z",
+      "metadataSha256": "68b76ea9281b53214be4bb522919a14861bf9bf06e7663bee90e2f45ccc27eaa"
+    }
+  }
+}

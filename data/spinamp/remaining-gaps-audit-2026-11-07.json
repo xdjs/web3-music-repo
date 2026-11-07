@@ -1,0 +1,1275 @@
+{
+  "checkedAt": "2026-11-07T00:36:34.837Z",
+  "scope": "Bounded next pass, not a platform/chain/edition census. Negative NFT0/1/2 probes do not prove a release unminted or absent elsewhere. Different indexed track links remain distinct, never silently merged.",
+  "pendingBefore": 44,
+  "pendingAfter": 42,
+  "exactLinksRecovered": 2,
+  "newListeningRecords": 0,
+  "listeningRecordCount": 37345,
+  "spinampRecordCount": 27520,
+  "allPreviousIdsPreserved": true,
+  "noProbedTokensReturned": 39,
+  "probedTokensLinkedOnlyOtherTracks": 3,
+  "collectorNewReleases": 10,
+  "collectorNewEditions": 292,
+  "collectorTotalReleases": 21,
+  "collectorTotalEditions": 1099,
+  "collectorDistinctIndexedWallets": 757,
+  "collectorFreshness": "unknown",
+  "sourceRawEvidence": "data/spinamp/reverse-reference-audit-2026-11-07.json",
+  "reconciliationSource": "data/sound-resolution/catalog-reconciliation.json",
+  "reconciliationScope": "Only62 formerly unresolved modern Sound contracts lacking indexed media, not all known Sound contracts",
+  "soundMissingSubset": 62,
+  "soundMissingSubsetInInventory": 19,
+  "soundMissingSubsetOutsideInventory": 43,
+  "soundSubsetOverlapPrior44": 0,
+  "soundSubsetInventoryReasons": {
+    "no-indexed-audio-evidence": 2,
+    "no-indexed-nft": 2,
+    "artist-attribution-conflict": 15
+  },
+  "tracks": [
+    {
+      "trackId": "base/0x68767C3350c0512e1EDf096E33dd90c129667D29/0xe5885a881dc0d7974a16670c6f5c84bec2111b5210ae0019a6209fd9ceedc371",
+      "title": "trapbeat",
+      "artist": "sontyp",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xffcce90d67702d6c4db055c29387e2f50ce78af71e7f3edd64d8f9b67f131e3e",
+      "title": "Midnight Diner III",
+      "artist": "STRAWBRY",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [
+        "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/1",
+        "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/2"
+      ],
+      "otherTrackLinks": [
+        {
+          "trackId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xe0aaa7f2bf8a20d087370c8cb9b2512aedaa45708d5a78fc2a9c1ea1585ed5d5",
+          "title": "Midnight Diner III",
+          "artist": "STRAWBRY",
+          "originalIndexedAudioURL": "https://arweave.net/L-4sEyLW4i3XcvQjK3XalRkYWIit9-z6RoYyhaqUah8"
+        }
+      ],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "base/0x746efD91eA3499a3959E54e4AEDc309E7158e4DD/0xc04bc1a1f7467155b14129d6cc6da0a497b940b2a3d2c3fc7419cdfbd8684179",
+      "title": "Hey Gina",
+      "artist": "Estella Dawn",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "base/0x7B5FA5CB7Ab9EdCe2AED9aeC2511296E692f800e/0x6898bb3cc5d39d4a800ef6c40b6339000d88dce9b85b397ce0b1b5056d3981ba",
+      "title": "GOLDEN",
+      "artist": "ISME THE GUNSTAR",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "base/0x7c0bdB0Cf876332258C66Bd04ae80e45F84eF473/0x1e240f02f41da3cb92e535cedfb3c124dad14c52421fc6ae230687efe2f13947",
+      "title": "Foolish",
+      "artist": "Wolviii",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "base/0x833f21246FC62cf45fb54Bd62e2bD36680Acd406/0x21541856efa99ce6dd9eded3aab5de074be49c67d6d14cc6509f3ea8c1404352",
+      "title": "Beautiful Liar",
+      "artist": "Samuel Lux",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "base/0xA3D25362AEDD9b59Ebe6b5892A11003496d1653C/0xd57f6bab68b675e6eb51ca214545e413625c5c21201989ac0ee8bbd6d57720de",
+      "title": "TANGO ",
+      "artist": "KL ",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "base/0xBA924e9A66a064Fc632dc218e0476b980364E172/0xe586cc67b2ec80ef897c868a3684ef96ae83b98796556e21852b70cdf7991191",
+      "title": "Electric Love Different Version",
+      "artist": "Mikail Kazmi",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "base/0xBf0e4d762De65ae6bf3c376172B0654973453383/0x370d19c146d435ef535837462f9df25092306cdc601b87f43279b626abec8ee2",
+      "title": "SHIVER",
+      "artist": "Vessy Mink",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "base/0xE2c5f3A5da0dA5704CbCC1597E7854E426d3c68f/0xeba6216cd565eb9245e7bd0e7ef15e2e6d0f370f84c9ab70bb293b4823fb24b3",
+      "title": "W drodze",
+      "artist": "Piotr Komosi\u0144ski",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0x5039ea4Db6BC8fdf1475CeC0e281933986340E1a/0x63e86d324c93375a25eb49db35d56143476748b13e089d5ad5956e2c273ffe74",
+      "title": "Little Island",
+      "artist": "Joseph Khanem",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0x507a2B804A98AbcE0cF694526EF3275D5B348a35/0xea7f31ab0a5eb21c2552714a6b50ddacd58b359f49d8aadcbf674a06d4c9242a",
+      "title": "Married in Vegas",
+      "artist": "Married in Vegas",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/0x91c575504229894a900706824d7bf86f8b37c567ea477172c45f71e0c28e60b6",
+      "title": "Dreamy Afternoon",
+      "artist": "TDKILL.",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [
+        "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/1",
+        "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/2"
+      ],
+      "otherTrackLinks": [
+        {
+          "trackId": "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/0xf0fe3e706b97b3ae887c8acbb49580d3d1c662a5c25f0ac50aa7c46c6915a74c",
+          "title": "Dreamy Afternoon",
+          "artist": "TDKILL.",
+          "originalIndexedAudioURL": "https://arweave.net/vvemyB0eUXhn38DizV3cg-4TM-DKlPCnQt7yeUq_JT0"
+        }
+      ],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0x60F37590Ae6e9FFe87880d780fbC1c3D3B4E1fD1/0x1f4b61274b46ccf243993cbc643c81e706c181e66e3326a5eb44d1e8635a2155",
+      "title": "When I'm With You",
+      "artist": "Tha Insiderz",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0x7757125255E322c9d60E7aba89ff244d05ED55FE/0x4eb3d641174d57a8841e7010a198b383d18c264c1dc6281bb562839ac21ef048",
+      "title": "WannaPlay",
+      "artist": "AObeats",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0x775965FcFD4bfD2B7f8BB9867AF624432CE95e03/0x2ae16287234878c536e0da0a8a8680dc86d84fa4891303d10d2a5996715bc41e",
+      "title": "MYSTIC FRENZY",
+      "artist": "YSMR",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0x775F3e66E6AcCddccbe209bE08E79A3Fb87d7514/0xa4a138ad2c85f9f728d9b3b0eea171459824937af8f0b47d6a267414feaaefc1",
+      "title": "GEARS",
+      "artist": "YSMR",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0x9a05F4c3B39fF90354f2d667e1c84313e96D9727/0xcffe40d27105250c9f44a7b27b1db4abd06fb367d5283804936c332d604dd120",
+      "title": "Tribal Future",
+      "artist": "DabDaddyNFT",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0x9a0Af44201fff597Ac26e67aA093d509ecb91847/0xab92ff85d6ca9a351ca18e8b155e223fdbea042e2ee19defcb558a91a5aca058",
+      "title": "Volar (C.S.M Version)",
+      "artist": "P\u2206BL0 C0RRE\u2206",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0x9a20845edBf396C4d95dcB395c40eD309f829DCb/0x9f1e960b97b85ce91a48b17641a0ac84173127fb0b2d7c1467c1b1d2ad6d97ed",
+      "title": "Deep In My Soul",
+      "artist": "Mariusz Chodorek",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/0x5d598c4e3cc7eabf6f2d3dddf3ae99f28a0177c69c45e08437421efc7962e88a",
+      "title": "My Way",
+      "artist": "Ryan Todd",
+      "platformId": "sound",
+      "status": "resolved",
+      "presentProbedNfts": [
+        "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/1",
+        "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/2"
+      ],
+      "otherTrackLinks": [
+        {
+          "trackId": "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/0x88eb647127de7627b444ac416d42e867e2d85df23e2c7f646c3f71f3eb1d2e7f",
+          "title": "My Way",
+          "artist": "Ryan Todd",
+          "originalIndexedAudioURL": "https://arweave.net/tDijemyQ-TZPgupneh4jxs2yPhptKFZsmBJOknRkbls"
+        }
+      ],
+      "stillUnresolved": false,
+      "duplicateOf": "recovered-sound-10-a3e48f40cfff1d00c3d899570f54f6980fbe7910",
+      "excludedReason": null,
+      "reference": {
+        "id": "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/2",
+        "chainId": "optimism",
+        "contractAddress": "0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910",
+        "tokenId": "2",
+        "tokenUri": "ar://zAVqQANItwuYY0nlchY4Zxe-1o0ktQhyJb2bR9gyv3k/2",
+        "tokenMetadataUri": null,
+        "mimeType": "audio/wave",
+        "createdAtTime": "2024-04-14T00:06:53+00:00",
+        "createdAtBlockNumber": "118727218",
+        "nftFactoryByNftFactoryId": {
+          "standard": "erc721"
+        },
+        "musicMetadata": {
+          "hasLyrics": true,
+          "lyrics": [
+            {
+              "text": "VERSE\n\nI was living life worried 'bout what they might say [talk]\nI was in the wrong now I\u2019ve been spending time the right way [walk]\nLockdown or not, she gonna hop up on that flight tonight [flying]\nCatch up with my dreams, up the road I saw that cross alight [shining]\n\nFeeling like they feeling like they really Jesus [H Christ]\nNow I\u2019m thinking that they might just really need us [just might]\nAnd they telling me their dirty little secrets\nGot me Feeling like I might not wanna know [no, no]\n\nB*tch I thought you didn\u2019t know [thought you didn\u2019t know]\nlingering so much, I thought you\u2019d never go [thought you\u2019d never go]\nThey been telling me I need to slow my role [same]\nIf it gets you high, trust it\u2019s gonna get you low [real low]\n\nIf you make a thing [hey] now it needs to be seen\nIf you got a dream [hey] you probably need to live the dream\nAnd to live the dream [hey] you might just need to cut the scene\nIf your girl is dirty, trade her in, get you one that\u2019s clean [bye bye]\n\nLiving in double time, doing them drugs to maintain [maintain]\nMoving too fast, stuck in a trap, it\u2019s just really the same thing [same thing]\nSeen these lame brains only chasing paper trains\nSame plane, mid-air Im\u2019a find a way to change lanes [Im\u2019a change lanes]\n\n\nCHORUS\n\nAll my feelings so crass dealing with the game [game]\nI was moving so fast running from the pain [pain]\nCouldn\u2019t focus wondering, will it really change? [change]\nNow I\u2019m feeling so glad that I made my way [my way]\n\nNow I\u2019m feeling so glad that I made my way [my way]\n\n(Repeat Chorus)\n\n\nVERSE\n\nDon\u2019t need \u2018em no way, not on any old day [nope]\nNo more living my days stuck up on minimum wage [selling dope]\nI\u2019m gonna hit \u2018em with rage and Im\u2019a hit \u2018em with plays [whoa]\n\nAll of my family living their dreams, all while increasing their means [that that]\nThinking they hand me a L,  b*tch and I\u2019m giving \u2018em hell right back [back back]\nSometimes saying them things, I wish that I coulda taken it back back [back back]\nSometimes you can\u2019t take it back, you gotta go forward rap rap [rap rap]\n\nThey gonna hit your door, they gonna hit your self esteem [watch out]\nThey gonna talk their sick things but they love your 16's\nThey gonna talk their shit but call somebody else to steam clean\nWhen it\u2019s said and done they\u2019ll probably put you on the dream team [starting]\n\nI\u2019m so clean, bust up in her mouth that\u2019s listerine [Ah!]\nUsed to be just be fiend, now I travel just to sing \nLet me get my rhyme straight, write it down, it's history [that\u2019s a wrap]\nFeel it in the climate, shout out to that mystery\n\nShout out to that Mystery\nShout out Mr. E\n\n\nCHORUS\n\nAll my feelings so crass dealing with the game [game]\nI was moving so fast running from the pain [pain]\nCouldn\u2019t focus wondering, will it really change? [change]\nNow I\u2019m feeling so glad that I made my way [my way]\n\nNow I\u2019m feeling so glad that I made my way [my way]\n\n(Repeat Chorus)",
+              "field": "lyrics"
+            }
+          ],
+          "bpms": [],
+          "keys": [],
+          "collaborators": [],
+          "credits": [],
+          "details": {
+            "Genre": [
+              "Hip-hop & Rap"
+            ],
+            "License": [
+              "ALL_RIGHTS_RESERVED"
+            ],
+            "Duration": [
+              "188"
+            ],
+            "Description": [
+              "This song was inspired by the feeling of wanting to forge my own path in life, especially in regard to my musical creations. Like many artists, I have experience frustration with the traditional music industry model, and have found inspiration in the new tools web3 and blockchain offer artists in regards to monetizing their work and connecting with fans.\n\nThis song was recorded in Los Angeles, California by Devin Bing and mixed & mastered by Matty Harris. Featuring production by Ryan Todd and Willie B with additional vocal production by Devin Bing. The album artwork was created by Ryan Todd & Son."
+            ],
+            "Track number": [
+              "1"
+            ],
+            "Recorded in": [
+              "us"
+            ]
+          }
+        },
+        "musicMetadataSchemaVersion": 5,
+        "mediaURI": "ar://6SX7AzzmFE3OZCzPzHaPFoEI9zPvjRQ58coHNiZsm3o",
+        "imageURI": "ar://TLhA9gF6AFs3zdOoFHhUrmH7NwoA42WNqxAPTB7rXuU",
+        "metadataTitle": "My Way",
+        "metadataArtist": "Ryan Todd",
+        "bpm": null,
+        "key": null,
+        "genre": "Hip-hop & Rap",
+        "metadataSha256": "7facd47e888dc4f3d5a2f85a492626ff47214ef8b4802535c15a28f88f8802cf"
+      },
+      "representativeLookup": {
+        "checkedAt": "2026-11-07T00:35:58.376Z",
+        "source": "https://api.spinamp.xyz/v3/graphql",
+        "scope": "exact-track-and-nft-relation",
+        "nftId": "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/2",
+        "totalCount": null,
+        "queryMethod": "reverse-nft-relations",
+        "rawEvidenceFile": "data/spinamp/reverse-reference-audit-2026-11-07.json"
+      }
+    },
+    {
+      "trackId": "optimism/0xBf033088694266e91e996Dd15f5Af1E3bdeC1c7A/0x6bdda842da711b41dfcb3032cfa572e9f708f116c8fa81aa56b137ddeaae04cc",
+      "title": "Blue Tank (comfortable noise 5)",
+      "artist": "cut-up-banana",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xBf17442503ec7F63b8F1573883bC15EAC9E2A762/0x01e5f77dc32e3fe1d52684ec3f55347d48243909da1e3dced9db82729ad36aa4",
+      "title": "Dynno",
+      "artist": "Guariroba Dub",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xc283dC2D3BC8080595fa5B3E7Dd3E73F54a1ecCB/0xf6412ea52499af285d937a8d1e8f6f097f717b9284df621701f6b3f2a1ba6b93",
+      "title": "Moons in Opposition",
+      "artist": "Sam Nogg",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xC2917e8Df7f721a06679D6ca65328a407E266638/0x77d632234c6927db3cd87ad08dea8b27c77c20da6fd3107ff9dd3f9877880c3f",
+      "title": "Ain't a Love Song",
+      "artist": "Ines Du Noir",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xc294A98E7ea2663c44F8B57247461dB2dAbe525A/0x0aa54f19c0cec97f2a4c416b5b078e078be42d0c1ffbdcf286a575e153224e41",
+      "title": "DOGGY",
+      "artist": "BUM",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xc8D8d5f7c5463578B6A546f668a23c7fc8e731Fe/0x78b4636ad6c2578fa238fa22287244b1cd7f056faa35a90847919cd20c720b85",
+      "title": "Epilogue ( Crysis 2 Remix )",
+      "artist": "Beats By LOR",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xC90aD796C289f24624877398A2d35Bf67511CA99/0xb756b59aff7cfda373023866a758bb1b7950f08586b7d8d4afd1c7b7abeefa2f",
+      "title": "VICIS27",
+      "artist": "Frythm",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xc90BA08CFb17774512CCF449BAEa6D0Aae50C2e9/0xea225a7f433a91c25cff7e8665520bbf9306f8ca794803730bc043e727b70be6",
+      "title": "Molly",
+      "artist": "EastVoice Beatz",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xC91079145D3435CBbBE54113EBa5782750feeB19/0xbd6aee4eba003cd15f203a1d779bad49dd9fcdc9a845743dfe1794662a54101a",
+      "title": "Serpent Mix",
+      "artist": "Vampire Sex Kittens",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xC917468397717D62B0E685dc7062eE2AC9f2cF1C/0xebb3418e404ccdd5acf233618d0328e3a21035c571372b97aed41471150bc0f6",
+      "title": "LOVESTRUCK",
+      "artist": "YSMR",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xc91Aa0775E53D3906cC613B0cd30e7F95B81ddd2/0xfac7e1c6571488509a13398dc6a9e5c48b54b8bee962e295c2e43a0f2819aa09",
+      "title": "Chop Assassin (Instrumental)",
+      "artist": "SoloTheBeatman",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xc929B57456Cf7C15D7abdEC87E7c21A1b6D18933/0x4f36120aa28f97c3a84f0fd68ad865618573974d4f78e73088090149f8eadf91",
+      "title": "outro",
+      "artist": "DjREDs",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xD19B8CC26fCD09182207745cEf4976dDfCb463De/0x8e19edc467f3983dd4f37c1db48b6c2ee31907b28be7b67f1a81bc950724fb2f",
+      "title": "Xnode",
+      "artist": "Dubplanet X",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xd1AD49cb7A2F5B1c4d508E14E7776E0a703eCE9e/0x10c49caf2fc7d74d93898c4fb220944ed780520d6ad1a375061a4f940ffb4984",
+      "title": "LUMENS",
+      "artist": "YSMR",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xD1aDd2cACD5Db984Cb785c84C8ca4a80109A7a00/0x0850d5704900ca9e60ffb02bfeddb7927d26d68f3caa62f57e646aa73e7f2d45",
+      "title": "NO FAKE I.D. / UNDER THE MOON",
+      "artist": "jacob2fire",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xD1b47a56d9FA7B3984B466c35F84573341AA8085/0x85465da1350e3d32999fa01fdff0d70d90ace1ed14aa6b2485e1d7efcfa7a4ad",
+      "title": "Spotify Reward",
+      "artist": "Bob James Johnson",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xD1Ee5cbE1253c9fDaFF56e683809D66f0BE9851B/0x10316704b5c4230b293efa26f8aa553400fd3f227c49631af1297d3798160175",
+      "title": "Had Enough",
+      "artist": "RANKZ",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xd1F7A2f8258738d32a15CbF294E0202b7dEC7b95/0x100462a94f6b916e6b5871c7910dd12b1c4eebdde1369a72ec9f5ef9ca25047a",
+      "title": "Orat\u00f3rio Dub",
+      "artist": "Guariroba Dub",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xD1FB3D4F7d62cf95d646306AF96042F13b51EaE4/0x93ba9ebad629eb3897a3e2ef2f22ca1c29927847d1206047bfe8439e356afb05",
+      "title": "Smoke & Drank feat G.M.E. Yung Mac",
+      "artist": "Knock Rio Beats",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xEe69Ce5E90b484912cD1923a1714C5DCE7e0bD96/0x7b604bd0f32bcf9a6d11ae5c14a4964724070fee217f506926978f86e773975a",
+      "title": "V",
+      "artist": "Hanibaal",
+      "platformId": "sound",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/the-luminarys-path-a-journey-of-ai-community-and-creativity",
+      "title": "The Luminary\u2019s Path: A Journey of AI, Community, and Creativity",
+      "artist": "We are Lum",
+      "platformId": "pods",
+      "status": "resolved",
+      "presentProbedNfts": [
+        "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/1",
+        "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/2"
+      ],
+      "otherTrackLinks": [
+        {
+          "trackId": "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/art-in-the-infinite-garden",
+          "title": "Art in the Infinite Garden",
+          "artist": "We are Lum",
+          "originalIndexedAudioURL": "https://arweave.net/adgFp6TA22RkbHG3pQ-3BtpJNoLOePj4mCnQ9UoGreg/Xw6MujYK6aSYr9za5oSixyG9aVF7Kj4sN7m67RBvJxk.mp3"
+        }
+      ],
+      "stillUnresolved": false,
+      "duplicateOf": null,
+      "excludedReason": "podcast-platform-outside-music-scope",
+      "reference": {
+        "id": "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/2",
+        "chainId": "base",
+        "contractAddress": "0x91b39B1691cf1F6b61998CBD08707B59fb938A86",
+        "tokenId": "2",
+        "tokenUri": "ar://qIBKJOYWrrFWlZThrdFLRAR7Ac0S9NG8RMrRealz5W0",
+        "tokenMetadataUri": null,
+        "mimeType": null,
+        "createdAtTime": "2025-03-25T19:32:13+00:00",
+        "createdAtBlockNumber": "28070893",
+        "nftFactoryByNftFactoryId": {
+          "standard": "erc1155"
+        },
+        "musicMetadata": {
+          "bpms": [],
+          "keys": [],
+          "collaborators": [],
+          "credits": [
+            "Sheena \u2014 GUEST",
+            "Naaate \u2014 HOST"
+          ],
+          "details": {
+            "Description": [
+              "In this episode, Sheena shares her inspirations, challenges, and hopes for a more collaborative future in AI-assisted art. She also takes us behind the scenes of The Luminary, a CC0 character whose stories and visuals come to life through community input. Exploring how AI can amplify creativity rather than replace it, Sheena discusses how technology can be used to expand imagination and foster a more open, communal approach to art."
+            ]
+          }
+        },
+        "musicMetadataSchemaVersion": 5,
+        "mediaURI": "ar://litRkEM_icW2bdXU1ItoeMuiOGSYH-hs-w3UHJienYY/9muminSm8jYg55dNdDKyhWSI_DebxFZJQGW_CVXbVkA.mp3",
+        "imageURI": "ar://yJYAOpOjlxhvthxY54ruwB4hkElxmSHGpf7bZAuHapI/dJC37ZYs6-Pj9PDCqmWCFTm5HRgGr6zVRtD591HfKtQ.png",
+        "metadataTitle": "The Luminary\u2019s Path: A Journey of AI, Community, and Creativity",
+        "metadataArtist": null,
+        "bpm": null,
+        "key": null,
+        "genre": null,
+        "metadataSha256": "b253c7e18fed8a38083674175cf466d7b7192105f8a7b5802543a7e5db0fd1eb"
+      },
+      "representativeLookup": {
+        "checkedAt": "2026-11-07T00:36:30.485Z",
+        "source": "https://api.spinamp.xyz/v3/graphql",
+        "scope": "exact-track-and-nft-relation",
+        "nftId": "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/2",
+        "totalCount": null,
+        "queryMethod": "reverse-nft-relations",
+        "rawEvidenceFile": "data/spinamp/reverse-reference-audit-2026-11-07.json"
+      }
+    },
+    {
+      "trackId": "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/41-remi-religion-community-and-culture",
+      "title": "#41 - Remi: Religion, Community, and Culture.",
+      "artist": "Ethers Club",
+      "platformId": "pods",
+      "status": "unresolved",
+      "presentProbedNfts": [
+        "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/1",
+        "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/2"
+      ],
+      "otherTrackLinks": [
+        {
+          "trackId": "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/46-kevin-owocki-gitcoin-resource-allocation-and-writing",
+          "title": "#46 - Kevin Owocki: Gitcoin, Resource Allocation, and Writing",
+          "artist": "Ethers Club",
+          "originalIndexedAudioURL": "https://arweave.net/cvwYKjpxtjo2eXCsvdyGj7BCtMJ37PkwibITfvYtPSs/aIESSgdaHXzUiG6daAXc-vXpoq-gyBAV65BtJGL0SH0.mp3"
+        },
+        {
+          "trackId": "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/43-cheekygorilla-protocol-guild-open-source-funding-the-importance-of-privacy-and-security",
+          "title": "#43 - CheekyGorilla: Protocol Guild, Open Source funding, the importance of privacy and security",
+          "artist": "Ethers Club",
+          "originalIndexedAudioURL": "https://arweave.net/AQcT_ZU0T0AJ4I1j6JbgCnhCXUtNkGN8vuHle1c57ww/jhrDjnzAltCIu48cm2YBYr5kxOxL9OhdbZWM9QK5zao.mp3"
+        }
+      ],
+      "stillUnresolved": true
+    },
+    {
+      "trackId": "optimism/0xCA016Fa52c97F3f8De13c48D3316646603e5c8c7/1",
+      "title": "20 ShivaVashishat - Chilluminatus",
+      "artist": "ShAmBaLa LoVeLiNeSs",
+      "platformId": "spinamp",
+      "status": "unresolved",
+      "presentProbedNfts": [],
+      "otherTrackLinks": [],
+      "stillUnresolved": true
+    }
+  ],
+  "soundContractLeads": [
+    {
+      "chainId": 1,
+      "contract": "0x9e169e244ea1a52470ba0e7a82ce3119767b0c5d",
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "ethereum/0x9E169E244Ea1a52470bA0e7a82CE3119767b0C5D/0x899b9acf701709357449d6d1a4ea58ffa7c8293c33281fc3efd615b91847fd18",
+          "title": "Ep 15 - 3LAU of Royal",
+          "artist": "Invest in Music",
+          "reason": "no-indexed-audio-evidence"
+        }
+      ]
+    },
+    {
+      "chainId": 1,
+      "contract": "0xc59711f7661ca0a966a2c15bf5a0da39cd6bf69f",
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 1,
+      "contract": "0x65ef2456f4306d3a51dc8cd742438cfd22fdb9e0",
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 1,
+      "contract": "0x14d7b5aa6de2472af82abbe435fc0ce95fab9c60",
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 1,
+      "contract": "0x3f4ef39f0e6bf344f7c503095c877deb32dad055",
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 1,
+      "contract": "0x92e44e151508b21eb1a03244f0ddf1a59deb160f",
+      "factory": "0xaef3e8c8723d9c31863be8de54df2668ef7c4b89",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xd2f2c5cabbacd8a8f201ffaae9f2373e03f74e26",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x7deaca2faf34642a0e38727052af69a42b79dca7",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xa3dee916ce81efc8d2c697f0ada68a4dd9205c50",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x8c683466ec4546f0aba56542bde6eb333b3fe180",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xf48314c8b463c35f55018ef3da9a7260f41425dc",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xa39e5be8164c21c33b9a037408d12ebdb901975e",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x12b7f3bbb70b3d5cf24b21182d98cda4924a6a97",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xba03464a6533fef58463394cf3b3c11eb62e33b5",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xf5e0eff3d62f70d2041ff345af68b53e95397872",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x9c9597aa83fd5930abaed3c3b2d6b971a4fdd2af",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x74f47584d3deea84e29b8ded9954890458fa9971",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x6eeb3bcf5763ea240b932838fb7193f8eaea1baa",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xb81f8ddd169a429e8bd8750752ea7ad3cfd4ef8b",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x12d829487f8b44e7ea94e929496b43cfa9b0430e",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0x12D829487f8b44E7EA94e929496B43cFa9b0430e/0xb075e3814f447aa797c3a1ca8aef273ec71f085cbdaf78f1cdbff2916a60a4ee",
+          "title": "El ni\u00f1o estrella",
+          "artist": "Xcelencia",
+          "reason": "no-indexed-audio-evidence"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0xda52bdbc0d52c6d939a1eb52e39ec159056abc96",
+      "factory": "0x5bcf5773bcf1f131a0cad5c74aa9be1a80b63c55",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xe8d95e7512561cb711676fc5dadd649027f455d7",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0xe8D95e7512561cb711676fC5DAdD649027f455d7/0x8f3968f27feedc15caec0081869042766a128bd97ce5eb877e6300b57243bc3f",
+          "title": "Silicon Overlords (indie rock version)",
+          "artist": "Eclipsing Binary",
+          "reason": "no-indexed-nft"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0xf0acc6fb7a2e9b7c7d7ac29e7257852a6a0d99b8",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0xf0ACc6fb7A2e9B7c7d7AC29e7257852a6a0D99b8/0x4e4da375a3f993c040559fe401e6325b522cdcab90b43bdc1483f6402105e7b9",
+          "title": "Jimi Somewhere - Castle ",
+          "artist": "Next Wave Records",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0xaa94d7ffb27766f25b5e6549f3973209a1cf2ab4",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0xAA94D7fFB27766F25b5e6549F3973209a1cF2Ab4/0x5e23626e3a8a7f4ce4e92e06fff5e6fb4a20537153420fdeed66cc5962dea78f",
+          "title": "DEAD STAR TALK 'The Hurricane'",
+          "artist": "Pan Winyl R3cordz",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0x3a821e4370511b019acd131c59b0d460a88d67d9",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0x3a821E4370511b019aCD131c59B0d460a88d67D9/0xcfc0b2de2e192ea63561bb31039e1dc1a5df5142b04cc6ab59abbb3abd7e7781",
+          "title": "S\u0141AWEK KRZANOWSKI - WRACAM ZA CHWIL\u0118 (I'll be back in a minute)",
+          "artist": "Pan Winyl R3cordz",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0xb9ffe1157fa5546fb52d32d1dbb52b33ce49099e",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0xB9ffe1157fa5546fB52D32d1dBb52b33CE49099E/0x05e152dd591be1dbf4655edadbbdb9ab04be625f4716403322133892e4ed5426",
+          "title": "BLACK PUDDING - ACID PLASTIC",
+          "artist": "Pan Winyl R3cordz",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0x5b77bde33ef0e7a26620d4d1d90c119222df9cb8",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0x5b77bdE33eF0e7a26620D4D1d90c119222Df9CB8/0xa6b1d71306ac2284702dc878e6d40949efad40e376bc85d04e4575fe90ecb664",
+          "title": "DEAD STAR TALK 'Soild State Chemicals'",
+          "artist": "Pan Winyl R3cordz",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0xdde70e175937d00f0e2dfbfd29cd981066421907",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0xdDe70E175937D00F0e2dFbfD29cd981066421907/0xcefcc1139306eccf827b00e823cfc327d19a5bb128a0eaff19982782b93cfaf6",
+          "title": "PAN WINYL X VI.NFT - WEB3 MANIFESTO SONG",
+          "artist": "Pan Winyl R3cordz",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0xa986de74ee7e3ea470cbd2114daa0526720dce84",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0xa986DE74Ee7E3Ea470cBd2114dAa0526720dCe84/0x26d5ac73cc87e94016eec9e7f602c523019cbabff5f1caa29eb7225d86eda75d",
+          "title": "Piotr Trybusz - PEFE",
+          "artist": "Pan Winyl R3cordz",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0xdaf8f2b4797ab295a996607622688a4f7b1d021d",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0xdaF8f2b4797AB295a996607622688A4f7b1d021d/0xb780d8c5ccfa74b0625fdf4c6fc596accac3defaddcc2f5e0283f5c8f2146d32",
+          "title": "BLACK PUDDING - MADE IN AFRICA",
+          "artist": "Pan Winyl R3cordz",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0xfdb87f15a2aefc08d597aad89532fdecdadc741a",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0xfDb87f15a2aEfc08d597aad89532fDEcDAdC741A/0xc4979f850565957ee557239736998ce7e3fcac30856de7004ac99e6bfadc274b",
+          "title": "S\u0142awek Krzanowski x DJ FLEX 'Wiosna Remix' (Springtime Remix)",
+          "artist": "Pan Winyl R3cordz",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0x8194bc59f591c6653f727c5b08063bc1a795596a",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0x8194BC59f591c6653F727C5b08063Bc1a795596a/0x7fdb761e02bb6360462afd26136b0bbcaa58e44a32457161460be676138e62d7",
+          "title": "WHY DRIVE",
+          "artist": "Pan Winyl R3cordz",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0x07eea0eec64c2ff99fe877129dcc1dbba9c0def1",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0x07eEa0eec64c2FF99FE877129DcC1DBba9c0def1/0x21c815e1ef02ace4d2e50b93ce8a03ebad3be7fac4cda25a28e59c8b64d4b989",
+          "title": "Mimpi Untuk Semalam (feat. JAYSTATION, Quai)",
+          "artist": "slatan",
+          "reason": "no-indexed-nft"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0x9f338c2956e4bb260e042abb568d8ab60bb3b6bd",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0x9F338c2956E4bb260E042aBb568d8AB60bb3b6BD/0x319d1ac3fc8f664ff6f5d8334fbb8d50972608a6abd1f80ee42c8c99c245c03e",
+          "title": "BLACK PUDDNIG - WHO MADE WHO",
+          "artist": "Pan Winyl R3cordz",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0xe3f3c67b9e92047a841e747fb5b11624fb8316a6",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x2e82b9822732d1d01b556c1b23602c70b80ecc43",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x3ab05e1a837884b66f5361fb4ea22d3d51edbfe5",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x03e90ce8345eca4cf45ae63f0e4a06c4c7d16d69",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x4b84b19af2f615cc0edb9a34c29e29e3669b1d30",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xca6f02d0f730fce4e83ffad63f336306351f3d20",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x08c287e241471c0a033f38cc4e7cd61cd289bbd7",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x12ed2dd22ae315b5d8bcbd21ef50e293b1b2bcb8",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xd856f46cb6d56a1741983196bd6890b8a9b4755a",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0xd856F46CB6d56A1741983196bD6890b8a9B4755a/0x55910d66520096d606bfb3b15337cffa8c3899cedf345bacb3c14dd71d100c82",
+          "title": "Selected Resonances (Continous Mix)",
+          "artist": "Jitzu",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0x26dcb403ac16eb5cbc3700cd23b2e2faeaff1095",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0x26DCB403Ac16eB5cBc3700Cd23b2E2FaeaFf1095/0xb8fefba05faf10d471bffeb85cc0da3b22f3fe5fc4c6031d9e41a77b1b5d6a53",
+          "title": "FREAKY MC - ",
+          "artist": "AChamp",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0xe8f3e1c9c789753779f0576fa1e527a2d5678fff",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0xe8F3e1C9c789753779f0576FA1E527A2D5678fff/0xeabcb19bbb8025a40db8d1273ea1bed48ab5529019780478988950f1b710ec21",
+          "title": "Number 8",
+          "artist": "Summer Waves",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "contract": "0xd719de2142398e7c39bb3a51cebfa501a25e1035",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x9751cd5e382b9130ef52583d4d7bd2aabc8ceff6",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xb1c07fc8043afb64105ec98e596bd341dd6eec89",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xfe7bb9e2f16d5ba6f47c2806646ee913a7ac7e0d",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xa5fd58d43313fb418e0de198764f57de7d413ca8",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x21e2e95407ba774010ad6667c6d61adfe5718e20",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x2a8cf64ed14d77cc971f849d7edee1392340b378",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x9eadeb58e17d9b2318ab6351eb783c365ddc257c",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x8f8a48cd15cbf56ffa2261b9aafe8074c2e05030",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x2792c242765f9fd52d66a0eb6d85d6c1a9e1fa52",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x2d9a4f7421e72e4ed0bdeff81df44bd2a3d7e3ec",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x1887d19cb8e214cff3f1a1714238b4ff59235386",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xc73fd03e2263bb828feb5f19b9af94d66f260572",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x43cec1e5d361a070e1dd46d43ae553a40b35dafd",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x604b5011cf3b8b79dabd627f20e6997fb9b2828f",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0x85434ea8ad0662e7b4033d8ba894e7809ed3b66e",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": false,
+      "tracks": []
+    },
+    {
+      "chainId": 10,
+      "contract": "0xf855083abf0e63361f01469a83c4a25393a534f7",
+      "factory": "0x0000000000aec84f5bfc2af15eafb943bf4e3522",
+      "priorStatus": "unavailable",
+      "inInventory": true,
+      "tracks": [
+        {
+          "trackId": "optimism/0xf855083Abf0E63361f01469A83c4A25393a534F7/0x1ea31d00b9ee125da6332ed0f15da693e0eb57deb70fd4f63e598d649d8e968b",
+          "title": "Spooky Girl ",
+          "artist": "Sunrise Get Down",
+          "reason": "artist-attribution-conflict"
+        }
+      ]
+    }
+  ]
+}

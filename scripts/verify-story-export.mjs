@@ -51,6 +51,7 @@ try {
         true,
         await page.locator("[data-story-status]").innerText(),
       );
+      await page.locator(".story-exact summary").click();
       await page.locator("[data-story-start]").fill("100");
       await page.locator("[data-story-start]").dispatchEvent("change");
       assert.match(

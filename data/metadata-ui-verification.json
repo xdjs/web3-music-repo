@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-11-07T00:43:02.088Z",
+  "base": "http://127.0.0.1:4191",
+  "scope": "Actual local catalog and existing song Details; no playback or audio-analysis accuracy claim",
+  "cases": [
+    {
+      "id": "spinamp-58573508153867c4ac70",
+      "text": "Terence Shaw — Mixed by",
+      "label": "credits",
+      "indexed": true,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark"
+      },
+      "screenshot": "captures/metadata-credits-1440-dark.png",
+      "passed": true
+    },
+    {
+      "id": "spinamp-3b833c42f200be2359cc",
+      "text": "126 BPM",
+      "label": "source-bpm",
+      "indexed": true,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark"
+      },
+      "screenshot": "captures/metadata-source-bpm-1440-dark.png",
+      "passed": true
+    },
+    {
+      "id": "spinamp-52652b7e8c0c93fdc260",
+      "text": "BPM estimated by Open BPM",
+      "label": "estimate",
+      "indexed": false,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark"
+      },
+      "screenshot": "captures/metadata-estimate-1440-dark.png",
+      "passed": true
+    },
+    {
+      "id": "spinamp-58573508153867c4ac70",
+      "text": "Terence Shaw — Mixed by",
+      "label": "credits",
+      "indexed": true,
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "screenshot": "captures/metadata-credits-390-light.png",
+      "passed": true
+    },
+    {
+      "id": "spinamp-3b833c42f200be2359cc",
+      "text": "126 BPM",
+      "label": "source-bpm",
+      "indexed": true,
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "screenshot": "captures/metadata-source-bpm-390-light.png",
+      "passed": true
+    },
+    {
+      "id": "spinamp-52652b7e8c0c93fdc260",
+      "text": "BPM estimated by Open BPM",
+      "label": "estimate",
+      "indexed": false,
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "screenshot": "captures/metadata-estimate-390-light.png",
+      "passed": true
+    }
+  ]
+}
