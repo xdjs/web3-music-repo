@@ -1,0 +1,104 @@
+{
+  "startedAt": "2026-11-07T00:36:02.519Z",
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "scope": "Exact Lens release relations and indexed ownership; index freshness unknown, not fresh chain balances",
+  "maximumRequests": 100,
+  "maximumTokensPerRelease": 300,
+  "beforeSnapshots": 11,
+  "results": [
+    {
+      "recordId": "spinamp-d88347a5ad97cd516132",
+      "title": "Love You II",
+      "artist": "Bob Peace",
+      "status": "indexed",
+      "mappedTokens": 1,
+      "wallets": 1,
+      "checkedAt": "2026-11-07T00:36:03.504Z"
+    },
+    {
+      "recordId": "spinamp-6e32616a17ccde885856",
+      "title": "idontwannacrynomore",
+      "artist": "dragaan.lens",
+      "status": "indexed",
+      "mappedTokens": 1,
+      "wallets": 1,
+      "checkedAt": "2026-11-07T00:36:04.732Z"
+    },
+    {
+      "recordId": "spinamp-f2d6669ec566943d0146",
+      "title": "Alarke - Little Secret [Live at 343 Labs]",
+      "artist": "alarke.eth",
+      "status": "indexed",
+      "mappedTokens": 19,
+      "wallets": 18,
+      "checkedAt": "2026-11-07T00:36:06.640Z"
+    },
+    {
+      "recordId": "spinamp-bb1b599c0cb8d977b6df",
+      "title": "Little Tunny",
+      "artist": "valentina cy",
+      "status": "indexed",
+      "mappedTokens": 16,
+      "wallets": 6,
+      "checkedAt": "2026-11-07T00:36:08.490Z"
+    },
+    {
+      "recordId": "spinamp-6ca7e2c25dfaa65a8c74",
+      "title": "Mais uma Vez",
+      "artist": "valentina cy",
+      "status": "indexed",
+      "mappedTokens": 26,
+      "wallets": 19,
+      "checkedAt": "2026-11-07T00:36:11.028Z"
+    },
+    {
+      "recordId": "spinamp-190043d7d84773c0b064",
+      "title": "Day 28",
+      "artist": "Heno.",
+      "status": "indexed",
+      "mappedTokens": 29,
+      "wallets": 29,
+      "checkedAt": "2026-11-07T00:36:13.573Z"
+    },
+    {
+      "recordId": "spinamp-1ab81d3b76633c325247",
+      "title": "Day 1",
+      "artist": "Heno.",
+      "status": "indexed",
+      "mappedTokens": 3,
+      "wallets": 3,
+      "checkedAt": "2026-11-07T00:36:14.783Z"
+    },
+    {
+      "recordId": "spinamp-50312a8e391909af5760",
+      "title": "Day 27",
+      "artist": "Heno.",
+      "status": "indexed",
+      "mappedTokens": 33,
+      "wallets": 31,
+      "checkedAt": "2026-11-07T00:36:17.922Z"
+    },
+    {
+      "recordId": "spinamp-a99ca9b2ffaa2063b6c5",
+      "title": "Producing music with NFT stems in an arcade setup",
+      "artist": "alarke.eth",
+      "status": "indexed",
+      "mappedTokens": 139,
+      "wallets": 126,
+      "checkedAt": "2026-11-07T00:36:27.450Z"
+    },
+    {
+      "recordId": "spinamp-cb176244aa8587a6791c",
+      "title": "Future Self (El Monk Remix)",
+      "artist": "alarke.eth",
+      "status": "indexed",
+      "mappedTokens": 25,
+      "wallets": 24,
+      "checkedAt": "2026-11-07T00:36:29.978Z"
+    }
+  ],
+  "finishedAt": "2026-11-07T00:36:30.484Z",
+  "requests": 44,
+  "afterSnapshots": 21,
+  "stopReason": "Explicit selected cohort completed"
+}

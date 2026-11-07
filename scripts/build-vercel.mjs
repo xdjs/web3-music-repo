@@ -38,6 +38,7 @@ const frontend = [
   "filter-preferences.mjs",
   "story-export.mjs",
   "story-clip.mjs",
+  "story-timeline.mjs",
   "story-export.css",
   "collection-render.mjs",
   "listening-queue.mjs",

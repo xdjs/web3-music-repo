@@ -52,6 +52,7 @@ try {
     { timeout: 60000 },
   );
   await page.evaluate(() => window.__resolveOld());
+  await page.locator(".story-exact summary").click();
   await page.locator("[data-story-start]").fill("100");
   await page.locator("[data-story-start]").dispatchEvent("change");
   await page.locator("[data-story-render]").click();

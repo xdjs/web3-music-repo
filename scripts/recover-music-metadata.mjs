@@ -9,7 +9,15 @@ import {
 import { createHash } from "node:crypto";
 import { createCatalogLoader } from "../src/catalog-bundle.mjs";
 import { storageURL } from "../src/nft-reader.mjs";
-import { extractMusicMetadata } from "../src/extract-music-metadata.mjs";
+import {
+  MUSIC_METADATA_SCHEMA_VERSION,
+  extractMusicMetadata,
+} from "../src/extract-music-metadata.mjs";
+import {
+  metadataSnapshotKey,
+  mergeMusicMetadataFacts,
+  hasAdditionalMusicFacts,
+} from "../src/music-metadata-enrichment.mjs";
 const bundle = createCatalogLoader()(),
   file = "data/music-metadata.json";
 const load = (p, f) => {
@@ -39,6 +47,10 @@ const snapshots = {
 };
 const mintOriginals = load("data/mint-songs/original-metadata.json", {});
 const cacheDir = "work/music-metadata-cache";
+const additionalCacheDir = process.argv
+  .find((a) => a.startsWith("--cache-dir="))
+  ?.slice(12);
+const cacheOnly = process.argv.includes("--cache-only");
 mkdirSync(cacheDir, { recursive: true });
 const cachePath = (source) =>
   `${cacheDir}/${createHash("sha256").update(source).digest("hex")}.json`;
@@ -47,7 +59,8 @@ const refresh = process.argv.includes("--refresh");
 const records = bundle.records.filter(
   (r) =>
     (!filter || r.platform === filter) &&
-    (refresh || result.records[r.id]?.schemaVersion !== 5),
+    (refresh ||
+      result.records[r.id]?.schemaVersion !== MUSIC_METADATA_SCHEMA_VERSION),
 );
 const save = () => {
   result.updatedAt = new Date().toISOString();
@@ -121,7 +134,7 @@ async function read(source) {
 }
 // Re-extract saved documents before touching rate-limited gateways.
 for (const r of records) {
-  const key = `${r.chainId}-${r.contract.toLowerCase()}-${r.tokenId}`,
+  const key = metadataSnapshotKey(r),
     s = snapshots[key],
     v = bundle.evidence[r.id];
   const source = s?.source || v?.metadataURI || v?.metadataURL;
@@ -130,12 +143,24 @@ for (const r of records) {
     mintOriginals[r.id]?.results ||
     (source && existsSync(cachePath(source))
       ? load(cachePath(source), null)
-      : null);
+      : additionalCacheDir && source
+        ? load(
+            `${additionalCacheDir}/${createHash("sha256").update(source).digest("hex")}.json`,
+            null,
+          )
+        : null);
   if (!metadata) continue;
+  const extracted = extractMusicMetadata(metadata);
+  if (
+    result.records[r.id]?.status === "read" &&
+    !hasAdditionalMusicFacts(result.records[r.id], extracted)
+  )
+    continue;
   result.records[r.id] = {
+    ...result.records[r.id],
     status: "read",
-    schemaVersion: 5,
-    ...extractMusicMetadata(metadata),
+    schemaVersion: MUSIC_METADATA_SCHEMA_VERSION,
+    ...mergeMusicMetadataFacts(result.records[r.id], extracted),
     source,
     metadataURL: v?.metadataURL || null,
     provenance: s
@@ -150,58 +175,74 @@ for (const r of records) {
   };
 }
 save();
-await Promise.all(
-  Array.from({ length: 4 }, async () => {
-    while (!stopping && next < records.length) {
-      const r = records[next++];
-      if (result.records[r.id]?.schemaVersion === 5 && !refresh) continue;
-      const v = bundle.evidence[r.id],
-        source = v?.metadataURI || v?.metadataURL;
-      if (!source) {
-        result.records[r.id] = {
-          status: "missing-reference",
-          checkedAt: new Date().toISOString(),
-        };
-        continue;
+if (!cacheOnly)
+  await Promise.all(
+    Array.from({ length: 4 }, async () => {
+      while (!stopping && next < records.length) {
+        const r = records[next++];
+        if (
+          result.records[r.id]?.schemaVersion ===
+            MUSIC_METADATA_SCHEMA_VERSION &&
+          !refresh
+        )
+          continue;
+        const v = bundle.evidence[r.id],
+          source = v?.metadataURI || v?.metadataURL;
+        if (!source) {
+          result.records[r.id] = {
+            status: "missing-reference",
+            checkedAt: new Date().toISOString(),
+          };
+          continue;
+        }
+        try {
+          const metadata = await read(source);
+          result.records[r.id] = {
+            ...result.records[r.id],
+            status: "read",
+            schemaVersion: MUSIC_METADATA_SCHEMA_VERSION,
+            ...mergeMusicMetadataFacts(
+              result.records[r.id],
+              extractMusicMetadata(metadata),
+            ),
+            source,
+            metadataURL: v.metadataURL || null,
+            checkedAt: new Date().toISOString(),
+            referenceBlock: v.blockNumber || null,
+          };
+        } catch (e) {
+          const previous = result.records[r.id];
+          result.records[r.id] =
+            previous?.status === "read"
+              ? { ...previous, lastRefreshError: e.message }
+              : {
+                  status: "unavailable",
+                  source,
+                  error: e.message,
+                  checkedAt: new Date().toISOString(),
+                };
+        }
+        if (++done % 25 === 0) {
+          save();
+          console.log(
+            "MUSIC METADATA",
+            done,
+            "/",
+            records.length,
+            JSON.stringify(result.counts),
+          );
+        }
       }
-      try {
-        const metadata = await read(source);
-        result.records[r.id] = {
-          status: "read",
-          schemaVersion: 5,
-          ...extractMusicMetadata(metadata),
-          source,
-          metadataURL: v.metadataURL || null,
-          checkedAt: new Date().toISOString(),
-          referenceBlock: v.blockNumber || null,
-        };
-      } catch (e) {
-        const previous = result.records[r.id];
-        result.records[r.id] =
-          previous?.status === "read"
-            ? { ...previous, lastRefreshError: e.message }
-            : {
-                status: "unavailable",
-                source,
-                error: e.message,
-                checkedAt: new Date().toISOString(),
-              };
-      }
-      if (++done % 25 === 0) {
-        save();
-        console.log(
-          "MUSIC METADATA",
-          done,
-          "/",
-          records.length,
-          JSON.stringify(result.counts),
-        );
-      }
-    }
-  }),
-);
+    }),
+  );
 result.finishedAt = stopping ? null : new Date().toISOString();
 result.interruptedAt = stopping ? new Date().toISOString() : null;
+save();
+result.lastPass = {
+  cacheOnly,
+  scope: filter || "all-platforms",
+  selectedRecords: records.length,
+};
 save();
 releaseLock();
 console.log(

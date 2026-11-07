@@ -1,0 +1,325 @@
+{
+  "checkedAt": "2026-11-07T00:39:25.998Z",
+  "totalCatalogRecords": 37345,
+  "scope": "Offline extraction of standalone BPM/key lines in preserved source descriptions. No editorial summaries or audio analysis.",
+  "records": [
+    {
+      "recordId": "recovered-sound-10-b85683de9fe5db6f5f35dd12622b1775ea4e2663",
+      "platform": "Sound",
+      "source": "ar://ZzGg8L0solAjsMe9oUCYN7Lcadx8PTZe43b0O-j1IOs/1",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [],
+      "addedKeys": [
+        "A minor"
+      ]
+    },
+    {
+      "recordId": "recovered-sound-10-eee96917b38aaec78d6508824484dd748c3d4a3a",
+      "platform": "Sound",
+      "source": "ar://0jyBi7MjvSm3afpa4LwvDjcEGKqYyMeLT2_vvtBm2pY/1",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        83
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-1020",
+      "platform": "Catalog",
+      "source": "ar://7QmCmg5qNfAquCy0lxg7vnHI4yumDAJZQ0dXtZlJmnI",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        105
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-888",
+      "platform": "Catalog",
+      "source": "ar://tn43w7yzkoQPkGTXF98wqU-W5t4i49Y6l6atROMA0bA",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        92
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-abefbc9fd2f806065b4f3c237d4b59d9a97bcac7-7297",
+      "platform": "Catalog",
+      "source": "https://ipfs.io/ipfs/bafybeih5x7krjqypdsbmplov4vb4fgp34muwuyxphouebzjpxkuhnsyq5a",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        93
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-abefbc9fd2f806065b4f3c237d4b59d9a97bcac7-7334",
+      "platform": "Catalog",
+      "source": "https://ipfs.io/ipfs/bafybeidrqayznn3himimzgeaee6ihga6dlyh344c32qygxznhpmo3izmjy",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        140
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-946",
+      "platform": "Catalog",
+      "source": "ar://w0vzj_XYLeNAY6vzIWaLSwU64Xj1KsRY_PwFdXqUTbA",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        130
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-611",
+      "platform": "Catalog",
+      "source": "ar://djGWHHdUUA_sPStznUsUNaNqeyUGSMqZKKnEwV-wrRo",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        93.33
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-627",
+      "platform": "Catalog",
+      "source": "ar://fP-elWUcStl6Q6_c0KiyCYQbMNbvl78zkpdKe05iBcw",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        90
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-628",
+      "platform": "Catalog",
+      "source": "ar://2E9dpsyvVR3L0Eu5IM-Qqg3EC-ax2wL39rcDiNLA5Vk",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        135
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-643",
+      "platform": "Catalog",
+      "source": "ar://ZRIgh5TuYjPXKd4xMuNx2g9MEESZXiHq8AQ13iMdWhg",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        108
+      ],
+      "addedKeys": [
+        "D min"
+      ]
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-662",
+      "platform": "Catalog",
+      "source": "ar://1AVjpShFUCpdibZzg2VhUKxonDryeSr8NU7g_4Yqap8",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        130
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-675",
+      "platform": "Catalog",
+      "source": "ar://_fYcsWnKPAhbE16VotQVeB9sTlzRGgwOyhEMQM0bJiw",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        62
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-711",
+      "platform": "Catalog",
+      "source": "ar://F74li5mtzen-oA6rlQtL7XKGyBHwXwqD4uM6imqBIyo",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        145
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-761",
+      "platform": "Catalog",
+      "source": "ar://MMAnmRCGCSm0ReNN3_nrM4yLVxKP8Pvm5U4LyOEQGK0",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        105
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-778",
+      "platform": "Catalog",
+      "source": "ar://ZcLhnovrsADyZxkOOtOtHYOOsvDZNlNU0RSeXthKw-M",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        124
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-771",
+      "platform": "Catalog",
+      "source": "ar://GgZlZg5bwrKFKl9npTXObAxOOjSNgtVEtpXrP4VJ5Q0",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        99
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-798",
+      "platform": "Catalog",
+      "source": "ar://u-mc4WN_BVqpZqcM7zJfvx9pRYPRZ0frmhax4zOMPHY",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        90
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-8453-45c86530075a413b5fdb6666bcd8729bdc5c2fa2-2",
+      "platform": "Catalog",
+      "source": "https://gateway.irys.xyz/mutable/JhxIo3kDechaq-T_wuzLGNb46Z1KKafAuqeLQ6Ov8lE",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        150
+      ],
+      "addedKeys": [
+        "A minor"
+      ]
+    },
+    {
+      "recordId": "catalog-8453-45c86530075a413b5fdb6666bcd8729bdc5c2fa2-1",
+      "platform": "Catalog",
+      "source": "https://gateway.irys.xyz/mutable/QpP7_xYohpm2jan1ySLJ05_LOv5jbiqSWxPoTk8dzHw",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        126
+      ],
+      "addedKeys": [
+        "D Major"
+      ]
+    },
+    {
+      "recordId": "catalog-8453-45c86530075a413b5fdb6666bcd8729bdc5c2fa2-3",
+      "platform": "Catalog",
+      "source": "https://gateway.irys.xyz/mutable/lQKmPJKANEpjzpri_Gp2vvLpabUaDOb9gTEb0WnXBVg",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        126
+      ],
+      "addedKeys": [
+        "C minor"
+      ]
+    },
+    {
+      "recordId": "catalog-8453-45c86530075a413b5fdb6666bcd8729bdc5c2fa2-4",
+      "platform": "Catalog",
+      "source": "https://gateway.irys.xyz/mutable/NdlHpzCNaFUPTNW_u-TsVk8xijPQ2rb3IVmUMN5IVTA",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [],
+      "addedKeys": [
+        "C minor"
+      ]
+    },
+    {
+      "recordId": "catalog-8453-45c86530075a413b5fdb6666bcd8729bdc5c2fa2-5",
+      "platform": "Catalog",
+      "source": "https://gateway.irys.xyz/mutable/j4k8SiSOG3nNwandQffbAk98WNDA5y58u7LC9TTL_98",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        133
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-8453-45c86530075a413b5fdb6666bcd8729bdc5c2fa2-6",
+      "platform": "Catalog",
+      "source": "https://gateway.irys.xyz/mutable/fNbK7UFl3b0SpUrk12SE8uQ4RSZgmdwIYrBc440rBhg",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        133
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "catalog-8453-45c86530075a413b5fdb6666bcd8729bdc5c2fa2-9",
+      "platform": "Catalog",
+      "source": "https://gateway.irys.xyz/mutable/YvqMN4xTnYTu8ZuGESeJei2lyYE3hZ6mqpBKcSMFUJ0",
+      "sourceType": "original-document-or-publisher-snapshot",
+      "addedBpm": [
+        128
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "spinamp-79034eaa25a050f4b592",
+      "platform": "Sound",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-indexed-metadata",
+      "addedBpm": [
+        130
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "spinamp-566eaef0af126f6ec005",
+      "platform": "Sound",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-indexed-metadata",
+      "addedBpm": [
+        133
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "spinamp-b762ea21b7704595cb65",
+      "platform": "Zora",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-indexed-metadata",
+      "addedBpm": [],
+      "addedKeys": [
+        "E Major"
+      ]
+    },
+    {
+      "recordId": "spinamp-ae18c5b219f1aafa42d6",
+      "platform": "Zora",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-indexed-metadata",
+      "addedBpm": [
+        124
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "spinamp-3b833c42f200be2359cc",
+      "platform": "Nina",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-indexed-metadata",
+      "addedBpm": [
+        126
+      ],
+      "addedKeys": []
+    },
+    {
+      "recordId": "spinamp-f0a5140d17db5ca5aaf8",
+      "platform": "Nina",
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "sourceType": "spinamp-indexed-metadata",
+      "addedBpm": [
+        138
+      ],
+      "addedKeys": []
+    }
+  ]
+}

@@ -1,21 +1,21 @@
 {
   "inventoryCount": 52987,
-  "relationsChecked": 52943,
+  "relationsChecked": 52945,
   "relationCensusComplete": false,
   "relationScanComplete": false,
   "relationScope": "One representative NFT relation per processed track; not a census of every NFT edition/mint",
-  "unresolvedCount": 44,
+  "unresolvedCount": 42,
   "metadataRetryFailures": 0,
-  "retryFailureCount": 44,
+  "retryFailureCount": 42,
   "relationMultiplicityMeasured": 533,
   "multipleRelationTracksMeasured": 199,
   "added": 27520,
   "processedMediaFallbackCount": 6562,
-  "duplicateCount": 7803,
-  "excludedCount": 17620,
+  "duplicateCount": 7804,
+  "excludedCount": 17621,
   "excludedReasons": {
     "no-indexed-nft": 13515,
-    "podcast-platform-outside-music-scope": 2306,
+    "podcast-platform-outside-music-scope": 2307,
     "artist-attribution-conflict": 152,
     "no-indexed-audio-evidence": 1323,
     "missing-or-artwork-only-original-media": 152,
@@ -108,6 +108,6 @@
   "portraits": 2395,
   "peteWalletMatchedRecords": 1,
   "bundleBytes": 78154642,
-  "bundleGzipBytes": 11816661,
-  "checkedAt": "2026-11-07T00:05:44.520Z"
+  "bundleGzipBytes": 11816671,
+  "checkedAt": "2026-11-07T00:36:33.467Z"
 }

@@ -1,0 +1,181 @@
+{
+  "scope": "Seven bounded exploratory queries, including provider timeouts; not successful empty results",
+  "queries": [
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "checkedAt": "2026-11-07T00:30:06.770Z",
+      "trackId": "base/0x68767C3350c0512e1EDf096E33dd90c129667D29/0xe5885a881dc0d7974a16670c6f5c84bec2111b5210ae0019a6209fd9ceedc371",
+      "query": "{factory:nftFactoryById(id:\"base/0x68767C3350c0512e1EDf096E33dd90c129667D29\"){id chainId address standard nftsByNftFactoryId(first:5,orderBy:PRIMARY_KEY_DESC){pageInfo{hasNextPage endCursor}nodes{id chainId contractAddress tokenId tokenUri nftFactoryId nftsProcessedTracksByNftId(condition:{processedTrackId:\"base/0x68767C3350c0512e1EDf096E33dd90c129667D29/0xe5885a881dc0d7974a16670c6f5c84bec2111b5210ae0019a6209fd9ceedc371\"},first:1){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}}}",
+      "ms": 3470,
+      "body": {
+        "errors": [
+          {
+            "message": "canceling statement due to statement timeout",
+            "locations": [
+              {
+                "line": 1,
+                "column": 2
+              }
+            ],
+            "path": [
+              "factory"
+            ]
+          }
+        ],
+        "data": {
+          "factory": null
+        }
+      }
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "checkedAt": "2026-11-07T00:30:10.380Z",
+      "trackId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xffcce90d67702d6c4db055c29387e2f50ce78af71e7f3edd64d8f9b67f131e3e",
+      "query": "{factory:nftFactoryById(id:\"base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E\"){id chainId address standard nftsByNftFactoryId(first:5,orderBy:PRIMARY_KEY_DESC){pageInfo{hasNextPage endCursor}nodes{id chainId contractAddress tokenId tokenUri nftFactoryId nftsProcessedTracksByNftId(condition:{processedTrackId:\"base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xffcce90d67702d6c4db055c29387e2f50ce78af71e7f3edd64d8f9b67f131e3e\"},first:1){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}}}",
+      "ms": 3108,
+      "body": {
+        "errors": [
+          {
+            "message": "canceling statement due to statement timeout",
+            "locations": [
+              {
+                "line": 1,
+                "column": 2
+              }
+            ],
+            "path": [
+              "factory"
+            ]
+          }
+        ],
+        "data": {
+          "factory": null
+        }
+      }
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "checkedAt": "2026-11-07T00:30:47.092Z",
+      "trackId": "base/0x68767C3350c0512e1EDf096E33dd90c129667D29/0xe5885a881dc0d7974a16670c6f5c84bec2111b5210ae0019a6209fd9ceedc371",
+      "query": "{n0:nftById(id:\"base/0x68767C3350c0512e1EDf096E33dd90c129667D29/0\"){id chainId contractAddress tokenId tokenUri nftsProcessedTracksByNftId(first:5){pageInfo{hasNextPage}nodes{processedTrackId nftId}}}\nn1:nftById(id:\"base/0x68767C3350c0512e1EDf096E33dd90c129667D29/1\"){id chainId contractAddress tokenId tokenUri nftsProcessedTracksByNftId(first:5){pageInfo{hasNextPage}nodes{processedTrackId nftId}}}\nn2:nftById(id:\"base/0x68767C3350c0512e1EDf096E33dd90c129667D29/2\"){id chainId contractAddress tokenId tokenUri nftsProcessedTracksByNftId(first:5){pageInfo{hasNextPage}nodes{processedTrackId nftId}}}}",
+      "ms": 432,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      }
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "checkedAt": "2026-11-07T00:30:47.733Z",
+      "trackId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xffcce90d67702d6c4db055c29387e2f50ce78af71e7f3edd64d8f9b67f131e3e",
+      "query": "{n0:nftById(id:\"base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0\"){id chainId contractAddress tokenId tokenUri nftsProcessedTracksByNftId(first:5){pageInfo{hasNextPage}nodes{processedTrackId nftId}}}\nn1:nftById(id:\"base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/1\"){id chainId contractAddress tokenId tokenUri nftsProcessedTracksByNftId(first:5){pageInfo{hasNextPage}nodes{processedTrackId nftId}}}\nn2:nftById(id:\"base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/2\"){id chainId contractAddress tokenId tokenUri nftsProcessedTracksByNftId(first:5){pageInfo{hasNextPage}nodes{processedTrackId nftId}}}}",
+      "ms": 139,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": {
+            "id": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/1",
+            "chainId": "base",
+            "contractAddress": "0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E",
+            "tokenId": "1",
+            "tokenUri": "ar://OYVEYwrD0PDpbed5QaldXDUXSmV27eG66OfuEs7tKLo/1",
+            "nftsProcessedTracksByNftId": {
+              "pageInfo": {
+                "hasNextPage": false
+              },
+              "nodes": [
+                {
+                  "processedTrackId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xe0aaa7f2bf8a20d087370c8cb9b2512aedaa45708d5a78fc2a9c1ea1585ed5d5",
+                  "nftId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/1"
+                }
+              ]
+            }
+          },
+          "n2": {
+            "id": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/2",
+            "chainId": "base",
+            "contractAddress": "0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E",
+            "tokenId": "2",
+            "tokenUri": "ar://OYVEYwrD0PDpbed5QaldXDUXSmV27eG66OfuEs7tKLo/2",
+            "nftsProcessedTracksByNftId": {
+              "pageInfo": {
+                "hasNextPage": false
+              },
+              "nodes": [
+                {
+                  "processedTrackId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xe0aaa7f2bf8a20d087370c8cb9b2512aedaa45708d5a78fc2a9c1ea1585ed5d5",
+                  "nftId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/2"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "checkedAt": "2026-11-07T00:33:15.041Z",
+      "trackId": "base/0x68767C3350c0512e1EDf096E33dd90c129667D29/0xe5885a881dc0d7974a16670c6f5c84bec2111b5210ae0019a6209fd9ceedc371",
+      "query": "{t0:allNftsProcessedTracks(condition:{processedTrackId:\"base/0x68767C3350c0512e1EDf096E33dd90c129667D29/0xe5885a881dc0d7974a16670c6f5c84bec2111b5210ae0019a6209fd9ceedc371\"},first:1,orderBy:PRIMARY_KEY_ASC,after:\"WyJwcmltYXJ5X2tleV9hc2MiLFsiYmFzZS8weDY4NzY3QzMzNTBjMDUxMmUxRURmMDk2RTMzZGQ5MGMxMjk2NjdEMjkvIiwiIl1d\",before:\"WyJwcmltYXJ5X2tleV9hc2MiLFsiYmFzZS8weDY4NzY3QzMzNTBjMDUxMmUxRURmMDk2RTMzZGQ5MGMxMjk2NjdEMjkwIiwiIl1d\"){pageInfo{hasNextPage endCursor}nodes{processedTrackId nftId nftByNftId{id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard}}}}}",
+      "ms": 364,
+      "body": {
+        "data": {
+          "t0": {
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            },
+            "nodes": []
+          }
+        }
+      }
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "checkedAt": "2026-11-07T00:33:18.640Z",
+      "trackId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xffcce90d67702d6c4db055c29387e2f50ce78af71e7f3edd64d8f9b67f131e3e",
+      "query": "{t0:allNftsProcessedTracks(condition:{processedTrackId:\"base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xffcce90d67702d6c4db055c29387e2f50ce78af71e7f3edd64d8f9b67f131e3e\"},first:1,orderBy:PRIMARY_KEY_ASC,after:\"WyJwcmltYXJ5X2tleV9hc2MiLFsiYmFzZS8weDc0NmMyRWExNWFDRjJDMzBDMjgwODIzNzExY2E2Mjc3RmU2ZjA0M0UvIiwiIl1d\",before:\"WyJwcmltYXJ5X2tleV9hc2MiLFsiYmFzZS8weDc0NmMyRWExNWFDRjJDMzBDMjgwODIzNzExY2E2Mjc3RmU2ZjA0M0UwIiwiIl1d\"){pageInfo{hasNextPage endCursor}nodes{processedTrackId nftId nftByNftId{id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard}}}}}",
+      "ms": 3095,
+      "body": {
+        "errors": [
+          {
+            "message": "canceling statement due to statement timeout",
+            "locations": [
+              {
+                "line": 1,
+                "column": 2
+              }
+            ],
+            "path": [
+              "t0"
+            ]
+          }
+        ],
+        "data": {
+          "t0": null
+        }
+      }
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "checkedAt": "2026-11-07T00:33:19.272Z",
+      "trackId": "base/0x746efD91eA3499a3959E54e4AEDc309E7158e4DD/0xc04bc1a1f7467155b14129d6cc6da0a497b940b2a3d2c3fc7419cdfbd8684179",
+      "query": "{t0:allNftsProcessedTracks(condition:{processedTrackId:\"base/0x746efD91eA3499a3959E54e4AEDc309E7158e4DD/0xc04bc1a1f7467155b14129d6cc6da0a497b940b2a3d2c3fc7419cdfbd8684179\"},first:1,orderBy:PRIMARY_KEY_ASC,after:\"WyJwcmltYXJ5X2tleV9hc2MiLFsiYmFzZS8weDc0NmVmRDkxZUEzNDk5YTM5NTlFNTRlNEFFRGMzMDlFNzE1OGU0REQvIiwiIl1d\",before:\"WyJwcmltYXJ5X2tleV9hc2MiLFsiYmFzZS8weDc0NmVmRDkxZUEzNDk5YTM5NTlFNTRlNEFFRGMzMDlFNzE1OGU0REQwIiwiIl1d\"){pageInfo{hasNextPage endCursor}nodes{processedTrackId nftId nftByNftId{id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard}}}}}",
+      "ms": 131,
+      "body": {
+        "data": {
+          "t0": {
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            },
+            "nodes": []
+          }
+        }
+      }
+    }
+  ]
+}

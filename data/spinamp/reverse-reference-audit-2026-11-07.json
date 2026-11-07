@@ -1,0 +1,1540 @@
+{
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "startedAt": "2026-11-07T00:35:26.541Z",
+  "scope": "Reverse primary-key reads of NFT0/1/2 and their explicit indexed track links. Missing candidates are not a complete NFT census or proof of an unminted release.",
+  "maximumRequests": 44,
+  "rawResponsesRetained": true,
+  "results": [
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "base/0x68767C3350c0512e1EDf096E33dd90c129667D29/0xe5885a881dc0d7974a16670c6f5c84bec2111b5210ae0019a6209fd9ceedc371",
+      "query": "{n0:nftById(id:\"base/0x68767C3350c0512e1EDf096E33dd90c129667D29/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0x68767C3350c0512e1EDf096E33dd90c129667D29/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0x68767C3350c0512e1EDf096E33dd90c129667D29/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:27.327Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xffcce90d67702d6c4db055c29387e2f50ce78af71e7f3edd64d8f9b67f131e3e",
+      "query": "{n0:nftById(id:\"base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:28.896Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": {
+            "id": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/1",
+            "chainId": "base",
+            "contractAddress": "0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E",
+            "tokenId": "1",
+            "tokenUri": "ar://OYVEYwrD0PDpbed5QaldXDUXSmV27eG66OfuEs7tKLo/1",
+            "tokenMetadataUri": null,
+            "mimeType": "audio/mpeg",
+            "createdAtTime": "2024-08-12T01:40:29+00:00",
+            "createdAtBlockNumber": "18318741",
+            "metadata": {
+              "bpm": null,
+              "key": null,
+              "isrc": null,
+              "name": "Midnight Diner III - Limited #1",
+              "tags": null,
+              "genre": "Electronic",
+              "image": "ar://vkJEQV6KJVSDAUdjOcMkoEta7uMMxNfhe3FrScF-7H8",
+              "title": "Midnight Diner III",
+              "artist": "STRAWBRY",
+              "lyrics": null,
+              "artwork": {
+                "nft": null,
+                "uri": "ar://vkJEQV6KJVSDAUdjOcMkoEta7uMMxNfhe3FrScF-7H8",
+                "mimeType": "image/png"
+              },
+              "credits": null,
+              "license": null,
+              "project": null,
+              "version": "sound-edition-20220930",
+              "duration": 2727,
+              "mimeType": "audio/mpeg",
+              "publisher": null,
+              "attributes": [
+                {
+                  "value": "Song Edition",
+                  "trait_type": "Midnight Diner III"
+                },
+                {
+                  "value": "Limited",
+                  "trait_type": "Tier"
+                },
+                {
+                  "value": "Genesis"
+                }
+              ],
+              "visualizer": null,
+              "description": "My set from Midnight Diner III with Coop Records!\n\nAirdropped to Midnight Diner Pass holders and everyone who claimed a POAP at the event.",
+              "recordLabel": null,
+              "trackNumber": 1,
+              "external_url": "https://www.sound.xyz/strawbry/midnight-diner-iii",
+              "animation_url": "ar://L-4sEyLW4i3XcvQjK3XalRkYWIit9-z6RoYyhaqUah8",
+              "losslessAudio": "ar://L-4sEyLW4i3XcvQjK3XalRkYWIit9-z6RoYyhaqUah8",
+              "locationCreated": null,
+              "nftSerialNumber": 1,
+              "originalReleaseDate": null
+            },
+            "nftFactoryByNftFactoryId": {
+              "standard": "erc721"
+            },
+            "nftsProcessedTracksByNftId": {
+              "pageInfo": {
+                "hasNextPage": false
+              },
+              "nodes": [
+                {
+                  "nftId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/1",
+                  "processedTrackId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xe0aaa7f2bf8a20d087370c8cb9b2512aedaa45708d5a78fc2a9c1ea1585ed5d5"
+                }
+              ]
+            }
+          },
+          "n2": {
+            "id": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/2",
+            "chainId": "base",
+            "contractAddress": "0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E",
+            "tokenId": "2",
+            "tokenUri": "ar://OYVEYwrD0PDpbed5QaldXDUXSmV27eG66OfuEs7tKLo/2",
+            "tokenMetadataUri": null,
+            "mimeType": "audio/mpeg",
+            "createdAtTime": "2024-08-12T01:40:29+00:00",
+            "createdAtBlockNumber": "18318741",
+            "metadata": {
+              "bpm": null,
+              "key": null,
+              "isrc": null,
+              "name": "Midnight Diner III - Limited #2",
+              "tags": null,
+              "genre": "Electronic",
+              "image": "ar://vkJEQV6KJVSDAUdjOcMkoEta7uMMxNfhe3FrScF-7H8",
+              "title": "Midnight Diner III",
+              "artist": "STRAWBRY",
+              "lyrics": null,
+              "artwork": {
+                "nft": null,
+                "uri": "ar://vkJEQV6KJVSDAUdjOcMkoEta7uMMxNfhe3FrScF-7H8",
+                "mimeType": "image/png"
+              },
+              "credits": null,
+              "license": null,
+              "project": null,
+              "version": "sound-edition-20220930",
+              "duration": 2727,
+              "mimeType": "audio/mpeg",
+              "publisher": null,
+              "attributes": [
+                {
+                  "value": "Song Edition",
+                  "trait_type": "Midnight Diner III"
+                },
+                {
+                  "value": "Limited",
+                  "trait_type": "Tier"
+                },
+                {
+                  "value": "Genesis"
+                }
+              ],
+              "visualizer": null,
+              "description": "My set from Midnight Diner III with Coop Records!\n\nAirdropped to Midnight Diner Pass holders and everyone who claimed a POAP at the event.",
+              "recordLabel": null,
+              "trackNumber": 1,
+              "external_url": "https://www.sound.xyz/strawbry/midnight-diner-iii",
+              "animation_url": "ar://L-4sEyLW4i3XcvQjK3XalRkYWIit9-z6RoYyhaqUah8",
+              "losslessAudio": "ar://L-4sEyLW4i3XcvQjK3XalRkYWIit9-z6RoYyhaqUah8",
+              "locationCreated": null,
+              "nftSerialNumber": 2,
+              "originalReleaseDate": null
+            },
+            "nftFactoryByNftFactoryId": {
+              "standard": "erc721"
+            },
+            "nftsProcessedTracksByNftId": {
+              "pageInfo": {
+                "hasNextPage": false
+              },
+              "nodes": [
+                {
+                  "nftId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/2",
+                  "processedTrackId": "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xe0aaa7f2bf8a20d087370c8cb9b2512aedaa45708d5a78fc2a9c1ea1585ed5d5"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "presentNfts": [
+        "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/1",
+        "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/2"
+      ],
+      "otherTrackIds": [
+        "base/0x746c2Ea15aCF2C30C280823711ca6277Fe6f043E/0xe0aaa7f2bf8a20d087370c8cb9b2512aedaa45708d5a78fc2a9c1ea1585ed5d5"
+      ],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "base/0x746efD91eA3499a3959E54e4AEDc309E7158e4DD/0xc04bc1a1f7467155b14129d6cc6da0a497b940b2a3d2c3fc7419cdfbd8684179",
+      "query": "{n0:nftById(id:\"base/0x746efD91eA3499a3959E54e4AEDc309E7158e4DD/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0x746efD91eA3499a3959E54e4AEDc309E7158e4DD/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0x746efD91eA3499a3959E54e4AEDc309E7158e4DD/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:30.360Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "base/0x7B5FA5CB7Ab9EdCe2AED9aeC2511296E692f800e/0x6898bb3cc5d39d4a800ef6c40b6339000d88dce9b85b397ce0b1b5056d3981ba",
+      "query": "{n0:nftById(id:\"base/0x7B5FA5CB7Ab9EdCe2AED9aeC2511296E692f800e/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0x7B5FA5CB7Ab9EdCe2AED9aeC2511296E692f800e/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0x7B5FA5CB7Ab9EdCe2AED9aeC2511296E692f800e/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:32.147Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "base/0x7c0bdB0Cf876332258C66Bd04ae80e45F84eF473/0x1e240f02f41da3cb92e535cedfb3c124dad14c52421fc6ae230687efe2f13947",
+      "query": "{n0:nftById(id:\"base/0x7c0bdB0Cf876332258C66Bd04ae80e45F84eF473/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0x7c0bdB0Cf876332258C66Bd04ae80e45F84eF473/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0x7c0bdB0Cf876332258C66Bd04ae80e45F84eF473/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:33.701Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "base/0x833f21246FC62cf45fb54Bd62e2bD36680Acd406/0x21541856efa99ce6dd9eded3aab5de074be49c67d6d14cc6509f3ea8c1404352",
+      "query": "{n0:nftById(id:\"base/0x833f21246FC62cf45fb54Bd62e2bD36680Acd406/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0x833f21246FC62cf45fb54Bd62e2bD36680Acd406/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0x833f21246FC62cf45fb54Bd62e2bD36680Acd406/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:35.184Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "base/0xA3D25362AEDD9b59Ebe6b5892A11003496d1653C/0xd57f6bab68b675e6eb51ca214545e413625c5c21201989ac0ee8bbd6d57720de",
+      "query": "{n0:nftById(id:\"base/0xA3D25362AEDD9b59Ebe6b5892A11003496d1653C/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0xA3D25362AEDD9b59Ebe6b5892A11003496d1653C/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0xA3D25362AEDD9b59Ebe6b5892A11003496d1653C/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:36.857Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "base/0xBA924e9A66a064Fc632dc218e0476b980364E172/0xe586cc67b2ec80ef897c868a3684ef96ae83b98796556e21852b70cdf7991191",
+      "query": "{n0:nftById(id:\"base/0xBA924e9A66a064Fc632dc218e0476b980364E172/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0xBA924e9A66a064Fc632dc218e0476b980364E172/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0xBA924e9A66a064Fc632dc218e0476b980364E172/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:38.433Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "base/0xBf0e4d762De65ae6bf3c376172B0654973453383/0x370d19c146d435ef535837462f9df25092306cdc601b87f43279b626abec8ee2",
+      "query": "{n0:nftById(id:\"base/0xBf0e4d762De65ae6bf3c376172B0654973453383/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0xBf0e4d762De65ae6bf3c376172B0654973453383/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0xBf0e4d762De65ae6bf3c376172B0654973453383/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:40.007Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "base/0xE2c5f3A5da0dA5704CbCC1597E7854E426d3c68f/0xeba6216cd565eb9245e7bd0e7ef15e2e6d0f370f84c9ab70bb293b4823fb24b3",
+      "query": "{n0:nftById(id:\"base/0xE2c5f3A5da0dA5704CbCC1597E7854E426d3c68f/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0xE2c5f3A5da0dA5704CbCC1597E7854E426d3c68f/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0xE2c5f3A5da0dA5704CbCC1597E7854E426d3c68f/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:41.569Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0x5039ea4Db6BC8fdf1475CeC0e281933986340E1a/0x63e86d324c93375a25eb49db35d56143476748b13e089d5ad5956e2c273ffe74",
+      "query": "{n0:nftById(id:\"optimism/0x5039ea4Db6BC8fdf1475CeC0e281933986340E1a/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0x5039ea4Db6BC8fdf1475CeC0e281933986340E1a/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0x5039ea4Db6BC8fdf1475CeC0e281933986340E1a/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:43.056Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0x507a2B804A98AbcE0cF694526EF3275D5B348a35/0xea7f31ab0a5eb21c2552714a6b50ddacd58b359f49d8aadcbf674a06d4c9242a",
+      "query": "{n0:nftById(id:\"optimism/0x507a2B804A98AbcE0cF694526EF3275D5B348a35/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0x507a2B804A98AbcE0cF694526EF3275D5B348a35/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0x507a2B804A98AbcE0cF694526EF3275D5B348a35/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:44.619Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/0x91c575504229894a900706824d7bf86f8b37c567ea477172c45f71e0c28e60b6",
+      "query": "{n0:nftById(id:\"optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:46.194Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": {
+            "id": "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/1",
+            "chainId": "optimism",
+            "contractAddress": "0x507bdb3a67A7534b08B735aEcaBC829Af227C482",
+            "tokenId": "1",
+            "tokenUri": "ar://itawx9-rJdronDbW2Y0XnQh7aeLXJNGoiMjP-rgoyUI/1",
+            "tokenMetadataUri": null,
+            "mimeType": "audio/wave",
+            "createdAtTime": "2023-07-24T13:10:25+00:00",
+            "createdAtBlockNumber": "107302724",
+            "metadata": {
+              "bpm": 74,
+              "key": "G_MINOR",
+              "isrc": null,
+              "name": "Dreamy Afternoon #1",
+              "tags": null,
+              "genre": "Jazz & Blues",
+              "image": "ar://xWXMCVo-k1qrpEc9o_MeuOyoPz2OVTa1hkiFbWG-JTE",
+              "title": "Dreamy Afternoon",
+              "artist": "TDKILL.",
+              "lyrics": null,
+              "artwork": {
+                "nft": null,
+                "uri": "ar://xWXMCVo-k1qrpEc9o_MeuOyoPz2OVTa1hkiFbWG-JTE",
+                "mimeType": "image/png"
+              },
+              "credits": null,
+              "license": "CREATIVE_COMMONS",
+              "project": null,
+              "version": "sound-edition-20220930",
+              "duration": 199,
+              "mimeType": "audio/wave",
+              "publisher": null,
+              "attributes": [
+                {
+                  "value": "Song Edition",
+                  "trait_type": "Dreamy Afternoon"
+                }
+              ],
+              "visualizer": null,
+              "description": "In a dreamy afternoon, the air was filled with music, blending seamlessly with nature's whispers. It transported hearts to a realm of tranquility and reflection. Time stood still, worries dissolved, and only peace remained. The enchanting harmony echoed, a gentle reminder of serenity in a bustling world.\n\nSong name : Dreamy Afternoon\nProd. by TDKILL.\n\nJoin the collectors chat : https://guild.xyz/tdkill-collectors\n",
+              "recordLabel": null,
+              "trackNumber": 1,
+              "external_url": "https://www.sound.xyz/tdkillbeats/dreamy-afternoon",
+              "animation_url": "ar://vvemyB0eUXhn38DizV3cg-4TM-DKlPCnQt7yeUq_JT0",
+              "losslessAudio": "ar://vvemyB0eUXhn38DizV3cg-4TM-DKlPCnQt7yeUq_JT0",
+              "locationCreated": "th",
+              "nftSerialNumber": 1,
+              "originalReleaseDate": null
+            },
+            "nftFactoryByNftFactoryId": {
+              "standard": "erc721"
+            },
+            "nftsProcessedTracksByNftId": {
+              "pageInfo": {
+                "hasNextPage": false
+              },
+              "nodes": [
+                {
+                  "nftId": "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/1",
+                  "processedTrackId": "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/0xf0fe3e706b97b3ae887c8acbb49580d3d1c662a5c25f0ac50aa7c46c6915a74c"
+                }
+              ]
+            }
+          },
+          "n2": {
+            "id": "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/2",
+            "chainId": "optimism",
+            "contractAddress": "0x507bdb3a67A7534b08B735aEcaBC829Af227C482",
+            "tokenId": "2",
+            "tokenUri": "ar://itawx9-rJdronDbW2Y0XnQh7aeLXJNGoiMjP-rgoyUI/2",
+            "tokenMetadataUri": null,
+            "mimeType": "audio/wave",
+            "createdAtTime": "2023-07-24T13:31:47+00:00",
+            "createdAtBlockNumber": "107303365",
+            "metadata": {
+              "bpm": 74,
+              "key": "G_MINOR",
+              "isrc": null,
+              "name": "Dreamy Afternoon #2",
+              "tags": null,
+              "genre": "Jazz & Blues",
+              "image": "ar://xWXMCVo-k1qrpEc9o_MeuOyoPz2OVTa1hkiFbWG-JTE",
+              "title": "Dreamy Afternoon",
+              "artist": "TDKILL.",
+              "lyrics": null,
+              "artwork": {
+                "nft": null,
+                "uri": "ar://xWXMCVo-k1qrpEc9o_MeuOyoPz2OVTa1hkiFbWG-JTE",
+                "mimeType": "image/png"
+              },
+              "credits": null,
+              "license": "CREATIVE_COMMONS",
+              "project": null,
+              "version": "sound-edition-20220930",
+              "duration": 199,
+              "mimeType": "audio/wave",
+              "publisher": null,
+              "attributes": [
+                {
+                  "value": "Song Edition",
+                  "trait_type": "Dreamy Afternoon"
+                }
+              ],
+              "visualizer": null,
+              "description": "In a dreamy afternoon, the air was filled with music, blending seamlessly with nature's whispers. It transported hearts to a realm of tranquility and reflection. Time stood still, worries dissolved, and only peace remained. The enchanting harmony echoed, a gentle reminder of serenity in a bustling world.\n\nSong name : Dreamy Afternoon\nProd. by TDKILL.\n\nJoin the collectors chat : https://guild.xyz/tdkill-collectors\n",
+              "recordLabel": null,
+              "trackNumber": 1,
+              "external_url": "https://www.sound.xyz/tdkillbeats/dreamy-afternoon",
+              "animation_url": "ar://vvemyB0eUXhn38DizV3cg-4TM-DKlPCnQt7yeUq_JT0",
+              "losslessAudio": "ar://vvemyB0eUXhn38DizV3cg-4TM-DKlPCnQt7yeUq_JT0",
+              "locationCreated": "th",
+              "nftSerialNumber": 2,
+              "originalReleaseDate": null
+            },
+            "nftFactoryByNftFactoryId": {
+              "standard": "erc721"
+            },
+            "nftsProcessedTracksByNftId": {
+              "pageInfo": {
+                "hasNextPage": false
+              },
+              "nodes": [
+                {
+                  "nftId": "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/2",
+                  "processedTrackId": "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/0xf0fe3e706b97b3ae887c8acbb49580d3d1c662a5c25f0ac50aa7c46c6915a74c"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "presentNfts": [
+        "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/1",
+        "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/2"
+      ],
+      "otherTrackIds": [
+        "optimism/0x507bdb3a67A7534b08B735aEcaBC829Af227C482/0xf0fe3e706b97b3ae887c8acbb49580d3d1c662a5c25f0ac50aa7c46c6915a74c"
+      ],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0x60F37590Ae6e9FFe87880d780fbC1c3D3B4E1fD1/0x1f4b61274b46ccf243993cbc643c81e706c181e66e3326a5eb44d1e8635a2155",
+      "query": "{n0:nftById(id:\"optimism/0x60F37590Ae6e9FFe87880d780fbC1c3D3B4E1fD1/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0x60F37590Ae6e9FFe87880d780fbC1c3D3B4E1fD1/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0x60F37590Ae6e9FFe87880d780fbC1c3D3B4E1fD1/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:47.667Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0x7757125255E322c9d60E7aba89ff244d05ED55FE/0x4eb3d641174d57a8841e7010a198b383d18c264c1dc6281bb562839ac21ef048",
+      "query": "{n0:nftById(id:\"optimism/0x7757125255E322c9d60E7aba89ff244d05ED55FE/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0x7757125255E322c9d60E7aba89ff244d05ED55FE/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0x7757125255E322c9d60E7aba89ff244d05ED55FE/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:49.144Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0x775965FcFD4bfD2B7f8BB9867AF624432CE95e03/0x2ae16287234878c536e0da0a8a8680dc86d84fa4891303d10d2a5996715bc41e",
+      "query": "{n0:nftById(id:\"optimism/0x775965FcFD4bfD2B7f8BB9867AF624432CE95e03/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0x775965FcFD4bfD2B7f8BB9867AF624432CE95e03/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0x775965FcFD4bfD2B7f8BB9867AF624432CE95e03/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:50.625Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0x775F3e66E6AcCddccbe209bE08E79A3Fb87d7514/0xa4a138ad2c85f9f728d9b3b0eea171459824937af8f0b47d6a267414feaaefc1",
+      "query": "{n0:nftById(id:\"optimism/0x775F3e66E6AcCddccbe209bE08E79A3Fb87d7514/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0x775F3e66E6AcCddccbe209bE08E79A3Fb87d7514/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0x775F3e66E6AcCddccbe209bE08E79A3Fb87d7514/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:52.135Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0x9a05F4c3B39fF90354f2d667e1c84313e96D9727/0xcffe40d27105250c9f44a7b27b1db4abd06fb367d5283804936c332d604dd120",
+      "query": "{n0:nftById(id:\"optimism/0x9a05F4c3B39fF90354f2d667e1c84313e96D9727/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0x9a05F4c3B39fF90354f2d667e1c84313e96D9727/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0x9a05F4c3B39fF90354f2d667e1c84313e96D9727/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:53.640Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0x9a0Af44201fff597Ac26e67aA093d509ecb91847/0xab92ff85d6ca9a351ca18e8b155e223fdbea042e2ee19defcb558a91a5aca058",
+      "query": "{n0:nftById(id:\"optimism/0x9a0Af44201fff597Ac26e67aA093d509ecb91847/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0x9a0Af44201fff597Ac26e67aA093d509ecb91847/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0x9a0Af44201fff597Ac26e67aA093d509ecb91847/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:55.207Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0x9a20845edBf396C4d95dcB395c40eD309f829DCb/0x9f1e960b97b85ce91a48b17641a0ac84173127fb0b2d7c1467c1b1d2ad6d97ed",
+      "query": "{n0:nftById(id:\"optimism/0x9a20845edBf396C4d95dcB395c40eD309f829DCb/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0x9a20845edBf396C4d95dcB395c40eD309f829DCb/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0x9a20845edBf396C4d95dcB395c40eD309f829DCb/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:56.780Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/0x5d598c4e3cc7eabf6f2d3dddf3ae99f28a0177c69c45e08437421efc7962e88a",
+      "query": "{n0:nftById(id:\"optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:35:58.373Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": {
+            "id": "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/1",
+            "chainId": "optimism",
+            "contractAddress": "0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910",
+            "tokenId": "1",
+            "tokenUri": "ar://YdLCJTW8pbTqdAYy3omM6SCt9Uu2wlAuZSw7I0l2qE4/1",
+            "tokenMetadataUri": null,
+            "mimeType": "audio/wave",
+            "createdAtTime": "2024-01-09T21:00:05+00:00",
+            "createdAtBlockNumber": "114617614",
+            "metadata": {
+              "bpm": null,
+              "key": null,
+              "isrc": null,
+              "name": "My Way - Limited #1",
+              "tags": null,
+              "genre": "Hip-hop & Rap",
+              "image": "ar://TLhA9gF6AFs3zdOoFHhUrmH7NwoA42WNqxAPTB7rXuU",
+              "title": "My Way",
+              "artist": "Ryan Todd",
+              "lyrics": {
+                "nft": null,
+                "text": "VERSE\n\nI was living life worried 'bout what they might say [talk]\nI was in the wrong now I’ve been spending time the right way [walk]\nLockdown or not, she gonna hop up on that flight tonight [flying]\nCatch up with my dreams, up the road I saw that cross alight [shining]\n\nFeeling like they feeling like they really Jesus [H Christ]\nNow I’m thinking that they might just really need us [just might]\nAnd they telling me their dirty little secrets\nGot me Feeling like I might not wanna know [no, no]\n\nB*tch I thought you didn’t know [thought you didn’t know]\nlingering so much, I thought you’d never go [thought you’d never go]\nThey been telling me I need to slow my role [same]\nIf it gets you high, trust it’s gonna get you low [real low]\n\nIf you make a thing [hey] now it needs to be seen\nIf you got a dream [hey] you probably need to live the dream\nAnd to live the dream [hey] you might just need to cut the scene\nIf your girl is dirty, trade her in, get you one that’s clean [bye bye]\n\nLiving in double time, doing them drugs to maintain [maintain]\nMoving too fast, stuck in a trap, it’s just really the same thing [same thing]\nSeen these lame brains only chasing paper trains\nSame plane, mid-air Im’a find a way to change lanes [Im’a change lanes]\n\n\nCHORUS\n\nAll my feelings so crass dealing with the game [game]\nI was moving so fast running from the pain [pain]\nCouldn’t focus wondering, will it really change? [change]\nNow I’m feeling so glad that I made my way [my way]\n\nNow I’m feeling so glad that I made my way [my way]\n\n(Repeat Chorus)\n\n\nVERSE\n\nDon’t need ‘em no way, not on any old day [nope]\nNo more living my days stuck up on minimum wage [selling dope]\nI’m gonna hit ‘em with rage and Im’a hit ‘em with plays [whoa]\n\nAll of my family living their dreams, all while increasing their means [that that]\nThinking they hand me a L,  b*tch and I’m giving ‘em hell right back [back back]\nSometimes saying them things, I wish that I coulda taken it back back [back back]\nSometimes you can’t take it back, you gotta go forward rap rap [rap rap]\n\nThey gonna hit your door, they gonna hit your self esteem [watch out]\nThey gonna talk their sick things but they love your 16's\nThey gonna talk their shit but call somebody else to steam clean\nWhen it’s said and done they’ll probably put you on the dream team [starting]\n\nI’m so clean, bust up in her mouth that’s listerine [Ah!]\nUsed to be just be fiend, now I travel just to sing \nLet me get my rhyme straight, write it down, it's history [that’s a wrap]\nFeel it in the climate, shout out to that mystery\n\nShout out to that Mystery\nShout out Mr. E\n\n\nCHORUS\n\nAll my feelings so crass dealing with the game [game]\nI was moving so fast running from the pain [pain]\nCouldn’t focus wondering, will it really change? [change]\nNow I’m feeling so glad that I made my way [my way]\n\nNow I’m feeling so glad that I made my way [my way]\n\n(Repeat Chorus)"
+              },
+              "artwork": {
+                "nft": null,
+                "uri": "ar://TLhA9gF6AFs3zdOoFHhUrmH7NwoA42WNqxAPTB7rXuU",
+                "mimeType": "image/png"
+              },
+              "credits": null,
+              "license": "ALL_RIGHTS_RESERVED",
+              "project": null,
+              "version": "sound-edition-20220930",
+              "duration": 188,
+              "mimeType": "audio/wave",
+              "publisher": null,
+              "attributes": [
+                {
+                  "value": "Song Edition",
+                  "trait_type": "My Way"
+                },
+                {
+                  "value": "Limited",
+                  "trait_type": "Tier"
+                },
+                {
+                  "value": "Genesis"
+                }
+              ],
+              "visualizer": null,
+              "description": "This song was inspired by the feeling of wanting to forge my own path in life, especially in regard to my musical creations. Like many artists, I have experienced frustration in the past trying to “make it” in a music industry that encourages toxic behavior. \n\nI have found inspiration from the blockchain model and the enabling of creators to truly own and monetize their work at a greater level, while connecting with fans in a more genuine way. I am excited to release my first on-chain song and look forward to this new era of being able to do things \"My Way\".\n\nThis song was recorded in Los Angeles, California by Devin Bing and mixed & mastered by Matty Harris. Featuring production by Ryan Todd and Willie B with additional vocal production by Devin Bing. The album artwork was created by Ryan Todd & Son.",
+              "recordLabel": null,
+              "trackNumber": 1,
+              "external_url": "https://www.sound.xyz/ryantoddworld/my-way",
+              "animation_url": "ar://tDijemyQ-TZPgupneh4jxs2yPhptKFZsmBJOknRkbls",
+              "losslessAudio": "ar://tDijemyQ-TZPgupneh4jxs2yPhptKFZsmBJOknRkbls",
+              "locationCreated": "us",
+              "nftSerialNumber": 1,
+              "originalReleaseDate": null
+            },
+            "nftFactoryByNftFactoryId": {
+              "standard": "erc721"
+            },
+            "nftsProcessedTracksByNftId": {
+              "pageInfo": {
+                "hasNextPage": false
+              },
+              "nodes": [
+                {
+                  "nftId": "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/1",
+                  "processedTrackId": "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/0x88eb647127de7627b444ac416d42e867e2d85df23e2c7f646c3f71f3eb1d2e7f"
+                }
+              ]
+            }
+          },
+          "n2": {
+            "id": "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/2",
+            "chainId": "optimism",
+            "contractAddress": "0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910",
+            "tokenId": "2",
+            "tokenUri": "ar://zAVqQANItwuYY0nlchY4Zxe-1o0ktQhyJb2bR9gyv3k/2",
+            "tokenMetadataUri": null,
+            "mimeType": "audio/wave",
+            "createdAtTime": "2024-04-14T00:06:53+00:00",
+            "createdAtBlockNumber": "118727218",
+            "metadata": {
+              "bpm": null,
+              "key": null,
+              "isrc": null,
+              "name": "My Way - Limited #2",
+              "tags": null,
+              "genre": "Hip-hop & Rap",
+              "image": "ar://TLhA9gF6AFs3zdOoFHhUrmH7NwoA42WNqxAPTB7rXuU",
+              "title": "My Way",
+              "artist": "Ryan Todd",
+              "lyrics": {
+                "nft": null,
+                "text": "VERSE\n\nI was living life worried 'bout what they might say [talk]\nI was in the wrong now I’ve been spending time the right way [walk]\nLockdown or not, she gonna hop up on that flight tonight [flying]\nCatch up with my dreams, up the road I saw that cross alight [shining]\n\nFeeling like they feeling like they really Jesus [H Christ]\nNow I’m thinking that they might just really need us [just might]\nAnd they telling me their dirty little secrets\nGot me Feeling like I might not wanna know [no, no]\n\nB*tch I thought you didn’t know [thought you didn’t know]\nlingering so much, I thought you’d never go [thought you’d never go]\nThey been telling me I need to slow my role [same]\nIf it gets you high, trust it’s gonna get you low [real low]\n\nIf you make a thing [hey] now it needs to be seen\nIf you got a dream [hey] you probably need to live the dream\nAnd to live the dream [hey] you might just need to cut the scene\nIf your girl is dirty, trade her in, get you one that’s clean [bye bye]\n\nLiving in double time, doing them drugs to maintain [maintain]\nMoving too fast, stuck in a trap, it’s just really the same thing [same thing]\nSeen these lame brains only chasing paper trains\nSame plane, mid-air Im’a find a way to change lanes [Im’a change lanes]\n\n\nCHORUS\n\nAll my feelings so crass dealing with the game [game]\nI was moving so fast running from the pain [pain]\nCouldn’t focus wondering, will it really change? [change]\nNow I’m feeling so glad that I made my way [my way]\n\nNow I’m feeling so glad that I made my way [my way]\n\n(Repeat Chorus)\n\n\nVERSE\n\nDon’t need ‘em no way, not on any old day [nope]\nNo more living my days stuck up on minimum wage [selling dope]\nI’m gonna hit ‘em with rage and Im’a hit ‘em with plays [whoa]\n\nAll of my family living their dreams, all while increasing their means [that that]\nThinking they hand me a L,  b*tch and I’m giving ‘em hell right back [back back]\nSometimes saying them things, I wish that I coulda taken it back back [back back]\nSometimes you can’t take it back, you gotta go forward rap rap [rap rap]\n\nThey gonna hit your door, they gonna hit your self esteem [watch out]\nThey gonna talk their sick things but they love your 16's\nThey gonna talk their shit but call somebody else to steam clean\nWhen it’s said and done they’ll probably put you on the dream team [starting]\n\nI’m so clean, bust up in her mouth that’s listerine [Ah!]\nUsed to be just be fiend, now I travel just to sing \nLet me get my rhyme straight, write it down, it's history [that’s a wrap]\nFeel it in the climate, shout out to that mystery\n\nShout out to that Mystery\nShout out Mr. E\n\n\nCHORUS\n\nAll my feelings so crass dealing with the game [game]\nI was moving so fast running from the pain [pain]\nCouldn’t focus wondering, will it really change? [change]\nNow I’m feeling so glad that I made my way [my way]\n\nNow I’m feeling so glad that I made my way [my way]\n\n(Repeat Chorus)"
+              },
+              "artwork": {
+                "nft": null,
+                "uri": "ar://TLhA9gF6AFs3zdOoFHhUrmH7NwoA42WNqxAPTB7rXuU",
+                "mimeType": "image/png"
+              },
+              "credits": null,
+              "license": "ALL_RIGHTS_RESERVED",
+              "project": null,
+              "version": "sound-edition-20220930",
+              "duration": 188,
+              "mimeType": "audio/wave",
+              "publisher": null,
+              "attributes": [
+                {
+                  "value": "Song Edition",
+                  "trait_type": "My Way"
+                },
+                {
+                  "value": "Limited",
+                  "trait_type": "Tier"
+                },
+                {
+                  "value": "Genesis"
+                }
+              ],
+              "visualizer": null,
+              "description": "This song was inspired by the feeling of wanting to forge my own path in life, especially in regard to my musical creations. Like many artists, I have experience frustration with the traditional music industry model, and have found inspiration in the new tools web3 and blockchain offer artists in regards to monetizing their work and connecting with fans.\n\nThis song was recorded in Los Angeles, California by Devin Bing and mixed & mastered by Matty Harris. Featuring production by Ryan Todd and Willie B with additional vocal production by Devin Bing. The album artwork was created by Ryan Todd & Son.",
+              "recordLabel": null,
+              "trackNumber": 1,
+              "external_url": "https://www.sound.xyz/ryantoddworld/my-way",
+              "animation_url": "ar://6SX7AzzmFE3OZCzPzHaPFoEI9zPvjRQ58coHNiZsm3o",
+              "losslessAudio": "ar://6SX7AzzmFE3OZCzPzHaPFoEI9zPvjRQ58coHNiZsm3o",
+              "locationCreated": "us",
+              "nftSerialNumber": 2,
+              "originalReleaseDate": null
+            },
+            "nftFactoryByNftFactoryId": {
+              "standard": "erc721"
+            },
+            "nftsProcessedTracksByNftId": {
+              "pageInfo": {
+                "hasNextPage": false
+              },
+              "nodes": [
+                {
+                  "nftId": "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/2",
+                  "processedTrackId": "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/0x5d598c4e3cc7eabf6f2d3dddf3ae99f28a0177c69c45e08437421efc7962e88a"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "presentNfts": [
+        "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/1",
+        "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/2"
+      ],
+      "otherTrackIds": [
+        "optimism/0xA3e48F40cFFF1D00c3d899570F54f6980fBe7910/0x88eb647127de7627b444ac416d42e867e2d85df23e2c7f646c3f71f3eb1d2e7f"
+      ],
+      "partial": false,
+      "status": "resolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xBf033088694266e91e996Dd15f5Af1E3bdeC1c7A/0x6bdda842da711b41dfcb3032cfa572e9f708f116c8fa81aa56b137ddeaae04cc",
+      "query": "{n0:nftById(id:\"optimism/0xBf033088694266e91e996Dd15f5Af1E3bdeC1c7A/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xBf033088694266e91e996Dd15f5Af1E3bdeC1c7A/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xBf033088694266e91e996Dd15f5Af1E3bdeC1c7A/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:00.091Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xBf17442503ec7F63b8F1573883bC15EAC9E2A762/0x01e5f77dc32e3fe1d52684ec3f55347d48243909da1e3dced9db82729ad36aa4",
+      "query": "{n0:nftById(id:\"optimism/0xBf17442503ec7F63b8F1573883bC15EAC9E2A762/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xBf17442503ec7F63b8F1573883bC15EAC9E2A762/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xBf17442503ec7F63b8F1573883bC15EAC9E2A762/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:01.601Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xc283dC2D3BC8080595fa5B3E7Dd3E73F54a1ecCB/0xf6412ea52499af285d937a8d1e8f6f097f717b9284df621701f6b3f2a1ba6b93",
+      "query": "{n0:nftById(id:\"optimism/0xc283dC2D3BC8080595fa5B3E7Dd3E73F54a1ecCB/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xc283dC2D3BC8080595fa5B3E7Dd3E73F54a1ecCB/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xc283dC2D3BC8080595fa5B3E7Dd3E73F54a1ecCB/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:03.099Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xC2917e8Df7f721a06679D6ca65328a407E266638/0x77d632234c6927db3cd87ad08dea8b27c77c20da6fd3107ff9dd3f9877880c3f",
+      "query": "{n0:nftById(id:\"optimism/0xC2917e8Df7f721a06679D6ca65328a407E266638/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xC2917e8Df7f721a06679D6ca65328a407E266638/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xC2917e8Df7f721a06679D6ca65328a407E266638/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:04.637Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xc294A98E7ea2663c44F8B57247461dB2dAbe525A/0x0aa54f19c0cec97f2a4c416b5b078e078be42d0c1ffbdcf286a575e153224e41",
+      "query": "{n0:nftById(id:\"optimism/0xc294A98E7ea2663c44F8B57247461dB2dAbe525A/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xc294A98E7ea2663c44F8B57247461dB2dAbe525A/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xc294A98E7ea2663c44F8B57247461dB2dAbe525A/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:06.115Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xc8D8d5f7c5463578B6A546f668a23c7fc8e731Fe/0x78b4636ad6c2578fa238fa22287244b1cd7f056faa35a90847919cd20c720b85",
+      "query": "{n0:nftById(id:\"optimism/0xc8D8d5f7c5463578B6A546f668a23c7fc8e731Fe/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xc8D8d5f7c5463578B6A546f668a23c7fc8e731Fe/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xc8D8d5f7c5463578B6A546f668a23c7fc8e731Fe/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:07.582Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xC90aD796C289f24624877398A2d35Bf67511CA99/0xb756b59aff7cfda373023866a758bb1b7950f08586b7d8d4afd1c7b7abeefa2f",
+      "query": "{n0:nftById(id:\"optimism/0xC90aD796C289f24624877398A2d35Bf67511CA99/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xC90aD796C289f24624877398A2d35Bf67511CA99/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xC90aD796C289f24624877398A2d35Bf67511CA99/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:09.041Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xc90BA08CFb17774512CCF449BAEa6D0Aae50C2e9/0xea225a7f433a91c25cff7e8665520bbf9306f8ca794803730bc043e727b70be6",
+      "query": "{n0:nftById(id:\"optimism/0xc90BA08CFb17774512CCF449BAEa6D0Aae50C2e9/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xc90BA08CFb17774512CCF449BAEa6D0Aae50C2e9/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xc90BA08CFb17774512CCF449BAEa6D0Aae50C2e9/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:10.499Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xC91079145D3435CBbBE54113EBa5782750feeB19/0xbd6aee4eba003cd15f203a1d779bad49dd9fcdc9a845743dfe1794662a54101a",
+      "query": "{n0:nftById(id:\"optimism/0xC91079145D3435CBbBE54113EBa5782750feeB19/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xC91079145D3435CBbBE54113EBa5782750feeB19/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xC91079145D3435CBbBE54113EBa5782750feeB19/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:11.977Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xC917468397717D62B0E685dc7062eE2AC9f2cF1C/0xebb3418e404ccdd5acf233618d0328e3a21035c571372b97aed41471150bc0f6",
+      "query": "{n0:nftById(id:\"optimism/0xC917468397717D62B0E685dc7062eE2AC9f2cF1C/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xC917468397717D62B0E685dc7062eE2AC9f2cF1C/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xC917468397717D62B0E685dc7062eE2AC9f2cF1C/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:13.456Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xc91Aa0775E53D3906cC613B0cd30e7F95B81ddd2/0xfac7e1c6571488509a13398dc6a9e5c48b54b8bee962e295c2e43a0f2819aa09",
+      "query": "{n0:nftById(id:\"optimism/0xc91Aa0775E53D3906cC613B0cd30e7F95B81ddd2/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xc91Aa0775E53D3906cC613B0cd30e7F95B81ddd2/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xc91Aa0775E53D3906cC613B0cd30e7F95B81ddd2/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:15.027Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xc929B57456Cf7C15D7abdEC87E7c21A1b6D18933/0x4f36120aa28f97c3a84f0fd68ad865618573974d4f78e73088090149f8eadf91",
+      "query": "{n0:nftById(id:\"optimism/0xc929B57456Cf7C15D7abdEC87E7c21A1b6D18933/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xc929B57456Cf7C15D7abdEC87E7c21A1b6D18933/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xc929B57456Cf7C15D7abdEC87E7c21A1b6D18933/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:16.601Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xD19B8CC26fCD09182207745cEf4976dDfCb463De/0x8e19edc467f3983dd4f37c1db48b6c2ee31907b28be7b67f1a81bc950724fb2f",
+      "query": "{n0:nftById(id:\"optimism/0xD19B8CC26fCD09182207745cEf4976dDfCb463De/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xD19B8CC26fCD09182207745cEf4976dDfCb463De/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xD19B8CC26fCD09182207745cEf4976dDfCb463De/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:18.172Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xd1AD49cb7A2F5B1c4d508E14E7776E0a703eCE9e/0x10c49caf2fc7d74d93898c4fb220944ed780520d6ad1a375061a4f940ffb4984",
+      "query": "{n0:nftById(id:\"optimism/0xd1AD49cb7A2F5B1c4d508E14E7776E0a703eCE9e/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xd1AD49cb7A2F5B1c4d508E14E7776E0a703eCE9e/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xd1AD49cb7A2F5B1c4d508E14E7776E0a703eCE9e/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:19.840Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xD1aDd2cACD5Db984Cb785c84C8ca4a80109A7a00/0x0850d5704900ca9e60ffb02bfeddb7927d26d68f3caa62f57e646aa73e7f2d45",
+      "query": "{n0:nftById(id:\"optimism/0xD1aDd2cACD5Db984Cb785c84C8ca4a80109A7a00/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xD1aDd2cACD5Db984Cb785c84C8ca4a80109A7a00/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xD1aDd2cACD5Db984Cb785c84C8ca4a80109A7a00/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:21.421Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xD1b47a56d9FA7B3984B466c35F84573341AA8085/0x85465da1350e3d32999fa01fdff0d70d90ace1ed14aa6b2485e1d7efcfa7a4ad",
+      "query": "{n0:nftById(id:\"optimism/0xD1b47a56d9FA7B3984B466c35F84573341AA8085/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xD1b47a56d9FA7B3984B466c35F84573341AA8085/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xD1b47a56d9FA7B3984B466c35F84573341AA8085/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:22.989Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xD1Ee5cbE1253c9fDaFF56e683809D66f0BE9851B/0x10316704b5c4230b293efa26f8aa553400fd3f227c49631af1297d3798160175",
+      "query": "{n0:nftById(id:\"optimism/0xD1Ee5cbE1253c9fDaFF56e683809D66f0BE9851B/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xD1Ee5cbE1253c9fDaFF56e683809D66f0BE9851B/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xD1Ee5cbE1253c9fDaFF56e683809D66f0BE9851B/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:24.471Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xd1F7A2f8258738d32a15CbF294E0202b7dEC7b95/0x100462a94f6b916e6b5871c7910dd12b1c4eebdde1369a72ec9f5ef9ca25047a",
+      "query": "{n0:nftById(id:\"optimism/0xd1F7A2f8258738d32a15CbF294E0202b7dEC7b95/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xd1F7A2f8258738d32a15CbF294E0202b7dEC7b95/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xd1F7A2f8258738d32a15CbF294E0202b7dEC7b95/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:26.037Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xD1FB3D4F7d62cf95d646306AF96042F13b51EaE4/0x93ba9ebad629eb3897a3e2ef2f22ca1c29927847d1206047bfe8439e356afb05",
+      "query": "{n0:nftById(id:\"optimism/0xD1FB3D4F7d62cf95d646306AF96042F13b51EaE4/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xD1FB3D4F7d62cf95d646306AF96042F13b51EaE4/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xD1FB3D4F7d62cf95d646306AF96042F13b51EaE4/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:27.504Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xEe69Ce5E90b484912cD1923a1714C5DCE7e0bD96/0x7b604bd0f32bcf9a6d11ae5c14a4964724070fee217f506926978f86e773975a",
+      "query": "{n0:nftById(id:\"optimism/0xEe69Ce5E90b484912cD1923a1714C5DCE7e0bD96/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xEe69Ce5E90b484912cD1923a1714C5DCE7e0bD96/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xEe69Ce5E90b484912cD1923a1714C5DCE7e0bD96/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:28.967Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/the-luminarys-path-a-journey-of-ai-community-and-creativity",
+      "query": "{n0:nftById(id:\"base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:30.483Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": {
+            "id": "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/1",
+            "chainId": "base",
+            "contractAddress": "0x91b39B1691cf1F6b61998CBD08707B59fb938A86",
+            "tokenId": "1",
+            "tokenUri": "ar://_H2VP2AiXxPrJMwvq821WK9CWv20pllvKn5dGTWh8F4",
+            "tokenMetadataUri": null,
+            "mimeType": null,
+            "createdAtTime": "2025-03-18T21:31:43+00:00",
+            "createdAtBlockNumber": "27772078",
+            "metadata": {
+              "name": "Art in the Infinite Garden",
+              "image": "ar://tIrVYW0ShmH9EFRJLs2zDht59PssDu4hTxSBGItwQfs/yQdQQLKxqiKdhvhLiaAfjg-IFEEijD4r8O9DpqYJ_LM.png",
+              "artwork": {
+                "uri": "ar://tIrVYW0ShmH9EFRJLs2zDht59PssDu4hTxSBGItwQfs/yQdQQLKxqiKdhvhLiaAfjg-IFEEijD4r8O9DpqYJ_LM.png",
+                "kind": "IMAGE",
+                "type": "image/png",
+                "license": "ALL_RIGHTS_RESERVED"
+              },
+              "credits": [
+                {
+                  "name": "Garance",
+                  "role": "GUEST"
+                },
+                {
+                  "name": "Naaate",
+                  "role": "GUEST"
+                },
+                {
+                  "name": "Naaate",
+                  "role": "PRODUCTION"
+                }
+              ],
+              "podcast": "We are Lum",
+              "version": "1.1.0",
+              "collection": "We are Lum",
+              "properties": {
+                "Podcast": "We are Lum",
+                "guest_1": {
+                  "name": "Guest",
+                  "value": "Garance"
+                },
+                "guest_2": {
+                  "name": "Guest",
+                  "value": "Naaate"
+                },
+                "Collection": "We are Lum"
+              },
+              "description": "Garance walks us through evolving projects like the Solaires sci-fi universe and the Lumi AI art collective, exploring the endless possibilities of collaborative imagination.\n\n00:42 Introduction and Personal Background\n01:09 Entering the NFT and Crypto Space\n01:35 The Solarus Sci-Fi Project - https://www.solaires.art/en/home/\n02:39 LIT - https://warpcast.com/~/channel/l-i-t\n04:57 LUMI - https://warpcast.com/~/channel/lumi\n09:30 Challenges and Opportunities in Decentralized Art\n16:48 The Role of Community in Blockchain Art\n19:31 Future Directions and Local Engagement\n22:32 Final Thoughts and Getting Involved\n\nMore place to get involved:\nhttps://warpcast.com/~/channel/lum\nhttps://warpcast.com/~/channel/luminous\nhttps://warpcast.com/~/channel/wearelum",
+              "publishedAt": "2025-03-18T07:00:00.000Z",
+              "youtube_url": "https://youtu.be/_3BqYMgCC1U",
+              "episodeTitle": "Art in the Infinite Garden",
+              "external_url": "https://pods.media/episode/4e4b2c48-1ac9-41bb-a9a3-659eaa956ed6",
+              "primaryMedia": {
+                "uri": "ar://adgFp6TA22RkbHG3pQ-3BtpJNoLOePj4mCnQ9UoGreg/Xw6MujYK6aSYr9za5oSixyG9aVF7Kj4sN7m67RBvJxk.mp3",
+                "kind": "AUDIO",
+                "type": "audio/mpeg",
+                "license": "ALL_RIGHTS_RESERVED",
+                "duration": 1427.800816
+              },
+              "animation_url": "ar://adgFp6TA22RkbHG3pQ-3BtpJNoLOePj4mCnQ9UoGreg/Xw6MujYK6aSYr9za5oSixyG9aVF7Kj4sN7m67RBvJxk.mp3",
+              "episodeNumber": 1
+            },
+            "nftFactoryByNftFactoryId": {
+              "standard": "erc1155"
+            },
+            "nftsProcessedTracksByNftId": {
+              "pageInfo": {
+                "hasNextPage": false
+              },
+              "nodes": [
+                {
+                  "nftId": "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/1",
+                  "processedTrackId": "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/art-in-the-infinite-garden"
+                }
+              ]
+            }
+          },
+          "n2": {
+            "id": "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/2",
+            "chainId": "base",
+            "contractAddress": "0x91b39B1691cf1F6b61998CBD08707B59fb938A86",
+            "tokenId": "2",
+            "tokenUri": "ar://qIBKJOYWrrFWlZThrdFLRAR7Ac0S9NG8RMrRealz5W0",
+            "tokenMetadataUri": null,
+            "mimeType": null,
+            "createdAtTime": "2025-03-25T19:32:13+00:00",
+            "createdAtBlockNumber": "28070893",
+            "metadata": {
+              "name": "The Luminary’s Path: A Journey of AI, Community, and Creativity",
+              "image": "ar://yJYAOpOjlxhvthxY54ruwB4hkElxmSHGpf7bZAuHapI/dJC37ZYs6-Pj9PDCqmWCFTm5HRgGr6zVRtD591HfKtQ.png",
+              "artwork": {
+                "uri": "ar://yJYAOpOjlxhvthxY54ruwB4hkElxmSHGpf7bZAuHapI/dJC37ZYs6-Pj9PDCqmWCFTm5HRgGr6zVRtD591HfKtQ.png",
+                "kind": "IMAGE",
+                "type": "image/png",
+                "license": "ALL_RIGHTS_RESERVED"
+              },
+              "credits": [
+                {
+                  "name": "Sheena",
+                  "role": "GUEST"
+                },
+                {
+                  "name": "Naaate",
+                  "role": "HOST"
+                }
+              ],
+              "podcast": "We are Lum",
+              "version": "1.1.0",
+              "collection": "We are Lum",
+              "properties": {
+                "host_1": {
+                  "name": "Host",
+                  "value": "Naaate"
+                },
+                "Podcast": "We are Lum",
+                "guest_1": {
+                  "name": "Guest",
+                  "value": "Sheena"
+                },
+                "Collection": "We are Lum"
+              },
+              "description": "In this episode, Sheena shares her inspirations, challenges, and hopes for a more collaborative future in AI-assisted art. She also takes us behind the scenes of The Luminary, a CC0 character whose stories and visuals come to life through community input. Exploring how AI can amplify creativity rather than replace it, Sheena discusses how technology can be used to expand imagination and foster a more open, communal approach to art.",
+              "youtube_url": "https://youtu.be/JE38wmZtwC0",
+              "episodeTitle": "The Luminary’s Path: A Journey of AI, Community, and Creativity",
+              "external_url": "https://pods.media/episode/cbee34cc-aa34-4f83-8ab1-ec56479fb5da",
+              "primaryMedia": {
+                "uri": "ar://litRkEM_icW2bdXU1ItoeMuiOGSYH-hs-w3UHJienYY/9muminSm8jYg55dNdDKyhWSI_DebxFZJQGW_CVXbVkA.mp3",
+                "kind": "AUDIO",
+                "type": "audio/mpeg",
+                "license": "ALL_RIGHTS_RESERVED",
+                "duration": 1078.047313
+              },
+              "animation_url": "ar://litRkEM_icW2bdXU1ItoeMuiOGSYH-hs-w3UHJienYY/9muminSm8jYg55dNdDKyhWSI_DebxFZJQGW_CVXbVkA.mp3",
+              "episodeNumber": 2
+            },
+            "nftFactoryByNftFactoryId": {
+              "standard": "erc1155"
+            },
+            "nftsProcessedTracksByNftId": {
+              "pageInfo": {
+                "hasNextPage": false
+              },
+              "nodes": [
+                {
+                  "nftId": "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/2",
+                  "processedTrackId": "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/the-luminarys-path-a-journey-of-ai-community-and-creativity"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "presentNfts": [
+        "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/1",
+        "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/2"
+      ],
+      "otherTrackIds": [
+        "base/0x91b39B1691cf1F6b61998CBD08707B59fb938A86/art-in-the-infinite-garden"
+      ],
+      "partial": false,
+      "status": "resolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/41-remi-religion-community-and-culture",
+      "query": "{n0:nftById(id:\"base/0x93733a394D773b62b0ec31cAb099E2C206c12219/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0x93733a394D773b62b0ec31cAb099E2C206c12219/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0x93733a394D773b62b0ec31cAb099E2C206c12219/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:31.977Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": {
+            "id": "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/1",
+            "chainId": "base",
+            "contractAddress": "0x93733a394D773b62b0ec31cAb099E2C206c12219",
+            "tokenId": "1",
+            "tokenUri": "ar://I8r57RC1IiKZr5k-S8vDXyRKBFtEzJOHnUv9gs6OnNE",
+            "tokenMetadataUri": null,
+            "mimeType": null,
+            "createdAtTime": "2024-10-23T14:10:07+00:00",
+            "createdAtBlockNumber": "21451630",
+            "metadata": {
+              "name": "#46 - Kevin Owocki: Gitcoin, Resource Allocation, and Writing",
+              "image": "ar://ihWu_JLdegbJvaClOFJcuLTbPxZ5yxJ3lvXi1YlntRs/gpascoMpQbDuCKI156jg6z2H_elLPlEBTnQFBO5oRLg.jpg",
+              "artwork": {
+                "uri": "ar://ihWu_JLdegbJvaClOFJcuLTbPxZ5yxJ3lvXi1YlntRs/gpascoMpQbDuCKI156jg6z2H_elLPlEBTnQFBO5oRLg.jpg",
+                "kind": "IMAGE",
+                "type": "image/jpeg",
+                "license": "ALL_RIGHTS_RESERVED"
+              },
+              "credits": [
+                {
+                  "name": "sero",
+                  "role": "HOST"
+                },
+                {
+                  "name": "Kevin Owocki",
+                  "role": "GUEST"
+                }
+              ],
+              "podcast": "Ethers Club",
+              "version": "1.1.0",
+              "properties": {
+                "host_1": {
+                  "name": "Host",
+                  "value": "sero"
+                },
+                "Podcast": "Ethers Club",
+                "guest_1": {
+                  "name": "Guest",
+                  "value": "Kevin Owocki"
+                }
+              },
+              "description": "Kevin is an incredible writer, entrepreneur, and founder.\n\nHis contributions to the web3 and tech space has enabled thousands of startups, protocols and engineers to chase their passions. Gitcoin is a resource allocation protocol, to date it's distributed $62 million dollars to date, and revolutionized grant methods.\n\nKevin's writing is incredibly personal and transparent, setting a standard for personal blogs in this space. I've really enjoyed reading it and highly recommend checking it out.\n\nTo support this podcast, check out the links below:\n\n- Gitcoin: https://www.gitcoin.co\n- Allo Protocol: https://allo.gitcoin.co/\n- Exploring Mycofi (book): https://mycofi.art/\n- Kevin's blog: https://owocki.com/\n\nSupport the show\n\nBlog: https://blog.ethers.club/\nSocial: https://x.com/0x_Sero\nGithub: https://github.com/Seroxdesign",
+              "publishedAt": "Tue, 15 Oct 2024 06:00:00 -0400",
+              "episodeTitle": "#46 - Kevin Owocki: Gitcoin, Resource Allocation, and Writing",
+              "external_url": "https://pods.media/ethers-club/46-kevin-owocki-gitcoin-resource-allocation-and-writing",
+              "organization": "Sero",
+              "primaryMedia": {
+                "uri": "ar://cvwYKjpxtjo2eXCsvdyGj7BCtMJ37PkwibITfvYtPSs/aIESSgdaHXzUiG6daAXc-vXpoq-gyBAV65BtJGL0SH0.mp3",
+                "kind": "AUDIO",
+                "type": "audio/mpeg",
+                "license": "ALL_RIGHTS_RESERVED",
+                "duration": 2963.449229
+              },
+              "animation_url": "ar://cvwYKjpxtjo2eXCsvdyGj7BCtMJ37PkwibITfvYtPSs/aIESSgdaHXzUiG6daAXc-vXpoq-gyBAV65BtJGL0SH0.mp3",
+              "episodeNumber": 46
+            },
+            "nftFactoryByNftFactoryId": {
+              "standard": "erc1155"
+            },
+            "nftsProcessedTracksByNftId": {
+              "pageInfo": {
+                "hasNextPage": false
+              },
+              "nodes": [
+                {
+                  "nftId": "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/1",
+                  "processedTrackId": "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/46-kevin-owocki-gitcoin-resource-allocation-and-writing"
+                }
+              ]
+            }
+          },
+          "n2": {
+            "id": "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/2",
+            "chainId": "base",
+            "contractAddress": "0x93733a394D773b62b0ec31cAb099E2C206c12219",
+            "tokenId": "2",
+            "tokenUri": "ar://aJW66t2JWUv9pOqLZPAkoxOnryOMf9fHcOaJagE_PFg",
+            "tokenMetadataUri": null,
+            "mimeType": null,
+            "createdAtTime": "2024-12-04T18:31:39+00:00",
+            "createdAtBlockNumber": "23273876",
+            "metadata": {
+              "name": "#43 - CheekyGorilla: Protocol Guild, Open Source funding, the importance of privacy and security",
+              "image": "ar://MsntvZpckcPYFjer3jdyHn3kQG-P_lZGGh9V5YA93VA/G0r5Thn9_N-tEY-zm6egF1FF-LeuFuTWjJgP3Qk7jgA.jpg",
+              "artwork": {
+                "uri": "ar://MsntvZpckcPYFjer3jdyHn3kQG-P_lZGGh9V5YA93VA/G0r5Thn9_N-tEY-zm6egF1FF-LeuFuTWjJgP3Qk7jgA.jpg",
+                "kind": "IMAGE",
+                "type": "image/jpeg",
+                "license": "ALL_RIGHTS_RESERVED"
+              },
+              "credits": [
+                {
+                  "name": "0xsero",
+                  "role": "HOST"
+                },
+                {
+                  "name": "CheekyGorilla",
+                  "role": "GUEST"
+                }
+              ],
+              "podcast": "Ethers Club",
+              "version": "1.1.0",
+              "properties": {
+                "host_1": {
+                  "name": "Host",
+                  "value": "0xsero"
+                },
+                "Podcast": "Ethers Club",
+                "guest_1": {
+                  "name": "Guest",
+                  "value": "CheekyGorilla"
+                }
+              },
+              "description": "CheekyGorilla is working with Protocol Guild to help connect Ethereum's core contributors to funding sources, building a novel funding mechanism for open source ecosystems.We discussed privacy, security, research and development, and the amazing journey Protocol Guild has taken.\n\nTo support the podcast check out:\n- Join Ethereum's core contributors\n- Protocol Guilds website-\n-  Cheeky's twitter\n- Trent's blog\n\nThank you for listening!\nhttps://blog.ethers.club/\nSocial: https://x.com/0x_Sero\nGithub: https://github.com/Seroxdesign",
+              "publishedAt": "Fri, 19 Jul 2024 07:00:00 -0400",
+              "episodeTitle": "#43 - CheekyGorilla: Protocol Guild, Open Source funding, the importance of privacy and security",
+              "external_url": "https://pods.media/ethers-club/43-cheekygorilla-protocol-guild-open-source-funding-the-importance-of-privacy-and-security",
+              "primaryMedia": {
+                "uri": "ar://AQcT_ZU0T0AJ4I1j6JbgCnhCXUtNkGN8vuHle1c57ww/jhrDjnzAltCIu48cm2YBYr5kxOxL9OhdbZWM9QK5zao.mp3",
+                "kind": "AUDIO",
+                "type": "audio/mpeg",
+                "license": "ALL_RIGHTS_RESERVED",
+                "duration": 4445.483916
+              },
+              "animation_url": "ar://AQcT_ZU0T0AJ4I1j6JbgCnhCXUtNkGN8vuHle1c57ww/jhrDjnzAltCIu48cm2YBYr5kxOxL9OhdbZWM9QK5zao.mp3",
+              "episodeNumber": 46
+            },
+            "nftFactoryByNftFactoryId": {
+              "standard": "erc1155"
+            },
+            "nftsProcessedTracksByNftId": {
+              "pageInfo": {
+                "hasNextPage": false
+              },
+              "nodes": [
+                {
+                  "nftId": "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/2",
+                  "processedTrackId": "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/43-cheekygorilla-protocol-guild-open-source-funding-the-importance-of-privacy-and-security"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "presentNfts": [
+        "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/1",
+        "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/2"
+      ],
+      "otherTrackIds": [
+        "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/46-kevin-owocki-gitcoin-resource-allocation-and-writing",
+        "base/0x93733a394D773b62b0ec31cAb099E2C206c12219/43-cheekygorilla-protocol-guild-open-source-funding-the-importance-of-privacy-and-security"
+      ],
+      "partial": false,
+      "status": "unresolved"
+    },
+    {
+      "source": "https://api.spinamp.xyz/v3/graphql",
+      "trackId": "optimism/0xCA016Fa52c97F3f8De13c48D3316646603e5c8c7/1",
+      "query": "{n0:nftById(id:\"optimism/0xCA016Fa52c97F3f8De13c48D3316646603e5c8c7/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xCA016Fa52c97F3f8De13c48D3316646603e5c8c7/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xCA016Fa52c97F3f8De13c48D3316646603e5c8c7/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-07T00:36:33.466Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "presentNfts": [],
+      "otherTrackIds": [],
+      "partial": false,
+      "status": "unresolved"
+    }
+  ],
+  "pendingBefore": 44,
+  "pendingAfter": 42,
+  "recovered": 2,
+  "stopReason": "Bounded cohort completed",
+  "finishedAt": "2026-11-07T00:36:34.837Z"
+}

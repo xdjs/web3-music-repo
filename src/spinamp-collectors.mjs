@@ -11,6 +11,16 @@ const token = (v) => typeof v === "string" && /^(0|[1-9][0-9]*)$/.test(v);
 const requireThat = (ok, reason) => {
   if (!ok) throw new Error(`Invalid Spinamp collector snapshot: ${reason}`);
 };
+export function isImmutableSnapshotMetadata(value) {
+  return (
+    typeof value === "string" &&
+    value.length <= 2048 &&
+    (/^ipfs:\/\/[A-Za-z0-9]+(?:\/[^\s?#]*)?$/.test(value) ||
+      /^(?:ar:\/\/|https:\/\/arweave\.net\/)[A-Za-z0-9_-]{43}(?:\/[^\s?#]*)?$/.test(
+        value,
+      ))
+  );
+}
 function complete(connection) {
   return (
     connection &&
@@ -37,8 +47,7 @@ export function normalizeSpinampCollectorSnapshot(evidence) {
     typeof recordId === "string" &&
       typeof trackId === "string" &&
       address(contract) &&
-      typeof metadataURI === "string" &&
-      metadataURI.startsWith("ipfs://"),
+      isImmutableSnapshotMetadata(metadataURI),
     "release identity",
   );
   requireThat(

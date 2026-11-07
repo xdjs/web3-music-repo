@@ -53,10 +53,25 @@ const max = Number(
   process.argv.find((a) => a.startsWith("--limit="))?.slice(8) || Infinity,
 );
 const retry = process.argv.includes("--retry");
+const platform = process.argv
+  .find((a) => a.startsWith("--platform="))
+  ?.slice(11);
+const downloadTimeout = Number(
+  process.argv.find((a) => a.startsWith("--download-timeout-ms="))?.slice(22) ||
+    90000,
+);
+if (
+  !Number.isInteger(downloadTimeout) ||
+  downloadTimeout < 5000 ||
+  downloadTimeout > 90000
+)
+  throw Error("Download timeout must be 5000–90000 ms");
 const jobs = initial.records
   .filter(
     (r) =>
       r.kind !== "artwork" &&
+      (!platform || r.platform === platform) &&
+      !musicFacts({ ...r, audioAnalysis: null }).bpm &&
       ((retry && state.records[r.id]?.status === "unavailable") ||
         !state.records[r.id] ||
         state.records[r.id].status === "pending"),
@@ -78,6 +93,12 @@ process.once("SIGINT", () => {
 });
 state.startedAt = new Date().toISOString();
 state.concurrency = concurrency;
+state.lastPass = {
+  platform: platform || "all",
+  limit: Number.isFinite(max) ? max : null,
+  downloadTimeout,
+  selectedRecords: jobs.map((r) => r.id),
+};
 state.interruptedAt = null;
 state.stopRequestedAt = null;
 state.finishedAt = null;
@@ -115,7 +136,7 @@ async function downloadOnce(source, path) {
   for (let redirects = 0; redirects < 4; redirects++) {
     const res = await fetch(url, {
       redirect: "manual",
-      signal: AbortSignal.timeout(90000),
+      signal: AbortSignal.timeout(downloadTimeout),
     });
     if ([301, 302, 303, 307, 308].includes(res.status)) {
       url = storageURL(new URL(res.headers.get("location"), url).href);
@@ -196,6 +217,7 @@ async function analyze(r, source) {
       (
         await exec(bin, ["--format", "json", wav], {
           timeout: 120000,
+          env: { ...process.env, RAYON_NUM_THREADS: "2" },
           maxBuffer: 1024 * 1024,
         })
       ).stdout,

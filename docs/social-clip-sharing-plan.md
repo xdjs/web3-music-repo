@@ -1,6 +1,6 @@
-# Stories video export — next implementation
+# Stories video export and excerpt editor
 
-Status: **browser-native export implemented; production deployment and physical-phone upload remain unverified**. The record page has Create Story clip, start selection, excerpt preview, genuine MP4 generation, download and OS file sharing when supported. No listening sources or playback copies are generated or replaced by this feature.
+Status: **browser-native MP4 export verified on production; physical-phone Instagram upload remains unverified**. Deployment `dpl_BVPeEaag2g8PMgcZSyRmyEFneEeu` (`6026373`) produced genuine H.264/AAC MP4s in Chromium and WebKit; see `data/production-story-export-verification.json`. Export feature assertions passed, while its aggregate run retains an unclassified WebKit page error referencing `auth.privy.io`. The new draggable excerpt timeline described below is locally verified and awaits deployment. The record page has Create Story clip, start selection, excerpt preview, genuine MP4 generation, download and OS file sharing when supported. No listening sources or playback copies are generated or replaced by this feature.
 
 ## Implemented browser path
 
@@ -55,3 +55,13 @@ Web Share targets are selected by the OS. A website cannot guarantee that Instag
 - [Canvas cross-origin rules](https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/CORS_enabled_image): CORS and tainted-canvas restrictions.
 - [Vercel Function limits](https://vercel.com/docs/functions/limitations): payload and deployment constraints; verify the actual project configuration before choosing a render host.
 - [Meta Sharing to Stories](https://developers.facebook.com/docs/instagram-platform/sharing-to-stories/): requested but returned HTTP429; no requirements inferred from the unavailable page.
+
+## Excerpt timeline refinement (November 6, 2026)
+
+The Story editor now shows a truthful time ruler and a draggable fixed 15-second selection. Its visible width represents the excerpt's proportion of the recording; an invisible target of at least 44px supports touch without inventing a waveform. Clicking the ruler selects a moment, dragging preserves the grab offset, and keyboard arrows/Home/End move the selection. Exact seconds remain available in a collapsed disclosure.
+
+Play/Pause auditions the selected excerpt and a separate position slider seeks within those 15 seconds. Moving an actively playing selection pauses during the drag and resumes its new excerpt on release; keyboard adjustments stop audition. Preview progress and start/end times remain visible. Selection changes invalidate an earlier export, and generation guards prevent stale seeks from restarting an obsolete preview. No full PCM decode, new backend, playback transcode, or social auto-post was added.
+
+Actual Chromium and WebKit interaction/export verification is recorded in `data/story-timeline-verification.json`; final responsive/touch-target checks are in `data/story-timeline-layout-verification.json`. The original 32MiB source, CORS, foreground rendering, codec capability and physical-device upload limitations still apply.
+
+A reproducible WebKit preview-paint issue during repeated viewport/theme changes was fixed with a coalesced single repaint when the preview wrapper resizes or the app theme changes. The observers and pending frame are released on close; they skip active MP4 recording. This addresses the visible black preview rather than assuming valid canvas pixels prove a screenshot-only defect. See `data/story-canvas-webkit-diagnosis.json` for the prior observation and post-fix sequence.

@@ -1,0 +1,198 @@
+{
+  "checkedAt": "2026-11-07T00:44:10.316Z",
+  "baselineCommit": "af439241866f0d86d747715af2ab6308ef1b61c2",
+  "baseline": {
+    "records": 37345,
+    "suppliedBpm": 7950,
+    "suppliedKey": 7524,
+    "structuredBpm": 7922,
+    "structuredKey": 7519,
+    "credits": 486,
+    "lyrics": 1321,
+    "genres": 15701
+  },
+  "current": {
+    "records": 37345,
+    "suppliedBpm": 7955,
+    "suppliedKey": 7525,
+    "structuredBpm": 7950,
+    "structuredKey": 7525,
+    "credits": 594,
+    "lyrics": 1329,
+    "genres": 15701
+  },
+  "delta": {
+    "records": 0,
+    "suppliedBpm": 5,
+    "suppliedKey": 1,
+    "structuredBpm": 28,
+    "structuredKey": 6,
+    "credits": 108,
+    "lyrics": 8,
+    "genres": 0
+  },
+  "sourcePass": {
+    "eligibleIndexedRecords": 27520,
+    "read": 300,
+    "improved": 120,
+    "failed": 0,
+    "portableEvidence": "data/metadata-enrichment-sources.json.gz",
+    "independentOnchainVerification": false
+  },
+  "analysisPass": {
+    "engine": {
+      "name": "Open BPM",
+      "version": "open-bpm 0.1.0",
+      "source": "https://github.com/fabriziosalmi/open-bpm",
+      "commit": "73a3e6ef33f5c9d4131d118b14dcd4da73ec1775",
+      "method": "Full available media decoded to mono 22050 Hz WAV; default segmented analysis, 60–200 BPM; estimates may be half or double tempo"
+    },
+    "records": [
+      {
+        "recordId": "spinamp-52652b7e8c0c93fdc260",
+        "status": "estimated",
+        "bpm": 178.29,
+        "confidence": 0.3602,
+        "gridOffset": 0.289298,
+        "durationSeconds": 246.792979,
+        "source": "https://www.arweave.net/coo4iW7R26I1GmlCeimuWuRAY8_8M9wSym_XQFwYlc4?ext=mp3",
+        "sha256": "8876eff63eb99d4e80d45de0e2c18cb964f53a99b0a0a6fc4a69390a89557494",
+        "bytes": 9874604,
+        "url": "https://okfdrclo2hn2eni2nfbhuknollseay6p7qz5yewkn7luaxaysxha.arweave.net/coo4iW7R26I1GmlCeimuWuRAY8_8M9wSym_XQFwYlc4?ext=mp3",
+        "checkedAt": "2026-11-07T00:40:10.211Z"
+      },
+      {
+        "recordId": "spinamp-651156bdbb4a7ef993a0",
+        "status": "needs-review",
+        "bpm": 135.14,
+        "confidence": 0.2991,
+        "gridOffset": 0.020032,
+        "durationSeconds": 1648.0653,
+        "source": "ipfs://QmVakmJt1TYwjXuQhK3QEPk1FAZVgyoHRZ52PTiC1dXhJB",
+        "sha256": "f190703698d49b7972f1a3e4ea5712914c114af588f78b0dde1a4b9f8e35d609",
+        "bytes": 65924728,
+        "url": "https://ipfs.filebase.io/ipfs/QmVakmJt1TYwjXuQhK3QEPk1FAZVgyoHRZ52PTiC1dXhJB",
+        "checkedAt": "2026-11-07T00:40:22.526Z"
+      },
+      {
+        "recordId": "spinamp-aeb2d353eb371f5d54d4",
+        "status": "estimated",
+        "bpm": 166.5,
+        "confidence": 0.5153,
+        "gridOffset": 0.264168,
+        "durationSeconds": 125.074292,
+        "source": "https://www.arweave.net/OB-74VIkfgiNx9epxYqxz4YSMOetH1PnH3Wxf3gMoXs?ext=mp3",
+        "sha256": "51c15cbac12ab5c9fd7554db00749350291bba0dd7a625db879a8e1f882b59ab",
+        "bytes": 3003906,
+        "url": "https://hap3xykser7ardoh26u4lcvrz6dbemhhvupvhzy7owyx66amuf5q.arweave.net/OB-74VIkfgiNx9epxYqxz4YSMOetH1PnH3Wxf3gMoXs?ext=mp3",
+        "checkedAt": "2026-11-07T00:40:26.063Z"
+      },
+      {
+        "recordId": "spinamp-09c1f29c786e6f15a7a6",
+        "status": "estimated",
+        "bpm": 119.99,
+        "confidence": 0.5502,
+        "gridOffset": 0.039909,
+        "durationSeconds": 150.447125,
+        "source": "https://www.arweave.net/76NjTpV-y7z6gv-cvpI2O2tIU-pjIbTPSjuYrKMkBe4?ext=mp3",
+        "sha256": "79f9f5373ac3b2d6a501eaafd2ec38d32b4a60b611d35648d21b4facf37af44a",
+        "bytes": 6918908,
+        "url": "https://56rwgtuvp3f3z6uc76ol5erwhnvuqu7kmmq3jt2khomkzizeaxxa.arweave.net/76NjTpV-y7z6gv-cvpI2O2tIU-pjIbTPSjuYrKMkBe4?ext=mp3",
+        "checkedAt": "2026-11-07T00:40:30.214Z"
+      },
+      {
+        "recordId": "spinamp-a64b29939d764a0a89a2",
+        "status": "estimated",
+        "bpm": 114.98,
+        "confidence": 0.7073,
+        "gridOffset": 0.255203,
+        "durationSeconds": 164.869569,
+        "source": "https://www.arweave.net/D9h5JRk5Cht8g1DL_-kAqmAeLvbdE7OT5hsb5QxRVwc?ext=mp3",
+        "sha256": "a254f02955f9660363435333ed3128a57808db3e636b3e03fcfb5a8d2d6bf9db",
+        "bytes": 3298742,
+        "url": "https://b7mhsjizhefbw7edkdf772iavjqb4lxw3uj3he7gdmn6kdcrk4dq.arweave.net/D9h5JRk5Cht8g1DL_-kAqmAeLvbdE7OT5hsb5QxRVwc?ext=mp3",
+        "checkedAt": "2026-11-07T00:40:34.598Z"
+      },
+      {
+        "recordId": "spinamp-4dd41f23c9187d84331e",
+        "status": "estimated",
+        "bpm": 111.14,
+        "confidence": 0.5552,
+        "gridOffset": 0.213671,
+        "durationSeconds": 240.016225,
+        "source": "https://www.arweave.net/PLVGzRim1IHxSABdNHGqLNyNOnaZGXuZ0lwkzRQUZDc?ext=mp3",
+        "sha256": "dbf6a0cbd6cbc0e1a27afd32d16a10f6fee946a53f769424e9640b954b53918d",
+        "bytes": 9602800,
+        "url": "https://hs2untiyu3kid4kiaboti4nkftoi2otwtemxxgoslqsm2faumq3q.arweave.net/PLVGzRim1IHxSABdNHGqLNyNOnaZGXuZ0lwkzRQUZDc?ext=mp3",
+        "checkedAt": "2026-11-07T00:40:40.731Z"
+      },
+      {
+        "recordId": "spinamp-f7b7a0b5f3c0a0f564c0",
+        "status": "estimated",
+        "bpm": 111.02,
+        "confidence": 0.5692,
+        "gridOffset": 0.402516,
+        "durationSeconds": 220.524188,
+        "source": "https://www.arweave.net/_3QaWKoWSwzDHVoWCmRFnTErRuF-M-RUlvxT3TH_BmE?ext=mp3",
+        "sha256": "8a8a41d3271329ec9456a94e48b72be695bb40cfd6cde0769e4782402c641940",
+        "bytes": 8823404,
+        "url": "https://752buwfkczfqzqy5lilauzcftuyswrxbpyz6ivew7rj52mp7azqq.arweave.net/_3QaWKoWSwzDHVoWCmRFnTErRuF-M-RUlvxT3TH_BmE?ext=mp3",
+        "checkedAt": "2026-11-07T00:40:45.147Z"
+      },
+      {
+        "recordId": "spinamp-2bb571128cd1544fb094",
+        "status": "estimated",
+        "bpm": 132.64,
+        "confidence": 0.5477,
+        "gridOffset": 0.478149,
+        "durationSeconds": 122.181833,
+        "source": "https://www.arweave.net/bmNMyfwqsOi1dbNMSOd8icfU2yYUar_WzwA1ia-gZ-A?ext=mp3",
+        "sha256": "fbfa4f853249651e9435c1e9728db212c4ce2f2c428617c3a77ff2160da346d7",
+        "bytes": 4889653,
+        "url": "https://nzruzsp4fkyornlvwngerz34rhd5jwzgcrvl7vwpaa2ytl5am7qa.arweave.net/bmNMyfwqsOi1dbNMSOd8icfU2yYUar_WzwA1ia-gZ-A?ext=mp3",
+        "checkedAt": "2026-11-07T00:40:48.974Z"
+      },
+      {
+        "recordId": "spinamp-1f0b1fa05772815bf3b6",
+        "status": "estimated",
+        "bpm": 134,
+        "confidence": 0.5695,
+        "gridOffset": 0.118706,
+        "durationSeconds": 366,
+        "source": "https://www.arweave.net/ahVal4hxEhnIZf4PfXd-D2vru0ceuesNiTA_Mj7glo8?ext=mp3",
+        "sha256": "c891ea80e0588f67fed762f005a2af1bc8ca5170f40c2a13f0b5dfb6b07537ed",
+        "bytes": 14642245,
+        "url": "https://nikvvf4ioejbtsdf7yhx2536b5v6xo2hd246wdmjga7tepxas2hq.arweave.net/ahVal4hxEhnIZf4PfXd-D2vru0ceuesNiTA_Mj7glo8?ext=mp3",
+        "checkedAt": "2026-11-07T00:40:58.595Z"
+      },
+      {
+        "recordId": "spinamp-c599acb77845511e9d2a",
+        "status": "estimated",
+        "bpm": 159.95,
+        "confidence": 0.5926,
+        "gridOffset": 0.073591,
+        "durationSeconds": 293.563447,
+        "source": "https://www.arweave.net/FOVt21QuELESp2MlZhOXPagksEhOUIOhwLB17Xgk1Sc?ext=mp3",
+        "sha256": "b502ba065d9d4ded83ee8301318f0bae1708ac7bb37a92e3a3b607ee37e2eb72",
+        "bytes": 11744718,
+        "url": "https://ctsw3w2ufyilcevhmmswme4xhwucjmcijziihioawb2626be2utq.arweave.net/FOVt21QuELESp2MlZhOXPagksEhOUIOhwLB17Xgk1Sc?ext=mp3",
+        "checkedAt": "2026-11-07T00:41:05.166Z"
+      }
+    ],
+    "scope": "Ten missing-tempo Nina recordings; full available original referenced media, one download worker and two analysis threads. Estimates may be half/double tempo. Low-confidence result withheld from normal BPM display; no inferred keys."
+  },
+  "revenue": {
+    "newlyRecoveredEvents": 0,
+    "verifiedBasePurchaseEvents": 186,
+    "baseReleasesWithVerifiedPayouts": 113,
+    "verifiedEthereumRoyaltyEvents": 144,
+    "ethereumReleasesWithRoyaltyPayments": 135,
+    "scope": "Existing receipt-verified historical subsets only. Gross sales are not artist income; collaborator split payouts are not personal take-home pay. No all-platform revenue completeness claim."
+  },
+  "limits": [
+    "Full current cohort audited offline; only 300 indexed NFT metadata documents reread in this bounded pass.",
+    "Most music lacks source BPM/key; collection marketing was not used to invent per-track values.",
+    "Named role maps are source credits, not verified identity matches or payout-wallet ownership.",
+    "Dates already have separate indexed/source provenance; no mint timestamp relabelled as original release date."
+  ]
+}
