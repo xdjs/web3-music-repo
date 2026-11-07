@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-11-07T00:49:53.322840+00:00",
+  "url": "https://web3-music-archive.vercel.app",
+  "pullRequest": "https://github.com/xdjs/web3-music-repo/pull/12",
+  "sourceCommit": "d0e9e24643f5ce79b485c435bd9ccdf33f627f42",
+  "deploymentId": "dpl_25YuMESWXXwGCsuh4mqNPNZ8uqgG",
+  "deploymentUrl": "https://web3-music-repo-bwfvrzje4-musicnerd.vercel.app",
+  "status": "READY",
+  "sourceEvidence": "Clean exact-SHA release checkout matched tested feature tree; CLI deployment has no gitSource metadata. Seven live frontend assets match local source SHA256.",
+  "checks": {
+    "testsPassed": 363,
+    "syntax": "passed",
+    "format": "passed",
+    "productionBuild": "passed",
+    "liveAssetHashes": 7,
+    "liveMetadataUI": "passed",
+    "liveRecoveryEndpoints": "passed",
+    "liveStoryExport": "Feature assertions passed in Chromium and WebKit: genuine1080x1920 H.264/AAC MP4, preview and cancel; aggregate test retains unclassified WebKit auth.privy.io page error",
+    "runtimeErrorScan": "No error/fatal logs returned for this deployment at 2026-11-07T00:49:13Z; not comprehensive monitoring",
+    "liveStoryLayout": "Eight viewport/theme cases passed including visible artwork after resize/theme changes and rapid preview interaction"
+  },
+  "data": {
+    "recordings": 37345,
+    "suppliedBpm": 7955,
+    "suppliedKeys": 7525,
+    "newCreditTracks": 108,
+    "newLyricTracks": 8,
+    "newlyVisibleSourceTempos": 5,
+    "newlyVisibleSourceKeys": 1,
+    "newBpmEstimates": 9,
+    "newBpmNeedsReview": 1,
+    "collectorSnapshots": 21,
+    "indexedEditions": 1099,
+    "indexedWallets": 757,
+    "remainingSpinampReferences": 42,
+    "historicalSoundGapsWithoutIndexedMatch": 62
+  },
+  "limitations": [
+    "Physical Instagram upload not verified",
+    "Story sources still require CORS/readable media and supported MP4 codecs, with a 32 MiB cap",
+    "Recovery is bounded and not a complete platform or chain census",
+    "Collector freshness unknown; source metadata separate from audio estimates",
+    "Metadata reread checkpoint covers 300 targeted NFTs; remaining cohort resumable, no worker left running",
+    "Repeated WebKit page error referencing auth.privy.io remains unclassified; successful export does not establish authentication correctness"
+  ]
+}

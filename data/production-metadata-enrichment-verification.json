@@ -1,0 +1,112 @@
+{
+  "checkedAt": "2026-11-07T00:49:07.633Z",
+  "base": "https://web3-music-archive.vercel.app",
+  "scope": "Actual production catalog and existing song Details; no playback or audio-analysis accuracy claim",
+  "releaseCommit": "d0e9e24643f5ce79b485c435bd9ccdf33f627f42",
+  "sourceReportCounts": {
+    "records": 37345,
+    "suppliedBpm": 7955,
+    "suppliedKey": 7525,
+    "structuredBpm": 7950,
+    "structuredKey": 7525,
+    "credits": 594,
+    "lyrics": 1329,
+    "genres": 15701
+  },
+  "remainingIndexReferences": {
+    "count": 42,
+    "scope": "Unresolved Spinamp track-to-NFT references, separate from imported catalog metadata gaps",
+    "source": "data/spinamp/remaining-gaps-audit-2026-11-07.json"
+  },
+  "cases": [
+    {
+      "id": "spinamp-58573508153867c4ac70",
+      "text": "Terence Shaw — Mixed by",
+      "label": "credits",
+      "indexed": true,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark"
+      },
+      "screenshot": "captures/production-metadata-credits-1440-dark.png",
+      "passed": true,
+      "pageErrors": []
+    },
+    {
+      "id": "spinamp-3b833c42f200be2359cc",
+      "text": "126 BPM",
+      "label": "source-bpm",
+      "indexed": true,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark"
+      },
+      "screenshot": "captures/production-metadata-source-bpm-1440-dark.png",
+      "passed": true,
+      "pageErrors": []
+    },
+    {
+      "id": "spinamp-52652b7e8c0c93fdc260",
+      "text": "BPM estimated by Open BPM",
+      "label": "estimate",
+      "indexed": false,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark"
+      },
+      "screenshot": "captures/production-metadata-estimate-1440-dark.png",
+      "passed": true,
+      "pageErrors": []
+    },
+    {
+      "id": "spinamp-58573508153867c4ac70",
+      "text": "Terence Shaw — Mixed by",
+      "label": "credits",
+      "indexed": true,
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "screenshot": "captures/production-metadata-credits-390-light.png",
+      "passed": true,
+      "pageErrors": []
+    },
+    {
+      "id": "spinamp-3b833c42f200be2359cc",
+      "text": "126 BPM",
+      "label": "source-bpm",
+      "indexed": true,
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "screenshot": "captures/production-metadata-source-bpm-390-light.png",
+      "passed": true,
+      "pageErrors": []
+    },
+    {
+      "id": "spinamp-52652b7e8c0c93fdc260",
+      "text": "BPM estimated by Open BPM",
+      "label": "estimate",
+      "indexed": false,
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "screenshot": "captures/production-metadata-estimate-390-light.png",
+      "passed": true,
+      "pageErrors": []
+    }
+  ],
+  "productionIndexCounts": {
+    "records": 37345,
+    "suppliedBpm": 7955,
+    "suppliedKey": 7525
+  }
+}

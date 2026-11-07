@@ -1,0 +1,152 @@
+{
+  "checkedAt": "2026-11-07T00:48:51.509Z",
+  "deploymentId": "dpl_25YuMESWXXwGCsuh4mqNPNZ8uqgG",
+  "sourceCommit": "d0e9e24643f5ce79b485c435bd9ccdf33f627f42",
+  "checks": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "theme": "light",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "theme": "dark",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "theme": "light",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "theme": "dark",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "chromium",
+      "rapidPlaySelectPausePassed": true
+    },
+    {
+      "engine": "chromium",
+      "previewPaintOnlyOnChanges": true,
+      "closeReleasesObservers": true
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "theme": "light",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "theme": "dark",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "theme": "light",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "theme": "dark",
+      "hitTarget": 44,
+      "expandedTouchTargetPassed": true,
+      "pointerDragPassed": true,
+      "exactEntryCollapsed": true,
+      "screenshotArtworkPixel": [
+        251,
+        87,
+        192,
+        255
+      ]
+    },
+    {
+      "engine": "webkit",
+      "rapidPlaySelectPausePassed": true
+    },
+    {
+      "engine": "webkit",
+      "previewPaintOnlyOnChanges": true,
+      "closeReleasesObservers": true
+    }
+  ],
+  "status": "passed",
+  "ledgerViewsPassed": 4,
+  "visualReview": {
+    "status": "passed",
+    "scope": "Actual1440/390light/dark captures from Chromium and WebKit; artwork remains visible after theme/viewport changes. Screenshot pixels and direct visual review agree.",
+    "physicalPhone": "Not verified; touch-capable browser emulation is not a physical iPhone."
+  }
+}

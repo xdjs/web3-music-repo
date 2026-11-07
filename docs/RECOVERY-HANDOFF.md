@@ -4,6 +4,8 @@ Updated November 6, 2026. Created and originated by **Pete Rango**. This is the 
 
 ## Story excerpt editor and targeted enrichment follow-up
 
+PR #12 merged at `d0e9e24643f5ce79b485c435bd9ccdf33f627f42` and deployed as `dpl_25YuMESWXXwGCsuh4mqNPNZ8uqgG`. All 363 tests, syntax/format checks and production build passed. Both public aliases serve this release; seven live frontend assets match the tested source. Production metadata and recovery endpoint checks passed. Live Story selection/layout checks passed in eight viewport/theme cases, and both engines produced genuine H.264/AAC MP4s. The aggregate export harness still records an unclassified WebKit page error referencing auth.privy.io; physical Instagram upload remains unverified. See `data/release-story-enrichment-2026-11-06.json` and the separate production receipts.
+
 The Story dialog now has a fixed 15-second draggable selection, accessible keyboard controls, a 44px touch target, Play/Pause audition and a within-excerpt scrubber. Exact numeric entry is optional. Preview repaint after resize/theme changes repairs a reproduced WebKit black-canvas case without continuous animation or interfering with export. Browser MP4 generation remains bounded to supported codecs and CORS-readable sources up to 32 MiB. Physical Instagram upload remains unverified.
 
 Recovery reduced unresolved Spinamp references from 44 to 42 through two exact links: an already-covered Sound release and an excluded podcast. No new songs were admitted; 37,345 recordings remain. Ten additional collector snapshots add 292 editions; 21 snapshots now cover 1,099 indexed editions and 757 distinct positive-balance wallets, with unknown freshness. Raw reverse-query responses are retained. See `docs/spinamp-recovery-pass2.md`.

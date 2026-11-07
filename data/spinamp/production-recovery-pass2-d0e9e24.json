@@ -1,0 +1,264 @@
+{
+  "checkedAt": "2026-11-07T00:48:56.302Z",
+  "base": "https://web3-music-archive.vercel.app",
+  "expectedRelease": "d0e9e24643f5ce79b485c435bd9ccdf33f627f42",
+  "scope": "Read-only production catalog, exact newly recovered record and all 21 indexed collector snapshot endpoints. No recovery/account writes, playback check or fresh-chain ownership claim.",
+  "requests": [
+    {
+      "path": "/api/catalog?view=index",
+      "status": 200,
+      "ms": 168
+    },
+    {
+      "path": "/api/record/spinamp-cf4e82da34425a88ae7f",
+      "status": 200,
+      "ms": 5446
+    },
+    {
+      "path": "/api/collectors/spinamp-c4fbf6953ce75fd2a410",
+      "status": 200,
+      "ms": 200
+    },
+    {
+      "path": "/api/collectors/spinamp-c51ed235413858f6cad3",
+      "status": 200,
+      "ms": 226
+    },
+    {
+      "path": "/api/collectors/spinamp-aa0fe0a2c10e2631bcfd",
+      "status": 200,
+      "ms": 132
+    },
+    {
+      "path": "/api/collectors/spinamp-baa40232b7c8dfcf8c58",
+      "status": 200,
+      "ms": 131
+    },
+    {
+      "path": "/api/collectors/spinamp-b77e9b0a6a9fcbab1f03",
+      "status": 200,
+      "ms": 134
+    },
+    {
+      "path": "/api/collectors/spinamp-0baefa8fc69541706c71",
+      "status": 200,
+      "ms": 330
+    },
+    {
+      "path": "/api/collectors/spinamp-e5cfeca947b225e8dc62",
+      "status": 200,
+      "ms": 130
+    },
+    {
+      "path": "/api/collectors/spinamp-85ecbbcb838073f61584",
+      "status": 200,
+      "ms": 172
+    },
+    {
+      "path": "/api/collectors/spinamp-41fb2b0f83cca1f44294",
+      "status": 200,
+      "ms": 155
+    },
+    {
+      "path": "/api/collectors/spinamp-3f78523ccbbc24dc2974",
+      "status": 200,
+      "ms": 127
+    },
+    {
+      "path": "/api/collectors/spinamp-257e94565ad496224826",
+      "status": 200,
+      "ms": 216
+    },
+    {
+      "path": "/api/collectors/spinamp-d88347a5ad97cd516132",
+      "status": 200,
+      "ms": 175
+    },
+    {
+      "path": "/api/collectors/spinamp-6e32616a17ccde885856",
+      "status": 200,
+      "ms": 130
+    },
+    {
+      "path": "/api/collectors/spinamp-f2d6669ec566943d0146",
+      "status": 200,
+      "ms": 119
+    },
+    {
+      "path": "/api/collectors/spinamp-bb1b599c0cb8d977b6df",
+      "status": 200,
+      "ms": 112
+    },
+    {
+      "path": "/api/collectors/spinamp-6ca7e2c25dfaa65a8c74",
+      "status": 200,
+      "ms": 115
+    },
+    {
+      "path": "/api/collectors/spinamp-190043d7d84773c0b064",
+      "status": 200,
+      "ms": 125
+    },
+    {
+      "path": "/api/collectors/spinamp-1ab81d3b76633c325247",
+      "status": 200,
+      "ms": 121
+    },
+    {
+      "path": "/api/collectors/spinamp-50312a8e391909af5760",
+      "status": 200,
+      "ms": 140
+    },
+    {
+      "path": "/api/collectors/spinamp-a99ca9b2ffaa2063b6c5",
+      "status": 200,
+      "ms": 170
+    },
+    {
+      "path": "/api/collectors/spinamp-cb176244aa8587a6791c",
+      "status": 200,
+      "ms": 128
+    },
+    {
+      "path": "/api/coverage/sound-reconciliation",
+      "status": 200,
+      "ms": 117
+    }
+  ],
+  "collectors": [
+    {
+      "recordId": "spinamp-c4fbf6953ce75fd2a410",
+      "editions": 16,
+      "wallets": 13
+    },
+    {
+      "recordId": "spinamp-c51ed235413858f6cad3",
+      "editions": 6,
+      "wallets": 6
+    },
+    {
+      "recordId": "spinamp-aa0fe0a2c10e2631bcfd",
+      "editions": 23,
+      "wallets": 17
+    },
+    {
+      "recordId": "spinamp-baa40232b7c8dfcf8c58",
+      "editions": 13,
+      "wallets": 13
+    },
+    {
+      "recordId": "spinamp-b77e9b0a6a9fcbab1f03",
+      "editions": 18,
+      "wallets": 9
+    },
+    {
+      "recordId": "spinamp-0baefa8fc69541706c71",
+      "editions": 48,
+      "wallets": 46
+    },
+    {
+      "recordId": "spinamp-e5cfeca947b225e8dc62",
+      "editions": 58,
+      "wallets": 38
+    },
+    {
+      "recordId": "spinamp-85ecbbcb838073f61584",
+      "editions": 179,
+      "wallets": 177
+    },
+    {
+      "recordId": "spinamp-41fb2b0f83cca1f44294",
+      "editions": 197,
+      "wallets": 195
+    },
+    {
+      "recordId": "spinamp-3f78523ccbbc24dc2974",
+      "editions": 13,
+      "wallets": 10
+    },
+    {
+      "recordId": "spinamp-257e94565ad496224826",
+      "editions": 236,
+      "wallets": 206
+    },
+    {
+      "recordId": "spinamp-d88347a5ad97cd516132",
+      "editions": 1,
+      "wallets": 1
+    },
+    {
+      "recordId": "spinamp-6e32616a17ccde885856",
+      "editions": 1,
+      "wallets": 1
+    },
+    {
+      "recordId": "spinamp-f2d6669ec566943d0146",
+      "editions": 19,
+      "wallets": 18
+    },
+    {
+      "recordId": "spinamp-bb1b599c0cb8d977b6df",
+      "editions": 16,
+      "wallets": 6
+    },
+    {
+      "recordId": "spinamp-6ca7e2c25dfaa65a8c74",
+      "editions": 26,
+      "wallets": 19
+    },
+    {
+      "recordId": "spinamp-190043d7d84773c0b064",
+      "editions": 29,
+      "wallets": 29
+    },
+    {
+      "recordId": "spinamp-1ab81d3b76633c325247",
+      "editions": 3,
+      "wallets": 3
+    },
+    {
+      "recordId": "spinamp-50312a8e391909af5760",
+      "editions": 33,
+      "wallets": 31
+    },
+    {
+      "recordId": "spinamp-a99ca9b2ffaa2063b6c5",
+      "editions": 139,
+      "wallets": 126
+    },
+    {
+      "recordId": "spinamp-cb176244aa8587a6791c",
+      "editions": 25,
+      "wallets": 24
+    }
+  ],
+  "status": "passed",
+  "catalog": {
+    "recordCount": 37345,
+    "newRecordsPresent": 71,
+    "spinampRecords": 27520
+  },
+  "newRecord": {
+    "id": "spinamp-cf4e82da34425a88ae7f",
+    "title": "Heartbeat (feat. Minke)",
+    "chainId": 8453,
+    "contract": "0x66674ea8ae30d399ab34c567c688a7a8be278e8e",
+    "tokenId": "1"
+  },
+  "collectorTotals": {
+    "snapshots": 21,
+    "mappedEditions": 1099,
+    "distinctIndexedWallets": 757,
+    "indexFreshness": "unknown",
+    "onchainVerified": false
+  },
+  "soundReconciliation": {
+    "historicalUnresolved": 1256,
+    "nowIndexed": 1194,
+    "remainingWithoutIndexedMedia": 62,
+    "scope": "Exact chain/contract/token identity reconciliation against the recorded factory census only. Indexed media presence is not fresh chain verification, playable media, total editions, or complete Sound platform coverage."
+  },
+  "finishedAt": "2026-11-07T00:49:05.943Z",
+  "releaseDeploymentId": "dpl_25YuMESWXXwGCsuh4mqNPNZ8uqgG",
+  "deploymentIdentitySource": "Release coordinator READY signal; public API content verified independently, Vercel control plane not queried by this check."
+}

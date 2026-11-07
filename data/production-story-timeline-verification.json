@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-11-07T00:48:51.489Z",
+  "deploymentId": "dpl_25YuMESWXXwGCsuh4mqNPNZ8uqgG",
+  "sourceCommit": "d0e9e24643f5ce79b485c435bd9ccdf33f627f42",
+  "scope": "Actual production app, original Planet X cover and artist-approved corrected playback source; explicit Story export only, no listening transcodes or social upload.",
+  "checks": [
+    {
+      "engine": "chromium",
+      "passed": true,
+      "file": "work/production-story-timeline/chromium-planet-x.mp4",
+      "video": {
+        "codec": "h264",
+        "width": 1080,
+        "height": 1920
+      },
+      "audio": {
+        "codec": "aac",
+        "channels": 2
+      },
+      "duration": 15.016896,
+      "bytes": 676095,
+      "previewAdvances": true,
+      "cancelPassed": true,
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "passed": true,
+      "file": "work/production-story-timeline/webkit-planet-x.mp4",
+      "video": {
+        "codec": "h264",
+        "width": 1080,
+        "height": 1920
+      },
+      "audio": {
+        "codec": "aac",
+        "channels": 2
+      },
+      "duration": 15.468333,
+      "bytes": 5952326,
+      "previewAdvances": true,
+      "cancelPassed": true,
+      "errors": [
+        "/auth.privy.io'."
+      ]
+    }
+  ],
+  "status": "failed",
+  "failureChecks": {
+    "oversizeVisible": true,
+    "corsFailureVisible": true,
+    "retryAvailable": true
+  },
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   \"/auth.privy.io'.\"\n+ ]\n- []\n\n    at file:///Users/peterarango/Documents/Music%20Nerd/Apps/web3-music-repo/work/verify-story-timeline-production.mjs:305:14",
+  "featureAssertionsPassed": true,
+  "runtimeErrors": [
+    {
+      "engine": "webkit",
+      "message": "/auth.privy.io'.",
+      "classification": "Unclassified page error referencing auth.privy.io; captured message alone does not establish its cause or authentication impact."
+    }
+  ],
+  "limitations": [
+    "Aggregate status remains failed because of the preserved WebKit page error; export feature assertions passed.",
+    "Physical Instagram upload and native OS sharing were not performed.",
+    "Actual generated artifacts were codec-validated and browser-previewed; no subjective audio audition is claimed."
+  ]
+}

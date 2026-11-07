@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-11-07T00:49:25.176546+00:00",
+  "sourceCommit": "d0e9e24643f5ce79b485c435bd9ccdf33f627f42",
+  "deploymentId": "dpl_25YuMESWXXwGCsuh4mqNPNZ8uqgG",
+  "url": "https://web3-music-archive.vercel.app",
+  "assets": [
+    {
+      "path": "src/archive.js",
+      "sha256": "3c54774b03d37c464fea9bfc7a242b04d20812b4f789a0667e348d67d3562fbc",
+      "matchesSource": true
+    },
+    {
+      "path": "src/story-export.mjs",
+      "sha256": "f3e976ce6994f8deed5b969b25d660f1c2f9302ffdb151b3237a100880e17fe0",
+      "matchesSource": true
+    },
+    {
+      "path": "src/story-export.css",
+      "sha256": "488f8ccc08c8189fdf624608dcc81594224559b63cff0655f7ee8c8d8c16caa1",
+      "matchesSource": true
+    },
+    {
+      "path": "src/story-timeline.mjs",
+      "sha256": "b4c973367811279d18570cd8a79ade38c78410003df550c00dddca694cab51cf",
+      "matchesSource": true
+    },
+    {
+      "path": "src/story-clip.mjs",
+      "sha256": "f8bf9d36df412ee5e50a1ef4ae943acf90410ed06ff0ca03be2bb954d6287024",
+      "matchesSource": true
+    },
+    {
+      "path": "src/extract-music-metadata.mjs",
+      "sha256": "ed1c033e0e46cdc1d1bc7690ee12ec59a78e9b55f4caff26f7f217563eece384",
+      "matchesSource": true
+    },
+    {
+      "path": "src/archive.css",
+      "sha256": "dcd24b725cb6c16d95f7a91f0afc9dd964685594c7a5f8957cdfb598db3575d5",
+      "matchesSource": true
+    }
+  ],
+  "status": "passed"
+}
