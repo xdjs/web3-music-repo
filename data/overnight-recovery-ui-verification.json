@@ -1,0 +1,163 @@
+{
+  "checkedAt": "2026-11-07T18:16:57.074Z",
+  "base": "http://127.0.0.1:4301",
+  "scope": "Actual catalog/UI of frozen overnight checkpoint; supplied metadata and Open BPM estimates remain distinguished. Representative views only, no playback/tempo-accuracy claim.",
+  "checks": [
+    {
+      "id": "spinamp-b93a4b7d67f814c9eddf",
+      "label": "sound-estimate",
+      "text": "~120 BPM",
+      "estimate": true,
+      "view": {
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark"
+      },
+      "capture": "captures/overnight-sound-estimate-1440-dark.png",
+      "passed": true
+    },
+    {
+      "id": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-6",
+      "label": "catalog-estimate",
+      "text": "~109.6 BPM",
+      "estimate": true,
+      "view": {
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark"
+      },
+      "capture": "captures/overnight-catalog-estimate-1440-dark.png",
+      "passed": true
+    },
+    {
+      "id": "spinamp-52a35c24083c4ee53030",
+      "label": "title-bpm-precedence",
+      "text": "145 BPM",
+      "estimate": false,
+      "view": {
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark"
+      },
+      "capture": "captures/overnight-title-bpm-precedence-1440-dark.png",
+      "passed": true
+    },
+    {
+      "id": "record-00396a23",
+      "label": "source-bpm",
+      "text": "76 BPM",
+      "estimate": false,
+      "view": {
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark"
+      },
+      "capture": "captures/overnight-source-bpm-1440-dark.png",
+      "passed": true
+    },
+    {
+      "id": "spinamp-a160a28a01d4d9041dd7",
+      "label": "new-lyrics",
+      "text": "In a world so vast",
+      "lyrics": true,
+      "view": {
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark"
+      },
+      "capture": "captures/overnight-new-lyrics-1440-dark.png",
+      "passed": true
+    },
+    {
+      "view": {
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark"
+      },
+      "pageErrors": []
+    },
+    {
+      "id": "spinamp-b93a4b7d67f814c9eddf",
+      "label": "sound-estimate",
+      "text": "~120 BPM",
+      "estimate": true,
+      "view": {
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "capture": "captures/overnight-sound-estimate-390-light.png",
+      "passed": true
+    },
+    {
+      "id": "catalog-1-0bc2a24ce568dad89691116d5b34deb6c203f342-6",
+      "label": "catalog-estimate",
+      "text": "~109.6 BPM",
+      "estimate": true,
+      "view": {
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "capture": "captures/overnight-catalog-estimate-390-light.png",
+      "passed": true
+    },
+    {
+      "id": "spinamp-52a35c24083c4ee53030",
+      "label": "title-bpm-precedence",
+      "text": "145 BPM",
+      "estimate": false,
+      "view": {
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "capture": "captures/overnight-title-bpm-precedence-390-light.png",
+      "passed": true
+    },
+    {
+      "id": "record-00396a23",
+      "label": "source-bpm",
+      "text": "76 BPM",
+      "estimate": false,
+      "view": {
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "capture": "captures/overnight-source-bpm-390-light.png",
+      "passed": true
+    },
+    {
+      "id": "spinamp-a160a28a01d4d9041dd7",
+      "label": "new-lyrics",
+      "text": "In a world so vast",
+      "lyrics": true,
+      "view": {
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "capture": "captures/overnight-new-lyrics-390-light.png",
+      "passed": true
+    },
+    {
+      "view": {
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "pageErrors": []
+    }
+  ],
+  "status": "passed",
+  "counts": {
+    "records": 37345,
+    "withBpm": 17079,
+    "estimated": 9107,
+    "supplied": 7972,
+    "soundWithBpm": 8329,
+    "soundRecords": 9833
+  },
+  "lyricsTrackCount": 2102
+}

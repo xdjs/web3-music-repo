@@ -1,0 +1,21 @@
+{
+  "batchId": "2026-11-07T01-20-55.830Z-14498",
+  "campaignId": "source-metadata-2026-11-07",
+  "startedAt": "2026-11-07T01:20:55.848Z",
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "totalCatalogRecords": 37345,
+  "scope": "Bounded exact-NFT public index reread; not independent blockchain verification",
+  "cacheOnly": false,
+  "limit": 1000,
+  "requested": 0,
+  "read": 0,
+  "improved": 0,
+  "failures": [],
+  "records": [],
+  "eligibleIndexedRecords": 27520,
+  "selectedRecords": 0,
+  "finishedAt": "2026-11-07T01:20:56.005Z",
+  "interrupted": false,
+  "checkpointedRecords": 27520,
+  "retryableFailures": 0
+}

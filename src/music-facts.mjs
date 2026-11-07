@@ -9,6 +9,16 @@ export function musicFacts(record) {
     /(?:\((\d{2,3}(?:\.\d+)?)\s*BPM\)|\[(\d{2,3}(?:\.\d+)?)\s*BPM\])/gi,
   ))
     tempoValues.push(Number(match[1] || match[2]));
+  // Explicit standalone title labels also occur outside brackets, including
+  // beat filenames such as Lofi_Hip_Hop__BPM145 and "Trap beat 190bpm Dm".
+  // Keep bracket matching above strict; malformed bracket pairs are not labels.
+  const titleLabels = [
+    ...String(record.title || "").matchAll(
+      /(?:^|[\s_-])(?:BPM[\s_:=\-]*(\d{2,3}(?:\.\d+)?)|(\d{2,3}(?:\.\d+)?)[\s_]*BPM)(?=$|[\s_-])/gi,
+    ),
+  ];
+  for (const match of titleLabels)
+    tempoValues.push(Number(match[1] || match[2]));
   const tempos = [...new Set(tempoValues.filter((n) => n >= 20 && n <= 400))];
   const keys = [
     ...new Set(
@@ -55,6 +65,8 @@ export function musicFacts(record) {
           ? "Official release metadata; not audio-analysis estimates"
           : original && (original.bpms.length || original.keys.length)
             ? "Original token metadata; not audio-analysis estimates"
-            : "Release notes; not audio-analysis estimates",
+            : titleLabels.length
+              ? "Release title or notes; not audio-analysis estimates"
+              : "Release notes; not audio-analysis estimates",
   };
 }

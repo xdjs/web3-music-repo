@@ -41,19 +41,31 @@ const hash = (value) => createHash("sha256").update(value).digest("hex");
 const read = (p, f) => {
   try {
     return JSON.parse(readFileSync(p));
-  } catch {
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
     return f;
   }
 };
-const state = read(file, { records: {} }),
-  release = acquireRecoveryLock(file);
+const release = process.argv.includes("--plan")
+  ? () => {}
+  : acquireRecoveryLock(file);
+const state = read(file, { records: {} });
 const checkpointPath = "data/metadata-enrichment-checkpoint.json";
 const checkpoint = read(checkpointPath, { records: {} });
 const sourcePath = "data/metadata-enrichment-sources.json.gz";
 const sourceEvidence = existsSync(sourcePath)
   ? JSON.parse(gunzipSync(readFileSync(sourcePath)))
   : { source: endpoint, nfts: {} };
+const batchId =
+  new Date().toISOString().replaceAll(":", "-") + "-" + process.pid;
+const receiptDirectory = "data/metadata-enrichment-batches";
+const campaignId =
+  process.argv.find((a) => a.startsWith("--campaign-id="))?.slice(14) ||
+  batchId;
+checkpoint.failures ||= {};
 const report = {
+  batchId,
+  campaignId,
   startedAt: new Date().toISOString(),
   source: endpoint,
   totalCatalogRecords: bundle.records.length,
@@ -68,6 +80,20 @@ const report = {
   records: [],
 };
 let stop = false;
+let consecutiveProviderFailures = 0;
+let completed = 0;
+const fail = (record, error) => {
+  const failure = {
+    recordId: record.id,
+    nftId: references[record.spinampTrackId].id,
+    error: String(error.message || error),
+    checkedAt: new Date().toISOString(),
+    campaignId,
+    retryable: true,
+  };
+  report.failures.push(failure);
+  checkpoint.failures[record.id] = failure;
+};
 process.once("SIGINT", () => {
   stop = true;
 });
@@ -81,16 +107,21 @@ const save = () => {
     report: "data/metadata-enrichment-audit.json",
     independentOnchainVerification: false,
   };
+  // Publish portable proofs before checkpoints; a crash can cause reprocessing, never proof loss.
+  writeFileSync(sourcePath + ".tmp", gzipSync(JSON.stringify(sourceEvidence)));
+  renameSync(sourcePath + ".tmp", sourcePath);
   writeFileSync(file + ".tmp", JSON.stringify(state, null, 2));
   renameSync(file + ".tmp", file);
   writeFileSync(
-    "data/metadata-enrichment-audit.json",
+    "data/metadata-enrichment-audit.json.tmp",
     JSON.stringify(report, null, 2),
+  );
+  renameSync(
+    "data/metadata-enrichment-audit.json.tmp",
+    "data/metadata-enrichment-audit.json",
   );
   writeFileSync(checkpointPath + ".tmp", JSON.stringify(checkpoint, null, 2));
   renameSync(checkpointPath + ".tmp", checkpointPath);
-  writeFileSync(sourcePath + ".tmp", gzipSync(JSON.stringify(sourceEvidence)));
-  renameSync(sourcePath + ".tmp", sourcePath);
 };
 const eligible = bundle.records.filter(
   (r) => r.spinampTrackId && references[r.spinampTrackId]?.id,
@@ -117,6 +148,8 @@ const selected = priority
   .filter((r) => {
     if (seen.has(r.id)) return false;
     seen.add(r.id);
+    if (!refresh && checkpoint.failures[r.id]?.campaignId === campaignId)
+      return false;
     return (
       refresh ||
       checkpoint.records[r.id]?.schemaVersion !==
@@ -138,6 +171,15 @@ if (process.argv.includes("--plan")) {
   release();
   process.exit(0);
 }
+mkdirSync(receiptDirectory, { recursive: true });
+const previousAudit = read("data/metadata-enrichment-audit.json", null);
+if (previousAudit?.startedAt) {
+  const previousPath = `${receiptDirectory}/${previousAudit.batchId || previousAudit.startedAt.replaceAll(":", "-") + "-legacy"}.json`;
+  if (!existsSync(previousPath))
+    writeFileSync(previousPath, JSON.stringify(previousAudit, null, 2), {
+      flag: "wx",
+    });
+}
 const baselinePath = `${cache}/baseline.json`;
 const baseline = read(baselinePath, {});
 for (const r of selected) baseline[r.id] ||= r.musicMetadata || {};
@@ -155,6 +197,7 @@ const apply = (r, n, checkedAt) => {
     previous = baseline[r.id] || {};
   const improved = hasAdditionalMusicFacts(previous, parsed);
   report.read++;
+  delete checkpoint.failures[r.id];
   checkpoint.records[r.id] = {
     schemaVersion: MUSIC_METADATA_SCHEMA_VERSION,
     nftId: n.id,
@@ -184,9 +227,13 @@ const apply = (r, n, checkedAt) => {
   });
   if (!improved) return;
   report.improved++;
+  const current = { ...previous, ...state.records[r.id] };
   state.records[r.id] = {
-    ...previous,
-    ...mergeMusicMetadataFacts(previous, parsed),
+    ...current,
+    ...mergeMusicMetadataFacts(
+      mergeMusicMetadataFacts(previous, current),
+      parsed,
+    ),
     status: "read",
     schemaVersion: MUSIC_METADATA_SCHEMA_VERSION,
     sourceType: "spinamp-indexed-metadata",
@@ -216,7 +263,7 @@ try {
         try {
           apply(r, c.nft, c.checkedAt);
         } catch (e) {
-          report.failures.push({ recordId: r.id, error: e.message });
+          fail(r, e);
         }
       } else if (!cacheOnly) pending.push({ r, p });
     }
@@ -241,6 +288,7 @@ try {
         if (!response.ok) throw Error(`HTTP ${response.status}`);
         const json = await response.json();
         if (json.errors?.length) throw Error(json.errors[0].message);
+        consecutiveProviderFailures = 0;
         for (const [{ r, p }, i] of pending.map((x, i) => [x, i])) {
           const nft = json.data?.["n" + i],
             checkedAt = new Date().toISOString();
@@ -251,16 +299,22 @@ try {
               JSON.stringify({ nft, checkedAt, source: endpoint }),
             );
           } catch (e) {
-            report.failures.push({ recordId: r.id, error: e.message });
+            fail(r, e);
           }
         }
       } catch (e) {
-        for (const { r } of pending)
-          report.failures.push({ recordId: r.id, error: e.message });
+        consecutiveProviderFailures++;
+        if (consecutiveProviderFailures >= 3) {
+          stop = true;
+          report.stoppedReason = "three-consecutive-provider-failures";
+        }
+        for (const { r } of pending) fail(r, e);
       }
       await new Promise((r) => setTimeout(r, 500));
     }
-    save();
+    completed += rows.length;
+    report.completed = completed;
+    if (completed % 100 === 0 || stop) save();
     console.log(
       JSON.stringify({
         read: report.read,
@@ -272,7 +326,14 @@ try {
   }
   report.finishedAt = stop ? null : new Date().toISOString();
   report.interrupted = stop;
+  report.checkpointedRecords = Object.keys(checkpoint.records).length;
+  report.retryableFailures = Object.keys(checkpoint.failures).length;
   save();
+  writeFileSync(
+    `${receiptDirectory}/${batchId}.json`,
+    JSON.stringify(report, null, 2),
+    { flag: "wx" },
+  );
 } finally {
   release();
 }
