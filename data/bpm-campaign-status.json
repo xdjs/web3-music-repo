@@ -1,0 +1,279 @@
+{
+  "pid": 10134,
+  "startedAt": "2026-11-07T01:02:49.202Z",
+  "finishedAt": null,
+  "stopRequestedAt": null,
+  "state": "stopping-provider-failures",
+  "batchSize": 50,
+  "concurrency": 2,
+  "downloadTimeout": 20000,
+  "scope": "Supplied BPM preserved; new Open BPM estimates only; prior unavailable and needs-review records excluded. No keys inferred.",
+  "batches": [
+    {
+      "pid": 34177,
+      "platform": "0xDEAFBEEF",
+      "startedAt": "2026-11-07T05:12:18.338Z",
+      "plannedRecords": 50,
+      "finishedAt": "2026-11-07T05:13:36.082Z",
+      "exitCode": 0,
+      "signal": null,
+      "results": {
+        "estimated": 50
+      }
+    },
+    {
+      "pid": 34450,
+      "platform": "anotherblock",
+      "startedAt": "2026-11-07T05:13:37.747Z",
+      "plannedRecords": 15,
+      "finishedAt": "2026-11-07T05:14:11.853Z",
+      "exitCode": 0,
+      "signal": null,
+      "results": {
+        "unavailable": 2,
+        "estimated": 13
+      }
+    },
+    {
+      "pid": 34570,
+      "platform": "artiva.app",
+      "startedAt": "2026-11-07T05:14:13.515Z",
+      "plannedRecords": 1,
+      "finishedAt": "2026-11-07T05:14:30.798Z",
+      "exitCode": 0,
+      "signal": null,
+      "results": {
+        "estimated": 1
+      }
+    },
+    {
+      "pid": 34580,
+      "platform": "batistaonthebeat.com",
+      "startedAt": "2026-11-07T05:14:32.476Z",
+      "plannedRecords": 16,
+      "finishedAt": "2026-11-07T05:16:01.195Z",
+      "exitCode": 0,
+      "signal": null,
+      "results": {
+        "estimated": 16
+      }
+    },
+    {
+      "pid": 34698,
+      "platform": "bully-meow",
+      "startedAt": "2026-11-07T05:16:02.880Z",
+      "plannedRecords": 7,
+      "finishedAt": "2026-11-07T05:16:14.960Z",
+      "exitCode": 0,
+      "signal": null,
+      "results": {
+        "estimated": 6,
+        "needs-review": 1
+      }
+    },
+    {
+      "pid": 34735,
+      "platform": "danielallan.xyz",
+      "startedAt": "2026-11-07T05:16:16.638Z",
+      "plannedRecords": 4,
+      "finishedAt": "2026-11-07T05:17:00.903Z",
+      "exitCode": 0,
+      "signal": null,
+      "results": {
+        "estimated": 3,
+        "unavailable": 1
+      }
+    },
+    {
+      "pid": 34761,
+      "platform": "flourishprosper.net",
+      "startedAt": "2026-11-07T05:17:02.593Z",
+      "plannedRecords": 1,
+      "finishedAt": "2026-11-07T05:17:14.652Z",
+      "exitCode": 0,
+      "signal": null,
+      "results": {
+        "estimated": 1
+      }
+    }
+  ],
+  "waitingFor": null,
+  "providerCircuit": {
+    "stop": true,
+    "sample": 10,
+    "failures": 10,
+    "rateLimited": 0
+  },
+  "updatedAt": "2026-11-07T05:19:22.606Z",
+  "counts": {
+    "records": 37345,
+    "supplied": 7955,
+    "estimated": 9111,
+    "needsReview": 234,
+    "unavailable": 2144,
+    "pending": 2,
+    "untouched": 17899,
+    "other": 0
+  },
+  "plan": {
+    "remaining": 17901,
+    "platforms": [
+      {
+        "platform": "omgkirby",
+        "remaining": 8546
+      },
+      {
+        "platform": "Nina",
+        "remaining": 6040
+      },
+      {
+        "platform": "Zora",
+        "remaining": 1221
+      },
+      {
+        "platform": "Supercollector",
+        "remaining": 649
+      },
+      {
+        "platform": "Lens",
+        "remaining": 628
+      },
+      {
+        "platform": "0xDEAFBEEF",
+        "remaining": 163
+      },
+      {
+        "platform": "TokenTraxx",
+        "remaining": 142
+      },
+      {
+        "platform": "spottiewifi.io",
+        "remaining": 85
+      },
+      {
+        "platform": "Manifold.xyz",
+        "remaining": 59
+      },
+      {
+        "platform": "hollyplus",
+        "remaining": 58
+      },
+      {
+        "platform": "Decent",
+        "remaining": 48
+      },
+      {
+        "platform": "NOIZD",
+        "remaining": 42
+      },
+      {
+        "platform": "songaday.world",
+        "remaining": 42
+      },
+      {
+        "platform": "joshsavagemusic.com",
+        "remaining": 23
+      },
+      {
+        "platform": "LucidHaus",
+        "remaining": 15
+      },
+      {
+        "platform": "MAiWORLD",
+        "remaining": 14
+      },
+      {
+        "platform": "pixelated.love",
+        "remaining": 14
+      },
+      {
+        "platform": "wavGame",
+        "remaining": 13
+      },
+      {
+        "platform": "jagwartwin.com",
+        "remaining": 11
+      },
+      {
+        "platform": "Mozado",
+        "remaining": 11
+      },
+      {
+        "platform": "Weinbagz",
+        "remaining": 11
+      },
+      {
+        "platform": "Heds",
+        "remaining": 10
+      },
+      {
+        "platform": "mikeshupp.com",
+        "remaining": 10
+      },
+      {
+        "platform": "Spinamp",
+        "remaining": 10
+      },
+      {
+        "platform": "Invest In Music",
+        "remaining": 7
+      },
+      {
+        "platform": "C4",
+        "remaining": 5
+      },
+      {
+        "platform": "Hume",
+        "remaining": 5
+      },
+      {
+        "platform": "stvdionouveau.com",
+        "remaining": 4
+      },
+      {
+        "platform": "Sound of Fractures",
+        "remaining": 3
+      },
+      {
+        "platform": "Zyla",
+        "remaining": 3
+      },
+      {
+        "platform": "geniuscorp.fr",
+        "remaining": 2
+      },
+      {
+        "platform": "Mr.Swe",
+        "remaining": 2
+      },
+      {
+        "platform": "RŌHKI",
+        "remaining": 2
+      },
+      {
+        "platform": "midibot",
+        "remaining": 1
+      },
+      {
+        "platform": "OpenSea",
+        "remaining": 1
+      },
+      {
+        "platform": "Other",
+        "remaining": 1
+      }
+    ],
+    "next": {
+      "platform": "geniuscorp.fr",
+      "records": 2
+    }
+  },
+  "activeBatch": {
+    "pid": 34779,
+    "platform": "geniuscorp.fr",
+    "startedAt": "2026-11-07T05:17:16.318Z",
+    "plannedRecords": 14
+  },
+  "lastPlatform": "flourishprosper.net",
+  "reason": "Sustained provider failures; manual review/restart required"
+}

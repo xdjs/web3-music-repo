@@ -1,6 +1,28 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { musicFacts } from "../src/music-facts.mjs";
+test("explicit standalone title tempos outrank half-time audio estimates", () => {
+  for (const title of [
+    "Lofi_Hip_Hop__BPM145",
+    "Beat 145bpm Dm",
+    "BPM:145",
+    "145Bpm",
+  ])
+    assert.equal(
+      musicFacts({ title, audioAnalysis: { status: "estimated", bpm: 72.5 } })
+        .bpm,
+      145,
+    );
+  for (const title of [
+    "v145 beat",
+    "ArtistBPM145",
+    "BPM1999",
+    "Song [120 BPM)",
+    "BPM12",
+  ])
+    assert.equal(musicFacts({ title }).bpm, null);
+  assert.equal(musicFacts({ title: "120bpm - 140bpm" }).bpm, null);
+});
 test("explicit release-note tempo and key survive with attribution", () => {
   assert.deepEqual(musicFacts({ note: "BPM: 140\nKey: Amin" }), {
     bpm: 140,

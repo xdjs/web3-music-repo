@@ -1,0 +1,825 @@
+{
+  "checkedAt": "2026-11-07T01:21:01.426Z",
+  "scope": "Exact indexed NFT source metadata re-extraction; fields are source supplied, not independent onchain verification or audio analysis. Counts are additions to each record baseline, not necessarily newly visible values.",
+  "eligibleIndexedRecords": 27520,
+  "successfulIdentities": 27520,
+  "uniqueNftDocuments": 27520,
+  "retryableFailures": [],
+  "batchReceipts": [
+    {
+      "batchId": "2026-11-07T00:38:34.206Z",
+      "campaignId": "initial-300",
+      "startedAt": "2026-11-07T00:38:34.206Z",
+      "finishedAt": "2026-11-07T00:38:34.954Z",
+      "requested": 0,
+      "read": 300,
+      "improved": 120,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-03-11.305Z-10237",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:03:11.305Z",
+      "finishedAt": "2026-11-07T01:03:46.140Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 135,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-04-02.171Z-10477",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:04:02.171Z",
+      "finishedAt": "2026-11-07T01:04:37.196Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 121,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-04-38.140Z-10576",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:04:38.140Z",
+      "finishedAt": "2026-11-07T01:05:13.327Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 127,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-05-14.346Z-10681",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:05:14.346Z",
+      "finishedAt": "2026-11-07T01:05:49.594Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 96,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-05-50.641Z-10781",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:05:50.641Z",
+      "finishedAt": "2026-11-07T01:06:26.846Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 92,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-06-27.898Z-10857",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:06:27.898Z",
+      "finishedAt": "2026-11-07T01:07:03.712Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 199,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-07-04.851Z-10962",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:07:04.851Z",
+      "finishedAt": "2026-11-07T01:07:42.902Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 7,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-07-44.063Z-11091",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:07:44.063Z",
+      "finishedAt": "2026-11-07T01:08:20.594Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-08-21.827Z-11262",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:08:21.827Z",
+      "finishedAt": "2026-11-07T01:08:58.060Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-08-59.291Z-11404",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:08:59.291Z",
+      "finishedAt": "2026-11-07T01:09:34.769Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-09-36.060Z-11561",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:09:36.060Z",
+      "finishedAt": "2026-11-07T01:10:12.838Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-10-14.048Z-11672",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:10:14.048Z",
+      "finishedAt": "2026-11-07T01:10:50.953Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 22,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-10-52.292Z-11805",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:10:52.292Z",
+      "finishedAt": "2026-11-07T01:11:28.404Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 992,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-11-29.724Z-11982",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:11:29.734Z",
+      "finishedAt": "2026-11-07T01:12:12.870Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 1000,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-12-15.999Z-12358",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:12:16.075Z",
+      "finishedAt": "2026-11-07T01:12:53.118Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 1000,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-12-54.440Z-13260",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:12:54.449Z",
+      "finishedAt": "2026-11-07T01:13:30.961Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 1000,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-13-32.336Z-13346",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:13:32.345Z",
+      "finishedAt": "2026-11-07T01:14:08.607Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 1000,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-14-09.976Z-13455",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:14:09.986Z",
+      "finishedAt": "2026-11-07T01:14:47.514Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 585,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-14-48.957Z-13560",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:14:48.968Z",
+      "finishedAt": "2026-11-07T01:15:26.115Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-15-27.611Z-13699",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:15:27.623Z",
+      "finishedAt": "2026-11-07T01:16:04.204Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-16-05.649Z-13861",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:16:05.662Z",
+      "finishedAt": "2026-11-07T01:16:42.472Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 25,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-16-43.921Z-13936",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:16:43.935Z",
+      "finishedAt": "2026-11-07T01:17:21.372Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-17-22.884Z-14029",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:17:22.898Z",
+      "finishedAt": "2026-11-07T01:18:01.205Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-18-02.824Z-14090",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:18:02.838Z",
+      "finishedAt": "2026-11-07T01:18:41.615Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-18-43.249Z-14210",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:18:43.264Z",
+      "finishedAt": "2026-11-07T01:19:21.665Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-19-23.297Z-14328",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:19:23.310Z",
+      "finishedAt": "2026-11-07T01:20:02.165Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-20-03.765Z-14408",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:20:03.778Z",
+      "finishedAt": "2026-11-07T01:20:43.100Z",
+      "requested": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-20-44.821Z-14489",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:20:44.835Z",
+      "finishedAt": "2026-11-07T01:20:54.114Z",
+      "requested": 220,
+      "read": 220,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    },
+    {
+      "batchId": "2026-11-07T01-20-55.830Z-14498",
+      "campaignId": "source-metadata-2026-11-07",
+      "startedAt": "2026-11-07T01:20:55.848Z",
+      "finishedAt": "2026-11-07T01:20:56.005Z",
+      "requested": 0,
+      "read": 0,
+      "improved": 0,
+      "failures": 0,
+      "stoppedReason": null
+    }
+  ],
+  "uniqueRecords": {
+    "records": 27520,
+    "improved": 6521,
+    "addedBpm": 0,
+    "addedKeys": 0,
+    "addedCredits": 108,
+    "addedLyrics": 781,
+    "addedDetails": {
+      "Drums layer": 5632,
+      "Chords layer": 5550,
+      "Effects layer": 5550,
+      "Lead layer": 5550,
+      "Vocals layer": 5551,
+      "Instruments": 1
+    }
+  },
+  "byCampaign": {
+    "initial-300": {
+      "records": 300,
+      "improved": 120,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 108,
+      "addedLyrics": 8,
+      "addedDetails": {
+        "Drums layer": 4,
+        "Chords layer": 2,
+        "Effects layer": 2,
+        "Lead layer": 2,
+        "Vocals layer": 2
+      }
+    },
+    "source-metadata-2026-11-07": {
+      "records": 27220,
+      "improved": 6401,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 773,
+      "addedDetails": {
+        "Vocals layer": 5549,
+        "Instruments": 1,
+        "Drums layer": 5628,
+        "Chords layer": 5548,
+        "Effects layer": 5548,
+        "Lead layer": 5548
+      }
+    }
+  },
+  "byPlatform": {
+    "Sound": {
+      "records": 4918,
+      "improved": 777,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 777,
+      "addedDetails": {}
+    },
+    "Zora": {
+      "records": 1221,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "anotherblock": {
+      "records": 15,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Manifold.xyz": {
+      "records": 60,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Decent": {
+      "records": 55,
+      "improved": 4,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 4,
+      "addedDetails": {
+        "Vocals layer": 1,
+        "Instruments": 1
+      }
+    },
+    "Hume": {
+      "records": 5,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "mikeshupp.com": {
+      "records": 10,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "songaday.world": {
+      "records": 5060,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "RŌHKI": {
+      "records": 2,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "bully-meow": {
+      "records": 7,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "joshsavagemusic.com": {
+      "records": 23,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "RELICS": {
+      "records": 50,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "TokenTraxx": {
+      "records": 142,
+      "improved": 108,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 108,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "stvdionouveau.com": {
+      "records": 4,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "jagwartwin.com": {
+      "records": 11,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "spottiewifi.io": {
+      "records": 85,
+      "improved": 82,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {
+        "Drums layer": 82
+      }
+    },
+    "hollyplus": {
+      "records": 58,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "midibot": {
+      "records": 1,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Weinbagz": {
+      "records": 11,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "omgkirby": {
+      "records": 8546,
+      "improved": 5550,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {
+        "Chords layer": 5550,
+        "Drums layer": 5550,
+        "Effects layer": 5550,
+        "Lead layer": 5550,
+        "Vocals layer": 5550
+      }
+    },
+    "artiva.app": {
+      "records": 1,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "danielallan.xyz": {
+      "records": 4,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Zyla": {
+      "records": 3,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "pixelated.love": {
+      "records": 14,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Chaos": {
+      "records": 2,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Mozado": {
+      "records": 11,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "geniuscorp.fr": {
+      "records": 14,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Mr.Swe": {
+      "records": 3,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "batistaonthebeat.com": {
+      "records": 16,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "flourishprosper.net": {
+      "records": 1,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "LucidHaus": {
+      "records": 15,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "MAiWORLD": {
+      "records": 14,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "0xDEAFBEEF": {
+      "records": 239,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "projectastro.io": {
+      "records": 13,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Heds": {
+      "records": 10,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "NOIZD": {
+      "records": 42,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Supercollector": {
+      "records": 102,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Invest In Music": {
+      "records": 7,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Sound of Fractures": {
+      "records": 3,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Spinamp": {
+      "records": 10,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "OpenSea": {
+      "records": 1,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Lens": {
+      "records": 628,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "edkeziah.xyz": {
+      "records": 6,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Arpeggi": {
+      "records": 5,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "wavGame": {
+      "records": 13,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "Nina": {
+      "records": 6054,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    },
+    "C4": {
+      "records": 5,
+      "improved": 0,
+      "addedBpm": 0,
+      "addedKeys": 0,
+      "addedCredits": 0,
+      "addedLyrics": 0,
+      "addedDetails": {}
+    }
+  }
+}

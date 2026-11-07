@@ -1,0 +1,265 @@
+{
+  "campaignId": "source-metadata-2026-11-07",
+  "pid": 10465,
+  "startedAt": "2026-11-07T01:04:01.370Z",
+  "status": "eligible-cohort-exhausted",
+  "scope": "Exact imported NFT identities; public indexed metadata, not independent chain verification",
+  "batches": [
+    {
+      "batchId": "2026-11-07T01-04-02.171Z-10477",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 121,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-04-02.171Z-10477.json"
+    },
+    {
+      "batchId": "2026-11-07T01-04-38.140Z-10576",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 127,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-04-38.140Z-10576.json"
+    },
+    {
+      "batchId": "2026-11-07T01-05-14.346Z-10681",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 96,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-05-14.346Z-10681.json"
+    },
+    {
+      "batchId": "2026-11-07T01-05-50.641Z-10781",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 92,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-05-50.641Z-10781.json"
+    },
+    {
+      "batchId": "2026-11-07T01-06-27.898Z-10857",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 199,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-06-27.898Z-10857.json"
+    },
+    {
+      "batchId": "2026-11-07T01-07-04.851Z-10962",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 7,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-07-04.851Z-10962.json"
+    },
+    {
+      "batchId": "2026-11-07T01-07-44.063Z-11091",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-07-44.063Z-11091.json"
+    },
+    {
+      "batchId": "2026-11-07T01-08-21.827Z-11262",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-08-21.827Z-11262.json"
+    },
+    {
+      "batchId": "2026-11-07T01-08-59.291Z-11404",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-08-59.291Z-11404.json"
+    },
+    {
+      "batchId": "2026-11-07T01-09-36.060Z-11561",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-09-36.060Z-11561.json"
+    },
+    {
+      "batchId": "2026-11-07T01-10-14.048Z-11672",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 22,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-10-14.048Z-11672.json"
+    },
+    {
+      "batchId": "2026-11-07T01-10-52.292Z-11805",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 992,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-10-52.292Z-11805.json"
+    },
+    {
+      "batchId": "2026-11-07T01-11-29.724Z-11982",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 1000,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-11-29.724Z-11982.json"
+    },
+    {
+      "batchId": "2026-11-07T01-12-15.999Z-12358",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 1000,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-12-15.999Z-12358.json"
+    },
+    {
+      "batchId": "2026-11-07T01-12-54.440Z-13260",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 1000,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-12-54.440Z-13260.json"
+    },
+    {
+      "batchId": "2026-11-07T01-13-32.336Z-13346",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 1000,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-13-32.336Z-13346.json"
+    },
+    {
+      "batchId": "2026-11-07T01-14-09.976Z-13455",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 585,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-14-09.976Z-13455.json"
+    },
+    {
+      "batchId": "2026-11-07T01-14-48.957Z-13560",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-14-48.957Z-13560.json"
+    },
+    {
+      "batchId": "2026-11-07T01-15-27.611Z-13699",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-15-27.611Z-13699.json"
+    },
+    {
+      "batchId": "2026-11-07T01-16-05.649Z-13861",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 25,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-16-05.649Z-13861.json"
+    },
+    {
+      "batchId": "2026-11-07T01-16-43.921Z-13936",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-16-43.921Z-13936.json"
+    },
+    {
+      "batchId": "2026-11-07T01-17-22.884Z-14029",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-17-22.884Z-14029.json"
+    },
+    {
+      "batchId": "2026-11-07T01-18-02.824Z-14090",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-18-02.824Z-14090.json"
+    },
+    {
+      "batchId": "2026-11-07T01-18-43.249Z-14210",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-18-43.249Z-14210.json"
+    },
+    {
+      "batchId": "2026-11-07T01-19-23.297Z-14328",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-19-23.297Z-14328.json"
+    },
+    {
+      "batchId": "2026-11-07T01-20-03.765Z-14408",
+      "selected": 1000,
+      "read": 1000,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-20-03.765Z-14408.json"
+    },
+    {
+      "batchId": "2026-11-07T01-20-44.821Z-14489",
+      "selected": 220,
+      "read": 220,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-20-44.821Z-14489.json"
+    },
+    {
+      "batchId": "2026-11-07T01-20-55.830Z-14498",
+      "selected": 0,
+      "read": 0,
+      "improved": 0,
+      "failures": 0,
+      "exitCode": 0,
+      "receipt": "data/metadata-enrichment-batches/2026-11-07T01-20-55.830Z-14498.json"
+    }
+  ],
+  "updatedAt": "2026-11-07T01:20:56.673Z",
+  "successfulIdentities": 27520,
+  "retryableFailures": 0,
+  "finishedAt": "2026-11-07T01:20:56.673Z"
+}

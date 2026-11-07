@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-11-07T18:16:40.770Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "fetch",
+      "status": "passed",
+      "durationMs": 334,
+      "log": "work/overnight-release-fetch.log",
+      "summary": ""
+    },
+    {
+      "name": "check",
+      "status": "passed",
+      "durationMs": 338,
+      "log": "work/overnight-release-check.log",
+      "summary": "\n> music-nerd-recovery@0.1.0 check\n> node --check server.mjs && node --check src/archive.js && node --check src/recovery-model.mjs && node --check src/recovery-owner.mjs && node --check src/recovery-holders.mjs && node --check src/collectors-ui.mjs && node --check src/collector-profiles.mjs && node --check src/personal-playlists.mjs && node --check src/catalog-bundle.mjs && node --check src/legacy-collectors.mjs && node --check src/recovery-coverage.mjs\n\n"
+    },
+    {
+      "name": "format",
+      "status": "passed",
+      "durationMs": 847,
+      "log": "work/overnight-release-format.log",
+      "summary": "\n> music-nerd-recovery@0.1.0 format:check\n> prettier --check archive.html src/archive.js src/archive.css src/recovery-*.mjs src/personal-playlists.mjs src/collectors-ui.mjs src/collector-profiles.mjs server.mjs scripts/verify-*.mjs tests/recovery.test.mjs package.json src/catalog-bundle.mjs src/legacy-collectors.mjs tests/catalog-bundle.test.mjs tests/legacy-collectors.test.mjs tests/coverage.test.mjs\n\nChecking formatting...\nAll matched files use Prettier code style!\n"
+    },
+    {
+      "name": "campaign-format",
+      "status": "passed",
+      "durationMs": 153,
+      "log": "work/overnight-release-campaign-format.log",
+      "summary": "Checking formatting...\nAll matched files use Prettier code style!\n"
+    },
+    {
+      "name": "suite",
+      "status": "passed",
+      "durationMs": 4281,
+      "log": "work/overnight-release-suite.log",
+      "summary": "✔ ENS lookup normalizes names before the onchain forward lookup (134.496791ms)\n✔ ENS lookup rejects URLs, invalid labels and oversized input without a request (0.374417ms)\n✔ Unicode ENS names use ENS normalization rather than stripping characters (0.394875ms)\n✔ an unassigned name is distinct from a failed or malformed RPC response (0.210333ms)\n✔ real Zora comment requires an official emitter and the same successful mint receipt (4.345083ms)\n✔ an event alone or altered event cannot become a verified mint comment (0.290291ms)\n✔ comments never cross chain, contract, token or verification boundaries (0.651542ms)\nℹ tests 370\nℹ suites 0\nℹ pass 370\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 4167.601625\n"
+    },
+    {
+      "name": "build",
+      "status": "passed",
+      "durationMs": 8327,
+      "log": "work/overnight-release-build.log",
+      "summary": "\n> music-nerd-recovery@0.1.0 build:vercel\n> node scripts/build-vercel.mjs\n\nAccount interface built (312 generated assets)\nPublic catalog snapshots: {\"records\":37345,\"people\":6182,\"index\":{\"bytes\":34052322,\"gzipBytes\":5648013},\"full\":{\"bytes\":135395511,\"gzipBytes\":19378933}}\nStatic frontend ready: 1815 files; backend data stays in the function bundle.\n"
+    }
+  ],
+  "baseCommit": "3eda62ecd6086f567854888c3f8c99f163b00dc9",
+  "branch": "feat/sound-bpm-coverage",
+  "originMain": "3eda62ecd6086f567854888c3f8c99f163b00dc9",
+  "mainSinceBaseline": "",
+  "testSummary": [
+    "ℹ tests 370",
+    "ℹ pass 370",
+    "ℹ fail 0",
+    "ℹ cancelled 0",
+    "ℹ skipped 0",
+    "ℹ todo 0",
+    "ℹ duration_ms 4167.601625"
+  ]
+}
