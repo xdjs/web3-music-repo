@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-11-07T00:21:08.558Z",
+  "base": "https://web3-music-archive.vercel.app",
+  "sourceCommit": "60263732a0e3962cf9dd7dce3b73b261c3bf9d2c",
+  "deployment": "https://web3-music-repo-oqgalzn2t-musicnerd.vercel.app",
+  "scope": "Actual production modules, API, and native approved Planet X MP4 playback. No API/media fixtures or account writes; playlist picker opened without saving. Bounded queue/card smoke, not full-track or all-source verification.",
+  "cases": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "errors": [],
+      "cardPickerWithoutNavigation": true,
+      "nativePlayback": {
+        "time": 0.309723,
+        "duration": 240.083333,
+        "readyState": 4,
+        "src": "https://web3-music-archive.vercel.app/media/planet-x-artist-corrected-720.mp4"
+      },
+      "upcoming": 20,
+      "labeledContinuation": 18,
+      "queuePicker": true,
+      "toggleRefills": true,
+      "clearPreservesCurrentPlayback": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "errors": [],
+      "cardPickerWithoutNavigation": true,
+      "nativePlayback": {
+        "time": 0.305386,
+        "duration": 240.083333,
+        "readyState": 4,
+        "src": "https://web3-music-archive.vercel.app/media/planet-x-artist-corrected-720.mp4"
+      },
+      "upcoming": 20,
+      "labeledContinuation": 18,
+      "queuePicker": true,
+      "toggleRefills": true,
+      "clearPreservesCurrentPlayback": true,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

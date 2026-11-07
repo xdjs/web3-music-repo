@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-11-07T00:24:47.255672+00:00",
+  "deploymentId": "dpl_BVPeEaag2g8PMgcZSyRmyEFneEeu",
+  "sourceCommit": "6026373",
+  "method": "Native Chrome CUA accessibility UI; existing user-authenticated sessions only. No credentials or token extraction.",
+  "status": "passed-cross-origin-migration",
+  "observations": [
+    {
+      "origin": "https://web3-music-archive.vercel.app",
+      "phase": "before-old-origin-visit",
+      "syncStatus": "Saved to your Music Nerd account.",
+      "playlists": []
+    },
+    {
+      "origin": "https://web3-music-repo.vercel.app",
+      "phase": "after-session-restored",
+      "syncStatus": "Saved to your Music Nerd account.",
+      "playlists": [
+        {
+          "name": "Campfire",
+          "recordings": 4
+        },
+        {
+          "name": "Campfire",
+          "recordings": 1
+        }
+      ]
+    },
+    {
+      "origin": "https://web3-music-archive.vercel.app",
+      "phase": "after-return-and-session-restored",
+      "syncStatus": "Saved to your Music Nerd account.",
+      "playlists": [
+        {
+          "name": "Campfire",
+          "recordings": 4
+        },
+        {
+          "name": "Campfire",
+          "recordings": 1
+        }
+      ]
+    }
+  ],
+  "actions": "Visited My playlists on both origins; automatic existing-library synchronization. No manual playlist mutation, no OTP/signature, no sign-out or new sign-in. Browser left on primary-origin My playlists.",
+  "limitations": [
+    "This verifies actual cloud migration between separate origin storage contexts in one real Chrome session. A separate physical device was not operated.",
+    "No network bearer headers or private cloud object were read; saved acknowledgement and matching UI records are the evidence."
+  ]
+}

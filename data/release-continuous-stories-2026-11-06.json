@@ -1,0 +1,35 @@
+{
+  "releasedAt": "2026-11-07T00:24:38.307546+00:00",
+  "url": "https://web3-music-archive.vercel.app",
+  "sourceCommit": "60263732a0e3962cf9dd7dce3b73b261c3bf9d2c",
+  "pullRequest": "https://github.com/xdjs/web3-music-repo/pull/11",
+  "deploymentId": "dpl_BVPeEaag2g8PMgcZSyRmyEFneEeu",
+  "deploymentUrl": "https://web3-music-repo-oqgalzn2t-musicnerd.vercel.app",
+  "state": "READY",
+  "aliases": [
+    "https://web3-music-archive.vercel.app",
+    "https://web3-music-repo.vercel.app"
+  ],
+  "validation": {
+    "unitTestsPassed": 342,
+    "syntax": "passed",
+    "format": "passed",
+    "build": "passed",
+    "publishedAssetHashesMatched": 7,
+    "liveQueueAndCardActions": "passed",
+    "liveMobileInputFocusEmulation": "passed",
+    "liveRecoveryEndpoints": "passed",
+    "storyExportArtifacts": "H.264/AAC 1080x1920 MP4 verified in Chromium and WebKit",
+    "storyAggregateSmoke": "failed on WebKit pageerror referencing auth.privy.io; export itself passed; cause unverified",
+    "runtimeErrorScan": "No error/fatal logs returned for this deployment at 2026-11-07T00:22:01Z; not comprehensive monitoring",
+    "realAccountCrossOriginSync": "passed: existing Campfire playlists with 4 and 1 recordings automatically saved on old origin and appeared with same IDs/counts on new origin"
+  },
+  "limitations": [
+    "Physical iPhone keyboard focus zoom check pending",
+    "Real second-device playlist readback pending",
+    "Instagram upload on physical phone unverified",
+    "Story export requires supported MP4/CORS-readable media, with 32 MiB source cap",
+    "44 Spinamp references remain unresolved; 71 new recordings not all auditioned",
+    "Collector snapshots have unknown freshness"
+  ]
+}

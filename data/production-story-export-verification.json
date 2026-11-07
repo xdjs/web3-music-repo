@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-11-07T00:21:22.530Z",
+  "deploymentId": "dpl_BVPeEaag2g8PMgcZSyRmyEFneEeu",
+  "sourceCommit": "6026373",
+  "scope": "Actual production app, original Planet X cover and artist-approved corrected playback source; explicit Story export only, no listening transcodes or social upload.",
+  "checks": [
+    {
+      "engine": "chromium",
+      "passed": true,
+      "file": "work/production-story-export/chromium-planet-x.mp4",
+      "video": {
+        "codec": "h264",
+        "width": 1080,
+        "height": 1920
+      },
+      "audio": {
+        "codec": "aac",
+        "channels": 2
+      },
+      "duration": 14.995583,
+      "bytes": 672345,
+      "previewAdvances": true,
+      "cancelPassed": true,
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "passed": true,
+      "file": "work/production-story-export/webkit-planet-x.mp4",
+      "video": {
+        "codec": "h264",
+        "width": 1080,
+        "height": 1920
+      },
+      "audio": {
+        "codec": "aac",
+        "channels": 2
+      },
+      "duration": 15.47,
+      "bytes": 5922230,
+      "previewAdvances": true,
+      "cancelPassed": true,
+      "errors": [
+        "/auth.privy.io'."
+      ]
+    }
+  ],
+  "status": "failed",
+  "failureChecks": {
+    "oversizeVisible": true,
+    "corsFailureVisible": true,
+    "retryAvailable": true
+  },
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   \"/auth.privy.io'.\"\n+ ]\n- []\n\n    at file:///Users/peterarango/Documents/Music%20Nerd/Apps/web3-music-repo/work/verify-production-story-export.mjs:227:14",
+  "featureAssertionsPassed": true,
+  "runtimeErrors": [
+    {
+      "engine": "webkit",
+      "message": "/auth.privy.io'.",
+      "classification": "Unclassified page error referencing auth.privy.io; captured message alone does not establish cause or impact on authentication."
+    }
+  ],
+  "visualReview": {
+    "status": "passed",
+    "captures": [
+      "captures/production-story-export-1440-dark.png",
+      "captures/production-story-export-390-light.png"
+    ],
+    "notes": "Actual production UI reviewed against existing styles. Physical device social upload remains unverified."
+  },
+  "limitations": [
+    "Aggregate script failed because WebKit emitted the preserved page error; export assertions themselves passed.",
+    "Physical Instagram upload and native OS sharing were not performed.",
+    "The two generated files were ffprobed and browser-previewed, not subjectively auditioned."
+  ]
+}
