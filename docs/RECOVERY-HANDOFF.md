@@ -1,8 +1,10 @@
 # Music Nerd music NFT recovery — agent handoff
 
-Updated November 6, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
+Updated November 7, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
 ## Completed source scan and Sound BPM checkpoint — November 7
+
+PR #13 merged at `15c1bb645dd53a61b98266f6407d8e39b0474eb1` and is live as READY deployment `dpl_Bi6y7QD1qHZHw7qT9BCVysBcppR3` on both public aliases. All 370 tests, syntax/format checks and production build passed. Ten production desktop/mobile checks verified supplied BPM precedence, separately labeled estimates and newly recovered lyrics. Live counts match the checkpoint; the published catalog index and music-facts module match tested SHA256 hashes. No deployment-scoped error/fatal logs were returned in the bounded post-release query. See `data/release-overnight-recovery-2026-11-07.json` and the production overnight receipts. All analysis workers remain stopped; the next transfer-handling fix is isolated on `fix/bpm-bounded-transfers` and has not been merged, deployed or used to resume analysis.
 
 All 27,520 indexed NFT metadata documents were reread with zero failures and portable exact-identity/hash evidence. Beyond the initial 300-record pass, 6,401 recordings gained source fields, including 773 lyric texts (2,102 total lyric-bearing recordings) and thousands of explicit musical-layer traits. No additional supplied BPM/key values were found in the full source scan. Source totals remain 7,955 BPM and 7,525 keys. See `data/indexed-metadata-campaign-summary.json`.
 

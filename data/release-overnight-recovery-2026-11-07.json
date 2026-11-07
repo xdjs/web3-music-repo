@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-07T18:22:43.228338+00:00",
+  "url": "https://web3-music-archive.vercel.app",
+  "pullRequest": "https://github.com/xdjs/web3-music-repo/pull/13",
+  "sourceCommit": "15c1bb645dd53a61b98266f6407d8e39b0474eb1",
+  "deploymentId": "dpl_Bi6y7QD1qHZHw7qT9BCVysBcppR3",
+  "deploymentUrl": "https://web3-music-repo-jf5cc9q77-musicnerd.vercel.app",
+  "status": "READY",
+  "aliases": [
+    "web3-music-archive.vercel.app",
+    "web3-music-repo.vercel.app"
+  ],
+  "sourceEvidence": "Clean exact-SHA release checkout matched tested feature tree. CLI deployment has no gitSource metadata. Production catalog index and music-facts module SHA256 match the tested build.",
+  "checks": {
+    "testsPassed": 370,
+    "syntax": "passed",
+    "format": "passed",
+    "productionBuild": "passed",
+    "liveUI": "10 representative cases passed at 1440px dark and 390px light; supplied title BPM, estimates and new lyrics. No page errors or horizontal overflow.",
+    "liveHashes": "data/production-overnight-source-verification.json",
+    "liveUIReceipt": "data/production-overnight-recovery-ui-verification.json",
+    "runtimeErrorScan": "No deployment-scoped error/fatal logs returned for 2026-11-07T18:11:19Z through 18:21:19Z; not comprehensive monitoring"
+  },
+  "data": {
+    "recordings": 37345,
+    "withBpm": 17079,
+    "suppliedBpm": 7972,
+    "estimatedBpm": 9107,
+    "soundRecordings": 9833,
+    "soundWithBpm": 8329,
+    "soundSuppliedBpm": 2684,
+    "soundEstimatedBpm": 5645,
+    "sourceKeys": 7525,
+    "lyrics": 2102,
+    "newLyricsBeyondInitial300": 773,
+    "uniqueIndexedMetadataDocumentsRead": 27520,
+    "metadataReadFailures": 0,
+    "furtherEnrichedRecordingsBeyondInitial300": 6401,
+    "remainingUntouchedWithoutSuppliedBpm": 17886,
+    "pendingAnalysis": 2
+  },
+  "workerState": "All metadata/BPM campaign and analyzer processes stopped; no analysis restarted for this release.",
+  "nextWork": "Isolated fix/bpm-bounded-transfers worktree is implementing bounded transfer-progress handling, same-identity gateway fallback and retryable deferrals. Review required before restarting analysis.",
+  "limitations": [
+    "BPM estimates remain approximate and may be half or double tempo; low-confidence results withheld.",
+    "Completed indexed source cohort is not a complete platform or chain census.",
+    "Source keys were recovered, not inferred by Open BPM.",
+    "Playback and tempo accuracy were not individually auditioned for all recordings.",
+    "Historical download failures do not establish permanent source loss; two sampled files currently respond and are large videos.",
+    "Physical second-device playlist sync and physical Instagram upload remain outside this release verification."
+  ]
+}
