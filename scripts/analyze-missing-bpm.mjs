@@ -1,35 +1,18 @@
 import { acquireRecoveryLock } from "../src/recovery-job-lock.mjs";
-import {
-  readFileSync,
-  writeFileSync,
-  renameSync,
-  mkdirSync,
-  rmSync,
-  createWriteStream,
-  existsSync,
-} from "node:fs";
-import { createHash } from "node:crypto";
+import { writeFileSync, renameSync, mkdirSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
-import { pipeline } from "node:stream/promises";
-import { Transform, Readable } from "node:stream";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { createCatalogLoader } from "../src/catalog-bundle.mjs";
-import { storageURL } from "../src/nft-reader.mjs";
+import { analyzeBpmMedia } from "../src/bpm-audio-analysis.mjs";
 import { musicFacts } from "../src/music-facts.mjs";
+import { readAnalysisCheckpoint } from "../src/bpm-analysis-checkpoint.mjs";
 const exec = promisify(execFile),
   load = createCatalogLoader(),
   initial = load();
-const read = (p, f) => {
-  try {
-    return JSON.parse(readFileSync(p));
-  } catch {
-    return f;
-  }
-};
 const file = "data/audio-analysis.json";
 const releaseLock = acquireRecoveryLock(file);
-const state = read(file, { records: {} }),
+const state = readAnalysisCheckpoint(file),
   work = "work/bpm-audio";
 mkdirSync(work, { recursive: true });
 const localBinary = resolve("../.music-recovery-tools/cargo/bin/open-bpm");
@@ -53,6 +36,7 @@ const max = Number(
   process.argv.find((a) => a.startsWith("--limit="))?.slice(8) || Infinity,
 );
 const retry = process.argv.includes("--retry");
+const retryDeferred = process.argv.includes("--retry-deferred");
 const platform = process.argv
   .find((a) => a.startsWith("--platform="))
   ?.slice(11);
@@ -66,6 +50,19 @@ if (
   downloadTimeout > 90000
 )
   throw Error("Download timeout must be 5000–90000 ms");
+const totalTransferTimeout = Number(
+  process.argv
+    .find((a) => a.startsWith("--total-transfer-timeout-ms="))
+    ?.split("=")[1] || 180000,
+);
+if (
+  !Number.isInteger(totalTransferTimeout) ||
+  totalTransferTimeout < downloadTimeout ||
+  totalTransferTimeout > 600000
+)
+  throw Error(
+    "Total transfer timeout must be at least the connection timeout and at most 600000 ms",
+  );
 const jobs = initial.records
   .filter(
     (r) =>
@@ -73,6 +70,7 @@ const jobs = initial.records
       (!platform || r.platform === platform) &&
       !musicFacts({ ...r, audioAnalysis: null }).bpm &&
       ((retry && state.records[r.id]?.status === "unavailable") ||
+        (retryDeferred && state.records[r.id]?.status === "deferred") ||
         !state.records[r.id] ||
         state.records[r.id].status === "pending"),
   )
@@ -97,6 +95,9 @@ state.lastPass = {
   platform: platform || "all",
   limit: Number.isFinite(max) ? max : null,
   downloadTimeout,
+  totalTransferTimeout,
+  timeoutScope:
+    "downloadTimeout applies separately to headers and no-progress; totalTransferTimeout bounds all gateway attempts",
   selectedRecords: jobs.map((r) => r.id),
 };
 state.interruptedAt = null;
@@ -115,136 +116,25 @@ for (const r of jobs)
   if (!state.records[r.id]) state.records[r.id] = { status: "pending" };
 save();
 let cooldownUntil = 0;
-async function download(source, path) {
-  for (let attempt = 0; attempt < 3; attempt++) {
-    await new Promise((r) =>
-      setTimeout(r, Math.max(0, cooldownUntil - Date.now())),
-    );
-    try {
-      return await downloadOnce(source, path);
-    } catch (error) {
-      if (!error.message.includes("429") || attempt === 2) throw error;
-      cooldownUntil = Math.max(
-        cooldownUntil,
-        Date.now() + 30000 * (attempt + 1),
-      );
-    }
-  }
-}
-async function downloadOnce(source, path) {
-  let url = storageURL(source);
-  for (let redirects = 0; redirects < 4; redirects++) {
-    const res = await fetch(url, {
-      redirect: "manual",
-      signal: AbortSignal.timeout(downloadTimeout),
-    });
-    if ([301, 302, 303, 307, 308].includes(res.status)) {
-      url = storageURL(new URL(res.headers.get("location"), url).href);
-      await res.body?.cancel();
-      continue;
-    }
-    if (!res.ok) throw Error("Media HTTP " + res.status);
-    let bytes = 0;
-    const hash = createHash("sha256");
-    await pipeline(
-      Readable.fromWeb(res.body),
-      new Transform({
-        transform(chunk, enc, cb) {
-          bytes += chunk.length;
-          if (bytes > 256 * 1024 * 1024)
-            return cb(Error("Media exceeds 256 MB analysis limit"));
-          hash.update(chunk);
-          cb(null, chunk);
-        },
-      }),
-      createWriteStream(path),
-    );
-    return { sha256: hash.digest("hex"), bytes, url };
-  }
-  throw Error("Redirect limit");
-}
 const mediaResults = new Map();
 let next = 0,
   done = 0;
 async function analyze(r, source) {
-  const id = createHash("sha256").update(source).digest("hex"),
-    input = `${work}/${id}.media`,
-    wav = `${work}/${id}.wav`;
-  try {
-    const fetched = await download(source, input);
-    const probe = JSON.parse(
-      (
-        await exec(
-          "ffprobe",
-          [
-            "-v",
-            "error",
-            "-show_entries",
-            "format=duration:stream=codec_type",
-            "-of",
-            "json",
-            input,
-          ],
-          { timeout: 20000 },
-        )
-      ).stdout,
-    );
-    const duration = Number(probe.format?.duration);
-    if (!probe.streams?.some((s) => s.codec_type === "audio"))
-      throw Error("Media contains no audio stream");
-    if (!Number.isFinite(duration) || duration < 10 || duration > 1800)
-      throw Error("Duration outside 10–1800 second analysis range");
-    await exec(
-      "ffmpeg",
-      [
-        "-v",
-        "error",
-        "-y",
-        "-i",
-        input,
-        "-map",
-        "0:a:0",
-        "-vn",
-        "-ac",
-        "1",
-        "-ar",
-        "22050",
-        wav,
-      ],
-      { timeout: 120000, maxBuffer: 1024 * 1024 },
-    );
-    const result = JSON.parse(
-      (
-        await exec(bin, ["--format", "json", wav], {
-          timeout: 120000,
-          env: { ...process.env, RAYON_NUM_THREADS: "2" },
-          maxBuffer: 1024 * 1024,
-        })
-      ).stdout,
-    );
-    if (
-      !Number.isFinite(result.bpm) ||
-      result.bpm < 20 ||
-      result.bpm > 400 ||
-      !Number.isFinite(result.confidence) ||
-      result.confidence < 0 ||
-      result.confidence > 1
-    )
-      throw Error("Invalid analyzer result");
-    return {
-      status: result.confidence < 0.3 ? "needs-review" : "estimated",
-      bpm: result.bpm,
-      confidence: result.confidence,
-      gridOffset: result.grid_offset,
-      durationSeconds: duration,
-      source,
-      ...fetched,
-      checkedAt: new Date().toISOString(),
-    };
-  } finally {
-    rmSync(input, { force: true });
-    rmSync(wav, { force: true });
-  }
+  await new Promise((resolve) =>
+    setTimeout(resolve, Math.max(0, cooldownUntil - Date.now())),
+  );
+  return analyzeBpmMedia(source, {
+    binary: bin,
+    workDirectory: work,
+    downloadOptions: {
+      connectionTimeoutMs: downloadTimeout,
+      idleTimeoutMs: downloadTimeout,
+      totalTimeoutMs: totalTransferTimeout,
+      onRateLimit: () => {
+        cooldownUntil = Math.max(cooldownUntil, Date.now() + 30000);
+      },
+    },
+  });
 }
 await Promise.all(
   Array.from({ length: concurrency }, async () => {
@@ -270,8 +160,12 @@ await Promise.all(
         state.records[r.id] = { ...(await mediaResults.get(source)) };
       } catch (e) {
         state.records[r.id] = {
-          status: "unavailable",
+          status: e.deferred ? "deferred" : "unavailable",
           error: e.message,
+          failureReason: e.reason || "analysis-error",
+          retryable: Boolean(e.retryable),
+          ...(e.attempts ? { attempts: e.attempts } : {}),
+          ...(e.transfer ? { transfer: e.transfer } : {}),
           source,
           checkedAt: new Date().toISOString(),
         };

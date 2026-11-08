@@ -1,0 +1,101 @@
+{
+  "startedAt": "2026-11-07T18:24:15.647Z",
+  "scope": "Two original large IPFS videos only, isolated analysis proof; no catalog/checkpoint writes, no listening copy published",
+  "budgets": {
+    "perSourceBytes": 209715200,
+    "totalSourceBytes": 419430400,
+    "perSourceTransferMs": 180000,
+    "connectionMs": 15000,
+    "idleMs": 15000,
+    "concurrency": 1,
+    "analysisThreads": 2
+  },
+  "records": [
+    {
+      "id": "spinamp-b30dca6e0dd0386117e1",
+      "title": "Busy",
+      "cid": "QmdGgTkMihQ4RfMjCETnMiNg4RLCAR9pkC4pHHJPd1qJXL",
+      "expectedBytes": 175832658,
+      "source": "https://gateway.pinata.cloud/ipfs/QmdGgTkMihQ4RfMjCETnMiNg4RLCAR9pkC4pHHJPd1qJXL",
+      "status": "estimated",
+      "bpm": 106.54,
+      "confidence": 0.4401,
+      "gridOffset": 0.09413,
+      "durationSeconds": 252.68,
+      "url": "https://ipfs.filebase.io/ipfs/QmdGgTkMihQ4RfMjCETnMiNg4RLCAR9pkC4pHHJPd1qJXL",
+      "sha256": "8b89a0204e89606d31bf4eb5bd4a9833fc834e59b375c4fc1495783f68b667ec",
+      "bytes": 175832658,
+      "receivedBytes": 175832658,
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmdGgTkMihQ4RfMjCETnMiNg4RLCAR9pkC4pHHJPd1qJXL",
+          "host": "ipfs.filebase.io",
+          "startedAt": "2026-11-07T18:24:15.649Z",
+          "bytes": 175832658,
+          "status": 200,
+          "responseURL": "https://ipfs.filebase.io/ipfs/QmdGgTkMihQ4RfMjCETnMiNg4RLCAR9pkC4pHHJPd1qJXL",
+          "headersMs": 135,
+          "contentLength": 175832658,
+          "contentType": "video/mp4",
+          "lastProgressMs": 4877,
+          "elapsedMs": 4877,
+          "result": "complete"
+        }
+      ],
+      "transferBudget": {
+        "connectionTimeoutMs": 15000,
+        "idleTimeoutMs": 15000,
+        "totalTimeoutMs": 180000,
+        "maxBytes": 209715200
+      },
+      "elapsedMs": 4877,
+      "checkedAt": "2026-11-07T18:24:22.254Z",
+      "wallMs": 6610,
+      "expectedLengthMatched": true
+    },
+    {
+      "id": "spinamp-7954ce12c4346333b51a",
+      "title": "DGTZD",
+      "cid": "QmZzSDVkZFXNFSpT7yvp7Aq8c4MKfgjAC4Pnz8uRhGLq8F",
+      "expectedBytes": 141093465,
+      "source": "https://gateway.pinata.cloud/ipfs/QmZzSDVkZFXNFSpT7yvp7Aq8c4MKfgjAC4Pnz8uRhGLq8F",
+      "status": "estimated",
+      "bpm": 104.65,
+      "confidence": 0.3589,
+      "gridOffset": 0.232092,
+      "durationSeconds": 212,
+      "url": "https://ipfs.filebase.io/ipfs/QmZzSDVkZFXNFSpT7yvp7Aq8c4MKfgjAC4Pnz8uRhGLq8F",
+      "sha256": "d997ba2a82f8e16cdf9c30b84ead41bea5abd17e250c58767e309f86afa01325",
+      "bytes": 141093465,
+      "receivedBytes": 141093465,
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmZzSDVkZFXNFSpT7yvp7Aq8c4MKfgjAC4Pnz8uRhGLq8F",
+          "host": "ipfs.filebase.io",
+          "startedAt": "2026-11-07T18:24:22.259Z",
+          "bytes": 141093465,
+          "status": 200,
+          "responseURL": "https://ipfs.filebase.io/ipfs/QmZzSDVkZFXNFSpT7yvp7Aq8c4MKfgjAC4Pnz8uRhGLq8F",
+          "headersMs": 14,
+          "contentLength": 141093465,
+          "contentType": "video/mp4",
+          "lastProgressMs": 4060,
+          "elapsedMs": 4060,
+          "result": "complete"
+        }
+      ],
+      "transferBudget": {
+        "connectionTimeoutMs": 15000,
+        "idleTimeoutMs": 15000,
+        "totalTimeoutMs": 180000,
+        "maxBytes": 209715200
+      },
+      "elapsedMs": 4060,
+      "checkedAt": "2026-11-07T18:24:27.518Z",
+      "wallMs": 5262,
+      "expectedLengthMatched": true
+    }
+  ],
+  "updatedAt": "2026-11-07T18:24:27.521Z",
+  "finishedAt": "2026-11-07T18:24:27.522Z"
+}

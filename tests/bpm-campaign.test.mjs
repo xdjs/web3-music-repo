@@ -21,6 +21,7 @@ test("campaign never overwrites supplied tempo or retries completed, failed and 
     "unavailable",
     "needs-review",
     "missing-media-reference",
+    "deferred",
     "metadata-bpm",
   ])
     assert.equal(campaignEligible(r, { status }), false);
@@ -128,6 +129,7 @@ test("public campaign totals use source-first counts and preserve uncertainty ca
     estimated: 1,
     needsReview: 1,
     unavailable: 1,
+    deferred: 0,
     pending: 1,
     untouched: 1,
     other: 0,
