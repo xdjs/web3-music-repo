@@ -30,6 +30,7 @@ export function solanaMintIdentity(nft) {
   return { chainId: "solana", mint: nft.contractAddress, standard: "METAPLEX" };
 }
 export function assetCollectionKey(record) {
+  if (record?.assetType === "indexed-release") return null;
   if (isSolanaAsset(record))
     return isSolanaMint(record.mint) ? `solana:${record.mint}` : null;
   if (

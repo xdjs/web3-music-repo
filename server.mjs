@@ -591,6 +591,10 @@ export async function handler(req, res) {
           "Recovered NFT Era catalog and Sound factory releases; not a complete Sound archive",
         records: nftCatalog.map((r) => ({
           id: r.id,
+          assetType: r.assetType,
+          mintStatus: r.mintStatus,
+          spinampTrackId: r.spinampTrackId,
+          indexedNetwork: r.indexedNetwork,
           artist: r.artist,
           title: r.title,
           chainId: r.chainId,

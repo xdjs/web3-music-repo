@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-11-08T04:33:30.842Z",
+  "base": "http://127.0.0.1:4303",
+  "scope": "Bounded real app playback of3 candidate recordings, not full-track audition or all-catalog availability.",
+  "results": [
+    {
+      "engine": "chromium",
+      "id": "spinamp-4130ab5f9ba118dd8bca",
+      "status": "played",
+      "media": {
+        "currentTime": 1.014765,
+        "duration": 321.133628,
+        "readyState": 4,
+        "src": "https://arweave.net/ThI9zpAluEGTDIBmW932PPaZlC_tIBYrFaFsXwT7p0Q",
+        "width": 0,
+        "height": 0,
+        "decodedBytes": 60604
+      },
+      "pageErrors": []
+    },
+    {
+      "engine": "webkit",
+      "id": "spinamp-66e7d6a196ca36f3f447",
+      "status": "played",
+      "media": {
+        "currentTime": 1.01874214652358,
+        "duration": 237.1395918367347,
+        "readyState": 4,
+        "src": "https://ipfs.filebase.io/ipfs/QmcFG2M8pXG1tnYiEVxpuJEXCyqmaaNRRXv9Uim648ZDaD",
+        "width": 0,
+        "height": 0,
+        "decodedBytes": null
+      },
+      "pageErrors": []
+    },
+    {
+      "engine": "chromium",
+      "id": "spinamp-3d0fac554ccb97331ded",
+      "status": "played",
+      "media": {
+        "currentTime": 1.014006,
+        "duration": 28.303333,
+        "readyState": 4,
+        "src": "https://ipfs.filebase.io/ipfs/bafybeigqyayhm3usg5e32rv7dxg6l36rgyekx5bjfjofdbiscpolictsyi",
+        "width": 568,
+        "height": 320,
+        "decodedBytes": 12719
+      },
+      "pageErrors": []
+    }
+  ],
+  "status": "passed"
+}

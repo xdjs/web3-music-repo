@@ -49,6 +49,7 @@ const frontend = [
   "solana-identity.mjs",
   "solana-provenance.mjs",
   "asset-capabilities.mjs",
+  "indexed-release-ui.mjs",
   "image-recovery.mjs",
 ];
 for (const file of frontend) await copyFile(`src/${file}`, `dist/src/${file}`);

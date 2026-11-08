@@ -1,3 +1,4 @@
+import { hasTokenIdentity } from "./asset-capabilities.mjs";
 import { getAddress } from "viem";
 const SOURCE = "https://api.spinamp.xyz/v3/graphql";
 const CHAINS = {
@@ -71,6 +72,7 @@ export function normalizeSpinampWalletPage(
     byContract = new Map();
   for (const r of records) {
     if (
+      !hasTokenIdentity(r) ||
       !Object.values(CHAINS).includes(r.chainId) ||
       !/^0x[0-9a-f]{40}$/i.test(r.contract || "") ||
       r.standard === "ERC20"

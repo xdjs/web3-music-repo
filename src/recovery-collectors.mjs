@@ -1,3 +1,7 @@
+import {
+  isIndexedRelease,
+  unsupportedIndexedRead,
+} from "./asset-capabilities.mjs";
 import { isSolanaAsset, unsupportedSolanaRead } from "./asset-capabilities.mjs";
 import { readFileSync } from "node:fs";
 import { readSpinampCollectorSnapshot } from "./spinamp-collectors.mjs";
@@ -64,6 +68,7 @@ export async function readCollectors(
     readMediaHolders,
   },
 ) {
+  if (isIndexedRelease(record)) return unsupportedIndexedRead();
   if (isSolanaAsset(record)) return unsupportedSolanaRead("collectors");
   const indexedSnapshot = spinampSnapshot(record);
   if (indexedSnapshot) return indexedSnapshot;

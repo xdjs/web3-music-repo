@@ -1,4 +1,9 @@
-import { isSolanaAsset, unsupportedSolanaRead } from "./asset-capabilities.mjs";
+import {
+  isIndexedRelease,
+  unsupportedIndexedRead,
+  isSolanaAsset,
+  unsupportedSolanaRead,
+} from "./asset-capabilities.mjs";
 export function mountCollectors({
   esc,
   short,
@@ -42,6 +47,8 @@ export function mountCollectors({
     return `<a class="collector-card" href="${walletLink(h.address)}" title="${esc(h.address)}">${avatar(h)}<span class="collector-name">${esc(i.name)}<small>${esc(i.source)}</small></span><span class="collector-editions">${esc(h.balance)}<small>${purchased ? "purchased" : h.balance === "1" ? "edition" : "editions"}</small></span></a>`;
   }
   function content(r, full = false) {
+    if (isIndexedRelease(r))
+      return `<div class="reading"><h2>Collectors not yet linked</h2><p>${esc(unsupportedIndexedRead().message)}</p></div>`;
     if (isSolanaAsset(r))
       return `<div class="reading"><h2>Solana collectors</h2><p>${esc(unsupportedSolanaRead().message)}</p></div>`;
     if (r.standard === "ERC20")
@@ -131,7 +138,12 @@ export function mountCollectors({
   }
   async function load(id, more = false, emptyPages = 0) {
     const record = catalog().find((r) => r.id === id);
-    if (isSolanaAsset(record) || record?.standard === "ERC20") return;
+    if (
+      isIndexedRelease(record) ||
+      isSolanaAsset(record) ||
+      record?.standard === "ERC20"
+    )
+      return;
     activeRecord = id;
     const prior = states.get(id);
     if (prior?.loading) return;

@@ -1,5 +1,7 @@
+import { isIndexedRelease } from "./asset-capabilities.mjs";
 const zero = "0x0000000000000000000000000000000000000000";
 export function catalogHolders(record, snapshot) {
+  if (isIndexedRelease(record)) return null;
   if (record.platform !== "Catalog" || ![1, 8453].includes(record.chainId))
     return null;
   const same = (row) =>

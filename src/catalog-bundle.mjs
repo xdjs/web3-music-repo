@@ -3,6 +3,7 @@ import {
   assetCollectionKey,
   isSolanaAsset,
 } from "./solana-identity.mjs";
+import { isIndexedRelease, hasTokenIdentity } from "./asset-capabilities.mjs";
 import { releaseDateForRecord } from "./release-date.mjs";
 import { applyArtistPlaybackOverride } from "./artist-playback-override.mjs";
 import { applyPreservedPlaybackCopy } from "./preserved-playback-copy.mjs";
@@ -32,6 +33,7 @@ export function mergeCatalog(base, baseEvidence, bundles, people) {
   const tokenKey = (r) => assetIdentityKey(r) || `unverified:${r.id}`;
   const mediaKey = (r, v) =>
     `${assetCollectionKey(r) || `unverified:${r.id}`}:${v?.mediaURI || ""}`;
+  const byId = new Map(records.map((r) => [r.id, r]));
   const tokens = new Map(records.map((r) => [tokenKey(r), r]));
   const media = new Map(
     records
@@ -58,7 +60,32 @@ export function mergeCatalog(base, baseEvidence, bundles, people) {
     for (const r of bundle.records || []) {
       const v = bundle.evidence?.[r.id];
       if (!["live", "indexed"].includes(v?.status)) continue;
-      const existing = tokens.get(tokenKey(r)) || media.get(mediaKey(r, v));
+      const sameId = byId.get(r.id);
+      if (sameId && isIndexedRelease(sameId) && hasTokenIdentity(r)) {
+        // Another established record may already own this exact token ID. Keep
+        // the listening ID intact until an explicit alias migration exists;
+        // never create a second token identity through the promotion path.
+        const linkedOwner = tokens.get(tokenKey(r));
+        if (linkedOwner && linkedOwner !== sameId) continue;
+        tokens.delete(tokenKey(sameId));
+        media.delete(mediaKey(sameId, evidence[sameId.id]));
+        for (const key of [
+          "assetType",
+          "mintStatus",
+          "indexedNetwork",
+          "mediaTypeProvisional",
+          "indexedSourceDate",
+          "musicMetadata",
+        ])
+          delete sameId[key];
+        Object.assign(sameId, r);
+        evidence[sameId.id] = v;
+        tokens.set(tokenKey(sameId), sameId);
+        media.set(mediaKey(sameId, v), sameId);
+        continue;
+      }
+      const existing =
+        sameId || tokens.get(tokenKey(r)) || media.get(mediaKey(r, v));
       if (existing) {
         if (v.status === "live" && evidence[existing.id]?.status === "indexed")
           evidence[existing.id] = v;
@@ -91,6 +118,7 @@ export function mergeCatalog(base, baseEvidence, bundles, people) {
         origin: "recovered",
       };
       records.push(entry);
+      byId.set(entry.id, entry);
       tokens.set(tokenKey(entry), entry);
       media.set(mediaKey(entry, v), entry);
       evidence[entry.id] = v;
@@ -99,7 +127,9 @@ export function mergeCatalog(base, baseEvidence, bundles, people) {
           id: artistId,
           name: r.artist,
           kind: "Artist",
-          bio: "Artist attribution recovered from original release metadata. This profile is not a verified complete discography.",
+          bio: isIndexedRelease(r)
+            ? "Artist attribution preserved in Spinamp’s music index. This profile is not a verified complete discography."
+            : "Artist attribution recovered from original release metadata. This profile is not a verified complete discography.",
           links: [],
           sources: [],
         });
@@ -138,6 +168,7 @@ export function createCatalogLoader() {
       "data/spinamp/recovered-media.json",
       "data/artist-playback-overrides.json",
       "data/spinamp/playback-copies.json",
+      "data/spinamp/indexed-releases.json",
     ];
     const next = paths
       .map((p) => {
@@ -158,10 +189,12 @@ export function createCatalogLoader() {
     };
     const peteZora = read(paths[18], {});
     const spinamp = read(paths[20], {});
+    const indexedReleases = read(paths[23], {});
     const proposedPeople = new Map(basePeople.map((p) => [p.id, p]));
     for (const person of [
       ...(peteZora.proposedPeople || []),
       ...(spinamp.proposedPeople || []),
+      ...(indexedReleases.proposedPeople || []),
     ]) {
       if (!proposedPeople.has(person.id)) proposedPeople.set(person.id, person);
     }
@@ -181,6 +214,7 @@ export function createCatalogLoader() {
         peteZora,
         read(paths[19], {}),
         spinamp,
+        indexedReleases,
       ],
       [...proposedPeople.values()],
     );
@@ -226,18 +260,18 @@ export function createCatalogLoader() {
       audioAnalysis: audioAnalysis[r.id] || null,
       royaltyPayments:
         royalties.get(
-          isSolanaAsset(r)
+          isSolanaAsset(r) || !hasTokenIdentity(r)
             ? null
             : `${r.chainId}-${r.contract.toLowerCase()}-${r.tokenId}`,
         ) || [],
       revenue:
         revenue[
-          isSolanaAsset(r)
+          isSolanaAsset(r) || !hasTokenIdentity(r)
             ? null
             : `${r.chainId}-${r.contract.toLowerCase()}-${r.tokenId}`
         ] || null,
       musicMetadata:
-        musicMetadata[r.id]?.status === "read"
+        !isIndexedRelease(r) && musicMetadata[r.id]?.status === "read"
           ? musicMetadata[r.id]
           : r.musicMetadata || null,
       kind: mediaKind(r, merged.evidence[r.id]),
