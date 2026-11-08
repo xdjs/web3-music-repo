@@ -56,11 +56,47 @@ export function mergeCatalog(base, baseEvidence, bundles, people) {
   ]);
   const addedPeople = new Map();
   const knownPeople = new Set(people.map((p) => p.id));
+  const createEntry = (r) => {
+    const artistId =
+      (r.artistId && knownPeople.has(r.artistId) ? r.artistId : null) ||
+      byName.get(r.artist.trim().toLowerCase()) ||
+      "artist-" + slug(r.artist);
+    const entry = {
+      ...r,
+      artistId,
+      personIds: [
+        ...new Set([
+          artistId,
+          ...(r.personIds || []),
+          ...(r.credits || []).map((c) => c.personId),
+        ]),
+      ].filter((id) => id === artistId || knownPeople.has(id)),
+      origin: "recovered",
+    };
+    if (!knownPeople.has(artistId) && !addedPeople.has(artistId))
+      addedPeople.set(artistId, {
+        id: artistId,
+        name: r.artist,
+        kind: "Artist",
+        bio: isIndexedRelease(r)
+          ? "Artist attribution preserved in Spinamp’s music index. This profile is not a verified complete discography."
+          : "Artist attribution recovered from original release metadata. This profile is not a verified complete discography.",
+        links: [],
+        sources: [],
+      });
+    return entry;
+  };
   for (const bundle of bundles) {
     for (const r of bundle.records || []) {
       const v = bundle.evidence?.[r.id];
       if (!["live", "indexed"].includes(v?.status)) continue;
       const sameId = byId.get(r.id);
+      if (
+        sameId?.spinampTrackId &&
+        r.spinampTrackId &&
+        sameId.spinampTrackId !== r.spinampTrackId
+      )
+        continue;
       if (sameId && isIndexedRelease(sameId) && hasTokenIdentity(r)) {
         // Another established record may already own this exact token ID. Keep
         // the listening ID intact until an explicit alias migration exists;
@@ -69,16 +105,12 @@ export function mergeCatalog(base, baseEvidence, bundles, people) {
         if (linkedOwner && linkedOwner !== sameId) continue;
         tokens.delete(tokenKey(sameId));
         media.delete(mediaKey(sameId, evidence[sameId.id]));
-        for (const key of [
-          "assetType",
-          "mintStatus",
-          "indexedNetwork",
-          "mediaTypeProvisional",
-          "indexedSourceDate",
-          "musicMetadata",
-        ])
-          delete sameId[key];
-        Object.assign(sameId, r);
+        // Replace the provisional record, not just its token fields. Old
+        // playback overrides, credits and artist memberships must not survive
+        // when absent from the newly linked source.
+        const promoted = createEntry(r);
+        for (const key of Object.keys(sameId)) delete sameId[key];
+        Object.assign(sameId, promoted);
         evidence[sameId.id] = v;
         tokens.set(tokenKey(sameId), sameId);
         media.set(mediaKey(sameId, v), sameId);
@@ -101,38 +133,12 @@ export function mergeCatalog(base, baseEvidence, bundles, people) {
             existing[k] = r[k];
         continue;
       }
-      const artistId =
-        (r.artistId && knownPeople.has(r.artistId) ? r.artistId : null) ||
-        byName.get(r.artist.trim().toLowerCase()) ||
-        "artist-" + slug(r.artist);
-      const entry = {
-        ...r,
-        artistId,
-        personIds: [
-          ...new Set([
-            artistId,
-            ...(r.personIds || []),
-            ...(r.credits || []).map((c) => c.personId),
-          ]),
-        ].filter((id) => id === artistId || knownPeople.has(id)),
-        origin: "recovered",
-      };
+      const entry = createEntry(r);
       records.push(entry);
       byId.set(entry.id, entry);
       tokens.set(tokenKey(entry), entry);
       media.set(mediaKey(entry, v), entry);
       evidence[entry.id] = v;
-      if (!knownPeople.has(artistId) && !addedPeople.has(artistId))
-        addedPeople.set(artistId, {
-          id: artistId,
-          name: r.artist,
-          kind: "Artist",
-          bio: isIndexedRelease(r)
-            ? "Artist attribution preserved in Spinamp’s music index. This profile is not a verified complete discography."
-            : "Artist attribution recovered from original release metadata. This profile is not a verified complete discography.",
-          links: [],
-          sources: [],
-        });
     }
   }
   return { records, evidence, people: [...people, ...addedPeople.values()] };

@@ -240,3 +240,90 @@ test("future music facts supplied by the track index are never labeled original 
   assert.equal(facts.bpm, 120);
   assert.match(facts.source, /Spinamp indexed metadata/);
 });
+
+test("promotion rebuilds playback and credited people from the linked source only", () => {
+  const old = {
+    ...release,
+    personIds: ["a", "old-credit"],
+    credits: [{ personId: "old-credit", role: "Production" }],
+    playback: { workingURL: "https://example.com/stale.mp3" },
+    playbackCopy: { source: "stale" },
+    audioAnalysis: { status: "estimated", bpm: 99 },
+  };
+  const next = {
+    ...linked,
+    artist: "New artist",
+    artistId: "b",
+    spinampTrackId: release.spinampTrackId,
+    credits: [
+      { personId: "new-credit", role: "Production" },
+      { personId: "unknown", role: "Other" },
+    ],
+  };
+  const ppl = [
+    ...people,
+    { id: "b", name: "New artist" },
+    { id: "old-credit", name: "Old credit" },
+    { id: "new-credit", name: "New credit" },
+  ];
+  const b = mergeCatalog(
+    [],
+    {},
+    [
+      bundle(old),
+      bundle(next, {
+        ...ev,
+        status: "live",
+        sourceType: "token-metadata",
+        mediaURL: "https://example.com/new.mp3",
+      }),
+    ],
+    ppl,
+  );
+  const r = b.records[0];
+  assert.equal(r.id, release.id);
+  assert.equal(r.artistId, "b");
+  assert.deepEqual(r.personIds, ["b", "new-credit"]);
+  assert.equal(r.playback, undefined);
+  assert.equal(r.playbackCopy, undefined);
+  assert.equal(r.audioAnalysis, undefined);
+  assert.equal(b.evidence[r.id].mediaURL, "https://example.com/new.mp3");
+  const nextWithPlayback = {
+    ...next,
+    playback: { workingURL: "https://example.com/verified-new.mp3" },
+  };
+  assert.equal(
+    mergeCatalog([], {}, [bundle(old), bundle(nextWithPlayback)], ppl)
+      .records[0].playback.workingURL,
+    nextWithPlayback.playback.workingURL,
+  );
+});
+test("a reused record ID with another explicit Spinamp track cannot promote or replace evidence", () => {
+  const other = { ...linked, spinampTrackId: "base/another-source-track" };
+  const b = mergeCatalog(
+    [],
+    {},
+    [
+      bundle(release),
+      bundle(other, {
+        ...ev,
+        status: "live",
+        mediaURL: "https://example.com/wrong.mp3",
+      }),
+    ],
+    people,
+  );
+  assert.equal(b.records.length, 1);
+  assert.equal(isIndexedRelease(b.records[0]), true);
+  assert.equal(b.records[0].spinampTrackId, release.spinampTrackId);
+  assert.equal(b.evidence[release.id].mediaURL, ev.mediaURL);
+  const reverse = mergeCatalog(
+    [],
+    {},
+    [bundle(other), bundle(release)],
+    people,
+  );
+  assert.equal(reverse.records.length, 1);
+  assert.equal(hasTokenIdentity(reverse.records[0]), true);
+  assert.equal(reverse.records[0].spinampTrackId, other.spinampTrackId);
+});
