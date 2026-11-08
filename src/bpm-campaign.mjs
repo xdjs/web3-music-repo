@@ -77,6 +77,7 @@ export function campaignCounts(records, analysis) {
     estimated: 0,
     needsReview: 0,
     unavailable: 0,
+    deferred: 0,
     pending: 0,
     untouched: 0,
     other: 0,
@@ -87,6 +88,7 @@ export function campaignCounts(records, analysis) {
     else if (a?.status === "estimated") totals.estimated++;
     else if (a?.status === "needs-review") totals.needsReview++;
     else if (a?.status === "unavailable") totals.unavailable++;
+    else if (a?.status === "deferred") totals.deferred++;
     else if (a?.status === "pending") totals.pending++;
     else if (!a) totals.untouched++;
     else totals.other++;
