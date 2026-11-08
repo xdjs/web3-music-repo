@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-11-08T05:04:09.283460+00:00",
+  "sourceBase": "23dc3fb",
+  "sourceCapture": "457f515",
+  "overlaySha256": "50193f77d280c84553833fdb181840a55eca4c48ff2a6c38df0fd65f6d7c74cd",
+  "overlayBytes": 22979884,
+  "counts": {
+    "catalogRecords": 50633,
+    "directMatches": 40808,
+    "descriptions": 13273,
+    "bpms": 12,
+    "keys": 1,
+    "supportingArtists": 7,
+    "supportingArtistProfileLinks": 7,
+    "videoCorrections": 13363,
+    "distinctSupportingArtists": 1,
+    "enrichedRecords": 22570
+  },
+  "syntax": "passed",
+  "focusedTests": {
+    "passed": 32
+  },
+  "fullTests": {
+    "passed": 414,
+    "failed": 1,
+    "environmentFailure": "Existing static-video HTTP test: listen EPERM 127.0.0.1"
+  },
+  "build": "passed",
+  "regeneration": "byte-identical",
+  "browser": {
+    "status": "pending-authorized-runner",
+    "reason": "Localhost listener denied EPERM; sandbox escalation rejected by disabled approval policy."
+  }
+}

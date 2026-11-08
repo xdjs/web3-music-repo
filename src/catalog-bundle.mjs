@@ -5,6 +5,7 @@ import {
 } from "./solana-identity.mjs";
 import { isIndexedRelease, hasTokenIdentity } from "./asset-capabilities.mjs";
 import { releaseDateForRecord } from "./release-date.mjs";
+import { applyTrackEnrichment } from "./spinamp-track-enrichment.mjs";
 import { applyArtistPlaybackOverride } from "./artist-playback-override.mjs";
 import { applyPreservedPlaybackCopy } from "./preserved-playback-copy.mjs";
 import { readFileSync, statSync } from "node:fs";
@@ -143,7 +144,7 @@ export function mergeCatalog(base, baseEvidence, bundles, people) {
   }
   return { records, evidence, people: [...people, ...addedPeople.values()] };
 }
-export function createCatalogLoader() {
+export function createCatalogLoader({ trackEnrichment = true } = {}) {
   let cached = null,
     lastCheck = 0,
     signature = "";
@@ -175,6 +176,7 @@ export function createCatalogLoader() {
       "data/artist-playback-overrides.json",
       "data/spinamp/playback-copies.json",
       "data/spinamp/indexed-releases.json",
+      "data/spinamp/track-enrichment.json",
     ];
     const next = paths
       .map((p) => {
@@ -308,6 +310,17 @@ export function createCatalogLoader() {
         preservedCopies[record.id],
       ),
     );
+    if (trackEnrichment) {
+      const entries = read(paths[24], { records: {} }).records;
+      merged.records = merged.records.map((record) =>
+        applyTrackEnrichment(
+          record,
+          merged.evidence[record.id],
+          entries[record.id],
+          merged.people,
+        ),
+      );
+    }
     for (const record of merged.records)
       record.releaseDate = releaseDateForRecord(record, releaseDates);
     // Keep discovery evidence on disk; only music belongs in the listening catalog.
