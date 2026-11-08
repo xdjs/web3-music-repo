@@ -2,11 +2,15 @@ import { chromium, webkit } from "playwright";
 import assert from "node:assert/strict";
 import { writeFileSync } from "node:fs";
 const base = process.env.VERIFY_BASE_URL || "http://127.0.0.1:4303";
+const outputPrefix = process.env.VERIFY_OUTPUT_PREFIX || "indexed-release";
+assert.match(outputPrefix, /^[a-z0-9-]{1,80}$/);
 const report = {
   checkedAt: new Date().toISOString(),
   base,
+  sourceCommit: process.env.RELEASE_SOURCE_COMMIT || null,
+  deploymentId: process.env.RELEASE_DEPLOYMENT_ID || null,
   scope:
-    "Bounded real app playback of3 candidate recordings, not full-track audition or all-catalog availability.",
+    "Bounded real app playback of three index-only recordings, not full-track audition or all-catalog availability.",
   results: [],
 };
 for (const [engine, id] of [
@@ -44,7 +48,7 @@ for (const [engine, id] of [
     assert.ok(media.duration > 0);
     if (id === "spinamp-3d0fac554ccb97331ded") assert.ok(media.width > 0);
     await page.screenshot({
-      path: `captures/indexed-release-playing-${engine}-${id}.png`,
+      path: `captures/${outputPrefix}-playing-${engine}-${id}.png`,
     });
     await page.locator("#audio").evaluate((e) => e.pause());
     report.results.push({
@@ -71,7 +75,7 @@ report.status = report.results.every(
   ? "passed"
   : "partial";
 writeFileSync(
-  "data/indexed-release-playback-verification.json",
+  `data/${outputPrefix}-playback-verification.json`,
   JSON.stringify(report, null, 2) + "\n",
 );
 console.log(JSON.stringify(report));

@@ -1,12 +1,17 @@
-import { chromium, webkit } from "playwright";
+import { createHash } from "node:crypto";
+import { chromium } from "playwright";
 import assert from "node:assert/strict";
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 const base = process.env.VERIFY_BASE_URL || "http://127.0.0.1:4303";
+const outputPrefix = process.env.VERIFY_OUTPUT_PREFIX || "indexed-release";
+assert.match(outputPrefix, /^[a-z0-9-]{1,80}$/);
 const report = {
   checkedAt: new Date().toISOString(),
   base,
+  sourceCommit: process.env.RELEASE_SOURCE_COMMIT || null,
+  deploymentId: process.env.RELEASE_DEPLOYMENT_ID || null,
   scope:
-    "Isolated candidate only. UI and representative playback; no complete-media or onchain verification claim.",
+    "Target-URL verification of index-only listening. UI and representative playback; no complete-media or onchain verification claim.",
   checks: [],
   status: "running",
 };
@@ -18,11 +23,70 @@ try {
     timeout: 60000,
   });
   assert.equal(res.status(), 200);
-  const data = await res.json();
+  const indexBody = await res.body();
+  const sha256 = (body) => createHash("sha256").update(body).digest("hex");
+  report.catalogDelivery = {
+    bytes: indexBody.length,
+    sha256: sha256(indexBody),
+    contentEncoding: res.headers()["content-encoding"] || null,
+  };
+  if (process.env.VERIFY_EXPECTED_INDEX_SHA256)
+    assert.equal(
+      report.catalogDelivery.sha256,
+      process.env.VERIFY_EXPECTED_INDEX_SHA256,
+    );
+  const data = JSON.parse(indexBody);
+  if (process.env.VERIFY_EXPECTED_RECORDS)
+    assert.equal(
+      data.records.length,
+      Number(process.env.VERIFY_EXPECTED_RECORDS),
+    );
+  if (process.env.VERIFY_COMPARE_LOCAL_ASSETS === "1") {
+    report.assets = [];
+    for (const path of [
+      "src/archive.js",
+      "src/asset-capabilities.mjs",
+      "src/indexed-release-ui.mjs",
+      "src/collectors-ui.mjs",
+      "src/music-facts.mjs",
+    ]) {
+      const r = await api.request.get(base + "/" + path);
+      assert.equal(r.status(), 200);
+      const body = await r.body();
+      const expected = sha256(readFileSync(path));
+      assert.equal(sha256(body), expected);
+      report.assets.push({ path, bytes: body.length, sha256: expected });
+    }
+  }
+  const coverageResponse = await api.request.get(base + "/api/coverage", {
+    timeout: 60000,
+  });
+  assert.equal(coverageResponse.status(), 200);
+  const coverage = await coverageResponse.json();
+  assert.ok(coverage.catalogWorks.tokenEntries > 0);
+  assert.ok(coverage.expansion.attempted > 0);
+  assert.ok(coverage.soundReconciliation.checkedAt);
+  report.checks.push({
+    case: "coverage-source-data-present",
+    pass: true,
+    catalogTokenEntries: coverage.catalogWorks.tokenEntries,
+    soundAttempted: coverage.expansion.attempted,
+  });
   const record = data.records.find(
     (r) => r.id === "spinamp-4130ab5f9ba118dd8bca",
   );
   assert.ok(record);
+  const detailResponse = await api.request.get(
+    base + "/api/record/" + record.id,
+  );
+  assert.equal(detailResponse.status(), 200);
+  const detail = (await detailResponse.json()).record;
+  assert.equal(detail.assetType, "indexed-release");
+  assert.equal(detail.mintStatus, "unconfirmed");
+  assert.equal(detail.chainId, undefined);
+  assert.ok(detail.spinampTrackId);
+  assert.equal(detail.recovery.sourceType, "spinamp-track-index");
+  report.checks.push({ case: "lazy-record-provenance", pass: true });
   report.record = record.id;
   report.counts = data.summary;
   for (const action of ["collectors", "holders", "owner", "recover"]) {
@@ -97,7 +161,7 @@ try {
       .evaluate((img) => img.complete && img.naturalWidth > 0)
       .catch(() => false);
     await page.screenshot({
-      path: `captures/indexed-release-${view.width}-${view.theme}.png`,
+      path: `captures/${outputPrefix}-${view.width}-${view.theme}.png`,
       fullPage: true,
     });
     const y = await page.evaluate(() => scrollY);
@@ -188,7 +252,7 @@ try {
 } finally {
   await browser.close();
   writeFileSync(
-    "data/indexed-release-ui-verification.json",
+    `data/${outputPrefix}-ui-verification.json`,
     JSON.stringify(report, null, 2) + "\n",
   );
   console.log(JSON.stringify(report));
