@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-11-08T04:40:22.388657+00:00",
+  "scope": "Reconciliation of all 52,987 rows in the frozen Spinamp processed-track snapshot. Rows are not necessarily distinct songs. Token-linked and index-only evidence remain separate.",
+  "inventoryRows": 52987,
+  "previousSpinampAdditions": 27520,
+  "indexOnlyAdditions": 13288,
+  "totalSpinampAdditions": 40808,
+  "alreadyCoveredRows": 8023,
+  "coveredIndexRows": 48831,
+  "heldRows": 4114,
+  "unresolvedRelationRows": 42,
+  "totalAppRecordings": 50633,
+  "artistProfiles": 11226,
+  "heldReasons": {
+    "no-indexed-audio-evidence": 1323,
+    "podcast-platform-outside-music-scope": 2307,
+    "artist-attribution-conflict": 152,
+    "missing-or-artwork-only-original-media": 152,
+    "unsupported-original-storage": 12,
+    "unsupported-or-invalid-nft-identity": 1,
+    "missing-title-or-artist": 150,
+    "unverified-solana-platform-mint-mapping": 9,
+    "audio-reference-is-artwork": 7,
+    "video-without-confirmed-audio-needs-review": 1
+  },
+  "references": [
+    "data/spinamp/import-summary.json",
+    "data/spinamp/unlinked-release-summary.json",
+    "data/spinamp/unlinked-release-audit.json.gz"
+  ],
+  "limitations": [
+    "NFT links remain unconfirmed for the 13,288 index-only additions.",
+    "Only bounded audio samples were decoded; preservation of media references does not establish all-track playback availability.",
+    "The index snapshot is not a complete census of music NFTs on every chain."
+  ]
+}

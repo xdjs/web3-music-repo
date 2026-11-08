@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-08T04:33:14.489Z",
+  "scope": "Two reviewed original-media analysis results imported after exact record/source/hash/complete-byte validation. Historical failed attempts preserved below. This does not resume the campaign.",
+  "changes": [
+    {
+      "id": "spinamp-b30dca6e0dd0386117e1",
+      "previous": {
+        "status": "unavailable",
+        "error": "The operation was aborted due to timeout",
+        "source": "https://gateway.pinata.cloud/ipfs/QmdGgTkMihQ4RfMjCETnMiNg4RLCAR9pkC4pHHJPd1qJXL",
+        "checkedAt": "2026-11-07T05:17:37.112Z"
+      },
+      "bpm": 106.54,
+      "source": "https://gateway.pinata.cloud/ipfs/QmdGgTkMihQ4RfMjCETnMiNg4RLCAR9pkC4pHHJPd1qJXL",
+      "sourceSha256": "8b89a0204e89606d31bf4eb5bd4a9833fc834e59b375c4fc1495783f68b667ec"
+    },
+    {
+      "id": "spinamp-7954ce12c4346333b51a",
+      "previous": {
+        "status": "unavailable",
+        "error": "The operation was aborted due to timeout",
+        "source": "https://gateway.pinata.cloud/ipfs/QmZzSDVkZFXNFSpT7yvp7Aq8c4MKfgjAC4Pnz8uRhGLq8F",
+        "checkedAt": "2026-11-07T05:17:37.941Z"
+      },
+      "bpm": 104.65,
+      "source": "https://gateway.pinata.cloud/ipfs/QmZzSDVkZFXNFSpT7yvp7Aq8c4MKfgjAC4Pnz8uRhGLq8F",
+      "sourceSha256": "d997ba2a82f8e16cdf9c30b84ead41bea5abd17e250c58767e309f86afa01325"
+    }
+  ]
+}

@@ -1,4 +1,7 @@
-import { unsupportedSolanaRead } from "./asset-capabilities.mjs";
+import {
+  hasTokenIdentity,
+  unsupportedSolanaRead,
+} from "./asset-capabilities.mjs";
 const hosts = {
   1: "eth.blockscout.com",
   10: "optimism.blockscout.com",
@@ -63,6 +66,7 @@ export async function readWalletPage(
         return [];
       const candidates = records.filter(
         (r) =>
+          hasTokenIdentity(r) &&
           r.standard !== "ERC20" &&
           r.chainId === chainId &&
           r.contract.toLowerCase() === contract,

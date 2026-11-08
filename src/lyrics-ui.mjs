@@ -4,6 +4,7 @@ function safeSource(record) {
   const value = [
     "official-public-release-page",
     "spinamp-indexed-metadata",
+    "spinamp-track-index",
   ].includes(data?.sourceType)
     ? data.source
     : data?.metadataURL || record?.recovery?.metadataURL;
@@ -40,12 +41,14 @@ export function renderLyrics(record, esc) {
   });
   if (!versions.length) return "";
   const source = safeSource(record);
-  const sourceLabel =
-    data.sourceType === "spinamp-indexed-metadata"
-      ? "Lyrics indexed by Spinamp"
-      : data.sourceType === "official-public-release-page"
-        ? "Original release page"
-        : "Original lyrics source";
+  const sourceLabel = [
+    "spinamp-indexed-metadata",
+    "spinamp-track-index",
+  ].includes(data.sourceType)
+    ? "Lyrics indexed by Spinamp"
+    : data.sourceType === "official-public-release-page"
+      ? "Original release page"
+      : "Original lyrics source";
   const sections = versions.map((text, index) => {
     const lines = text.split("\n");
     let preview = lines.slice(0, 4).join("\n");

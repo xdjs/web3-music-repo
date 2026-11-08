@@ -2,6 +2,20 @@
 
 Updated November 7, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
+## Spinamp listening expansion — November 7 evening
+
+Release candidate now includes **50,633 recordings and 11,226 artist profiles**, retaining all 37,345 previous recording IDs. The additional **13,288** are explicitly index-only releases: 8,258 Sound, 4,222 Zora, 461 NOIZD, 346 Spinamp and one Nina. Their mint links are unconfirmed. No token, collector, wallet holding, royalty or blockchain-verification claim is synthesized. Artist attribution and existing preserved audio come from Spinamp. No new listening transcodes were created.
+
+Of the 13,515 formerly excluded null-reference rows, 219 exact-source duplicates and eight media-review cases were held. A live count query still reported 52,987 Spinamp index entries. The complete saved inventory now reconciles to 40,808 added recordings, 8,023 already-covered rows, 4,114 held rows and 42 unresolved relation rows. These are index-row counts, not necessarily distinct songs. See `data/spinamp/listening-coverage-summary.json` and `docs/spinamp-unlinked-releases.md`.
+
+The collector/provenance UI distinguishes unavailable mint identity from zero collectors. Stable IDs survive later NFT linking; conflicting track IDs or token ownership are held. Playback, artist relationships, dates and provisional facts are rebuilt from linked evidence during promotion. Six of eight bounded candidate media samples played; three actual app samples passed across Chromium/WebKit, including one video. Desktop/mobile light/dark, guest playlist persistence, share links and legacy-token proof were checked. This is not all-catalog playback verification.
+
+The source-first BPM report now shows **17,105 / 50,633** (7,996 supplied; 9,109 displayed estimates). This includes 24 explicit title BPM values from the newly admitted rows and two reviewed complete-original-media analyses. Sound is now 8,351 / 18,091 because the denominator includes 8,258 newly recovered index-only entries; the previously admitted 9,833-track Sound cohort was not removed. Keys remain 7,525 and lyric-bearing recordings 2,102.
+
+PR #14 merged the bounded BPM download fix at `d84d61f`. A one-track restart in the isolated `web3-music-bpm-campaign` worktree encountered immediate zero-byte network failures in this session; it was stopped without broad continuation or importing that failure into canonical data. Both genuinely successful large-video proof results were imported after source/hash/byte validation. **No BPM worker is running.** See `data/bpm-resume-status-2026-11-07.json` before resuming; refresh the isolated worker baseline from the final published catalog.
+
+Runtime packaging now includes 51 explicitly needed public data files instead of every audit. The isolated runtime verification compares catalog/evidence hashes and six real handler responses with the full checkout. The runtime data totals about 210 MB; actual deployed function size and live routes must still be verified before promotion. Production source/deployment receipts follow once the candidate is published.
+
 ## Completed source scan and Sound BPM checkpoint — November 7
 
 PR #13 merged at `15c1bb645dd53a61b98266f6407d8e39b0474eb1` and is live as READY deployment `dpl_Bi6y7QD1qHZHw7qT9BCVysBcppR3` on both public aliases. All 370 tests, syntax/format checks and production build passed. Ten production desktop/mobile checks verified supplied BPM precedence, separately labeled estimates and newly recovered lyrics. Live counts match the checkpoint; the published catalog index and music-facts module match tested SHA256 hashes. No deployment-scoped error/fatal logs were returned in the bounded post-release query. See `data/release-overnight-recovery-2026-11-07.json` and the production overnight receipts. All analysis workers remain stopped; the next transfer-handling fix is isolated on `fix/bpm-bounded-transfers` and has not been merged, deployed or used to resume analysis.

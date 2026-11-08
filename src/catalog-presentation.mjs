@@ -21,6 +21,8 @@ export function indexRecord(record, evidence) {
   const full = presentRecord(record, evidence);
   const result = pick(full, [
     "id",
+    "assetType",
+    "mintStatus",
     "title",
     "artist",
     "artistId",
@@ -50,6 +52,7 @@ export function indexRecord(record, evidence) {
   result.recovery = evidence
     ? pick(evidence, [
         "status",
+        "sourceType",
         "mediaURL",
         "mediaURI",
         "mediaSourceType",

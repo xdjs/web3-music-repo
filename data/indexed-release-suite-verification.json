@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-08T04:34:06.699Z",
+  "status": "passed",
+  "checks": [
+    {
+      "task": "check",
+      "exitCode": 0,
+      "summary": [
+        "> music-nerd-recovery@0.1.0 check",
+        "> node --check server.mjs && node --check src/archive.js && node --check src/recovery-model.mjs && node --check src/recovery-owner.mjs && node --check src/recovery-holders.mjs && node --check src/collectors-ui.mjs && node --check src/collector-profiles.mjs && node --check src/personal-playlists.mjs && node --check src/catalog-bundle.mjs && node --check src/legacy-collectors.mjs && node --check src/recovery-coverage.mjs"
+      ]
+    },
+    {
+      "task": "format:check",
+      "exitCode": 0,
+      "summary": [
+        "> music-nerd-recovery@0.1.0 format:check",
+        "> prettier --check archive.html src/archive.js src/archive.css src/recovery-*.mjs src/personal-playlists.mjs src/collectors-ui.mjs src/collector-profiles.mjs server.mjs scripts/verify-*.mjs tests/recovery.test.mjs package.json src/catalog-bundle.mjs src/legacy-collectors.mjs tests/catalog-bundle.test.mjs tests/legacy-collectors.test.mjs tests/coverage.test.mjs",
+        "",
+        "Checking formatting...",
+        "All matched files use Prettier code style!"
+      ]
+    },
+    {
+      "task": "test",
+      "exitCode": 0,
+      "summary": [
+        "✔ comments never cross chain, contract, token or verification boundaries (0.651959ms)",
+        "ℹ tests 381",
+        "ℹ suites 0",
+        "ℹ pass 381",
+        "ℹ fail 0",
+        "ℹ cancelled 0",
+        "ℹ skipped 0",
+        "ℹ todo 0",
+        "ℹ duration_ms 6967.895791"
+      ]
+    },
+    {
+      "task": "build:vercel",
+      "exitCode": 0,
+      "summary": [
+        "> music-nerd-recovery@0.1.0 build:vercel",
+        "> node scripts/build-vercel.mjs",
+        "",
+        "Account interface built (312 generated assets)",
+        "Public catalog snapshots: {\"records\":50633,\"people\":11226,\"index\":{\"bytes\":49111698,\"gzipBytes\":8503182},\"full\":{\"bytes\":176868281,\"gzipBytes\":24728774}}",
+        "Static frontend ready: 1816 files; backend data stays in the function bundle."
+      ]
+    }
+  ]
+}

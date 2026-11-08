@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-11-08T04:34:25.541Z",
+  "base": "http://127.0.0.1:4303",
+  "scope": "Isolated candidate only. UI and representative playback; no complete-media or onchain verification claim.",
+  "checks": [
+    {
+      "case": "collectors-unsupported",
+      "pass": true
+    },
+    {
+      "case": "holders-unsupported",
+      "pass": true
+    },
+    {
+      "case": "owner-unsupported",
+      "pass": true
+    },
+    {
+      "case": "recover-unsupported",
+      "pass": true
+    },
+    {
+      "case": "share-server-metadata",
+      "pass": true
+    },
+    {
+      "case": "1440-light",
+      "pass": true,
+      "artworkLoaded": true,
+      "pageErrors": [],
+      "unconfirmedOwnershipCalls": []
+    },
+    {
+      "case": "1440-dark",
+      "pass": true,
+      "artworkLoaded": true,
+      "pageErrors": [],
+      "unconfirmedOwnershipCalls": []
+    },
+    {
+      "case": "390-light",
+      "pass": true,
+      "artworkLoaded": true,
+      "pageErrors": [],
+      "unconfirmedOwnershipCalls": []
+    },
+    {
+      "case": "390-dark",
+      "pass": true,
+      "artworkLoaded": true,
+      "pageErrors": [],
+      "unconfirmedOwnershipCalls": []
+    },
+    {
+      "case": "guest-playlist-create-add-reload",
+      "pass": true
+    },
+    {
+      "case": "legacy-token-proof",
+      "pass": true
+    }
+  ],
+  "status": "passed",
+  "record": "spinamp-4130ab5f9ba118dd8bca",
+  "counts": {
+    "catalogued": 50633,
+    "indexed": 29430,
+    "indexOnly": 13288,
+    "readable": 7915,
+    "unavailable": 0,
+    "notAttempted": 0,
+    "sound": 18091,
+    "chains": [
+      "Ethereum",
+      "Optimism",
+      "Base",
+      "Zora",
+      "Polygon",
+      "Solana"
+    ]
+  }
+}

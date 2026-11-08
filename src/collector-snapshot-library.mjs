@@ -1,3 +1,4 @@
+import { hasTokenIdentity } from "./asset-capabilities.mjs";
 import { catalogHolders } from "./catalog-holders.mjs";
 import { readSpinampCollectorSnapshot } from "./spinamp-collectors.mjs";
 
@@ -58,7 +59,7 @@ export function collectorSnapshotHoldings(
     append(r, catalogHolders(r, catalogSnapshot));
   for (const id of Object.keys(spinampSnapshots?.records || {})) {
     const r = byId.get(id);
-    if (r)
+    if (r && hasTokenIdentity(r))
       append(
         r,
         readSpinampCollectorSnapshot(r, spinampSnapshots, evidence[id]),

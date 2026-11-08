@@ -1,19 +1,20 @@
 {
-  "checkedAt": "2026-11-07T18:15:52.435Z",
-  "scope": "Current local catalog checkpoint, not necessarily published. Displayed BPM follows the app's source-first rules; source and estimated counts are mutually exclusive. Missing includes pending, unavailable and needs-review, never forced guesses.",
+  "checkedAt": "2026-11-08T04:36:22.771Z",
+  "scope": "Current local catalog checkpoint, not necessarily published. Displayed BPM follows the app's source-first rules; source and estimated counts are mutually exclusive. Missing includes separately counted deferred transfers, pending, unavailable and needs-review, never forced guesses.",
   "total": {
-    "recordings": 37345,
-    "supplied": 7972,
-    "estimated": 9107,
-    "missing": 20266,
+    "recordings": 50633,
+    "supplied": 7996,
+    "estimated": 9109,
+    "missing": 33528,
+    "deferred": 0,
     "missingByAnalysisState": {
       "needs-review": 234,
-      "unavailable": 2144,
-      "not-analyzed": 17886,
+      "unavailable": 2142,
+      "not-analyzed": 31150,
       "pending": 2
     },
-    "withBpm": 17079,
-    "percentWithBpm": 45.7
+    "withBpm": 17105,
+    "percentWithBpm": 33.8
   },
   "byPlatform": {
     "0xDEAFBEEF": {
@@ -21,6 +22,7 @@
       "supplied": 26,
       "estimated": 50,
       "missing": 163,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 163
       },
@@ -32,6 +34,7 @@
       "supplied": 5,
       "estimated": 2,
       "missing": 0,
+      "deferred": 0,
       "missingByAnalysisState": {},
       "withBpm": 7,
       "percentWithBpm": 100
@@ -41,6 +44,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 5,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 5
       },
@@ -52,6 +56,7 @@
       "supplied": 25,
       "estimated": 3161,
       "missing": 850,
+      "deferred": 0,
       "missingByAnalysisState": {
         "unavailable": 714,
         "needs-review": 136
@@ -64,6 +69,7 @@
       "supplied": 2,
       "estimated": 0,
       "missing": 0,
+      "deferred": 0,
       "missingByAnalysisState": {},
       "withBpm": 2,
       "percentWithBpm": 100
@@ -73,6 +79,7 @@
       "supplied": 7,
       "estimated": 0,
       "missing": 48,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 48
       },
@@ -84,6 +91,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 10,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 10
       },
@@ -95,6 +103,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 5,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 5
       },
@@ -106,6 +115,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 7,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 7
       },
@@ -117,6 +127,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 628,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 628
       },
@@ -128,6 +139,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 15,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 15
       },
@@ -139,6 +151,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 14,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 14
       },
@@ -150,6 +163,7 @@
       "supplied": 1,
       "estimated": 0,
       "missing": 59,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 59
       },
@@ -161,6 +175,7 @@
       "supplied": 0,
       "estimated": 160,
       "missing": 2,
+      "deferred": 0,
       "missingByAnalysisState": {
         "unavailable": 1,
         "needs-review": 1
@@ -173,6 +188,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 11,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 11
       },
@@ -184,6 +200,7 @@
       "supplied": 1,
       "estimated": 0,
       "missing": 2,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 2
       },
@@ -191,24 +208,26 @@
       "percentWithBpm": 33.3
     },
     "NOIZD": {
-      "recordings": 42,
+      "recordings": 503,
       "supplied": 0,
       "estimated": 0,
-      "missing": 42,
+      "missing": 503,
+      "deferred": 0,
       "missingByAnalysisState": {
-        "not-analyzed": 42
+        "not-analyzed": 503
       },
       "withBpm": 0,
       "percentWithBpm": 0
     },
     "Nina": {
-      "recordings": 6054,
+      "recordings": 6055,
       "supplied": 17,
       "estimated": 9,
-      "missing": 6028,
+      "missing": 6029,
+      "deferred": 0,
       "missingByAnalysisState": {
         "needs-review": 1,
-        "not-analyzed": 6027
+        "not-analyzed": 6028
       },
       "withBpm": 26,
       "percentWithBpm": 0.4
@@ -218,6 +237,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 1,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 1
       },
@@ -229,6 +249,7 @@
       "supplied": 0,
       "estimated": 5,
       "missing": 2,
+      "deferred": 0,
       "missingByAnalysisState": {
         "unavailable": 1,
         "not-analyzed": 1
@@ -241,6 +262,7 @@
       "supplied": 50,
       "estimated": 0,
       "missing": 0,
+      "deferred": 0,
       "missingByAnalysisState": {},
       "withBpm": 50,
       "percentWithBpm": 100
@@ -250,6 +272,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 2,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 2
       },
@@ -261,27 +284,31 @@
       "supplied": 43,
       "estimated": 0,
       "missing": 0,
+      "deferred": 0,
       "missingByAnalysisState": {},
       "withBpm": 43,
       "percentWithBpm": 100
     },
     "Sound": {
-      "recordings": 9833,
-      "supplied": 2684,
+      "recordings": 18091,
+      "supplied": 2706,
       "estimated": 5645,
-      "missing": 1504,
+      "missing": 9740,
+      "deferred": 0,
       "missingByAnalysisState": {
         "needs-review": 94,
-        "unavailable": 1410
+        "unavailable": 1410,
+        "not-analyzed": 8236
       },
-      "withBpm": 8329,
-      "percentWithBpm": 84.7
+      "withBpm": 8351,
+      "percentWithBpm": 46.2
     },
     "Sound of Fractures": {
       "recordings": 3,
       "supplied": 0,
       "estimated": 0,
       "missing": 3,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 3
       },
@@ -289,12 +316,13 @@
       "percentWithBpm": 0
     },
     "Spinamp": {
-      "recordings": 10,
+      "recordings": 356,
       "supplied": 0,
       "estimated": 0,
-      "missing": 10,
+      "missing": 356,
+      "deferred": 0,
       "missingByAnalysisState": {
-        "not-analyzed": 10
+        "not-analyzed": 356
       },
       "withBpm": 0,
       "percentWithBpm": 0
@@ -304,6 +332,7 @@
       "supplied": 69,
       "estimated": 0,
       "missing": 649,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 649
       },
@@ -315,6 +344,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 142,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 142
       },
@@ -326,6 +356,7 @@
       "supplied": 0,
       "estimated": 7,
       "missing": 3,
+      "deferred": 0,
       "missingByAnalysisState": {
         "unavailable": 3
       },
@@ -337,6 +368,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 11,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 11
       },
@@ -344,22 +376,24 @@
       "percentWithBpm": 0
     },
     "Zora": {
-      "recordings": 1255,
-      "supplied": 5,
+      "recordings": 5477,
+      "supplied": 7,
       "estimated": 28,
-      "missing": 1222,
+      "missing": 5442,
+      "deferred": 0,
       "missingByAnalysisState": {
         "needs-review": 1,
-        "not-analyzed": 1221
+        "not-analyzed": 5441
       },
-      "withBpm": 33,
-      "percentWithBpm": 2.6
+      "withBpm": 35,
+      "percentWithBpm": 0.6
     },
     "Zyla": {
       "recordings": 3,
       "supplied": 0,
       "estimated": 0,
       "missing": 3,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 3
       },
@@ -371,6 +405,7 @@
       "supplied": 0,
       "estimated": 13,
       "missing": 2,
+      "deferred": 0,
       "missingByAnalysisState": {
         "unavailable": 2
       },
@@ -382,6 +417,7 @@
       "supplied": 0,
       "estimated": 1,
       "missing": 0,
+      "deferred": 0,
       "missingByAnalysisState": {},
       "withBpm": 1,
       "percentWithBpm": 100
@@ -391,6 +427,7 @@
       "supplied": 0,
       "estimated": 16,
       "missing": 0,
+      "deferred": 0,
       "missingByAnalysisState": {},
       "withBpm": 16,
       "percentWithBpm": 100
@@ -400,6 +437,7 @@
       "supplied": 0,
       "estimated": 6,
       "missing": 1,
+      "deferred": 0,
       "missingByAnalysisState": {
         "needs-review": 1
       },
@@ -411,6 +449,7 @@
       "supplied": 0,
       "estimated": 3,
       "missing": 1,
+      "deferred": 0,
       "missingByAnalysisState": {
         "unavailable": 1
       },
@@ -422,6 +461,7 @@
       "supplied": 6,
       "estimated": 0,
       "missing": 0,
+      "deferred": 0,
       "missingByAnalysisState": {},
       "withBpm": 6,
       "percentWithBpm": 100
@@ -431,6 +471,7 @@
       "supplied": 0,
       "estimated": 1,
       "missing": 0,
+      "deferred": 0,
       "missingByAnalysisState": {},
       "withBpm": 1,
       "percentWithBpm": 100
@@ -438,20 +479,22 @@
     "geniuscorp.fr": {
       "recordings": 14,
       "supplied": 0,
-      "estimated": 0,
-      "missing": 14,
+      "estimated": 2,
+      "missing": 12,
+      "deferred": 0,
       "missingByAnalysisState": {
-        "unavailable": 12,
+        "unavailable": 10,
         "pending": 2
       },
-      "withBpm": 0,
-      "percentWithBpm": 0
+      "withBpm": 2,
+      "percentWithBpm": 14.3
     },
     "hollyplus": {
       "recordings": 58,
       "supplied": 0,
       "estimated": 0,
       "missing": 58,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 58
       },
@@ -463,6 +506,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 11,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 11
       },
@@ -474,6 +518,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 23,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 23
       },
@@ -485,6 +530,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 1,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 1
       },
@@ -496,6 +542,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 10,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 10
       },
@@ -507,6 +554,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 8546,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 8546
       },
@@ -518,6 +566,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 14,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 14
       },
@@ -529,6 +578,7 @@
       "supplied": 13,
       "estimated": 0,
       "missing": 0,
+      "deferred": 0,
       "missingByAnalysisState": {},
       "withBpm": 13,
       "percentWithBpm": 100
@@ -538,6 +588,7 @@
       "supplied": 5018,
       "estimated": 0,
       "missing": 42,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 42
       },
@@ -549,6 +600,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 85,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 85
       },
@@ -560,6 +612,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 4,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 4
       },
@@ -571,6 +624,7 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 13,
+      "deferred": 0,
       "missingByAnalysisState": {
         "not-analyzed": 13
       },

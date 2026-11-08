@@ -1,3 +1,4 @@
+import { isIndexedRelease } from "./asset-capabilities.mjs";
 const SOURCE = "https://api.spinamp.xyz/v3/graphql";
 const CHAINS = {
   ethereum: 1,
@@ -182,6 +183,7 @@ export function readSpinampCollectorSnapshot(
   snapshots,
   recordEvidence,
 ) {
+  if (isIndexedRelease(record)) return null;
   const evidence = snapshots?.records?.[record?.id];
   if (
     !evidence ||

@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-08T04:40:52.821453+00:00",
+  "testCounts": {
+    "tests": 404,
+    "pass": 403,
+    "fail": 1,
+    "skipped": 0
+  },
+  "failedTest": "tests/static-video.test.mjs: localhost listen EPERM in this execution environment; no assertion failure in changed code",
+  "syntax": "passed",
+  "format": "passed",
+  "productionBuild": "passed",
+  "runtimeDataParity": "passed; data/runtime-bundle-verification.json",
+  "catalog": {
+    "records": 50633,
+    "people": 11226,
+    "indexOnlyAdded": 13288,
+    "bpm": 17105
+  },
+  "sourceUIReceipts": [
+    "data/indexed-release-ui-verification.json",
+    "data/indexed-release-playback-verification.json"
+  ],
+  "scope": "Combined release checks; native deployed runtime/UI/playback validation remains required before promotion."
+}

@@ -1,3 +1,5 @@
+import { isIndexedRelease } from "./asset-capabilities.mjs";
+
 // Historical dates only: recovery/check timestamps are deliberately ignored.
 export function parseHistoricalDate(value) {
   if (typeof value !== "string") return null;
@@ -26,9 +28,12 @@ export function parseHistoricalDate(value) {
 }
 export function releaseDateForRecord(record, index = {}) {
   const key = `${record.chainId}:${String(record.contract || "").toLowerCase()}`;
-  const token = index.tokens?.[`${key}:${record.tokenId}`];
+  const token =
+    !isIndexedRelease(record) && index.tokens?.[`${key}:${record.tokenId}`];
   const contract =
-    record.platform === "Sound" && record.legacyEditionId === undefined
+    !isIndexedRelease(record) &&
+    record.platform === "Sound" &&
+    record.legacyEditionId === undefined
       ? index.contracts?.[key]
       : null;
   for (const entry of [token, contract]) {
@@ -53,7 +58,7 @@ export function releaseDateForRecord(record, index = {}) {
   const supplied = [
     ...new Set(record.musicMetadata?.details?.["Release date"] || []),
   ];
-  if (supplied.length === 1) {
+  if (!isIndexedRelease(record) && supplied.length === 1) {
     const parsed = parseHistoricalDate(supplied[0]);
     if (parsed)
       return {
@@ -68,8 +73,10 @@ export function releaseDateForRecord(record, index = {}) {
   }
   const suppliedIndexDate = record.indexedSourceDate;
   if (
-    record.chainId === "solana" &&
-    suppliedIndexDate?.kind === "indexed-metadata-date" &&
+    (record.chainId === "solana" || isIndexedRelease(record)) &&
+    (suppliedIndexDate?.kind === "indexed-metadata-date" ||
+      (isIndexedRelease(record) &&
+        suppliedIndexDate?.kind === "index-record-created")) &&
     suppliedIndexDate.source === "https://api.spinamp.xyz/v3/graphql" &&
     suppliedIndexDate.onchainVerified === false
   ) {
@@ -77,14 +84,18 @@ export function releaseDateForRecord(record, index = {}) {
     if (parsed)
       return {
         ...parsed,
-        kind: "indexed-metadata-date",
-        label: "Metadata date · from Spinamp index",
+        kind: suppliedIndexDate.kind,
+        label:
+          suppliedIndexDate.kind === "index-record-created"
+            ? "Added to Spinamp index"
+            : "Metadata date · from Spinamp index",
         source: suppliedIndexDate.source,
         onchainVerified: false,
       };
   }
   const indexed = record.indexedNftCreation;
   if (
+    !isIndexedRelease(record) &&
     indexed?.source === "https://api.spinamp.xyz/v3/graphql" &&
     indexed.onchainVerified === false
   ) {

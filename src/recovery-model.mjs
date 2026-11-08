@@ -1,3 +1,4 @@
+import { isIndexedRelease } from "./asset-capabilities.mjs";
 export const chainNames = {
   solana: "Solana",
   1: "Ethereum",
@@ -16,17 +17,28 @@ export const explorers = {
 export function recoverySummary(records, snapshot) {
   return {
     catalogued: records.length,
-    indexed: records.filter((r) => snapshot[r.id]?.status === "indexed").length,
-    readable: records.filter((r) => snapshot[r.id]?.status === "live").length,
-    unavailable: records.filter((r) => snapshot[r.id]?.status === "unavailable")
+    indexed: records.filter(
+      (r) => !isIndexedRelease(r) && snapshot[r.id]?.status === "indexed",
+    ).length,
+    indexOnly: records.filter(isIndexedRelease).length,
+    readable: records.filter(
+      (r) => !isIndexedRelease(r) && snapshot[r.id]?.status === "live",
+    ).length,
+    unavailable: records.filter(
+      (r) => !isIndexedRelease(r) && snapshot[r.id]?.status === "unavailable",
+    ).length,
+    notAttempted: records.filter((r) => !isIndexedRelease(r) && !snapshot[r.id])
       .length,
-    notAttempted: records.filter((r) => !snapshot[r.id]).length,
     sound: records.filter(
       (r) => r.platform === "Sound" || r.originalRelease?.includes("sound.xyz"),
     ).length,
-    chains: [...new Set(records.map((r) => r.chainId))].map(
-      (id) => chainNames[id] || String(id),
-    ),
+    chains: [
+      ...new Set(
+        records
+          .filter((r) => !isIndexedRelease(r) && r.chainId != null)
+          .map((r) => r.chainId),
+      ),
+    ].map((id) => chainNames[id] || String(id)),
   };
 }
 export function sourceKind(uri) {
