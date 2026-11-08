@@ -1,0 +1,92 @@
+{
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "scope": "Exact candidate primary NFT keys and explicit reverse track links; candidate absence is not an all-chain census",
+  "startedAt": "2026-11-08T04:21:41.215Z",
+  "results": [
+    {
+      "trackId": "base/0x00101c1dC67C60Fd7789A7cd94570198E264504c/0x8af999133dff61677b8c920b4d933862a7128dcb19d6a5209e50998f8dc7969f",
+      "query": "{n0:nftById(id:\"base/0x00101c1dC67C60Fd7789A7cd94570198E264504c/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0x00101c1dC67C60Fd7789A7cd94570198E264504c/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0x00101c1dC67C60Fd7789A7cd94570198E264504c/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-08T04:21:41.216Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "status": "received"
+    },
+    {
+      "trackId": "base/0xcb7afd0675B33bFd881Ae345eC9a929710CaD342/0x0d6c88803ee5bfe5c925b4a92681807019b9cd3fadf3fe3725d0004bf62f1e82",
+      "query": "{n0:nftById(id:\"base/0xcb7afd0675B33bFd881Ae345eC9a929710CaD342/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"base/0xcb7afd0675B33bFd881Ae345eC9a929710CaD342/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"base/0xcb7afd0675B33bFd881Ae345eC9a929710CaD342/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-08T04:21:42.046Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "status": "received"
+    },
+    {
+      "trackId": "optimism/0xffFeB1Fc43E83d2281251666Bc88Bf2cDA425402/0x66b85f198bda597fabaed01710cc8546d539e52800e17302797722f81742666f",
+      "query": "{n0:nftById(id:\"optimism/0xffFeB1Fc43E83d2281251666Bc88Bf2cDA425402/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xffFeB1Fc43E83d2281251666Bc88Bf2cDA425402/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xffFeB1Fc43E83d2281251666Bc88Bf2cDA425402/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-08T04:21:42.759Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "status": "received"
+    },
+    {
+      "trackId": "optimism/0x002120dD3442Ae6418aE6bee591beCc437ED7594/1",
+      "query": "{n0:nftById(id:\"optimism/0x002120dD3442Ae6418aE6bee591beCc437ED7594/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0x002120dD3442Ae6418aE6bee591beCc437ED7594/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0x002120dD3442Ae6418aE6bee591beCc437ED7594/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-08T04:21:43.373Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "status": "received"
+    },
+    {
+      "trackId": "optimism/0x79e9a84eF92bf3d0f7d5b3d9FB8fcB2B589F4CE2/1",
+      "query": "{n0:nftById(id:\"optimism/0x79e9a84eF92bf3d0f7d5b3d9FB8fcB2B589F4CE2/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0x79e9a84eF92bf3d0f7d5b3d9FB8fcB2B589F4CE2/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0x79e9a84eF92bf3d0f7d5b3d9FB8fcB2B589F4CE2/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-08T04:21:43.972Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "status": "received"
+    },
+    {
+      "trackId": "optimism/0xfF4428e2e1CC71284616389961D8C9ff07327A70/1",
+      "query": "{n0:nftById(id:\"optimism/0xfF4428e2e1CC71284616389961D8C9ff07327A70/0\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn1:nftById(id:\"optimism/0xfF4428e2e1CC71284616389961D8C9ff07327A70/1\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}\nn2:nftById(id:\"optimism/0xfF4428e2e1CC71284616389961D8C9ff07327A70/2\"){id chainId contractAddress tokenId tokenUri tokenMetadataUri mimeType createdAtTime createdAtBlockNumber metadata nftFactoryByNftFactoryId{standard} nftsProcessedTracksByNftId(first:10){pageInfo{hasNextPage}nodes{nftId processedTrackId}}}}",
+      "checkedAt": "2026-11-08T04:21:44.618Z",
+      "httpStatus": 200,
+      "body": {
+        "data": {
+          "n0": null,
+          "n1": null,
+          "n2": null
+        }
+      },
+      "status": "received"
+    }
+  ],
+  "finishedAt": "2026-11-08T04:21:45.585Z"
+}

@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-08T04:31:50.502Z",
+  "scope": "Derived receipt of two bounded native-browser diagnostics. The diagnostic process aborted on cross-origin captureStream and did not finish normal JSON persistence. No further requests were made.",
+  "results": [
+    {
+      "id": "spinamp-d11f88ec5a02e39ae6be",
+      "url": "https://arweave.net/PkpiTvO5nK8HQeGuaBwphYPGIyUcrx86no4iF4sX8Gg",
+      "status": "no-start-within-6500ms",
+      "state": {
+        "currentTime": 0,
+        "paused": false,
+        "muted": true,
+        "readyState": 0,
+        "duration": null,
+        "audioDecodedBytes": 0,
+        "videoWidth": 0,
+        "videoHeight": 0,
+        "videoFrames": 0,
+        "audioTracks": 0,
+        "videoTracks": 0,
+        "playError": null,
+        "error": null
+      }
+    },
+    {
+      "id": "spinamp-ffdee92537b3c7f6f557",
+      "url": "https://ipfs.filebase.io/ipfs/bafybeihbo3no7jms2gdluxsjtrdf6ou3kj2b2ntsv6qv6xazjrl3qljbgm",
+      "status": "diagnostic-capture-unavailable",
+      "error": "SecurityError: Failed to execute 'captureStream' on 'HTMLMediaElement': Cannot capture from element with cross-origin data"
+    }
+  ]
+}

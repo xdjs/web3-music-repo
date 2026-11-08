@@ -1,0 +1,263 @@
+{
+  "checkedAt": "2026-11-08T04:26:48.420Z",
+  "scope": "Eight stratified candidate samples; native Chromium decoded playback only, not full-track audition, all-catalog availability or chain verification. At most two explicit indexed references/gateway attempts per sample.",
+  "bundleSha256": "5e4eb927f89c22d79df4c581cad40feb0e8a6b75e3ff26358c742b7dc2739e7b",
+  "candidateRecords": 13289,
+  "results": [
+    {
+      "coverage": "Sound duration known",
+      "id": "spinamp-4130ab5f9ba118dd8bca",
+      "spinampTrackId": "base/0x0012Fd0D55E692169B2f05C468BCC7075e0FdD56/0x5a667e255c647316624f0ff4d12cc70dbf0f765b2f74e27bc17a87555801726b",
+      "title": "express yourself",
+      "platform": "Sound",
+      "indexedDuration": 321.13,
+      "mediaURI": "https://arweave.net/ThI9zpAluEGTDIBmW932PPaZlC_tIBYrFaFsXwT7p0Q",
+      "attempts": [
+        {
+          "url": "https://arweave.net/ThI9zpAluEGTDIBmW932PPaZlC_tIBYrFaFsXwT7p0Q",
+          "status": "played",
+          "currentTime": 1.013746,
+          "duration": 321.133628,
+          "readyState": 4,
+          "audioDecodedBytes": 53289,
+          "videoWidth": 0,
+          "videoHeight": 0
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 1.013746,
+        "duration": 321.133628,
+        "readyState": 4,
+        "audioDecodedBytes": 53289,
+        "videoWidth": 0,
+        "videoHeight": 0
+      },
+      "workingURL": "https://arweave.net/ThI9zpAluEGTDIBmW932PPaZlC_tIBYrFaFsXwT7p0Q"
+    },
+    {
+      "coverage": "Sound duration unknown",
+      "id": "spinamp-d11f88ec5a02e39ae6be",
+      "spinampTrackId": "base/0x00101c1dC67C60Fd7789A7cd94570198E264504c/0x8af999133dff61677b8c920b4d933862a7128dcb19d6a5209e50998f8dc7969f",
+      "title": "Iron Beats",
+      "platform": "Sound",
+      "indexedDuration": null,
+      "mediaURI": "https://arweave.net/PkpiTvO5nK8HQeGuaBwphYPGIyUcrx86no4iF4sX8Gg",
+      "attempts": [
+        {
+          "url": "https://arweave.net/PkpiTvO5nK8HQeGuaBwphYPGIyUcrx86no4iF4sX8Gg",
+          "status": "unavailable",
+          "error": "page.waitForFunction: Timeout 15000ms exceeded.",
+          "state": {
+            "readyState": 4,
+            "duration": 366,
+            "videoWidth": 0,
+            "audioDecodedBytes": 184320
+          }
+        },
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeic2aj7i2ma2s5vqxd7ncmpu6vpiwszv5c7rpjsmi4cgnh32t5geve",
+          "status": "unavailable",
+          "error": "page.waitForFunction: Timeout 15000ms exceeded.",
+          "state": {
+            "readyState": 4,
+            "duration": 366,
+            "videoWidth": 0,
+            "audioDecodedBytes": 90112
+          }
+        }
+      ],
+      "status": "unavailable"
+    },
+    {
+      "coverage": "Zora duration known",
+      "id": "spinamp-3d0fac554ccb97331ded",
+      "spinampTrackId": "ethereum/0x04a81320DED36c8bDbEf04055f610dbD15c18D3c",
+      "title": "Bivan9do",
+      "platform": "Zora",
+      "indexedDuration": 28.26,
+      "mediaURI": "https://web3-music-pipeline.mypinata.cloud/ipfs/bafybeigqyayhm3usg5e32rv7dxg6l36rgyekx5bjfjofdbiscpolictsyi",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeigqyayhm3usg5e32rv7dxg6l36rgyekx5bjfjofdbiscpolictsyi",
+          "status": "played",
+          "currentTime": 1.004067,
+          "duration": 28.303333,
+          "readyState": 4,
+          "audioDecodedBytes": 11287,
+          "videoWidth": 568,
+          "videoHeight": 320
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 1.004067,
+        "duration": 28.303333,
+        "readyState": 4,
+        "audioDecodedBytes": 11287,
+        "videoWidth": 568,
+        "videoHeight": 320
+      },
+      "workingURL": "https://ipfs.filebase.io/ipfs/bafybeigqyayhm3usg5e32rv7dxg6l36rgyekx5bjfjofdbiscpolictsyi"
+    },
+    {
+      "coverage": "Zora duration unknown",
+      "id": "spinamp-ffdee92537b3c7f6f557",
+      "spinampTrackId": "ethereum/0x00397aDBCe6906Dfdd91f747ce2cb62AB8ab73ad",
+      "title": "Sylvanian Families’ Castle Nature Invasion",
+      "platform": "Zora",
+      "indexedDuration": null,
+      "mediaURI": "https://web3-music-pipeline.mypinata.cloud/ipfs/bafybeihbo3no7jms2gdluxsjtrdf6ou3kj2b2ntsv6qv6xazjrl3qljbgm",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/bafybeihbo3no7jms2gdluxsjtrdf6ou3kj2b2ntsv6qv6xazjrl3qljbgm",
+          "status": "unavailable",
+          "error": "page.waitForFunction: Timeout 15000ms exceeded.",
+          "state": {
+            "readyState": 4,
+            "duration": 16,
+            "videoWidth": 1024,
+            "audioDecodedBytes": 0
+          }
+        },
+        {
+          "url": "https://gateway.pinata.cloud/ipfs/bafybeihbo3no7jms2gdluxsjtrdf6ou3kj2b2ntsv6qv6xazjrl3qljbgm",
+          "status": "unavailable",
+          "error": "page.waitForFunction: Timeout 15000ms exceeded.",
+          "state": {
+            "readyState": 4,
+            "duration": 16,
+            "videoWidth": 1024,
+            "audioDecodedBytes": 0
+          }
+        }
+      ],
+      "status": "unavailable"
+    },
+    {
+      "coverage": "NOIZD duration known",
+      "id": "spinamp-66e7d6a196ca36f3f447",
+      "spinampTrackId": "noizd/01347e4c-a4f1-4474-bf51-e6d5a5e65467",
+      "title": "Legit Ft. ChimiChanga",
+      "platform": "NOIZD",
+      "indexedDuration": 237.1,
+      "mediaURI": "ipfs://QmcFG2M8pXG1tnYiEVxpuJEXCyqmaaNRRXv9Uim648ZDaD",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmcFG2M8pXG1tnYiEVxpuJEXCyqmaaNRRXv9Uim648ZDaD",
+          "status": "played",
+          "currentTime": 1.001019,
+          "duration": 237.098957,
+          "readyState": 4,
+          "audioDecodedBytes": 31973,
+          "videoWidth": 0,
+          "videoHeight": 0
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 1.001019,
+        "duration": 237.098957,
+        "readyState": 4,
+        "audioDecodedBytes": 31973,
+        "videoWidth": 0,
+        "videoHeight": 0
+      },
+      "workingURL": "https://ipfs.filebase.io/ipfs/QmcFG2M8pXG1tnYiEVxpuJEXCyqmaaNRRXv9Uim648ZDaD"
+    },
+    {
+      "coverage": "NOIZD duration unknown",
+      "id": "spinamp-f9194c7d4cb1eef96439",
+      "spinampTrackId": "noizd/04795d84-8e3d-4f89-84e9-afa36c7f999b",
+      "title": "With Me",
+      "platform": "NOIZD",
+      "indexedDuration": null,
+      "mediaURI": "ipfs://QmZgANNbgwL2tKVPiPtYjscf69PwNATLmf9a133YUzUE58",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmZgANNbgwL2tKVPiPtYjscf69PwNATLmf9a133YUzUE58",
+          "status": "played",
+          "currentTime": 1.00177,
+          "duration": 488.646525,
+          "readyState": 4,
+          "audioDecodedBytes": 52244,
+          "videoWidth": 0,
+          "videoHeight": 0
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 1.00177,
+        "duration": 488.646525,
+        "readyState": 4,
+        "audioDecodedBytes": 52244,
+        "videoWidth": 0,
+        "videoHeight": 0
+      },
+      "workingURL": "https://ipfs.filebase.io/ipfs/QmZgANNbgwL2tKVPiPtYjscf69PwNATLmf9a133YUzUE58"
+    },
+    {
+      "coverage": "Spinamp duration unknown",
+      "id": "spinamp-196404e062c8b859de0f",
+      "spinampTrackId": "optimism/0x002120dD3442Ae6418aE6bee591beCc437ED7594/1",
+      "title": "Rear View",
+      "platform": "Spinamp",
+      "indexedDuration": null,
+      "mediaURI": "https://web3-music-pipeline.mypinata.cloud/ipfs/QmYohXkSuhQdhHGrdCGrbMU3Wvt9cLEcPeSGDUUBPgZofU",
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmYohXkSuhQdhHGrdCGrbMU3Wvt9cLEcPeSGDUUBPgZofU",
+          "status": "played",
+          "currentTime": 1.004312,
+          "duration": 136.914898,
+          "readyState": 4,
+          "audioDecodedBytes": 339636,
+          "videoWidth": 0,
+          "videoHeight": 0
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 1.004312,
+        "duration": 136.914898,
+        "readyState": 4,
+        "audioDecodedBytes": 339636,
+        "videoWidth": 0,
+        "videoHeight": 0
+      },
+      "workingURL": "https://ipfs.filebase.io/ipfs/QmYohXkSuhQdhHGrdCGrbMU3Wvt9cLEcPeSGDUUBPgZofU"
+    },
+    {
+      "coverage": "Nina",
+      "id": "spinamp-5bd01172d818633540af",
+      "spinampTrackId": "solana/BdsyMBoCrKNFUQdn6eMHHWMq1S1rR1aKNjGTyWbSCgvr",
+      "title": "God's Mom - S/T",
+      "platform": "Nina",
+      "indexedDuration": 212.76,
+      "mediaURI": "https://www.arweave.net/-98gtOjC9e1kMT64hfEhGmn0gGXZtKGwWLDcsb0w8u8?ext=mp3",
+      "attempts": [
+        {
+          "url": "https://www.arweave.net/-98gtOjC9e1kMT64hfEhGmn0gGXZtKGwWLDcsb0w8u8?ext=mp3",
+          "status": "played",
+          "currentTime": 1.00769,
+          "duration": 212.746667,
+          "readyState": 4,
+          "audioDecodedBytes": 52800,
+          "videoWidth": 0,
+          "videoHeight": 0
+        }
+      ],
+      "status": "played",
+      "playback": {
+        "currentTime": 1.00769,
+        "duration": 212.746667,
+        "readyState": 4,
+        "audioDecodedBytes": 52800,
+        "videoWidth": 0,
+        "videoHeight": 0
+      },
+      "workingURL": "https://www.arweave.net/-98gtOjC9e1kMT64hfEhGmn0gGXZtKGwWLDcsb0w8u8?ext=mp3"
+    }
+  ],
+  "finishedAt": "2026-11-08T04:28:19.234Z"
+}
