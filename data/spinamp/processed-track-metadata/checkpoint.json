@@ -1,0 +1,976 @@
+{
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "query": "query RecoveryTrackMetadata($after:Cursor,$first:Int!){allProcessedTracks(first:$first,after:$after,orderBy:PRIMARY_KEY_ASC){totalCount pageInfo{hasNextPage endCursor}nodes{id title artistId platformId platformInternalId lossyAudioUrl lossyAudioIpfsHash lossyArtworkUrl lossyArtworkIpfsHash description lossyAudioMimeType lossyArtworkMimeType chorusStart supportingArtist artistBySupportingArtist{id name slug}}}}",
+  "snapshotSha256": "eae9d9b0adebfa2a6dca79eebcda3bf00bb0ba2e0d777bbe527efc93bb90370c",
+  "startedAt": "2026-11-08T04:41:44.264Z",
+  "pages": [
+    {
+      "file": "000.json.gz",
+      "sha256": "551ff37a4f0dbb58b2508f247e58bc8f482b966e70748895bb3ad28b0d9b6eb4",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:41:46.261Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "001.json.gz",
+      "sha256": "d67899ec2ff4cbb9ede38491a539ca585a67b9629bf3e2272f94ff0748444400",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:41:47.756Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "002.json.gz",
+      "sha256": "515320116ae9549f4c14ddc9c73b3102b9338dad1cce2c8433bdf7408e294950",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:41:49.136Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "003.json.gz",
+      "sha256": "bac5b1d6306f63e75f91c34c2c851f2b9e9886b8b87856660ea384f0cd3a3932",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:41:50.802Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "004.json.gz",
+      "sha256": "971c53c6d0acca7ecb2e132a732520bc929703e714a0d1f7af6546181635677b",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:41:52.273Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "005.json.gz",
+      "sha256": "ce9b3c4a99d6df97f4a8022aea2342c1d05d42151496d422c07ee02b566c7897",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:41:53.884Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "006.json.gz",
+      "sha256": "7423d2abe5a5b03573722a1840762608c43be54c33cf29f9c1ba5cab595b0b98",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:41:55.263Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "007.json.gz",
+      "sha256": "3080f181d539c658987e2a0fcfc8782544f8e7c97bae4c8a72f5b9ed2092063d",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:41:56.664Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "008.json.gz",
+      "sha256": "0606367989beed9603f6404b79197a35e2c3d47fb82e4c1bfc4d6034335ca3d3",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:41:57.937Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "009.json.gz",
+      "sha256": "60abe5bd683eac24e315f1ed1c850f9ff46eeb6cef6671411717a00fb6d16074",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:41:59.354Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "010.json.gz",
+      "sha256": "9f1463d1a90ec97f4f72f7009bc100b62278146ae95ce0a1b0bd1421e10e105e",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:01.117Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "011.json.gz",
+      "sha256": "79e025fc52da571f79d72a83f946f9724ca5518a49a21a665a8a7a0dc7dc2ca6",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:02.507Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "012.json.gz",
+      "sha256": "2c19ad276e10edeabc214dcc8ab2689d8d2abcfe1ae67610f8e4d8cafe5a945e",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:03.832Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "013.json.gz",
+      "sha256": "791d3793c6e9fcd36b6faaae52721af49d2f3b3255cbc88b6eff7a83e812bb49",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:05.112Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "014.json.gz",
+      "sha256": "80dfd6d86dfc281d89115951984b9112f4c82886837849cf5fdcad1afb0f1ad5",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:06.389Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "015.json.gz",
+      "sha256": "3d5f11d5cac5b9bb91d79dc58d677b8db3bd3e228ed659ecfadb0773e75dfe7e",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:07.707Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "016.json.gz",
+      "sha256": "cc396a671d15335feafa4a29cebe6276d305f939fd4392642f15a828acea6242",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:09.126Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "017.json.gz",
+      "sha256": "e7c19492b61d9c8cf46b272f7b4f0e89089c7918d5a5825834ee1cad1aaa8871",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:10.660Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "018.json.gz",
+      "sha256": "27df50b44d5659039171f3926bcc245be2e0e3b569482e8171f76aa2c3bc74e6",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:12.066Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "019.json.gz",
+      "sha256": "168d6ac4a3e590483b5c094ef27d2069725c99c306f4c1a3a0ee8d971d4a88b9",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:13.328Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "020.json.gz",
+      "sha256": "3719b25b94134d3cd8c97635ae698b7bdd969ce87dcf4b9aaaf6583e553909ad",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:14.720Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "021.json.gz",
+      "sha256": "763339e35dee8888f9a23a1a110ca4d788d8b23cca8142cc19ac5f32acdea78c",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:16.300Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "022.json.gz",
+      "sha256": "0a1aa3928482956c39eb24112bad15ed4319177da50c7517a12dbb57b8cd6da5",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:17.742Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "023.json.gz",
+      "sha256": "e8327e7c3be21914e87f81494b7e27adea0a6f2d3872e3c693cce821bfe6bfe8",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:19.061Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "024.json.gz",
+      "sha256": "7808330d8f4d05070d57b72280e64ec75bb75dcf4bb85da47e6b3dc4d646fea0",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:20.358Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "025.json.gz",
+      "sha256": "efbcb8165a9f2430cf1481067dd51837b0a01d589783a557596676fe110d9fb7",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:21.719Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "026.json.gz",
+      "sha256": "5e52c3f91c4b8082cf0b87e953b210b19735ed9c40c3ce50d80d84f758efcd83",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:23.073Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "027.json.gz",
+      "sha256": "8fa0e060321e2bf5b38584472ec3c956e601da333c127fa12872bbd2a0a4c806",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:24.343Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "028.json.gz",
+      "sha256": "028c5ee9dfd1452d69d56248d33119c50b12e0c320a5bdb20506f05e5d419fe9",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:25.610Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "029.json.gz",
+      "sha256": "eff589a41c55472f4bca547d15f1667736b974180d43a0a8544cd618606ea214",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:26.917Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "030.json.gz",
+      "sha256": "8cce9ecd589eb63c0e39e892a5474d59a1997181b8578c34c792b58058775a82",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:28.172Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "031.json.gz",
+      "sha256": "d36b1f941933e54f8a9547117185c355a3300ab9fa0da4f87900662a9fa0c00f",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:29.552Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "032.json.gz",
+      "sha256": "d12c6198475fe958adc62ad4fca1e4d214158e89bbdbdfc45739bfd8798d60ba",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:30.925Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "033.json.gz",
+      "sha256": "1269469affb9d9f37abdcdcdc4f50b2be69b9cc01b5cf55b200fc1aa0e60189b",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:32.342Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "034.json.gz",
+      "sha256": "f0489f9bab795f21a017263803b173235127aebb738a049c21b6af705ed1e0f2",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:33.575Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "035.json.gz",
+      "sha256": "59e53bf22f9904c98e550ed58a3229a4d2ae8123fdcac12ab2fea1633d263e5e",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:34.813Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "036.json.gz",
+      "sha256": "7c26cb154a812256a79d881132d6294fa5df4c70ed09c70738c11845483ce58f",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:36.066Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "037.json.gz",
+      "sha256": "e4c4e0138a4e39ef01a96edc2060005e94c761123c2736a143bd5a266c28e88d",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:37.349Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "038.json.gz",
+      "sha256": "b4dcbbcc3630047b0dbca2a8b182794d58bced7cba921d201594372c6bccfb1e",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:38.625Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "039.json.gz",
+      "sha256": "db7710725d002ab83ad22ecd7badd2c64b907a9b68b0c2918c9809941204af51",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:39.899Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "040.json.gz",
+      "sha256": "6669c2c0f74b1168014f9486d1af0b70ee380079042ce7f3f58199274962dd1d",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:41.231Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "041.json.gz",
+      "sha256": "ab4141c558de449168733f9ee383faf994a46bb38e00aabba984bcd64becdcae",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:42.687Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "042.json.gz",
+      "sha256": "333bab77302b6fec83b52f5ceded6e775ac1a7fe99ed74f6dfb8252c7b4004ce",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:43.973Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "043.json.gz",
+      "sha256": "e58bfe582448a12a1c95b413efa155348c4704c41d4df662d19a01fc3c1cd722",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:45.425Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "044.json.gz",
+      "sha256": "1cc6ab44bf39f496e3eb8ebc7da234d281b81951c7694fe4a51da90865cf7c6d",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:46.807Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "045.json.gz",
+      "sha256": "1f8cfca15d48e6914ec9da454236e0d433b76c7521bd2096bbc7ad7a940c1e28",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:48.122Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "046.json.gz",
+      "sha256": "8ca0b79f1c9291f7f1b0f95f823305e0277b350b39fc684eac1df64bf3dd591a",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:49.394Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "047.json.gz",
+      "sha256": "9e48b524c8d09653cc4c24d43aa02572de02b585a4bbddf268ba1edc5402f464",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:50.667Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "048.json.gz",
+      "sha256": "b741daabb11d54b95ee02dd202c8ffc4b6487b30fc3b863200f6f95a1e758ed0",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:51.914Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "049.json.gz",
+      "sha256": "031d8be2a00334dd11bfb43d0108d564cd4d5f8b60050d625aabf2465b21e954",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:53.153Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "050.json.gz",
+      "sha256": "c452dbcfcd7d718cd6082775e89d1612a2e141737cb2b7eecb7e3fe365b278f3",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:54.398Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "051.json.gz",
+      "sha256": "72169b17d942ca0c0ebe7c1ef62c941a0d65b14418edf35f7c3f9061ce493d09",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:55.669Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "052.json.gz",
+      "sha256": "41d570da0f9356ecbca3b7f152075c855358d5e3e3e881faa9c3e92527e97aae",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:56.963Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "053.json.gz",
+      "sha256": "dfc9f511aaf9acfbbaef3bcc6d019f901450d83de85d188f375a0c9e57ba5c5b",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:58.233Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "054.json.gz",
+      "sha256": "fdef9659efe4823e8ada9c538ef7c6191a424ce7d8bfad227f4267e383c3049a",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:42:59.585Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "055.json.gz",
+      "sha256": "c3bc89d6e894bd12782e633189cb796c6368b5a8eec00360ebf954202f2017e6",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:01.193Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "056.json.gz",
+      "sha256": "242de405e20d24d5dd23091c1fdea2a4e2cf068c26a389d497fbc1ee68e97ac2",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:02.520Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "057.json.gz",
+      "sha256": "2dfaab191787ec9c9daca767d80ceb28674afe6fa2834a82a3e1682200c0d7bd",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:03.772Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "058.json.gz",
+      "sha256": "8a80601262c60ca93be5285a8ad7371be105be757d4b2fcf20ea1102e6b090b8",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:05.073Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "059.json.gz",
+      "sha256": "df2bc4e401f653e2bc35d376d0dd24165266fb56298fdccc3914235c2326eb22",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:06.393Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "060.json.gz",
+      "sha256": "ae03e66ddb81ea42262e6ed9b62b3ad9019b4b3511fd079aec9e9b4cc5f055bc",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:07.628Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "061.json.gz",
+      "sha256": "2dc98365fa3af6dc43d2027b59d0215d6d76f839778cf6befd5cb225deec0cd9",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:08.869Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "062.json.gz",
+      "sha256": "308faefe9b45e84425199ca4bd2d95a33f090fd69220f28df25f3ffcbe12da41",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:10.255Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "063.json.gz",
+      "sha256": "5cf49810b048e86676fe8f48420c7875f361ad8dac6415574a37d1e76c2fe4c8",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:11.646Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "064.json.gz",
+      "sha256": "18f132e6b25a90c6ffc1d784274d9a8ed188f899ebaa1ccb07babd964f3fcc22",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:12.966Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "065.json.gz",
+      "sha256": "2994927d4f61d5de2fe7b03136e0dd1a5e56ae7b3b9f355e4bfebe0c02642111",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:14.267Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "066.json.gz",
+      "sha256": "27c1345f209f6dda142c4a1a1f16c8c423a6217fb8fca06af0964e0a26313361",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:15.554Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "067.json.gz",
+      "sha256": "6ce4adb42008b49309e96381ee1d4288a047de0f52f1c1ff1981b5482550f618",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:16.914Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "068.json.gz",
+      "sha256": "934656c8fa56630cfbd2708fe55558c1fe99e64230695c184ea5b14ddfe59420",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:18.209Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "069.json.gz",
+      "sha256": "ad9d32055fdba8cb5cb62b71522db9fcf7e5705712de2cb68fa5ac45381e6448",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:19.521Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "070.json.gz",
+      "sha256": "27b74aa8703b73dcc6419ff43a2de2e8b832a1ede54a9d60752a5e8054eb6ec5",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:20.790Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "071.json.gz",
+      "sha256": "e5ff5be2c3f91e8c989a6a9d3114faa53b46776280591f7250599b5fe36107f1",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:22.131Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "072.json.gz",
+      "sha256": "b2e38cef42c52d4b2e5fbc9b81507ee5537dff649f85122d4606bbbdb9928d88",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:23.423Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "073.json.gz",
+      "sha256": "b783df98a2cfc8a7cb6e0e85bf82c48ed17a1989f666f0e1cdef74a07998a726",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:24.816Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "074.json.gz",
+      "sha256": "59268ecb35c3ed4f10171deb4c4d52234c025c095d91901e9ddb758026afc777",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:26.350Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "075.json.gz",
+      "sha256": "609eaea819b9846efc18a635c180bbf77b0f2e580df3236d3fd8ae15f072ab93",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:27.624Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "076.json.gz",
+      "sha256": "5a6a37e36202c137e4d82511296910769665989b94d8726597656a7c1a69c4b8",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:29.125Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "077.json.gz",
+      "sha256": "7122d405eba3b3064e2a48eec58f11cdb444261639fd412dfca046e587a5cc78",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:30.577Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "078.json.gz",
+      "sha256": "bd3b726e76b5b59e4359b21f26d18a6592224255a8419d5df2058d4948243011",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:31.869Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "079.json.gz",
+      "sha256": "105953168b3bcd7b6d40ee1e6c5b70973ca399b3debe2cb39bdb3f9ecd81cfb5",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:33.210Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "080.json.gz",
+      "sha256": "e66af7b1e8351875c5a443ed9cf1bb4a53e58596682f7aa0d0ecb8be1cc82a18",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:34.486Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "081.json.gz",
+      "sha256": "b97462e031c8a0dca475232850280bb353e28fa64873bce3cf71ef64650f9075",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:35.767Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "082.json.gz",
+      "sha256": "08b32215c0b4d76cd1b2e3023489cd08d86082527cd8e2a4cc171c91d9b66ca2",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:37.056Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "083.json.gz",
+      "sha256": "ee60ea6b6f25d4b1f4936fcbfe7d01bda1fb1829a54a2425ca3e96862046cfa1",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:38.382Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "084.json.gz",
+      "sha256": "8bd69ab264a16b8a75ebfe30e4eaa974e8d806de351f74abc1d90062b044224c",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:39.613Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "085.json.gz",
+      "sha256": "1da5e51173368ab63954c30a5ece0a956dc8e0cade6b06bd8d4a80eda2c1022f",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:40.866Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "086.json.gz",
+      "sha256": "dd2988611ea65a9f642fb65cbac3f305bc0c009b23dd8cf44138b5fd306485e3",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:42.173Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "087.json.gz",
+      "sha256": "d281aec56ecfaa9b5223af92bfbc5f42f28715455c5d4666e4170e469434c17a",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:43.444Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "088.json.gz",
+      "sha256": "8559b85c8f5ce7a8f3fe65261e25fb29ae5b842b3a559d839d7353f66b061894",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:44.712Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "089.json.gz",
+      "sha256": "e8529d0e5e68718bf24de79277d1ca043d2364875831c55997545a4e705cc179",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:46.251Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "090.json.gz",
+      "sha256": "6f608189a308b34b1f093b2180236b309429d56706563e6cf011b4f84408b80c",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:47.519Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "091.json.gz",
+      "sha256": "4aa5c86f12bab7127cde810eee8351db627b5bd093caa77eb6fcf7087722e721",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:48.870Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "092.json.gz",
+      "sha256": "d1b1c21836dc7a72e80ba7c89e18c4f2ae4a0abe2edac400d534c28283070211",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:50.147Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "093.json.gz",
+      "sha256": "3c20cdb9535bce8ecc9e9103a2842b2fdef4df84e671aee2296ca6cca9c401ec",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:51.585Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "094.json.gz",
+      "sha256": "8ed5f0262033cb2b2cf4877bc07731a26ecb5f00869d064f2ba0f4e14ad544f4",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:52.867Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "095.json.gz",
+      "sha256": "a15f44e8dda048347f784911864cb5e08c3082ad52c28a0ee8e4e50924355b57",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:54.215Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "096.json.gz",
+      "sha256": "ed6efb1b66070836edc9655a3cb4f0e6c008817151dde4ea6267a50bbefbb076",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:55.471Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "097.json.gz",
+      "sha256": "b496b5968bed3a5d123a3d678d4ecc4d31209e81b002e9a2910cdad7caaf8ed8",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:56.746Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "098.json.gz",
+      "sha256": "c58f37f47e737c7ef03cc3cec737199285da16e9e7bd731d3f20975bd2034567",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:58.041Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "099.json.gz",
+      "sha256": "89f8f8b2ae655e44c1408b2b49b8b6a326c467a3b0e04bd24411762be3ef0a03",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:43:59.405Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "100.json.gz",
+      "sha256": "f330449253fa8c76111864286ac3ab3cdc5f783781694507c6e7fbbedddd1856",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:44:01.447Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "101.json.gz",
+      "sha256": "010defb6b5a7f7d425ea4018b90c44883e10cd9c3dac8ad16ddccc3d0fa1ed7d",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:44:02.786Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "102.json.gz",
+      "sha256": "c10400d1fe4df2942d60a946140a0eb36d74bdd87ef6c530ae83b4f0afc0c45d",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:44:04.082Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "103.json.gz",
+      "sha256": "f75c10d87dd25c959dca55b9dfced359fa75f634ae95b0dddea04a6a2ed9fcd4",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:44:05.372Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "104.json.gz",
+      "sha256": "4481933afdc9b1fd5c152b35d45b8ba5fa5127e23ea48f2a6d58fd3557312667",
+      "count": 500,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:44:06.716Z",
+      "matched": 500,
+      "quarantined": []
+    },
+    {
+      "file": "105.json.gz",
+      "sha256": "3796f5f8dffa01d48b1ee06c9a04ed78412f65592172eb3bbcb0f1a3b34f6d24",
+      "count": 487,
+      "totalCount": 52987,
+      "checkedAt": "2026-11-08T04:44:07.978Z",
+      "matched": 487,
+      "quarantined": []
+    }
+  ],
+  "after": "WyJwcmltYXJ5X2tleV9hc2MiLFsiem9yYS8weGZmRWJCREEyNmM1NjE5Njg4MDk2YzJmZkU4Mzk3ODU5MzA0ODM0RjIiXV0=",
+  "complete": true,
+  "failures": [],
+  "status": "pagination-complete",
+  "updatedAt": "2026-11-08T04:44:08.518Z",
+  "pid": 67493,
+  "rows": 52987,
+  "frozenMatched": 52987,
+  "frozenMissing": [],
+  "lastCampaign": {
+    "finishedAt": "2026-11-08T04:44:08.517Z",
+    "requests": 106,
+    "pages": 106
+  }
+}
