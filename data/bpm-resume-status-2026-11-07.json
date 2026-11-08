@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-11-08T04:40:22.388657+00:00",
+  "workerRunning": false,
+  "mergedWorkerFix": "d84d61fdb641953e65a7e49cf57faf29bf45d09e",
+  "lastRestartAttempt": {
+    "worktree": "web3-music-bpm-campaign",
+    "branch": "recovery/bpm-resume",
+    "selectedTracks": 1,
+    "result": "unavailable",
+    "reason": "Three immediate zero-byte fetch failures in this execution session; no broad campaign was launched and these were not imported into canonical data. This does not establish source loss."
+  },
+  "reviewedProofResultsImported": 2,
+  "proofReceipt": "data/bpm-reviewed-proof-import.json",
+  "next": "Run a verified network-capable bounded retry before broad continuation; sync the worker baseline to the published catalog first. No worker/coordinator lock exists in canonical or the attempted campaign worktree."
+}

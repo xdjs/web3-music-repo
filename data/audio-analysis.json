@@ -131217,16 +131217,90 @@
       "checkedAt": "2026-11-07T05:17:09.042Z"
     },
     "spinamp-b30dca6e0dd0386117e1": {
-      "status": "unavailable",
-      "error": "The operation was aborted due to timeout",
+      "id": "spinamp-b30dca6e0dd0386117e1",
+      "title": "Busy",
+      "cid": "QmdGgTkMihQ4RfMjCETnMiNg4RLCAR9pkC4pHHJPd1qJXL",
+      "expectedBytes": 175832658,
       "source": "https://gateway.pinata.cloud/ipfs/QmdGgTkMihQ4RfMjCETnMiNg4RLCAR9pkC4pHHJPd1qJXL",
-      "checkedAt": "2026-11-07T05:17:37.112Z"
+      "status": "estimated",
+      "bpm": 106.54,
+      "confidence": 0.4401,
+      "gridOffset": 0.09413,
+      "durationSeconds": 252.68,
+      "url": "https://ipfs.filebase.io/ipfs/QmdGgTkMihQ4RfMjCETnMiNg4RLCAR9pkC4pHHJPd1qJXL",
+      "sha256": "8b89a0204e89606d31bf4eb5bd4a9833fc834e59b375c4fc1495783f68b667ec",
+      "bytes": 175832658,
+      "receivedBytes": 175832658,
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmdGgTkMihQ4RfMjCETnMiNg4RLCAR9pkC4pHHJPd1qJXL",
+          "host": "ipfs.filebase.io",
+          "startedAt": "2026-11-07T18:24:15.649Z",
+          "bytes": 175832658,
+          "status": 200,
+          "responseURL": "https://ipfs.filebase.io/ipfs/QmdGgTkMihQ4RfMjCETnMiNg4RLCAR9pkC4pHHJPd1qJXL",
+          "headersMs": 135,
+          "contentLength": 175832658,
+          "contentType": "video/mp4",
+          "lastProgressMs": 4877,
+          "elapsedMs": 4877,
+          "result": "complete"
+        }
+      ],
+      "transferBudget": {
+        "connectionTimeoutMs": 15000,
+        "idleTimeoutMs": 15000,
+        "totalTimeoutMs": 180000,
+        "maxBytes": 209715200
+      },
+      "elapsedMs": 4877,
+      "checkedAt": "2026-11-07T18:24:22.254Z",
+      "wallMs": 6610,
+      "expectedLengthMatched": true,
+      "verificationReceipt": "data/bpm-large-transfer-verification.json"
     },
     "spinamp-7954ce12c4346333b51a": {
-      "status": "unavailable",
-      "error": "The operation was aborted due to timeout",
+      "id": "spinamp-7954ce12c4346333b51a",
+      "title": "DGTZD",
+      "cid": "QmZzSDVkZFXNFSpT7yvp7Aq8c4MKfgjAC4Pnz8uRhGLq8F",
+      "expectedBytes": 141093465,
       "source": "https://gateway.pinata.cloud/ipfs/QmZzSDVkZFXNFSpT7yvp7Aq8c4MKfgjAC4Pnz8uRhGLq8F",
-      "checkedAt": "2026-11-07T05:17:37.941Z"
+      "status": "estimated",
+      "bpm": 104.65,
+      "confidence": 0.3589,
+      "gridOffset": 0.232092,
+      "durationSeconds": 212,
+      "url": "https://ipfs.filebase.io/ipfs/QmZzSDVkZFXNFSpT7yvp7Aq8c4MKfgjAC4Pnz8uRhGLq8F",
+      "sha256": "d997ba2a82f8e16cdf9c30b84ead41bea5abd17e250c58767e309f86afa01325",
+      "bytes": 141093465,
+      "receivedBytes": 141093465,
+      "attempts": [
+        {
+          "url": "https://ipfs.filebase.io/ipfs/QmZzSDVkZFXNFSpT7yvp7Aq8c4MKfgjAC4Pnz8uRhGLq8F",
+          "host": "ipfs.filebase.io",
+          "startedAt": "2026-11-07T18:24:22.259Z",
+          "bytes": 141093465,
+          "status": 200,
+          "responseURL": "https://ipfs.filebase.io/ipfs/QmZzSDVkZFXNFSpT7yvp7Aq8c4MKfgjAC4Pnz8uRhGLq8F",
+          "headersMs": 14,
+          "contentLength": 141093465,
+          "contentType": "video/mp4",
+          "lastProgressMs": 4060,
+          "elapsedMs": 4060,
+          "result": "complete"
+        }
+      ],
+      "transferBudget": {
+        "connectionTimeoutMs": 15000,
+        "idleTimeoutMs": 15000,
+        "totalTimeoutMs": 180000,
+        "maxBytes": 209715200
+      },
+      "elapsedMs": 4060,
+      "checkedAt": "2026-11-07T18:24:27.518Z",
+      "wallMs": 5262,
+      "expectedLengthMatched": true,
+      "verificationReceipt": "data/bpm-large-transfer-verification.json"
     },
     "spinamp-31c3a58ec3c68a2fdff5": {
       "status": "unavailable",
@@ -131304,12 +131378,12 @@
   },
   "startedAt": "2026-11-07T05:17:17.079Z",
   "finishedAt": null,
-  "updatedAt": "2026-11-07T05:19:21.175Z",
+  "updatedAt": "2026-11-08T04:33:14.489Z",
   "counts": {
     "metadata-bpm": 1571,
     "needs-review": 234,
-    "estimated": 9111,
-    "unavailable": 2144,
+    "estimated": 9113,
+    "unavailable": 2142,
     "pending": 2
   },
   "concurrency": 2,

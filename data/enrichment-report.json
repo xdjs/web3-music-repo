@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-07T18:15:51.486Z",
-  "totalRecords": 37345,
+  "checkedAt": "2026-11-08T04:36:24.165Z",
+  "totalRecords": 50633,
   "scope": "Supplied metadata includes original documents, publisher snapshots, official release pages and explicitly attributed indexer data. Metadata read is not independent chain or playback verification.",
-  "suppliedBpm": 7972,
+  "suppliedBpm": 7996,
   "suppliedKey": 7525,
   "lyricsTracks": 2102,
   "metadataSources": {
@@ -34,13 +34,13 @@
     "Lead layer": 5550
   },
   "metadataRead": 37345,
-  "metadataUnresolved": 0,
+  "metadataUnresolved": 13288,
   "bpmAnalysis": {
     "metadata-bpm": 1571,
     "needs-review": 234,
-    "estimated": 9111,
-    "unavailable": 2144,
-    "not-queued": 24283,
+    "estimated": 9113,
+    "unavailable": 2142,
+    "not-queued": 37571,
     "pending": 2
   },
   "payments": {
@@ -50,14 +50,15 @@
   },
   "byPlatform": {
     "Sound": {
-      "records": 9833,
-      "suppliedBpm": 2684,
+      "records": 18091,
+      "suppliedBpm": 2706,
       "suppliedKey": 2330,
       "credits": 0,
       "metadataRead": 9833,
-      "metadataUnresolved": 0,
+      "metadataUnresolved": 8258,
       "metadataStates": {
-        "read": 9833
+        "read": 9833,
+        "not-read": 8258
       },
       "attributedCredits": 7
     },
@@ -110,14 +111,15 @@
       "attributedCredits": 0
     },
     "Zora": {
-      "records": 1255,
-      "suppliedBpm": 5,
+      "records": 5477,
+      "suppliedBpm": 7,
       "suppliedKey": 3,
       "credits": 0,
       "metadataRead": 1255,
-      "metadataUnresolved": 0,
+      "metadataUnresolved": 4222,
       "metadataStates": {
-        "read": 1255
+        "read": 1255,
+        "not-read": 4222
       },
       "attributedCredits": 5
     },
@@ -554,14 +556,15 @@
       "attributedCredits": 0
     },
     "NOIZD": {
-      "records": 42,
+      "records": 503,
       "suppliedBpm": 0,
       "suppliedKey": 0,
       "credits": 0,
       "metadataRead": 42,
-      "metadataUnresolved": 0,
+      "metadataUnresolved": 461,
       "metadataStates": {
-        "read": 42
+        "read": 42,
+        "not-read": 461
       },
       "attributedCredits": 0
     },
@@ -590,14 +593,15 @@
       "attributedCredits": 0
     },
     "Spinamp": {
-      "records": 10,
+      "records": 356,
       "suppliedBpm": 0,
       "suppliedKey": 0,
       "credits": 0,
       "metadataRead": 10,
-      "metadataUnresolved": 0,
+      "metadataUnresolved": 346,
       "metadataStates": {
-        "read": 10
+        "read": 10,
+        "not-read": 346
       },
       "attributedCredits": 0
     },
@@ -650,14 +654,15 @@
       "attributedCredits": 0
     },
     "Nina": {
-      "records": 6054,
+      "records": 6055,
       "suppliedBpm": 17,
       "suppliedKey": 0,
       "credits": 0,
       "metadataRead": 6054,
-      "metadataUnresolved": 0,
+      "metadataUnresolved": 1,
       "metadataStates": {
-        "read": 6054
+        "read": 6054,
+        "not-read": 1
       },
       "attributedCredits": 0
     },
@@ -685,7 +690,7 @@
     },
     "bpm": {
       "startedAt": "2026-11-07T05:17:17.079Z",
-      "updatedAt": "2026-11-07T05:19:21.175Z",
+      "updatedAt": "2026-11-08T04:33:14.489Z",
       "finishedAt": null,
       "interruptedAt": "2026-11-07T05:19:21.175Z",
       "completion": "not-confirmed-finished",

@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-11-08T04:38:40.098Z",
+  "status": "passed",
+  "includedFiles": 51,
+  "dataBytes": 209963744,
+  "omittedOptionalFiles": [],
+  "records": 50633,
+  "people": 11226,
+  "indexSha256": "67ccda4655cae8a3b9724a98c7c902260d810d8fdc59786bf2d4c18672ee2474",
+  "evidenceSha256": "56e43975f9a9a124c2a594fdae75ac0da2fa8fa5e86c4ea611015e8e6b0ca1eb",
+  "routes": [
+    {
+      "url": "/api/coverage",
+      "status": 200,
+      "sha256": "e1e7dcd3234b61288949aac7001ae16e3ebd96e6fcccfebe54a63cee25ad4092"
+    },
+    {
+      "url": "/api/coverage/sound-reconciliation",
+      "status": 200,
+      "sha256": "d0cfeaee2379fa754cecae6864740324106fe24a06f82ceec31ccf2a7777075f"
+    },
+    {
+      "url": "/api/archive",
+      "status": 200,
+      "sha256": "af6a468beb6a4049ea1311b8a6713b8c0dbd8b5aaeafbea57308300353a65ecd"
+    },
+    {
+      "url": "/api/record/spinamp-d11f88ec5a02e39ae6be",
+      "status": 200,
+      "sha256": "ce38e3320da622b039b38e025ade009f9bc906c146aed69b796505a5b023baa6"
+    },
+    {
+      "url": "/share/record/spinamp-d11f88ec5a02e39ae6be",
+      "status": 200,
+      "sha256": "6378a64861288dd89b46bbd415274b73fed4392d73ab519a50cf123fe9d9439a"
+    },
+    {
+      "url": "/api/collectors/spinamp-d11f88ec5a02e39ae6be",
+      "status": 200,
+      "sha256": "6f3bb3dca427e7728293028aa88f725172d36736860073cb1e8cff37fa1b13a0"
+    }
+  ],
+  "scope": "Exact public catalog/evidence hashes and handler response parity using only allowlisted runtime data; no network or account authentication claims. Actual deployed function size must also be checked."
+}
