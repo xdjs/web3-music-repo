@@ -1,8 +1,9 @@
 {
-  "checkedAt": "2026-11-08T04:38:40.098Z",
+  "checkedAt": "2026-11-08T04:47:06.460Z",
   "status": "passed",
-  "includedFiles": 51,
-  "dataBytes": 209963744,
+  "includedFiles": 349,
+  "requiredFiles": 51,
+  "dataBytes": 219229018,
   "omittedOptionalFiles": [],
   "records": 50633,
   "people": 11226,

@@ -3,6 +3,7 @@ import { execFileSync } from "node:child_process";
 import {
   cpSync,
   existsSync,
+  globSync,
   mkdirSync,
   mkdtempSync,
   readFileSync,
@@ -76,9 +77,21 @@ if (process.argv.includes("--probe")) {
 } else {
   const root = process.cwd();
   const config = JSON.parse(readFileSync("vercel.json", "utf8"));
-  const include = config.functions["api/index.mjs"].includeFiles;
-  assert.match(include, /^\{[^*]+\}$/);
-  const files = include.slice(1, -1).split(",");
+  const { includeFiles: include, excludeFiles: exclude } =
+    config.functions["api/index.mjs"];
+  assert.ok(
+    include.length <= 256 && exclude.length <= 256,
+    "Vercel function file patterns have a 256-character limit",
+  );
+  const excluded = new Set(globSync(exclude));
+  const files = globSync(include)
+    .filter((file) => !excluded.has(file))
+    .sort();
+  const required = JSON.parse(
+    readFileSync("data/runtime-required-files.json", "utf8"),
+  );
+  for (const file of required)
+    assert.ok(files.includes(file), `Missing required runtime data: ${file}`);
   const stage = mkdtempSync(path.join(tmpdir(), "music-runtime-"));
   const script = fileURLToPath(import.meta.url);
   const probe = (cwd) =>
@@ -121,6 +134,7 @@ if (process.argv.includes("--probe")) {
       checkedAt: new Date().toISOString(),
       status: "passed",
       includedFiles: files.length,
+      requiredFiles: required.length,
       dataBytes,
       omittedOptionalFiles: omitted,
       ...slim,
