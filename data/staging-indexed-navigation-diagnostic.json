@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-11-08T05:01:36.960Z",
+  "base": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app",
+  "page": {
+    "readyState": "complete",
+    "title": "express yourself — Music Nerd",
+    "text": "Skip to music\nMUSIC NERD\nweb3-music-archive\nHome\nExplore music\nArtists\nPlaylists\nYOUR LIBRARY\nMy profile\nCollected music\nLiked sounds\n0\nListening queue\nPRESERVING THE ERA\nRecovery ledger\n An independent living archive\n\nSound first. An entire era to recover.\n\nAbout this archive ↗\n⌕\n/\n◐\n← Explore the archive\nSOUND · MINT UNCONFIRMED · RECORDING\nexpress yourself\n\nSunshine Vendetta\n\nPlay\nPlay next\n＋ Add to queue\n＋ Add to playlist\nCreate Story clip\nShare\n♡\nDetails\nCollectors\nProvenance\nComments\n\nLoading recording details…\n\nA Music Nerd preservation project.\nAbout this archive ↗",
+    "scripts": [
+      "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app/src/archive.js",
+      "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app/account/account-login.js"
+    ]
+  },
+  "pending": [
+    {
+      "url": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app/api/auth/config",
+      "type": "fetch",
+      "started": 1794114111593,
+      "elapsedMs": 1734
+    },
+    {
+      "url": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app/api/coverage",
+      "type": "fetch",
+      "started": 1794114112696,
+      "elapsedMs": 631
+    },
+    {
+      "url": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app/api/archive",
+      "type": "fetch",
+      "started": 1794114112696,
+      "elapsedMs": 631
+    },
+    {
+      "url": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app/api/record/spinamp-4130ab5f9ba118dd8bca",
+      "type": "fetch",
+      "started": 1794114112697,
+      "elapsedMs": 630
+    },
+    {
+      "url": "https://wgno3xhd2yu7gorfiluz374nniwehpyz3abrr6ej57mqolxkdwmq.arweave.net/sZrt3OPWKfM6JULpnf-NaixDvxnYAxj4ie_ZBy7qHZk",
+      "type": "image",
+      "started": 1794114113324,
+      "elapsedMs": 3
+    }
+  ],
+  "failed": [],
+  "errors": [],
+  "responses": []
+}

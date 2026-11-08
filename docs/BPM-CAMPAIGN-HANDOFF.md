@@ -2,6 +2,14 @@
 
 Started November 6, 2026 at Pete Rango's request to label substantially more of the archive with BPM, across platforms. This is ongoing local recovery work, not a production deployment.
 
+## Current checkpoint — November 7 evening
+
+The bounded transfer fix is merged and deployed. Public source `23dc3fb217ba856664a08b53007a1778690297fe` contains 50,633 recordings and 17,105 displayed BPM values. The newer worker is isolated at `/Users/peterarango/Documents/Music Nerd/Apps/web3-music-bpm-campaign` on `recovery/bpm-resume`, based on `109189f`. Do not merge or overwrite its moving analysis output. See `data/bpm-resume-status-2026-11-07.json` in the canonical repo for the latest observed state and the isolated worktree's actual status/locks before resuming.
+
+The existing `npx tsx scripts/run-bpm-campaign.mjs` invocation successfully makes bounded network requests in this execution environment; a plain-node attempt returned immediate zero-byte failures. All twelve additional geniuscorp retry records succeeded. The wider Sound pass also produced estimates and checkpointed safely before release playback QA. Preserve old failure evidence; no result establishes permanent source loss. The worker still uses two concurrent media jobs and source-supplied BPM takes precedence. Keys are not inferred. Background work requires this computer and network to remain available.
+
+The sections below are historical campaign checkpoints. Current production and worker receipts take precedence over their state claims.
+
 ## Checkpoint November 7
 
 Source metadata campaign completed all 27,520 identities with zero failures. The BPM coordinator stopped after repeated download timeouts while using Filebase (saved original URLs were Pinata). Two sampled CIDs currently respond and contain141/176 MB videos; a20-second full-body deadline likely contributed, but historical logs cannot prove the failure stage. No campaign workers or output locks remained at the 18:09 UTC check. Local BPM coverage is 8,329/9,833 Sound and 17,066/37,345 total. Restart requires diagnosing gateway fallback first; the descriptions below record the launched workflow, not current liveness.

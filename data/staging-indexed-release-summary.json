@@ -1,0 +1,191 @@
+{
+  "checkedAt": "2026-11-08T05:08:34.761Z",
+  "deploymentId": "dpl_FbBWnavisDM6JxLpPiU5qvo2zoZ8",
+  "sourceCommit": "23dc3fb217ba856664a08b53007a1778690297fe",
+  "base": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app",
+  "status": "passed-after-bounded-retries",
+  "recommendation": "Promote this exact deployment; preserve media availability and transport limitations. No complete-catalog playback claim.",
+  "catalogDelivery": {
+    "bytes": 49112000,
+    "sha256": "67ccda4655cae8a3b9724a98c7c902260d810d8fdc59786bf2d4c18672ee2474",
+    "contentEncoding": "br"
+  },
+  "assets": [
+    {
+      "path": "src/archive.js",
+      "bytes": 103796,
+      "sha256": "d3c01654ba378fed8e20bcbff8517b6c959a67b45d7227036196b359062efe94"
+    },
+    {
+      "path": "src/asset-capabilities.mjs",
+      "bytes": 1475,
+      "sha256": "56e721174e68eafb93b9f7044e8eefde0ff044e32c4842a1c2d0997f6d4ea796"
+    },
+    {
+      "path": "src/indexed-release-ui.mjs",
+      "bytes": 1661,
+      "sha256": "91a81b420126b1ba6f8b2619ee9bff0641541e6d18d59ce9b7e8ffbe6606dc8b"
+    },
+    {
+      "path": "src/collectors-ui.mjs",
+      "bytes": 14665,
+      "sha256": "25820343995a0164e30554acffc4da7e1f50e615b17d5e439fc101661e19b441"
+    },
+    {
+      "path": "src/music-facts.mjs",
+      "bytes": 2739,
+      "sha256": "d288842d52853ec06bd432b8346ffe3b057018319162c975afb1920681e70cb0"
+    }
+  ],
+  "counts": {
+    "catalogued": 50633,
+    "indexed": 29430,
+    "indexOnly": 13288,
+    "readable": 7915,
+    "unavailable": 0,
+    "notAttempted": 0,
+    "sound": 18091,
+    "chains": [
+      "Ethereum",
+      "Optimism",
+      "Base",
+      "Zora",
+      "Polygon",
+      "Solana"
+    ]
+  },
+  "uiChecks": [
+    {
+      "case": "coverage-source-data-present",
+      "pass": true,
+      "catalogTokenEntries": 4164,
+      "soundAttempted": 9316
+    },
+    {
+      "case": "lazy-record-provenance",
+      "pass": true
+    },
+    {
+      "case": "collectors-unsupported",
+      "pass": true
+    },
+    {
+      "case": "holders-unsupported",
+      "pass": true
+    },
+    {
+      "case": "owner-unsupported",
+      "pass": true
+    },
+    {
+      "case": "recover-unsupported",
+      "pass": true
+    },
+    {
+      "case": "share-server-metadata",
+      "pass": true
+    },
+    {
+      "case": "1440-light",
+      "pass": true,
+      "artworkLoaded": false,
+      "pageErrors": [],
+      "unconfirmedOwnershipCalls": []
+    },
+    {
+      "case": "1440-dark",
+      "pass": true,
+      "artworkLoaded": false,
+      "pageErrors": [],
+      "unconfirmedOwnershipCalls": []
+    },
+    {
+      "case": "390-light",
+      "pass": true
+    },
+    {
+      "case": "390-dark",
+      "pass": true
+    },
+    {
+      "case": "mobile-details-collectors-comments",
+      "pass": true
+    },
+    {
+      "case": "actual-search-input-and-artist",
+      "pass": true
+    },
+    {
+      "case": "guest-playlist-create-add",
+      "pass": true
+    },
+    {
+      "case": "legacy-token-proof",
+      "pass": true
+    }
+  ],
+  "playback": [
+    {
+      "id": "spinamp-66e7d6a196ca36f3f447",
+      "engine": "webkit",
+      "pass": true,
+      "media": {
+        "source": "https://ipfs.filebase.io/ipfs/QmcFG2M8pXG1tnYiEVxpuJEXCyqmaaNRRXv9Uim648ZDaD",
+        "duration": 237.1395918367347,
+        "currentTime": 1.0090354059579234,
+        "readyState": 4
+      }
+    },
+    {
+      "id": "spinamp-3d0fac554ccb97331ded",
+      "status": "played",
+      "media": {
+        "src": "https://ipfs.filebase.io/ipfs/bafybeigqyayhm3usg5e32rv7dxg6l36rgyekx5bjfjofdbiscpolictsyi",
+        "paused": false,
+        "time": 1.015993,
+        "duration": 28.303333,
+        "readyState": 4,
+        "networkState": 1,
+        "width": 568,
+        "height": 320,
+        "decodedAudioBytes": 12719,
+        "error": null
+      },
+      "playerStatus": ""
+    },
+    {
+      "id": "spinamp-4130ab5f9ba118dd8bca",
+      "status": "played",
+      "media": {
+        "src": "https://arweave.net/ThI9zpAluEGTDIBmW932PPaZlC_tIBYrFaFsXwT7p0Q",
+        "paused": false,
+        "time": 1.014168,
+        "duration": 321.133628,
+        "readyState": 4,
+        "networkState": 1,
+        "width": 0,
+        "height": 0,
+        "decodedAudioBytes": 60604,
+        "error": null
+      },
+      "playerStatus": ""
+    }
+  ],
+  "limitations": [
+    "Earlier theme fixture accessed localStorage inside restricted/opaque documents; fixed only the test initializer to app-origin top-level scope. Application errors remain asserted.",
+    "Navigation and catalog body transfers timed out transiently; all required functional checks subsequently passed, after background media analysis was stopped.",
+    "One Sound startup timed out before the final successful attempt; no source replacement or playback patch was made.",
+    "Artwork is gateway-dependent and was partially loaded in some captures.",
+    "Staged Privy embedded-wallet frame was blocked; no sign-in, OTP or wallet signature was attempted on the immutable staging hostname.",
+    "Three startup samples are not full-track auditions or an availability census."
+  ],
+  "evidence": [
+    "data/staging-indexed-release-ui-desktop-pass-mobile-timeout.json",
+    "data/staging-indexed-release-chromium-verification.json",
+    "data/staging-indexed-release-remaining-verification.json",
+    "data/staging-indexed-release-final-playback.json",
+    "data/staging-indexed-release-ui-initial-fixture-failure.json",
+    "data/staging-indexed-release-mobile-ui-verification.json",
+    "data/staging-indexed-navigation-diagnostic.json"
+  ]
+}

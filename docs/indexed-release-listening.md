@@ -20,3 +20,11 @@ Verification:
 - `captures/indexed-release-*`: rendered proof and playback views. Artwork loads asynchronously; the playback capture confirms the Sound sample's actual artwork. No invented artwork or collector avatars.
 
 Deployment must use a runtime data allowlist. The prior `data/**/*.json` inclusion exceeds the function size budget after expansion; raw discovery inputs and audit receipts are not runtime dependencies. Production integration, function bundle parity/size and live verification are owned by the release orchestrator.
+
+## Deployed verification
+
+Main `23dc3fb217ba856664a08b53007a1778690297fe` was staged as `dpl_FbBWnavisDM6JxLpPiU5qvo2zoZ8`, then promoted unchanged to the public aliases. `data/staging-indexed-release-summary.json` consolidates the exact catalog and five source-file hashes, four themed/viewport checks, source APIs, ownership exclusions, actual search input, guest playlist addition, legacy token proof, and three successful actual-media samples. The catalog contains 50,633 recordings, including 13,288 index-only recordings.
+
+The first fixture incorrectly initialized localStorage in restricted third-party/opaque frames. Only that test fixture was corrected, scoping it to the app's top-level origin; application errors remain asserted. Separate receipts preserve subsequent navigation/catalog-transfer timeouts and an initial Sound startup timeout. Bounded retries after competing background analysis downloads were paused passed Sound audio and Zora video/audio in Chromium, and NOIZD audio in WebKit. These are startup checks, not full-track auditions or universal availability claims. The immutable staging hostname's blocked Privy embedded-wallet request is recorded separately; no login/OTP/signature was attempted there.
+
+`data/production-indexed-release-alias-verification.json` passed on the primary public URL: five source hashes match, catalog HEAD/ETag matches the staged index whose complete body SHA-256 was verified, record provenance/collector guard/share responses pass, and the actual mobile dark view renders without overflow or page errors. `captures/production-indexed-release-mobile-dark.png` was visually reviewed. No full public catalog download or multi-browser playback matrix was repeated after promotion. All QA browsers were closed at completion.

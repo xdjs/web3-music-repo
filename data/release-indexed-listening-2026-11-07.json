@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-11-08T05:10:49.071755+00:00",
+  "url": "https://web3-music-archive.vercel.app",
+  "pullRequests": [
+    14,
+    15,
+    16
+  ],
+  "sourceCommit": "23dc3fb217ba856664a08b53007a1778690297fe",
+  "deploymentId": "dpl_FbBWnavisDM6JxLpPiU5qvo2zoZ8",
+  "deploymentUrl": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app",
+  "status": "READY; tested staged build promoted without rebuild",
+  "primaryAliasInspection": "Vercel CLI resolves primary alias to this exact deployment; connector alias array was empty, so not used as alias evidence.",
+  "checks": {
+    "integration": "data/indexed-recovery-integration-verification.json",
+    "runtimeBundle": "data/runtime-bundle-verification.json",
+    "stagedUI": "data/staging-indexed-release-ui-verification.json",
+    "mobileUI": "data/staging-indexed-release-chromium-verification.json",
+    "webkitPlayback": "data/staging-indexed-release-remaining-verification.json",
+    "chromiumPlayback": "data/staging-indexed-release-final-playback.json",
+    "tests": {
+      "passed": 403,
+      "failed": 1,
+      "failure": "Existing static-video localhost server bind EPERM; changed-code assertions passed."
+    },
+    "runtimeErrors": "No matching error/fatal logs returned in bounded deployment-scoped query 2026-11-08T04:59:51Z through 05:09:51Z.",
+    "stagedSummary": "data/staging-indexed-release-summary.json",
+    "productionAlias": "data/production-indexed-release-alias-verification.json",
+    "productionAliasSummary": "Five source hashes, staged index ETag, public record/provenance and collector guard, share metadata, and actual 390px dark rendered page all passed with zero page errors/overflow."
+  },
+  "catalog": {
+    "recordings": 50633,
+    "artistProfiles": 11226,
+    "newIndexOnlyRecordings": 13288,
+    "retainedPriorRecordingIds": 37345,
+    "withBpm": 17105,
+    "suppliedBpm": 7996,
+    "displayedEstimates": 9109,
+    "keys": 7525,
+    "lyricBearingRecordings": 2102
+  },
+  "spinampSnapshot": {
+    "rows": 52987,
+    "coveredRows": 48831,
+    "heldRows": 4114,
+    "unresolvedRelations": 42,
+    "scope": "Rows are not necessarily distinct songs. All 106 frozen pages reconciled."
+  },
+  "indexSha256": "67ccda4655cae8a3b9724a98c7c902260d810d8fdc59786bf2d4c18672ee2474",
+  "limitations": [
+    "Index-only releases do not establish mint identity or collectors.",
+    "Representative playback checks only; transient page-transfer timeouts and one audio startup stall preserved in receipts.",
+    "No all-catalog media availability or tempo accuracy claim.",
+    "Physical second-device account sync and Instagram upload not reverified in this release.",
+    "Deeper Spinamp metadata overlay remains separate and unmerged pending browser/video QA."
+  ],
+  "workerStatusReceipt": "data/bpm-resume-status-2026-11-07.json",
+  "aliases": [
+    "web3-music-archive.vercel.app",
+    "web3-music-repo.vercel.app"
+  ],
+  "aliasVerification": "Both aliases independently resolved by Vercel CLI inspect to dpl_FbBWnavisDM6JxLpPiU5qvo2zoZ8 after promotion.",
+  "functionSizeReportedByCLI": "43.13 MB for api/index"
+}

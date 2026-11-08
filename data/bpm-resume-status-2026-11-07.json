@@ -1,15 +1,36 @@
 {
-  "checkedAt": "2026-11-08T04:40:22.388657+00:00",
-  "workerRunning": false,
+  "checkedAt": "2026-11-08T05:52:16.968437+00:00",
+  "workerRunning": true,
+  "state": "analyzing",
+  "worktree": "/Users/peterarango/Documents/Music Nerd/Apps/web3-music-bpm-campaign",
+  "branch": "recovery/bpm-resume",
+  "workerBaseline": "109189f22d8e8fe074fc80676255da03b98c5d7c",
   "mergedWorkerFix": "d84d61fdb641953e65a7e49cf57faf29bf45d09e",
-  "lastRestartAttempt": {
-    "worktree": "web3-music-bpm-campaign",
-    "branch": "recovery/bpm-resume",
-    "selectedTracks": 1,
-    "result": "unavailable",
-    "reason": "Three immediate zero-byte fetch failures in this execution session; no broad campaign was launched and these were not imported into canonical data. This does not establish source loss."
+  "lastCoordinatorUpdatedAt": "2026-11-08T05:52:15.050Z",
+  "stopRequestedAt": null,
+  "observedCounts": {
+    "records": 50633,
+    "supplied": 7996,
+    "estimated": 9163,
+    "needsReview": 234,
+    "unavailable": 2151,
+    "deferred": 6,
+    "pending": 22,
+    "untouched": 31061,
+    "other": 0
   },
+  "completedRetryRecords": 12,
   "reviewedProofResultsImported": 2,
-  "proofReceipt": "data/bpm-reviewed-proof-import.json",
-  "next": "Run a verified network-capable bounded retry before broad continuation; sync the worker baseline to the published catalog first. No worker/coordinator lock exists in canonical or the attempted campaign worktree."
+  "workerResultsPublished": false,
+  "resumeCommand": "npx tsx scripts/run-bpm-campaign.mjs",
+  "safety": "Check isolated status and locks before any new writer. Never copy the moving checkpoint into canonical. Plain-node immediate connection-failure receipt retained under worker work/restart-attempt-2026-11-07.json. All twelve later bounded retries succeeded; wider Sound pass also progressed.",
+  "next": "Worker is progressing through new Sound entries before platform rotation. Verify actual status/locks before any restart; review and freeze results before publishing.",
+  "coordinatorPid": 72559,
+  "activeBatch": {
+    "pid": 72577,
+    "platform": "Sound",
+    "startedAt": "2026-11-08T05:39:22.975Z",
+    "plannedRecords": 50
+  },
+  "executionSession": 61729
 }

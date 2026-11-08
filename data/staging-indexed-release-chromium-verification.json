@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-11-08T05:06:02.612Z",
+  "base": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app",
+  "sourceCommit": "23dc3fb217ba856664a08b53007a1778690297fe",
+  "deploymentId": "dpl_FbBWnavisDM6JxLpPiU5qvo2zoZ8",
+  "scope": "Targeted remaining UI and playback after preserved transient navigation/body-transfer timeouts; reuses actual browser catalog between routes. Earlier live index and five asset hashes remain separate evidence.",
+  "checks": [
+    {
+      "case": "390-light",
+      "pass": true
+    },
+    {
+      "case": "390-dark",
+      "pass": true
+    },
+    {
+      "case": "mobile-details-collectors-comments",
+      "pass": true
+    },
+    {
+      "case": "actual-search-input-and-artist",
+      "pass": true
+    },
+    {
+      "case": "guest-playlist-create-add",
+      "pass": true
+    },
+    {
+      "case": "legacy-token-proof",
+      "pass": true
+    }
+  ],
+  "playback": [],
+  "error": "page.waitForFunction: Timeout 45000ms exceeded.\n    at /Users/peterarango/Documents/Music Nerd/Apps/web3-music-repo/work/diagnose.mjs:11:144",
+  "pageErrors": [],
+  "status": "partial"
+}

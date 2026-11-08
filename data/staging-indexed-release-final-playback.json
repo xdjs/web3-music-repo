@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-11-08T05:08:34.761Z",
+  "base": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app",
+  "sourceCommit": "23dc3fb217ba856664a08b53007a1778690297fe",
+  "deploymentId": "dpl_FbBWnavisDM6JxLpPiU5qvo2zoZ8",
+  "scope": "Bounded actual staged-app audio/video startup; each source independent. Previous UI and transport receipts remain separate.",
+  "samples": [
+    {
+      "id": "spinamp-3d0fac554ccb97331ded",
+      "status": "played",
+      "media": {
+        "src": "https://ipfs.filebase.io/ipfs/bafybeigqyayhm3usg5e32rv7dxg6l36rgyekx5bjfjofdbiscpolictsyi",
+        "paused": false,
+        "time": 1.015993,
+        "duration": 28.303333,
+        "readyState": 4,
+        "networkState": 1,
+        "width": 568,
+        "height": 320,
+        "decodedAudioBytes": 12719,
+        "error": null
+      },
+      "playerStatus": ""
+    },
+    {
+      "id": "spinamp-4130ab5f9ba118dd8bca",
+      "status": "played",
+      "media": {
+        "src": "https://arweave.net/ThI9zpAluEGTDIBmW932PPaZlC_tIBYrFaFsXwT7p0Q",
+        "paused": false,
+        "time": 1.014168,
+        "duration": 321.133628,
+        "readyState": 4,
+        "networkState": 1,
+        "width": 0,
+        "height": 0,
+        "decodedAudioBytes": 60604,
+        "error": null
+      },
+      "playerStatus": ""
+    }
+  ],
+  "pageErrors": [],
+  "failedRequests": [
+    {
+      "url": "https://ipfs.filebase.io/ipfs/bafybeigqyayhm3usg5e32rv7dxg6l36rgyekx5bjfjofdbiscpolictsyi",
+      "reason": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://md3i6fyfvnhlgcipaonvygwjpsgsyjgmtobwqjpyp7eijm2affvq.arweave.net/YPaPFwWrTrMJDwObXBrJfI0sJMybg2gl-H_IhLNAKWs",
+      "reason": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app/",
+      "reason": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app/",
+      "reason": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://auth.privy.io/apps/cmlzjxfrh00ak0cjvlap9d3gm/embedded-wallets",
+      "reason": "net::ERR_BLOCKED_BY_RESPONSE"
+    },
+    {
+      "url": "https://csp-report.browser-intake-datadoghq.com/api/v2/logs",
+      "reason": "net::ERR_BLOCKED_BY_ORB"
+    }
+  ],
+  "status": "passed"
+}

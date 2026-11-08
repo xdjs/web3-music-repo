@@ -106,15 +106,23 @@ try {
     { width: 1440, height: 1000, theme: "dark" },
     { width: 390, height: 844, theme: "light" },
     { width: 390, height: 844, theme: "dark" },
-  ]) {
+  ].filter(
+    (view) => process.env.VERIFY_VIEWPORTS !== "mobile" || view.width === 390,
+  )) {
     const ctx = await browser.newContext({
       viewport: { width: view.width, height: view.height },
     });
     await ctx.addInitScript(
-      (theme) => localStorage.setItem("mn-archive-theme", theme),
-      view.theme,
+      ({ theme, origin }) => {
+        // Theme fixtures belong to the app, not restricted third-party frames
+        // or the initial opaque about:blank document.
+        if (window === window.top && location.origin === origin)
+          localStorage.setItem("mn-archive-theme", theme);
+      },
+      { theme: view.theme, origin: new URL(base).origin },
     );
     const page = await ctx.newPage();
+    page.setDefaultNavigationTimeout(60000);
     const errors = [],
       ownershipCalls = [];
     page.on("pageerror", (e) => errors.push(e.message));
@@ -190,6 +198,11 @@ try {
       waitUntil: "domcontentloaded",
     });
     await page.locator(".record-card").first().waitFor({ timeout: 60000 });
+    await page.locator("#search").fill(record.title);
+    await page
+      .locator(`.record-card a[href="#record/${record.id}"]`)
+      .first()
+      .waitFor({ timeout: 60000 });
     assert.equal(
       await page.evaluate(
         () => document.documentElement.scrollWidth > innerWidth + 1,
@@ -209,6 +222,7 @@ try {
   }
   const guest = await browser.newContext();
   const gp = await guest.newPage();
+  gp.setDefaultNavigationTimeout(60000);
   await gp.goto(base + "/#playlists");
   await gp.locator("[data-new-playlist]").waitFor({ timeout: 60000 });
   await gp.locator("[data-new-playlist]").click();
@@ -235,6 +249,7 @@ try {
   await guest.close();
   // Existing token route must retain its proof and exact collector affordances.
   const page = await api.newPage();
+  page.setDefaultNavigationTimeout(60000);
   await page.goto(base + "/#record/record-69c77ef0?tab=proof");
   await page.locator("[data-recover]").waitFor({ timeout: 60000 });
   assert.ok(

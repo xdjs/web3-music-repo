@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-08T04:59:07.061Z",
+  "base": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app",
+  "sourceCommit": "23dc3fb217ba856664a08b53007a1778690297fe",
+  "deploymentId": "dpl_FbBWnavisDM6JxLpPiU5qvo2zoZ8",
+  "scope": "Bounded real app playback of three index-only recordings, not full-track audition or all-catalog availability.",
+  "results": [
+    {
+      "engine": "chromium",
+      "id": "spinamp-4130ab5f9ba118dd8bca",
+      "status": "unavailable",
+      "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app/#record/spinamp-4130ab5f9ba118dd8bca\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "engine": "webkit",
+      "id": "spinamp-66e7d6a196ca36f3f447",
+      "status": "unavailable",
+      "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app/#record/spinamp-66e7d6a196ca36f3f447\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "engine": "chromium",
+      "id": "spinamp-3d0fac554ccb97331ded",
+      "status": "unavailable",
+      "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app/#record/spinamp-3d0fac554ccb97331ded\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    }
+  ],
+  "status": "partial"
+}

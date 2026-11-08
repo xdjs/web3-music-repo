@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-11-08T04:56:10.395Z",
+  "base": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app",
+  "sourceCommit": "23dc3fb217ba856664a08b53007a1778690297fe",
+  "deploymentId": "dpl_FbBWnavisDM6JxLpPiU5qvo2zoZ8",
+  "scope": "Target-URL verification of index-only listening. UI and representative playback; no complete-media or onchain verification claim.",
+  "checks": [
+    {
+      "case": "coverage-source-data-present",
+      "pass": true,
+      "catalogTokenEntries": 4164,
+      "soundAttempted": 9316
+    },
+    {
+      "case": "lazy-record-provenance",
+      "pass": true
+    },
+    {
+      "case": "collectors-unsupported",
+      "pass": true
+    },
+    {
+      "case": "holders-unsupported",
+      "pass": true
+    },
+    {
+      "case": "owner-unsupported",
+      "pass": true
+    },
+    {
+      "case": "recover-unsupported",
+      "pass": true
+    },
+    {
+      "case": "share-server-metadata",
+      "pass": true
+    },
+    {
+      "case": "1440-light",
+      "pass": true,
+      "artworkLoaded": false,
+      "pageErrors": [],
+      "unconfirmedOwnershipCalls": []
+    },
+    {
+      "case": "1440-dark",
+      "pass": true,
+      "artworkLoaded": false,
+      "pageErrors": [],
+      "unconfirmedOwnershipCalls": []
+    }
+  ],
+  "status": "failed",
+  "catalogDelivery": {
+    "bytes": 49112000,
+    "sha256": "67ccda4655cae8a3b9724a98c7c902260d810d8fdc59786bf2d4c18672ee2474",
+    "contentEncoding": "br"
+  },
+  "assets": [
+    {
+      "path": "src/archive.js",
+      "bytes": 103796,
+      "sha256": "d3c01654ba378fed8e20bcbff8517b6c959a67b45d7227036196b359062efe94"
+    },
+    {
+      "path": "src/asset-capabilities.mjs",
+      "bytes": 1475,
+      "sha256": "56e721174e68eafb93b9f7044e8eefde0ff044e32c4842a1c2d0997f6d4ea796"
+    },
+    {
+      "path": "src/indexed-release-ui.mjs",
+      "bytes": 1661,
+      "sha256": "91a81b420126b1ba6f8b2619ee9bff0641541e6d18d59ce9b7e8ffbe6606dc8b"
+    },
+    {
+      "path": "src/collectors-ui.mjs",
+      "bytes": 14665,
+      "sha256": "25820343995a0164e30554acffc4da7e1f50e615b17d5e439fc101661e19b441"
+    },
+    {
+      "path": "src/music-facts.mjs",
+      "bytes": 2739,
+      "sha256": "d288842d52853ec06bd432b8346ffe3b057018319162c975afb1920681e70cb0"
+    }
+  ],
+  "record": "spinamp-4130ab5f9ba118dd8bca",
+  "counts": {
+    "catalogued": 50633,
+    "indexed": 29430,
+    "indexOnly": 13288,
+    "readable": 7915,
+    "unavailable": 0,
+    "notAttempted": 0,
+    "sound": 18091,
+    "chains": [
+      "Ethereum",
+      "Optimism",
+      "Base",
+      "Zora",
+      "Polygon",
+      "Solana"
+    ]
+  },
+  "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app/#record/spinamp-4130ab5f9ba118dd8bca?tab=proof\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at /Users/peterarango/Documents/Music Nerd/Apps/web3-music-repo/scripts/verify-indexed-release-ui.mjs:133:16"
+}

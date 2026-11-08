@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-11-08T05:38:33.479Z",
+  "base": "https://web3-music-archive.vercel.app",
+  "deploymentId": "dpl_FbBWnavisDM6JxLpPiU5qvo2zoZ8",
+  "sourceCommit": "23dc3fb217ba856664a08b53007a1778690297fe",
+  "scope": "Minimal promoted primary-alias verification; full catalog SHA and playback matrix remain in staging receipts.",
+  "checks": [
+    {
+      "case": "src/archive.js",
+      "pass": true,
+      "sha256": "d3c01654ba378fed8e20bcbff8517b6c959a67b45d7227036196b359062efe94"
+    },
+    {
+      "case": "src/asset-capabilities.mjs",
+      "pass": true,
+      "sha256": "56e721174e68eafb93b9f7044e8eefde0ff044e32c4842a1c2d0997f6d4ea796"
+    },
+    {
+      "case": "src/indexed-release-ui.mjs",
+      "pass": true,
+      "sha256": "91a81b420126b1ba6f8b2619ee9bff0641541e6d18d59ce9b7e8ffbe6606dc8b"
+    },
+    {
+      "case": "src/collectors-ui.mjs",
+      "pass": true,
+      "sha256": "25820343995a0164e30554acffc4da7e1f50e615b17d5e439fc101661e19b441"
+    },
+    {
+      "case": "src/music-facts.mjs",
+      "pass": true,
+      "sha256": "d288842d52853ec06bd432b8346ffe3b057018319162c975afb1920681e70cb0"
+    },
+    {
+      "case": "public-record",
+      "pass": true
+    },
+    {
+      "case": "public-collector-guard",
+      "pass": true
+    },
+    {
+      "case": "public-share",
+      "pass": true
+    },
+    {
+      "case": "primary-mobile-dark-visible-header-and-proof",
+      "pass": true
+    }
+  ],
+  "catalogIdentity": {
+    "status": 200,
+    "etag": "W/\"1c25b7658cba4d33f650802425e69659\"",
+    "matchesStagedIndex": true,
+    "stagedSHA256": "67ccda4655cae8a3b9724a98c7c902260d810d8fdc59786bf2d4c18672ee2474"
+  },
+  "pageErrors": [],
+  "status": "passed"
+}

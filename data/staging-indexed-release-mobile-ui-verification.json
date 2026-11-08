@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-11-08T04:59:54.900Z",
+  "base": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app",
+  "sourceCommit": "23dc3fb217ba856664a08b53007a1778690297fe",
+  "deploymentId": "dpl_FbBWnavisDM6JxLpPiU5qvo2zoZ8",
+  "scope": "Target-URL verification of index-only listening. UI and representative playback; no complete-media or onchain verification claim.",
+  "checks": [],
+  "status": "failed",
+  "error": "apiRequestContext.get: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - → GET https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app/api/catalog?view=index\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m  - ← 200 OK\u001b[22m\n\u001b[2m    - access-control-allow-origin: *\u001b[22m\n\u001b[2m    - age: 326\u001b[22m\n\u001b[2m    - cache-control: public, max-age=0, must-revalidate\u001b[22m\n\u001b[2m    - content-disposition: inline; filename=\"index.json\"\u001b[22m\n\u001b[2m    - content-encoding: br\u001b[22m\n\u001b[2m    - content-type: application/json; charset=utf-8\u001b[22m\n\u001b[2m    - date: Sun, 08 Nov 2026 05:00:00 GMT\u001b[22m\n\u001b[2m    - etag: W/\"1c25b7658cba4d33f650802425e69659\"\u001b[22m\n\u001b[2m    - last-modified: Sun, 08 Nov 2026 04:54:33 GMT\u001b[22m\n\u001b[2m    - referrer-policy: strict-origin-when-cross-origin\u001b[22m\n\u001b[2m    - server: Vercel\u001b[22m\n\u001b[2m    - strict-transport-security: max-age=63072000; includeSubDomains; preload\u001b[22m\n\u001b[2m    - x-content-type-options: nosniff\u001b[22m\n\u001b[2m    - x-robots-tag: noindex\u001b[22m\n\u001b[2m    - x-vercel-cache: HIT\u001b[22m\n\u001b[2m    - x-vercel-id: pdx1::s2zgb-1794114000063-ac583b9823f9\u001b[22m\n\u001b[2m    - transfer-encoding: chunked\u001b[22m\n\n    at /Users/peterarango/Documents/Music Nerd/Apps/web3-music-repo/scripts/verify-indexed-release-ui.mjs:22:33"
+}

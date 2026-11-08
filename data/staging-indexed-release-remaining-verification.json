@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-08T05:03:40.165Z",
+  "base": "https://web3-music-repo-e2h75pjqn-musicnerd.vercel.app",
+  "sourceCommit": "23dc3fb217ba856664a08b53007a1778690297fe",
+  "deploymentId": "dpl_FbBWnavisDM6JxLpPiU5qvo2zoZ8",
+  "scope": "Targeted remaining UI and playback after preserved transient navigation/body-transfer timeouts; reuses actual browser catalog between routes. Earlier live index and five asset hashes remain separate evidence.",
+  "checks": [],
+  "playback": [
+    {
+      "id": "spinamp-66e7d6a196ca36f3f447",
+      "engine": "webkit",
+      "pass": true,
+      "media": {
+        "source": "https://ipfs.filebase.io/ipfs/QmcFG2M8pXG1tnYiEVxpuJEXCyqmaaNRRXv9Uim648ZDaD",
+        "duration": 237.1395918367347,
+        "currentTime": 1.0090354059579234,
+        "readyState": 4
+      }
+    }
+  ],
+  "error": "locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('heading', { name: 'Preserved by Spinamp', exact: true }) to be visible\u001b[22m\n\n    at /Users/peterarango/Documents/Music Nerd/Apps/web3-music-repo/work/diagnose.mjs:5:108",
+  "pageErrors": [],
+  "status": "partial"
+}
