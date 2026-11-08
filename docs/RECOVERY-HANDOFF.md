@@ -14,7 +14,7 @@ The source-first BPM report now shows **17,105 / 50,633** (7,996 supplied; 9,109
 
 PR #14 merged the bounded BPM download fix at `d84d61f`. A one-track restart in the isolated `web3-music-bpm-campaign` worktree encountered immediate zero-byte network failures in this session; it was stopped without broad continuation or importing that failure into canonical data. Both genuinely successful large-video proof results were imported after source/hash/byte validation. **No BPM worker is running.** See `data/bpm-resume-status-2026-11-07.json` before resuming; refresh the isolated worker baseline from the final published catalog.
 
-Runtime packaging now includes 51 explicitly needed public data files instead of every audit. The isolated runtime verification compares catalog/evidence hashes and six real handler responses with the full checkout. The runtime data totals about 210 MB; actual deployed function size and live routes must still be verified before promotion. Production source/deployment receipts follow once the candidate is published.
+Runtime packaging uses compact include/exclude patterns within Vercel’s 256-character schema limit, excluding large raw audits and checkpoints. A 51-file required manifest guards against missing data. The isolated runtime verification compares catalog/evidence hashes and six real handler responses with the full checkout. Included data totals about 219 MB; actual deployed function size and live routes must still be verified before promotion. Production source/deployment receipts follow once the candidate is published.
 
 ## Completed source scan and Sound BPM checkpoint — November 7
 
