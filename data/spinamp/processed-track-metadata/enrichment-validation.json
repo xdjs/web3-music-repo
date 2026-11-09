@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-11-08T05:04:09.283460+00:00",
+  "checkedAt": "2026-11-09T19:11:29.444Z",
   "sourceBase": "23dc3fb",
   "sourceCapture": "457f515",
-  "overlaySha256": "50193f77d280c84553833fdb181840a55eca4c48ff2a6c38df0fd65f6d7c74cd",
-  "overlayBytes": 22979884,
+  "overlaySha256": "87e966190c707e4d7a09325575770d8b485491b139da5c5dcf80101bc4098ce5",
+  "overlayBytes": 22912158,
   "counts": {
     "catalogRecords": 50633,
     "directMatches": 40808,
@@ -12,23 +12,34 @@
     "keys": 1,
     "supportingArtists": 7,
     "supportingArtistProfileLinks": 7,
-    "videoCorrections": 13363,
+    "videoCorrections": 13284,
     "distinctSupportingArtists": 1,
-    "enrichedRecords": 22570
+    "enrichedRecords": 22491
   },
   "syntax": "passed",
   "focusedTests": {
-    "passed": 32
+    "passed": 16,
+    "scope": "Query-identity revision: overlay, music-facts and complete source capture evidence"
   },
   "fullTests": {
-    "passed": 414,
-    "failed": 1,
-    "environmentFailure": "Existing static-video HTTP test: listen EPERM 127.0.0.1"
+    "status": "pending-combined-integration-suite"
   },
-  "build": "passed",
-  "regeneration": "byte-identical",
+  "build": "pending-combined-integration-build",
+  "regeneration": "byte-identical after query fix",
   "browser": {
     "status": "pending-authorized-runner",
     "reason": "Localhost listener denied EPERM; sandbox escalation rejected by disabled approval policy."
-  }
+  },
+  "previousValidation": {
+    "sourceCommit": "b5580f4",
+    "overlaySha256": "50193f77d280c84553833fdb181840a55eca4c48ff2a6c38df0fd65f6d7c74cd",
+    "fullTests": {
+      "passed": 414,
+      "failed": 1,
+      "environmentFailure": "Existing static-video HTTP test: listen EPERM 127.0.0.1"
+    },
+    "build": "passed"
+  },
+  "queryIdentityHeld": 79,
+  "heldEvidence": "data/spinamp/processed-track-metadata/query-identity-holds.json"
 }

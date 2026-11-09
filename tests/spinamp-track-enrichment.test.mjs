@@ -5,6 +5,7 @@ import { gunzipSync } from "node:zlib";
 import { createHash } from "node:crypto";
 import {
   applyTrackEnrichment,
+  indexedContentKey,
   validTrackEnrichment,
 } from "../src/spinamp-track-enrichment.mjs";
 import { musicFacts } from "../src/music-facts.mjs";
@@ -269,7 +270,43 @@ test("runtime overlay remains exact-source reproducible and preserves every orig
     keys: 1,
     supportingArtists: 7,
     supportingArtistProfileLinks: 7,
-    videoCorrections: 13363,
+    videoCorrections: 13284,
   });
   assert.deepEqual(enriched.evidence, baseline.evidence);
+});
+
+test("queries remain part of storage identity, including ext/id hints and transform requests", () => {
+  for (const query of ["?format=mp3", "?ext=mp3", "?id=42"]) {
+    for (const [url, uri] of [
+      ["https://ipfs.io/ipfs/ExactCID", "ipfs://ExactCID"],
+      ["https://www.arweave.net/ExactTx", "ar://ExactTx"],
+    ]) {
+      assert.notEqual(indexedContentKey(url + query), indexedContentKey(uri));
+      assert.notEqual(indexedContentKey(uri + query), indexedContentKey(uri));
+      assert.equal(
+        indexedContentKey(url + query),
+        indexedContentKey(uri + query),
+      );
+    }
+    assert.equal(
+      applyTrackEnrichment(r, { mediaURL: e.mediaURL + query }, entry).kind,
+      "audio",
+    );
+    assert.equal(
+      applyTrackEnrichment(
+        r,
+        { mediaURL: e.mediaURL + query },
+        { ...entry, processedMediaURIs: ["ipfs://ExactCID" + query] },
+      ).kind,
+      "video",
+    );
+  }
+  assert.notEqual(
+    indexedContentKey("ar://ExactTx?format=mp3"),
+    indexedContentKey("ar://ExactTx?format=wav"),
+  );
+  assert.notEqual(
+    indexedContentKey("https://ipfs.io/ipfs/ExactCID?format=mp3&ext=mp3"),
+    indexedContentKey("ipfs://ExactCID?format=mp3"),
+  );
 });

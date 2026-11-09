@@ -11,13 +11,13 @@ Applying only exact track ID **and** exact artist ID bindings to the 50,633-reco
 | Addition | Count |
 | --- | ---: |
 | Direct track/artist matches | 40,808 |
-| Records with any enrichment | 22,570 |
+| Records with any enrichment | 22,491 |
 | Additional verbatim description versions | 13,273 |
 | Previously absent explicitly labeled BPM | 12 |
 | Previously absent explicitly labeled key | 1 |
 | Supporting-artist track relationships | 7 |
 | Distinct supporting artists in those relationships | 1 (Reo Cragun) |
-| Selected-URI-bound indexed video classifications | 13,363 |
+| Selected-URI-bound indexed video classifications | 13,284 |
 | New catalog records or inferred token identities | 0 |
 
 Description versions may differ only in formatting. They are not all newly discovered stories or lyrics. The seven artist relationships are the preserved `supportingArtist` relation, not proof of a producer/writer role. Positive `chorusStart` values remain in the raw evidence; this change does not turn them into playback controls or verified musical structure.
@@ -28,17 +28,19 @@ Description versions may differ only in formatting. They are not all newly disco
 
 Additional descriptions appear in a collapsed **Notes preserved by Spinamp** disclosure using the existing `artist-sources` and `original-release-notes` styling. Text and line breaks are verbatim and HTML escaped. These notes do not replace the artist's original description. Existing original musical values and conflicting original values take priority. The strict existing extractor reads only explicitly labeled BPM/key. These source values may replace a displayed audio-analysis estimate, with a Spinamp source label. Estimates that remain displayed retain their estimate marker.
 
-MIME correction is permitted only when the actual selected playback URL/content identity matches the captured processed audio asset. Gateway equivalence is limited to named storage gateways; arbitrary hosts with an `/ipfs/` path are not treated as content-addressed storage. A different selected playback URL, artist-supplied correction, or preserved-copy override is protected. Audio MIME never downgrades existing video. Every new video classification carries `indexedMediaType` source hashes and an explicit **index-asserted; not decoded-media verification** marker. These 13,363 records have not all been watched or listened to.
+MIME correction is permitted only when the actual selected playback URL/content identity matches the captured processed audio asset. Gateway equivalence is limited to named storage gateways; arbitrary hosts with an `/ipfs/` path are not treated as content-addressed storage. A different selected playback URL, artist-supplied correction, or preserved-copy override is protected. Audio MIME never downgrades existing video. Every new video classification carries `indexedMediaType` source hashes and an explicit **index-asserted; not decoded-media verification** marker. These 13,284 records have not all been watched or listened to.
+
+The November 9 review preserves **all query parameters** in storage identity, including `format`, `ext`, and `id`. An exact captured URL still matches; a queried URL does not match a bare CID or transaction. This conservatively holds 79 formerly MIME-only candidates at their original audio classification. Their IDs, selected URLs, source references and hashes remain in `data/spinamp/processed-track-metadata/query-identity-holds.json`. This changes no catalog admission or description/musical/artist additions.
 
 ## Reproducibility and delivery
 
 Run `node scripts/build-spinamp-track-enrichment.mjs` from this worktree. It validates the complete raw capture against its frozen snapshot and builds `data/spinamp/track-enrichment.json`. It deliberately loads the catalog with `{ trackEnrichment: false }`, so regenerating after admission cannot exclude its own data. Repeated generation produced exactly the same SHA-256:
 
-`50193f77d280c84553833fdb181840a55eca4c48ff2a6c38df0fd65f6d7c74cd`
+`87e966190c707e4d7a09325575770d8b485491b139da5c5dcf80101bc4098ce5`
 
-Runtime overlay: 22,979,884 bytes. Full raw capture stays in its subdirectory and is outside the existing Vercel runtime include glob; the root-level runtime overlay is included. Original source pages remain tracked for auditing from a fresh checkout.
+Runtime overlay: 22,912,158 bytes. Full raw capture stays in its subdirectory and is outside the existing Vercel runtime include glob; the root-level runtime overlay is included. Original source pages remain tracked for auditing from a fresh checkout.
 
-Measured production-build catalog sizes:
+Historical production-build sizes from `b5580f4`, before the conservative query guard below (the integration build will refresh these measurements):
 
 | Payload | Baseline bytes / gzip | With overlay bytes / gzip |
 | --- | ---: | ---: |
@@ -50,9 +52,10 @@ Descriptions and source proof remain outside the compact first-load catalog; per
 ## Verification and remaining gate
 
 - Syntax checks passed.
-- Focused identity, precedence, escaping, MIME-boundary, original-preservation, source-hash, and index-only regression tests: **32 passed**.
-- Full suite: **414 passed / 1 environment failure**. The existing static-video HTTP test could not bind localhost (`listen EPERM`), unrelated to enrichment assertions.
-- Production build passed; 50,633 records and 11,226 people preserved.
+- Query-identity revision: **16 focused tests passed**, including full source proof and original-data preservation. Final combined full suite/build are delegated to the release integration.
+- Previous `b5580f4` checkpoint: focused identity, precedence, escaping, MIME-boundary, original-preservation, source-hash, and index-only regression tests: **32 passed**.
+- Previous `b5580f4` full suite: **414 passed / 1 environment failure**. The existing static-video HTTP test could not bind localhost (`listen EPERM`), unrelated to enrichment assertions.
+- Previous `b5580f4` production build passed; 50,633 records and 11,226 people preserved.
 - All original `musicMetadata`, recovery evidence, selected playback objects, IDs and chain identity fields were compared unchanged across the full catalog.
 - **Actual browser layout and representative video decoding are pending.** This agent's localhost listener failed `EPERM`, and the sandbox's disabled escalation policy rejected the approved wrapper request. No alternate bypass was attempted.
 

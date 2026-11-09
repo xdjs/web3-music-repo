@@ -6,16 +6,23 @@ export const INDEXED_TRACK_SOURCE = "https://api.spinamp.xyz/v3/graphql";
 export function indexedContentKey(value) {
   if (typeof value !== "string" || value.length > 4096) return null;
   const text = value.trim();
+  // Queries may request transformed content. Preserve them for every scheme;
+  // neither an ext/id hint nor a format parameter is assumed inert.
+  const withoutFragment = text.split("#")[0];
+  const queryOffset = withoutFragment.indexOf("?");
+  const suffix = queryOffset < 0 ? "" : withoutFragment.slice(queryOffset);
+  const path =
+    queryOffset < 0 ? withoutFragment : withoutFragment.slice(0, queryOffset);
   if (text.startsWith("ipfs://"))
     return (
       "ipfs:" +
-      text
+      path
         .slice(7)
         .replace(/^ipfs\//, "")
-        .split(/[?#]/)[0]
-        .replace(/\/$/, "")
+        .replace(/\/$/, "") +
+      suffix
     );
-  if (text.startsWith("ar://")) return "ar:" + text.slice(5).split(/[?#]/)[0];
+  if (text.startsWith("ar://")) return "ar:" + path.slice(5) + suffix;
   try {
     const u = new URL(text);
     if (u.protocol !== "https:" || u.username || u.password) return null;
@@ -31,9 +38,9 @@ export function indexedContentKey(value) {
       ].includes(u.hostname) &&
       u.pathname.startsWith("/ipfs/")
     )
-      return "ipfs:" + u.pathname.slice(6).replace(/\/$/, "");
+      return "ipfs:" + u.pathname.slice(6).replace(/\/$/, "") + u.search;
     if (u.hostname === "arweave.net" || u.hostname.endsWith(".arweave.net"))
-      return "ar:" + u.pathname.slice(1);
+      return "ar:" + u.pathname.slice(1) + u.search;
     return u.href;
   } catch {
     return null;
