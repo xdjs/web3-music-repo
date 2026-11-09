@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-11-09T19:31:02.379Z",
+  "status": "passed",
+  "runner": "Firecrawl hosted Chromium",
+  "sourceCommit": "1795fe4094d39e891159db60d2a50c8cd42a3052",
+  "supporting": {
+    "text": "Notes preserved by Spinamp\n\nSupporting artist: Reo Cragun\nRelationship preserved by Spinamp; a specific production or writing role is not established.\n\nA separately preserved index entry; it may differ from the original release metadata.\n\nSpinamp metadata source \u2197",
+    "href": "#artist/spinamp-artist-35525cdb2d1e5fdb60a8"
+  },
+  "views": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "facts": "105 BPM\nC# minor\nSpinamp indexed description (BPM and key); not independently verified onchain",
+      "description": "Mood: Happy, Sexy\nDuration: 03:23\nBPM: 105\nKey: C# minor\nBass\nPercussion\nSynthesizer\nElectronic Drums",
+      "dimensions": {
+        "width": 1440,
+        "scrollWidth": 1425,
+        "theme": "light"
+      }
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "theme": "dark",
+      "facts": "105 BPM\nC# minor\nSpinamp indexed description (BPM and key); not independently verified onchain",
+      "description": "Mood: Happy, Sexy\nDuration: 03:23\nBPM: 105\nKey: C# minor\nBass\nPercussion\nSynthesizer\nElectronic Drums",
+      "dimensions": {
+        "width": 1440,
+        "scrollWidth": 1425,
+        "theme": "dark"
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "facts": "105 BPM\nC# minor\nSpinamp indexed description (BPM and key); not independently verified onchain",
+      "description": "Mood: Happy, Sexy\nDuration: 03:23\nBPM: 105\nKey: C# minor\nBass\nPercussion\nSynthesizer\nElectronic Drums",
+      "dimensions": {
+        "width": 390,
+        "scrollWidth": 375,
+        "theme": "light"
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "facts": "105 BPM\nC# minor\nSpinamp indexed description (BPM and key); not independently verified onchain",
+      "description": "Mood: Happy, Sexy\nDuration: 03:23\nBPM: 105\nKey: C# minor\nBass\nPercussion\nSynthesizer\nElectronic Drums",
+      "dimensions": {
+        "width": 390,
+        "scrollWidth": 375,
+        "theme": "dark"
+      }
+    }
+  ],
+  "visualReview": {
+    "reviewedAllFourCaptures": true,
+    "status": "passed",
+    "note": "Notes, attribution and supporting-artist link preserve established record-details layout; no horizontal overflow."
+  }
+}

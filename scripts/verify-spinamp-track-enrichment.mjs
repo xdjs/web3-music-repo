@@ -268,6 +268,14 @@ try {
         errorCode: v.error?.code ?? null,
       };
     });
+    assert.equal(
+      await page.locator("#player-title").getAttribute("href"),
+      "#record/" + sample.id,
+    );
+    await page.locator("#open-now-playing").click();
+    await page.locator("#now-playing-dialog[open]").waitFor();
+    await page.screenshot({ path: `captures/${prefix}-app-${sample.id}.png` });
+    await page.locator('[data-now-action="back"]').click();
     await page.evaluate(() => document.querySelector("#audio").pause());
     report.appMedia.push(result);
   }

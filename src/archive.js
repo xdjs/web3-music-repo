@@ -465,8 +465,8 @@ function explore(onlyLikes = false) {
     ["oldest", "Oldest first"],
     ["title", "Title A–Z"],
     ["artist", "Artist A–Z"],
-    ["bpm-asc", "BPM: slowest first"],
-    ["bpm-desc", "BPM: fastest first"],
+    ["bpm-asc", "BPM: low to high"],
+    ["bpm-desc", "BPM: high to low"],
   ])}<div class="bpm-range">${tempoInput("bpmMin", "Min BPM")}${tempoInput("bpmMax", "Max BPM")}</div></div><div data-filter-reset>${activeFilters ? '<div class="filter-reset"><button class="text-button" data-clear-filters>Reset filters</button></div>' : ""}</div>`;
   return `<div class="intro"><div><h1>${onlyLikes ? "Liked sounds" : query ? "Search the archive" : "Explore the archive"}</h1><p>${onlyLikes ? "Your selections, saved in this browser." : query ? `Results for “${esc(query)}”` : "Find songs, artists, and collections from the web3 music era"}</p></div></div>${!onlyLikes ? `<div data-collector-search>${collectorSearchMarkup(collectorSearch.snapshot(), esc)}</div>` : ""}<div class="filters">${["All", "Sound", "Catalog", "Zora", "Mint Songs", "Supercollector", "Nina", "Other platforms"].map((f) => `<button class="chip ${filter === f ? "active" : ""}" data-filter="${f}" aria-pressed="${filter === f}">${f}</button>`).join("")}${!onlyLikes ? `<button class="chip ${myCollectionOnly ? "active" : ""}" data-owned-filter aria-pressed="${myCollectionOnly}">My collection</button>` : ""}<span class="results">${list.length.toLocaleString()} records</span></div>${ownedNotice}${controls}<div data-explore-results>${bpmControlsActive(facets) ? '<p class="sort-date-note" data-bpm-note>~ marks an estimated tempo. Ranges exclude unknown BPM; tempo sorting places unknowns last.</p>' : ""}${["oldest", "newest"].includes(facets.sort) ? '<p class="sort-date-note">Sorted by indexed release or token dates. Undated recordings appear last.</p>' : ""}${
     list.length

@@ -2590,7 +2590,10 @@ body.now-playing-open {
 }
 #open-now-playing {
   flex: 0 0 auto;
+  width: 54px;
+  height: 54px;
   border-radius: 5px;
+  background: var(--soft);
 }
 #open-now-playing img {
   display: block;
@@ -2820,6 +2823,10 @@ body.now-playing-open {
   margin: 20px auto 0;
 }
 @media (max-width: 800px) {
+  #open-now-playing {
+    width: 46px;
+    height: 46px;
+  }
   .now-playing .art-expand-icon {
     display: grid;
     place-items: center;
