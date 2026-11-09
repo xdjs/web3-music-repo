@@ -1,0 +1,11 @@
+# BPM campaign resume, 2026-11-09
+
+The stopped 50-record Sound batch completed 15 estimates, 24 unavailable results, six transfer deferrals and five pending records. The unavailable results comprise 14 network errors, five connection timeouts, four HTTP errors and one analysis error. The final failures returned no bytes on both Arweave gateways within milliseconds. These observations do not prove the media was removed, and the old logs cannot distinguish DNS failure from another network/process-environment failure.
+
+A fresh bounded retry of `spinamp-9a1a26ca8f70a9f57a4c` downloaded the complete original 5,877,028-byte audio from Arweave in 1.03 seconds, decoded its 240-second duration and produced an Open BPM estimate of 181.07 (confidence 0.528). This is one successful original-media retry, not a blanket availability claim. The public receipt is `data/bpm-resume-network-verification-2026-11-09.json`. Temporary audio was removed.
+
+The campaign now accepts `--concurrency=1` (default remains two; other values rejected before lock acquisition). Every analyzer completion checks a latched provider circuit before claiming another recording. One worker therefore stops after ten rapid network failures rather than consuming more jobs during the coordinator's five-second polling interval. At higher concurrency, already in-flight work can finish but cannot reopen the circuit. The coordinator also honors this stop when the child exits between polls. Prior estimates and source BPM are preserved; failed records retain retryability and are not automatically retried by ordinary campaign planning.
+
+Fetch attempts now retain structured DNS/socket error codes, including aggregate errors, without retaining internal exception messages. Partial transfer deferrals remain distinct from provider outages. Tests cover the circuit, one-worker configuration, low-level diagnostics, byte/deadline limits, same-content fallback and checkpoint preservation.
+
+Resume occurs only in the isolated campaign checkout. The 55 successful estimate changes accumulated before this resume are separately frozen in its ignored `work/bpm-resume/frozen-estimates-before-resume.json`; no deployment or canonical data mutation is part of this patch.

@@ -5,6 +5,8 @@ import {
   campaignPlan,
   campaignCounts,
   providerCircuit,
+  createProviderCompletionCircuit,
+  campaignConcurrency,
 } from "../src/bpm-campaign.mjs";
 const track = (id, platform, extra = {}) => ({
   id,
@@ -134,4 +136,44 @@ test("public campaign totals use source-first counts and preserve uncertainty ca
     untouched: 1,
     other: 0,
   });
+});
+
+test("single-worker campaign validates concurrency before starting a writer", () => {
+  assert.equal(campaignConcurrency([]), 2);
+  assert.equal(campaignConcurrency(["--concurrency=1"]), 1);
+  for (const value of ["0", "3", "1.5", "NaN", ""])
+    assert.throws(() => campaignConcurrency([`--concurrency=${value}`]));
+});
+test("per-completion circuit stops rapid failures before another job is claimed", () => {
+  const circuit = createProviderCompletionCircuit();
+  let started = 0;
+  while (started < 50 && !circuit.state.stop) {
+    started++;
+    circuit.complete({
+      status: "unavailable",
+      retryable: true,
+      error: "fetch failed",
+    });
+  }
+  assert.equal(started, 10);
+  assert.equal(circuit.state.stop, true);
+  // An already in-flight successful completion cannot reopen a tripped circuit.
+  circuit.complete({ status: "estimated" });
+  assert.equal(circuit.state.stop, true);
+});
+test("completion circuit keeps partial-transfer deferrals and ordinary analysis failures out of provider outages", () => {
+  const circuit = createProviderCompletionCircuit();
+  for (let i = 0; i < 25; i++) {
+    circuit.complete({
+      status: "deferred",
+      error: "Media transfer made no progress before deadline",
+    });
+    circuit.complete({
+      status: "unavailable",
+      error: "Media contains no audio stream",
+    });
+    circuit.complete({ status: "estimated" });
+  }
+  assert.equal(circuit.state.stop, false);
+  assert.equal(circuit.state.sample, 10);
 });

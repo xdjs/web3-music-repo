@@ -248,6 +248,23 @@ export async function downloadBpmMedia(source, path, options = {}) {
                 cause?.message || "Media transfer failed",
               );
         attempt.elapsedMs = Date.now() - attemptStart;
+        // Fetch wraps DNS/socket failures in TypeError. Preserve only structured
+        // codes (no potentially credential-bearing messages/URLs from internals).
+        const networkCause = cause?.cause;
+        const codes = [
+          ...new Set(
+            [
+              cause?.code,
+              networkCause?.code,
+              ...(Array.isArray(networkCause?.errors)
+                ? networkCause.errors.map((e) => e?.code)
+                : []),
+            ].filter(
+              (code) => typeof code === "string" && /^[A-Z0-9_]+$/.test(code),
+            ),
+          ),
+        ];
+        if (codes.length) attempt.errorCodes = codes;
         attempt.reason = lastError.reason;
         attempt.error = lastError.message;
         attempt.result = "failed";

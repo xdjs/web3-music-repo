@@ -1,0 +1,62 @@
+{
+  "scope": "Bounded original-media retry and historical stop diagnosis; not all-gateway availability or all-catalog verification. Full media is temporary and cleaned by analyzer.",
+  "checkpointBeforeResume": "2026-11-08T05:55:10.224Z",
+  "lastBatch": {
+    "selected": 50,
+    "statuses": {
+      "estimated": 15,
+      "deferred": 6,
+      "unavailable": 24,
+      "pending": 5
+    },
+    "unavailableReasons": {
+      "connect-timeout": 5,
+      "http-error": 4,
+      "analysis-error": 1,
+      "network-error": 14
+    }
+  },
+  "successfulOriginalRetry": {
+    "checkedAt": "2026-11-09T19:09:09.165Z",
+    "recordId": "spinamp-9a1a26ca8f70a9f57a4c",
+    "source": "https://arweave.net/aLpNAB4XtbrwF4N_BJVuMdGN-xpgV86hMXxqz3bM5R0",
+    "result": {
+      "status": "estimated",
+      "bpm": 181.07,
+      "confidence": 0.528,
+      "gridOffset": 0.076432,
+      "durationSeconds": 239.999979,
+      "source": "https://arweave.net/aLpNAB4XtbrwF4N_BJVuMdGN-xpgV86hMXxqz3bM5R0",
+      "url": "https://nc5e2aa6c623v4axqn7qjfloghiy36y2mbl45ijrprvm65wm4uoq.arweave.net/aLpNAB4XtbrwF4N_BJVuMdGN-xpgV86hMXxqz3bM5R0",
+      "sha256": "e03ca6e7f20ec9d7f0b76c847968c4660d82590596d7be7752106bc5dea336d5",
+      "bytes": 5877028,
+      "receivedBytes": 5877028,
+      "attempts": [
+        {
+          "url": "https://arweave.net/aLpNAB4XtbrwF4N_BJVuMdGN-xpgV86hMXxqz3bM5R0",
+          "host": "arweave.net",
+          "startedAt": "2026-11-09T19:09:09.172Z",
+          "bytes": 5877028,
+          "status": 200,
+          "responseURL": "https://nc5e2aa6c623v4axqn7qjfloghiy36y2mbl45ijrprvm65wm4uoq.arweave.net/aLpNAB4XtbrwF4N_BJVuMdGN-xpgV86hMXxqz3bM5R0",
+          "headersMs": 733,
+          "contentLength": 5877028,
+          "contentType": "audio/mpeg",
+          "lastProgressMs": 1024,
+          "elapsedMs": 1025,
+          "result": "complete"
+        }
+      ],
+      "transferBudget": {
+        "connectionTimeoutMs": 15000,
+        "idleTimeoutMs": 15000,
+        "totalTimeoutMs": 60000,
+        "maxBytes": 33554432
+      },
+      "elapsedMs": 1026,
+      "checkedAt": "2026-11-09T19:09:15.201Z"
+    }
+  },
+  "historicalLimitation": "The historical fetch failures did not preserve low-level cause codes, so DNS/network outage versus process environment cannot be determined retrospectively. Both gateways failed with zero bytes in the final fast-failure cohort.",
+  "frozenEstimatedChanges": 55
+}

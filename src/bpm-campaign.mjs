@@ -95,3 +95,29 @@ export function campaignCounts(records, analysis) {
   }
   return totals;
 }
+
+// The coordinator polls only for observability. Each completed analysis also
+// checks the circuit synchronously, before its worker claims another recording.
+export function createProviderCompletionCircuit() {
+  const recent = [];
+  let state = { stop: false, sample: 0, failures: 0, rateLimited: 0 };
+  return {
+    get state() {
+      return state;
+    },
+    complete(result) {
+      if (state.stop) return state;
+      recent.push(result);
+      if (recent.length > 10) recent.shift();
+      state = providerCircuit(recent);
+      return state;
+    },
+  };
+}
+export function campaignConcurrency(args = []) {
+  const raw = args.find((arg) => arg.startsWith("--concurrency="));
+  const value = raw ? Number(raw.split("=")[1]) : 2;
+  if (!Number.isInteger(value) || value < 1 || value > 2)
+    throw Error("Campaign concurrency must be 1 or 2");
+  return value;
+}

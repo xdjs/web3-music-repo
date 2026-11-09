@@ -13,7 +13,9 @@ import {
   campaignPlan,
   campaignCounts,
   providerCircuit,
+  campaignConcurrency,
 } from "../src/bpm-campaign.mjs";
+const concurrency = campaignConcurrency(process.argv.slice(2));
 const statusPath = "data/bpm-campaign-status.json",
   analysisPath = "data/audio-analysis.json",
   loadCatalog = createCatalogLoader();
@@ -35,7 +37,7 @@ const status = {
   stopRequestedAt: null,
   state: "starting",
   batchSize: 50,
-  concurrency: 2,
+  concurrency,
   downloadTimeout: 20000,
   scope:
     "Supplied BPM preserved; new Open BPM estimates only; prior unavailable and needs-review records excluded. No keys inferred.",
@@ -148,6 +150,23 @@ try {
           {},
         ),
       });
+      // A fast analyzer can trip its completion circuit and exit between polls.
+      // Never silently continue to the next batch in that case.
+      if (
+        analysis.lastPass?.stopReason === "provider-failures" ||
+        providerCircuit(passResults(analysis)).stop
+      ) {
+        status.state = "stopped-provider-failures";
+        status.providerCircuit =
+          analysis.lastPass?.providerCircuit ||
+          providerCircuit(passResults(analysis));
+        status.reason =
+          "Sustained provider failures; manual review/restart required";
+        blocked = true;
+        stopping = true;
+        save(analysis, records);
+        break;
+      }
       if (childResult.code !== 0) {
         status.state = "blocked-analyzer-exit";
         status.reason =
@@ -223,7 +242,7 @@ try {
       "scripts/analyze-missing-bpm.mjs",
       `--platform=${platform}`,
       `--limit=${recordIds.length}`,
-      "--concurrency=2",
+      `--concurrency=${concurrency}`,
       "--download-timeout-ms=20000",
     ];
     child = spawn(process.execPath, args, {

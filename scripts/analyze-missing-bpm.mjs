@@ -6,6 +6,7 @@ import { promisify } from "node:util";
 import { createCatalogLoader } from "../src/catalog-bundle.mjs";
 import { analyzeBpmMedia } from "../src/bpm-audio-analysis.mjs";
 import { musicFacts } from "../src/music-facts.mjs";
+import { createProviderCompletionCircuit } from "../src/bpm-campaign.mjs";
 import { readAnalysisCheckpoint } from "../src/bpm-analysis-checkpoint.mjs";
 const exec = promisify(execFile),
   load = createCatalogLoader(),
@@ -80,6 +81,7 @@ const concurrency = Number(
 );
 if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 4)
   throw Error("Concurrency must be an integer from 1 to 4");
+const completionCircuit = createProviderCompletionCircuit();
 let stopping = false;
 process.once("SIGTERM", () => {
   stopping = true;
@@ -170,6 +172,12 @@ await Promise.all(
           checkedAt: new Date().toISOString(),
         };
         mediaResults.delete(source);
+      }
+      const circuit = completionCircuit.complete(state.records[r.id]);
+      state.lastPass.providerCircuit = circuit;
+      if (circuit.stop) {
+        stopping = true;
+        state.lastPass.stopReason = "provider-failures";
       }
       save();
       console.log(

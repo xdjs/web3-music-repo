@@ -241,3 +241,48 @@ test("stalled partial bodies remain deferred after bounded alternates, not a glo
     assert.equal(calls, 3);
     await assert.rejects(access(path));
   }));
+
+test("failed network attempts retain DNS and socket cause codes, remain retryable, and clean temporary audio", () =>
+  temporary(async (path) => {
+    let calls = 0;
+    await assert.rejects(
+      downloadBpmMedia(source, path, {
+        fetcher: async () => {
+          calls++;
+          const cause =
+            calls === 1
+              ? Object.assign(new Error("private internal details"), {
+                  code: "ENOTFOUND",
+                })
+              : Object.assign(
+                  new AggregateError([
+                    Object.assign(new Error("internal address"), {
+                      code: "ECONNRESET",
+                    }),
+                    Object.assign(new Error("internal address"), {
+                      code: "ETIMEDOUT",
+                    }),
+                  ]),
+                  { code: "ETIMEDOUT" },
+                );
+          throw new TypeError("fetch failed", { cause });
+        },
+      }),
+      (error) => {
+        assert.equal(error.retryable, true);
+        assert.equal(error.reason, "network-error");
+        assert.deepEqual(error.attempts[0].errorCodes, ["ENOTFOUND"]);
+        assert.deepEqual(error.attempts[1].errorCodes, [
+          "ETIMEDOUT",
+          "ECONNRESET",
+        ]);
+        assert.equal(
+          JSON.stringify(error.attempts).includes("private internal"),
+          false,
+        );
+        return true;
+      },
+    );
+    assert.equal(calls, 3);
+    await assert.rejects(access(path));
+  }));
