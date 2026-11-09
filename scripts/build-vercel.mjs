@@ -36,6 +36,7 @@ const frontend = [
   "entity-share.mjs",
   "collection-filters.mjs",
   "filter-preferences.mjs",
+  "bpm-filter.mjs",
   "story-export.mjs",
   "story-clip.mjs",
   "story-timeline.mjs",

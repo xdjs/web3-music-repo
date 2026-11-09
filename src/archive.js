@@ -1,3 +1,9 @@
+import {
+  normalizeBpmRange,
+  filterAndSortBpm,
+  bpmControlsActive,
+  bpmTag,
+} from "./bpm-filter.mjs";
 import { renderIndexedTrackMetadata } from "./indexed-track-metadata-ui.mjs";
 import { mountStoryExport } from "./story-export.mjs";
 import {
@@ -106,7 +112,14 @@ let catalog = [],
   archive = null,
   filter = "All",
   myCollectionOnly = false,
-  facets = { network: "", media: "", sort: "archive", collection: "" },
+  facets = {
+    network: "",
+    media: "",
+    sort: "archive",
+    collection: "",
+    bpmMin: "",
+    bpmMax: "",
+  },
   query = "",
   limit = 40,
   current = null,
@@ -301,8 +314,9 @@ function img(r, cls = "") {
 function addToPlaylistButton(r) {
   return `<button class="icon playlist-add" data-add-playlist="${esc(r.id)}" aria-label="Add ${esc(cleanTitle(r.title))} to playlist" title="Add to playlist">${navIcon("playlist-add")}</button>`;
 }
-function card(r) {
-  return `<article class="record-card"><div class="cover"><a href="${recordLink(r)}" aria-label="Open ${esc(r.title)}">${img(r)}</a><span class="cover-badge">${esc(platform(r))}${isIndexedRelease(r) ? " · Index only" : ""}${r.mediaScope === "clip" ? " · Clip" : ""}</span>${r.kind !== "artwork" ? `<button class="cover-play" data-play="${esc(r.id)}" aria-label="Play ${esc(r.title)}">▶</button>` : ""}</div><h3><a href="${recordLink(r)}">${esc(cleanTitle(r.title))}</a></h3><div class="card-meta"><a href="#artist/${esc(artistId(r))}">${esc(r.artist)}</a><div class="card-actions">${r.kind !== "artwork" ? addToPlaylistButton(r) : ""}<button class="icon heart ${likes.has(r.id) ? "active" : ""}" data-like="${esc(r.id)}" aria-label="${likes.has(r.id) ? "Unlike" : "Like"} ${esc(r.title)}">${likes.has(r.id) ? "♥" : "♡"}</button></div></div></article>`;
+function card(r, options = {}) {
+  const tempo = options?.showBpm === true ? bpmTag(r) : null;
+  return `<article class="record-card"><div class="cover"><a href="${recordLink(r)}" aria-label="Open ${esc(r.title)}">${img(r)}</a><span class="cover-badge">${esc(platform(r))}${isIndexedRelease(r) ? " · Index only" : ""}${r.mediaScope === "clip" ? " · Clip" : ""}</span>${r.kind !== "artwork" ? `<button class="cover-play" data-play="${esc(r.id)}" aria-label="Play ${esc(r.title)}">▶</button>` : ""}</div><h3><a href="${recordLink(r)}">${esc(cleanTitle(r.title))}</a></h3>${tempo ? `<span class="tag card-bpm" title="${esc(tempo.source)}" aria-label="${esc(tempo.text + ". " + tempo.source)}">${esc(tempo.text)}</span>` : ""}<div class="card-meta"><a href="#artist/${esc(artistId(r))}">${esc(r.artist)}</a><div class="card-actions">${r.kind !== "artwork" ? addToPlaylistButton(r) : ""}<button class="icon heart ${likes.has(r.id) ? "active" : ""}" data-like="${esc(r.id)}" aria-label="${likes.has(r.id) ? "Unlike" : "Like"} ${esc(r.title)}">${likes.has(r.id) ? "♥" : "♡"}</button></div></div></article>`;
 }
 function artistRecords(id) {
   return recordsByPerson.get(id) || [];
@@ -401,9 +415,13 @@ function explore(onlyLikes = false) {
         .includes(q),
     );
   }
+  list = filterAndSortBpm(list, facets);
   if (["oldest", "newest"].includes(facets.sort))
     list.sort((a, b) => compareReleaseDates(a, b, facets.sort));
-  else if (facets.sort !== "archive")
+  else if (
+    facets.sort !== "archive" &&
+    !["bpm-asc", "bpm-desc"].includes(facets.sort)
+  )
     list.sort(
       (a, b) =>
         (facets.sort === "artist"
@@ -428,8 +446,12 @@ function explore(onlyLikes = false) {
     facets.network ||
     facets.media ||
     facets.collection ||
+    facets.bpmMin ||
+    facets.bpmMax ||
     facets.sort !== "archive";
-  const controls = `<div class="filter-toolbar">${select("collection", "Collection", [["", "All collections"], ...[...new Set(catalog.map((r) => r.collection).filter(Boolean))].sort().map((c) => [c, c])])}${select("network", "Network", [["", "All networks"], ...Object.entries(chainNames).filter(([id]) => catalog.some((r) => String(r.chainId) === id))])}${select(
+  const tempoInput = (name, label) =>
+    `<label class="filter-control"><span>${label}</span><input type="number" inputmode="decimal" min="20" max="400" step="any" placeholder="Any" aria-label="${label}" data-facet="${name}" value="${esc(facets[name])}"></label>`;
+  const controls = `<div class="filter-toolbar explore-filter-toolbar">${select("collection", "Collection", [["", "All collections"], ...[...new Set(catalog.map((r) => r.collection).filter(Boolean))].sort().map((c) => [c, c])])}${select("network", "Network", [["", "All networks"], ...Object.entries(chainNames).filter(([id]) => catalog.some((r) => String(r.chainId) === id))])}${select(
     "media",
     "Media",
     [
@@ -443,8 +465,41 @@ function explore(onlyLikes = false) {
     ["oldest", "Oldest first"],
     ["title", "Title A–Z"],
     ["artist", "Artist A–Z"],
-  ])}</div>${activeFilters ? '<div class="filter-reset"><button class="text-button" data-clear-filters>Reset filters</button></div>' : ""}`;
-  return `<div class="intro"><div><h1>${onlyLikes ? "Liked sounds" : query ? "Search the archive" : "Explore the archive"}</h1><p>${onlyLikes ? "Your selections, saved in this browser." : query ? `Results for “${esc(query)}”` : "Find songs, artists, and collections from the web3 music era"}</p></div></div>${!onlyLikes ? `<div data-collector-search>${collectorSearchMarkup(collectorSearch.snapshot(), esc)}</div>` : ""}<div class="filters">${["All", "Sound", "Catalog", "Zora", "Mint Songs", "Supercollector", "Nina", "Other platforms"].map((f) => `<button class="chip ${filter === f ? "active" : ""}" data-filter="${f}" aria-pressed="${filter === f}">${f}</button>`).join("")}${!onlyLikes ? `<button class="chip ${myCollectionOnly ? "active" : ""}" data-owned-filter aria-pressed="${myCollectionOnly}">My collection</button>` : ""}<span class="results">${list.length.toLocaleString()} records</span></div>${ownedNotice}${controls}${["oldest", "newest"].includes(facets.sort) ? '<p class="sort-date-note">Sorted by indexed release or token dates. Undated recordings appear last.</p>' : ""}${list.length ? `<div class="cards library-grid">${list.slice(0, limit).map(card).join("")}</div>${list.length > limit ? '<button class="outline-button more" data-more>Load more recordings</button>' : ""}` : `<div class="empty"><h2>${onlyLikes ? "Make yourself a collection." : "No recordings found."}</h2>${onlyLikes ? "Tap the heart on any recording to keep it here." : "Try another artist, title, or platform."}</div>`}`;
+    ["bpm-asc", "BPM: slowest first"],
+    ["bpm-desc", "BPM: fastest first"],
+  ])}<div class="bpm-range">${tempoInput("bpmMin", "Min BPM")}${tempoInput("bpmMax", "Max BPM")}</div></div><div data-filter-reset>${activeFilters ? '<div class="filter-reset"><button class="text-button" data-clear-filters>Reset filters</button></div>' : ""}</div>`;
+  return `<div class="intro"><div><h1>${onlyLikes ? "Liked sounds" : query ? "Search the archive" : "Explore the archive"}</h1><p>${onlyLikes ? "Your selections, saved in this browser." : query ? `Results for “${esc(query)}”` : "Find songs, artists, and collections from the web3 music era"}</p></div></div>${!onlyLikes ? `<div data-collector-search>${collectorSearchMarkup(collectorSearch.snapshot(), esc)}</div>` : ""}<div class="filters">${["All", "Sound", "Catalog", "Zora", "Mint Songs", "Supercollector", "Nina", "Other platforms"].map((f) => `<button class="chip ${filter === f ? "active" : ""}" data-filter="${f}" aria-pressed="${filter === f}">${f}</button>`).join("")}${!onlyLikes ? `<button class="chip ${myCollectionOnly ? "active" : ""}" data-owned-filter aria-pressed="${myCollectionOnly}">My collection</button>` : ""}<span class="results">${list.length.toLocaleString()} records</span></div>${ownedNotice}${controls}<div data-explore-results>${bpmControlsActive(facets) ? '<p class="sort-date-note" data-bpm-note>~ marks an estimated tempo. Ranges exclude unknown BPM; tempo sorting places unknowns last.</p>' : ""}${["oldest", "newest"].includes(facets.sort) ? '<p class="sort-date-note">Sorted by indexed release or token dates. Undated recordings appear last.</p>' : ""}${
+    list.length
+      ? `<div class="cards library-grid">${list
+          .slice(0, limit)
+          .map((r) => card(r, { showBpm: bpmControlsActive(facets) }))
+          .join(
+            "",
+          )}</div>${list.length > limit ? '<button class="outline-button more" data-more>Load more recordings</button>' : ""}`
+      : `<div class="empty"><h2>${onlyLikes ? "Make yourself a collection." : "No recordings found."}</h2>${onlyLikes ? "Tap the heart on any recording to keep it here." : "Try another artist, title, or platform."}</div>`
+  }</div>`;
+}
+function refreshExploreBpmResults() {
+  // Keep the controls mounted: change fires during blur, before click/Tab
+  // transfers focus. Replacing them would discard that native interaction.
+  const results = document.querySelector("[data-explore-results]");
+  if (!results) return;
+  const next = document.createElement("template");
+  next.innerHTML = explore(location.hash.split("/")[0] === "#liked");
+  results.replaceChildren(
+    ...next.content.querySelector("[data-explore-results]").childNodes,
+  );
+  document.querySelector(".filters .results").textContent =
+    next.content.querySelector(".filters .results").textContent;
+  const reset = document.querySelector("[data-filter-reset]");
+  const nextReset = next.content.querySelector("[data-filter-reset]");
+  if (!!reset.firstElementChild !== !!nextReset.firstElementChild)
+    reset.replaceChildren(...nextReset.childNodes);
+  for (const name of ["bpmMin", "bpmMax"])
+    document.querySelector(`[data-facet="${name}"]`).value = facets[name];
+  renderVersion++;
+  preloader.cancel();
+  requestAnimationFrame(warmVisibleTrack);
 }
 function artists() {
   const ids = [
@@ -1292,7 +1347,14 @@ document.addEventListener("click", async (e) => {
     myCollectionOnly = false;
     walletLibrary.stopOwned();
     filter = "All";
-    facets = { network: "", media: "", sort: "archive", collection: "" };
+    facets = {
+      network: "",
+      media: "",
+      sort: "archive",
+      collection: "",
+      bpmMin: "",
+      bpmMax: "",
+    };
     explorePreferences.reset();
     query = "";
     $("#search").value = "";
@@ -1459,14 +1521,42 @@ document.addEventListener(
   },
   true,
 );
+document.addEventListener("keydown", (e) => {
+  if (
+    e.key === "Enter" &&
+    ["bpmMin", "bpmMax"].includes(e.target.dataset?.facet)
+  ) {
+    e.preventDefault();
+    e.target.dispatchEvent(new Event("change", { bubbles: true }));
+  }
+});
 document.addEventListener("change", (e) => {
   const name = e.target.dataset.facet;
   if (!Object.hasOwn(facets, name)) return;
-  facets[name] = e.target.value;
+  if (name === "bpmMin" || name === "bpmMax") {
+    const range = e.target.validity.badInput
+      ? null
+      : normalizeBpmRange(
+          name === "bpmMin" ? e.target.value : facets.bpmMin,
+          name === "bpmMax" ? e.target.value : facets.bpmMax,
+        );
+    if (!range) {
+      e.target.value = facets[name];
+      notify("Enter a BPM between 20 and 400, or leave it blank.");
+      return;
+    }
+    facets.bpmMin = range.bpmMin;
+    facets.bpmMax = range.bpmMax;
+    if (range.reordered)
+      notify(`BPM range reordered: ${range.bpmMin}–${range.bpmMax}.`);
+  } else facets[name] = e.target.value;
   explorePreferences.save({ platform: filter, ...facets });
   limit = 40;
-  route();
-  document.querySelector(`[data-facet="${name}"]`)?.focus();
+  if (name === "bpmMin" || name === "bpmMax") refreshExploreBpmResults();
+  else {
+    route();
+    document.querySelector(`[data-facet="${name}"]`)?.focus();
+  }
 });
 $("#search").addEventListener("input", (e) => {
   query = e.target.value;

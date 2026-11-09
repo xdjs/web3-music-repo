@@ -43,6 +43,7 @@
   "data/spinamp/indexed-releases.json",
   "data/spinamp/playback-copies.json",
   "data/spinamp/recovered-media.json",
+  "data/spinamp/track-enrichment.json",
   "data/static-assets.json",
   "data/supercollector/recovered-media.json",
   "data/verified-credits.json",

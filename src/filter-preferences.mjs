@@ -1,3 +1,4 @@
+import { normalizeBpmRange } from "./bpm-filter.mjs";
 const KEYS = Object.freeze({
   explore: "mn-archive-explore-filters-v1",
   collection: "mn-archive-collection-filters-v1",
@@ -8,6 +9,7 @@ const defaults = (scope) => ({
   media: "",
   collection: "",
   sort: "archive",
+  ...(scope === "explore" ? { bpmMin: "", bpmMax: "" } : {}),
 });
 
 // Only named public catalog facets are eligible. Queries, wallet addresses and
@@ -25,7 +27,14 @@ export function createFilterPreferences(
     const allowed = {
       ...choices(),
       media: ["", "audio", "video"],
-      sort: ["archive", "title", "artist", "newest", "oldest"],
+      sort: [
+        "archive",
+        "title",
+        "artist",
+        "newest",
+        "oldest",
+        ...(scope === "explore" ? ["bpm-asc", "bpm-desc"] : []),
+      ],
     };
     for (const field of Object.keys(result)) {
       const input = value[field];
@@ -36,6 +45,13 @@ export function createFilterPreferences(
           (allowed[field] || []).some((option) => String(option) === input))
       )
         result[field] = input;
+    }
+    if (scope === "explore") {
+      const range = normalizeBpmRange(value.bpmMin, value.bpmMax);
+      if (range) {
+        result.bpmMin = range.bpmMin;
+        result.bpmMax = range.bpmMax;
+      }
     }
     return result;
   }

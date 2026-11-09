@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-11-09T19:18:03.913010+00:00",
+  "sourceBase": "92961b4",
+  "captureSourceCommit": "457f515",
+  "overlaySourceCommit": "b5580f4",
+  "overlaySha256": "87e966190c707e4d7a09325575770d8b485491b139da5c5dcf80101bc4098ce5",
+  "tests": {
+    "passed": 424,
+    "failed": 1,
+    "environmentFailure": "Existing static-video HTTP test cannot bind 127.0.0.1: listen EPERM"
+  },
+  "syntax": "passed",
+  "format": "passed",
+  "build": "passed with BPM discovery and query-preserving media identity",
+  "runtimeBundle": "passed; 52 required files and eight real handler response hashes match full checkout",
+  "browser": "pending staged verification",
+  "production": "not yet published",
+  "indexSha256": "b057dbd62b60bb24c6e1f8ce2262993b4c579871f108d3d3d30a76067afcf62e",
+  "indexBytes": 49113885
+}
