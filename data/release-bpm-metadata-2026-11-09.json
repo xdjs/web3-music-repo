@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-11-09T19:46:58.533402+00:00",
+  "sourceCommit": "f538cc44d90813e94e3c6adcc4a425953d85ed09",
+  "mergeCommit": "294a047dec4c5f47e9c4d07b84c8105e93bee0c1",
+  "deploymentId": "dpl_AGBWm7V9RoFzLsgv4AfBatmtHeKq",
+  "immutableURL": "https://web3-music-repo-4yxbcf1on-musicnerd.vercel.app",
+  "publicURL": "https://web3-music-archive.vercel.app",
+  "promoted": true,
+  "productionChecks": [
+    {
+      "asset": "archive.js",
+      "readback": "/tmp/live-metadata-archive.js",
+      "sha256": "94c3b36bd8295edde67f47c5fccb8b10d938110219bc0b7b3c492b2e525ce383",
+      "passed": true
+    },
+    {
+      "asset": "archive.css",
+      "readback": "/tmp/live-metadata-archive.css",
+      "sha256": "e40e5759097176f1c4fa7b40bc2cfd9d6638447c27d542928b6a39ee6ca129e1",
+      "passed": true
+    },
+    {
+      "asset": "archive.js",
+      "readback": "/tmp/live-old-metadata-archive.js",
+      "sha256": "94c3b36bd8295edde67f47c5fccb8b10d938110219bc0b7b3c492b2e525ce383",
+      "passed": true
+    }
+  ],
+  "fullCatalog": {
+    "bytes": 195729926,
+    "sha256": "55b787785e9901613bc24c7ba5f5e8774c31967073f4aec6df562154c4572e5e",
+    "exactBuildMatch": true,
+    "records": 50633,
+    "artists": 11226
+  },
+  "counts": {
+    "displayedBPM": 17117,
+    "suppliedBPM": 8008,
+    "estimatedBPM": 9109,
+    "keys": 7526,
+    "lyricBearingRecords": 2102
+  },
+  "enrichment": {
+    "descriptionVersions": 13273,
+    "addedSourceBPM": 12,
+    "addedKeys": 1,
+    "supportingArtistRelationships": 7,
+    "indexedVideoClassifications": 13279,
+    "enrichedRecords": 22486
+  },
+  "tests": {
+    "passed": 425,
+    "environmentBlocked": 1,
+    "blockedReason": "Existing static-video HTTP test cannot bind localhost: EPERM",
+    "syntax": "passed",
+    "format": "passed",
+    "build": "passed",
+    "runtime": "52 required files; eight handler parity checks passed"
+  },
+  "browserReceipt": "data/final-staged-metadata-bpm-ui-verification.json",
+  "sourceReceipt": "data/final-staging-metadata-source-verification.json",
+  "runtimeLogWindow": {
+    "start": "2026-11-09T19:35:59.863Z",
+    "end": "2026-11-09T19:45:59.863Z",
+    "errorOrFatalLogs": 0
+  },
+  "limits": [
+    "Representative Chromium playback only; one Zora startup remains unverified.",
+    "Physical iOS not exercised.",
+    "Active BPM outputs are not part of this release."
+  ]
+}

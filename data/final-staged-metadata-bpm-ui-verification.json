@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-11-09T19:44:36.257Z",
+  "sourceCommit": "f538cc44d90813e94e3c6adcc4a425953d85ed09",
+  "deploymentId": "dpl_AGBWm7V9RoFzLsgv4AfBatmtHeKq",
+  "base": "https://web3-music-repo-4yxbcf1on-musicnerd.vercel.app",
+  "runner": "Firecrawl hosted Chromium",
+  "status": "passed",
+  "scope": "Targeted final fixes; previous four-view BPM and metadata tests retained separately. Actual bounded playback, not all-track/full-track verification.",
+  "bpm": {
+    "sourceCommit": "f538cc44d90813e94e3c6adcc4a425953d85ed09",
+    "values": {
+      "width": 390,
+      "scrollWidth": 375,
+      "sort": "BPM: low to high",
+      "options": [
+        {
+          "value": "bpm-asc",
+          "label": "BPM: low to high"
+        },
+        {
+          "value": "bpm-desc",
+          "label": "BPM: high to low"
+        }
+      ],
+      "font": "16px",
+      "range": "4,276 records"
+    }
+  },
+  "missingArtVideo": {
+    "id": "spinamp-c9bfa66bd7f1e56dfef1",
+    "error": null,
+    "state": {
+      "src": "https://ipfs.filebase.io/ipfs/QmbFVHq7cSbjUMFn1iV3oAiV55vcATMgQEfFEVoZhKZBx7",
+      "time": 0.51403,
+      "width": 1000,
+      "height": 1000,
+      "decodedAudioBytes": 12754,
+      "decodedVideoFrames": 10,
+      "opener": {
+        "width": 46,
+        "height": 46
+      },
+      "artDisplay": "none",
+      "titleHref": "#record/spinamp-c9bfa66bd7f1e56dfef1",
+      "artistHref": "#artist/spinamp-artist-f8ae7ccf5f06910895bb"
+    },
+    "expanded": true,
+    "desktopBox": {
+      "width": 54,
+      "height": 54
+    }
+  },
+  "nina": {
+    "id": "spinamp-79f0190de59e371f46a5",
+    "error": null,
+    "kind": "audio",
+    "indexedMediaType": null,
+    "selectedURL": "https://www.arweave.net/RPNpKcRSE3d-jUjswOsMTZFgKvykuj7esy2g9CW7R80?ext=mp3",
+    "label": "NINA \u00b7 SOLANA \u00b7 RECORDING",
+    "state": {
+      "src": "https://www.arweave.net/RPNpKcRSE3d-jUjswOsMTZFgKvykuj7esy2g9CW7R80?ext=mp3",
+      "time": 0.518867,
+      "width": 0,
+      "height": 0,
+      "decodedAudioBytes": 8991,
+      "decodedVideoFrames": 0
+    }
+  },
+  "visualReview": {
+    "status": "passed",
+    "captures": [
+      "captures/final-staged-bpm-390-light.jpg",
+      "captures/final-staged-omg-video-390-light.jpg"
+    ]
+  },
+  "remainingLimitations": [
+    "First-stage Zora sample spinamp-1f6fe0254dd8c45a5bb3 did not start within20s and remains playback-unverified.",
+    "Physical iOS/WebKit not exercised by hosted Chromium."
+  ],
+  "hostedSessionStopped": true
+}

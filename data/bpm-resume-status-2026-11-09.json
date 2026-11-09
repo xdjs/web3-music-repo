@@ -1,32 +1,33 @@
 {
-  "checkedAt": "2026-11-09T19:17:27.811522+00:00",
+  "observedAt": "2026-11-09T19:46:58.533402+00:00",
   "worktree": "web3-music-bpm-campaign",
-  "baseline": "109189f",
-  "fixAppliedCommit": "9d36c71",
-  "fixSourceCommit": "3168393",
-  "executionSession": 55447,
-  "workerRunningObserved": true,
-  "coordinatorPid": 95436,
-  "activeBatch": {
-    "pid": 95437,
-    "platform": "Sound",
-    "startedAt": "2026-11-09T19:12:03.619Z",
-    "plannedRecords": 50
-  },
-  "concurrency": 1,
-  "updatedAt": "2026-11-09T19:17:27.010Z",
+  "pid": 95436,
+  "state": "analyzing",
+  "updatedAt": "2026-11-09T19:46:54.533Z",
   "counts": {
     "records": 50633,
     "supplied": 7996,
-    "estimated": 9185,
-    "needsReview": 234,
-    "unavailable": 2165,
+    "estimated": 9408,
+    "needsReview": 236,
+    "unavailable": 2168,
     "deferred": 8,
-    "pending": 29,
-    "untouched": 31016,
+    "pending": 1,
+    "untouched": 30816,
     "other": 0
   },
-  "evidence": "data/bpm-resume-network-verification-2026-11-09.json",
-  "scope": "Observed checkpoint and owned running execution session. Local analysis results are not deployed. Verify current status/locks before starting another writer. Historical reason field is stale until patched restart; state/current updates show resumed progress.",
-  "command": "npx tsx scripts/run-bpm-campaign.mjs --concurrency=1"
+  "concurrency": 1,
+  "activeBatch": {
+    "pid": 5883,
+    "platform": "Sound",
+    "startedAt": "2026-11-09T19:38:04.014Z",
+    "plannedRecords": 50
+  },
+  "providerCircuit": {
+    "stop": false,
+    "sample": 10,
+    "failures": 0,
+    "rateLimited": 0
+  },
+  "published": false,
+  "note": "Moving local analysis; do not overwrite or launch a second writer. Status reason field is stale from a prior run; current state and progress verified."
 }

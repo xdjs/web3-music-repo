@@ -2,7 +2,17 @@
 
 Started November 6, 2026 at Pete Rango's request to label substantially more of the archive with BPM, across platforms. This is ongoing local recovery work, not a production deployment.
 
-## Current checkpoint — November 7 evening
+## Current checkpoint — November 9
+
+PR #17 is merged and its exact tested production build is live. Published BPM coverage is **17,117 / 50,633** (8,008 supplied and 9,109 estimates). Explore now supports BPM range filtering/sorting; see `docs/bpm-discovery.md` and `data/release-bpm-metadata-2026-11-09.json`.
+
+The isolated campaign resumed with `npx tsx scripts/run-bpm-campaign.mjs --concurrency=1`, coordinator PID 95436 at the observed checkpoint. It remains separate from production. The latest saved observation had 9,408 local estimates and active progress; read the actual worktree status/locks for current liveness. Do not merge its moving analysis file or launch another writer. The checkpoint's old reason string predates this run and is stale; the integrated coordinator clears it on future starts.
+
+The failed-download diagnosis found repeated immediate zero-byte connection failures, while a complete retry succeeded. Structured network codes and a latched provider-failure circuit are now preserved. See `docs/bpm-resume-network-diagnosis.md`. Prior failures remain retryable; no permanent source-loss claim. Source BPM still wins, uncertain estimates remain withheld, keys are not inferred, and original playback media is unchanged. This computer and network are required for ongoing work.
+
+Take a deliberate stable analysis checkpoint, regenerate coverage/enrichment reports, review source/provenance and tests, then publish newer estimates. `data/bpm-resume-status-2026-11-09.json` records an observation, not a liveness guarantee. Historical checkpoints below are superseded by this section.
+
+## Historical checkpoint — November 7 evening
 
 The bounded transfer fix is merged and deployed. Public source `23dc3fb217ba856664a08b53007a1778690297fe` contains 50,633 recordings and 17,105 displayed BPM values. The newer worker is isolated at `/Users/peterarango/Documents/Music Nerd/Apps/web3-music-bpm-campaign` on `recovery/bpm-resume`, based on `109189f`. Do not merge or overwrite its moving analysis output. See `data/bpm-resume-status-2026-11-07.json` in the canonical repo for the latest observed state and the isolated worktree's actual status/locks before resuming.
 

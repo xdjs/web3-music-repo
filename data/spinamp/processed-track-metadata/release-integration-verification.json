@@ -13,8 +13,8 @@
   "format": "passed",
   "build": "passed including explicit-audio guard, compact BPM labels and fixed mobile artwork button dimensions",
   "runtimeBundle": "passed; 52 required files and eight real handler response hashes match full checkout",
-  "browser": "Initial hosted range/metadata UI passed; three native video samples and Song A Day app video passed. Nina audio-only mismatch and missing-artwork button collapse corrected; targeted final-stage checks pending.",
-  "production": "not yet published",
+  "browser": "Final targeted hosted checks passed; see final-staged-metadata-bpm-ui-verification.json and prior four-view receipts.",
+  "production": "Exact staged build promoted; see release-bpm-metadata-2026-11-09.json",
   "indexSha256": "93f2857d501798c766f18c4308a1947f3d3db6e46f17830e1e4b4c0a21cbf39e",
   "indexBytes": 49113885
 }

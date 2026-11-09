@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-11-09T19:43:19.360015+00:00",
+  "sourceCommit": "f538cc44d90813e94e3c6adcc4a425953d85ed09",
+  "deploymentId": "dpl_AGBWm7V9RoFzLsgv4AfBatmtHeKq",
+  "base": "https://web3-music-repo-4yxbcf1on-musicnerd.vercel.app",
+  "checks": [
+    {
+      "path": "src/archive.js",
+      "bytes": 107338,
+      "sha256": "94c3b36bd8295edde67f47c5fccb8b10d938110219bc0b7b3c492b2e525ce383",
+      "passed": true
+    },
+    {
+      "path": "src/archive.css",
+      "bytes": 51953,
+      "sha256": "e40e5759097176f1c4fa7b40bc2cfd9d6638447c27d542928b6a39ee6ca129e1",
+      "passed": true
+    },
+    {
+      "path": "src/filter-preferences.mjs",
+      "bytes": 2388,
+      "sha256": "0703e30c564dd681e364c7facaef942cfab56af0335059b345811429d89611fd",
+      "passed": true
+    },
+    {
+      "path": "src/bpm-filter.mjs",
+      "bytes": 2548,
+      "sha256": "c3fc01891144cd2edbe5c464ad5865eff0b7da248ad56bfbb76d55e532e44a25",
+      "passed": true
+    },
+    {
+      "path": "src/indexed-track-metadata-ui.mjs",
+      "bytes": 1055,
+      "sha256": "260dbebf90117ed08bcf6086532f4c2239164400abf37f2cafcb3c12c53eec33",
+      "passed": true
+    },
+    {
+      "path": "src/music-facts.mjs",
+      "bytes": 3861,
+      "sha256": "c0aac1b2564fcf0d8eb5058b9274bab9fd0217a2ccd54c69b3d0bc20e545f3f6",
+      "passed": true
+    },
+    {
+      "path": "dist/catalog/index.json",
+      "bytes": 49113885,
+      "sha256": "93f2857d501798c766f18c4308a1947f3d3db6e46f17830e1e4b4c0a21cbf39e",
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

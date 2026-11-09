@@ -1,6 +1,20 @@
 # Music Nerd music NFT recovery — agent handoff
 
-Updated November 7, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
+Updated November 9, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
+
+## Current release — November 9: BPM discovery and Spinamp metadata
+
+PR #17 merged at `294a047dec4c5f47e9c4d07b84c8105e93bee0c1`. Exact tested source `f538cc44d90813e94e3c6adcc4a425953d85ed09` was staged and promoted as `dpl_AGBWm7V9RoFzLsgv4AfBatmtHeKq` to https://web3-music-archive.vercel.app. Both public aliases serve matching client assets; the complete production catalog matches the tested build byte for byte. See `data/release-bpm-metadata-2026-11-09.json`.
+
+Explore now has Min BPM / Max BPM and **BPM: low to high / high to low** sorting. Either bound can remain blank; equal bounds find an exact tempo. A tilde marks approximate Open BPM estimates. Source tempo takes precedence, unknowns are excluded by active ranges and sorted last. Controls combine with existing search/filter scopes and preserve input focus. See `docs/bpm-discovery.md`.
+
+The frozen 52,987-row Spinamp metadata scan enriches 22,486 existing records: 13,273 separately attributed description versions, 12 supplied tempos, one key, seven supporting-artist relationships, and 13,279 indexed video classifications. Original media, metadata, IDs and ownership boundaries are preserved. Query parameters remain part of exact source identity; 79 query-conflicting classifications and five explicit-audio conflicts were held. These are indexed descriptors, not independent blockchain verification. Current live totals: **50,633 records, 11,226 artist profiles, 17,117 displayed BPM (8,008 supplied + 9,109 estimates), 7,526 keys and 2,102 lyric-bearing records**.
+
+Validation: 425 tests passed; the existing HTTP static-video test could not bind localhost (EPERM). Syntax, formatting, production build, 52-file runtime manifest and eight handler parity checks passed. Hosted desktop/mobile light/dark checks covered filters, focus, range/sort, metadata attribution and representative playback. Browser testing caught and fixed Nina audio-only files incorrectly labeled video and a missing-artwork mobile expansion button collapsing to zero size. Final checks verified both fixes. One Zora sample did not start within 20 seconds; all-track playback and physical iOS remain unverified. No error/fatal entries were returned in the bounded release log query.
+
+BPM analysis resumed in the isolated `web3-music-bpm-campaign` worktree with **one worker**, coordinator PID 95436 at the observed checkpoint. Four completed 50-record batches yielded 195 estimates, three unavailable and two review results; subsequent analysis continues. The final observed local total was 9,408 estimates, **not the live 9,109**. Read `data/bpm-resume-status-2026-11-09.json` and the actual worker status/locks before touching it. The moving file is unpublished. Prior immediate zero-byte connection failures were transient in the sampled retry; no permanent source-loss conclusion follows. Download diagnostics now preserve structured network codes and stop promptly on sustained failures. The active worktree retains a stale historical reason string; current state/timestamps and counts establish progress. This machine and network must remain available.
+
+Next: take a deliberate stable BPM checkpoint for review/publication, then retry unavailable downloads by failure category without duplicating the active writer. Remaining Spinamp held-row recovery targets follow below. Preserve provenance and do not infer mint ownership from index-only tracks.
 
 ## Spinamp listening expansion — November 7 evening
 
@@ -16,9 +30,9 @@ PR #14 merged the bounded BPM download fix at `d84d61f`. Both complete large-vid
 
 Runtime packaging uses compact include/exclude patterns within Vercel’s 256-character schema limit, excluding large raw audits and checkpoints. A 51-file required manifest guards against missing data. The isolated runtime verification compares catalog/evidence hashes and six real handler responses with the full checkout. Included data totals about 219 MB; Vercel accepted the runtime build (CLI reports api/index at 43.13 MB). PRs #15 and #16 merged; exact source `23dc3fb217ba856664a08b53007a1778690297fe` was staged, checked, and promoted as `dpl_FbBWnavisDM6JxLpPiU5qvo2zoZ8`. Staging passed exact catalog/five-asset hashes, backend guards, desktop/mobile both themes and actual Sound/NOIZD audio plus Zora video playback. Earlier fixture and network stalls remain preserved in receipts; all-catalog playback is not established. See `data/release-indexed-listening-2026-11-07.json`.
 
-## Next enrichment checkpoint (not live)
+## Remaining enrichment targets
 
-The complete processed-track metadata scan captured 52,987 exact frozen identity/media matches across 106 pages, with zero capture errors. Review branch `feat/spinamp-track-metadata-overlay` in `web3-music-spinamp-track-metadata` contains capture `457f515` and overlay `b5580f4`. It adds 13,273 separately attributed description versions, 12 explicit BPM values, one key and seven track relationships to Reo Cragun. Exact selected-media matching permits 13,363 indexed video classifications without changing playback sources or original metadata. Browser/video QA remains a merge gate; use an authorized remote preview because local server binding was denied. Check runtime package size after the additional 23 MB overlay. Do not claim these changes are deployed.
+The prepared processed-track overlay is now published; the November 9 release above supersedes its prior staging-only status.
 
 Further held-row targets: 13 safe URI handling candidates, 150 Nina rows lacking indexed artist names (inspect original nested artist fields), 152 artwork/media equality cases, and music-scoped zero-duration rows. See the held audit in the agent worktree; those media probes were not verified. Do not blanket-import podcasts or infer wallet/mint identity.
 
