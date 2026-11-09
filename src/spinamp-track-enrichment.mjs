@@ -46,6 +46,32 @@ export function indexedContentKey(value) {
     return null;
   }
 }
+// Source MIME may describe a video before an indexed audio representation was
+// produced. Explicit audio URLs are a conflict, not proof of decoded video.
+export function hasExplicitAudioFormat(value) {
+  if (typeof value !== "string") return false;
+  const audioExtension =
+    /\.(?:mp3|mp2|mpa|wav|wave|flac|ogg|oga|opus|m4a|m4b|aac|aif|aiff|aifc|alac|weba|amr|wma)$/i;
+  const audioHint =
+    /^(?:\.?)(?:mp3|mp2|mpa|wav|wave|flac|ogg|oga|opus|m4a|m4b|aac|aif|aiff|aifc|alac|weba|amr|wma)$/i;
+  try {
+    const url = new URL(value.trim());
+    let path = url.pathname;
+    try {
+      path = decodeURIComponent(path);
+    } catch {}
+    if (audioExtension.test(path)) return true;
+    for (const [name, hint] of url.searchParams) {
+      if (
+        ["ext", "format"].includes(name.toLowerCase()) &&
+        (audioHint.test(hint.trim()) ||
+          /^audio\/[a-z0-9.+-]+$/i.test(hint.trim()))
+      )
+        return true;
+    }
+  } catch {}
+  return false;
+}
 export function validTrackEnrichment(record, entry) {
   return !!(
     entry &&
@@ -151,6 +177,7 @@ export function applyTrackEnrichment(record, evidence, entry, people = []) {
   if (
     record.kind === "audio" &&
     sameAsset &&
+    !hasExplicitAudioFormat(selectedURI) &&
     entry.audioMimeType?.startsWith("video/") &&
     !record.playbackOverride &&
     !record.playbackCopy &&

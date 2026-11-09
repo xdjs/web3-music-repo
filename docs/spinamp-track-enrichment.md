@@ -11,13 +11,13 @@ Applying only exact track ID **and** exact artist ID bindings to the 50,633-reco
 | Addition | Count |
 | --- | ---: |
 | Direct track/artist matches | 40,808 |
-| Records with any enrichment | 22,491 |
+| Records with any enrichment | 22,486 |
 | Additional verbatim description versions | 13,273 |
 | Previously absent explicitly labeled BPM | 12 |
 | Previously absent explicitly labeled key | 1 |
 | Supporting-artist track relationships | 7 |
 | Distinct supporting artists in those relationships | 1 (Reo Cragun) |
-| Selected-URI-bound indexed video classifications | 13,284 |
+| Selected-URI-bound indexed video classifications | 13,279 |
 | New catalog records or inferred token identities | 0 |
 
 Description versions may differ only in formatting. They are not all newly discovered stories or lyrics. The seven artist relationships are the preserved `supportingArtist` relation, not proof of a producer/writer role. Positive `chorusStart` values remain in the raw evidence; this change does not turn them into playback controls or verified musical structure.
@@ -28,17 +28,19 @@ Description versions may differ only in formatting. They are not all newly disco
 
 Additional descriptions appear in a collapsed **Notes preserved by Spinamp** disclosure using the existing `artist-sources` and `original-release-notes` styling. Text and line breaks are verbatim and HTML escaped. These notes do not replace the artist's original description. Existing original musical values and conflicting original values take priority. The strict existing extractor reads only explicitly labeled BPM/key. These source values may replace a displayed audio-analysis estimate, with a Spinamp source label. Estimates that remain displayed retain their estimate marker.
 
-MIME correction is permitted only when the actual selected playback URL/content identity matches the captured processed audio asset. Gateway equivalence is limited to named storage gateways; arbitrary hosts with an `/ipfs/` path are not treated as content-addressed storage. A different selected playback URL, artist-supplied correction, or preserved-copy override is protected. Audio MIME never downgrades existing video. Every new video classification carries `indexedMediaType` source hashes and an explicit **index-asserted; not decoded-media verification** marker. These 13,284 records have not all been watched or listened to.
+MIME correction is permitted only when the actual selected playback URL/content identity matches the captured processed audio asset. Gateway equivalence is limited to named storage gateways; arbitrary hosts with an `/ipfs/` path are not treated as content-addressed storage. A different selected playback URL, artist-supplied correction, or preserved-copy override is protected. Audio MIME never downgrades existing video. Every new video classification carries `indexedMediaType` source hashes and an explicit **index-asserted; not decoded-media verification** marker. These 13,279 records have not all been watched or listened to.
 
 The November 9 review preserves **all query parameters** in storage identity, including `format`, `ext`, and `id`. An exact captured URL still matches; a queried URL does not match a bare CID or transaction. This conservatively holds 79 formerly MIME-only candidates at their original audio classification. Their IDs, selected URLs, source references and hashes remain in `data/spinamp/processed-track-metadata/query-identity-holds.json`. This changes no catalog admission or description/musical/artist additions.
+
+Hosted native-browser QA then found a concrete index MIME mismatch: Nina’s “enceladas” advanced as audio with zero decoded video dimensions/frames despite `video/mp4` in the index. A new conservative guard holds any proposed video correction when the **selected URL** explicitly identifies an audio filename extension or an `ext`/`format` audio hint. Five Nina records are held; their IDs and exact source references are preserved in `data/spinamp/processed-track-metadata/audio-format-holds.json`. The other four are conservatively held, not claimed individually playback-verified. Existing video classifications are never downgraded. The release integration preserves the actual decode receipt at `data/spinamp/processed-track-metadata/staged-enrichment-hosted-media-verification.json`. Original 106 capture pages and media remain untouched.
 
 ## Reproducibility and delivery
 
 Run `node scripts/build-spinamp-track-enrichment.mjs` from this worktree. It validates the complete raw capture against its frozen snapshot and builds `data/spinamp/track-enrichment.json`. It deliberately loads the catalog with `{ trackEnrichment: false }`, so regenerating after admission cannot exclude its own data. Repeated generation produced exactly the same SHA-256:
 
-`87e966190c707e4d7a09325575770d8b485491b139da5c5dcf80101bc4098ce5`
+`613a10f53da784665fa0bffe73619223edf11c9ce0f141f8cf4a10ea25f1c005`
 
-Runtime overlay: 22,912,158 bytes. Full raw capture stays in its subdirectory and is outside the existing Vercel runtime include glob; the root-level runtime overlay is included. Original source pages remain tracked for auditing from a fresh checkout.
+Runtime overlay: 22,908,132 bytes. Full raw capture stays in its subdirectory and is outside the existing Vercel runtime include glob; the root-level runtime overlay is included. Original source pages remain tracked for auditing from a fresh checkout.
 
 Historical production-build sizes from `b5580f4`, before the conservative query guard below (the integration build will refresh these measurements):
 
@@ -52,11 +54,11 @@ Descriptions and source proof remain outside the compact first-load catalog; per
 ## Verification and remaining gate
 
 - Syntax checks passed.
-- Query-identity revision: **16 focused tests passed**, including full source proof and original-data preservation. Final combined full suite/build are delegated to the release integration.
+- Query-identity and audio-format revision: **17 focused tests passed**, including full source proof and original-data preservation. Final combined full suite/build are delegated to the release integration.
 - Previous `b5580f4` checkpoint: focused identity, precedence, escaping, MIME-boundary, original-preservation, source-hash, and index-only regression tests: **32 passed**.
 - Previous `b5580f4` full suite: **414 passed / 1 environment failure**. The existing static-video HTTP test could not bind localhost (`listen EPERM`), unrelated to enrichment assertions.
 - Previous `b5580f4` production build passed; 50,633 records and 11,226 people preserved.
 - All original `musicMetadata`, recovery evidence, selected playback objects, IDs and chain identity fields were compared unchanged across the full catalog.
-- **Actual browser layout and representative video decoding are pending.** This agent's localhost listener failed `EPERM`, and the sandbox's disabled escalation policy rejected the approved wrapper request. No alternate bypass was attempted.
+- **Final integration browser verification remains a release gate.** The release runner has completed a bounded hosted media sample and supplied the Nina conflict evidence described above. This agent's localhost listener failed `EPERM`, and the sandbox's disabled escalation policy rejected the approved wrapper request. No alternate bypass was attempted.
 
 Prepared helper: `scripts/verify-spinamp-track-enrichment.mjs`, using `VERIFY_BASE_URL` (default `http://127.0.0.1:4301`). It tests expanded notes, explicit musical facts and source labels, and the exact supporting-artist link at 1440/390px in light/dark themes. It then tries five video samples across Zora, NOIZD, Nina, QuickTime and M4V, with at most two gateways and 20 seconds per attempt. It writes a separate browser receipt and captures. An authorized runner must complete and inspect those checks before merging this UI/MIME proposal. Passing a few examples will not establish whole-catalog media availability.

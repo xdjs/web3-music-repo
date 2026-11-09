@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-11-09T19:11:29.444Z",
+  "checkedAt": "2026-11-09T19:34:53.263Z",
   "sourceBase": "23dc3fb",
   "sourceCapture": "457f515",
-  "overlaySha256": "87e966190c707e4d7a09325575770d8b485491b139da5c5dcf80101bc4098ce5",
-  "overlayBytes": 22912158,
+  "overlaySha256": "613a10f53da784665fa0bffe73619223edf11c9ce0f141f8cf4a10ea25f1c005",
+  "overlayBytes": 22908132,
   "counts": {
     "catalogRecords": 50633,
     "directMatches": 40808,
@@ -12,20 +12,20 @@
     "keys": 1,
     "supportingArtists": 7,
     "supportingArtistProfileLinks": 7,
-    "videoCorrections": 13284,
+    "videoCorrections": 13279,
     "distinctSupportingArtists": 1,
-    "enrichedRecords": 22491
+    "enrichedRecords": 22486
   },
   "syntax": "passed",
   "focusedTests": {
-    "passed": 16,
-    "scope": "Query-identity revision: overlay, music-facts and complete source capture evidence"
+    "passed": 17,
+    "scope": "Audio format conflict guard: overlay, music-facts and complete source capture evidence"
   },
   "fullTests": {
     "status": "pending-combined-integration-suite"
   },
   "build": "pending-combined-integration-build",
-  "regeneration": "byte-identical after query fix",
+  "regeneration": "byte-identical after audio format guard",
   "browser": {
     "status": "pending-authorized-runner",
     "reason": "Localhost listener denied EPERM; sandbox escalation rejected by disabled approval policy."
@@ -41,5 +41,7 @@
     "build": "passed"
   },
   "queryIdentityHeld": 79,
-  "heldEvidence": "data/spinamp/processed-track-metadata/query-identity-holds.json"
+  "heldEvidence": "data/spinamp/processed-track-metadata/query-identity-holds.json",
+  "audioFormatHeld": 5,
+  "audioFormatHeldEvidence": "data/spinamp/processed-track-metadata/audio-format-holds.json"
 }

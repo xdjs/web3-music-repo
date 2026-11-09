@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-11-09T19:34:53.263Z",
+  "previousCommit": "60a0730",
+  "previousVideoCorrections": 13284,
+  "videoCorrections": 13279,
+  "previousEnrichedRecords": 22491,
+  "enrichedRecords": 22486,
+  "overlaySha256": "613a10f53da784665fa0bffe73619223edf11c9ce0f141f8cf4a10ea25f1c005",
+  "overlayBytes": 22908132,
+  "policy": "An explicit audio filename extension or ext/format audio hint blocks a new index-asserted video classification. Existing video classifications and original media remain unchanged. This guard does not claim playback verification for the held cohort.",
+  "trigger": {
+    "recordId": "spinamp-79f0190de59e371f46a5",
+    "description": "Release QA reported native audio advancement with zero video dimensions/frames despite indexed video/mp4. The separate release QA receipt is the decoded-media evidence; this file records classification holds.",
+    "evidenceFile": "data/spinamp/processed-track-metadata/staged-enrichment-hosted-media-verification.json"
+  },
+  "held": [
+    {
+      "recordId": "spinamp-79f0190de59e371f46a5",
+      "title": "enceladas",
+      "trackId": "solana/4GBahRCw8drng45UrVHTK8cn6ngCWaXbg6NjnZwRByPH",
+      "artistId": "ARxwpEiXAukXPPTCysWuXEJ3Vsv39Sj4CSz3eX4VJVVd",
+      "selectedMediaURI": "https://www.arweave.net/RPNpKcRSE3d-jUjswOsMTZFgKvykuj7esy2g9CW7R80?ext=mp3",
+      "processedMediaURIs": [
+        "https://www.arweave.net/RPNpKcRSE3d-jUjswOsMTZFgKvykuj7esy2g9CW7R80?ext=mp3",
+        "ipfs://QmfHqBxfn2cgVw3ACQkXuMrft81jmZewCYpqN19pTYiCm4"
+      ],
+      "indexedMimeType": "video/mp4",
+      "sourcePage": "data/spinamp/processed-track-metadata/087.json.gz",
+      "sourceRowSha256": "99bca47b331a45dba197d2c0f31efd2052f0b0eea753add1f0631bf02eca097d",
+      "reason": "explicit-audio-format-conflicts-with-indexed-video-MIME; original audio classification retained; raw source evidence unchanged"
+    },
+    {
+      "recordId": "spinamp-8a19b6266ab67764df0b",
+      "title": "Splintered Faith",
+      "trackId": "solana/99zytpYj6hyLWW4S2hen6mt5EFQKVYRkAm4z7Zkv9jVG",
+      "artistId": "93FRJ1waFRBjRTWjwCvSFMb79xdTGJgRgSxo5gjmDGDu",
+      "selectedMediaURI": "https://www.arweave.net/ptE3XCbAAbPaSipupeD682xZK04hFc89Ijd2AlfVT64?ext=mp3",
+      "processedMediaURIs": [
+        "https://www.arweave.net/ptE3XCbAAbPaSipupeD682xZK04hFc89Ijd2AlfVT64?ext=mp3",
+        "ipfs://QmUfzA5fxjvt311cXKEodM4s2hsvNVF23BpCwiAqL9R1Hh"
+      ],
+      "indexedMimeType": "video/mp4",
+      "sourcePage": "data/spinamp/processed-track-metadata/090.json.gz",
+      "sourceRowSha256": "4285b27e279bdbd1525fee0f273c44d4ee3dd6fdadb6629a01e9460ed9d8f1fe",
+      "reason": "explicit-audio-format-conflicts-with-indexed-video-MIME; original audio classification retained; raw source evidence unchanged"
+    },
+    {
+      "recordId": "spinamp-89f05f646a0c0237fe50",
+      "title": "Lights and Feelings",
+      "trackId": "solana/9RCH2t4wmaFd6EhcFFPWgMdeFsDLza47iPjbGryoZ1uh",
+      "artistId": "Ah36DMGWCjF2S8sKTwLmq9YQRLXgbnyzoEhyrUZjnPLa",
+      "selectedMediaURI": "https://www.arweave.net/cQSBr22CEGZvylPxcuACl9VhroYxWtAPyovKUZfe0ng?ext=mp3",
+      "processedMediaURIs": [
+        "https://www.arweave.net/cQSBr22CEGZvylPxcuACl9VhroYxWtAPyovKUZfe0ng?ext=mp3",
+        "ipfs://QmefBipQPYg1fHdR5ppo2oje8iqGureshMx1FdY1K5mkSD"
+      ],
+      "indexedMimeType": "video/mp4",
+      "sourcePage": "data/spinamp/processed-track-metadata/091.json.gz",
+      "sourceRowSha256": "5299c4208ead0e75fa4cbc9bca3985441e54e6e03b6e45d8faea5d04df24af05",
+      "reason": "explicit-audio-format-conflicts-with-indexed-video-MIME; original audio classification retained; raw source evidence unchanged"
+    },
+    {
+      "recordId": "spinamp-d8296d408bb38d0ede3c",
+      "title": "CHYRIL DATSFIELD - BEAUTIFUL PEOPLE",
+      "trackId": "solana/HVH4nYeSY5D4SMuof285xvAaAgWaPYiWuwQrkgtWNxCp",
+      "artistId": "4bdaUS3N4dfTHR8gRrJ5ApF4DzHGYZVBZ3NhtFYhPJQT",
+      "selectedMediaURI": "https://www.arweave.net/Egq9QDvXs9ftLRYhfx43uKec6NC5eoHyO1aiN1pn7Lk?ext=mp3",
+      "processedMediaURIs": [
+        "https://www.arweave.net/Egq9QDvXs9ftLRYhfx43uKec6NC5eoHyO1aiN1pn7Lk?ext=mp3",
+        "ipfs://QmcfdjXRUWSK8st13MoyRzbLJTpBkbQrxMnm4LE7QUuWCc"
+      ],
+      "indexedMimeType": "video/webm",
+      "sourcePage": "data/spinamp/processed-track-metadata/097.json.gz",
+      "sourceRowSha256": "49bdc1976ba444d0a7543dee45c0a213d3e362b7dfd9e65ae64a23fa5b2b1871",
+      "reason": "explicit-audio-format-conflicts-with-indexed-video-MIME; original audio classification retained; raw source evidence unchanged"
+    },
+    {
+      "recordId": "spinamp-bd2e3a44f3e2b9df990b",
+      "title": "CHYRIL DATSFIELD - GIMME THE LIGHT",
+      "trackId": "solana/p9ZTpTn64XZkab2rY2oZuuXpub5KtYKdmVAWtdSRqTv",
+      "artistId": "4bdaUS3N4dfTHR8gRrJ5ApF4DzHGYZVBZ3NhtFYhPJQT",
+      "selectedMediaURI": "https://www.arweave.net/HE0EmmUyBfB4BUEZt4TlN7QNMofXn1H3NfC8RgJRXfI?ext=mp3",
+      "processedMediaURIs": [
+        "https://www.arweave.net/HE0EmmUyBfB4BUEZt4TlN7QNMofXn1H3NfC8RgJRXfI?ext=mp3",
+        "ipfs://QmV8AjiA5q1d4FFEsfp2QZEyiH1kCGc2vPm7DR1yNHDzUW"
+      ],
+      "indexedMimeType": "video/webm",
+      "sourcePage": "data/spinamp/processed-track-metadata/097.json.gz",
+      "sourceRowSha256": "f8182450b68efe1e861add9ea11724a6f1d7901f055a1b447e7af527918f3904",
+      "reason": "explicit-audio-format-conflicts-with-indexed-video-MIME; original audio classification retained; raw source evidence unchanged"
+    }
+  ]
+}

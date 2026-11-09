@@ -6,6 +6,7 @@ import { createHash } from "node:crypto";
 import {
   applyTrackEnrichment,
   indexedContentKey,
+  hasExplicitAudioFormat,
   validTrackEnrichment,
 } from "../src/spinamp-track-enrichment.mjs";
 import { musicFacts } from "../src/music-facts.mjs";
@@ -270,7 +271,7 @@ test("runtime overlay remains exact-source reproducible and preserves every orig
     keys: 1,
     supportingArtists: 7,
     supportingArtistProfileLinks: 7,
-    videoCorrections: 13284,
+    videoCorrections: 13279,
   });
   assert.deepEqual(enriched.evidence, baseline.evidence);
 });
@@ -298,7 +299,7 @@ test("queries remain part of storage identity, including ext/id hints and transf
         { mediaURL: e.mediaURL + query },
         { ...entry, processedMediaURIs: ["ipfs://ExactCID" + query] },
       ).kind,
-      "video",
+      query === "?id=42" ? "video" : "audio",
     );
   }
   assert.notEqual(
@@ -308,5 +309,60 @@ test("queries remain part of storage identity, including ext/id hints and transf
   assert.notEqual(
     indexedContentKey("https://ipfs.io/ipfs/ExactCID?format=mp3&ext=mp3"),
     indexedContentKey("ipfs://ExactCID?format=mp3"),
+  );
+});
+
+test("explicit selected audio extension or format hint holds a new video claim without downgrading existing video", () => {
+  const base = "https://www.arweave.net/ExactTx";
+  const hints = [
+    "?ext=mp3",
+    "?format=wav",
+    "?EXT=.FLAC",
+    "?format=audio%2Fmpeg",
+    "?ext=mp4&ext=ogg",
+  ];
+  const paths = [
+    "/song.mp3",
+    "/song.WAV",
+    "/song.m4a",
+    "/song%2Emp3",
+    "/song.aiff",
+    "/song.opus",
+    "/song.aac",
+  ];
+  for (const suffix of [...hints, ...paths]) {
+    const selected = base + suffix;
+    assert.equal(hasExplicitAudioFormat(selected), true, selected);
+    const bound = { ...entry, processedMediaURIs: [selected] };
+    const result = applyTrackEnrichment(r, { mediaURL: selected }, bound);
+    assert.equal(result.kind, "audio", selected);
+    assert.equal(result.indexedMediaType, undefined);
+    assert.equal(result.indexedTrackMetadata.description, entry.description);
+    assert.equal(
+      applyTrackEnrichment(
+        { ...r, kind: "video" },
+        { mediaURL: selected },
+        bound,
+      ).kind,
+      "video",
+    );
+  }
+  for (const value of [
+    base,
+    base + "?ext=mp4",
+    base + "/song.mp4",
+    base + "?title=mp3",
+    base + "?format=video%2Fmp4",
+  ])
+    assert.equal(hasExplicitAudioFormat(value), false, value);
+  const nina =
+    "https://www.arweave.net/RPNpKcRSE3d-jUjswOsMTZFgKvykuj7esy2g9CW7R80?ext=mp3";
+  assert.equal(
+    applyTrackEnrichment(
+      r,
+      { mediaURL: nina },
+      { ...entry, processedMediaURIs: [nina] },
+    ).kind,
+    "audio",
   );
 });
