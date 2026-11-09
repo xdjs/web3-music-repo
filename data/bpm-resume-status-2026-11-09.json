@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-09T19:17:27.811522+00:00",
+  "worktree": "web3-music-bpm-campaign",
+  "baseline": "109189f",
+  "fixAppliedCommit": "9d36c71",
+  "fixSourceCommit": "3168393",
+  "executionSession": 55447,
+  "workerRunningObserved": true,
+  "coordinatorPid": 95436,
+  "activeBatch": {
+    "pid": 95437,
+    "platform": "Sound",
+    "startedAt": "2026-11-09T19:12:03.619Z",
+    "plannedRecords": 50
+  },
+  "concurrency": 1,
+  "updatedAt": "2026-11-09T19:17:27.010Z",
+  "counts": {
+    "records": 50633,
+    "supplied": 7996,
+    "estimated": 9185,
+    "needsReview": 234,
+    "unavailable": 2165,
+    "deferred": 8,
+    "pending": 29,
+    "untouched": 31016,
+    "other": 0
+  },
+  "evidence": "data/bpm-resume-network-verification-2026-11-09.json",
+  "scope": "Observed checkpoint and owned running execution session. Local analysis results are not deployed. Verify current status/locks before starting another writer. Historical reason field is stale until patched restart; state/current updates show resumed progress.",
+  "command": "npx tsx scripts/run-bpm-campaign.mjs --concurrency=1"
+}

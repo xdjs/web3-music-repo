@@ -1,0 +1,165 @@
+{
+  "checkedAt": "2026-11-09T19:33:25.178Z",
+  "base": "https://web3-music-repo-qnjzz2p7k-musicnerd.vercel.app",
+  "sourceCommit": "1795fe4094d39e891159db60d2a50c8cd42a3052",
+  "runner": "Firecrawl hosted Chromium",
+  "status": "requires-nina-classification-correction",
+  "scope": "Five exact staged source URLs; startup samples only, not complete playback or all-track verification.",
+  "samples": [
+    {
+      "id": "spinamp-1f6fe0254dd8c45a5bb3",
+      "kind": "video",
+      "platform": "Zora",
+      "mime": {
+        "source": "https://api.spinamp.xyz/v3/graphql",
+        "sourceType": "spinamp-track-index",
+        "onchainVerified": false,
+        "checkedAt": "2026-11-08T04:41:46.261Z",
+        "sourcePage": "data/spinamp/processed-track-metadata/000.json.gz",
+        "sourcePageSha256": "551ff37a4f0dbb58b2508f247e58bc8f482b966e70748895bb3ad28b0d9b6eb4",
+        "sourceRowSha256": "0336c0f3f1113a679b1b09fc0e9833146f87649c00cd6067560aa5ea89d42b8b",
+        "mimeType": "video/mp4",
+        "mediaURI": "https://ipfs.filebase.io/ipfs/bafybeihee7sk4flrnsazrlls4eqtk63uw35qct4okwukecg3uyninfy4ua",
+        "verification": "index-asserted; not decoded-media verification"
+      },
+      "selectedURL": "https://ipfs.filebase.io/ipfs/bafybeihee7sk4flrnsazrlls4eqtk63uw35qct4okwukecg3uyninfy4ua",
+      "error": "page.waitForFunction: Timeout 20000ms exceeded.",
+      "state": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "duration": null,
+        "readyState": 0,
+        "decodedAudioBytes": 0,
+        "decodedVideoFrames": 0,
+        "errorCode": null
+      },
+      "identityBindingPassed": true,
+      "status": "startup-unverified"
+    },
+    {
+      "id": "spinamp-151561e67741d5f18032",
+      "kind": "video",
+      "platform": "songaday.world",
+      "mime": {
+        "source": "https://api.spinamp.xyz/v3/graphql",
+        "sourceType": "spinamp-track-index",
+        "onchainVerified": false,
+        "checkedAt": "2026-11-08T04:42:23.073Z",
+        "sourcePage": "data/spinamp/processed-track-metadata/026.json.gz",
+        "sourcePageSha256": "5e52c3f91c4b8082cf0b87e953b210b19735ed9c40c3ce50d80d84f758efcd83",
+        "sourceRowSha256": "814f57a89fbba22c1324231d959d1aab89048bd9fd27a32b46bf5192d9435a26",
+        "mimeType": "video/mp4",
+        "mediaURI": "https://ipfs.filebase.io/ipfs/QmVHjFbGEqXfYuoPpJR4vmRacGM29KR5UenqbidJex8muB/1017",
+        "verification": "index-asserted; not decoded-media verification"
+      },
+      "selectedURL": "https://ipfs.filebase.io/ipfs/QmVHjFbGEqXfYuoPpJR4vmRacGM29KR5UenqbidJex8muB/1017",
+      "error": null,
+      "state": {
+        "time": 0.511631,
+        "width": 640,
+        "height": 480,
+        "duration": 163.9638,
+        "readyState": 4,
+        "decodedAudioBytes": 12984,
+        "decodedVideoFrames": 20,
+        "errorCode": null
+      },
+      "identityBindingPassed": true,
+      "status": "decoded-video"
+    },
+    {
+      "id": "spinamp-79f0190de59e371f46a5",
+      "kind": "video",
+      "platform": "Nina",
+      "mime": {
+        "source": "https://api.spinamp.xyz/v3/graphql",
+        "sourceType": "spinamp-track-index",
+        "onchainVerified": false,
+        "checkedAt": "2026-11-08T04:43:43.444Z",
+        "sourcePage": "data/spinamp/processed-track-metadata/087.json.gz",
+        "sourcePageSha256": "d281aec56ecfaa9b5223af92bfbc5f42f28715455c5d4666e4170e469434c17a",
+        "sourceRowSha256": "99bca47b331a45dba197d2c0f31efd2052f0b0eea753add1f0631bf02eca097d",
+        "mimeType": "video/mp4",
+        "mediaURI": "https://www.arweave.net/RPNpKcRSE3d-jUjswOsMTZFgKvykuj7esy2g9CW7R80?ext=mp3",
+        "verification": "index-asserted; not decoded-media verification"
+      },
+      "selectedURL": "https://www.arweave.net/RPNpKcRSE3d-jUjswOsMTZFgKvykuj7esy2g9CW7R80?ext=mp3",
+      "error": "page.waitForFunction: Timeout 20000ms exceeded.",
+      "state": {
+        "time": 16.281801,
+        "width": 0,
+        "height": 0,
+        "duration": 200.063129,
+        "readyState": 4,
+        "decodedAudioBytes": 533137,
+        "decodedVideoFrames": 0,
+        "errorCode": null
+      },
+      "identityBindingPassed": true,
+      "status": "decoded-audio-without-video"
+    },
+    {
+      "id": "spinamp-c9bfa66bd7f1e56dfef1",
+      "kind": "video",
+      "platform": "omgkirby",
+      "mime": {
+        "source": "https://api.spinamp.xyz/v3/graphql",
+        "sourceType": "spinamp-track-index",
+        "onchainVerified": false,
+        "checkedAt": "2026-11-08T04:43:01.193Z",
+        "sourcePage": "data/spinamp/processed-track-metadata/055.json.gz",
+        "sourcePageSha256": "c3bc89d6e894bd12782e633189cb796c6368b5a8eec00360ebf954202f2017e6",
+        "sourceRowSha256": "5e27747b8a67e50e55475745b9b4aaf8a7adaaf7805e898e223e94431f8ee405",
+        "mimeType": "video/mp4",
+        "mediaURI": "https://ipfs.filebase.io/ipfs/QmbFVHq7cSbjUMFn1iV3oAiV55vcATMgQEfFEVoZhKZBx7",
+        "verification": "index-asserted; not decoded-media verification"
+      },
+      "selectedURL": "https://ipfs.filebase.io/ipfs/QmbFVHq7cSbjUMFn1iV3oAiV55vcATMgQEfFEVoZhKZBx7",
+      "error": null,
+      "state": {
+        "time": 0.5053,
+        "width": 1000,
+        "height": 1000,
+        "duration": 127.4,
+        "readyState": 4,
+        "decodedAudioBytes": 12754,
+        "decodedVideoFrames": 10,
+        "errorCode": null
+      },
+      "identityBindingPassed": true,
+      "status": "decoded-video"
+    },
+    {
+      "id": "spinamp-5f978e438650473dae33",
+      "kind": "video",
+      "platform": "Zora",
+      "mime": {
+        "source": "https://api.spinamp.xyz/v3/graphql",
+        "sourceType": "spinamp-track-index",
+        "onchainVerified": false,
+        "checkedAt": "2026-11-08T04:41:49.136Z",
+        "sourcePage": "data/spinamp/processed-track-metadata/002.json.gz",
+        "sourcePageSha256": "515320116ae9549f4c14ddc9c73b3102b9338dad1cce2c8433bdf7408e294950",
+        "sourceRowSha256": "8b5eaa126c21ab7d1a5905d1445b4dacc007b722676f73de088aec74935e9931",
+        "mimeType": "video/x-m4v",
+        "mediaURI": "https://ipfs.filebase.io/ipfs/bafybeifld5pfxwv6fismggmsylgmelnlghx27oocv4fbhly5kxqu7vdcdy",
+        "verification": "index-asserted; not decoded-media verification"
+      },
+      "selectedURL": "https://ipfs.filebase.io/ipfs/bafybeifld5pfxwv6fismggmsylgmelnlghx27oocv4fbhly5kxqu7vdcdy",
+      "error": null,
+      "state": {
+        "time": 0.506725,
+        "width": 1080,
+        "height": 1080,
+        "duration": 36.633333,
+        "readyState": 4,
+        "decodedAudioBytes": 21062,
+        "decodedVideoFrames": 19,
+        "errorCode": null
+      },
+      "identityBindingPassed": true,
+      "status": "decoded-video"
+    }
+  ]
+}

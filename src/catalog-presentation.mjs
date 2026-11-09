@@ -75,6 +75,9 @@ export function indexRecord(record, evidence) {
       ...(record.musicMetadata?.collaborators || []),
       ...(record.musicMetadata?.credits || []),
       ...(record.archivedCredits || []),
+      ...(record.indexedTrackMetadata?.supportingArtist?.name
+        ? [record.indexedTrackMetadata.supportingArtist.name]
+        : []),
     ]),
   ];
   if (collaborators.length) result.searchCredits = collaborators.join(" ");

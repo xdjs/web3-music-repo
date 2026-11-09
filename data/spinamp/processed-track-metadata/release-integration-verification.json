@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-11-09T19:38:21.681067+00:00",
+  "sourceBase": "92961b4",
+  "captureSourceCommit": "457f515",
+  "overlaySourceCommit": "b5580f4",
+  "overlaySha256": "613a10f53da784665fa0bffe73619223edf11c9ce0f141f8cf4a10ea25f1c005",
+  "tests": {
+    "passed": 425,
+    "failed": 1,
+    "environmentFailure": "Existing static-video HTTP test cannot bind 127.0.0.1: listen EPERM"
+  },
+  "syntax": "passed",
+  "format": "passed",
+  "build": "passed including explicit-audio guard, compact BPM labels and fixed mobile artwork button dimensions",
+  "runtimeBundle": "passed; 52 required files and eight real handler response hashes match full checkout",
+  "browser": "Initial hosted range/metadata UI passed; three native video samples and Song A Day app video passed. Nina audio-only mismatch and missing-artwork button collapse corrected; targeted final-stage checks pending.",
+  "production": "not yet published",
+  "indexSha256": "93f2857d501798c766f18c4308a1947f3d3db6e46f17830e1e4b4c0a21cbf39e",
+  "indexBytes": 49113885
+}

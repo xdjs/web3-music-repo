@@ -42,33 +42,60 @@ export function musicFacts(record) {
       : tempos.length === 1
         ? tempos[0]
         : null;
+  const indexed = record.indexedMusicalFacts;
+  const indexedSource =
+    indexed?.source === "https://api.spinamp.xyz/v3/graphql" &&
+    indexed.sourceType === "spinamp-track-index";
+  const indexedBpm =
+    !metadataBpm &&
+    !original?.bpms?.length &&
+    !tempos.length &&
+    indexedSource &&
+    Number.isFinite(indexed.bpm) &&
+    indexed.bpm >= 20 &&
+    indexed.bpm <= 400
+      ? indexed.bpm
+      : null;
+  const originalKey =
+    original?.keys?.length === 1
+      ? original.keys[0]
+      : keys.length === 1
+        ? keys[0]
+        : null;
+  const indexedKey =
+    !originalKey &&
+    !original?.keys?.length &&
+    !keys.length &&
+    indexedSource &&
+    /^[A-G](?:#|b)? (?:major|minor)$/.test(indexed.key)
+      ? indexed.key
+      : null;
   const estimated =
     !metadataBpm &&
+    !indexedBpm &&
     record.audioAnalysis?.status === "estimated" &&
     Number.isFinite(record.audioAnalysis.bpm);
 
   return {
     bpm:
       metadataBpm ||
+      indexedBpm ||
       (estimated ? Math.round(record.audioAnalysis.bpm * 10) / 10 : null),
-    key:
-      original?.keys?.length === 1
-        ? original.keys[0]
-        : keys.length === 1
-          ? keys[0]
-          : null,
+    key: originalKey || indexedKey,
     source: estimated
-      ? "BPM estimated by Open BPM; tempo may be half or double. Key, when shown, comes from release metadata."
-      : ["spinamp-indexed-metadata", "spinamp-track-index"].includes(
-            original?.sourceType,
-          )
-        ? "Spinamp indexed metadata; not independently verified onchain"
-        : original?.sourceType === "official-public-release-page"
-          ? "Official release metadata; not audio-analysis estimates"
-          : original && (original.bpms.length || original.keys.length)
-            ? "Original token metadata; not audio-analysis estimates"
-            : titleLabels.length
-              ? "Release title or notes; not audio-analysis estimates"
-              : "Release notes; not audio-analysis estimates",
+      ? `BPM estimated by Open BPM; tempo may be half or double. ${indexedKey ? "Key from a Spinamp indexed description; not independently verified onchain." : "Key, when shown, comes from release metadata."}`
+      : indexedBpm || indexedKey
+        ? `Spinamp indexed description (${[indexedBpm ? "BPM" : null, indexedKey ? "key" : null].filter(Boolean).join(" and ")}); not independently verified onchain${metadataBpm || originalKey ? "; other shown values retain their existing release metadata source" : ""}`
+        : ["spinamp-indexed-metadata", "spinamp-track-index"].includes(
+              original?.sourceType,
+            )
+          ? "Spinamp indexed metadata; not independently verified onchain"
+          : original?.sourceType === "official-public-release-page"
+            ? "Official release metadata; not audio-analysis estimates"
+            : original && (original.bpms.length || original.keys.length)
+              ? "Original token metadata; not audio-analysis estimates"
+              : titleLabels.length
+                ? "Release title or notes; not audio-analysis estimates"
+                : "Release notes; not audio-analysis estimates",
   };
 }

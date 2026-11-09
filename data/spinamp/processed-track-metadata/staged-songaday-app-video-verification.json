@@ -1,0 +1,19 @@
+{
+  "id": "spinamp-151561e67741d5f18032",
+  "error": null,
+  "href": "#record/spinamp-151561e67741d5f18032",
+  "state": {
+    "src": "https://ipfs.filebase.io/ipfs/QmVHjFbGEqXfYuoPpJR4vmRacGM29KR5UenqbidJex8muB/1017",
+    "time": 0.518064,
+    "width": 640,
+    "height": 480,
+    "paused": false,
+    "decodedVideoFrames": 20,
+    "decodedAudioBytes": 12984
+  },
+  "expanded": true,
+  "checkedAt": "2026-11-09T19:36:01.940252+00:00",
+  "sourceCommit": "1795fe4094d39e891159db60d2a50c8cd42a3052",
+  "runner": "Firecrawl hosted Chromium",
+  "status": "passed"
+}

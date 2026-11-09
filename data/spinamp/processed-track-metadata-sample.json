@@ -1,0 +1,253 @@
+{
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "checkedAt": "2026-11-08T04:37:44.503Z",
+  "scope": "Bounded exact-ID sample of public processed-track metadata. No NFT/ownership verification and no changes to current release candidate.",
+  "query": "{t0:processedTrackById(id:\"base/0x00101c1dC67C60Fd7789A7cd94570198E264504c/0x8af999133dff61677b8c920b4d933862a7128dcb19d6a5209e50998f8dc7969f\"){id title artistId platformId platformInternalId description lossyAudioMimeType lossyArtworkMimeType chorusStart supportingArtist artistBySupportingArtist{id name}}\nt1:processedTrackById(id:\"ethereum/0x00397aDBCe6906Dfdd91f747ce2cb62AB8ab73ad\"){id title artistId platformId platformInternalId description lossyAudioMimeType lossyArtworkMimeType chorusStart supportingArtist artistBySupportingArtist{id name}}\nt2:processedTrackById(id:\"noizd/01347e4c-a4f1-4474-bf51-e6d5a5e65467\"){id title artistId platformId platformInternalId description lossyAudioMimeType lossyArtworkMimeType chorusStart supportingArtist artistBySupportingArtist{id name}}\nt3:processedTrackById(id:\"optimism/0x002120dD3442Ae6418aE6bee591beCc437ED7594/1\"){id title artistId platformId platformInternalId description lossyAudioMimeType lossyArtworkMimeType chorusStart supportingArtist artistBySupportingArtist{id name}}\nt4:processedTrackById(id:\"solana/3hAXChNB8cNqcrQ8UbcngTeaz4B5C18aENzSZyw4pV28\"){id title artistId platformId platformInternalId description lossyAudioMimeType lossyArtworkMimeType chorusStart supportingArtist artistBySupportingArtist{id name}}\nt5:processedTrackById(id:\"base/0x000b6547ef1194806354073FA27775c4e3D6ACc4/0x4475fa059363648cf0e331c1d7a4aa19bdc19884418d9d563628063485c6d6a9\"){id title artistId platformId platformInternalId description lossyAudioMimeType lossyArtworkMimeType chorusStart supportingArtist artistBySupportingArtist{id name}}\nt6:processedTrackById(id:\"ethereum/0x6E6650fD4949fddF0BACC45c06ae3437f61acb1b/omgkirby-x-channel-tres-1\"){id title artistId platformId platformInternalId description lossyAudioMimeType lossyArtworkMimeType chorusStart supportingArtist artistBySupportingArtist{id name}}}",
+  "expected": [
+    {
+      "id": "base/0x00101c1dC67C60Fd7789A7cd94570198E264504c/0x8af999133dff61677b8c920b4d933862a7128dcb19d6a5209e50998f8dc7969f",
+      "title": "Iron Beats",
+      "artistId": "ethereum/0xDD7026ACB3EE50e3d7F8B6668b3c362F839358dA",
+      "platformId": "sound",
+      "platformInternalId": "base/0x00101c1dC67C60Fd7789A7cd94570198E264504c/0x8af999133dff61677b8c920b4d933862a7128dcb19d6a5209e50998f8dc7969f"
+    },
+    {
+      "id": "ethereum/0x00397aDBCe6906Dfdd91f747ce2cb62AB8ab73ad",
+      "title": "Sylvanian Families’ Castle Nature Invasion",
+      "artistId": "ethereum/0x6f1c6600E72f72dcF5C1dB3276C264c8d4eCf0Bf",
+      "platformId": "zora",
+      "platformInternalId": "0x00397aDBCe6906Dfdd91f747ce2cb62AB8ab73ad"
+    },
+    {
+      "id": "noizd/01347e4c-a4f1-4474-bf51-e6d5a5e65467",
+      "title": "Legit Ft. ChimiChanga",
+      "artistId": "noizd/1c54d4ac-fadd-4b78-b72d-5248cca7c7c5",
+      "platformId": "noizd",
+      "platformInternalId": "01347e4c-a4f1-4474-bf51-e6d5a5e65467"
+    },
+    {
+      "id": "optimism/0x002120dD3442Ae6418aE6bee591beCc437ED7594/1",
+      "title": "Rear View",
+      "artistId": "ethereum/0xE29be5C1903bd94b102ABb6AB6B3A3070f5142f9",
+      "platformId": "spinamp",
+      "platformInternalId": "optimism/0x002120dD3442Ae6418aE6bee591beCc437ED7594"
+    },
+    {
+      "id": "solana/3hAXChNB8cNqcrQ8UbcngTeaz4B5C18aENzSZyw4pV28",
+      "title": "Are You Good? ",
+      "artistId": "4TJ2S6BJKRMPBF5c3J7rWc5FuznyYPCb8a7ZoRL4Bk5v",
+      "platformId": "nina",
+      "platformInternalId": "3hAXChNB8cNqcrQ8UbcngTeaz4B5C18aENzSZyw4pV28"
+    },
+    {
+      "id": "base/0x000b6547ef1194806354073FA27775c4e3D6ACc4/0x4475fa059363648cf0e331c1d7a4aa19bdc19884418d9d563628063485c6d6a9",
+      "title": "DIGITAL DAYDREAM (alt ver.)",
+      "artistId": "ethereum/0xcD09eA78E229F93692c9bbc10B2B742899D9Dee7",
+      "platformId": "sound",
+      "platformInternalId": "base/0x000b6547ef1194806354073FA27775c4e3D6ACc4/0x4475fa059363648cf0e331c1d7a4aa19bdc19884418d9d563628063485c6d6a9"
+    },
+    {
+      "id": "ethereum/0x6E6650fD4949fddF0BACC45c06ae3437f61acb1b/omgkirby-x-channel-tres-1",
+      "title": "omgkirby x Channel Tres #1",
+      "artistId": "ethereum/0x480711809d2c4622Fe3F7Ef09Ee6A7FE6b8649F1",
+      "platformId": "omgkirby",
+      "platformInternalId": "ethereum/0x6E6650fD4949fddF0BACC45c06ae3437f61acb1b/omgkirby-x-channel-tres-1"
+    }
+  ],
+  "httpStatus": 200,
+  "body": {
+    "data": {
+      "t0": {
+        "id": "base/0x00101c1dC67C60Fd7789A7cd94570198E264504c/0x8af999133dff61677b8c920b4d933862a7128dcb19d6a5209e50998f8dc7969f",
+        "title": "Iron Beats",
+        "artistId": "ethereum/0xDD7026ACB3EE50e3d7F8B6668b3c362F839358dA",
+        "platformId": "sound",
+        "platformInternalId": "base/0x00101c1dC67C60Fd7789A7cd94570198E264504c/0x8af999133dff61677b8c920b4d933862a7128dcb19d6a5209e50998f8dc7969f",
+        "description": "Heavy industrial beats to power your weekend 🖤",
+        "lossyAudioMimeType": "audio/wav",
+        "lossyArtworkMimeType": "image/jpeg",
+        "chorusStart": "0.00",
+        "supportingArtist": null,
+        "artistBySupportingArtist": null
+      },
+      "t1": {
+        "id": "ethereum/0x00397aDBCe6906Dfdd91f747ce2cb62AB8ab73ad",
+        "title": "Sylvanian Families’ Castle Nature Invasion",
+        "artistId": "ethereum/0x6f1c6600E72f72dcF5C1dB3276C264c8d4eCf0Bf",
+        "platformId": "zora",
+        "platformInternalId": "0x00397aDBCe6906Dfdd91f747ce2cb62AB8ab73ad",
+        "description": "⋆",
+        "lossyAudioMimeType": "video/mp4",
+        "lossyArtworkMimeType": "image/png",
+        "chorusStart": "0.00",
+        "supportingArtist": null,
+        "artistBySupportingArtist": null
+      },
+      "t2": {
+        "id": "noizd/01347e4c-a4f1-4474-bf51-e6d5a5e65467",
+        "title": "Legit Ft. ChimiChanga",
+        "artistId": "noizd/1c54d4ac-fadd-4b78-b72d-5248cca7c7c5",
+        "platformId": "noizd",
+        "platformInternalId": "01347e4c-a4f1-4474-bf51-e6d5a5e65467",
+        "description": "Ya know when it's a Jinx and ChimiChanga track we gon eat 🔥🔥",
+        "lossyAudioMimeType": "audio/mpeg",
+        "lossyArtworkMimeType": "image/png",
+        "chorusStart": "125.51",
+        "supportingArtist": null,
+        "artistBySupportingArtist": null
+      },
+      "t3": {
+        "id": "optimism/0x002120dD3442Ae6418aE6bee591beCc437ED7594/1",
+        "title": "Rear View",
+        "artistId": "ethereum/0xE29be5C1903bd94b102ABb6AB6B3A3070f5142f9",
+        "platformId": "spinamp",
+        "platformInternalId": "optimism/0x002120dD3442Ae6418aE6bee591beCc437ED7594",
+        "description": "<p>Rear View</p><p>Written &amp; Produced by Metawoofer</p>",
+        "lossyAudioMimeType": "audio/wav",
+        "lossyArtworkMimeType": "image/jpeg",
+        "chorusStart": "0.00",
+        "supportingArtist": null,
+        "artistBySupportingArtist": null
+      },
+      "t4": {
+        "id": "solana/3hAXChNB8cNqcrQ8UbcngTeaz4B5C18aENzSZyw4pV28",
+        "title": "Are You Good? ",
+        "artistId": "4TJ2S6BJKRMPBF5c3J7rWc5FuznyYPCb8a7ZoRL4Bk5v",
+        "platformId": "nina",
+        "platformInternalId": "3hAXChNB8cNqcrQ8UbcngTeaz4B5C18aENzSZyw4pV28",
+        "description": "",
+        "lossyAudioMimeType": "audio/mpeg",
+        "lossyArtworkMimeType": "image/png",
+        "chorusStart": "0.00",
+        "supportingArtist": null,
+        "artistBySupportingArtist": null
+      },
+      "t5": {
+        "id": "base/0x000b6547ef1194806354073FA27775c4e3D6ACc4/0x4475fa059363648cf0e331c1d7a4aa19bdc19884418d9d563628063485c6d6a9",
+        "title": "DIGITAL DAYDREAM (alt ver.)",
+        "artistId": "ethereum/0xcD09eA78E229F93692c9bbc10B2B742899D9Dee7",
+        "platformId": "sound",
+        "platformInternalId": "base/0x000b6547ef1194806354073FA27775c4e3D6ACc4/0x4475fa059363648cf0e331c1d7a4aa19bdc19884418d9d563628063485c6d6a9",
+        "description": "This is an alt version of my song 'DIGITAL DAYDREAM'. ",
+        "lossyAudioMimeType": "audio/x-wav",
+        "lossyArtworkMimeType": "image/jpeg",
+        "chorusStart": "58.69",
+        "supportingArtist": null,
+        "artistBySupportingArtist": null
+      },
+      "t6": {
+        "id": "ethereum/0x6E6650fD4949fddF0BACC45c06ae3437f61acb1b/omgkirby-x-channel-tres-1",
+        "title": "omgkirby x Channel Tres #1",
+        "artistId": "ethereum/0x480711809d2c4622Fe3F7Ef09Ee6A7FE6b8649F1",
+        "platformId": "omgkirby",
+        "platformInternalId": "ethereum/0x6E6650fD4949fddF0BACC45c06ae3437f61acb1b/omgkirby-x-channel-tres-1",
+        "description": "Presenting the latest drop of omgkirby: the omgkirby x Channel Tres collection consists of 5550 unique songs, each with its own BPM and key. Ownership of the NFT comes with complete publishing and masters rights for the song - this includes uploading it to DSPs (Spotify, Apple Music, Tidal, etc.), using it for your own content (podcast intro, YouTube content, etc.) or by any other means of exploiting the track. Each song comes with vocals and production by Channel Tres.",
+        "lossyAudioMimeType": "video/mp4",
+        "lossyArtworkMimeType": "image/png",
+        "chorusStart": "71.63",
+        "supportingArtist": null,
+        "artistBySupportingArtist": null
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "base/0x00101c1dC67C60Fd7789A7cd94570198E264504c/0x8af999133dff61677b8c920b4d933862a7128dcb19d6a5209e50998f8dc7969f",
+      "platformId": "sound",
+      "snapshotMatch": true,
+      "mismatches": [],
+      "descriptionCharacters": 47,
+      "lossyAudioMimeType": "audio/wav",
+      "lossyArtworkMimeType": "image/jpeg",
+      "chorusStart": "0.00",
+      "supportingArtist": null,
+      "supportingProfilePresent": false,
+      "explicitBpm": [],
+      "explicitKeys": []
+    },
+    {
+      "id": "ethereum/0x00397aDBCe6906Dfdd91f747ce2cb62AB8ab73ad",
+      "platformId": "zora",
+      "snapshotMatch": true,
+      "mismatches": [],
+      "descriptionCharacters": 1,
+      "lossyAudioMimeType": "video/mp4",
+      "lossyArtworkMimeType": "image/png",
+      "chorusStart": "0.00",
+      "supportingArtist": null,
+      "supportingProfilePresent": false,
+      "explicitBpm": [],
+      "explicitKeys": []
+    },
+    {
+      "id": "noizd/01347e4c-a4f1-4474-bf51-e6d5a5e65467",
+      "platformId": "noizd",
+      "snapshotMatch": true,
+      "mismatches": [],
+      "descriptionCharacters": 62,
+      "lossyAudioMimeType": "audio/mpeg",
+      "lossyArtworkMimeType": "image/png",
+      "chorusStart": "125.51",
+      "supportingArtist": null,
+      "supportingProfilePresent": false,
+      "explicitBpm": [],
+      "explicitKeys": []
+    },
+    {
+      "id": "optimism/0x002120dD3442Ae6418aE6bee591beCc437ED7594/1",
+      "platformId": "spinamp",
+      "snapshotMatch": true,
+      "mismatches": [],
+      "descriptionCharacters": 59,
+      "lossyAudioMimeType": "audio/wav",
+      "lossyArtworkMimeType": "image/jpeg",
+      "chorusStart": "0.00",
+      "supportingArtist": null,
+      "supportingProfilePresent": false,
+      "explicitBpm": [],
+      "explicitKeys": []
+    },
+    {
+      "id": "solana/3hAXChNB8cNqcrQ8UbcngTeaz4B5C18aENzSZyw4pV28",
+      "platformId": "nina",
+      "snapshotMatch": true,
+      "mismatches": [],
+      "descriptionCharacters": 0,
+      "lossyAudioMimeType": "audio/mpeg",
+      "lossyArtworkMimeType": "image/png",
+      "chorusStart": "0.00",
+      "supportingArtist": null,
+      "supportingProfilePresent": false,
+      "explicitBpm": [],
+      "explicitKeys": []
+    },
+    {
+      "id": "base/0x000b6547ef1194806354073FA27775c4e3D6ACc4/0x4475fa059363648cf0e331c1d7a4aa19bdc19884418d9d563628063485c6d6a9",
+      "platformId": "sound",
+      "snapshotMatch": true,
+      "mismatches": [],
+      "descriptionCharacters": 54,
+      "lossyAudioMimeType": "audio/x-wav",
+      "lossyArtworkMimeType": "image/jpeg",
+      "chorusStart": "58.69",
+      "supportingArtist": null,
+      "supportingProfilePresent": false,
+      "explicitBpm": [],
+      "explicitKeys": []
+    },
+    {
+      "id": "ethereum/0x6E6650fD4949fddF0BACC45c06ae3437f61acb1b/omgkirby-x-channel-tres-1",
+      "platformId": "omgkirby",
+      "snapshotMatch": true,
+      "mismatches": [],
+      "descriptionCharacters": 474,
+      "lossyAudioMimeType": "video/mp4",
+      "lossyArtworkMimeType": "image/png",
+      "chorusStart": "71.63",
+      "supportingArtist": null,
+      "supportingProfilePresent": false,
+      "explicitBpm": [],
+      "explicitKeys": []
+    }
+  ]
+}

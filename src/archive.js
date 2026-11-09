@@ -1,3 +1,10 @@
+import {
+  normalizeBpmRange,
+  filterAndSortBpm,
+  bpmControlsActive,
+  bpmTag,
+} from "./bpm-filter.mjs";
+import { renderIndexedTrackMetadata } from "./indexed-track-metadata-ui.mjs";
 import { mountStoryExport } from "./story-export.mjs";
 import {
   createAutoplaySession,
@@ -105,7 +112,14 @@ let catalog = [],
   archive = null,
   filter = "All",
   myCollectionOnly = false,
-  facets = { network: "", media: "", sort: "archive", collection: "" },
+  facets = {
+    network: "",
+    media: "",
+    sort: "archive",
+    collection: "",
+    bpmMin: "",
+    bpmMax: "",
+  },
   query = "",
   limit = 40,
   current = null,
@@ -300,8 +314,9 @@ function img(r, cls = "") {
 function addToPlaylistButton(r) {
   return `<button class="icon playlist-add" data-add-playlist="${esc(r.id)}" aria-label="Add ${esc(cleanTitle(r.title))} to playlist" title="Add to playlist">${navIcon("playlist-add")}</button>`;
 }
-function card(r) {
-  return `<article class="record-card"><div class="cover"><a href="${recordLink(r)}" aria-label="Open ${esc(r.title)}">${img(r)}</a><span class="cover-badge">${esc(platform(r))}${isIndexedRelease(r) ? " · Index only" : ""}${r.mediaScope === "clip" ? " · Clip" : ""}</span>${r.kind !== "artwork" ? `<button class="cover-play" data-play="${esc(r.id)}" aria-label="Play ${esc(r.title)}">▶</button>` : ""}</div><h3><a href="${recordLink(r)}">${esc(cleanTitle(r.title))}</a></h3><div class="card-meta"><a href="#artist/${esc(artistId(r))}">${esc(r.artist)}</a><div class="card-actions">${r.kind !== "artwork" ? addToPlaylistButton(r) : ""}<button class="icon heart ${likes.has(r.id) ? "active" : ""}" data-like="${esc(r.id)}" aria-label="${likes.has(r.id) ? "Unlike" : "Like"} ${esc(r.title)}">${likes.has(r.id) ? "♥" : "♡"}</button></div></div></article>`;
+function card(r, options = {}) {
+  const tempo = options?.showBpm === true ? bpmTag(r) : null;
+  return `<article class="record-card"><div class="cover"><a href="${recordLink(r)}" aria-label="Open ${esc(r.title)}">${img(r)}</a><span class="cover-badge">${esc(platform(r))}${isIndexedRelease(r) ? " · Index only" : ""}${r.mediaScope === "clip" ? " · Clip" : ""}</span>${r.kind !== "artwork" ? `<button class="cover-play" data-play="${esc(r.id)}" aria-label="Play ${esc(r.title)}">▶</button>` : ""}</div><h3><a href="${recordLink(r)}">${esc(cleanTitle(r.title))}</a></h3>${tempo ? `<span class="tag card-bpm" title="${esc(tempo.source)}" aria-label="${esc(tempo.text + ". " + tempo.source)}">${esc(tempo.text)}</span>` : ""}<div class="card-meta"><a href="#artist/${esc(artistId(r))}">${esc(r.artist)}</a><div class="card-actions">${r.kind !== "artwork" ? addToPlaylistButton(r) : ""}<button class="icon heart ${likes.has(r.id) ? "active" : ""}" data-like="${esc(r.id)}" aria-label="${likes.has(r.id) ? "Unlike" : "Like"} ${esc(r.title)}">${likes.has(r.id) ? "♥" : "♡"}</button></div></div></article>`;
 }
 function artistRecords(id) {
   return recordsByPerson.get(id) || [];
@@ -400,9 +415,13 @@ function explore(onlyLikes = false) {
         .includes(q),
     );
   }
+  list = filterAndSortBpm(list, facets);
   if (["oldest", "newest"].includes(facets.sort))
     list.sort((a, b) => compareReleaseDates(a, b, facets.sort));
-  else if (facets.sort !== "archive")
+  else if (
+    facets.sort !== "archive" &&
+    !["bpm-asc", "bpm-desc"].includes(facets.sort)
+  )
     list.sort(
       (a, b) =>
         (facets.sort === "artist"
@@ -427,8 +446,12 @@ function explore(onlyLikes = false) {
     facets.network ||
     facets.media ||
     facets.collection ||
+    facets.bpmMin ||
+    facets.bpmMax ||
     facets.sort !== "archive";
-  const controls = `<div class="filter-toolbar">${select("collection", "Collection", [["", "All collections"], ...[...new Set(catalog.map((r) => r.collection).filter(Boolean))].sort().map((c) => [c, c])])}${select("network", "Network", [["", "All networks"], ...Object.entries(chainNames).filter(([id]) => catalog.some((r) => String(r.chainId) === id))])}${select(
+  const tempoInput = (name, label) =>
+    `<label class="filter-control"><span>${label}</span><input type="number" inputmode="decimal" min="20" max="400" step="any" placeholder="Any" aria-label="${label}" data-facet="${name}" value="${esc(facets[name])}"></label>`;
+  const controls = `<div class="filter-toolbar explore-filter-toolbar">${select("collection", "Collection", [["", "All collections"], ...[...new Set(catalog.map((r) => r.collection).filter(Boolean))].sort().map((c) => [c, c])])}${select("network", "Network", [["", "All networks"], ...Object.entries(chainNames).filter(([id]) => catalog.some((r) => String(r.chainId) === id))])}${select(
     "media",
     "Media",
     [
@@ -442,8 +465,41 @@ function explore(onlyLikes = false) {
     ["oldest", "Oldest first"],
     ["title", "Title A–Z"],
     ["artist", "Artist A–Z"],
-  ])}</div>${activeFilters ? '<div class="filter-reset"><button class="text-button" data-clear-filters>Reset filters</button></div>' : ""}`;
-  return `<div class="intro"><div><h1>${onlyLikes ? "Liked sounds" : query ? "Search the archive" : "Explore the archive"}</h1><p>${onlyLikes ? "Your selections, saved in this browser." : query ? `Results for “${esc(query)}”` : "Find songs, artists, and collections from the web3 music era"}</p></div></div>${!onlyLikes ? `<div data-collector-search>${collectorSearchMarkup(collectorSearch.snapshot(), esc)}</div>` : ""}<div class="filters">${["All", "Sound", "Catalog", "Zora", "Mint Songs", "Supercollector", "Nina", "Other platforms"].map((f) => `<button class="chip ${filter === f ? "active" : ""}" data-filter="${f}" aria-pressed="${filter === f}">${f}</button>`).join("")}${!onlyLikes ? `<button class="chip ${myCollectionOnly ? "active" : ""}" data-owned-filter aria-pressed="${myCollectionOnly}">My collection</button>` : ""}<span class="results">${list.length.toLocaleString()} records</span></div>${ownedNotice}${controls}${["oldest", "newest"].includes(facets.sort) ? '<p class="sort-date-note">Sorted by indexed release or token dates. Undated recordings appear last.</p>' : ""}${list.length ? `<div class="cards library-grid">${list.slice(0, limit).map(card).join("")}</div>${list.length > limit ? '<button class="outline-button more" data-more>Load more recordings</button>' : ""}` : `<div class="empty"><h2>${onlyLikes ? "Make yourself a collection." : "No recordings found."}</h2>${onlyLikes ? "Tap the heart on any recording to keep it here." : "Try another artist, title, or platform."}</div>`}`;
+    ["bpm-asc", "BPM: low to high"],
+    ["bpm-desc", "BPM: high to low"],
+  ])}<div class="bpm-range">${tempoInput("bpmMin", "Min BPM")}${tempoInput("bpmMax", "Max BPM")}</div></div><div data-filter-reset>${activeFilters ? '<div class="filter-reset"><button class="text-button" data-clear-filters>Reset filters</button></div>' : ""}</div>`;
+  return `<div class="intro"><div><h1>${onlyLikes ? "Liked sounds" : query ? "Search the archive" : "Explore the archive"}</h1><p>${onlyLikes ? "Your selections, saved in this browser." : query ? `Results for “${esc(query)}”` : "Find songs, artists, and collections from the web3 music era"}</p></div></div>${!onlyLikes ? `<div data-collector-search>${collectorSearchMarkup(collectorSearch.snapshot(), esc)}</div>` : ""}<div class="filters">${["All", "Sound", "Catalog", "Zora", "Mint Songs", "Supercollector", "Nina", "Other platforms"].map((f) => `<button class="chip ${filter === f ? "active" : ""}" data-filter="${f}" aria-pressed="${filter === f}">${f}</button>`).join("")}${!onlyLikes ? `<button class="chip ${myCollectionOnly ? "active" : ""}" data-owned-filter aria-pressed="${myCollectionOnly}">My collection</button>` : ""}<span class="results">${list.length.toLocaleString()} records</span></div>${ownedNotice}${controls}<div data-explore-results>${bpmControlsActive(facets) ? '<p class="sort-date-note" data-bpm-note>~ marks an estimated tempo. Ranges exclude unknown BPM; tempo sorting places unknowns last.</p>' : ""}${["oldest", "newest"].includes(facets.sort) ? '<p class="sort-date-note">Sorted by indexed release or token dates. Undated recordings appear last.</p>' : ""}${
+    list.length
+      ? `<div class="cards library-grid">${list
+          .slice(0, limit)
+          .map((r) => card(r, { showBpm: bpmControlsActive(facets) }))
+          .join(
+            "",
+          )}</div>${list.length > limit ? '<button class="outline-button more" data-more>Load more recordings</button>' : ""}`
+      : `<div class="empty"><h2>${onlyLikes ? "Make yourself a collection." : "No recordings found."}</h2>${onlyLikes ? "Tap the heart on any recording to keep it here." : "Try another artist, title, or platform."}</div>`
+  }</div>`;
+}
+function refreshExploreBpmResults() {
+  // Keep the controls mounted: change fires during blur, before click/Tab
+  // transfers focus. Replacing them would discard that native interaction.
+  const results = document.querySelector("[data-explore-results]");
+  if (!results) return;
+  const next = document.createElement("template");
+  next.innerHTML = explore(location.hash.split("/")[0] === "#liked");
+  results.replaceChildren(
+    ...next.content.querySelector("[data-explore-results]").childNodes,
+  );
+  document.querySelector(".filters .results").textContent =
+    next.content.querySelector(".filters .results").textContent;
+  const reset = document.querySelector("[data-filter-reset]");
+  const nextReset = next.content.querySelector("[data-filter-reset]");
+  if (!!reset.firstElementChild !== !!nextReset.firstElementChild)
+    reset.replaceChildren(...nextReset.childNodes);
+  for (const name of ["bpmMin", "bpmMax"])
+    document.querySelector(`[data-facet="${name}"]`).value = facets[name];
+  renderVersion++;
+  preloader.cancel();
+  requestAnimationFrame(warmVisibleTrack);
 }
 function artists() {
   const ids = [
@@ -691,7 +747,7 @@ function recordPage(id) {
     )
     .join(
       "",
-    )}</div><div role="tabpanel">${!fullRecordIds.has(r.id) ? recordDetailsStatus(r) : tab === "comments" ? songComments(r) : tab === "proof" ? proof(r) : tab === "collectors" ? (isIndexedRelease(r) || r.standard === "ERC20" || isSolanaAsset(r) ? collectors.panel(r, true) : `${collectors.panel(r, true)}<details class="ownership-tools"><summary>Additional ownership tools</summary><div class="reading"><h2>Who holds this edition?</h2><p>Read the owner of token ${r.tokenId} directly from ${isIndexedRelease(r) ? "Mint unconfirmed" : chainNames[r.chainId]}. This is the current holder of one edition, not a complete collector list or proof of who originally minted it.</p></div><div id="owner-result"><button class="outline-button" data-owner="${r.id}">Read owner from the blockchain ↗</button></div><div class="reading"><h2>Contract holders</h2><p>Current balances reported by the chain indexer. A contract may contain multiple songs; these holders are not automatically collectors of this particular track. ENS labels are current indexer data.</p></div><button class="outline-button" data-holders="${r.id}">Load indexed holders</button><div id="holders-result"></div><div class="notice">Full mint-history reconstruction is still in progress. Today’s owner is not necessarily the original supporter.</div></details>`) : `<div class="reading"><h2>Behind the music</h2>${musicFactBadges(r)}${(r.musicMetadata?.details?.Description || []).map((text) => `<p class="original-release-notes">${esc(text)}</p>`).join("")}${r.credits?.length ? `<h2>Credits</h2>${r.credits.map((c) => `<p><a href="#artist/${c.personId}">${esc(person(c.personId).name)}</a> — ${esc(c.role)}${c.source ? ` · <a class="link-note" href="${esc(c.source)}" target="_blank" rel="noopener noreferrer">Credit source ↗</a>` : ""}</p>`).join("")}` : ""}${metadataCredits(r)}${r.archivedCredits?.length ? `<h2>Credits preserved from Sound</h2>${r.archivedCredits.map((credit) => `<p>${esc(credit)}</p>`).join("")}<a class="link-note" href="${esc(r.archivedCreditsSource)}" target="_blank" rel="noopener noreferrer">Archived credit source ↗</a>` : ""}${r.releaseDate ? `<p class="release-date">${esc(r.releaseDate.label)} · <time datetime="${esc(r.releaseDate.date)}">${esc(date(r.releaseDate.date))}</time>${r.releaseDate.source ? ` · <a class="link-note" href="${esc(r.releaseDate.source)}" target="_blank" rel="noopener noreferrer">Date source ↗</a>` : ""}</p>` : ""}${songRevenue(r)}${isIndexedRelease(r) ? "" : renderRoyaltyPayments(r, esc)}<h2>Preservation notes</h2><p>${isIndexedRelease(r) ? "This recording survives in Spinamp’s music index. Its NFT identity is unconfirmed; the indexed audio, artist attribution, and release page do not establish ownership or mint history." : isSolanaAsset(r) ? "This recording is linked to a case-sensitive Solana mint in the preserved index. The Nina release account is a separate address. Listening references do not establish current ownership or complete platform coverage." : r.standard === "ERC20" ? "This media was referenced by a Zora content coin. Coin balances are not NFT edition counts; the recovered clip is not the complete song." : "This archive holds a selected token reference for this work. A single recording can have many editions, and a contract can hold multiple works. The catalog is a starting point for recovery, not a claim of completeness."}</p>${r.originalRelease ? `<p><a class="error-link" href="https://web.archive.org/web/*/${esc(r.originalRelease)}" target="_blank" rel="noopener noreferrer">Find the original release in the Internet Archive ↗</a></p>` : ""}<p><a class="error-link" href="${recordLink(r)}?tab=proof">${isIndexedRelease(r) ? "Inspect the preserved index and audio references" : isSolanaAsset(r) ? "Inspect the mint and preserved storage references" : "Inspect the contract and original storage addresses"} ↗</a></p></div>${collectors.panel(r, true)}`}</div>`;
+    )}</div><div role="tabpanel">${!fullRecordIds.has(r.id) ? recordDetailsStatus(r) : tab === "comments" ? songComments(r) : tab === "proof" ? proof(r) : tab === "collectors" ? (isIndexedRelease(r) || r.standard === "ERC20" || isSolanaAsset(r) ? collectors.panel(r, true) : `${collectors.panel(r, true)}<details class="ownership-tools"><summary>Additional ownership tools</summary><div class="reading"><h2>Who holds this edition?</h2><p>Read the owner of token ${r.tokenId} directly from ${isIndexedRelease(r) ? "Mint unconfirmed" : chainNames[r.chainId]}. This is the current holder of one edition, not a complete collector list or proof of who originally minted it.</p></div><div id="owner-result"><button class="outline-button" data-owner="${r.id}">Read owner from the blockchain ↗</button></div><div class="reading"><h2>Contract holders</h2><p>Current balances reported by the chain indexer. A contract may contain multiple songs; these holders are not automatically collectors of this particular track. ENS labels are current indexer data.</p></div><button class="outline-button" data-holders="${r.id}">Load indexed holders</button><div id="holders-result"></div><div class="notice">Full mint-history reconstruction is still in progress. Today’s owner is not necessarily the original supporter.</div></details>`) : `<div class="reading"><h2>Behind the music</h2>${musicFactBadges(r)}${(r.musicMetadata?.details?.Description || []).map((text) => `<p class="original-release-notes">${esc(text)}</p>`).join("")}${r.credits?.length ? `<h2>Credits</h2>${r.credits.map((c) => `<p><a href="#artist/${c.personId}">${esc(person(c.personId).name)}</a> — ${esc(c.role)}${c.source ? ` · <a class="link-note" href="${esc(c.source)}" target="_blank" rel="noopener noreferrer">Credit source ↗</a>` : ""}</p>`).join("")}` : ""}${metadataCredits(r)}${renderIndexedTrackMetadata(r, esc)}${r.archivedCredits?.length ? `<h2>Credits preserved from Sound</h2>${r.archivedCredits.map((credit) => `<p>${esc(credit)}</p>`).join("")}<a class="link-note" href="${esc(r.archivedCreditsSource)}" target="_blank" rel="noopener noreferrer">Archived credit source ↗</a>` : ""}${r.releaseDate ? `<p class="release-date">${esc(r.releaseDate.label)} · <time datetime="${esc(r.releaseDate.date)}">${esc(date(r.releaseDate.date))}</time>${r.releaseDate.source ? ` · <a class="link-note" href="${esc(r.releaseDate.source)}" target="_blank" rel="noopener noreferrer">Date source ↗</a>` : ""}</p>` : ""}${songRevenue(r)}${isIndexedRelease(r) ? "" : renderRoyaltyPayments(r, esc)}<h2>Preservation notes</h2><p>${isIndexedRelease(r) ? "This recording survives in Spinamp’s music index. Its NFT identity is unconfirmed; the indexed audio, artist attribution, and release page do not establish ownership or mint history." : isSolanaAsset(r) ? "This recording is linked to a case-sensitive Solana mint in the preserved index. The Nina release account is a separate address. Listening references do not establish current ownership or complete platform coverage." : r.standard === "ERC20" ? "This media was referenced by a Zora content coin. Coin balances are not NFT edition counts; the recovered clip is not the complete song." : "This archive holds a selected token reference for this work. A single recording can have many editions, and a contract can hold multiple works. The catalog is a starting point for recovery, not a claim of completeness."}</p>${r.originalRelease ? `<p><a class="error-link" href="https://web.archive.org/web/*/${esc(r.originalRelease)}" target="_blank" rel="noopener noreferrer">Find the original release in the Internet Archive ↗</a></p>` : ""}<p><a class="error-link" href="${recordLink(r)}?tab=proof">${isIndexedRelease(r) ? "Inspect the preserved index and audio references" : isSolanaAsset(r) ? "Inspect the mint and preserved storage references" : "Inspect the contract and original storage addresses"} ↗</a></p></div>${collectors.panel(r, true)}`}</div>`;
 }
 function catalogCoverageView() {
   const c = coverage?.catalogWorks;
@@ -1291,7 +1347,14 @@ document.addEventListener("click", async (e) => {
     myCollectionOnly = false;
     walletLibrary.stopOwned();
     filter = "All";
-    facets = { network: "", media: "", sort: "archive", collection: "" };
+    facets = {
+      network: "",
+      media: "",
+      sort: "archive",
+      collection: "",
+      bpmMin: "",
+      bpmMax: "",
+    };
     explorePreferences.reset();
     query = "";
     $("#search").value = "";
@@ -1458,14 +1521,42 @@ document.addEventListener(
   },
   true,
 );
+document.addEventListener("keydown", (e) => {
+  if (
+    e.key === "Enter" &&
+    ["bpmMin", "bpmMax"].includes(e.target.dataset?.facet)
+  ) {
+    e.preventDefault();
+    e.target.dispatchEvent(new Event("change", { bubbles: true }));
+  }
+});
 document.addEventListener("change", (e) => {
   const name = e.target.dataset.facet;
   if (!Object.hasOwn(facets, name)) return;
-  facets[name] = e.target.value;
+  if (name === "bpmMin" || name === "bpmMax") {
+    const range = e.target.validity.badInput
+      ? null
+      : normalizeBpmRange(
+          name === "bpmMin" ? e.target.value : facets.bpmMin,
+          name === "bpmMax" ? e.target.value : facets.bpmMax,
+        );
+    if (!range) {
+      e.target.value = facets[name];
+      notify("Enter a BPM between 20 and 400, or leave it blank.");
+      return;
+    }
+    facets.bpmMin = range.bpmMin;
+    facets.bpmMax = range.bpmMax;
+    if (range.reordered)
+      notify(`BPM range reordered: ${range.bpmMin}–${range.bpmMax}.`);
+  } else facets[name] = e.target.value;
   explorePreferences.save({ platform: filter, ...facets });
   limit = 40;
-  route();
-  document.querySelector(`[data-facet="${name}"]`)?.focus();
+  if (name === "bpmMin" || name === "bpmMax") refreshExploreBpmResults();
+  else {
+    route();
+    document.querySelector(`[data-facet="${name}"]`)?.focus();
+  }
 });
 $("#search").addEventListener("input", (e) => {
   query = e.target.value;

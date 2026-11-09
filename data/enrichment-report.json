@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-11-08T04:36:24.165Z",
+  "checkedAt": "2026-11-09T19:12:58.940Z",
   "totalRecords": 50633,
   "scope": "Supplied metadata includes original documents, publisher snapshots, official release pages and explicitly attributed indexer data. Metadata read is not independent chain or playback verification.",
-  "suppliedBpm": 7996,
-  "suppliedKey": 7525,
+  "suppliedBpm": 8008,
+  "suppliedKey": 7526,
   "lyricsTracks": 2102,
   "metadataSources": {
     "original-document-or-publisher-snapshot": 9209,
@@ -51,8 +51,8 @@
   "byPlatform": {
     "Sound": {
       "records": 18091,
-      "suppliedBpm": 2706,
-      "suppliedKey": 2330,
+      "suppliedBpm": 2708,
+      "suppliedKey": 2331,
       "credits": 0,
       "metadataRead": 9833,
       "metadataUnresolved": 8258,
@@ -112,7 +112,7 @@
     },
     "Zora": {
       "records": 5477,
-      "suppliedBpm": 7,
+      "suppliedBpm": 8,
       "suppliedKey": 3,
       "credits": 0,
       "metadataRead": 1255,
@@ -557,7 +557,7 @@
     },
     "NOIZD": {
       "records": 503,
-      "suppliedBpm": 0,
+      "suppliedBpm": 9,
       "suppliedKey": 0,
       "credits": 0,
       "metadataRead": 42,

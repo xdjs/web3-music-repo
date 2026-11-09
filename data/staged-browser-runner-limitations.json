@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-11-09T19:34:33.897420+00:00",
+  "sourceCommit": "1795fe4094d39e891159db60d2a50c8cd42a3052",
+  "base": "https://web3-music-repo-qnjzz2p7k-musicnerd.vercel.app",
+  "localAttempts": [
+    {
+      "runner": "npx tsx",
+      "status": "not-executed",
+      "reason": "registry.npmjs.org ENOTFOUND before browser startup"
+    },
+    {
+      "runner": "Node + local Playwright",
+      "status": "environment-blocked",
+      "reason": "Chromium MachPortRendezvousServer bootstrap_check_in Permission denied (1100), SIGTRAP"
+    }
+  ],
+  "fallback": "Supported Firecrawl hosted Chromium with actual deployed page; screenshots downloaded as JPEG to stay below hosted stdout 1MiB limit. Original PNG output was truncated and was not counted as valid evidence.",
+  "fixtureCorrection": "First mobile app-video attempt used hidden desktop #expand-now-playing and timed out at screenshot action. The visible artwork opener worked on SongADay; it unexpectedly had zero dimensions for artwork-missing omgkirby, documented as a genuine UI defect in staged-omg-player-diagnostic.json. A focused SongADay run persisted decoded playback and successful expansion.",
+  "nativeEvidence": "Separate staged Chrome tab demonstrated Min-to-Max Tab/pointer focus,100-120 inclusive range4276 matches,ascending labels,desktop light/dark and390x844 dark layout. Tab closed afterward; pre-existing Meet/music tabs untouched.",
+  "limitations": [
+    "Hosted Chromium is not physical iOS/WebKit verification.",
+    "No real account login/OTP/wallet signing attempted.",
+    "Video samples verify bounded startup/decoded frames, not all-track playback or complete audition."
+  ],
+  "hostedSessionStopped": true
+}

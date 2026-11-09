@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-11-09T19:26:15.263608+00:00",
+  "base": "https://web3-music-repo-qnjzz2p7k-musicnerd.vercel.app",
+  "sourceCommit": "1795fe4094d39e891159db60d2a50c8cd42a3052",
+  "deploymentId": "dpl_62S2z1nVxW42heuhYkutqNQCdSqQ",
+  "checks": [
+    {
+      "path": "src/archive.js",
+      "sha256": "8199f5ec2e26692516d24a3166548422dcab4054ae7b9c3c26e004b933d951d7",
+      "pass": true
+    },
+    {
+      "path": "src/archive.css",
+      "sha256": "db896cda6c173f77a65884d2d3f6fa5edcdf5155d82584e6e42a683095194539",
+      "pass": true
+    },
+    {
+      "path": "src/filter-preferences.mjs",
+      "sha256": "0703e30c564dd681e364c7facaef942cfab56af0335059b345811429d89611fd",
+      "pass": true
+    },
+    {
+      "path": "src/bpm-filter.mjs",
+      "sha256": "c3fc01891144cd2edbe5c464ad5865eff0b7da248ad56bfbb76d55e532e44a25",
+      "pass": true
+    },
+    {
+      "path": "src/indexed-track-metadata-ui.mjs",
+      "sha256": "260dbebf90117ed08bcf6086532f4c2239164400abf37f2cafcb3c12c53eec33",
+      "pass": true
+    },
+    {
+      "path": "src/music-facts.mjs",
+      "sha256": "c0aac1b2564fcf0d8eb5058b9274bab9fd0217a2ccd54c69b3d0bc20e545f3f6",
+      "pass": true
+    },
+    {
+      "case": "source-bound-notes-and-facts",
+      "pass": true
+    },
+    {
+      "case": "exact-supporting-artist",
+      "pass": true
+    },
+    {
+      "case": "index-only-ownership-guard",
+      "pass": true
+    }
+  ],
+  "index": {
+    "bytes": 49113885,
+    "sha256": "b057dbd62b60bb24c6e1f8ce2262993b4c579871f108d3d3d30a76067afcf62e",
+    "pass": true
+  },
+  "status": "passed",
+  "scope": "Public GETs via curl; exact decoded index and six client hashes match tested local build. Two backend source overlays and unsupported mint guard verified. Browser/playback validation is separate."
+}

@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-11-08T04:44:08.573Z",
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "scope": "Verbatim public processed-track fields. No automatic metadata overlay, token identity, mint date, musical key, tempo, lyric or collaborator-role claims.",
+  "frozenRecords": 52987,
+  "pages": 106,
+  "rows": 52987,
+  "matched": 52987,
+  "missing": 0,
+  "quarantined": [],
+  "paginationComplete": true,
+  "completeFrozenCoverage": true,
+  "counts": {
+    "rows": 52987,
+    "descriptions": 49987,
+    "descriptionCharacters": 20955469,
+    "audioMime": {
+      "audio/x-wav": 1480,
+      "audio/wav": 12337,
+      "audio/mpeg": 19103,
+      "video/mp4": 18922,
+      "audio/x-m4a": 133,
+      "video/x-m4v": 16,
+      "video/quicktime": 983,
+      "audio/aiff": 3,
+      "audio/flac": 4,
+      "video/webm": 5,
+      "audio/ogg": 1
+    },
+    "artworkMime": {
+      "image/jpeg": 25299,
+      "image/png": 20070,
+      "image/gif": 4382,
+      "image/webp": 3048,
+      "image/tiff": 2,
+      "image/svg+xml": 17,
+      "video/mp4": 157,
+      "video/quicktime": 8,
+      "application/pdf": 1,
+      "image/heic": 3
+    },
+    "supportingArtists": 12,
+    "supportingProfiles": 12,
+    "nonzeroChorusStart": 30742
+  },
+  "failures": [],
+  "status": "pagination-complete"
+}

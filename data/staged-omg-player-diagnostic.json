@@ -1,0 +1,56 @@
+{
+  "audio": {
+    "src": "https://ipfs.filebase.io/ipfs/QmbFVHq7cSbjUMFn1iV3oAiV55vcATMgQEfFEVoZhKZBx7",
+    "time": 57.002987,
+    "width": 1000,
+    "height": 1000,
+    "decodedVideoFrames": 573,
+    "decodedAudioBytes": 938593
+  },
+  "controls": [
+    {
+      "s": "#player",
+      "width": 375,
+      "height": 86,
+      "display": "grid",
+      "visibility": "visible",
+      "rect": {
+        "x": 0,
+        "y": 758
+      }
+    },
+    {
+      "s": "#open-now-playing",
+      "width": 0,
+      "height": 0,
+      "display": "block",
+      "visibility": "visible",
+      "rect": {
+        "x": 16,
+        "y": 801.5
+      }
+    },
+    {
+      "s": "#expand-now-playing",
+      "width": 0,
+      "height": 0,
+      "display": "inline-flex",
+      "visibility": "visible",
+      "rect": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "s": "#player-art",
+      "width": 0,
+      "height": 0,
+      "display": "none",
+      "visibility": "visible",
+      "rect": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

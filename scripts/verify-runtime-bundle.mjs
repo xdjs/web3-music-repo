@@ -45,6 +45,8 @@ if (process.argv.includes("--probe")) {
     "/api/coverage",
     "/api/coverage/sound-reconciliation",
     "/api/archive",
+    "/api/record/spinamp-558584f480721454bc7a",
+    "/api/record/spinamp-d438cfec532170eb7efe",
   ];
   if (indexed)
     routes.push(

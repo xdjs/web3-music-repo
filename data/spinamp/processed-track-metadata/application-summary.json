@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-08T04:48:28.857Z",
+  "scope": "Offline review candidates only; nothing applied to catalog. Description variants remain source attributed; only existing strict explicit-label extraction supplies BPM/key. Processed MIME may classify only the exact selected matching URI and remains index asserted, not decoded-media verification. SupportingArtist is a source relation, not proof of a producer/writer role.",
+  "baselineRecords": 37345,
+  "listeningCandidates": 13288,
+  "combinedRecords": 50633,
+  "baselineMetadataSha256": "a574928747b8f81ed49b99b9232ae699903d8d4a845d097c15c8ab4d283d7347",
+  "listeningInputSha256": "4b1636a3827663be420cf5ea960e0914bafc1d6d9c4a67e76470ae7ebf4aae98",
+  "statistics": {
+    "directTrackMatches": 40808,
+    "additionalDescriptionVersions": 13273,
+    "additionalExplicitBpm": 12,
+    "additionalExplicitKeys": 1,
+    "matchingProcessedMedia": 40743,
+    "indexedVideoCorrections": 13363,
+    "supportingArtistMatches": 7
+  },
+  "raw": {
+    "explicitBpmTracks": 43,
+    "explicitKeyTracks": 4,
+    "supportingArtistTracks": 12
+  },
+  "candidateRecords": 22570
+}

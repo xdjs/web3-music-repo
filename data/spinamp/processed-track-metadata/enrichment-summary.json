@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-08T04:44:08.518Z",
+  "source": "https://api.spinamp.xyz/v3/graphql",
+  "sourceSnapshotSha256": "eae9d9b0adebfa2a6dca79eebcda3bf00bb0ba2e0d777bbe527efc93bb90370c",
+  "scope": "Exact processed-track/artist bindings. Indexed descriptions remain separate; explicit musical values only fill absent supplied facts. MIME applies only to the selected matching asset. No new NFT identities or playback verification.",
+  "counts": {
+    "catalogRecords": 50633,
+    "directMatches": 40808,
+    "descriptions": 13273,
+    "bpms": 12,
+    "keys": 1,
+    "supportingArtists": 7,
+    "supportingArtistProfileLinks": 7,
+    "videoCorrections": 13279,
+    "distinctSupportingArtists": 1,
+    "enrichedRecords": 22486
+  }
+}

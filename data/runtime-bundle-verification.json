@@ -1,13 +1,13 @@
 {
-  "checkedAt": "2026-11-08T04:47:06.460Z",
+  "checkedAt": "2026-11-09T19:38:30.319Z",
   "status": "passed",
-  "includedFiles": 349,
-  "requiredFiles": 51,
-  "dataBytes": 219229018,
+  "includedFiles": 369,
+  "requiredFiles": 52,
+  "dataBytes": 242206687,
   "omittedOptionalFiles": [],
   "records": 50633,
   "people": 11226,
-  "indexSha256": "67ccda4655cae8a3b9724a98c7c902260d810d8fdc59786bf2d4c18672ee2474",
+  "indexSha256": "93f2857d501798c766f18c4308a1947f3d3db6e46f17830e1e4b4c0a21cbf39e",
   "evidenceSha256": "56e43975f9a9a124c2a594fdae75ac0da2fa8fa5e86c4ea611015e8e6b0ca1eb",
   "routes": [
     {
@@ -26,9 +26,19 @@
       "sha256": "af6a468beb6a4049ea1311b8a6713b8c0dbd8b5aaeafbea57308300353a65ecd"
     },
     {
+      "url": "/api/record/spinamp-558584f480721454bc7a",
+      "status": 200,
+      "sha256": "bf58807b9f064e00452b8f480373fca95ad3507f498bcdd0794f3b2ea3e4fe90"
+    },
+    {
+      "url": "/api/record/spinamp-d438cfec532170eb7efe",
+      "status": 200,
+      "sha256": "95c23fc8463beba18b9c5385e9ac1fbfa050314fee46359388586ee3901b34e6"
+    },
+    {
       "url": "/api/record/spinamp-d11f88ec5a02e39ae6be",
       "status": 200,
-      "sha256": "ce38e3320da622b039b38e025ade009f9bc906c146aed69b796505a5b023baa6"
+      "sha256": "f611ec71fb67ee7828d896b2b13999ae6b518d55a987aadbd6e1dcb92b0aef9b"
     },
     {
       "url": "/share/record/spinamp-d11f88ec5a02e39ae6be",

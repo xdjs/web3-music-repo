@@ -35,6 +35,8 @@ test("facet reload is isolated by surface and excludes queries, wallets and owne
     collection: "CHAOS",
     sort: "newest",
     media: "",
+    bpmMin: "",
+    bpmMax: "",
   });
   assert.equal(collection.load().platform, "");
   collection.save({ platform: "Sound", sort: "artist" });
@@ -60,6 +62,8 @@ test("unknown catalog facets, invalid values, old schema and damaged storage ret
     media: "",
     collection: "",
     sort: "archive",
+    bpmMin: "",
+    bpmMax: "",
   });
   for (const raw of [
     "{",
