@@ -25,7 +25,9 @@ import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 const loadCatalogBundle = createCatalogLoader();
-let nftCatalog = loadCatalogBundle().records;
+// Hydrate inside handler, under its request budget, instead of the shorter
+// serverless module-initialization deadline.
+let nftCatalog = [];
 import { people, sources } from "./src/data.js";
 import { readNFT, storageURL } from "./src/nft-reader.mjs";
 import { readHolders } from "./src/recovery-holders.mjs";
