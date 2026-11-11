@@ -121,7 +121,7 @@ test("metadata text is escaped and unsafe artwork URLs fall back without becomin
   assert.equal(result.status, 200);
   assert.match(result.body, /&lt;\/script&gt;/);
   assert.doesNotMatch(result.body, /<img src=x|javascript:|onload="bad/);
-  assert.match(result.body, /social\/web3-music-archive-v1.png/);
+  assert.match(result.body, /social\/web3-music-archive-v3.png/);
   assert.equal((result.body.match(/<script>/g) || []).length, 1);
 });
 test("share origin rejects forwarded or arbitrary host influence and permits exact local development host", () => {
