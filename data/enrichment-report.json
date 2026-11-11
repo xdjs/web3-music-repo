@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-09T19:12:58.940Z",
+  "checkedAt": "2026-11-11T21:50:13.384Z",
   "totalRecords": 50633,
   "scope": "Supplied metadata includes original documents, publisher snapshots, official release pages and explicitly attributed indexer data. Metadata read is not independent chain or playback verification.",
   "suppliedBpm": 8008,
@@ -37,11 +37,12 @@
   "metadataUnresolved": 13288,
   "bpmAnalysis": {
     "metadata-bpm": 1571,
-    "needs-review": 234,
-    "estimated": 9113,
-    "unavailable": 2142,
-    "not-queued": 37571,
-    "pending": 2
+    "needs-review": 430,
+    "estimated": 20917,
+    "unavailable": 2466,
+    "not-queued": 25157,
+    "deferred": 44,
+    "pending": 48
   },
   "payments": {
     "verifiedPurchases": 186,
@@ -689,10 +690,10 @@
       "note": "A checkpoint is not proof that a process is alive; failed items remain unresolved even after a pass finishes."
     },
     "bpm": {
-      "startedAt": "2026-11-07T05:17:17.079Z",
-      "updatedAt": "2026-11-08T04:33:14.489Z",
+      "startedAt": "2026-11-10T22:03:52.463Z",
+      "updatedAt": "2026-11-10T22:03:59.497Z",
       "finishedAt": null,
-      "interruptedAt": "2026-11-07T05:19:21.175Z",
+      "interruptedAt": null,
       "completion": "not-confirmed-finished",
       "note": "A checkpoint is not proof that a process is alive; failed items remain unresolved even after a pass finishes."
     }
