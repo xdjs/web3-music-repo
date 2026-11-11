@@ -8,6 +8,8 @@ import { analyzeBpmMedia } from "../src/bpm-audio-analysis.mjs";
 import { musicFacts } from "../src/music-facts.mjs";
 import { createProviderCompletionCircuit } from "../src/bpm-campaign.mjs";
 import { readAnalysisCheckpoint } from "../src/bpm-analysis-checkpoint.mjs";
+import { readBpmSelection } from "../src/bpm-retry-plan.mjs";
+import { readFileSync } from "node:fs";
 const exec = promisify(execFile),
   load = createCatalogLoader(),
   initial = load();
@@ -64,9 +66,13 @@ if (
   throw Error(
     "Total transfer timeout must be at least the connection timeout and at most 600000 ms",
   );
+const selection = readBpmSelection(process.argv.slice(2), (file) =>
+  readFileSync(file, "utf8"),
+);
 const jobs = initial.records
   .filter(
     (r) =>
+      (!selection || selection.has(r.id)) &&
       r.kind !== "artwork" &&
       (!platform || r.platform === platform) &&
       !musicFacts({ ...r, audioAnalysis: null }).bpm &&
