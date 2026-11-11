@@ -1,0 +1,15 @@
+{
+  "updatedAt": "2026-11-11T16:05:51.072647+00:00",
+  "asset": "public/social/web3-music-archive-v4.png",
+  "thumbnail": "public/social/web3-music-archive-v4-thumb.png",
+  "source": "public/social/web3-music-archive.html",
+  "pink": "#FF75D8",
+  "logo": "public/social/music-nerd-lenses-2026.png",
+  "logoSource": "User supplied Music Nerd_Spec_Logo_2026.png; copied byte for byte",
+  "rendering": "Deterministic native HTML/CSS from existing editable thumbnail. Hosted Chromium screenshots; actual Noto Sans system fallback. Earlier imagegen edit was rejected because sampled pink was inaccurate.",
+  "visualReview": "Removed the old added music nerd wordmark from the sleeve. Supplied square logo displayed at its original aspect ratio, with no added lettering. Full-size and small render checked.",
+  "dimensions": {
+    "width": 1200,
+    "height": 630
+  }
+}
