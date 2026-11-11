@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-11-11T22:13:43.053159+00:00",
+  "counts": {
+    "unavailable:legacy-unclassified": 2132,
+    "unavailable:http-error": 165,
+    "unavailable:network-error": 22,
+    "unavailable:analysis-error": 135,
+    "deferred:total-timeout": 2,
+    "unavailable:connect-timeout": 17,
+    "deferred:idle-timeout": 11,
+    "deferred:size-limit": 31
+  },
+  "interpretation": "Historical unclassified failures cannot establish source loss. Retryable network/HTTP and bounded transfer failures are queued after first pass. Known unsupported duration/no-audio/invalid results and size-limit cases remain held; no forced guesses.",
+  "supervisor": "scripts/supervise-bpm-recovery.mjs"
+}

@@ -670,7 +670,7 @@
     "evidenceSha256": "56e43975f9a9a124c2a594fdae75ac0da2fa8fa5e86c4ea611015e8e6b0ca1eb",
     "baselineAndCandidateNonAnalysisHashesIdentical": true,
     "freshReanalysis": "Three complete-original-media samples reproduce source hashes, bytes and BPM; see bpm-checkpoint-2026-11-11/reanalysis.json",
-    "browser": "pending staging",
-    "production": "not yet published"
+    "browser": "passed; staged-browser-verification.json and production-browser-verification.json",
+    "production": "Published exact tested deployment; see release-bpm-checkpoint-2026-11-11.json"
   }
 }

@@ -1,0 +1,62 @@
+{
+  "observedAt": "2026-11-11T22:13:43.053159+00:00",
+  "worktree": "web3-music-bpm-campaign",
+  "published": false,
+  "supervisor": {
+    "pid": 74429,
+    "state": "waiting-existing-worker",
+    "updatedAt": "2026-11-11T22:13:38.223Z",
+    "counts": {
+      "records": 50633,
+      "supplied": 7996,
+      "estimated": 21128,
+      "needsReview": 437,
+      "unavailable": 2471,
+      "deferred": 44,
+      "pending": 23,
+      "untouched": 18534,
+      "other": 0
+    },
+    "externalWorkers": [
+      {
+        "pid": 66561,
+        "cwd": "/Users/peterarango/Documents/Music Nerd/Apps/web3-music-bpm-campaign",
+        "startedAt": "2026-11-11T21:45:35.023Z"
+      },
+      {
+        "pid": 74268,
+        "cwd": "/Users/peterarango/Documents/Music Nerd/Apps/web3-music-bpm-campaign",
+        "startedAt": "2026-11-11T22:09:57.616Z"
+      }
+    ]
+  },
+  "campaign": {
+    "pid": 66561,
+    "state": "analyzing",
+    "updatedAt": "2026-11-11T22:13:41.342Z",
+    "activeBatch": {
+      "pid": 74268,
+      "platform": "Nina",
+      "startedAt": "2026-11-11T22:09:56.544Z",
+      "plannedRecords": 50
+    },
+    "counts": {
+      "records": 50633,
+      "supplied": 7996,
+      "estimated": 21128,
+      "needsReview": 437,
+      "unavailable": 2471,
+      "deferred": 44,
+      "pending": 23,
+      "untouched": 18534,
+      "other": 0
+    },
+    "providerCircuit": {
+      "stop": false,
+      "sample": 10,
+      "failures": 0,
+      "rateLimited": 0
+    }
+  },
+  "note": "Source-first worker counts use its isolated branch; live totals are in release-bpm-checkpoint-2026-11-11.json. Never publish this moving file or launch a second writer."
+}

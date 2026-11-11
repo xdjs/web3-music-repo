@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-11-11T22:09:25.584939+00:00",
+  "sourceCommit": "4a248e4220cb25624a6d090fc72f0a2532f3a8be",
+  "mergeCommit": "0c77aa917d8bcee8a0d9ce524102e4fc5bf52f2e",
+  "deploymentId": "dpl_E1PxTPuwvq67osVQ9jnPNsyh6Vit",
+  "tests": {
+    "passed": 426,
+    "environmentBlocked": 1,
+    "focusedPassed": 5
+  },
+  "change": "Catalog hydration moved from module initialization into request handler; same cached bundle and response bytes.",
+  "staging": {
+    "archiveStatus": 200,
+    "recordStatus": 200,
+    "archiveSeconds": 7.08,
+    "recordSeconds": 9.79,
+    "responsesMatchPrior": true
+  },
+  "production": {
+    "archiveStatus": 200,
+    "recordStatus": 200,
+    "archiveSeconds": 6.03,
+    "recordSeconds": 6.5,
+    "responsesMatchPrior": true
+  },
+  "boundedStagingErrorLogs": {
+    "since": "2026-11-11T21:56:29.270Z",
+    "until": "2026-11-11T22:06:29.270Z",
+    "errorOrFatalCount": 0
+  },
+  "postPromotionErrorLogs": {
+    "since": "2026-11-11T22:01:27.842Z",
+    "until": "2026-11-11T22:11:27.842Z",
+    "errorOrFatalCount": 0
+  }
+}

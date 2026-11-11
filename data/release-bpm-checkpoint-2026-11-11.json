@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-11-11T22:01:26.096176+00:00",
+  "sourceCommit": "78264a9d906a442ed919518611b6bbef98891114",
+  "mergeCommit": "16512aa896b7527ed2c1e5a0452d1cadc2df919f",
+  "deploymentId": "dpl_9RwCAc2AFBwX7iniwt42v4r444fR",
+  "primaryURL": "https://web3-music-archive.vercel.app",
+  "counts": {
+    "withBpm": 28919,
+    "supplied": 8008,
+    "estimated": 20911,
+    "records": 50633,
+    "percent": 57.1,
+    "SoundWithBpm": 16230,
+    "SoundPercent": 89.7
+  },
+  "productionIndexSha256": "cd57e4e80951d2d4fb4b6c4a743e568cafe5535c64f6525fe9b5fdb47ed6f346",
+  "productionIndexMatchesBuild": true,
+  "browser": "Four staged views/themes, both sort directions and first40 IDs/tags, exact6933 range results, focus/layout and record attribution passed; primary smoke passed.",
+  "tests": {
+    "passed": 425,
+    "environmentBlocked": 1,
+    "postProjectionFocusedPassed": 30
+  },
+  "runtime": "52 required files; eight route hashes match; deployment READY",
+  "runtimeObservation": "One staging cold-start initialization timeout was observed for /api/archive. Subsequent primary /api/archive and /api/record both returned200 in about5.6s; separate lazy-initialization correction is in progress.",
+  "worker": "Separate mutable campaign continues; this release is a frozen checkpoint."
+}

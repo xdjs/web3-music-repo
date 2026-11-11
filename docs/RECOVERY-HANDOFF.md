@@ -1,6 +1,20 @@
 # Music Nerd music NFT recovery — agent handoff
 
-Updated November 9, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
+Updated November 11, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
+
+## Current release and running recovery — November 11
+
+**User instruction: keep working until Pete explicitly says stop.** Live BPM coverage is **28,919 / 50,633 (57.1%)**, with 8,008 supplied values and 20,911 estimates. Sound is **16,230 / 18,091 (89.7%)**. Inclusive 100–120 BPM filtering now returns 6,933 records; both tempo sorts, exact first40 IDs/tags, keyboard focus and desktop/mobile light/dark passed in staging and a primary smoke passed. No identity, ownership evidence, original media or supplied tempo changed. Three fresh full-original-media reanalyses reproduced exact hashes and BPM. See `data/release-bpm-checkpoint-2026-11-11.json` and `docs/bpm-checkpoint-2026-11-11.md`.
+
+PR #20 merged at `16512aa`; exact tested source `78264a9` was promoted as `dpl_9RwCAc2AFBwX7iniwt42v4r444fR`. A staging cold-start initialization timeout was then observed. PR #21 deferred catalog hydration from module startup into the request handler, with a fresh-process regression test and unchanged response bytes. Exact source `4a248e4` was staged and promoted as **`dpl_E1PxTPuwvq67osVQ9jnPNsyh6Vit`**, current production. Both tested primary API requests return200; the later bounded error/fatal log query returned none. See `data/release-catalog-startup-2026-11-11.json`. Current generic thumbnail remains the corrected v4 supplied logo without the rejected wordmark; Lab cover was already verified separately.
+
+PR #22 (`890d0c6`) adds local recovery supervision and restrictive retry selection; it does not require another app deployment. It observes the existing writer, then continues remaining first-pass work and explicit failed/deferred retries. Provider cooldowns are15/30/60 minutes; finished retry rounds wait24 hours. Uncertain results and known unsupported/oversized cases stay held. One latest review checkpoint is saved after each500 additional estimates. These checkpoints are **not automatically published**.
+
+At 2026-11-11T22:13:43.053159+00:00, coordinator **PID 66561** and supervisor **PID 74429** are active in `web3-music-bpm-campaign`, with one worker and fresh heartbeat. Current analyzer PID is in the status file and changes between batches. Raw local estimates are 21,128; these newer results are unpublished. Read `data/bpm-resume-status-2026-11-11.json`, then inspect the actual moving status/locks before acting. Do not overwrite `data/audio-analysis.json`, start a second writer or copy the runtime projection back into the campaign. The full raw campaign retains its transfer diagnostics.
+
+To honor a stop request: create `work/bpm-recovery-supervisor/STOP`, and also SIGTERM the exact verified external campaign PID while it is being observed. The supervisor stops only its own child; the original campaign was launched separately. Wait for safe checkpoint/lock release and verify no analyzer remains. Only remove STOP when explicitly resuming. See `docs/continuous-bpm-recovery.md` and `data/continuous-bpm-recovery-verification-2026-11-11.json`. The machine/network must remain available. Stale/unrecognized locks require inspection, not automatic deletion.
+
+Next publication: use the supervisor's frozen latest review checkpoint, validate exact media identity/quality and source precedence, retain compressed raw diagnostics, prepare a compact runtime projection, regenerate reports, verify runtime packaging and the staged catalog/filter results, then promote the same tested build. The current moving writer remains separate. Original source metadata recovery is complete for the prior scanned cohort; this BPM effort does not establish all-platform/onchain completeness.
 
 ## Current release — November 9: BPM discovery and Spinamp metadata
 

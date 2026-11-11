@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-11-11T22:13:43.053159+00:00",
+  "sourceCommit": "ec45172e16ecda713860cbd42ef5a36665b9f3f3",
+  "mergeCommit": "890d0c6617295aef82ec37f459896a14f2d1e2da",
+  "focusedTestsPassed": 30,
+  "actualEmptySelectionScheduledMediaJobs": 0,
+  "attachedToExistingCampaign": 66561,
+  "duplicateWriterStarted": false,
+  "stopObservationSmoke": "Supervisor stopped and released its lock; existing campaign remained analyzing with fresh heartbeat. STOP file then removed and supervisor restarted.",
+  "activeSupervisorPid": 74429,
+  "activeSupervisorState": "waiting-existing-worker",
+  "automaticPublication": false,
+  "reviewCheckpointsEveryNewEstimates": 500,
+  "providerCooldownMinutes": [
+    15,
+    30,
+    60
+  ],
+  "completedRetryRoundCooldownHours": 24,
+  "stopInstructions": "See docs/continuous-bpm-recovery.md; stop supervisor and verified external campaign when user requests stop.",
+  "combinedMainTests": {
+    "passed": 430,
+    "environmentBlocked": 1,
+    "blocked": "Existing localhost static-video HTTP test: listen EPERM"
+  }
+}

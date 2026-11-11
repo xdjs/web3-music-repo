@@ -2,6 +2,14 @@
 
 Started November 6, 2026 at Pete Rango's request to label substantially more of the archive with BPM, across platforms. This is ongoing local recovery work, not a production deployment.
 
+## Current checkpoint — November 11
+
+Keep recovering until Pete explicitly requests stop. The live reviewed checkpoint is28,919 BPM values (8,008 supplied;20,911 estimates); source-first Sound coverage is89.7%. The mutable local worker has21,128 raw estimates and remains unpublished beyond the frozen release. Current coordinator PID66561 and supervisor PID74429 were observed with fresh heartbeats; PIDs are not a liveness guarantee.
+
+The single-writer supervisor follows first-pass work with bounded explicit-ID retries, provider cooldowns and daily retry rounds. It preserves uncertain/unsupported cases and creates a latest review checkpoint every500 new estimates. It never auto-publishes unchecked results. Status/control and stop details are in `docs/continuous-bpm-recovery.md`, `data/bpm-resume-status-2026-11-11.json` and the actual campaign worktree. Do not launch a duplicate writer or replace its full raw checkpoint with the compact production projection.
+
+Current production is lazy-startup deployment `dpl_E1PxTPuwvq67osVQ9jnPNsyh6Vit`, retaining the same BPM dataset and corrected v4 thumbnail. The earlier frozen BPM checkpoint deployment and the follow-up startup correction have separate exact-source receipts. Historical checkpoints below are superseded by this section.
+
 ## Current checkpoint — November 9
 
 PR #17 is merged and its exact tested production build is live. Published BPM coverage is **17,117 / 50,633** (8,008 supplied and 9,109 estimates). Explore now supports BPM range filtering/sorting; see `docs/bpm-discovery.md` and `data/release-bpm-metadata-2026-11-09.json`.

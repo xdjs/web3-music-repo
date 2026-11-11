@@ -1,0 +1,109 @@
+{
+  "base": "https://web3-music-repo-h92kty1mh-musicnerd.vercel.app",
+  "views": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "checks": [
+        {
+          "sort": "bpm-asc",
+          "count": "6,933 records",
+          "exactFirst40": true
+        },
+        {
+          "sort": "bpm-desc",
+          "count": "6,933 records",
+          "exactFirst40": true
+        }
+      ],
+      "focus": "bpmMax",
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1425,
+        "font": "12px"
+      },
+      "capture": "captures/bpm-checkpoint-2026-11-11-1440-light.jpg"
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "theme": "dark",
+      "checks": [
+        {
+          "sort": "bpm-asc",
+          "count": "6,933 records",
+          "exactFirst40": true
+        },
+        {
+          "sort": "bpm-desc",
+          "count": "6,933 records",
+          "exactFirst40": true
+        }
+      ],
+      "focus": "bpmMax",
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1425,
+        "font": "12px"
+      },
+      "capture": "captures/bpm-checkpoint-2026-11-11-1440-dark.jpg"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "checks": [
+        {
+          "sort": "bpm-asc",
+          "count": "6,933 records",
+          "exactFirst40": true
+        },
+        {
+          "sort": "bpm-desc",
+          "count": "6,933 records",
+          "exactFirst40": true
+        }
+      ],
+      "focus": "bpmMax",
+      "layout": {
+        "width": 390,
+        "scrollWidth": 375,
+        "font": "16px"
+      },
+      "capture": "captures/bpm-checkpoint-2026-11-11-390-light.jpg"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "checks": [
+        {
+          "sort": "bpm-asc",
+          "count": "6,933 records",
+          "exactFirst40": true
+        },
+        {
+          "sort": "bpm-desc",
+          "count": "6,933 records",
+          "exactFirst40": true
+        }
+      ],
+      "focus": "bpmMax",
+      "layout": {
+        "width": 390,
+        "scrollWidth": 375,
+        "font": "16px"
+      },
+      "capture": "captures/bpm-checkpoint-2026-11-11-390-dark.jpg"
+    }
+  ],
+  "record": {
+    "id": "spinamp-684d3abc750a94093e6a",
+    "facts": "~97.7 BPM\nBPM estimated by Open BPM; tempo may be half or double. Key, when shown, comes from release metadata."
+  },
+  "status": "passed",
+  "sourceCommit": "78264a9",
+  "deploymentId": "dpl_9RwCAc2AFBwX7iniwt42v4r444fR",
+  "checkedAt": "2026-11-11T21:56:55.072933+00:00"
+}
