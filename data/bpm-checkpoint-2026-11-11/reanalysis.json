@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-11-11T21:48:23.317Z",
+  "scope": "Bounded full-original-media reanalysis; three platform samples, not all-track accuracy or listening verification.",
+  "samples": [
+    {
+      "id": "spinamp-684d3abc750a94093e6a",
+      "platform": "Sound",
+      "expectedBpm": 97.73,
+      "bpm": 97.73,
+      "expectedSha256": "1975a584e9d86a0eabb84bd93b06de694909efb69ef3432c2728489ccf4f475e",
+      "sha256": "1975a584e9d86a0eabb84bd93b06de694909efb69ef3432c2728489ccf4f475e",
+      "bytes": 560219,
+      "confidence": 0.4704,
+      "durationSeconds": 139.937959,
+      "passed": true
+    },
+    {
+      "id": "spinamp-a91bad5d60e71a225a73",
+      "platform": "Nina",
+      "expectedBpm": 97.21,
+      "bpm": 97.21,
+      "expectedSha256": "587bc74b81f062999baa7912dea7aaffbdb2749bf5df4a6946ee1109038d2e47",
+      "sha256": "587bc74b81f062999baa7912dea7aaffbdb2749bf5df4a6946ee1109038d2e47",
+      "bytes": 1914790,
+      "confidence": 0.4311,
+      "durationSeconds": 95.736,
+      "passed": true
+    },
+    {
+      "id": "spinamp-12b5a067dc0f1ba23edf",
+      "platform": "omgkirby",
+      "expectedBpm": 130.97,
+      "bpm": 130.97,
+      "expectedSha256": "084c40be521e94a08437c28c1b80def5d330541bd9025568137e54651f2e3a53",
+      "sha256": "084c40be521e94a08437c28c1b80def5d330541bd9025568137e54651f2e3a53",
+      "bytes": 6513994,
+      "confidence": 0.622,
+      "durationSeconds": 109.708333,
+      "passed": true
+    }
+  ]
+}
