@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-11T16:09:36.963059+00:00",
+  "sourceCommit": "2d23941ab2d846e6d8fd94d4c45825a8d59d1474",
+  "mergeCommit": "7dfbe8562c98db33e8d9b3ff93d6c2b8b5acd13e",
+  "deploymentId": "dpl_LufZp3epjxepYtaVWp2EMWScQGZ1",
+  "publicImage": "https://web3-music-archive.vercel.app/social/web3-music-archive-v4.png",
+  "correction": "Removed added music nerd wordmark from sleeve; supplied logo file unchanged; original square aspect ratio preserved.",
+  "pink": "#FF75D8",
+  "testsPassed": 7,
+  "build": "passed",
+  "stagedAndLiveImageAndMetadataExactMatch": true,
+  "browserDecoded": true,
+  "lab": {
+    "url": "https://lab.musicnerd.net/peterango/music-nft-recovery",
+    "screenshot": "https://web3-music-archive.vercel.app/social/web3-music-archive-v4.png",
+    "updatedAt": "2026-11-11T16:09:04.300859+00:00",
+    "changedFields": [
+      "screenshot",
+      "updated_at"
+    ],
+    "publicReadback": true,
+    "renderedCard": {
+      "src": "https://web3-music-archive.vercel.app/social/web3-music-archive-v4.png",
+      "width": 1200,
+      "height": 630
+    }
+  }
+}

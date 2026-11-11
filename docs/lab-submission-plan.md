@@ -42,3 +42,5 @@ The embedded account follow-up uses a native new-tab sign-in link before importi
 ## Thumbnail brand refresh — November 11, 2026
 
 The existing listing cover now uses `https://web3-music-archive.vercel.app/social/web3-music-archive-v3.png`: exact `#FF75D8` and the supplied 2026 lenses logo. The creator-scoped `PUT /api/protocols` updated only the screenshot; independent public read-back confirmed that only `screenshot` and `updated_at` changed. The creator remains `peterango`, and Pete Rango credit/ownership, title, cookbook, recipe and embedded app are preserved. Actual Lab cover cards were decoded and visually checked at 1440px and 390px, both using the new asset. See `data/release-thumbnail-brand-2026-11-11.json`.
+
+The later logo correction replaced that cover with `web3-music-archive-v4.png`, removing the unwanted “music nerd” wordmark from the sleeve. Only the supplied logo remains on the sleeve. Public row comparison and the actual mobile Lab card confirm the replacement; other listing fields remain intact. See `data/release-thumbnail-logo-correction-2026-11-11.json`.
