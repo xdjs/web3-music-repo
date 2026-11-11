@@ -38,3 +38,7 @@ Root confirmed the new origin and cover were live, and the actual new-origin Pri
 The previous listing was named Music NFT Recovery and launched `https://web3-music-repo.vercel.app/`. Its cookbook update at 19:46 UTC preserved a separately updated cover and embedded mode. Historical evidence remains in `data/lab-update-persistence.json` and `data/lab-submission-verification.json`.
 
 The embedded account follow-up uses a native new-tab sign-in link before importing Privy inside Lab. Standalone account actions open in the full app; no nested login completion is claimed. See `data/production-embedded-account-verification.json` and `docs/privy-login-status.md` for that separate release.
+
+## Thumbnail brand refresh — November 11, 2026
+
+The existing listing cover now uses `https://web3-music-archive.vercel.app/social/web3-music-archive-v3.png`: exact `#FF75D8` and the supplied 2026 lenses logo. The creator-scoped `PUT /api/protocols` updated only the screenshot; independent public read-back confirmed that only `screenshot` and `updated_at` changed. The creator remains `peterango`, and Pete Rango credit/ownership, title, cookbook, recipe and embedded app are preserved. Actual Lab cover cards were decoded and visually checked at 1440px and 390px, both using the new asset. See `data/release-thumbnail-brand-2026-11-11.json`.

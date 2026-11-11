@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-11-11T16:02:12.459698+00:00",
+  "sourceCommit": "107e2b7dcc06e9f9d1638210b7ed6f17db140002",
+  "mergeCommit": "33fa7897e3830ee202e049dfd2d3fb559147f621",
+  "deploymentId": "dpl_u53rxhr5FsYnevHns27xBdnrYXFJ",
+  "publicURL": "https://web3-music-archive.vercel.app",
+  "imageURL": "https://web3-music-archive.vercel.app/social/web3-music-archive-v3.png",
+  "imageSha256": "5a596361b8ec41f8db77737771ceb4b15fa728cd8b1aeeea7b7ce44f6255724d",
+  "dimensions": {
+    "width": 1200,
+    "height": 630
+  },
+  "brandPink": "#FF75D8",
+  "suppliedLogoUnchanged": true,
+  "stagedImageAndHTMLExactMatch": true,
+  "productionImageAndHTMLExactMatch": true,
+  "browserImageDecoded": true,
+  "fullAndSmallVisualReview": "passed",
+  "shareTests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "build": "passed",
+  "lab": {
+    "url": "https://lab.musicnerd.net/peterango/music-nft-recovery",
+    "creator": "peterango",
+    "screenshot": "https://web3-music-archive.vercel.app/social/web3-music-archive-v3.png",
+    "updatedAt": "2026-11-11T16:01:11.99876+00:00",
+    "writeAPI": "PUT /api/protocols",
+    "independentPublicReadback": true,
+    "changedFields": [
+      "screenshot",
+      "updated_at"
+    ],
+    "renderedCardVerified": {
+      "widths": [
+        1440,
+        390
+      ],
+      "image": {
+        "src": "https://web3-music-archive.vercel.app/social/web3-music-archive-v3.png",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  },
+  "notes": [
+    "Only the thumbnail, metadata dimensions and missing-art share fallback changed.",
+    "Third-party previews may retain old page caches."
+  ]
+}
