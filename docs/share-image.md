@@ -27,3 +27,7 @@ This asset was corrected with image generation using the previous archive PNG an
 The active generic OG/Twitter thumbnail and missing-art share fallback now use `public/social/web3-music-archive-v3.png` (1200×630). It uses exact sleeve/label CSS `#FF75D8` and the supplied 2026 logo, copied unchanged to `public/social/music-nerd-lenses-2026.png`. The existing editable sleeve/vinyl layout and text were retained. The small review image is `public/social/web3-music-archive-v3-thumb.png`.
 
 An initial built-in image edit did not preserve the requested numeric pink, so the accepted asset was rendered from the existing HTML/CSS source instead. Hosted Chromium used the declared system font stack with a Noto Sans fallback; this rendering does not claim the earlier macOS SF font verification. Full and small previews were visually checked. Provenance records the renderer and brand color in `public/social/archive-thumbnail-v3-provenance.json`. The versioned URL avoids reusing old image bytes; existing third-party message cards may retain their page cache.
+
+## Logo correction — November 11, 2026
+
+The active asset is `public/social/web3-music-archive-v4.png`. The old added “music nerd” lettering on the sleeve has been removed after Pete rejected it. The supplied 2026 lenses file is unchanged and displayed with its original square proportions, centered within the sleeve. The pink remains `#FF75D8`. Generic OG/Twitter and missing-art share fallbacks use the new versioned URL. The old v3 asset remains historical, not the active thumbnail.
