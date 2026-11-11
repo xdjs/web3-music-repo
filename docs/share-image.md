@@ -21,3 +21,9 @@ The actual rendered 1200×630 image and 400×210 thumbnail were visually inspect
 The archive now uses `public/social/web3-music-archive-v2.png` (1731×909 PNG) for Open Graph and Twitter previews. Compared with MusicNerd.net's reference thumbnail, the previous archive image had an oversized pink label below the vinyl's center. The replacement aligns the smaller label and spindle hole with the concentric grooves while retaining the archive sleeve, lenses identity, title, description and credit.
 
 This asset was corrected with image generation using the previous archive PNG and the live Music Nerd thumbnail as visual references. It is a self-contained raster asset, not an output of the older macOS rendering script above. The previous v1 image and HTML source remain as historical assets. Both share-image URLs in `archive.html` use the new v2 filename to avoid reusing cached image bytes; existing message previews may still retain a cached page card.
+
+## Brand refresh — November 10, 2026
+
+The active generic OG/Twitter thumbnail and missing-art share fallback now use `public/social/web3-music-archive-v3.png` (1200×630). It uses exact sleeve/label CSS `#FF75D8` and the supplied 2026 logo, copied unchanged to `public/social/music-nerd-lenses-2026.png`. The existing editable sleeve/vinyl layout and text were retained. The small review image is `public/social/web3-music-archive-v3-thumb.png`.
+
+An initial built-in image edit did not preserve the requested numeric pink, so the accepted asset was rendered from the existing HTML/CSS source instead. Hosted Chromium used the declared system font stack with a Noto Sans fallback; this rendering does not claim the earlier macOS SF font verification. Full and small previews were visually checked. Provenance records the renderer and brand color in `public/social/archive-thumbnail-v3-provenance.json`. The versioned URL avoids reusing old image bytes; existing third-party message cards may retain their page cache.

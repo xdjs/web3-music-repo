@@ -4,7 +4,7 @@ import {
 } from "./playlist-share.mjs";
 import { storageURL } from "./nft-reader.mjs";
 const DEFAULT_ORIGIN = "https://web3-music-archive.vercel.app";
-const FALLBACK_IMAGE = "/social/web3-music-archive-v1.png";
+const FALLBACK_IMAGE = "/social/web3-music-archive-v3.png";
 const esc = (value) =>
   String(value ?? "")
     .replaceAll("&", "&amp;")
