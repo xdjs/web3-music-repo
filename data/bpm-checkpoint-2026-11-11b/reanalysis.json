@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-12T00:17:57.741Z",
+  "scope": "Bounded full-original-media reanalysis; three platform samples, not all-track accuracy or listening verification.",
+  "samples": [
+    {
+      "id": "spinamp-fb229e7b0ee4a7c59964",
+      "platform": "Nina",
+      "expectedBpm": 67.38,
+      "bpm": 67.38,
+      "expectedSha256": "70378b0f4abf82f09044ccffcd46e60bcd66214ac85ad6b15356058a0ae8c65f",
+      "sha256": "70378b0f4abf82f09044ccffcd46e60bcd66214ac85ad6b15356058a0ae8c65f",
+      "bytes": 2329926,
+      "confidence": 0.504,
+      "durationSeconds": 96.7745,
+      "passed": true
+    },
+    {
+      "id": "spinamp-75c8d8d12bf50fa3cb52",
+      "platform": "omgkirby",
+      "expectedBpm": 130.99,
+      "bpm": 130.99,
+      "expectedSha256": "671f76b9211a3d04273369ede476c90be56aff887f542e29033db45555910a84",
+      "sha256": "671f76b9211a3d04273369ede476c90be56aff887f542e29033db45555910a84",
+      "bytes": 6515183,
+      "confidence": 0.7074,
+      "durationSeconds": 109.708333,
+      "passed": true
+    }
+  ]
+}

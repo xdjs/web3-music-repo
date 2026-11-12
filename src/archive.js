@@ -314,8 +314,8 @@ function img(r, cls = "") {
 function addToPlaylistButton(r) {
   return `<button class="icon playlist-add" data-add-playlist="${esc(r.id)}" aria-label="Add ${esc(cleanTitle(r.title))} to playlist" title="Add to playlist">${navIcon("playlist-add")}</button>`;
 }
-function card(r, options = {}) {
-  const tempo = options?.showBpm === true ? bpmTag(r) : null;
+function card(r) {
+  const tempo = bpmTag(r);
   return `<article class="record-card"><div class="cover"><a href="${recordLink(r)}" aria-label="Open ${esc(r.title)}">${img(r)}</a><span class="cover-badge">${esc(platform(r))}${isIndexedRelease(r) ? " · Index only" : ""}${r.mediaScope === "clip" ? " · Clip" : ""}</span>${r.kind !== "artwork" ? `<button class="cover-play" data-play="${esc(r.id)}" aria-label="Play ${esc(r.title)}">▶</button>` : ""}</div><h3><a href="${recordLink(r)}">${esc(cleanTitle(r.title))}</a></h3>${tempo ? `<span class="tag card-bpm" title="${esc(tempo.source)}" aria-label="${esc(tempo.text + ". " + tempo.source)}">${esc(tempo.text)}</span>` : ""}<div class="card-meta"><a href="#artist/${esc(artistId(r))}">${esc(r.artist)}</a><div class="card-actions">${r.kind !== "artwork" ? addToPlaylistButton(r) : ""}<button class="icon heart ${likes.has(r.id) ? "active" : ""}" data-like="${esc(r.id)}" aria-label="${likes.has(r.id) ? "Unlike" : "Like"} ${esc(r.title)}">${likes.has(r.id) ? "♥" : "♡"}</button></div></div></article>`;
 }
 function artistRecords(id) {
@@ -472,7 +472,7 @@ function explore(onlyLikes = false) {
     list.length
       ? `<div class="cards library-grid">${list
           .slice(0, limit)
-          .map((r) => card(r, { showBpm: bpmControlsActive(facets) }))
+          .map(card)
           .join(
             "",
           )}</div>${list.length > limit ? '<button class="outline-button more" data-more>Load more recordings</button>' : ""}`
