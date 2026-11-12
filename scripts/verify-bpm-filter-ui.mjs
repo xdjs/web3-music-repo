@@ -25,6 +25,23 @@ try {
   page.setDefaultNavigationTimeout(60000);
   await page.goto(base + "/#explore", { waitUntil: "commit" });
   await page.locator("[data-facet=bpmMin]").waitFor({ timeout: 60000 });
+  const assertVisibleBpms = async () => {
+    const ids = await page
+      .locator(".record-card h3 a")
+      .evaluateAll((anchors) =>
+        anchors.map((a) =>
+          decodeURIComponent(a.getAttribute("href").split("/")[1]),
+        ),
+      );
+    const expected = ids
+      .map((id) => bpmTag(records.find((r) => r.id === id)))
+      .filter(Boolean)
+      .map((tag) => tag.text);
+    assert.deepEqual(
+      await page.locator(".card-bpm").allTextContents(),
+      expected,
+    );
+  };
   const enter = async (field, value) => {
     await page.locator(`[data-facet=${field}]`).fill(value);
     await page.locator(`[data-facet=${field}]`).press("Enter");
@@ -43,7 +60,7 @@ try {
       await page.locator("#theme").click();
     if (await page.locator("[data-clear-filters]").count())
       await page.locator("[data-clear-filters]").click();
-    assert.equal(await page.locator(".card-bpm").count(), 0);
+    await assertVisibleBpms();
     await page.locator("[data-facet=bpmMin]").fill("99");
     await page.locator("[data-facet=bpmMin]").press("Tab");
     assert.equal(
@@ -126,7 +143,7 @@ try {
     assert.equal(saved.sort, "bpm-desc");
     await page.locator("[data-clear-filters]").click();
     assert.equal(await page.locator("[data-facet=bpmMax]").inputValue(), "");
-    assert.equal(await page.locator(".card-bpm").count(), 0);
+    await assertVisibleBpms();
     assert.equal(
       await page.evaluate(() =>
         localStorage.getItem("mn-archive-explore-filters-v1"),
