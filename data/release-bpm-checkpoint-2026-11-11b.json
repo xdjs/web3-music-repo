@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-11-12T00:53:57.957516+00:00",
+  "sourceCommit": "34564f3c69d198fdce819eea512d249d2f404e88",
+  "mergeCommit": "dbaeadf1aa398f886ac5edc82adea8643ee32585",
+  "pullRequest": 23,
+  "deploymentId": "dpl_Fjsuu83pSqS6ova5RGWZSUEh7EhP",
+  "deploymentUrl": "https://web3-music-repo-2caujagi1-musicnerd.vercel.app",
+  "productionUrl": "https://web3-music-archive.vercel.app",
+  "promotedSameTestedBuild": true,
+  "displayedBpm": 29538,
+  "records": 50633,
+  "supplied": 8008,
+  "estimated": 21530,
+  "addedEstimates": 619,
+  "liveClientMatchesTestedSource": true,
+  "liveIndexMatchesTestedBuild": true,
+  "liveIndexSha256": "275527a1fb849c8f409abeb9f1b74497e09ca43b601f812029c136246e6f729f",
+  "browserQa": "data/bpm-checkpoint-2026-11-11b/staged-browser-verification.json",
+  "tests": {
+    "passed": 430,
+    "blocked": "Existing HTTP static-video test cannot bind localhost EPERM"
+  },
+  "runtimeErrorFatalLogs": "No entries in bounded ten-minute query",
+  "limits": [
+    "Physical iOS not tested",
+    "Live browser session expired; primary client and catalog verified byte-for-byte against browser-tested immutable build",
+    "Tracks without known tempo remain unlabelled"
+  ],
+  "workerObservation": {
+    "pid": 74429,
+    "startedAt": "2026-11-11T22:10:30.833Z",
+    "state": "first-pass",
+    "concurrency": 1,
+    "externalWorkers": [],
+    "activeChild": {
+      "pid": 91804,
+      "phase": "first-pass",
+      "startedAt": "2026-11-12T00:25:20.960Z"
+    },
+    "reason": null,
+    "updatedAt": "2026-11-12T00:53:51.349Z",
+    "counts": {
+      "records": 50633,
+      "supplied": 7996,
+      "estimated": 21659,
+      "needsReview": 463,
+      "unavailable": 2492,
+      "deferred": 46,
+      "pending": 2,
+      "untouched": 17975,
+      "other": 0
+    },
+    "lastCheckpointCount": 21588,
+    "observedProviderStopAt": "2026-11-11T23:50:05.247Z",
+    "providerStops": 2,
+    "cooldownUntil": 1794442805632,
+    "lastCheckpointAt": "2026-11-12T00:28:01.068Z"
+  },
+  "deploymentTransport": "CLI upload TLS failed; Git-source deployment succeeded without disabling TLS",
+  "fairnessFix": "PR24 merged; consistent localeCompare rotates mixed-case platform names"
+}

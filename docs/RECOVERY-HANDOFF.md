@@ -1,5 +1,14 @@
 # Music Nerd music NFT recovery — agent handoff
 
+## Latest release — November 11: BPM visible without filtering
+
+Live coverage is **29,538 / 50,633** tracks (8,008 supplied;21,530 estimates), including619 additional estimates. Known tempo now appears automatically on shared song cards in Explore, Home, artist and collection grids. `~` identifies an estimate; unknown tempo remains unlabelled. Filters and sorting still work. Playlist/queue rows were not changed.
+
+PR23 merged at `dbaeadf1aa398f886ac5edc82adea8643ee32585`. Exact source `34564f3c69d198fdce819eea512d249d2f404e88` was tested and promoted as `dpl_Fjsuu83pSqS6ova5RGWZSUEh7EhP`. Four desktop/mobile light/dark browser checks passed; the primary site's client and complete index match the tested build byte-for-byte. See `data/release-bpm-checkpoint-2026-11-11b.json` and its linked staged browser receipt.
+
+Recovery continues in the isolated campaign worktree. The supervisor now owns its coordinator, unlike the historical external-worker state below. Use `work/bpm-recovery-supervisor/STOP` for a stop request and wait for checkpoint/lock release. Inspect current status before touching processes; never start a duplicate writer or overwrite the moving full raw analysis. PR24 fixes mixed-case platform rotation so all eligible platforms receive turns. Latest observed worker status is recorded in the release receipt; timestamps/PIDs are observations, not liveness guarantees.
+
+
 Updated November 11, 2026. Created and originated by **Pete Rango**. This is the separate recovery/listening app, not the Music NFT Era documentary.
 
 ## Current release and running recovery — November 11

@@ -1,0 +1,169 @@
+{
+  "base": "https://web3-music-repo-2caujagi1-musicnerd.vercel.app",
+  "views": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "defaultTags": {
+        "cards": 40,
+        "tempos": 34,
+        "unknowns": 6,
+        "exactTags": true
+      },
+      "afterReset": {
+        "cards": 40,
+        "tempos": 34,
+        "unknowns": 6,
+        "exactTags": true
+      },
+      "checks": [
+        {
+          "sort": "bpm-asc",
+          "count": "7,093 records",
+          "exactFirst40": true
+        },
+        {
+          "sort": "bpm-desc",
+          "count": "7,093 records",
+          "exactFirst40": true
+        }
+      ],
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1425,
+        "font": "12px"
+      },
+      "capture": "captures/bpm-default-tags-1440-light.jpg"
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "theme": "dark",
+      "defaultTags": {
+        "cards": 40,
+        "tempos": 34,
+        "unknowns": 6,
+        "exactTags": true
+      },
+      "afterReset": {
+        "cards": 40,
+        "tempos": 34,
+        "unknowns": 6,
+        "exactTags": true
+      },
+      "checks": [
+        {
+          "sort": "bpm-asc",
+          "count": "7,093 records",
+          "exactFirst40": true
+        },
+        {
+          "sort": "bpm-desc",
+          "count": "7,093 records",
+          "exactFirst40": true
+        }
+      ],
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1425,
+        "font": "12px"
+      },
+      "capture": "captures/bpm-default-tags-1440-dark.jpg"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "defaultTags": {
+        "cards": 40,
+        "tempos": 34,
+        "unknowns": 6,
+        "exactTags": true
+      },
+      "afterReset": {
+        "cards": 40,
+        "tempos": 34,
+        "unknowns": 6,
+        "exactTags": true
+      },
+      "checks": [
+        {
+          "sort": "bpm-asc",
+          "count": "7,093 records",
+          "exactFirst40": true
+        },
+        {
+          "sort": "bpm-desc",
+          "count": "7,093 records",
+          "exactFirst40": true
+        }
+      ],
+      "layout": {
+        "width": 390,
+        "scrollWidth": 375,
+        "font": "16px"
+      },
+      "capture": "captures/bpm-default-tags-390-light.jpg"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "defaultTags": {
+        "cards": 40,
+        "tempos": 34,
+        "unknowns": 6,
+        "exactTags": true
+      },
+      "afterReset": {
+        "cards": 40,
+        "tempos": 34,
+        "unknowns": 6,
+        "exactTags": true
+      },
+      "checks": [
+        {
+          "sort": "bpm-asc",
+          "count": "7,093 records",
+          "exactFirst40": true
+        },
+        {
+          "sort": "bpm-desc",
+          "count": "7,093 records",
+          "exactFirst40": true
+        }
+      ],
+      "layout": {
+        "width": 390,
+        "scrollWidth": 375,
+        "font": "16px"
+      },
+      "capture": "captures/bpm-default-tags-390-dark.jpg"
+    }
+  ],
+  "contexts": [
+    {
+      "hash": "#home",
+      "cards": 5,
+      "tempos": 4,
+      "unknowns": 1,
+      "exactTags": true
+    },
+    {
+      "hash": "#artist/pete-rango",
+      "cards": 22,
+      "tempos": 15,
+      "unknowns": 7,
+      "exactTags": true
+    }
+  ],
+  "record": {
+    "id": "spinamp-dcb5841efa49b906076b",
+    "facts": "~124 BPM\nBPM estimated by Open BPM; tempo may be half or double. Key, when shown, comes from release metadata."
+  },
+  "status": "passed",
+  "checkedAt": "2026-11-12T00:47:22.630258+00:00",
+  "sourceCommit": "34564f3c69d198fdce819eea512d249d2f404e88",
+  "deploymentId": "dpl_Fjsuu83pSqS6ova5RGWZSUEh7EhP"
+}
