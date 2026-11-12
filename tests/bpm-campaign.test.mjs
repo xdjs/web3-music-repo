@@ -177,3 +177,34 @@ test("completion circuit keeps partial-transfer deferrals and ordinary analysis 
   assert.equal(circuit.state.stop, false);
   assert.equal(circuit.state.sample, 10);
 });
+
+test("mixed-case platform names each receive a turn before rotation repeats", () => {
+  const platforms = [
+    "Nina",
+    "NOIZD",
+    "omgkirby",
+    "Spinamp",
+    "Supercollector",
+    "Zora",
+  ];
+  const records = platforms.map((platform) => ({
+    id: platform,
+    platform,
+    kind: "audio",
+  }));
+  let last = null;
+  const seen = [];
+  for (let index = 0; index < platforms.length; index++) {
+    const next = campaignPlan(records, { records: {} }, last).next;
+    seen.push(next.platform);
+    last = next.platform;
+  }
+  assert.deepEqual(
+    seen,
+    platforms.slice().sort((a, b) => a.localeCompare(b)),
+  );
+  assert.equal(
+    campaignPlan(records, { records: {} }, last).next.platform,
+    seen[0],
+  );
+});
