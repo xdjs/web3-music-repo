@@ -1,0 +1,673 @@
+{
+  "checkedAt": "2026-11-12T00:16:38.873Z",
+  "checkpointSha256": "8202e13455c88efc048241b31028771e2df1400065cc3baba804352365c9d473",
+  "baseline": {
+    "recordings": 50633,
+    "supplied": 8008,
+    "estimated": 20911,
+    "missing": 21714,
+    "deferred": 44,
+    "missingByAnalysisState": {
+      "needs-review": 430,
+      "unavailable": 2466,
+      "not-analyzed": 18726,
+      "deferred": 44,
+      "pending": 48
+    },
+    "withBpm": 28919,
+    "percentWithBpm": 57.1
+  },
+  "candidate": {
+    "recordings": 50633,
+    "supplied": 8008,
+    "estimated": 21530,
+    "missing": 21095,
+    "deferred": 45,
+    "missingByAnalysisState": {
+      "needs-review": 463,
+      "unavailable": 2492,
+      "not-analyzed": 18047,
+      "deferred": 45,
+      "pending": 48
+    },
+    "withBpm": 29538,
+    "percentWithBpm": 58.3
+  },
+  "newEstimates": 619,
+  "changes": {
+    "pending -> unavailable": 2,
+    "pending -> estimated": 41,
+    "pending -> needs-review": 5,
+    "absent -> estimated": 578,
+    "absent -> needs-review": 28,
+    "absent -> unavailable": 24,
+    "absent -> deferred": 1,
+    "absent -> pending": 48
+  },
+  "previouslyEstimatedReplacements": 0,
+  "sourceBpmOverwrites": 0,
+  "violations": [],
+  "byPlatform": {
+    "0xDEAFBEEF": {
+      "recordings": 239,
+      "supplied": 26,
+      "estimated": 205,
+      "missing": 8,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "needs-review": 8
+      },
+      "withBpm": 231,
+      "percentWithBpm": 96.7
+    },
+    "Arpeggi": {
+      "recordings": 7,
+      "supplied": 5,
+      "estimated": 2,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 7,
+      "percentWithBpm": 100
+    },
+    "C4": {
+      "recordings": 5,
+      "supplied": 0,
+      "estimated": 5,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 5,
+      "percentWithBpm": 100
+    },
+    "Catalog": {
+      "recordings": 4036,
+      "supplied": 25,
+      "estimated": 3161,
+      "missing": 850,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "unavailable": 714,
+        "needs-review": 136
+      },
+      "withBpm": 3186,
+      "percentWithBpm": 78.9
+    },
+    "Chaos": {
+      "recordings": 2,
+      "supplied": 2,
+      "estimated": 0,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 2,
+      "percentWithBpm": 100
+    },
+    "Decent": {
+      "recordings": 55,
+      "supplied": 7,
+      "estimated": 47,
+      "missing": 1,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "needs-review": 1
+      },
+      "withBpm": 54,
+      "percentWithBpm": 98.2
+    },
+    "Heds": {
+      "recordings": 10,
+      "supplied": 0,
+      "estimated": 10,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 10,
+      "percentWithBpm": 100
+    },
+    "Hume": {
+      "recordings": 5,
+      "supplied": 0,
+      "estimated": 5,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 5,
+      "percentWithBpm": 100
+    },
+    "Invest In Music": {
+      "recordings": 7,
+      "supplied": 0,
+      "estimated": 6,
+      "missing": 1,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "unavailable": 1
+      },
+      "withBpm": 6,
+      "percentWithBpm": 85.7
+    },
+    "Lens": {
+      "recordings": 628,
+      "supplied": 0,
+      "estimated": 619,
+      "missing": 9,
+      "deferred": 1,
+      "missingByAnalysisState": {
+        "needs-review": 2,
+        "unavailable": 6,
+        "deferred": 1
+      },
+      "withBpm": 619,
+      "percentWithBpm": 98.6
+    },
+    "LucidHaus": {
+      "recordings": 15,
+      "supplied": 0,
+      "estimated": 15,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 15,
+      "percentWithBpm": 100
+    },
+    "MAiWORLD": {
+      "recordings": 14,
+      "supplied": 0,
+      "estimated": 14,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 14,
+      "percentWithBpm": 100
+    },
+    "Manifold.xyz": {
+      "recordings": 60,
+      "supplied": 1,
+      "estimated": 57,
+      "missing": 2,
+      "deferred": 1,
+      "missingByAnalysisState": {
+        "deferred": 1,
+        "needs-review": 1
+      },
+      "withBpm": 58,
+      "percentWithBpm": 96.7
+    },
+    "Mint Songs": {
+      "recordings": 162,
+      "supplied": 0,
+      "estimated": 160,
+      "missing": 2,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "unavailable": 1,
+        "needs-review": 1
+      },
+      "withBpm": 160,
+      "percentWithBpm": 98.8
+    },
+    "Mozado": {
+      "recordings": 11,
+      "supplied": 0,
+      "estimated": 11,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 11,
+      "percentWithBpm": 100
+    },
+    "Mr.Swe": {
+      "recordings": 3,
+      "supplied": 1,
+      "estimated": 2,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 3,
+      "percentWithBpm": 100
+    },
+    "NOIZD": {
+      "recordings": 503,
+      "supplied": 9,
+      "estimated": 0,
+      "missing": 494,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "not-analyzed": 494
+      },
+      "withBpm": 9,
+      "percentWithBpm": 1.8
+    },
+    "Nina": {
+      "recordings": 6055,
+      "supplied": 17,
+      "estimated": 1552,
+      "missing": 4486,
+      "deferred": 2,
+      "missingByAnalysisState": {
+        "needs-review": 120,
+        "deferred": 2,
+        "unavailable": 88,
+        "not-analyzed": 4276
+      },
+      "withBpm": 1569,
+      "percentWithBpm": 25.9
+    },
+    "OpenSea": {
+      "recordings": 1,
+      "supplied": 0,
+      "estimated": 0,
+      "missing": 1,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "not-analyzed": 1
+      },
+      "withBpm": 0,
+      "percentWithBpm": 0
+    },
+    "Other": {
+      "recordings": 7,
+      "supplied": 0,
+      "estimated": 5,
+      "missing": 2,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "unavailable": 1,
+        "not-analyzed": 1
+      },
+      "withBpm": 5,
+      "percentWithBpm": 71.4
+    },
+    "RELICS": {
+      "recordings": 50,
+      "supplied": 50,
+      "estimated": 0,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 50,
+      "percentWithBpm": 100
+    },
+    "RŌHKI": {
+      "recordings": 2,
+      "supplied": 0,
+      "estimated": 0,
+      "missing": 2,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "not-analyzed": 2
+      },
+      "withBpm": 0,
+      "percentWithBpm": 0
+    },
+    "Songcamp": {
+      "recordings": 43,
+      "supplied": 43,
+      "estimated": 0,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 43,
+      "percentWithBpm": 100
+    },
+    "Sound": {
+      "recordings": 18091,
+      "supplied": 2708,
+      "estimated": 13522,
+      "missing": 1861,
+      "deferred": 18,
+      "missingByAnalysisState": {
+        "needs-review": 177,
+        "unavailable": 1666,
+        "deferred": 18
+      },
+      "withBpm": 16230,
+      "percentWithBpm": 89.7
+    },
+    "Sound of Fractures": {
+      "recordings": 3,
+      "supplied": 0,
+      "estimated": 0,
+      "missing": 3,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "not-analyzed": 3
+      },
+      "withBpm": 0,
+      "percentWithBpm": 0
+    },
+    "Spinamp": {
+      "recordings": 356,
+      "supplied": 0,
+      "estimated": 0,
+      "missing": 356,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "not-analyzed": 356
+      },
+      "withBpm": 0,
+      "percentWithBpm": 0
+    },
+    "Supercollector": {
+      "recordings": 718,
+      "supplied": 69,
+      "estimated": 0,
+      "missing": 649,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "not-analyzed": 649
+      },
+      "withBpm": 69,
+      "percentWithBpm": 9.6
+    },
+    "TokenTraxx": {
+      "recordings": 142,
+      "supplied": 0,
+      "estimated": 0,
+      "missing": 142,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "not-analyzed": 142
+      },
+      "withBpm": 0,
+      "percentWithBpm": 0
+    },
+    "Unconfirmed": {
+      "recordings": 10,
+      "supplied": 0,
+      "estimated": 7,
+      "missing": 3,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "unavailable": 3
+      },
+      "withBpm": 7,
+      "percentWithBpm": 70
+    },
+    "Weinbagz": {
+      "recordings": 11,
+      "supplied": 0,
+      "estimated": 0,
+      "missing": 11,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "not-analyzed": 11
+      },
+      "withBpm": 0,
+      "percentWithBpm": 0
+    },
+    "Zora": {
+      "recordings": 5477,
+      "supplied": 8,
+      "estimated": 28,
+      "missing": 5441,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "needs-review": 1,
+        "not-analyzed": 5440
+      },
+      "withBpm": 36,
+      "percentWithBpm": 0.7
+    },
+    "Zyla": {
+      "recordings": 3,
+      "supplied": 0,
+      "estimated": 0,
+      "missing": 3,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "not-analyzed": 3
+      },
+      "withBpm": 0,
+      "percentWithBpm": 0
+    },
+    "anotherblock": {
+      "recordings": 15,
+      "supplied": 0,
+      "estimated": 13,
+      "missing": 2,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "unavailable": 2
+      },
+      "withBpm": 13,
+      "percentWithBpm": 86.7
+    },
+    "artiva.app": {
+      "recordings": 1,
+      "supplied": 0,
+      "estimated": 1,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 1,
+      "percentWithBpm": 100
+    },
+    "batistaonthebeat.com": {
+      "recordings": 16,
+      "supplied": 0,
+      "estimated": 16,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 16,
+      "percentWithBpm": 100
+    },
+    "bully-meow": {
+      "recordings": 7,
+      "supplied": 0,
+      "estimated": 6,
+      "missing": 1,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "needs-review": 1
+      },
+      "withBpm": 6,
+      "percentWithBpm": 85.7
+    },
+    "danielallan.xyz": {
+      "recordings": 4,
+      "supplied": 0,
+      "estimated": 3,
+      "missing": 1,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "unavailable": 1
+      },
+      "withBpm": 3,
+      "percentWithBpm": 75
+    },
+    "edkeziah.xyz": {
+      "recordings": 6,
+      "supplied": 6,
+      "estimated": 0,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 6,
+      "percentWithBpm": 100
+    },
+    "flourishprosper.net": {
+      "recordings": 1,
+      "supplied": 0,
+      "estimated": 1,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 1,
+      "percentWithBpm": 100
+    },
+    "geniuscorp.fr": {
+      "recordings": 14,
+      "supplied": 0,
+      "estimated": 14,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 14,
+      "percentWithBpm": 100
+    },
+    "hollyplus": {
+      "recordings": 58,
+      "supplied": 0,
+      "estimated": 46,
+      "missing": 12,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "needs-review": 11,
+        "unavailable": 1
+      },
+      "withBpm": 46,
+      "percentWithBpm": 79.3
+    },
+    "jagwartwin.com": {
+      "recordings": 11,
+      "supplied": 0,
+      "estimated": 11,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 11,
+      "percentWithBpm": 100
+    },
+    "joshsavagemusic.com": {
+      "recordings": 23,
+      "supplied": 0,
+      "estimated": 21,
+      "missing": 2,
+      "deferred": 0,
+      "missingByAnalysisState": {
+        "needs-review": 2
+      },
+      "withBpm": 21,
+      "percentWithBpm": 91.3
+    },
+    "midibot": {
+      "recordings": 1,
+      "supplied": 0,
+      "estimated": 1,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 1,
+      "percentWithBpm": 100
+    },
+    "mikeshupp.com": {
+      "recordings": 10,
+      "supplied": 0,
+      "estimated": 10,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 10,
+      "percentWithBpm": 100
+    },
+    "omgkirby": {
+      "recordings": 8546,
+      "supplied": 0,
+      "estimated": 1819,
+      "missing": 6727,
+      "deferred": 1,
+      "missingByAnalysisState": {
+        "needs-review": 1,
+        "deferred": 1,
+        "unavailable": 8,
+        "pending": 48,
+        "not-analyzed": 6669
+      },
+      "withBpm": 1819,
+      "percentWithBpm": 21.3
+    },
+    "pixelated.love": {
+      "recordings": 14,
+      "supplied": 0,
+      "estimated": 14,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 14,
+      "percentWithBpm": 100
+    },
+    "projectastro.io": {
+      "recordings": 13,
+      "supplied": 13,
+      "estimated": 0,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 13,
+      "percentWithBpm": 100
+    },
+    "songaday.world": {
+      "recordings": 5060,
+      "supplied": 5018,
+      "estimated": 21,
+      "missing": 21,
+      "deferred": 20,
+      "missingByAnalysisState": {
+        "deferred": 20,
+        "needs-review": 1
+      },
+      "withBpm": 5039,
+      "percentWithBpm": 99.6
+    },
+    "spottiewifi.io": {
+      "recordings": 85,
+      "supplied": 0,
+      "estimated": 83,
+      "missing": 2,
+      "deferred": 2,
+      "missingByAnalysisState": {
+        "deferred": 2
+      },
+      "withBpm": 83,
+      "percentWithBpm": 97.6
+    },
+    "stvdionouveau.com": {
+      "recordings": 4,
+      "supplied": 0,
+      "estimated": 4,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 4,
+      "percentWithBpm": 100
+    },
+    "wavGame": {
+      "recordings": 13,
+      "supplied": 0,
+      "estimated": 13,
+      "missing": 0,
+      "deferred": 0,
+      "missingByAnalysisState": {},
+      "withBpm": 13,
+      "percentWithBpm": 100
+    }
+  },
+  "projection": {
+    "rawBytes": 25748808,
+    "runtimeBytes": 11206934,
+    "runtimeSha256": "e2a9cb918b0784c500f77e63af8610d9af07a0751c05f2e3c0bd9e7edc84a69e",
+    "rawArchive": "data/bpm-checkpoint-2026-11-11b/raw-analysis.json.gz",
+    "rawArchiveSha256": "fc915280596a08af15ba273a2b11304a4be4ee0169c583f9242fda0d21b09c89",
+    "allNonDiagnosticFieldsExact": true
+  },
+  "verification": {
+    "testsPassed": 430,
+    "environmentBlockedTests": 1,
+    "blockedTest": "Existing static-video localhost HTTP test: listen EPERM",
+    "syntax": "passed",
+    "build": "passed",
+    "freshReanalysis": "Two new Nina/omgkirby samples reproduce original file hashes, bytes and BPM; see reanalysis.json",
+    "networkRecovery": "Two prior ENOTFOUND failures recovered through complete-original-media retries; see provider-recovery.json",
+    "browser": "pending staging",
+    "production": "not published",
+    "nonAnalysisHashes": {
+      "records": "91c0ee2c484f3d9c2142a0de24e0e0746cb9c9ca60de1607d4181c88a9f73e95",
+      "people": "62110ced952592647431a3240b8b73515dd4c25367a184d902cf11120fe4dccb",
+      "evidence": "56e43975f9a9a124c2a594fdae75ac0da2fa8fa5e86c4ea611015e8e6b0ca1eb"
+    },
+    "nonAnalysisHashesUnchanged": true
+  }
+}

@@ -1,13 +1,13 @@
 {
-  "checkedAt": "2026-11-11T21:51:26.839Z",
+  "checkedAt": "2026-11-12T00:19:44.890Z",
   "status": "passed",
-  "includedFiles": 375,
+  "includedFiles": 381,
   "requiredFiles": 52,
-  "dataBytes": 247120736,
+  "dataBytes": 247461013,
   "omittedOptionalFiles": [],
   "records": 50633,
   "people": 11226,
-  "indexSha256": "cd57e4e80951d2d4fb4b6c4a743e568cafe5535c64f6525fe9b5fdb47ed6f346",
+  "indexSha256": "275527a1fb849c8f409abeb9f1b74497e09ca43b601f812029c136246e6f729f",
   "evidenceSha256": "56e43975f9a9a124c2a594fdae75ac0da2fa8fa5e86c4ea611015e8e6b0ca1eb",
   "routes": [
     {

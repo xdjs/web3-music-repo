@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-11-12T00:16:37.272770+00:00",
+  "observedPriorFailure": {
+    "checkedAt": "2026-11-11T23:50:04Z",
+    "errorCodes": [
+      "ENOTFOUND"
+    ],
+    "bytes": 0,
+    "gateways": [
+      "ipfs.filebase.io",
+      "gateway.pinata.cloud",
+      "magic.decentralized-content.com"
+    ],
+    "scope": "Both selected records had these structured DNS failures in the live checkpoint inspected before retry."
+  },
+  "headProbes": {
+    "filebase": {
+      "status": 200,
+      "seconds": 0.938
+    },
+    "pinata": {
+      "status": 200,
+      "seconds": 8.073
+    }
+  },
+  "completeRetries": [
+    {
+      "id": "spinamp-dcb5841efa49b906076b",
+      "status": "estimated",
+      "source": "ipfs://QmXjJvREYHcRzvEUWn7jHi99EVaeyx5wqwDXJThUdjkq7h/2643.mp4",
+      "sha256": "fe9ff746208b4c1f3f8bf0e63fd7a09ab2248b58bad730b7d4ce2acbcee89b01",
+      "bytes": 15991497,
+      "bpm": 123.97,
+      "confidence": 0.7041,
+      "durationSeconds": 191.04,
+      "checkedAt": "2026-11-12T00:15:38.479Z"
+    },
+    {
+      "id": "spinamp-5dbe0f655f2643d99cbb",
+      "status": "estimated",
+      "source": "ipfs://QmXjJvREYHcRzvEUWn7jHi99EVaeyx5wqwDXJThUdjkq7h/2644.mp4",
+      "sha256": "01c2153e69b4c150876e705ebad1e9266c453574f5c1e6ff313f8b375a9cb830",
+      "bytes": 13969530,
+      "bpm": 124.03,
+      "confidence": 0.6939,
+      "durationSeconds": 191.04,
+      "checkedAt": "2026-11-12T00:15:51.070Z"
+    }
+  ],
+  "interpretation": "Both full-original-media retries succeeded after prior immediate zero-byte DNS failures. This does not establish permanent loss or universal gateway health."
+}
