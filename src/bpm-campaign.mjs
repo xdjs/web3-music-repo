@@ -34,7 +34,9 @@ export function campaignPlan(
     .sort((a, b) => a.platform.localeCompare(b.platform));
   const next =
     sound ||
-    fair.find((p) => !lastPlatform || p.platform > lastPlatform) ||
+    fair.find(
+      (p) => !lastPlatform || p.platform.localeCompare(lastPlatform) > 0,
+    ) ||
     fair[0];
   return {
     remaining: platforms.reduce((sum, p) => sum + p.remaining, 0),
