@@ -1,8 +1,8 @@
 // Keep the original domain working while publishing a separate Lab path.
 export const LAB_PATH = "/web3-music-archive";
-const roots = /(["'`(=])\/(?!\/)(?=(?:api|src|media|collectors|people|recovered|social|catalog|account|share|sequence|prototype|assets)\/|(?:favicon\.svg|musicnerd-lenses\.png)(?:["'`?#])|#)/g;
+const roots = /(["'`(=])\/(?!\/)(?=(?:api|src|media|collectors|people|recovered|social|catalog|account|share|sequence|prototype|assets)\/|(?:favicon\.svg|musicnerd-lenses\.png)(?:["'`?#]))/g;
 export function labText(text) {
-  return text.replace(roots, "$1" + LAB_PATH + "/");
+  return text.replace(roots, "$1" + LAB_PATH + "/").replace(/(["'`])\/#/g, "$1" + LAB_PATH + "/#");
 }
 export function stripLabPath(path) {
   return path === LAB_PATH ? "/" : path.startsWith(LAB_PATH + "/") ? path.slice(LAB_PATH.length) : path;
