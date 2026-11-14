@@ -1,3 +1,4 @@
+import { LAB_PATH, labText, stripLabPath, labData } from "./src/lab-path.mjs";
 import { buildSharePage, sharePageOrigin } from "./src/share-pages.mjs";
 import { serveStaticVideo } from "./src/static-video.mjs";
 import { unsupportedSolanaRead } from "./src/asset-capabilities.mjs";
@@ -177,7 +178,7 @@ const json = (res, data, status = 200) => {
     "Content-Type": "application/json",
     "Cache-Control": "no-store",
   });
-  const serialized = JSON.stringify(data);
+  const serialized = JSON.stringify(res.onLab ? labData(data) : data);
   res.end(res.wantsGzip ? gzipSync(serialized) : serialized);
 };
 const indexResponses = new WeakMap();
@@ -283,6 +284,9 @@ const types = {
 export async function handler(req, res) {
   try {
     const url = new URL(req.url, "http://localhost");
+    const onLab = url.pathname === LAB_PATH || url.pathname.startsWith(LAB_PATH + "/");
+    url.pathname = stripLabPath(url.pathname);
+    res.onLab = onLab;
     const bundle = loadCatalogBundle();
     nftCatalog = bundle.records;
     res.wantsGzip = /gzip/.test(req.headers["accept-encoding"] || "");
@@ -305,7 +309,8 @@ export async function handler(req, res) {
           person.portrait,
       });
       res.writeHead(result.status, result.headers);
-      return res.end(req.method === "HEAD" ? undefined : result.body);
+      const shareBody = onLab ? labText(result.body).replaceAll("https://web3-music-archive.vercel.app", "https://lab.musicnerd.net" + LAB_PATH) : result.body;
+      return res.end(req.method === "HEAD" ? undefined : shareBody);
     }
     if (url.pathname === "/api/wallet/resolve") {
       const result = await resolveWalletName(url.searchParams.get("name"));

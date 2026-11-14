@@ -88,3 +88,5 @@ await writeFile("data/static-assets.json", JSON.stringify(assets));
 console.log(
   `Static frontend ready: ${assets.length} files; backend data stays in the function bundle.`,
 );
+
+await import("./build-lab-path.mjs");

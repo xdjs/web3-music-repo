@@ -12,6 +12,49 @@
   },
   "rewrites": [
     {
+      "source": "/web3-music-archive/media/:path*",
+      "destination": "/media/:path*"
+    },
+    {
+      "source": "/web3-music-archive/people/:path*",
+      "destination": "/people/:path*"
+    },
+    {
+      "source": "/web3-music-archive/collectors/:path*",
+      "destination": "/collectors/:path*"
+    },
+    {
+      "source": "/web3-music-archive/recovered/:path*",
+      "destination": "/recovered/:path*"
+    },
+    {
+      "source": "/web3-music-archive/social/:path*",
+      "destination": "/social/:path*"
+    },
+    {
+      "source": "/web3-music-archive/share/:path*",
+      "destination": "/api/index"
+    },
+    {
+      "source": "/web3-music-archive/api/catalog",
+      "has": [
+        {
+          "type": "query",
+          "key": "view",
+          "value": "index"
+        }
+      ],
+      "destination": "/web3-music-archive/catalog/index.json"
+    },
+    {
+      "source": "/web3-music-archive/api/catalog",
+      "destination": "/web3-music-archive/catalog/full.json"
+    },
+    {
+      "source": "/web3-music-archive/api/:path*",
+      "destination": "/api/index"
+    },
+    {
       "source": "/share/:path*",
       "destination": "/api/index"
     },
