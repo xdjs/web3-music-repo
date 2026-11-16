@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-11-16T14:15:44.085Z",
+  "checkpointSha256": "06862d226472ba6aa9298eb73d843b9c99b6de517f9fac4a5965bc791e5deb18",
+  "baseline": {
+    "recordings": 50633,
+    "supplied": 8008,
+    "estimated": 21530,
+    "missing": 21095,
+    "deferred": 45,
+    "missingByAnalysisState": {
+      "needs-review": 463,
+      "unavailable": 2492,
+      "not-analyzed": 18047,
+      "deferred": 45,
+      "pending": 48
+    },
+    "withBpm": 29538,
+    "percentWithBpm": 58.3
+  },
+  "candidate": {
+    "recordings": 50633,
+    "supplied": 8008,
+    "estimated": 32049,
+    "missing": 10576,
+    "deferred": 244,
+    "missingByAnalysisState": {
+      "needs-review": 973,
+      "unavailable": 5417,
+      "deferred": 244,
+      "not-analyzed": 3921,
+      "pending": 21
+    },
+    "withBpm": 40057,
+    "percentWithBpm": 79.1
+  },
+  "newEstimates": 10529,
+  "changes": {
+    "pending -> estimated": 48,
+    "absent -> estimated": 10481,
+    "absent -> deferred": 199,
+    "absent -> unavailable": 2925,
+    "absent -> needs-review": 510,
+    "absent -> pending": 21
+  },
+  "previouslyEstimatedReplacements": 0,
+  "sourceBpmOverwrites": 0,
+  "violations": [],
+  "scope": "Frozen reviewed checkpoint pushed to Git; production deployment is separate.",
+  "newDisplayedBpm": 10519,
+  "rawArchive": "bpm-checkpoint-2026-11-16/raw-analysis.json.gz"
+}

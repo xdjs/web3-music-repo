@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-16T14:16:42.320431+00:00",
+  "testsPassed": 20,
+  "syntax": "passed",
+  "build": "passed",
+  "runtimeProjectionExact": true,
+  "originalMediaUnchanged": true,
+  "sourcePrecedence": "8008 supplied BPM unchanged",
+  "rawCheckpointSha256": "06862d226472ba6aa9298eb73d843b9c99b6de517f9fac4a5965bc791e5deb18",
+  "indexSha256": "c992052ff2a56e611e5ab75174859b6a34949684c505587769efe99b8454441a",
+  "indexBytes": 52554445,
+  "deployment": "Not deployed as part of this Git checkpoint",
+  "limits": "Provenance and bounds verified for every new estimate; BPM accuracy was not independently listened to for every track."
+}

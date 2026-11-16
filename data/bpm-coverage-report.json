@@ -1,21 +1,21 @@
 {
-  "checkedAt": "2026-11-12T00:17:58.217Z",
+  "checkedAt": "2026-11-16T14:16:03.099Z",
   "scope": "Current local catalog checkpoint, not necessarily published. Displayed BPM follows the app's source-first rules; source and estimated counts are mutually exclusive. Missing includes separately counted deferred transfers, pending, unavailable and needs-review, never forced guesses.",
   "total": {
     "recordings": 50633,
     "supplied": 8008,
-    "estimated": 21530,
-    "missing": 21095,
-    "deferred": 45,
+    "estimated": 32049,
+    "missing": 10576,
+    "deferred": 244,
     "missingByAnalysisState": {
-      "needs-review": 463,
-      "unavailable": 2492,
-      "not-analyzed": 18047,
-      "deferred": 45,
-      "pending": 48
+      "needs-review": 973,
+      "unavailable": 5417,
+      "deferred": 244,
+      "not-analyzed": 3921,
+      "pending": 21
     },
-    "withBpm": 29538,
-    "percentWithBpm": 58.3
+    "withBpm": 40057,
+    "percentWithBpm": 79.1
   },
   "byPlatform": {
     "0xDEAFBEEF": {
@@ -200,38 +200,40 @@
     "NOIZD": {
       "recordings": 503,
       "supplied": 9,
-      "estimated": 0,
-      "missing": 494,
+      "estimated": 485,
+      "missing": 9,
       "deferred": 0,
       "missingByAnalysisState": {
-        "not-analyzed": 494
+        "unavailable": 3,
+        "needs-review": 6
       },
-      "withBpm": 9,
-      "percentWithBpm": 1.8
+      "withBpm": 494,
+      "percentWithBpm": 98.2
     },
     "Nina": {
       "recordings": 6055,
       "supplied": 17,
-      "estimated": 1552,
-      "missing": 4486,
-      "deferred": 2,
+      "estimated": 5095,
+      "missing": 943,
+      "deferred": 10,
       "missingByAnalysisState": {
-        "needs-review": 120,
-        "deferred": 2,
-        "unavailable": 88,
-        "not-analyzed": 4276
+        "needs-review": 491,
+        "deferred": 10,
+        "unavailable": 295,
+        "pending": 21,
+        "not-analyzed": 126
       },
-      "withBpm": 1569,
-      "percentWithBpm": 25.9
+      "withBpm": 5112,
+      "percentWithBpm": 84.4
     },
     "OpenSea": {
       "recordings": 1,
       "supplied": 0,
       "estimated": 0,
       "missing": 1,
-      "deferred": 0,
+      "deferred": 1,
       "missingByAnalysisState": {
-        "not-analyzed": 1
+        "deferred": 1
       },
       "withBpm": 0,
       "percentWithBpm": 0
@@ -239,15 +241,14 @@
     "Other": {
       "recordings": 7,
       "supplied": 0,
-      "estimated": 5,
-      "missing": 2,
+      "estimated": 6,
+      "missing": 1,
       "deferred": 0,
       "missingByAnalysisState": {
-        "unavailable": 1,
-        "not-analyzed": 1
+        "unavailable": 1
       },
-      "withBpm": 5,
-      "percentWithBpm": 71.4
+      "withBpm": 6,
+      "percentWithBpm": 85.7
     },
     "RELICS": {
       "recordings": 50,
@@ -264,9 +265,9 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 2,
-      "deferred": 0,
+      "deferred": 2,
       "missingByAnalysisState": {
-        "not-analyzed": 2
+        "deferred": 2
       },
       "withBpm": 0,
       "percentWithBpm": 0
@@ -300,9 +301,9 @@
       "supplied": 0,
       "estimated": 0,
       "missing": 3,
-      "deferred": 0,
+      "deferred": 3,
       "missingByAnalysisState": {
-        "not-analyzed": 3
+        "deferred": 3
       },
       "withBpm": 0,
       "percentWithBpm": 0
@@ -310,38 +311,43 @@
     "Spinamp": {
       "recordings": 356,
       "supplied": 0,
-      "estimated": 0,
-      "missing": 356,
-      "deferred": 0,
+      "estimated": 333,
+      "missing": 23,
+      "deferred": 13,
       "missingByAnalysisState": {
-        "not-analyzed": 356
+        "deferred": 13,
+        "unavailable": 6,
+        "needs-review": 4
       },
-      "withBpm": 0,
-      "percentWithBpm": 0
+      "withBpm": 333,
+      "percentWithBpm": 93.5
     },
     "Supercollector": {
       "recordings": 718,
       "supplied": 69,
-      "estimated": 0,
-      "missing": 649,
-      "deferred": 0,
+      "estimated": 637,
+      "missing": 12,
+      "deferred": 1,
       "missingByAnalysisState": {
-        "not-analyzed": 649
+        "deferred": 1,
+        "needs-review": 11
       },
-      "withBpm": 69,
-      "percentWithBpm": 9.6
+      "withBpm": 706,
+      "percentWithBpm": 98.3
     },
     "TokenTraxx": {
       "recordings": 142,
       "supplied": 0,
-      "estimated": 0,
-      "missing": 142,
-      "deferred": 0,
+      "estimated": 59,
+      "missing": 83,
+      "deferred": 40,
       "missingByAnalysisState": {
-        "not-analyzed": 142
+        "deferred": 40,
+        "unavailable": 42,
+        "needs-review": 1
       },
-      "withBpm": 0,
-      "percentWithBpm": 0
+      "withBpm": 59,
+      "percentWithBpm": 41.5
     },
     "Unconfirmed": {
       "recordings": 10,
@@ -358,39 +364,42 @@
     "Weinbagz": {
       "recordings": 11,
       "supplied": 0,
-      "estimated": 0,
-      "missing": 11,
+      "estimated": 10,
+      "missing": 1,
       "deferred": 0,
       "missingByAnalysisState": {
-        "not-analyzed": 11
+        "unavailable": 1
       },
-      "withBpm": 0,
-      "percentWithBpm": 0
+      "withBpm": 10,
+      "percentWithBpm": 90.9
     },
     "Zora": {
       "recordings": 5477,
       "supplied": 8,
-      "estimated": 28,
-      "missing": 5441,
-      "deferred": 0,
+      "estimated": 1294,
+      "missing": 4175,
+      "deferred": 130,
       "missingByAnalysisState": {
-        "needs-review": 1,
-        "not-analyzed": 5440
+        "needs-review": 115,
+        "deferred": 130,
+        "unavailable": 2664,
+        "not-analyzed": 1266
       },
-      "withBpm": 36,
-      "percentWithBpm": 0.7
+      "withBpm": 1302,
+      "percentWithBpm": 23.8
     },
     "Zyla": {
       "recordings": 3,
       "supplied": 0,
-      "estimated": 0,
-      "missing": 3,
+      "estimated": 1,
+      "missing": 2,
       "deferred": 0,
       "missingByAnalysisState": {
-        "not-analyzed": 3
+        "unavailable": 1,
+        "needs-review": 1
       },
-      "withBpm": 0,
-      "percentWithBpm": 0
+      "withBpm": 1,
+      "percentWithBpm": 33.3
     },
     "anotherblock": {
       "recordings": 15,
@@ -536,18 +545,17 @@
     "omgkirby": {
       "recordings": 8546,
       "supplied": 0,
-      "estimated": 1819,
-      "missing": 6727,
-      "deferred": 1,
+      "estimated": 6003,
+      "missing": 2543,
+      "deferred": 2,
       "missingByAnalysisState": {
-        "needs-review": 1,
-        "deferred": 1,
-        "unavailable": 8,
-        "pending": 48,
-        "not-analyzed": 6669
+        "needs-review": 3,
+        "deferred": 2,
+        "unavailable": 9,
+        "not-analyzed": 2529
       },
-      "withBpm": 1819,
-      "percentWithBpm": 21.3
+      "withBpm": 6003,
+      "percentWithBpm": 70.2
     },
     "pixelated.love": {
       "recordings": 14,
