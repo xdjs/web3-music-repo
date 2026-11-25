@@ -1,5 +1,7 @@
 # Music Nerd music NFT recovery — agent handoff
 
+> Start with [the November25 handoff](HANDOFF-2026-11-25.md) for the latest verified local/main state and safe next steps. Historical process and deployment claims below may be stale.
+
 ## Git checkpoint — November 16: 40,057 tracks with BPM
 
 Frozen BPM results are prepared for main: **40,057 / 50,633 (79.1%)**, comprising8,008 supplied values and32,049 displayed estimates. This adds10,519 displayed BPM values over the last published release. The full new estimate count is10,529; ten coexist with source tempo, which takes precedence. No previous estimate was replaced and no supplied value was overwritten. All new estimates passed source identity, provenance, confidence, duration and numerical-bounds checks. See `data/bpm-checkpoint-2026-11-16.json` and its audit, raw archive and validation files.
